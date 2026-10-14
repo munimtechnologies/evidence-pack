@@ -1,0 +1,40 @@
+{
+  "title": "Topiramate for alcohol use disorder: ClinicalTrials.gov posted results only",
+  "intro": "Placebo-controlled trials of topiramate with a heavy-drinking outcome posted on ClinicalTrials.gov, as transcribed on 2026-10-14. The two pivotal Johnson trials posted no results and are not here.",
+  "subsets": {
+    "posted arm data only (drop p-derived and rescaled-SD trials)": "posted_arms",
+    "general AUD samples": "general",
+    "comorbid samples (PTSD, smoking, cocaine, adolescents)": "comorbid"
+  },
+  "studies": [
+    {"nct": "NCT02371889", "label": "Penn pharmacogenetic trial, heavy drinkers", "tags": ["general", "posted_arms"],
+     "outcome": "Frequency of Heavy Drinking Days by Medication Group", "measure": "heavy drinking days, 12 wk",
+     "kind": "arms", "t": [29.00, 23.82, 85], "c": [41.25, 26.38, 85]},
+    {"nct": "NCT00626925", "label": "Kranzler 2014, problem drinkers", "tags": ["general"],
+     "outcome": "Mean Heavy Drinking Days Per Week by Medication Group", "measure": "heavy drinking days/week, 12 wk",
+     "kind": "p", "p": 0.001, "n": [67, 71], "direction": -1,
+     "note": "posted SEs are mixed-model SEs; converting them to SDs gives d = -1.55, so g comes from the posted p"},
+    {"nct": "NCT01749215", "label": "Veterans with PTSD and AUD", "tags": ["comorbid"],
+     "outcome": "Change in Percentage of Heavy Drinking Days", "measure": "change in % heavy drinking days, 12 wk",
+     "kind": "arms", "t": [-36.2, 41.0, 72], "c": [-25.1, 36.0, 79],
+     "note": "posted SDs 0.41 and .36 sit next to percent means; read as proportions and multiplied by 100"},
+    {"nct": "NCT01182766", "label": "Robinson 2025, AUD and smoking", "tags": ["comorbid", "posted_arms"],
+     "outcome": "Percentage of Heavy Drinking Days (PHDD) in the Last 4 Weeks", "measure": "% heavy drinking days, weeks 15-18",
+     "kind": "arms2", "t": [65.1, 44.0, 75], "t2": [59.3, 47.3, 77], "c": [62.8, 45.4, 84]},
+    {"nct": "NCT03176953", "label": "Norman 2025, PTSD and AUD, with prolonged exposure", "tags": ["comorbid", "posted_arms"],
+     "outcome": "Timeline Followback Interview (TLFB)", "measure": "% heavy drinking days at week 16",
+     "kind": "arms_se", "t": [10.8, 4.1, 50], "c": [16.2, 4.2, 50]},
+    {"nct": "NCT00167245", "label": "Kampman 2013, cocaine and alcohol dependence", "tags": ["comorbid", "posted_arms"],
+     "outcome": "Number of Heavy Drinking Days", "measure": "heavy drinking days, 13 wk",
+     "kind": "arms_se", "t": [5.21, 0.58, 54], "c": [6.10, 0.61, 46]},
+    {"nct": "NCT03018704", "label": "VA trial in African Americans (terminated)", "tags": ["general", "posted_arms"],
+     "outcome": "Percent Days of Heavy Drinking", "measure": "% heavy drinking days, last 42 days",
+     "kind": "arms", "t": [14.8, 14.6, 17], "c": [26.7, 24.9, 18]},
+    {"nct": "NCT00862563", "label": "Boston anticonvulsant trial (terminated)", "tags": ["general", "posted_arms"],
+     "outcome": "Mean Percent Days Heavy Drinking", "measure": "% heavy drinking days, week 12",
+     "kind": "arms_se", "t": [21.0, 8.1, 16], "c": [60.9, 8.0, 20]},
+    {"nct": "NCT01641445", "label": "Adolescents and young adults", "tags": ["comorbid", "posted_arms"],
+     "outcome": "Heavy Drinking Days", "measure": "% heavy drinking days, weeks 5-8",
+     "kind": "arms", "t": [9.34, 10.99, 41], "c": [6.78, 11.44, 41]}
+  ]
+}

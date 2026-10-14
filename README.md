@@ -1,12 +1,12 @@
 # evidence-pack
 
-Triage generic drug -> condition pairs by how much clinical evidence exists, using public sources only: PubMed (NCBI E-utilities), ClinicalTrials.gov (API v2) and openFDA drug labels. No login, no patient data.
+Triage generic drug -> condition pairs by how much clinical evidence exists, using public sources only: PubMed (NCBI E-utilities), ClinicalTrials.gov (API v2) and openFDA drug labels. Then pool the results that trials posted on ClinicalTrials.gov, as an independent check on what the journals report. No login, no patient data.
 
-It is built for choosing pairs for the NCATS **Repurposing Generic (ReGen) Drugs Evidence Package Challenge**, where packages are judged on the strength of clinical evidence that an off-patent drug works for a costly condition. It is a first pass, not an evidence review: counts include papers that only mention both terms, and nothing here judges study quality.
+It is built for choosing and backing pairs for the NCATS **Repurposing Generic (ReGen) Drugs Evidence Package Challenge**, where packages are judged on the strength of clinical evidence that an off-patent drug works for a costly condition. The triage is a first pass, not an evidence review: counts include papers that only mention both terms, and nothing in it judges study quality.
 
 Research information, not medical advice. Made by MV2 of Munim, Inc. with AI agents (Claude) working in his name. Code Apache-2.0; the findings text CC BY 4.0.
 
-## What it does
+## Triage (`evidence_pack.py`)
 
 For each pair in `pairs.json` (a drug, a PubMed condition clause and a ClinicalTrials.gov condition query), `evidence_pack.py`:
 
@@ -22,7 +22,25 @@ python evidence_pack.py --pairs pairs.json --out out
 
 Standard library only (Python 3.9+). It makes about 10 requests per pair and pauses between them.
 
-## First run (2026-10-14)
+## Registry pooling (`regpool.py`, new in 0.2.0)
+
+Journal meta-analyses pool what was published. `regpool.py` pools what sponsors posted on ClinicalTrials.gov, which includes small, terminated and never-published trials. Each study list in `studies/` names the trials, the posted outcome used and the transcribed numbers. The script gives each trial one standardized mean difference, signed so that a negative value favours the drug:
+
+- mean and SD per arm, or mean and SE (SD = SE x sqrt(n)), as Hedges' g; two drug arms are combined first (Cochrane Handbook 6.5.2.10);
+- counts of a good outcome (abstinent, no heavy drinking) or a bad one (relapse) per arm, as a log odds ratio x sqrt(3)/pi;
+- a posted p-value and direction when the posted spread cannot be used;
+- `"higher_better": true` for outcomes where more is better, such as days to relapse.
+
+It pools them with DerSimonian-Laird random effects and reports Hartung-Knapp-Sidik-Jonkman intervals, prediction intervals, tagged subsets, a sensitivity set and leave-one-out. `--verify` re-downloads every trial's posted outcome measures, so each transcribed number can be checked against the registry record.
+
+```
+python -m unittest -v test_regpool
+python regpool.py studies/gabapentin_aud.json studies/topiramate_aud.json --out-dir out --verify
+```
+
+First use: [findings/gabapentin-aud-registry-pool-2026-10-14.md](findings/gabapentin-aud-registry-pool-2026-10-14.md). Six registry-posted trials of generic gabapentin for alcohol use disorder (456 participants) favour gabapentin, g about -0.36 (95% CI -0.66 to -0.06). The Hartung-Knapp interval just crosses zero, the effect is about -0.51 in general AUD samples and about 0 in the two trials of people with another condition. Three small published positive trials posted no registry results. Preliminary: hand-computed, registry check pending.
+
+## First triage run (2026-10-14)
 
 13 pairs on conditions from the ReGen priority list. Full output: [findings/triage-2026-10-14.md](findings/triage-2026-10-14.md).
 
@@ -52,6 +70,7 @@ What the counts do not tell you, from reading the abstracts afterwards:
 
 - PubMed publication types are assigned by indexers and lag new papers by weeks.
 - ClinicalTrials.gov condition and intervention searches are fuzzy: they find related trials (for example smoking cessation in heavy drinkers under varenicline -> alcohol use disorder).
+- Registry results are what sponsors typed in. Some posted SDs are on the wrong scale, and some posted SEs come from models rather than raw data. [ctgov-audit](https://github.com/munimtechnologies/ctgov-audit) screens for the impossible ones. `regpool.py` notes each conversion it makes.
 - openFDA says its data are unvalidated; see [asof-kg's findings](https://github.com/munimtechnologies/asof-kg/tree/main/findings) on stale and empty label copies.
 
 ## Files
@@ -61,6 +80,10 @@ What the counts do not tell you, from reading the abstracts afterwards:
 | `evidence_pack.py` | the triage script |
 | `pairs.json` | the 13 pairs of the first run |
 | `test_evidence_pack.py` | offline tests (queries, parsing, counts, rendering) |
-| `findings/triage-2026-10-14.md` | the first run's full output |
+| `regpool.py` | registry-results pooling |
+| `studies/*.json` | study lists: gabapentin and topiramate for alcohol use disorder |
+| `test_regpool.py` | offline tests (effect sizes, pooling, the gabapentin pool by hand) |
+| `findings/triage-2026-10-14.md` | the first triage run's full output |
+| `findings/gabapentin-aud-registry-pool-2026-10-14.md` | gabapentin for AUD from registry results (preliminary) |
 
 Contact: MV2 of Munim, Inc., munimversion2@gmail.com.

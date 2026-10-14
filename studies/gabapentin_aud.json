@@ -1,0 +1,36 @@
+{
+  "title": "Gabapentin for alcohol use disorder: ClinicalTrials.gov posted results only",
+  "intro": "Every controlled trial of gabapentin in alcohol use disorder (not withdrawal) with results posted on ClinicalTrials.gov and a drinking outcome, as found on 2026-10-14 with query.cond=alcohol&query.intr=gabapentin and query.term=gabapentin AND (drinking OR alcohol OR AUD), filter AREA[HasResults]true. Each trial contributes its posted heavy-drinking outcome where one was posted, otherwise its posted abstinence or relapse outcome. Excluded: withdrawal trials against active drugs (NCT01573052, NCT03012815), an imaging study with no drinking outcome (NCT03220776), a single-arm study (NCT03205423) and a flumazenil-plus-gabapentin combination (NCT00262639). Gabapentin enacarbil, a branded prodrug, is a sensitivity analysis only.",
+  "subsets": {
+    "gabapentin alone vs placebo (drop the add-on-to-naltrexone trial)": "monotherapy",
+    "heavy-drinking outcomes only": "heavy",
+    "general AUD samples": "general",
+    "samples with another condition (insomnia; HIV with chronic pain)": "comorbid"
+  },
+  "studies": [
+    {"nct": "NCT00391716", "label": "Mason 2014, 900 and 1800 mg/day", "tags": ["monotherapy", "general", "abstinence"],
+     "outcome": "Drinking", "measure": "complete abstinence, 12 wk",
+     "kind": "binary", "event": "good", "t": [14, 101], "c": [2, 49],
+     "note": "posted counts are complete abstinence, 6/54 at 900 mg and 8/47 at 1800 mg combined; no heavy-drinking counts were posted (only p<0.02)"},
+    {"nct": "NCT02349477", "label": "Anton 2020, with alcohol withdrawal history", "tags": ["monotherapy", "general", "heavy"],
+     "outcome": "Percent of Subjects With no Heavy Drinking Days", "measure": "no heavy drinking days, 16 wk",
+     "kind": "binary", "event": "good", "t": [12, 44], "c": [4, 46]},
+    {"nct": "NCT01141049", "label": "Abstinence initiation trial", "tags": ["monotherapy", "general", "heavy"],
+     "outcome": "Percent of Heavy Drinking Days Per Week", "measure": "% heavy drinking days, week 8",
+     "kind": "arms", "t": [22.5, 34.0, 19], "c": [53.9, 44.0, 21]},
+    {"nct": "NCT01014533", "label": "Alcohol dependence with insomnia", "tags": ["monotherapy", "comorbid", "abstinence"],
+     "outcome": "Relapse to Any Drinking", "measure": "relapse to any drinking, 12 wk",
+     "kind": "binary", "event": "bad", "t": [14, 25], "c": [13, 24]},
+    {"nct": "NCT04052139", "label": "St PETER, HIV with chronic pain (pilot)", "tags": ["monotherapy", "comorbid", "heavy"],
+     "outcome": "Change in Percentage of Past Month Heavy Drinking Days", "measure": "change in % heavy drinking days, 8 wk",
+     "kind": "arms_se", "t": [-4.22, 2.07, 15], "c": [-4.63, 4.64, 15]},
+    {"nct": "NCT00183196", "label": "Anton 2011, added to naltrexone", "tags": ["add_on", "general", "abstinence"],
+     "outcome": "Time to Relapse to Drinking", "measure": "days to relapse, 16 wk (naltrexone + gabapentin vs naltrexone + placebo)",
+     "kind": "arms_se", "higher_better": true, "t": [69.9, 6.5, 48], "c": [59.6, 7.6, 49]},
+    {"nct": "NCT02252536", "label": "Falk 2019, gabapentin enacarbil", "tags": ["enacarbil", "general", "heavy"],
+     "sensitivity_only": true,
+     "outcome": "Percentage of Subjects With no Heavy Drinking Days", "measure": "no heavy drinking days, weeks 22-25",
+     "kind": "binary", "event": "good", "t": [41, 170], "c": [29, 168],
+     "note": "branded prodrug, not generic gabapentin; counts rebuilt from the posted 24.1% and 17.3%"}
+  ]
+}
