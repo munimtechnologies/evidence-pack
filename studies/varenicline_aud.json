@@ -1,0 +1,38 @@
+{
+  "title": "Varenicline for alcohol use disorder: ClinicalTrials.gov posted results only",
+  "intro": "Randomized trials of varenicline against placebo with a posted drinking outcome after at least 4 weeks of treatment, from query.cond=alcohol&query.intr=varenicline, filter AREA[HasResults]true (20 records, 2026-10-15). Inclusion, outcome rule and the general/comorbid classification (smokers as comorbid) were committed before any outcome data were read (aud-comorbidity-prereg-2-2026-10-15.md). Dropped on reading: NCT00695500 (3 weeks of treatment, outcome a 2.5-hour laboratory session), NCT00580645 (outcome a 2-hour laboratory session on day 8). NCT01011907 was classified general from its listing, but on reading it enrolled smokers seeking to quit; the pre-registration forbids moving trials, so it stays general here and the _alt tags move it to the smokers' group as a sensitivity analysis. Where a posted value could be read two ways, the reading that works against the pre-registered hypothesis is used here and the other is in varenicline_aud_readings.json.",
+  "subsets": {
+    "general AUD samples": "general",
+    "smokers (samples selected for smoking as well)": "comorbid",
+    "sensitivity: NCT01011907 counted with the smokers (general side)": "general_alt",
+    "sensitivity: NCT01011907 counted with the smokers (smokers' side)": "comorbid_alt"
+  },
+  "studies": [
+    {"nct": "NCT01146613", "label": "Multisite alcohol dependence trial (Litten 2013)", "tags": ["general", "general_alt"],
+     "outcome": "Weekly Percentage of Heavy Drinking Days", "measure": "% heavy drinking days, weeks 2-13",
+     "kind": "arms_se", "t": [37.9, 3.6, 97], "c": [48.4, 3.52, 101]},
+    {"nct": "NCT00705523", "label": "Alcohol dependence pilot, 40 participants", "tags": ["general", "general_alt"],
+     "outcome": "Rate of Heavy Drinking Days Per Week", "measure": "heavy drinking days per week, 12 wk",
+     "kind": "arms_se", "t": [0.89, 0.18, 19], "c": [1.21, 0.31, 21],
+     "note": "posted as medians with 'standard deviations' of 0.18 and 0.31 heavy drinking days per week, which is implausibly tight; read as SEs here (g about -0.27). Read as SDs, g would be about -1.22 (varenicline_aud_readings.json)"},
+    {"nct": "NCT01011907", "label": "Alpha5 nicotinic receptor pilot, problem drinkers who smoke", "tags": ["general", "comorbid_alt"],
+     "outcome": "Average Number of Alcoholic Drinks Consumed", "measure": "total drinks, weeks 1-12, completers",
+     "kind": "arms_se", "t": [177.04, 28.86, 17], "c": [277.5, 41.9, 17],
+     "note": "completers only (17 per arm). Enrolled smokers seeking to quit, so by the pre-registration's own smoker rule it belongs with the smokers; kept general as listed, moved in the _alt sensitivity"},
+    {"nct": "NCT04167306", "label": "Varenicline x bupropion factorial trial", "tags": ["general", "general_alt"],
+     "outcome": "Alcohol Consumption as Measured by Heavy Drinking Days (HDD)", "measure": "change in heavy drinking days per 14 days, days 21-77",
+     "kind": "groups", "spread": "se", "t": [[-0.322, 0.028, 96], [-0.314, 0.031, 100]], "c": [[-0.298, 0.035, 91], [-0.217, 0.031, 97]],
+     "note": "2 x 2 factorial; varenicline arms (with bupropion or its placebo) vs the others (bupropion alone, double placebo). The posted PEth blood marker points the same way"},
+    {"nct": "NCT01553136", "label": "Alcohol dependence in smokers", "tags": ["comorbid", "comorbid_alt"],
+     "outcome": "Percentage of Heavy Drinking Days During the Last 8 Weeks of Treatment", "measure": "log % heavy drinking days, weeks 13-16",
+     "kind": "arms_se", "t": [1.99, 0.22, 64], "c": [2.09, 0.21, 67],
+     "note": "three outcomes share this title (log weeks 9-12, log weeks 13-16, and an 8-week least-squares mean); the last 4 weeks of treatment on the log scale used"},
+    {"nct": "NCT01347112", "label": "Actively drinking smokers", "tags": ["comorbid", "comorbid_alt"],
+     "outcome": "Heavy Drinking Days at End of Treatment", "measure": "heavy drinking days, week 12",
+     "kind": "arms", "t": [7.9, 8.3, 16], "c": [9.1, 7.2, 17]},
+    {"nct": "NCT02859142", "label": "Heavy drinkers' smoking cessation, varenicline or placebo added to nicotine patch", "tags": ["comorbid", "comorbid_alt"],
+     "outcome": "Change From Baseline in Self-Reported Heavy Drinking Days at 12 Weeks", "measure": "heavy drinking days, past month at week 12",
+     "kind": "arms", "t": [5.02, 7.44, 57], "c": [5.58, 7.54, 52],
+     "note": "titled 'change from baseline' without a definition; the values (5.02 and 5.58 against baselines of 8.28 and 10.36) are read as week-12 levels here. Read as reductions, the sign flips (varenicline_aud_readings.json)"}
+  ]
+}

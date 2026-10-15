@@ -1,0 +1,33 @@
+{
+  "title": "Acamprosate for alcohol use disorder: ClinicalTrials.gov posted results only",
+  "intro": "Randomized trials of acamprosate against placebo with a posted drinking outcome after at least 4 weeks of treatment, from query.cond=alcohol&query.intr=acamprosate, filter AREA[HasResults]true (11 records, 2026-10-15). Inclusion, outcome rule and the general/comorbid classification were committed before any outcome data were read (aud-comorbidity-prereg-2-2026-10-15.md). Outcome: the posted heavy-drinking measure at end of treatment where posted, otherwise drinks per drinking day or per week, otherwise drinking frequency or abstinence. Dropped on reading: NCT00249379 (control arm got no medication rather than placebo, and posted no data because funding ran out). Excluded from the listing before reading: NCT00106106, NCT04287920, NCT00605904, NCT00656630.",
+  "subsets": {
+    "general AUD samples": "general",
+    "samples selected for another disorder as well (bipolar, depression, anxiety, schizophrenia)": "comorbid"
+  },
+  "studies": [
+    {"nct": "NCT03818191", "label": "Pharmacogenomic trial", "tags": ["general"],
+     "outcome": "Cumulative Abstinence Duration", "measure": "% days abstinent, 3 months",
+     "kind": "arms", "higher_better": true, "t": [96.57, 6.85, 101], "c": [96.01, 13.90, 54],
+     "note": "no heavy-drinking or quantity outcome posted; percent days abstinent used (the posted continuous sobriety counts, 66/101 vs 39/55, point the same way)"},
+    {"nct": "NCT00381043", "label": "Family medicine clinic trial", "tags": ["general"],
+     "outcome": "% Heavy Drinking Days During Trial", "measure": "% heavy drinking days, 12 wk",
+     "kind": "arms", "t": [15.8, 21.3, 51], "c": [18.4, 23.4, 49],
+     "note": "the placebo arm's intervention is listed as acamprosate, which looks like a registry typo"},
+    {"nct": "NCT00466661", "label": "Bipolar disorder and alcohol dependence", "tags": ["comorbid"],
+     "outcome": "Percent Heavy Drinking Days", "measure": "% heavy drinking days, 8 wk",
+     "kind": "arms", "t": [6.4, 8.4, 14], "c": [10.7, 14.6, 16]},
+    {"nct": "NCT00452543", "label": "Major depression, acamprosate or placebo added to escitalopram", "tags": ["comorbid"],
+     "outcome": "Total Drinks Consumed Per Drinking Day", "measure": "drinks per drinking day, 12 wk",
+     "kind": "arms", "t": [4, 2, 12], "c": [4, 4, 11],
+     "note": "no heavy-drinking outcome posted. The placebo row's posted upper limit (4) does not equal mean + SD as the other rows do"},
+    {"nct": "NCT00330174", "label": "Anxiety or depressive disorder with AUD", "tags": ["comorbid"],
+     "outcome": "Percent Days Drinking", "measure": "% days drinking, 12 wk",
+     "kind": "arms_se", "t": [34.9, 4.0, 45], "c": [31.9, 4.0, 45],
+     "note": "the posted SEs are 0.04 next to means of 34.9 and 31.9 percent, which is only possible as proportions; read as 4.0 percentage points (taken literally, g would be about 11)"},
+    {"nct": "NCT00463346", "label": "Schizophrenia and alcohol dependence", "tags": ["comorbid"],
+     "outcome": "Number of Drinking Days", "measure": "drinking days, 12 wk",
+     "kind": "arms", "t": [10.7, 17.11, 12], "c": [7.6, 11.5, 11],
+     "note": "no heavy-drinking or quantity outcome posted"}
+  ]
+}

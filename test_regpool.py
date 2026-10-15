@@ -9,10 +9,19 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 GABA = regpool.load(os.path.join(HERE, "studies", "gabapentin_aud.json"))
 TOPI = regpool.load(os.path.join(HERE, "studies", "topiramate_aud.json"))
 NALT = regpool.load(os.path.join(HERE, "studies", "naltrexone_aud.json"))
+ACAM = regpool.load(os.path.join(HERE, "studies", "acamprosate_aud.json"))
+BACL = regpool.load(os.path.join(HERE, "studies", "baclofen_aud.json"))
+VARE = regpool.load(os.path.join(HERE, "studies", "varenicline_aud.json"))
+VARE_R = regpool.load(os.path.join(HERE, "studies", "varenicline_aud_readings.json"))
 
 
 def study(spec, nct):
     return next(s for s in spec["studies"] if s["nct"] == nct)
+
+
+def subset(spec, tag):
+    """Name of the subset in spec that selects tag."""
+    return next(name for name, t in spec["subsets"].items() if t == tag)
 
 
 class EffectTests(unittest.TestCase):
@@ -109,6 +118,85 @@ class GroupTests(unittest.TestCase):
         self.assertIn("Fixed-effect average difference", text)
 
 
+class Prereg2Tests(unittest.TestCase):
+    """Pre-registration 2 (acamprosate, baclofen, varenicline); hand-computed 2026-10-15."""
+
+    def test_acamprosate_effects(self):
+        for nct, want in (("NCT03818191", -0.0564), ("NCT00381043", -0.1143),
+                          ("NCT00466661", -0.3451), ("NCT00452543", 0.0),
+                          ("NCT00330174", 0.1109), ("NCT00463346", 0.2032)):
+            g, _ = regpool.effect(study(ACAM, nct))
+            self.assertAlmostEqual(g, want, delta=0.01, msg=nct)
+
+    def test_acamprosate_split(self):
+        _, _, res, _ = regpool.analyses(ACAM)
+        self.assertEqual(res["main"]["k"], 6)
+        general = res[subset(ACAM, "general")]
+        comorbid = res[subset(ACAM, "comorbid")]
+        self.assertEqual((general["k"], comorbid["k"]), (2, 4))
+        self.assertAlmostEqual(general["g"], -0.0804, delta=0.01)
+        self.assertAlmostEqual(comorbid["g"], 0.0270, delta=0.01)
+        self.assertEqual(comorbid["tau2"], 0.0)
+
+    def test_baclofen(self):
+        for nct, want in (("NCT01980706", -0.1340), ("NCT01008280", -0.2069)):
+            g, _ = regpool.effect(study(BACL, nct))
+            self.assertAlmostEqual(g, want, delta=0.01, msg=nct)
+        self.assertEqual(regpool.arm_sizes(study(BACL, "NCT01980706")), (78, 40))
+        _, _, res, loo = regpool.analyses(BACL)
+        self.assertEqual(res["main"]["k"], 2)
+        self.assertAlmostEqual(res["main"]["g"], -0.180, delta=0.01)
+        self.assertEqual(loo, {})
+
+    def test_varenicline_effects(self):
+        for nct, want in (("NCT01146613", -0.2953), ("NCT00705523", -0.2696),
+                          ("NCT01011907", -0.6613), ("NCT04167306", -0.2007),
+                          ("NCT01553136", -0.0572), ("NCT01347112", -0.1510),
+                          ("NCT02859142", -0.0743)):
+            g, _ = regpool.effect(study(VARE, nct))
+            self.assertAlmostEqual(g, want, delta=0.01, msg=nct)
+        self.assertEqual(regpool.arm_sizes(study(VARE, "NCT04167306")), (196, 188))
+
+    def test_varenicline_readings(self):
+        g, _ = regpool.effect(study(VARE_R, "NCT00705523"))
+        self.assertAlmostEqual(g, -1.2215, delta=0.01)
+        g, _ = regpool.effect(study(VARE_R, "NCT02859142"))
+        self.assertAlmostEqual(g, 0.0743, delta=0.01)
+
+    def test_varenicline_split(self):
+        _, sets, res, _ = regpool.analyses(VARE)
+        general = res[subset(VARE, "general")]
+        smokers = res[subset(VARE, "comorbid")]
+        self.assertEqual((general["k"], smokers["k"]), (4, 3))
+        self.assertAlmostEqual(general["g"], -0.2563, delta=0.01)
+        self.assertAlmostEqual(smokers["g"], -0.0753, delta=0.01)
+        self.assertNotIn("NCT01011907", sets[subset(VARE, "general_alt")])
+        self.assertIn("NCT01011907", sets[subset(VARE, "comorbid_alt")])
+        self.assertAlmostEqual(res[subset(VARE, "general_alt")]["g"], -0.2351, delta=0.01)
+        self.assertAlmostEqual(res[subset(VARE, "comorbid_alt")]["g"], -0.1373, delta=0.01)
+
+    def test_primary_compare(self):
+        # baclofen has one usable trial per group, so by the pre-registered rule it adds no difference
+        cmp = regpool.compare([ACAM, VARE], "general", "comorbid")
+        diffs = [r["diff"] for _, r in cmp["rows"]]
+        self.assertAlmostEqual(diffs[0], 0.1074, delta=0.015)
+        self.assertAlmostEqual(diffs[1], 0.1810, delta=0.015)
+        self.assertAlmostEqual(cmp["mean"], 0.156, delta=0.015)
+        self.assertAlmostEqual(cmp["se"], 0.1175, delta=0.01)
+        self.assertGreater(cmp["p"], 0.05)
+        self.assertEqual(cmp["df"], 1)
+
+    def test_readings_compare(self):
+        cmp = regpool.compare([ACAM, VARE_R], "general", "comorbid")
+        self.assertAlmostEqual(cmp["rows"][1][1]["diff"], 0.444, delta=0.03)
+        self.assertAlmostEqual(cmp["mean"], 0.270, delta=0.03)
+
+    def test_five_lists(self):
+        cmp = regpool.compare([TOPI, GABA, NALT, ACAM, VARE], "general", "comorbid")
+        self.assertEqual(cmp["df"], 4)
+        self.assertEqual(len(cmp["rows"]), 5)
+
+
 class PoolTests(unittest.TestCase):
     def test_identical_studies(self):
         r = regpool.pool([(-0.3, 0.04), (-0.3, 0.04), (-0.3, 0.04)])
@@ -148,8 +236,17 @@ class PoolTests(unittest.TestCase):
         self.assertAlmostEqual(res["general AUD samples"]["g"], -0.574, delta=0.001)
         self.assertAlmostEqual(res["comorbid samples (PTSD, smoking, cocaine, adolescents)"]["g"], -0.103, delta=0.001)
         self.assertEqual(len(sets["posted arm data only (drop p-derived and rescaled-SD trials)"]), 7)
-        self.assertNotIn("main plus sensitivity-only trials", res)
         self.assertEqual(len(loo), 9)
+
+    def test_topiramate_bipolar_trial(self):
+        # NCT00550394, read 2026-10-15, sensitivity-only; hand-computed g -0.1784 and pool of 10 -0.292
+        g, _ = regpool.effect(study(TOPI, "NCT00550394"))
+        self.assertAlmostEqual(g, -0.1784, delta=0.01)
+        _, sets, res, _ = regpool.analyses(TOPI)
+        self.assertNotIn("NCT00550394", sets["main"])
+        both = res["main plus sensitivity-only trials"]
+        self.assertEqual(both["k"], 10)
+        self.assertAlmostEqual(both["g"], -0.292, delta=0.01)
 
     def test_report(self):
         eff, _, res, loo = regpool.analyses(GABA)

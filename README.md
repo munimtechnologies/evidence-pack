@@ -36,18 +36,21 @@ It pools them with DerSimonian-Laird random effects and reports Hartung-Knapp-Si
 
 ```
 python -m unittest -v test_regpool
-python regpool.py studies/topiramate_aud.json studies/gabapentin_aud.json studies/naltrexone_aud.json --out-dir out --verify --compare general comorbid
+python regpool.py studies/topiramate_aud.json studies/gabapentin_aud.json studies/naltrexone_aud.json studies/acamprosate_aud.json studies/varenicline_aud.json --out-dir out --verify --compare general comorbid
 ```
 
 ### Findings so far (alcohol use disorder, registry results only)
 
 | Drug | Trials | g (all) | General AUD samples | Samples selected for another condition too | Status |
 |---|---|---|---|---|---|
-| [Topiramate](findings/topiramate-aud-registry-pool-2026-10-14.md) | 9 | -0.30 | -0.57 (k=4) | -0.10 (k=5) | registry-checked |
+| [Topiramate](findings/topiramate-aud-registry-pool-2026-10-14.md) | 9 (+1 sensitivity) | -0.30 | -0.57 (k=4) | -0.10 (k=5) | registry-checked; the [bipolar trial read on 2026-10-15](findings/topiramate-bipolar-trials-2026-10-15.md) gives about -0.29 for all ten |
 | [Gabapentin](findings/gabapentin-aud-registry-pool-2026-10-14.md) | 6 | -0.36 | -0.51 (k=4) | +0.04 (k=2) | registry-checked |
 | [Naltrexone](findings/naltrexone-aud-registry-pool-2026-10-15.md) | 17 | -0.16 | -0.10 (k=6) | -0.22 (k=11) | preliminary (hand-computed), check queued |
+| [Varenicline](findings/aud-comorbidity-prereg-2-results-2026-10-15.md) | 7 | -0.20 | -0.26 (k=4) | -0.08 (k=3, smokers) | preliminary (hand-computed), check queued |
+| [Acamprosate](findings/aud-comorbidity-prereg-2-results-2026-10-15.md) | 6 | -0.04 | -0.08 (k=2) | +0.03 (k=4) | preliminary (hand-computed), check queued |
+| [Baclofen](findings/aud-comorbidity-prereg-2-results-2026-10-15.md) | 2 | -0.18 | -0.13 (k=1) | -0.21 (k=1) | preliminary; too few trials to split |
 
-The topiramate and gabapentin splits were found after the fact. The test fixed in advance on naltrexone ([pre-registration](findings/naltrexone-prereg-2026-10-15.md)) did not show the split, so it is not a general property of AUD trials. [Pre-registration 2](findings/aud-comorbidity-prereg-2-2026-10-15.md) fixes the same test for acamprosate, baclofen and varenicline before their data are read.
+The topiramate and gabapentin splits were found after the fact. Three tests were fixed in advance: naltrexone ([pre-registration](findings/naltrexone-prereg-2026-10-15.md)) and acamprosate and varenicline ([pre-registration 2](findings/aud-comorbidity-prereg-2-2026-10-15.md), [results](findings/aud-comorbidity-prereg-2-results-2026-10-15.md)). None of them reproduced a split of that size: naltrexone -0.13, and acamprosate +0.11 with varenicline +0.18 (average +0.16, p ≈ 0.18). So the split is not a general property of AUD trials. At most, drugs tend to look somewhat weaker in samples selected for a second condition.
 
 ## First triage run (2026-10-14)
 
@@ -79,7 +82,7 @@ What the counts do not tell you, from reading the abstracts afterwards:
 
 - PubMed publication types are assigned by indexers and lag new papers by weeks.
 - ClinicalTrials.gov condition and intervention searches are fuzzy: they find related trials (for example smoking cessation in heavy drinkers under varenicline -> alcohol use disorder).
-- Registry results are what sponsors typed in. Some posted SDs are on the wrong scale, some posted SEs come from models rather than raw data, and some posted "SDs" can only be SEs (NCT01932801). [ctgov-audit](https://github.com/munimtechnologies/ctgov-audit) screens for the impossible ones. `regpool.py` notes each conversion it makes.
+- Registry results are what sponsors typed in. Some posted SDs are on the wrong scale (NCT01749215, NCT00330174), some posted SEs come from models rather than raw data, and some posted "SDs" can only be SEs (NCT01932801, probably NCT00705523). Some placebo arms list the active drug as their intervention (NCT00381043, NCT00920829, NCT00572117). [ctgov-audit](https://github.com/munimtechnologies/ctgov-audit) screens for the impossible ones. `regpool.py` notes each conversion it makes, and the findings report both readings where a value is ambiguous.
 - openFDA says its data are unvalidated; see [asof-kg's findings](https://github.com/munimtechnologies/asof-kg/tree/main/findings) on stale and empty label copies.
 
 ## Files
@@ -90,8 +93,8 @@ What the counts do not tell you, from reading the abstracts afterwards:
 | `pairs.json` | the 13 pairs of the first run |
 | `test_evidence_pack.py` | offline tests (queries, parsing, counts, rendering) |
 | `regpool.py` | registry-results pooling and cross-list subgroup comparison |
-| `studies/*.json` | study lists: topiramate, gabapentin and naltrexone for alcohol use disorder |
+| `studies/*.json` | study lists for alcohol use disorder: topiramate, gabapentin, naltrexone, acamprosate, baclofen and varenicline, plus `varenicline_aud_readings.json` (the other reading of two ambiguous posted values) |
 | `test_regpool.py` | offline tests (effect sizes, arm merging, pooling, hand-computed checks) |
-| `findings/` | triage output, the three registry pools with job output and registry checks, and two pre-registrations |
+| `findings/` | triage output, the registry pools with job output and registry checks, two pre-registrations and their results |
 
 Contact: MV2 of Munim, Inc., munimversion2@gmail.com.

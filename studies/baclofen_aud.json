@@ -1,0 +1,18 @@
+{
+  "title": "Baclofen for alcohol use disorder: ClinicalTrials.gov posted results only",
+  "intro": "Randomized trials of baclofen against placebo with a posted drinking outcome after at least 4 weeks of treatment, from query.cond=alcohol&query.intr=baclofen, filter AREA[HasResults]true (8 records, 2026-10-15). Inclusion, outcome rule and the general/comorbid classification were committed before any outcome data were read (aud-comorbidity-prereg-2-2026-10-15.md). Dropped on reading: NCT01002105 (its only drinking outcome, percent abstinent days at one year, is posted without any SD, SE or test), NCT01751386 (its only posted outcome is a 2-hour laboratory self-administration session). That leaves one usable trial per group, so by the pre-registered rule baclofen contributes no general-vs-comorbid difference. Excluded from the listing before reading: NCT02052440, NCT01937364, NCT00597701, NCT01076283.",
+  "subsets": {
+    "general AUD samples": "general",
+    "samples selected for another condition as well (hepatitis C)": "comorbid"
+  },
+  "studies": [
+    {"nct": "NCT01980706", "label": "Baclofen 30 and 90 mg/day (high-dose trial)", "tags": ["general"],
+     "outcome": "Mean Percentage of Heavy Drinking Days", "measure": "% heavy drinking days, 16 wk (least-squares means)",
+     "kind": "groups", "spread": "se", "t": [[42, 4, 42], [28, 4, 36]], "c": [[39, 4, 40]],
+     "note": "both doses combined; 90 mg/day alone favours baclofen, 30 mg/day does not"},
+    {"nct": "NCT01008280", "label": "Veterans with hepatitis C", "tags": ["comorbid"],
+     "outcome": "Number of Heavy Drinking Days Per Two Week Segment", "measure": "heavy drinking days per 2 weeks, weeks 10-11",
+     "kind": "arms_se", "t": [1.37, 0.31, 88], "c": [2.15, 0.46, 92],
+     "note": "posted per two-week segment; the last segment of treatment used. The posted GEE group effect is reported only as p > 0.01"}
+  ]
+}

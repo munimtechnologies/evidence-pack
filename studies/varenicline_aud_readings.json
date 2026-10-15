@@ -1,0 +1,33 @@
+{
+  "title": "Varenicline for alcohol use disorder, other readings of two ambiguous posted values",
+  "intro": "The same trials and classification as varenicline_aud.json, with the two ambiguous posted values read the other way, both of which favour the pre-registered hypothesis: NCT00705523's posted 'SD's taken as SDs, and NCT02859142's 'change from baseline' values taken as reductions (more is better). A sensitivity bound, not the main analysis.",
+  "subsets": {
+    "general AUD samples": "general",
+    "smokers (samples selected for smoking as well)": "comorbid"
+  },
+  "studies": [
+    {"nct": "NCT01146613", "label": "Multisite alcohol dependence trial (Litten 2013)", "tags": ["general"],
+     "outcome": "Weekly Percentage of Heavy Drinking Days", "measure": "% heavy drinking days, weeks 2-13",
+     "kind": "arms_se", "t": [37.9, 3.6, 97], "c": [48.4, 3.52, 101]},
+    {"nct": "NCT00705523", "label": "Alcohol dependence pilot, 40 participants", "tags": ["general"],
+     "outcome": "Rate of Heavy Drinking Days Per Week", "measure": "heavy drinking days per week, 12 wk",
+     "kind": "arms", "t": [0.89, 0.18, 19], "c": [1.21, 0.31, 21],
+     "note": "posted spreads taken as SDs"},
+    {"nct": "NCT01011907", "label": "Alpha5 nicotinic receptor pilot, problem drinkers who smoke", "tags": ["general"],
+     "outcome": "Average Number of Alcoholic Drinks Consumed", "measure": "total drinks, weeks 1-12, completers",
+     "kind": "arms_se", "t": [177.04, 28.86, 17], "c": [277.5, 41.9, 17]},
+    {"nct": "NCT04167306", "label": "Varenicline x bupropion factorial trial", "tags": ["general"],
+     "outcome": "Alcohol Consumption as Measured by Heavy Drinking Days (HDD)", "measure": "change in heavy drinking days per 14 days, days 21-77",
+     "kind": "groups", "spread": "se", "t": [[-0.322, 0.028, 96], [-0.314, 0.031, 100]], "c": [[-0.298, 0.035, 91], [-0.217, 0.031, 97]]},
+    {"nct": "NCT01553136", "label": "Alcohol dependence in smokers", "tags": ["comorbid"],
+     "outcome": "Percentage of Heavy Drinking Days During the Last 8 Weeks of Treatment", "measure": "log % heavy drinking days, weeks 13-16",
+     "kind": "arms_se", "t": [1.99, 0.22, 64], "c": [2.09, 0.21, 67]},
+    {"nct": "NCT01347112", "label": "Actively drinking smokers", "tags": ["comorbid"],
+     "outcome": "Heavy Drinking Days at End of Treatment", "measure": "heavy drinking days, week 12",
+     "kind": "arms", "t": [7.9, 8.3, 16], "c": [9.1, 7.2, 17]},
+    {"nct": "NCT02859142", "label": "Heavy drinkers' smoking cessation, varenicline or placebo added to nicotine patch", "tags": ["comorbid"],
+     "outcome": "Change From Baseline in Self-Reported Heavy Drinking Days at 12 Weeks", "measure": "reduction in heavy drinking days, week 12",
+     "kind": "arms", "higher_better": true, "t": [5.02, 7.44, 57], "c": [5.58, 7.54, 52],
+     "note": "values taken as reductions from baseline"}
+  ]
+}

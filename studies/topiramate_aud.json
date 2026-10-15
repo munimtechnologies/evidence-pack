@@ -1,6 +1,6 @@
 {
   "title": "Topiramate for alcohol use disorder: ClinicalTrials.gov posted results only",
-  "intro": "Placebo-controlled trials of topiramate with a heavy-drinking outcome posted on ClinicalTrials.gov, as transcribed on 2026-10-14. The two pivotal Johnson trials posted no results and are not here.",
+  "intro": "Placebo-controlled trials of topiramate with a heavy-drinking outcome posted on ClinicalTrials.gov, as transcribed on 2026-10-14. The two pivotal Johnson trials posted no results and are not here. Two bipolar trials left unread on 2026-10-14 were read on 2026-10-15: NCT00550394 meets the inclusion rule and is added as sensitivity-only, so the registry-checked main pool of nine stays as published; NCT00572117 (12 enrolled, 5 and 7 analysed) posts only drinks per heavy drinking day with 95% CIs, which the heavy-drinking-days rule excludes.",
   "subsets": {
     "posted arm data only (drop p-derived and rescaled-SD trials)": "posted_arms",
     "general AUD samples": "general",
@@ -35,6 +35,11 @@
      "kind": "arms_se", "t": [21.0, 8.1, 16], "c": [60.9, 8.0, 20]},
     {"nct": "NCT01641445", "label": "Adolescents and young adults", "tags": ["comorbid", "posted_arms"],
      "outcome": "Heavy Drinking Days", "measure": "% heavy drinking days, weeks 5-8",
-     "kind": "arms", "t": [9.34, 10.99, 41], "c": [6.78, 11.44, 41]}
+     "kind": "arms", "t": [9.34, 10.99, 41], "c": [6.78, 11.44, 41]},
+    {"nct": "NCT00550394", "label": "Bipolar mania with alcohol use in adolescents and young adults, topiramate or placebo added to quetiapine", "tags": ["comorbid"],
+     "sensitivity_only": true,
+     "outcome": "Percent Heavy Drinking Days", "measure": "change in % heavy drinking days, baseline to week 12",
+     "kind": "arms", "t": [-14, 25, 18], "c": [-10, 19, 21],
+     "note": "read 2026-10-15, after the nine-trial pool was registry-checked. It meets the inclusion rule; kept as sensitivity-only so the checked pool stays as published. 56 enrolled, 18 and 21 analysed; no analysis posted"}
   ]
 }
