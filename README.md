@@ -49,12 +49,13 @@ python regpool.py studies/topiramate_aud.json studies/gabapentin_aud.json studie
 | [Varenicline](findings/aud-comorbidity-prereg-2-results-2026-10-15.md) | 7 | -0.20 | -0.26 (k=4) | -0.08 (k=3, smokers) | preliminary (hand-computed), check queued |
 | [Acamprosate](findings/aud-comorbidity-prereg-2-results-2026-10-15.md) | 6 | -0.04 | -0.08 (k=2) | +0.03 (k=4) | preliminary (hand-computed), check queued |
 | [Baclofen](findings/aud-comorbidity-prereg-2-results-2026-10-15.md) | 2 | -0.18 | -0.13 (k=1) | -0.21 (k=1) | preliminary; too few trials to split |
+| Prazosin / doxazosin | 9 planned (6 general, 3 PTSD-required) | - | - | - | [pre-registration 4](findings/alpha1-blocker-aud-prereg-4-2026-10-15.md) committed before any results were read |
 
-The topiramate and gabapentin splits were found after the fact. Three tests were fixed in advance: naltrexone ([pre-registration](findings/naltrexone-prereg-2026-10-15.md)) and acamprosate and varenicline ([pre-registration 2](findings/aud-comorbidity-prereg-2-2026-10-15.md), [results](findings/aud-comorbidity-prereg-2-results-2026-10-15.md)). None of them reproduced a split of that size: naltrexone -0.13, and acamprosate +0.11 with varenicline +0.18 (average +0.16, p ≈ 0.18). So the split is not a general property of AUD trials. At most, drugs tend to look somewhat weaker in samples selected for a second condition.
+The topiramate and gabapentin splits were found after the fact. Three tests were fixed in advance: naltrexone ([pre-registration](findings/naltrexone-prereg-2026-10-15.md)) and acamprosate and varenicline ([pre-registration 2](findings/aud-comorbidity-prereg-2-2026-10-15.md), [results](findings/aud-comorbidity-prereg-2-results-2026-10-15.md)). None of them reproduced a split of that size: naltrexone -0.13, and acamprosate +0.11 with varenicline +0.18 (average +0.16, p ≈ 0.18). So the split is not a general property of AUD trials. At most, drugs tend to look somewhat weaker in samples selected for a second condition. Pre-registration 4 (prazosin and doxazosin, PTSD-required samples vs the rest) is the fourth test.
 
 ## Spironolactone and drinking in a national survey (`nhanes_spiro.py`, pre-registered)
 
-Spironolactone, a generic diuretic and aldosterone blocker, has no registry trial results for alcohol use disorder, so it scored 0 in the first triage. Yet three health-record studies (Kaiser Permanente, PMID 34341493; the VA, PMID 36123420; TriNetX, PMID 42132959) link it to less drinking. A volume-based score cannot see a pair like this, whose evidence is real-world data rather than trials.
+Spironolactone, a generic diuretic and aldosterone blocker, has no registry trial results for alcohol use disorder, so it scored 0 in the first triage. Yet three health-record studies (Kaiser Permanente, PMID 34341493; the VA, PMID 36123420; TriNetX, PMID 42132959) link it to less drinking. All three share two senior authors from the NIDA/NIAAA intramural program, so they are three data sources but one research collaboration. A volume-based score cannot see a pair like this, whose evidence is real-world data rather than trials.
 
 `nhanes_spiro.py` tests the association in a fourth, independent source: the CDC's NHANES survey, 2005 to March 2020. It compares adults with diagnosed hypertension taking spironolactone with those taking other antihypertensives, excluding heart failure and liver conditions. The outcome is average drinks per drinking day. The model is weighted least squares with cluster-robust errors, adjusted as fixed in the [pre-registration](findings/spironolactone-nhanes-prereg-2026-10-15.md), which was committed before any data were read. The result will be published whatever it shows. The functions that build the rows are plain Python. pandas (to read the CDC's SAS transport files) and statsmodels are needed only for the run itself.
 
@@ -62,6 +63,12 @@ Spironolactone, a generic diuretic and aldosterone blocker, has no registry tria
 python -m unittest -v test_nhanes_spiro
 python nhanes_spiro.py --data-dir data --out-dir out
 ```
+
+## Metformin for knee osteoarthritis: an evidence audit (2026-10-15)
+
+[findings/metformin-knee-oa-evidence-audit-2026-10-15.md](findings/metformin-knee-oa-evidence-audit-2026-10-15.md). Six meta-analyses appeared online between October 2025 and July 2026. Their pooled pain effects run from SMD -0.42 to -2.04, while the one large, registered, double-blind trial (JAMA 2025, n=107) found about 0.43, below its own clinically important threshold.
+
+One small trial with a very large effect, IRCT20150202020908N2, appears in two papers (2023 and 2025). It had 39% attrition on metformin and none on placebo. The two meta-analyses we could read in full count it once. The 2026 network meta-analysis lists a "Ruan 2022" trial whose numbers match a published protocol, and we found no results paper for it.
 
 ## First triage run (2026-10-14)
 
@@ -110,6 +117,6 @@ What the counts do not tell you, from reading the abstracts afterwards:
 | `test_regpool.py` | offline tests (effect sizes, arm merging, pooling, hand-computed checks) |
 | `nhanes_spiro.py` | the pre-registered NHANES spironolactone check |
 | `test_nhanes_spiro.py` | offline tests (drug parsing, eligibility rules, design matrix; the model test runs when statsmodels is installed) |
-| `findings/` | triage output, the registry pools with job output and registry checks, three pre-registrations and their results |
+| `findings/` | triage output, the registry pools with job output and registry checks, four pre-registrations and their results, and the metformin evidence audit |
 
 Contact: MV2 of Munim, Inc., mv2@munimtech.com.
