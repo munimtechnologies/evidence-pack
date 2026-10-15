@@ -9,12 +9,23 @@ signed so that a negative value favours the drug:
   arms     (mean, SD, n) per arm, Hedges' g
   arms_se  (mean, SE, n) per arm; SD = SE * sqrt(n)
   arms2    two drug arms combined (Cochrane Handbook 6.5.2.10), then Hedges' g
+  groups   any number of drug arms and control arms (factorial designs,
+           genotype strata, two doses), each combined first; "spread" is
+           "sd", "se", "ci95" ([mean, lower, upper, n]; SD from the t
+           quantile, Cochrane 6.5.2.2) or "median_iqr" ([median, q1, q3, n];
+           mean (q1 + median + q3) / 3 and SD IQR / 1.35, Wan 2014 and
+           Cochrane 6.5.2.5)
   p        two-sided p and direction only (g from z * sqrt(1/n1 + 1/n2))
   binary   (events, n) per arm; log odds ratio * sqrt(3)/pi (Chinn 2000),
            "event": "good" (abstinent, no heavy drinking) or "bad" (relapse)
 "higher_better": true flips continuous outcomes where more is better
 (e.g. days to relapse). DerSimonian-Laird tau^2, plus the
 Hartung-Knapp-Sidik-Jonkman interval and a prediction interval.
+
+--compare A B tests, for each study list, whether trials tagged B differ
+from trials tagged A (difference of the two random-effects means), then
+combines the per-list differences across lists with a fixed-effect average
+and a Q test of whether the difference is the same in every list.
 
 Study lists are JSON files (see studies/). --verify re-downloads each trial's
 posted outcome measures so the transcribed numbers can be checked.
@@ -31,11 +42,20 @@ T975 = {1: 12.706, 2: 4.303, 3: 3.182, 4: 2.776, 5: 2.571, 6: 2.447, 7: 2.365, 8
         10: 2.228, 11: 2.201, 12: 2.179, 13: 2.160, 14: 2.145, 15: 2.131, 16: 2.120, 17: 2.110,
         18: 2.101, 19: 2.093, 20: 2.086}
 LOGIT_TO_D = math.sqrt(3) / math.pi
+Z975 = NormalDist().inv_cdf(0.975)
 
 
 def load(path):
     with open(path, encoding="utf-8") as f:
         return json.load(f)
+
+
+def t975(df):
+    """Two-sided 95% t quantile: the table up to 20 df, Cornish-Fisher above."""
+    if df in T975:
+        return T975[df]
+    z = Z975
+    return z + (z ** 3 + z) / (4 * df) + (5 * z ** 5 + 16 * z ** 3 + 3 * z) / (96 * df ** 2)
 
 
 def combine_arms(a, b):
@@ -46,6 +66,29 @@ def combine_arms(a, b):
     m = (n1 * m1 + n2 * m2) / n
     var = ((n1 - 1) * s1 ** 2 + (n2 - 1) * s2 ** 2 + n1 * n2 / n * (m1 - m2) ** 2) / (n - 1)
     return m, math.sqrt(var), n
+
+
+def to_msn(arm, spread):
+    """One posted arm -> (mean, SD, n)."""
+    if spread == "sd":
+        return tuple(arm)
+    if spread == "se":
+        m, se, n = arm
+        return m, se * math.sqrt(n), n
+    if spread == "ci95":
+        m, lo, hi, n = arm
+        return m, math.sqrt(n) * (hi - lo) / (2 * t975(n - 1)), n
+    if spread == "median_iqr":
+        med, q1, q3, n = arm
+        return (q1 + med + q3) / 3, (q3 - q1) / 1.35, n
+    raise ValueError(spread)
+
+
+def merge(arms, spread):
+    out = to_msn(arms[0], spread)
+    for arm in arms[1:]:
+        out = combine_arms(out, to_msn(arm, spread))
+    return out
 
 
 def hedges(t, c):
@@ -82,6 +125,8 @@ def effect(s):
         g, v = hedges(t, c)
     elif k == "arms2":
         g, v = hedges(combine_arms(s["t"], s["t2"]), s["c"])
+    elif k == "groups":
+        g, v = hedges(merge(s["t"], s["spread"]), merge(s["c"], s["spread"]))
     elif k == "p":
         n1, n2 = s["n"]
         z = NormalDist().inv_cdf(1 - s["p"] / 2)
@@ -101,6 +146,8 @@ def arm_sizes(s):
         return s["t"][1], s["c"][1]
     if k == "arms2":
         return s["t"][2] + s["t2"][2], s["c"][2]
+    if k == "groups":
+        return sum(a[-1] for a in s["t"]), sum(a[-1] for a in s["c"])
     return s["t"][2], s["c"][2]
 
 
@@ -175,6 +222,48 @@ def analyses(spec):
     return eff, sets, res, loo
 
 
+def subgroup_difference(spec, tag_a, tag_b):
+    """Random-effects mean of trials tagged tag_b minus that of tag_a, with its SE."""
+    eff = {s["nct"]: effect(s) for s in spec["studies"]}
+    main = [s for s in spec["studies"] if not s.get("sensitivity_only")]
+    a = pool([eff[s["nct"]] for s in main if tag_a in s.get("tags", [])])
+    b = pool([eff[s["nct"]] for s in main if tag_b in s.get("tags", [])])
+    diff = b["g"] - a["g"]
+    se = math.sqrt(a["se"] ** 2 + b["se"] ** 2)
+    z = diff / se
+    return {"a": a, "b": b, "diff": diff, "se": se, "z": z, "p": 2 * (1 - NormalDist().cdf(abs(z)))}
+
+
+def compare(specs, tag_a, tag_b):
+    """Per-list subgroup differences, their fixed-effect average and a Q test."""
+    rows = [(spec["title"], subgroup_difference(spec, tag_a, tag_b)) for spec in specs]
+    w = [1 / r["se"] ** 2 for _, r in rows]
+    sw = sum(w)
+    mean = sum(wi * r["diff"] for wi, (_, r) in zip(w, rows)) / sw
+    se = math.sqrt(1 / sw)
+    q = sum(wi * (r["diff"] - mean) ** 2 for wi, (_, r) in zip(w, rows))
+    z = mean / se
+    return {"rows": rows, "mean": mean, "se": se, "z": z, "p": 2 * (1 - NormalDist().cdf(abs(z))),
+            "Q": q, "df": len(rows) - 1, "Q_p": chi2_sf(q, len(rows) - 1) if len(rows) > 1 else 1.0}
+
+
+def compare_report(cmp, tag_a, tag_b):
+    lines = [f"# Subgroup difference across study lists: '{tag_b}' minus '{tag_a}'", "",
+             "A positive difference means the drug's effect is weaker (closer to zero or harmful) "
+             f"in the '{tag_b}' trials. Research information, not medical advice.", "",
+             f"| study list | k {tag_a} | g {tag_a} | k {tag_b} | g {tag_b} | difference | SE | z | p |",
+             "|---|---|---|---|---|---|---|---|---|"]
+    for title, r in cmp["rows"]:
+        lines.append(f"| {title} | {r['a']['k']} | {r['a']['g']:.3f} | {r['b']['k']} | {r['b']['g']:.3f} | "
+                     f"{r['diff']:.3f} | {r['se']:.3f} | {r['z']:.2f} | {r['p']:.4f} |")
+    lines += ["", f"Fixed-effect average difference: {cmp['mean']:.3f} (SE {cmp['se']:.3f}, "
+                  f"95% CI {cmp['mean'] - 1.959964 * cmp['se']:.3f} to {cmp['mean'] + 1.959964 * cmp['se']:.3f}; "
+                  f"z = {cmp['z']:.2f}, p = {cmp['p']:.4f})",
+              f"Is the difference the same in every list? Q = {cmp['Q']:.2f} on {cmp['df']} df "
+              f"(p = {cmp['Q_p']:.4f})", ""]
+    return "\n".join(lines)
+
+
 def report(spec, eff, res, loo):
     lines = [f"# {spec['title']}", "", spec.get("intro", ""), "",
              "Research information, not medical advice. g < 0 favours the drug.", "",
@@ -204,7 +293,7 @@ def verify(spec, out_dir):
     for s in spec["studies"]:
         url = (f"https://clinicaltrials.gov/api/v2/studies/{s['nct']}"
                "?fields=resultsSection.outcomeMeasuresModule&format=json")
-        req = urllib.request.Request(url, headers={"User-Agent": "MV2-Munim-regpool/0.1 (munimversion2@gmail.com)"})
+        req = urllib.request.Request(url, headers={"User-Agent": "MV2-Munim-regpool/0.3 (munimversion2@gmail.com)"})
         try:
             with urllib.request.urlopen(req, timeout=120) as r:
                 data = json.load(r)
@@ -217,10 +306,11 @@ def verify(spec, out_dir):
         hit = [om for om in oms if s["outcome"].lower() in (om.get("title") or "").lower()]
         lines.append(f"## {s['nct']} ({s['label']})")
         lines.append(f"transcribed: kind={s['kind']} t={s.get('t')} t2={s.get('t2')} c={s.get('c')} "
-                     f"p={s.get('p')} n={s.get('n')} event={s.get('event')} higher_better={s.get('higher_better')}")
+                     f"spread={s.get('spread')} p={s.get('p')} n={s.get('n')} event={s.get('event')} "
+                     f"higher_better={s.get('higher_better')}")
         if not hit:
             lines.append(f"NO MEASURE TITLED LIKE '{s['outcome']}'")
-        for om in hit[:1]:
+        for om in hit[:4]:
             groups = {g["id"]: g.get("title", "") for g in om.get("groups") or []}
             dn = {}
             for d in om.get("denoms") or []:
@@ -229,10 +319,15 @@ def verify(spec, out_dir):
             lines.append(f"posted: {om.get('title')} | {om.get('paramType')} / {om.get('dispersionType')} | "
                          f"{om.get('unitOfMeasure')} | {om.get('timeFrame')}")
             for cls in om.get("classes") or []:
+                cn = {}
+                for d in cls.get("denoms") or []:
+                    for c in d.get("counts") or []:
+                        cn.setdefault(c["groupId"], c.get("value"))
                 for cat in cls.get("categories") or []:
                     for m in cat.get("measurements") or []:
+                        n = cn.get(m["groupId"], dn.get(m["groupId"]))
                         lines.append(f"- {cls.get('title', '')} {cat.get('title', '')} {groups.get(m['groupId'])}: "
-                                     f"n={dn.get(m['groupId'])} value={m.get('value')} spread={m.get('spread')} "
+                                     f"n={n} value={m.get('value')} spread={m.get('spread')} "
                                      f"lo={m.get('lowerLimit')} hi={m.get('upperLimit')}")
             for a in om.get("analyses") or []:
                 lines.append(f"- analysis: p={a.get('pValue')} method={a.get('statisticalMethod')} "
@@ -246,10 +341,14 @@ def main(argv=None):
     ap.add_argument("studies", nargs="+", help="study-list JSON files")
     ap.add_argument("--out-dir", required=True)
     ap.add_argument("--verify", action="store_true")
+    ap.add_argument("--compare", nargs=2, metavar=("TAG_A", "TAG_B"),
+                    help="test the TAG_B minus TAG_A subgroup difference in every list and across lists")
     args = ap.parse_args(argv)
     os.makedirs(args.out_dir, exist_ok=True)
+    specs = []
     for path in args.studies:
         spec = load(path)
+        specs.append(spec)
         stem = os.path.splitext(os.path.basename(path))[0]
         eff, sets, res, loo = analyses(spec)
         text = report(spec, eff, res, loo)
@@ -263,6 +362,17 @@ def main(argv=None):
             text = verify(spec, vdir)
             with open(os.path.join(vdir, "verify.md"), "w", encoding="utf-8") as f:
                 f.write(text)
+    if args.compare:
+        cmp = compare(specs, *args.compare)
+        text = compare_report(cmp, *args.compare)
+        with open(os.path.join(args.out_dir, "compare.md"), "w", encoding="utf-8") as f:
+            f.write(text)
+        with open(os.path.join(args.out_dir, "compare.json"), "w", encoding="utf-8") as f:
+            json.dump({"mean": cmp["mean"], "se": cmp["se"], "z": cmp["z"], "p": cmp["p"], "Q": cmp["Q"],
+                       "df": cmp["df"], "Q_p": cmp["Q_p"],
+                       "rows": [{"list": t, "diff": r["diff"], "se": r["se"], "z": r["z"], "p": r["p"],
+                                 "a": r["a"], "b": r["b"]} for t, r in cmp["rows"]]}, f, indent=1)
+        print(text)
     return 0
 
 
