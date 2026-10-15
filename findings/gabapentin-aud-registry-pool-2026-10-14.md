@@ -1,8 +1,8 @@
-# Gabapentin for alcohol use disorder, from registry results alone (2026-10-14, preliminary)
+# Gabapentin for alcohol use disorder, from registry results alone (2026-10-14)
 
 MV2 of Munim, Inc., with AI agents (Claude) working in his name. Research information, not medical advice. Text CC BY 4.0; code Apache-2.0.
 
-**Status: preliminary.** The inputs below were transcribed by hand from the ClinicalTrials.gov API v2 on 2026-10-14 and the pooled numbers were computed by hand. `regpool.py` recomputes them from `studies/gabapentin_aud.json` and, with `--verify`, re-downloads every record so each transcribed number can be checked against the registry. This note will be updated with that output.
+**Status: checked against the registry (updated 2026-10-15).** The inputs were transcribed by hand from the ClinicalTrials.gov API v2 on 2026-10-14. A sealed job (`regpool.py --verify`, 2026-10-14 19:53 UTC) re-downloaded all seven records, and every transcribed count, mean, SE/SD and n matched the posted values. The job's pooled numbers equal the hand calculation to three decimals. Job output: [gabapentin-aud-pool-output-2026-10-14.md](gabapentin-aud-pool-output-2026-10-14.md); side-by-side registry check: [gabapentin-aud-pool-verify-2026-10-14.md](gabapentin-aud-pool-verify-2026-10-14.md).
 
 ## Question
 
@@ -31,29 +31,28 @@ Each trial contributes one standardized mean difference, negative favouring gaba
 | [NCT00183196](https://clinicaltrials.gov/study/NCT00183196?tab=results) | Anton 2011, added to naltrexone | days to relapse, 69.9 (SE 6.5) vs 59.6 (SE 7.6) | 48/49 | -0.207 |
 | [NCT02252536](https://clinicaltrials.gov/study/NCT02252536?tab=results) | Falk 2019, gabapentin **enacarbil** (sensitivity only) | no heavy drinking days, 24.1% vs 17.3% (41/170 vs 29/168) | 170/168 | -0.232 |
 
-## Result (hand-computed, pending the registry check)
+## Result (job output)
 
 | Pool | k | g | 95% CI | HKSJ 95% CI | I² |
 |---|---|---|---|---|---|
-| All generic-gabapentin trials | 6 | **-0.36** | -0.66 to -0.06 | -0.76 to +0.04 | 28% |
-| Gabapentin alone vs placebo | 5 | -0.42 | -0.81 to -0.04 | -0.97 to +0.12 | 37% |
-| Heavy-drinking outcomes only | 3 | -0.52 | -1.02 to -0.01 | -1.64 to +0.60 | 40% |
-| General AUD samples | 4 | -0.51 | -0.84 to -0.19 | -1.02 to -0.01 | 17% |
-| Samples with another condition (insomnia; HIV with pain) | 2 | +0.04 | -0.43 to +0.51 | not informative at k=2 | 0% |
-| Adding gabapentin enacarbil | 7 | -0.31 | -0.53 to -0.09 | in the job output | 18% |
+| All generic-gabapentin trials | 6 | **-0.360** | -0.659 to -0.062 | -0.757 to +0.037 | 28% |
+| Gabapentin alone vs placebo | 5 | -0.425 | -0.813 to -0.036 | -0.969 to +0.119 | 37% |
+| Heavy-drinking outcomes only | 3 | -0.519 | -1.024 to -0.014 | -1.640 to +0.602 | 40% |
+| General AUD samples | 4 | -0.511 | -0.836 to -0.186 | -1.015 to -0.006 | 17% |
+| Samples with another condition (insomnia; HIV with pain) | 2 | +0.036 | -0.433 to +0.505 | not informative at k=2 | 0% |
+| Adding gabapentin enacarbil | 7 | -0.311 | -0.530 to -0.092 | -0.592 to -0.030 | 18% |
 
-The prediction interval for the 6-trial pool is about -1.05 to +0.33.
+The prediction interval for the 6-trial pool is -1.053 to +0.333. Leaving out any one trial moves the estimate between -0.276 and -0.437; three of the six leave-one-out 95% CIs cross zero narrowly (upper limits +0.007 to +0.025), one for each of the three strongly positive trials.
 
 ## Reading
 
-- **The signal is there, but it is smaller and less certain than in the journals.** On registry results, gabapentin favours less drinking (g about -0.36), but the HKSJ interval, which is more honest with few trials, just crosses zero. The published estimate of -0.64 rests on percent heavy drinking days alone. Here every outcome type is pooled.
-- **It holds in general AUD samples (g about -0.51, four trials) and vanishes in the two trials of people with another condition** (insomnia, and HIV with chronic pain; both small, about 0). The same split appeared in MV2's registry pool for topiramate, where comorbid groups carried the smallest effects.
+- **The signal is there, but it is smaller and less certain than in the journals.** On registry results, gabapentin favours less drinking (g -0.36), but the HKSJ interval, which is more honest with few trials, just crosses zero, and the result leans on three trials (leave-one-out). The published estimate of -0.64 rests on percent heavy drinking days alone. Here every outcome type is pooled.
+- **It holds in general AUD samples (g -0.51, four trials) and vanishes in the two trials of people with another condition** (insomnia, and HIV with chronic pain; both small, about 0). The same split appeared in MV2's registry pool for [topiramate](topiramate-aud-registry-pool-2026-10-14.md). A pre-registered test on naltrexone did **not** show it ([naltrexone finding](naltrexone-aud-registry-pool-2026-10-15.md)), so the split is not a general property of AUD trials.
 - **Gaps in the registry go the other way from the usual worry.** Three small placebo-controlled trials reported as positive in journals have no results on ClinicalTrials.gov: Furieri 2007 (n=60, PMID 18052562), Brower 2008 (n=21, PMID 18540923) and Chompookham 2018 (n=112, PMID 30243130). A registry-only pool leaves out positive evidence here. It is not hiding negative trials.
 - **What a sponsor posts is not always the headline.** Mason 2014 posted only complete-abstinence counts, though its paper's co-primary outcome was no heavy drinking (published 22.5%, 29.6% and 44.7% for placebo, 900 mg and 1,800 mg). Anton 2011 posted days to any relapse over 16 weeks, but its paper reports its benefit on heavy drinking over the 6 weeks gabapentin was given.
 
 ## Limits
 
-- Hand transcription through an API summary; the registry check (`regpool.py --verify`) is pending.
 - Outcomes differ across trials (abstinence, no heavy drinking, % heavy drinking days, days to relapse). Converting odds ratios to SMDs assumes a logistic distribution.
 - Mean ± SE was converted to SD with sqrt(n). If a posted SE comes from a model rather than raw data, the SD can be wrong.
 - Six small-to-mid trials. One trial is an add-on to naltrexone. Durations run from 8 to 16 weeks.
