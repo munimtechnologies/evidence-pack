@@ -1,0 +1,213 @@
+{
+ "rows": [
+  {
+   "pmid": "42811387",
+   "doi": "10.1111/codi.70642",
+   "status": "audited",
+   "publisher": "Wiley",
+   "member": "311",
+   "container": "Colorectal Disease",
+   "tally": {
+    "publisher_dois": 1,
+    "dash": 1,
+    "raw_resolves": 0,
+    "dash_raw_fails": 1,
+    "dash_fixed": 1,
+    "dash_still_fails": 0,
+    "plain_fails": 0,
+    "errors": 0
+   }
+  },
+  {
+   "pmid": "42287032",
+   "doi": "10.1111/jop.70155",
+   "status": "audited",
+   "publisher": "Wiley",
+   "member": "311",
+   "container": "Journal of Oral Pathology &amp; Medicine",
+   "tally": {
+    "publisher_dois": 48,
+    "dash": 20,
+    "raw_resolves": 28,
+    "dash_raw_fails": 20,
+    "dash_fixed": 20,
+    "dash_still_fails": 0,
+    "plain_fails": 0,
+    "errors": 0
+   }
+  },
+  {
+   "pmid": "41645402",
+   "doi": "10.1002/jimd.70153",
+   "status": "audited",
+   "publisher": "Wiley",
+   "member": "311",
+   "container": "Journal of Inherited Metabolic Disease",
+   "tally": {
+    "publisher_dois": 87,
+    "dash": 21,
+    "raw_resolves": 65,
+    "dash_raw_fails": 21,
+    "dash_fixed": 21,
+    "dash_still_fails": 0,
+    "plain_fails": 1,
+    "errors": 0
+   }
+  },
+  {
+   "pmid": "41641734",
+   "doi": "10.1080/07853890.2025.2596547",
+   "status": "audited",
+   "publisher": "Informa UK Limited",
+   "member": "301",
+   "container": "Annals of Medicine",
+   "tally": {
+    "publisher_dois": 78,
+    "dash": 0,
+    "raw_resolves": 64,
+    "dash_raw_fails": 0,
+    "dash_fixed": 0,
+    "dash_still_fails": 0,
+    "plain_fails": 14,
+    "errors": 0
+   }
+  },
+  {
+   "pmid": "41891174",
+   "doi": "10.1096/fj.202504783R",
+   "status": "audited",
+   "publisher": "Wiley",
+   "member": "311",
+   "container": "The FASEB Journal",
+   "tally": {
+    "publisher_dois": 33,
+    "dash": 4,
+    "raw_resolves": 29,
+    "dash_raw_fails": 4,
+    "dash_fixed": 4,
+    "dash_still_fails": 0,
+    "plain_fails": 0,
+    "errors": 0
+   }
+  },
+  {
+   "pmid": "42332835",
+   "doi": "10.1111/wrr.70183",
+   "status": "audited",
+   "publisher": "Wiley",
+   "member": "311",
+   "container": "Wound Repair and Regeneration",
+   "tally": {
+    "publisher_dois": 43,
+    "dash": 1,
+    "raw_resolves": 42,
+    "dash_raw_fails": 1,
+    "dash_fixed": 1,
+    "dash_still_fails": 0,
+    "plain_fails": 0,
+    "errors": 0
+   }
+  },
+  {
+   "pmid": "41804840",
+   "doi": "10.1111/dom.70643",
+   "status": "audited",
+   "publisher": "Wiley",
+   "member": "311",
+   "container": "Diabetes, Obesity and Metabolism",
+   "tally": {
+    "publisher_dois": 25,
+    "dash": 5,
+    "raw_resolves": 20,
+    "dash_raw_fails": 5,
+    "dash_fixed": 5,
+    "dash_still_fails": 0,
+    "plain_fails": 0,
+    "errors": 0
+   }
+  },
+  {
+   "pmid": "42030436",
+   "doi": "10.1002/vms3.70857",
+   "status": "audited",
+   "publisher": "Wiley",
+   "member": "311",
+   "container": "Veterinary Medicine and Science",
+   "tally": {
+    "publisher_dois": 86,
+    "dash": 27,
+    "raw_resolves": 57,
+    "dash_raw_fails": 27,
+    "dash_fixed": 25,
+    "dash_still_fails": 2,
+    "plain_fails": 2,
+    "errors": 0
+   }
+  },
+  {
+   "pmid": "42509016",
+   "doi": "10.1111/eip.70207",
+   "status": "audited",
+   "publisher": "Wiley",
+   "member": "311",
+   "container": "Early Intervention in Psychiatry",
+   "tally": {
+    "publisher_dois": 38,
+    "dash": 6,
+    "raw_resolves": 32,
+    "dash_raw_fails": 6,
+    "dash_fixed": 6,
+    "dash_still_fails": 0,
+    "plain_fails": 0,
+    "errors": 0
+   }
+  },
+  {
+   "pmid": "41656984",
+   "doi": "10.1111/wvn.70108",
+   "status": "audited",
+   "publisher": "Wiley",
+   "member": "311",
+   "container": "Worldviews on Evidence-Based Nursing",
+   "tally": {
+    "publisher_dois": 61,
+    "dash": 16,
+    "raw_resolves": 45,
+    "dash_raw_fails": 16,
+    "dash_fixed": 16,
+    "dash_still_fails": 0,
+    "plain_fails": 0,
+    "errors": 0
+   }
+  },
+  {
+   "pmid": "42572491",
+   "doi": "10.1111/scd.70230",
+   "status": "audited",
+   "publisher": "Wiley",
+   "member": "311",
+   "container": "Special Care in Dentistry",
+   "tally": {
+    "publisher_dois": 82,
+    "dash": 30,
+    "raw_resolves": 52,
+    "dash_raw_fails": 30,
+    "dash_fixed": 30,
+    "dash_still_fails": 0,
+    "plain_fails": 0,
+    "errors": 0
+   }
+  }
+ ],
+ "total": {
+  "publisher_dois": 582,
+  "dash": 131,
+  "raw_resolves": 434,
+  "dash_raw_fails": 131,
+  "dash_fixed": 129,
+  "dash_still_fails": 2,
+  "plain_fails": 17,
+  "errors": 0
+ },
+ "lookups": 696
+}
