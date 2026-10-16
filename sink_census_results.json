@@ -1,0 +1,250 @@
+{
+ "seed": 20261018,
+ "thresholds": {
+  "J_late": 8.0,
+  "J_early": 25.0,
+  "min_jump_count": 50,
+  "T_max": 0.15,
+  "genuine_max": 0.25,
+  "deposit_ratio": 0.3
+ },
+ "H1_rows": [
+  {
+   "id": "W2599766179",
+   "doi": "10.1016/j.physbeh.2017.03.040",
+   "year": 2017,
+   "cited_by": 2102,
+   "field": "Neuroscience",
+   "jump": 38.0,
+   "jump_year": 2020,
+   "jump_count": 570,
+   "flagged": true,
+   "coherence_jump_year": {
+    "share": 0.10052910052910052,
+    "subfield": "Molecular Biology",
+    "n": 567
+   },
+   "sink_screen": true
+  },
+  {
+   "id": "W2983201012",
+   "doi": "10.1038/s41598-019-52748-8",
+   "year": 2019,
+   "cited_by": 1770,
+   "field": "Psychology",
+   "jump": 53.9,
+   "jump_year": 2020,
+   "jump_count": 566,
+   "flagged": true,
+   "coherence_jump_year": {
+    "share": 0.08657243816254417,
+    "subfield": "Molecular Biology",
+    "n": 566
+   },
+   "sink_screen": true
+  }
+ ],
+ "H1": "supported",
+ "random": {
+  "n": 4000,
+  "complete": true,
+  "flagged": 8,
+  "sink_screen": 1,
+  "share": 0.00025,
+  "lo": 4.413136673759807e-05,
+  "hi": 0.0014148674108364198
+ },
+ "H2": "supported",
+ "snowball": {
+  "W2599766179": {
+   "citers_read": 400,
+   "complete": true,
+   "candidates": 91,
+   "flagged": 3,
+   "sink_screen": 1
+  },
+  "W2983201012": {
+   "citers_read": 400,
+   "complete": true,
+   "candidates": 91,
+   "flagged": 5,
+   "sink_screen": 2
+  }
+ },
+ "verification": {
+  "W2599766179": {
+   "target": {
+    "doi": "10.1016/j.physbeh.2017.03.040",
+    "title": "Orexin activation counteracts decreases in nonexercise activity thermogenesis (NEAT) caused by high-fat diet",
+    "family": "Bunney",
+    "volume": "176",
+    "first_page": "139",
+    "crossref_count": 1191
+   },
+   "verdict": {
+    "n_listed": 18,
+    "genuine": 0,
+    "share": 0.0,
+    "verdict": "confirmed",
+    "status": {
+     "found": 9,
+     "no_reference_list": 2,
+     "target_not_in_list": 9
+    },
+    "class": {
+     "other_work": 9
+    },
+    "found_via_doi": 6
+   },
+   "crossref_openalex_ratio": 0.5666032350142721,
+   "mechanism": "crossref_deposits"
+  },
+  "W2983201012": {
+   "target": {
+    "doi": "10.1038/s41598-019-52748-8",
+    "title": "Contrasting Computational Models of Mate Preference Integration Across 45 Countries",
+    "family": "Conroy-Beam",
+    "volume": "9",
+    "first_page": "16885",
+    "crossref_count": 41
+   },
+   "verdict": {
+    "n_listed": 20,
+    "genuine": 0,
+    "share": 0.0,
+    "verdict": "confirmed",
+    "status": {
+     "target_not_in_list": 20
+    },
+    "class": {},
+    "found_via_doi": 0
+   },
+   "crossref_openalex_ratio": 0.023163841807909605,
+   "mechanism": "openalex_matching"
+  },
+  "W4288364210": {
+   "target": {
+    "doi": "10.1136/bmjopen",
+    "title": "",
+    "family": "",
+    "volume": "",
+    "first_page": "",
+    "crossref_count": null
+   },
+   "verdict": {
+    "n_listed": 20,
+    "genuine": 0,
+    "share": 0.0,
+    "verdict": "confirmed",
+    "status": {
+     "target_not_in_list": 20
+    },
+    "class": {},
+    "found_via_doi": 0
+   },
+   "crossref_openalex_ratio": null,
+   "mechanism": "unknown"
+  },
+  "W4300009529": {
+   "target": {
+    "doi": "10.1017/cbo9781107415324.004",
+    "title": "Summary for Policymakers",
+    "family": "",
+    "volume": "",
+    "first_page": "1",
+    "crossref_count": 10600
+   },
+   "verdict": {
+    "n_listed": 15,
+    "genuine": 4,
+    "share": 0.26666666666666666,
+    "verdict": "not_confirmed",
+    "status": {
+     "no_reference_list": 5,
+     "found": 14,
+     "target_not_in_list": 1
+    },
+    "class": {
+     "other_work": 10,
+     "genuine": 4
+    },
+    "found_via_doi": 14
+   },
+   "crossref_openalex_ratio": 0.4441464845386743,
+   "mechanism": "crossref_deposits"
+  },
+  "W2909240409": {
+   "target": {
+    "doi": "10.1038/s41598-018-37186-2",
+    "title": "Occurrence of the potent mutagens 2- nitrobenzanthrone and 3-nitrobenzanthrone in fine airborne particles",
+    "family": "Santos",
+    "volume": "9",
+    "first_page": "1",
+    "crossref_count": 7152
+   },
+   "verdict": {
+    "n_listed": 18,
+    "genuine": 0,
+    "share": 0.0,
+    "verdict": "confirmed",
+    "status": {
+     "found": 20
+    },
+    "class": {
+     "doi_only": 2,
+     "other_work": 18
+    },
+    "found_via_doi": 20
+   },
+   "crossref_openalex_ratio": 0.8420061219684483,
+   "mechanism": "crossref_deposits"
+  },
+  "W2777639606": {
+   "target": {
+    "doi": "10.1038/s41467-017-02088-w",
+    "title": "Structural absorption by barbule microstructures of super black bird of paradise feathers",
+    "family": "McCoy",
+    "volume": "9",
+    "first_page": "1",
+    "crossref_count": 6502
+   },
+   "verdict": {
+    "n_listed": 10,
+    "genuine": 0,
+    "share": 0.0,
+    "verdict": "confirmed",
+    "status": {
+     "found": 20
+    },
+    "class": {
+     "other_work": 10,
+     "doi_only": 10
+    },
+    "found_via_doi": 20
+   },
+   "crossref_openalex_ratio": 0.8766347579884051,
+   "mechanism": "crossref_deposits"
+  }
+ },
+ "H3": "supported",
+ "H3_new_confirmed": [
+  "W2909240409",
+  "W2777639606"
+ ],
+ "H4_mechanism": {
+  "crossref_deposits": 3,
+  "openalex_matching": 1,
+  "unknown": 1
+ },
+ "random_jump_distribution": {
+  "<4": 3835,
+  ">=8": 30,
+  ">=4": 135
+ },
+ "budget": {
+  "openalex_calls": 53,
+  "openalex_cost_usd": 0.0053,
+  "refused_over_cap": 0,
+  "failed": 0
+ }
+}
