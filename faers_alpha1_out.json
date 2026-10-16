@@ -1,0 +1,214 @@
+{
+ "openfda_last_updated": "2026-07-30",
+ "counts": {
+  "TERAZOSIN": {
+   "N": 2503,
+   "FALL": 136,
+   "SYNCOPE": 52,
+   "ORTHOSTATIC HYPOTENSION": 20
+  },
+  "DOXAZOSIN": {
+   "N": 9831,
+   "FALL": 393,
+   "SYNCOPE": 374,
+   "ORTHOSTATIC HYPOTENSION": 173
+  },
+  "ALFUZOSIN": {
+   "N": 1493,
+   "FALL": 69,
+   "SYNCOPE": 31,
+   "ORTHOSTATIC HYPOTENSION": 19
+  },
+  "TAMSULOSIN": {
+   "N": 6472,
+   "FALL": 262,
+   "SYNCOPE": 138,
+   "ORTHOSTATIC HYPOTENSION": 77
+  },
+  "FINASTERIDE": {
+   "N": 15502,
+   "FALL": 777,
+   "SYNCOPE": 258,
+   "ORTHOSTATIC HYPOTENSION": 130
+  },
+  "DUTASTERIDE": {
+   "N": 3059,
+   "FALL": 140,
+   "SYNCOPE": 77,
+   "ORTHOSTATIC HYPOTENSION": 55
+  }
+ },
+ "rows": [
+  {
+   "drug": "TERAZOSIN",
+   "event": "FALL",
+   "reports": 136,
+   "n": 2503,
+   "pct": 5.433479824210947,
+   "ror": 1.361855281107596,
+   "lo": 1.1011550865901898,
+   "hi": 1.6842766557285884
+  },
+  {
+   "drug": "TERAZOSIN",
+   "event": "SYNCOPE",
+   "reports": 52,
+   "n": 2503,
+   "pct": 2.077506991610068,
+   "ror": 0.9737758619670174,
+   "lo": 0.7054696941309742,
+   "hi": 1.344124967008947
+  },
+  {
+   "drug": "TERAZOSIN",
+   "event": "ORTHOSTATIC HYPOTENSION",
+   "reports": 20,
+   "n": 2503,
+   "pct": 0.7990411506192568,
+   "ror": 0.6689645433100931,
+   "lo": 0.40815510915748343,
+   "hi": 1.096430131990365
+  },
+  {
+   "drug": "DOXAZOSIN",
+   "event": "FALL",
+   "reports": 393,
+   "n": 9831,
+   "pct": 3.9975587427525174,
+   "ror": 0.9869675778766688,
+   "lo": 0.8413981051104774,
+   "hi": 1.157721884400769
+  },
+  {
+   "drug": "DOXAZOSIN",
+   "event": "SYNCOPE",
+   "reports": 374,
+   "n": 9831,
+   "pct": 3.80429254399349,
+   "ror": 1.8151695010060795,
+   "lo": 1.489418651380016,
+   "hi": 2.2121653400337347
+  },
+  {
+   "drug": "DOXAZOSIN",
+   "event": "ORTHOSTATIC HYPOTENSION",
+   "reports": 173,
+   "n": 9831,
+   "pct": 1.7597395992269351,
+   "ror": 1.487677263717852,
+   "lo": 1.1352522031823686,
+   "hi": 1.9495083425330344
+  },
+  {
+   "drug": "ALFUZOSIN",
+   "event": "FALL",
+   "reports": 69,
+   "n": 1493,
+   "pct": 4.621567314132619,
+   "ror": 1.148495797238185,
+   "lo": 0.8755174284254004,
+   "hi": 1.5065863379168187
+  },
+  {
+   "drug": "ALFUZOSIN",
+   "event": "SYNCOPE",
+   "reports": 31,
+   "n": 1493,
+   "pct": 2.0763563295378433,
+   "ror": 0.9732250837645473,
+   "lo": 0.656499612684245,
+   "hi": 1.4427534234114878
+  },
+  {
+   "drug": "ALFUZOSIN",
+   "event": "ORTHOSTATIC HYPOTENSION",
+   "reports": 19,
+   "n": 1493,
+   "pct": 1.2726054922973877,
+   "ror": 1.0705474986343373,
+   "lo": 0.6459136319541313,
+   "hi": 1.7743424045176728
+  },
+  {
+   "drug": "TAMSULOSIN",
+   "event": "FALL",
+   "reports": 262,
+   "n": 6472,
+   "pct": 4.048207663782447
+  },
+  {
+   "drug": "TAMSULOSIN",
+   "event": "SYNCOPE",
+   "reports": 138,
+   "n": 6472,
+   "pct": 2.1322620519159456
+  },
+  {
+   "drug": "TAMSULOSIN",
+   "event": "ORTHOSTATIC HYPOTENSION",
+   "reports": 77,
+   "n": 6472,
+   "pct": 1.1897404202719406
+  },
+  {
+   "drug": "FINASTERIDE",
+   "event": "FALL",
+   "reports": 777,
+   "n": 15502,
+   "pct": 5.012256483034447,
+   "ror": 1.2507082777122565,
+   "lo": 1.083915390878188,
+   "hi": 1.443167251892776
+  },
+  {
+   "drug": "FINASTERIDE",
+   "event": "SYNCOPE",
+   "reports": 258,
+   "n": 15502,
+   "pct": 1.6643013804670366,
+   "ror": 0.7768188196639021,
+   "lo": 0.6304502606228338,
+   "hi": 0.9571690524607933
+  },
+  {
+   "drug": "FINASTERIDE",
+   "event": "ORTHOSTATIC HYPOTENSION",
+   "reports": 130,
+   "n": 15502,
+   "pct": 0.8386014707779641,
+   "ror": 0.7023649002571719,
+   "lo": 0.5290559007196368,
+   "hi": 0.9324467460664252
+  },
+  {
+   "drug": "DUTASTERIDE",
+   "event": "FALL",
+   "reports": 140,
+   "n": 3059,
+   "pct": 4.576659038901602,
+   "ror": 1.1368004832775003,
+   "lo": 0.9216102334133354,
+   "hi": 1.4022363163152556
+  },
+  {
+   "drug": "DUTASTERIDE",
+   "event": "SYNCOPE",
+   "reports": 77,
+   "n": 3059,
+   "pct": 2.517162471395881,
+   "ror": 1.1851738450023817,
+   "lo": 0.8937880229275315,
+   "hi": 1.5715550072789661
+  },
+  {
+   "drug": "DUTASTERIDE",
+   "event": "ORTHOSTATIC HYPOTENSION",
+   "reports": 55,
+   "n": 3059,
+   "pct": 1.7979731938542007,
+   "ror": 1.5205915921628306,
+   "lo": 1.072896637620642,
+   "hi": 2.1550992976211063
+  }
+ ]
+}
