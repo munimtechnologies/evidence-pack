@@ -98,6 +98,21 @@ class Helpers(unittest.TestCase):
         self.assertIsNone(ca.scale_bounds("Perceived Satiety (Area Under the Curve)", "score on a scale",
                                           "Rated on a 0-100 mm visual analogue scale."))
 
+    def test_average_range_is_not_a_scale(self):
+        # v0.6: NCT00085202 as posted; 85-115 is where average scores fall, not the limits
+        self.assertIsNone(ca.scale_bounds("Processing Speed for Two Risk Group at Enrollment", "score on a scale",
+                                          "This score measure of Processing Speed based on Visual Matching and "
+                                          "Decision Speed tests. Mean=100, SD=15, Average Range 85-115. "
+                                          "Higher is better."))
+
+    def test_study_clustered(self):
+        a = {"nonInferiorityComment": "Hierarchical linear model accounting for randomization of communities "
+                                      "and clustering of children within communities"}
+        self.assertTrue(ca.study_clustered([{"analyses": [a]}]))
+        self.assertFalse(ca.study_clustered([{"analyses": [{"statisticalMethod": "ANCOVA"}]}]))
+        self.assertFalse(ca.study_clustered([{"analyses": [{"groupDescription": "cluster headache attacks"}]}]))
+        self.assertFalse(ca.study_clustered([{"description": "no analyses posted"}]))
+
     def test_sd_max(self):
         self.assertAlmostEqual(ca.sd_max(50, 0, 100, 2), 70.7107, places=3)
         self.assertAlmostEqual(ca.sd_max(50, 0, 100, None), 50.0)
@@ -233,6 +248,25 @@ class Checks(unittest.TestCase):
                [("OG000", 50, "40.0", "30.0", None, None)])
         self.assertEqual(ca.check_measure(m), [])
 
+    def test_se_implied_skips_bounds_the_means_do_not_fit(self):
+        # v0.6: NCT03674892 as posted: total-score means 59.6 and 53.31 under a per-item "0-10"
+        m = om("Quality of Life as Measured Daily With OPAS at 45 Days", "units on a scale", "MEAN",
+               "Standard Error", [("OG000", 12, "59.6", "8.91", None, None), ("OG001", 6, "53.31", "26.01", None, None)],
+               desc="Scores range from 0 to 10.")
+        stats = ca.Counter()
+        self.assertEqual(ca.check_measure(m, stats=stats), [])
+        self.assertEqual(stats["measures_se_bounds_misfit"], 1)
+
+    def test_cluster_demotes_se_implied(self):
+        # v0.6: NCT01881373 as posted: community-randomised, n 2859, SE 0.35 on a 1-9 score
+        m = om("Sleep Disturbance Score", "units on a scale", "MEAN", "Standard Error",
+               [("OG000", 2859, "-0.4", "0.35", None, None), ("OG001", 2786, "0.3", "0.19", None, None)],
+               desc="Scores range from 1 to 9.", otype="SECONDARY")
+        self.assertEqual([(f["check"], f["tier"]) for f in ca.check_measure(m)],
+                         [("se_implies_sd_above_width", "se_implied")] * 2)
+        self.assertEqual([(f["check"], f["tier"]) for f in ca.check_measure(m, clustered=True)],
+                         [("se_implied_cluster", "suspect")] * 2)
+
 
 class EndToEnd(unittest.TestCase):
     def test_run_from_jsonl(self):
@@ -257,10 +291,30 @@ class EndToEnd(unittest.TestCase):
             self.assertEqual(s["per_check"]["sd_above_max"]["studies"], 1)
             self.assertEqual(s["by_sponsor_class"]["OTHER"]["with_impossible"], 1)
             self.assertEqual(s["by_results_year"]["2019"]["with_impossible"], 1)
+            self.assertEqual(s["studies_by_tier"], {"impossible": ["NCT00000002"]})
             self.assertTrue(os.path.exists(os.path.join(out, "raw", "NCT00000002.json")))
             self.assertFalse(os.path.exists(os.path.join(out, "raw", "NCT00000003.json")))
             with open(os.path.join(out, "flags.csv"), encoding="utf-8") as f:
                 self.assertEqual(len(f.read().strip().splitlines()), 2)
+
+    def test_clustered_study_end_to_end(self):
+        m = om("Sleep Disturbance Score", "units on a scale", "MEAN", "Standard Error",
+               [("OG000", 2859, "-0.4", "0.35", None, None)], desc="Scores range from 1 to 9.")
+        m["analyses"] = [{"nonInferiorityComment": "Hierarchical model accounting for clustering of children"}]
+        study = {"protocolSection": {"identificationModule": {"nctId": "NCT00000004"}},
+                 "resultsSection": {"outcomeMeasuresModule": {"outcomeMeasures": [m]}}}
+        with tempfile.TemporaryDirectory() as d:
+            src = os.path.join(d, "in.jsonl")
+            with open(src, "w", encoding="utf-8") as f:
+                f.write(json.dumps(study) + "\n")
+            out = os.path.join(d, "out")
+            self.assertEqual(ca.main(["--input", src, "--out-dir", out]), 0)
+            with open(os.path.join(out, "summary.json"), encoding="utf-8") as f:
+                s = json.load(f)
+            self.assertEqual(s["stats"]["studies_clustered"], 1)
+            self.assertIn("se_implied_cluster", s["per_check"])
+            self.assertNotIn("se_implies_sd_above_width", s["per_check"])
+            self.assertEqual(s["studies_by_tier"], {})
 
 
 if __name__ == "__main__":

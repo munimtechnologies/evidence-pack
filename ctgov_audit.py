@@ -38,6 +38,9 @@ Heuristics, tier "suspect", never called impossible:
                            score: its description or a class/category title
                            says "change" or "differ", or another mean in the
                            same measure is below the floor
+  se_implied_cluster       se_implies_sd_above_width in a study whose posted
+                           analyses mention clustering: a model SE that allows
+                           for clusters can be far larger than SD/sqrt(n)
 
 v0.3 (2026-10-15): the percent-of-days/time bound now needs the time word in
 the unit, not the title ("Y-balance at Week 12", unit "% of limb length", was
@@ -52,6 +55,13 @@ NCT04623086 descriptions "Change ..."; NCT03477838 a negative sibling mean),
 a medication possession ratio that can pass 100% (NCT06033521) and a per-day
 rate (NCT01687400). Change-score measures now go to sd_above_max_if_level;
 rates, possession ratios and areas under the curve get no bounds.
+v0.6 (2026-10-16): hand triage of the 23 v0.5 se_implied studies found 4 that
+are not SDs typed as SEs: a community-randomised trial whose SEs come from a
+model with clustering (NCT01881373, now se_implied_cluster), two per-item
+ranges with total-score means far above them (NCT03674892 means 53-60 on
+"0-10", NCT02405962 means 15-20 on "1-7"; the SE check now skips bounds the
+measure's own means do not fit), and a normed "Average Range 85-115"
+(NCT00085202) read as the scale limits ("average range" is no longer a scale).
 
 Stdlib only. Reads the public ClinicalTrials.gov API v2.
 """
@@ -77,7 +87,7 @@ FIELDS_FULL = ",".join([
     "resultsSection.outcomeMeasuresModule",
 ])
 FIELDS_MIN = "protocolSection.identificationModule.nctId,resultsSection.outcomeMeasuresModule"
-UA = "MV2-Munim-ctgov-audit/0.5 (mv2@munimtech.com)"
+UA = "MV2-Munim-ctgov-audit/0.6 (mv2@munimtech.com)"
 
 CHANGE_WORDS = re.compile(
     r"chang|differ|reduc|increas|decreas|improv|relative|ratio|baseline|predict|normal|"
@@ -90,13 +100,15 @@ PROPORTION = re.compile(r"\bproportion\b", re.I)
 UNBOUNDED_TU = re.compile(r"\brates?\b|area under|\bauc\b|possession ratio", re.I)
 UNBOUNDED_DESC = re.compile(r"(?i:possession ratio)|\bMPR\b")
 CHANGE_TEXT = re.compile(r"chang|differ", re.I)
+# v0.6: an analysis that allows for clusters (community, school or practice randomisation)
+CLUSTER = re.compile(r"\bcluster(?:s|ed|ing)?\b(?!\s+headache)", re.I)
 
 SCALE_UNIT = re.compile(r"score|scale|\bpoints?\b", re.I)
 SCALE_TITLE_EXCLUDE = re.compile(CHANGE_WORDS.pattern + r"|t-score|z-score|percentile|\blog|area under|\bauc\b",
                                  re.I)
 SCALE_DESC_EXCLUDE = re.compile(
     r"chang|differ|from baseline|\bitems?\b|\beach\b|subscale|sub-scale|domain|t-score|z-score|"
-    r"percentile|standardi[sz]ed|norm|logit|area under|\bauc\b", re.I)
+    r"percentile|standardi[sz]ed|norm|logit|area under|\bauc\b|average range", re.I)
 NUM = r"([-+]?\d+(?:\.\d+)?)"
 SEP = r"\s*(?:\([^()]{0,60}\)\s*)?(?:to|-|–|—)\s*"
 LIMIT_WORD = r"\s+(?:possible\s+)?(?:total\s+)?(?:score|value)?\s*(?:is|of|=|:)?\s*"
@@ -254,7 +266,33 @@ def looks_like_change(om, rows, bounds):
     return False
 
 
-def check_measure(om, nct="", stats=None):
+def means_fit(rows, bounds):
+    """True when every posted mean could be a level or a change score inside these bounds.
+
+    A mean above the ceiling, or below the floor by more than the width, says the
+    bounds belong to something else (one item of a total score, say).
+    """
+    blo, bhi, _ = bounds
+    for _, _, _, m, _ in rows:
+        v = num(m.get("value"))
+        if v is None:
+            continue
+        tv = half_unit(m.get("value"))
+        if v > bhi + tv or v < blo - (bhi - blo) - tv:
+            return False
+    return True
+
+
+def study_clustered(oms):
+    """True when any posted analysis of the study mentions clusters or clustering."""
+    for om in oms or []:
+        for a in om.get("analyses") or []:
+            if CLUSTER.search(json.dumps(a)):
+                return True
+    return False
+
+
+def check_measure(om, nct="", stats=None, clustered=False):
     """Flags for one outcome measure."""
     stats = stats if stats is not None else Counter()
     flags = []
@@ -268,6 +306,9 @@ def check_measure(om, nct="", stats=None):
     scale = None if pct else scale_bounds(title, unit, desc)
     rows = list(measurements(om))
     changey = looks_like_change(om, rows, pct) if pct else False
+    se_bounds = [b for b in (pct, scale) if b and means_fit(rows, b)]
+    if dk == "SE" and len(se_bounds) < len([b for b in (pct, scale) if b]):
+        stats["measures_se_bounds_misfit"] += 1
     for gid, ctitle, cattitle, m, n in rows:
         v_s = m.get("value")
         v = num(v_s)
@@ -351,16 +392,18 @@ def check_measure(om, nct="", stats=None):
                 flag("sd_scale_suspect", "suspect")
 
         if pk == "MEAN" and dk == "SE" and sp is not None and sp >= 0 and n is not None and n >= 2:
-            for b in (pct, scale):
-                if not b:
-                    continue
+            for b in se_bounds:
                 blo, bhi, _ = b
                 stats["cells_se_implied"] += 1
                 wcap = (bhi - blo) * math.sqrt(n / (n - 1))
                 implied = max(0.0, sp - half_unit(sp_s)) * math.sqrt(n)
                 if implied > wcap * (1 + 1e-9):
-                    flag("se_implies_sd_above_width", "se_implied", limit=wcap, ratio=implied / wcap,
-                         blo=blo, bhi=bhi)
+                    if clustered:
+                        flag("se_implied_cluster", "suspect", limit=wcap, ratio=implied / wcap,
+                             blo=blo, bhi=bhi)
+                    else:
+                        flag("se_implies_sd_above_width", "se_implied", limit=wcap, ratio=implied / wcap,
+                             blo=blo, bhi=bhi)
     return flags
 
 
@@ -451,12 +494,15 @@ def run(studies, out_dir, meta, max_raw=5000):
         stats["studies"] += 1
         by_class[sclass or "UNKNOWN"]["studies"] += 1
         by_year[year or "unknown"]["studies"] += 1
+        clustered = study_clustered(oms)
+        if clustered:
+            stats["studies_clustered"] += 1
         sflags = []
         for om in oms:
             stats["measures"] += 1
             stats["param:" + (param_kind(om.get("paramType")) or "none")] += 1
             stats["disp:" + (disp_kind(om.get("dispersionType")) or "none")] += 1
-            for f in check_measure(om, nct, stats):
+            for f in check_measure(om, nct, stats, clustered):
                 f.update({"sponsor_class": sclass, "sponsor": sname, "results_year": year})
                 sflags.append(f)
         tiers = {f["tier"] for f in sflags}
@@ -488,12 +534,16 @@ def run(studies, out_dir, meta, max_raw=5000):
             "studies": len({r["nct"] for r in rows}),
             "primary_outcome_studies": len({r["nct"] for r in rows if r["outcome_type"] == "PRIMARY"}),
         }
+    tier_studies = {}
+    for f in flags_all:
+        tier_studies.setdefault(f["tier"], set()).add(f["nct"])
     summary = {
         "run_at": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
         "api": API, "meta": meta, "stats": dict(stats), "per_check": per_check,
         "by_sponsor_class": {k: dict(v) for k, v in sorted(by_class.items())},
         "by_results_year": {k: dict(v) for k, v in sorted(by_year.items())},
         "raw_saved": raw_saved,
+        "studies_by_tier": {k: sorted(v) for k, v in sorted(tier_studies.items()) if k != "suspect"},
     }
     with open(os.path.join(out_dir, "summary.json"), "w", encoding="utf-8") as f:
         json.dump(summary, f, indent=1)
