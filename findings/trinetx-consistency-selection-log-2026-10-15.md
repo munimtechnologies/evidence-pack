@@ -1,0 +1,73 @@
+# Selection log, pre-registration 6 (TriNetX consistency audit)
+
+- **Frame fetched:** 2026-10-15, about 20:00Z. PubMed esearch query `TriNetX[tiab] AND hasabstract AND 2025/01/01:2026/09/30[edat]`, sort=pub_date.
+- **N = 3252.** Picks are at retstart = floor(k*3252/40), k = 0..39.
+- **What each fetch returned:** retmax=6, so positions retstart .. retstart+5. Position 1 is the pick. Positions 2-6 are the fallbacks for ineligible picks, in order.
+- **Note:** sort=pub_date doesn't order PMIDs monotonically (issue dates can be in the future, and ahead-of-print records are mixed in). That doesn't matter for the rule. The frame order is whatever PubMed returned at fetch time, and it is recorded here.
+
+| k | retstart | ids (pick first, then fallbacks) |
+|---|---|---|
+| 0 | 0 | 42741232 42733628 42774911 42753228 42749086 42693756 |
+| 1 | 81 | 42618366 42613293 42606848 42600541 42569271 42543031 |
+| 2 | 162 | 42803157 42803137 42802242 42801450 42801268 42803248 |
+| 3 | 243 | 42727208 42725864 42725550 42725541 42723394 42722111 |
+| 4 | 325 | 42595621 42585990 42570678 42562070 42551692 42546862 |
+| 5 | 406 | 42029363 42012487 41992281 41978948 41974096 41944257 |
+| 6 | 487 | 42651428 42629667 42629173 42627340 42674906 42645931 |
+| 7 | 569 | 42630726 42568168 42567692 42566276 42565679 42565362 |
+| 8 | 650 | 42314528 42303769 42291822 42287021 42266062 42259622 |
+| 9 | 731 | 41235452 40905294 40534435 40521729 40104870 42601938 |
+| 10 | 813 | 42468551 42512659 42500160 42483483 42462980 42458277 |
+| 11 | 894 | 42459797 42446878 42439406 42436945 42434162 42434159 |
+| 12 | 975 | 41771185 41759654 41734912 41721735 41720406 41707078 |
+| 13 | 1056 | 42332278 42331749 42329513 42329334 42324957 42488266 |
+| 14 | 1138 | 42248346 42243216 42243199 42240840 42240558 42263223 |
+| 15 | 1219 | 41935537 41928399 41928374 41921410 41914889 41905181 |
+| 16 | 1300 | 42228419 42221733 42212202 42189455 42186204 42359223 |
+| 17 | 1382 | 42101745 42095766 42255743 42106205 42093461 42003114 |
+| 18 | 1463 | 41796764 41793207 41778321 41778218 41771218 41766530 |
+| 19 | 1544 | 42017959 42015881 42095226 42012357 42012269 42170140 |
+| 20 | 1626 | 41884702 41874568 41853745 41853136 41841375 41838092 |
+| 21 | 1707 | 41988474 41988188 41918007 41916687 41912884 42080079 |
+| 22 | 1788 | 41725631 41695033 41687959 41660544 41658267 41657744 |
+| 23 | 1869 | 41715190 40971953 40908532 41798844 41712084 41727701 |
+| 24 | 1951 | 41389474 41387113 41387104 41385827 41370984 41370960 |
+| 25 | 2032 | 41700259 41598653 41535776 41253240 41101476 41005597 |
+| 26 | 2113 | 41448390 41446932 41443505 41439635 41428615 41404336 |
+| 27 | 2195 | 40353424 40293442 40197432 40139174 41607594 41476195 |
+| 28 | 2276 | 41344335 41341121 41329146 41329142 41323660 41323510 |
+| 29 | 2357 | 41316272 41282734 41305952 41296288 41377557 41321670 |
+| 30 | 2439 | 40996400 40976497 40975177 40967151 40967055 40954421 |
+| 31 | 2520 | 41293358 41146750 41209548 41208989 41311521 41195183 |
+| 32 | 2601 | 40627862 40614622 40581723 40560644 40534734 40530323 |
+| 33 | 2682 | 40794554 40778514 40778507 40752357 40752174 40743900 |
+| 34 | 2764 | 40759247 39998428 40918816 40807168 40799756 40728176 |
+| 35 | 2845 | 40373478 40821303 40809604 40653495 40725649 40659386 |
+| 36 | 2926 | 40648883 40647610 40238828 40666359 40698228 40542146 |
+| 37 | 3008 | 40390149 40379973 40429494 40380564 40380548 39921099 |
+| 38 | 3089 | 40223754 40195589 40186701 40167885 40167075 40167066 |
+| 39 | 3170 | 39984939 40027196 39965942 39921523 40092028 40012715 |
+
+## Eligibility and extraction steps
+Abstracts came from efetch rettype=abstract, four per fetch. Ineligible picks moved on to the next id in the row.
+
+| k | ineligible ids read (reason) | used |
+|---|---|---|
+| 0 | 42741232 (ORs named, no numbers); 42733628 (counts and P only); 42774911 (HRs without CI); 42753228 (attributable risks only) | 42749086 |
+| 5 | 42029363 (HRs with P only); 42012487 (intervals not labelled 95%); 41992281 (HRs without CI); 41978948 (TriNetX not named, no ratio); 41974096 (RR/HR with P only) | 41944257 |
+| 8 | 42314528 (no ratio) | 42303769 |
+| 9 | 41235452 (RR/HR with P only) | 40905294 |
+| 14 | 42248346 (ORs with P only) | 42243216 |
+| 19 | 42017959 (no ratio); 42015881 (RRs named, no values) | 42095226 |
+| 21 | 41988474 (HRs with P only); 41988188 (RR/HR with P only) | 41918007 |
+| 25 | 41700259 (scoping review, not an original analysis) | 41598653 |
+| 29 | 41316272 (descriptive, single arm); 41282734 (percentages and P only) | 41305952 |
+| 32 | 40627862 (P only) | 40614622 |
+| 36 | 40648883 (no ratio); 40647610 (intervals not labelled 95%); 40238828 (HRs without CI); 40666359 (time ratio only); 40698228 (no ratio); 40542146 (no ratio) | **dropped** (all 6 ineligible) |
+| 39 | 39984939 (HRs with P only); 40027196 (P only) | 39921523 |
+
+- **Every other k used its first pick.**
+- **Result:** 39 papers and 102 estimates, from 67 abstracts read.
+- **Ineligible:** 28 of 67. In 11 of the 67 (16%), a hazard, risk or odds ratio is printed with only a P value, with no CI. This count is exploratory, not pre-registered.
+- **Verification:** both centre-flagged rows (k9 Peregoff, k14 Yong) were re-fetched with a different prompt asking for the Results text word for word. Both matched the first copy exactly: "RR: 0.909; 95% CI: 0.834-0.980; P =0.0123" and "HR = 1.402, 95% C.I.= 0.599-28.60".
+- **Deviation (implementation detail):** for odds ratios with a printed 2x2, the pre-registered "crude" check runs as rwe_recheck's Woolf "table" check. That check is the correct crude test for an OR. The "crude" function computes a risk ratio. Only k39 is affected.
