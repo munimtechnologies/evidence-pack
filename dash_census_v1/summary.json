@@ -1,0 +1,413 @@
+{
+ "draws": [
+  {
+   "member": "311",
+   "draws": 3,
+   "failed": 0,
+   "articles": 300
+  },
+  {
+   "member": "78",
+   "draws": 1,
+   "failed": 0,
+   "articles": 100
+  },
+  {
+   "member": "297",
+   "draws": 1,
+   "failed": 0,
+   "articles": 100
+  },
+  {
+   "member": "301",
+   "draws": 1,
+   "failed": 0,
+   "articles": 100
+  },
+  {
+   "member": "179",
+   "draws": 1,
+   "failed": 0,
+   "articles": 100
+  },
+  {
+   "member": "286",
+   "draws": 1,
+   "failed": 0,
+   "articles": 100
+  },
+  {
+   "member": "276",
+   "draws": 1,
+   "failed": 0,
+   "articles": 100
+  },
+  {
+   "member": "1968",
+   "draws": 1,
+   "failed": 0,
+   "articles": 100
+  },
+  {
+   "member": "1965",
+   "draws": 1,
+   "failed": 0,
+   "articles": 100
+  },
+  {
+   "member": "239",
+   "draws": 1,
+   "failed": 0,
+   "articles": 100
+  },
+  {
+   "member": "56",
+   "draws": 1,
+   "failed": 0,
+   "articles": 100
+  }
+ ],
+ "members": {
+  "311": {
+   "publisher": "Wiley",
+   "articles": 300,
+   "with_publisher_dois": 279,
+   "with_hyphen_dois": 263,
+   "affected": 134,
+   "share": 0.5095057034220533,
+   "lo": 0.44938780714594645,
+   "hi": 0.5693499108269726,
+   "mixed": 58,
+   "hyphen_dois": 2886,
+   "dash_dois": 1282,
+   "doi_share": 0.4442134442134442,
+   "dash_codes": [
+    "U+2010"
+   ]
+  },
+  "78": {
+   "publisher": "Elsevier BV",
+   "articles": 100,
+   "with_publisher_dois": 0,
+   "with_hyphen_dois": 0,
+   "affected": 0,
+   "share": null,
+   "lo": null,
+   "hi": null,
+   "mixed": 0,
+   "hyphen_dois": 0,
+   "dash_dois": 0,
+   "doi_share": null,
+   "dash_codes": []
+  },
+  "297": {
+   "publisher": "Springer Science and Business Media LLC",
+   "articles": 100,
+   "with_publisher_dois": 96,
+   "with_hyphen_dois": 94,
+   "affected": 0,
+   "share": 0.0,
+   "lo": 0.0,
+   "hi": 0.03926207688661476,
+   "mixed": 0,
+   "hyphen_dois": 1041,
+   "dash_dois": 0,
+   "doi_share": 0.0,
+   "dash_codes": []
+  },
+  "301": {
+   "publisher": "Informa UK Limited",
+   "articles": 100,
+   "with_publisher_dois": 98,
+   "with_hyphen_dois": 95,
+   "affected": 0,
+   "share": 0.0,
+   "lo": 0.0,
+   "hi": 0.038864854128766085,
+   "mixed": 0,
+   "hyphen_dois": 1194,
+   "dash_dois": 0,
+   "doi_share": 0.0,
+   "dash_codes": []
+  },
+  "179": {
+   "publisher": "SAGE Publications",
+   "articles": 100,
+   "with_publisher_dois": 98,
+   "with_hyphen_dois": 92,
+   "affected": 0,
+   "share": 0.0,
+   "lo": 0.0,
+   "hi": 0.04008138989259148,
+   "mixed": 0,
+   "hyphen_dois": 733,
+   "dash_dois": 0,
+   "doi_share": 0.0,
+   "dash_codes": []
+  },
+  "286": {
+   "publisher": "Oxford University Press (OUP)",
+   "articles": 100,
+   "with_publisher_dois": 79,
+   "with_hyphen_dois": 65,
+   "affected": 0,
+   "share": 0.0,
+   "lo": 0.0,
+   "hi": 0.05580153215404492,
+   "mixed": 0,
+   "hyphen_dois": 919,
+   "dash_dois": 0,
+   "doi_share": 0.0,
+   "dash_codes": []
+  },
+  "276": {
+   "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+   "articles": 100,
+   "with_publisher_dois": 10,
+   "with_hyphen_dois": 9,
+   "affected": 0,
+   "share": 0.0,
+   "lo": 0.0,
+   "hi": 0.299145051727044,
+   "mixed": 0,
+   "hyphen_dois": 61,
+   "dash_dois": 0,
+   "doi_share": 0.0,
+   "dash_codes": []
+  },
+  "1968": {
+   "publisher": "MDPI AG",
+   "articles": 100,
+   "with_publisher_dois": 0,
+   "with_hyphen_dois": 0,
+   "affected": 0,
+   "share": null,
+   "lo": null,
+   "hi": null,
+   "mixed": 0,
+   "hyphen_dois": 0,
+   "dash_dois": 0,
+   "doi_share": null,
+   "dash_codes": []
+  },
+  "1965": {
+   "publisher": "Frontiers Media SA",
+   "articles": 100,
+   "with_publisher_dois": 99,
+   "with_hyphen_dois": 96,
+   "affected": 0,
+   "share": 0.0,
+   "lo": 0.0,
+   "hi": 0.03847558844130279,
+   "mixed": 0,
+   "hyphen_dois": 1088,
+   "dash_dois": 0,
+   "doi_share": 0.0,
+   "dash_codes": []
+  },
+  "239": {
+   "publisher": "BMJ",
+   "articles": 100,
+   "with_publisher_dois": 92,
+   "with_hyphen_dois": 79,
+   "affected": 0,
+   "share": 0.0,
+   "lo": 0.0,
+   "hi": 0.046371212351540646,
+   "mixed": 0,
+   "hyphen_dois": 309,
+   "dash_dois": 0,
+   "doi_share": 0.0,
+   "dash_codes": []
+  },
+  "56": {
+   "publisher": "Cambridge University Press (CUP)",
+   "articles": 100,
+   "with_publisher_dois": 98,
+   "with_hyphen_dois": 89,
+   "affected": 0,
+   "share": 0.0,
+   "lo": 0.0,
+   "hi": 0.04137654586198997,
+   "mixed": 0,
+   "hyphen_dois": 846,
+   "dash_dois": 0,
+   "doi_share": 0.0,
+   "dash_codes": []
+  }
+ },
+ "verdicts": {
+  "H1": {
+   "k": 134,
+   "n": 263,
+   "share": 0.5095057034220533,
+   "ci": [
+    0.44938780714594645,
+    0.5693499108269726
+   ],
+   "verdict": "supported"
+  },
+  "H2": {
+   "members": {
+    "78": {
+     "publisher": "Elsevier BV",
+     "k": 0,
+     "n": 0,
+     "share": null,
+     "ci": [
+      null,
+      null
+     ],
+     "verdict": "no data"
+    },
+    "297": {
+     "publisher": "Springer Science and Business Media LLC",
+     "k": 0,
+     "n": 94,
+     "share": 0.0,
+     "ci": [
+      0.0,
+      0.03926207688661476
+     ],
+     "verdict": "holds"
+    },
+    "301": {
+     "publisher": "Informa UK Limited",
+     "k": 0,
+     "n": 95,
+     "share": 0.0,
+     "ci": [
+      0.0,
+      0.038864854128766085
+     ],
+     "verdict": "holds"
+    },
+    "179": {
+     "publisher": "SAGE Publications",
+     "k": 0,
+     "n": 92,
+     "share": 0.0,
+     "ci": [
+      0.0,
+      0.04008138989259148
+     ],
+     "verdict": "holds"
+    },
+    "286": {
+     "publisher": "Oxford University Press (OUP)",
+     "k": 0,
+     "n": 65,
+     "share": 0.0,
+     "ci": [
+      0.0,
+      0.05580153215404492
+     ],
+     "verdict": "holds"
+    },
+    "276": {
+     "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+     "k": 0,
+     "n": 9,
+     "share": 0.0,
+     "ci": [
+      0.0,
+      0.299145051727044
+     ],
+     "verdict": "holds"
+    },
+    "1968": {
+     "publisher": "MDPI AG",
+     "k": 0,
+     "n": 0,
+     "share": null,
+     "ci": [
+      null,
+      null
+     ],
+     "verdict": "no data"
+    },
+    "1965": {
+     "publisher": "Frontiers Media SA",
+     "k": 0,
+     "n": 96,
+     "share": 0.0,
+     "ci": [
+      0.0,
+      0.03847558844130279
+     ],
+     "verdict": "holds"
+    },
+    "239": {
+     "publisher": "BMJ",
+     "k": 0,
+     "n": 79,
+     "share": 0.0,
+     "ci": [
+      0.0,
+      0.046371212351540646
+     ],
+     "verdict": "holds"
+    },
+    "56": {
+     "publisher": "Cambridge University Press (CUP)",
+     "k": 0,
+     "n": 89,
+     "share": 0.0,
+     "ci": [
+      0.0,
+      0.04137654586198997
+     ],
+     "verdict": "holds"
+    }
+   },
+   "holds": 8,
+   "fails": 0
+  },
+  "H3": {
+   "dash_dois": 1282,
+   "hyphen_dois": 2886,
+   "share": 0.4442134442134442,
+   "verdict": "supported"
+  },
+  "H4": {
+   "dash_n": 150,
+   "dash_raw_resolves": 0.0,
+   "dash_normalised_resolves": 0.9866666666666667,
+   "control_n": 150,
+   "control_resolves": 0.9933333333333333,
+   "errors": 0,
+   "verdict": "supported"
+  },
+  "H5": {
+   "articles": 73,
+   "dash_present": [
+    1,
+    134
+   ],
+   "dash_share": 0.007462686567164179,
+   "control_present": [
+    212,
+    214
+   ],
+   "control_share": 0.9906542056074766,
+   "errors": 0,
+   "verdict": "supported"
+  },
+  "H6": {
+   "articles": 14,
+   "dash_present": [
+    0,
+    32
+   ],
+   "dash_share": 0.0,
+   "control_present": [
+    39,
+    42
+   ],
+   "control_share": 0.9285714285714286,
+   "errors": 0,
+   "verdict": "not testable"
+  }
+ },
+ "lookups": 450
+}
