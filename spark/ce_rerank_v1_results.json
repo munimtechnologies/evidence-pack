@@ -1,0 +1,90 @@
+{
+ "model": "ncbi/MedCPT-Cross-Encoder",
+ "pool": 50,
+ "rrf_k": 60,
+ "summary": {
+  "devset_landmark_v1.jsonl": {
+   "chosen": {
+    "n": 72,
+    "mrr5": 0.838,
+    "hit1": 0.8056,
+    "hit5": 0.875
+   },
+   "ce": {
+    "n": 72,
+    "mrr5": 0.7042,
+    "hit1": 0.6111,
+    "hit5": 0.8333
+   },
+   "rrf": {
+    "n": 72,
+    "mrr5": 0.8049,
+    "hit1": 0.7361,
+    "hit5": 0.9167
+   },
+   "ce|cue->rrf": {
+    "n": 72,
+    "mrr5": 0.7863,
+    "hit1": 0.6806,
+    "hit5": 0.9306
+   },
+   "in_pool": 0.9722
+  },
+  "devset_ordinary_v1.jsonl": {
+   "chosen": {
+    "n": 26,
+    "mrr5": 0.809,
+    "hit1": 0.7692,
+    "hit5": 0.8846
+   },
+   "ce": {
+    "n": 26,
+    "mrr5": 0.9615,
+    "hit1": 0.9615,
+    "hit5": 0.9615
+   },
+   "rrf": {
+    "n": 26,
+    "mrr5": 0.8731,
+    "hit1": 0.8462,
+    "hit5": 0.9231
+   },
+   "ce|cue->rrf": {
+    "n": 26,
+    "mrr5": 0.9615,
+    "hit1": 0.9615,
+    "hit5": 0.9615
+   },
+   "in_pool": 0.9615
+  }
+ },
+ "minutes": 53.7,
+ "log": [],
+ "hypotheses": {
+  "H1": "supported",
+  "H2": "supported",
+  "H3": "not supported",
+  "decision": {
+   "mean": {
+    "chosen": 0.8235,
+    "ce": 0.8329,
+    "rrf": 0.839,
+    "ce|cue->rrf": 0.8739
+   },
+   "eligible": [],
+   "pick": "chosen"
+  },
+  "sanity": {
+   "devset_landmark_v1.jsonl": {
+    "v3": 0.838,
+    "now": 0.838,
+    "ok": true
+   },
+   "devset_ordinary_v1.jsonl": {
+    "v3": 0.809,
+    "now": 0.809,
+    "ok": true
+   }
+  }
+ }
+}
