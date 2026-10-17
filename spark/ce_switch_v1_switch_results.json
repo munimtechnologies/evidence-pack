@@ -1,0 +1,50 @@
+{
+ "sets": {
+  "devset_ordinary_v2.jsonl": {
+   "n": 28,
+   "in_pool": 28,
+   "cue": 0,
+   "mrr5": {
+    "chosen": 0.9286,
+    "ce": 0.9583,
+    "switch": 0.9583
+   },
+   "ce_vs_chosen": {
+    "base": "chosen",
+    "alt": "ce",
+    "delta_mrr5": 0.0297,
+    "helped": [
+     "od2-14",
+     "od2-21"
+    ],
+    "hurt": [
+     "od2-05",
+     "od2-12"
+    ]
+   },
+   "role": "pre-registered test"
+  }
+ },
+ "hypotheses": {
+  "H1": {
+   "ce_minus_chosen": 0.0297,
+   "supported": false
+  },
+  "H2": {
+   "hurt": 2,
+   "supported": true
+  },
+  "H3": {
+   "chosen": 0.9286,
+   "v1": 0.809,
+   "supported": false
+  },
+  "S": {
+   "in_pool": 28,
+   "n": 28,
+   "ok": true
+  },
+  "decision": "keep chosen"
+ },
+ "cue_questions": []
+}

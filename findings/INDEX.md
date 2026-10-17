@@ -122,6 +122,6 @@ This index lists every note in this folder, grouped by study. Each pre-registrat
 
 ## Literature retrieval: NLM SPARK Task 1 sample bench
 
-In `../spark/` (see its `README.md`): three dev sets, four pre-registrations and their results. The citation prior is gated on a priority cue (0.838 landmark / 0.809 ordinary MRR@5 on the sample). The MedCPT cross-encoder test (`../spark/ce-rerank-v1-results-2026-10-17.md`) kept that ranking: no candidate passed the rule. A held-out test of an idea found afterwards is pre-registered (`../spark/prereg-ce-switch-v1.md`).
+In `../spark/` (see its `README.md`): three dev sets, five pre-registrations and their results. The citation prior is gated on a priority cue (0.838 landmark / 0.809 ordinary MRR@5 on the sample). The MedCPT cross-encoder test (`../spark/ce-rerank-v1-results-2026-10-17.md`) kept that ranking: no candidate passed the rule. A held-out test of an idea found afterwards (`../spark/ce-switch-v1-results-2026-10-17.md`) did **not replicate**: on 28 new ordinary questions the cross-encoder beat the gated ranking by +0.030 MRR@5 (0.958 against 0.929), below the pre-registered +0.05, so the gated ranking stays.
 
 No independent human check has been done on any of these yet. If you find an error, please open an issue.

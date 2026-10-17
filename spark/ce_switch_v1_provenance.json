@@ -1,0 +1,54 @@
+{
+ "main": "df747c1e287c62f1f5d87a0c459ad16a87ac064d",
+ "fetched_at": "2026-10-17T18:21:50Z",
+ "files": {
+  "spark/prereg-ce-switch-v1.md": {
+   "ref": "df747c1e287c62f1f5d87a0c459ad16a87ac064d",
+   "bytes": 5245
+  },
+  "spark/devset_ordinary_v2.jsonl": {
+   "ref": "df747c1e287c62f1f5d87a0c459ad16a87ac064d",
+   "bytes": 8500
+  },
+  "spark/devset_landmark_v1.jsonl": {
+   "ref": "df747c1e287c62f1f5d87a0c459ad16a87ac064d",
+   "bytes": 16369
+  },
+  "spark/devset_ordinary_v1.jsonl": {
+   "ref": "df747c1e287c62f1f5d87a0c459ad16a87ac064d",
+   "bytes": 7522
+  },
+  "spark_eval.py": {
+   "ref": "df747c1e287c62f1f5d87a0c459ad16a87ac064d",
+   "bytes": 22851
+  },
+  "pm_extract.py": {
+   "ref": "df747c1e287c62f1f5d87a0c459ad16a87ac064d",
+   "bytes": 11271
+  },
+  "gate_compare.py": {
+   "ref": "df747c1e287c62f1f5d87a0c459ad16a87ac064d",
+   "bytes": 3838
+  },
+  "test_spark_eval.py": {
+   "ref": "df747c1e287c62f1f5d87a0c459ad16a87ac064d",
+   "bytes": 9072
+  },
+  "spark_switch.py": {
+   "ref": "df747c1e287c62f1f5d87a0c459ad16a87ac064d",
+   "bytes": 6378
+  },
+  "test_spark_switch.py": {
+   "ref": "df747c1e287c62f1f5d87a0c459ad16a87ac064d",
+   "bytes": 4817
+  },
+  "spark_ce.py": {
+   "ref": "7c2bce4d9d309a69ce2d15ab5ef270132d38a361",
+   "bytes": 16274
+  },
+  "test_spark_ce.py": {
+   "ref": "7c2bce4d9d309a69ce2d15ab5ef270132d38a361",
+   "bytes": 7095
+  }
+ }
+}

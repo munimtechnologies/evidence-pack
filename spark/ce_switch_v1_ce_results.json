@@ -1,0 +1,36 @@
+{
+ "model": "ncbi/MedCPT-Cross-Encoder",
+ "pool": 50,
+ "rrf_k": 60,
+ "summary": {
+  "devset_ordinary_v2.jsonl": {
+   "chosen": {
+    "n": 28,
+    "mrr5": 0.9286,
+    "hit1": 0.9286,
+    "hit5": 0.9286
+   },
+   "ce": {
+    "n": 28,
+    "mrr5": 0.9583,
+    "hit1": 0.9286,
+    "hit5": 1.0
+   },
+   "rrf": {
+    "n": 28,
+    "mrr5": 0.9357,
+    "hit1": 0.9286,
+    "hit5": 0.9643
+   },
+   "ce|cue->rrf": {
+    "n": 28,
+    "mrr5": 0.9583,
+    "hit1": 0.9286,
+    "hit5": 1.0
+   },
+   "in_pool": 1.0
+  }
+ },
+ "minutes": 17.6,
+ "log": []
+}
