@@ -96,7 +96,11 @@ Every note in this folder, grouped by study. Where a study was pre-registered, t
   - `doi-stub-census-v1-results-2026-10-16.md`
   - `doi-stub-census-prereg-v2-2026-10-16.md`
   - `doi-stub-census-v2-results-2026-10-17.md` (with the open blocklist `stub_blocklist_v2.csv`)
-- Truncated Elsevier DOIs inside PubMed, pre-registered and **not yet run**: `pubmed-doi-stub-census-prereg-v1-2026-10-17.md`
+- Truncated Elsevier DOIs inside PubMed, pre-registered, **job queued** (code `pubmed_doi_stubs.py`, tests passed): `pubmed-doi-stub-census-prereg-v1-2026-10-17.md`
 - Article number 1 outside Springer Nature (MDPI, Frontiers), pre-registered, **job queued**: `article-number-1-prereg-v1-2026-10-17.md`
+
+## Literature retrieval: NLM SPARK Task 1 sample bench
+
+In `../spark/` (see its `README.md`): two dev sets, three pre-registrations and the v3 decision. The citation prior is now gated on a priority cue (0.838 landmark / 0.809 ordinary MRR@5 on the sample). A cross-encoder reranker is pre-registered and **not yet run**: `../spark/prereg-ce-rerank-v1.md`.
 
 No independent human check has been done on any of these yet. If you find an error, please open an issue.

@@ -1,0 +1,29 @@
+# SPARK Task 1 sample bench
+
+MV2 of Munim, Inc. Researched and built by AI agents (Claude) working in MV2's name. Code Apache-2.0; text and dev sets CC BY 4.0.
+
+A small, honest bench for NLM's SPARK PubMed/PMC Task 1 (known-item retrieval: given a written information need, return the one PubMed record it describes; scored by MRR@5). MV2 of Munim, Inc. is preparing an entry. The real task needs an index of all ~38 million PubMed records; this bench fits in 2 GB so ranking ideas can be compared quickly and in the open.
+
+## How it works
+- **Sample index:** 40 evenly spaced files of the challenge's own PubMed baseline, plus PubMed Best Match's top 20 for each dev question (hard negatives) and every answer. About 1.19 million records, in SQLite FTS5 with Porter stemming. Preprints and records outside 1959-2026 are left out, as in the Challenge Corpus.
+- **Dev sets** (in this folder):
+  - `devset_landmark_v1.jsonl`: 72 questions about well-known papers (methods, trials, priority claims), including 10 pairs of easily confused papers.
+  - `devset_ordinary_v1.jsonl`: 26 questions about papers drawn by a fixed rule from across the PMID range (`prereg-devset-ordinary-v1.md`).
+  - Both were written by AI agents with the answer in view, so they are easier than expert questions. Every answer PMID was checked against PubMed.
+- **Scores** compare ranking variants with each other. The sample holds about 1/30 of the real distractors, so no score here is a claim about the real task.
+
+## Results so far
+| bench | finding |
+|---|---|
+| v1 (landmark set) | An iCite citation prior raised MRR@5 from 0.677 to 0.878. |
+| v2 (ordinary set; `prereg-devset-ordinary-v1.md`) | The same prior cost 0.072 on ordinary papers (helped 0, hurt 4), which triggered the pre-registered rule to gate it. |
+| v3 (both sets; `prereg-cite-gate-v1.md`, `v3-decision.md`) | Gating the prior on a priority cue in the question kept most of the gain: 0.838 landmark, 0.809 ordinary (mean 0.824), against 0.677 / 0.809 without a prior. |
+| ce-rerank v1 (`prereg-ce-rerank-v1.md`) | Pre-registered; job not yet run. Tests NCBI's open MedCPT cross-encoder as a reranker. |
+
+## Files
+- `prereg-*.md`: pre-registrations, each committed before its job ran.
+- `v3-decision.md`: the v3 decision table.
+- `../spark_ce.py`, `../test_spark_ce.py`: the cross-encoder bench (the repository keeps code at its root).
+- The index-building script used for v1-v3 (`spark_eval.py`) will be added after a small clean-up.
+
+Research tooling, not medical advice.
