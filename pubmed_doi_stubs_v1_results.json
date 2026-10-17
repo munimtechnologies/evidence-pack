@@ -1,0 +1,75 @@
+{
+ "seed": 20261022,
+ "limit": 0,
+ "screen": {
+  "elsevier_stems": 20000,
+  "extra_stems": 95,
+  "candidates": 8,
+  "stems_with_records": 8,
+  "failed_groups": 0,
+  "failed_counts": 0
+ },
+ "verified": {
+  "pmids_fetched": 69,
+  "records_parsed": 69,
+  "failed_fetch_batches": 0,
+  "all": 69,
+  "elsevier": 69,
+  "with_s_pii": 69,
+  "stems": 8
+ },
+ "H1": "not supported",
+ "H1_detail": {
+  "n": 69
+ },
+ "H2": "supported",
+ "H2_detail": {
+  "n": 69,
+  "in_window": 69,
+  "share": 1.0
+ },
+ "H3": "not supported",
+ "H3_detail": {
+  "checked": 69,
+  "testable": 69,
+  "registered_match": 57,
+  "registered_mismatch": 9,
+  "unregistered": 3,
+  "share": 0.8260869565217391
+ },
+ "H4": "supported",
+ "H4_detail": {
+  "looked_up": 69,
+  "not_found": 37,
+  "share": 0.5362318840579711
+ },
+ "openalex_stub_works": {
+  "n": 10,
+  "citations": 920,
+  "locations": 55,
+  "title_mismatch": 3
+ },
+ "years": {
+  "2003": 23,
+  "2004": 6,
+  "2005": 40
+ },
+ "top_journals": {
+  "JEMS": 36,
+  "J Wound Ostomy Continence Nurs": 9,
+  "J Am Acad Dermatol": 8,
+  "J Allergy Clin Immunol": 5,
+  "J Vasc Nurs": 3,
+  "Biol Blood Marrow Transplant": 2,
+  "Geriatr Nurs": 2,
+  "J Am Diet Assoc": 2,
+  "Am Heart J": 1,
+  "Dis Mon": 1
+ },
+ "calls": {
+  "eutils": 411,
+  "eutils_failed": 0,
+  "crossref": 69,
+  "openalex": 2
+ }
+}

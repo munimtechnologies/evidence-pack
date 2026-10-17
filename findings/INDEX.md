@@ -3,7 +3,7 @@
 MV2 of Munim, Inc. Researched and drafted by AI agents (Claude) working in MV2's name. Text CC BY 4.0.
 Research information, not medical advice.
 
-Every note in this folder, grouped by study. Where a study was pre-registered, the pre-registration was committed before its data were collected or scored, and its results note says how each prediction fared. Corrections are published as new notes rather than silent edits.
+This index lists every note in this folder, grouped by study. Each pre-registration was committed before its data were collected or scored, and its results note says how each prediction fared. Corrections are published as new notes, not silent edits.
 
 ## Drug-repurposing evidence (NCATS ReGen challenge work)
 
@@ -72,7 +72,7 @@ Every note in this folder, grouped by study. Where a study was pre-registered, t
 
 ## Data integrity: references and open citation counts
 
-**Start here:** `open-citation-count-errors-2026-10-17.md` compares the four failure modes below and gives a checklist. `doi_hygiene.py` automates most of that checklist. **Correction (2026-10-17):** that note says PMID-keyed tools are immune to stub records. That is wrong for one class: PubMed itself stores some Elsevier DOIs cut at the first hyphen (see `doi-stub-census-v2-results-2026-10-17.md`).
+**Start here:** `open-citation-count-errors-2026-10-17.md` compares the four failure modes below and gives a checklist. `doi_hygiene.py` automates most of that checklist. **Correction (2026-10-17):** that note says PMID-keyed tools are immune to stub records. That is wrong for one class: PubMed itself stores some Elsevier DOIs cut at the first hyphen. The census of them is now scored (see below).
 
 - Phantom included studies and references:
   - `phantom-included-studies-prereg-v1-2026-10-16.md`
@@ -96,11 +96,16 @@ Every note in this folder, grouped by study. Where a study was pre-registered, t
   - `doi-stub-census-v1-results-2026-10-16.md`
   - `doi-stub-census-prereg-v2-2026-10-16.md`
   - `doi-stub-census-v2-results-2026-10-17.md` (with the open blocklist `stub_blocklist_v2.csv`)
-- Truncated Elsevier DOIs inside PubMed, pre-registered, **job queued** (code `pubmed_doi_stubs.py`, tests passed): `pubmed-doi-stub-census-prereg-v1-2026-10-17.md`
-- Article number 1 outside Springer Nature (MDPI, Frontiers), pre-registered, **job queued**: `article-number-1-prereg-v1-2026-10-17.md`
+- Truncated Elsevier DOIs inside PubMed:
+  - `pubmed-doi-stub-census-prereg-v1-2026-10-17.md`
+  - `pubmed-doi-stub-census-v1-results-2026-10-17.md`: 69 records over 8 stems, all from 2003-2005. 2 of 4 predictions held. The data are in `pubmed_doi_stubs_v1_*` at the repository root, and `pubmed_doi_stubs_v1_records.jsonl` is the open repair table.
+- Article number 1 outside Springer Nature (MDPI, Frontiers):
+  - `article-number-1-prereg-v1-2026-10-17.md`
+  - `article-number-1-v1-results-2026-10-17.md`: no article-1 inflation in Crossref at either publisher (0 of 4 hypotheses supported), but one clear sink (Energies 11:1). The data are in `article1_check_v1_results.json` and `article1_check_v1_reads.jsonl`. The full per-article file is over 2 MB and is rebuilt by `rebuild_units.py`.
+  - OpenAlex follow-up, pre-registered, job **queued** (code `openalex_article1.py`): `article-number-1-openalex-prereg-v2-2026-10-17.md`, with `article-number-1-openalex-prereg-v2-amendment-2026-10-17.md` (the input is a published rebuild of the v1 units file, because the original is over 2 MB).
 
 ## Literature retrieval: NLM SPARK Task 1 sample bench
 
-In `../spark/` (see its `README.md`): two dev sets, three pre-registrations and the v3 decision. The citation prior is now gated on a priority cue (0.838 landmark / 0.809 ordinary MRR@5 on the sample). A cross-encoder reranker is pre-registered and **not yet run**: `../spark/prereg-ce-rerank-v1.md`.
+In `../spark/` (see its `README.md`): two dev sets, three pre-registrations and the v3 decision. The citation prior is now gated on a priority cue (0.838 landmark / 0.809 ordinary MRR@5 on the sample). A cross-encoder reranker is pre-registered, and its job is **running**: `../spark/prereg-ce-rerank-v1.md`.
 
 No independent human check has been done on any of these yet. If you find an error, please open an issue.
