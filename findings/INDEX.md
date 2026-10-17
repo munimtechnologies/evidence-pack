@@ -58,10 +58,14 @@ This index lists every note in this folder, grouped by study. Each pre-registrat
 - `faers-alpha1-falls-75plus-2026-10-15.md`
 - `topiramate-bipolar-trials-2026-10-15.md`
 
+**Reference integrity of the packages**
+- `integrity-check-v1-2026-10-17.md` (see "Integrity module" below): on 2026-10-17 all 24 reference DOIs of packages 4 and 5 were clear in Crossref (Retraction Watch) and PubMed; 2 small-journal DOIs are not in PubMed.
+
 ## Evidence synthesis: screening benchmark (AHRQ challenge work)
 
 - Reproducible screening baseline on CLEF TAR 2018 (30 Cochrane diagnostic-test-accuracy reviews): `clef-tar-2018-bm25-prereg-v1-2026-10-17.md` (code `tar_bench.py`), pre-registered and **not yet run**. It ranks each review's search results by BM25 over PubMed title + abstract and scores them with the formulas of CLEF's own evaluator. H1 asks whether it reproduces a published BM25 baseline (Wang et al. 2023: MAP 0.154, WSS@95 0.361). H2 asks whether adding the review title and expanding truncated query words beats it in at least 20 of 30 reviews. It also counts records that PubMed now marks as retracted (exploratory).
 - **Exposure, labor and tuning log:** `benchmark-exposure-and-tuning-log.md`. An append-only record, kept as the work happens, of what benchmark material was looked at, what was changed or tuned, and what human labor went into this benchmark work (none so far). AHRQ's challenge rules ask for contemporaneous logs of this kind.
+- **Integrity module:** `integrity-check-v1-2026-10-17.md` (code `integrity_check.py`, offline tests `test_integrity_check.py`). One command over PMIDs and DOIs that reports, as of the day it runs, whether each record is retracted, under an expression of concern or corrected according to PubMed and to Crossref (which carries Retraction Watch notices), which source said so, and the `doi_hygiene` flags of its DOI. `--fail-on` makes it a gate. The note records what both APIs return today, the prior art (several Crossref-based checkers exist; the hygiene flags and the two-source report are the additions), and the hand pilot on the ReGen packages. Not yet run on live data in the sandbox.
 
 ## Data integrity: ClinicalTrials.gov results
 
@@ -82,7 +86,7 @@ This index lists every note in this folder, grouped by study. Each pre-registrat
 
 ## Data integrity: references and open citation counts
 
-**Start here:** `open-citation-count-errors-2026-10-17.md` compares the four failure modes below and gives a checklist. `doi_hygiene.py` automates most of that checklist. **Correction (2026-10-17):** that note says PMID-keyed tools are immune to stub records. That is wrong for one class: PubMed itself stores some Elsevier DOIs cut at the first hyphen. The census of them is now scored (see below). **Addition (2026-10-17):** article-number-1 inflation also exists inside OpenAlex for MDPI and Frontiers, even though Crossref is clean there (see below). `doi_hygiene.py link` checks a single OpenAlex link of that kind.
+**Start here:** `open-citation-count-errors-2026-10-17.md` compares the four failure modes below and gives a checklist. `doi_hygiene.py` automates most of that checklist, and `integrity_check.py` runs it together with a retraction check over a whole reference list (see "Integrity module" above). **Correction (2026-10-17):** that note says PMID-keyed tools are immune to stub records. That is wrong for one class: PubMed itself stores some Elsevier DOIs cut at the first hyphen. The census of them is now scored (see below). **Addition (2026-10-17):** article-number-1 inflation also exists inside OpenAlex for MDPI and Frontiers, even though Crossref is clean there (see below). `doi_hygiene.py link` checks a single OpenAlex link of that kind.
 
 - Phantom included studies and references:
   - `phantom-included-studies-prereg-v1-2026-10-16.md`
