@@ -61,6 +61,7 @@ This index lists every note in this folder, grouped by study. Each pre-registrat
 ## Evidence synthesis: screening benchmark (AHRQ challenge work)
 
 - Reproducible screening baseline on CLEF TAR 2018 (30 Cochrane diagnostic-test-accuracy reviews): `clef-tar-2018-bm25-prereg-v1-2026-10-17.md` (code `tar_bench.py`), pre-registered and **not yet run**. It ranks each review's search results by BM25 over PubMed title + abstract and scores them with the formulas of CLEF's own evaluator. H1 asks whether it reproduces a published BM25 baseline (Wang et al. 2023: MAP 0.154, WSS@95 0.361). H2 asks whether adding the review title and expanding truncated query words beats it in at least 20 of 30 reviews. It also counts records that PubMed now marks as retracted (exploratory).
+- **Exposure, labor and tuning log:** `benchmark-exposure-and-tuning-log.md`. An append-only record, kept as the work happens, of what benchmark material was looked at, what was changed or tuned, and what human labor went into this benchmark work (none so far). AHRQ's challenge rules ask for contemporaneous logs of this kind.
 
 ## Data integrity: ClinicalTrials.gov results
 
