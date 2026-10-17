@@ -1,0 +1,83 @@
+{
+ "seed": 20261020,
+ "sample_filter": "indexed_in:pubmed,has_doi:true,type:article,publication_year:2000-2025,cited_by_count:>9",
+ "n_sample": 10000,
+ "known": 73,
+ "sample": {
+  "works": 10000,
+  "complete": true,
+  "stems": 1551,
+  "stems_by_kind": {
+   "dash": 1356,
+   "paren": 195
+  },
+  "known_stems_in_sample": 35
+ },
+ "lookup_complete": true,
+ "records": {
+  "all": 113,
+  "unregistered": 64,
+  "new": 39,
+  "new_unregistered": 22
+ },
+ "citations_absorbed": {
+  "all": 68027,
+  "unregistered": 58592,
+  "new_unregistered": 2123
+ },
+ "H1": "supported",
+ "H1_new_unregistered": [
+  "10.1002/2211",
+  "10.1016/s0197",
+  "10.1016/s0741",
+  "10.1016/s1083",
+  "10.1016/s1095-6433",
+  "10.1016/s1278",
+  "10.1016/s2215",
+  "10.1016/s2468-1253",
+  "10.1091/mbc.e09",
+  "10.1094/mpmi",
+  "10.1111/j.1582",
+  "10.1136/bmjspcare",
+  "10.1186/s13104",
+  "10.1590/1984",
+  "10.1590/s1517",
+  "10.3168/jds.s0022-0302",
+  "10.3760/cma.j.issn.0578"
+ ],
+ "H2": "supported",
+ "H2_detail": {
+  "citations": 58592,
+  "on_mag": 46773,
+  "share": 0.7982830420535226
+ },
+ "H3": "not supported",
+ "H3_with_pmid": [
+  "W4291238992",
+  "W2085856905",
+  "W1984978909",
+  "W2474598809",
+  "W1967945520",
+  "W1964695157",
+  "W1979275524",
+  "W1979719641",
+  "W42636589"
+ ],
+ "H4": "supported",
+ "H4_detail": {
+  "n": 38,
+  "not_journal": 33
+ },
+ "source_types_unregistered": {
+  "repository": 55,
+  "journal": 5,
+  "(none)": 3,
+  "ebook platform": 1
+ },
+ "budget": {
+  "openalex_calls": 118,
+  "openalex_cost_usd": 0.0118,
+  "refused_over_cap": 0,
+  "failed": 0
+ }
+}

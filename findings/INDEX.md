@@ -72,7 +72,7 @@ Every note in this folder, grouped by study. Where a study was pre-registered, t
 
 ## Data integrity: references and open citation counts
 
-**Start here:** `open-citation-count-errors-2026-10-17.md` compares the four failure modes below and gives a checklist. `doi_hygiene.py` automates most of that checklist.
+**Start here:** `open-citation-count-errors-2026-10-17.md` compares the four failure modes below and gives a checklist. `doi_hygiene.py` automates most of that checklist. **Correction (2026-10-17):** that note says PMID-keyed tools are immune to stub records. That is wrong for one class: PubMed itself stores some Elsevier DOIs cut at the first hyphen (see `doi-stub-census-v2-results-2026-10-17.md`).
 
 - Phantom included studies and references:
   - `phantom-included-studies-prereg-v1-2026-10-16.md`
@@ -94,7 +94,9 @@ Every note in this folder, grouped by study. Where a study was pre-registered, t
 - DOI stubs:
   - `doi-stub-census-prereg-v1-2026-10-16.md`
   - `doi-stub-census-v1-results-2026-10-16.md`
-  - v2, pre-registered and **not yet run**: `doi-stub-census-prereg-v2-2026-10-16.md`
-- Article number 1 outside Springer Nature (MDPI, Frontiers), pre-registered and **not yet run**: `article-number-1-prereg-v1-2026-10-17.md`
+  - `doi-stub-census-prereg-v2-2026-10-16.md`
+  - `doi-stub-census-v2-results-2026-10-17.md` (with the open blocklist `stub_blocklist_v2.csv`)
+- Truncated Elsevier DOIs inside PubMed, pre-registered and **not yet run**: `pubmed-doi-stub-census-prereg-v1-2026-10-17.md`
+- Article number 1 outside Springer Nature (MDPI, Frontiers), pre-registered, **job queued**: `article-number-1-prereg-v1-2026-10-17.md`
 
 No independent human check has been done on any of these yet. If you find an error, please open an issue.
