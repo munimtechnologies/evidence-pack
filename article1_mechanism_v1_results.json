@@ -1,0 +1,213 @@
+{
+ "seed": 20261025,
+ "eligible_units": 66,
+ "targets": [
+  {
+   "target": "10.3390/molecules24010001",
+   "openalex": 246,
+   "crossref": 43,
+   "journal_names": [
+    "molecules"
+   ],
+   "target_sample": 25,
+   "control": "10.3390/molecules24010048",
+   "control_crossref": 269,
+   "control_sample": {
+    "source": "opencitations",
+    "pool": 263,
+    "read": 25
+   }
+  },
+  {
+   "target": "10.3390/ma10010001",
+   "openalex": 271,
+   "crossref": 103,
+   "journal_names": [
+    "materials"
+   ],
+   "target_sample": 25,
+   "control": "10.3390/ma10010050",
+   "control_crossref": 196,
+   "control_sample": {
+    "source": "opencitations",
+    "pool": 198,
+    "read": 25
+   }
+  },
+  {
+   "target": "10.3389/fpls.2019.00001",
+   "openalex": 389,
+   "crossref": 176,
+   "journal_names": [
+    "frontiers plant science",
+    "front plant sci"
+   ],
+   "target_sample": 25,
+   "control": "10.3389/fpls.2019.00044",
+   "control_crossref": 147,
+   "control_sample": {
+    "source": "opencitations",
+    "pool": 153,
+    "read": 25
+   }
+  },
+  {
+   "target": "10.3389/fneur.2017.00001",
+   "openalex": 299,
+   "crossref": 37,
+   "journal_names": [
+    "frontiers neurology",
+    "front neurol"
+   ],
+   "target_sample": 25,
+   "control": "10.3389/fneur.2017.00057",
+   "control_crossref": 181,
+   "control_sample": {
+    "source": "opencitations",
+    "pool": 187,
+    "read": 25
+   }
+  },
+  {
+   "target": "10.3390/ijerph13010001",
+   "openalex": 153,
+   "crossref": 30,
+   "journal_names": [
+    "international journal environmental research public health",
+    "ijerph"
+   ],
+   "target_sample": 25,
+   "control": "10.3390/ijerph13010059",
+   "control_crossref": 70,
+   "control_sample": {
+    "source": "opencitations",
+    "pool": 71,
+    "read": 25
+   }
+  },
+  {
+   "target": "10.3390/ijms18010001",
+   "openalex": 390,
+   "crossref": 98,
+   "journal_names": [
+    "international journal molecular sciences",
+    "ijms"
+   ],
+   "target_sample": 25,
+   "control": "10.3390/ijms18010041",
+   "control_crossref": 123,
+   "control_sample": {
+    "source": "opencitations",
+    "pool": 124,
+    "read": 25
+   }
+  },
+  {
+   "target": "10.3390/cancers10010001",
+   "openalex": 163,
+   "crossref": 100,
+   "journal_names": [
+    "cancers"
+   ],
+   "target_sample": 25,
+   "control": "10.3390/cancers10020052",
+   "control_crossref": 366,
+   "control_sample": {
+    "source": "opencitations",
+    "pool": 353,
+    "read": 25
+   }
+  },
+  {
+   "target": "10.3390/nu11010001",
+   "openalex": 541,
+   "crossref": 254,
+   "journal_names": [
+    "nutrients"
+   ],
+   "target_sample": 25,
+   "control": "10.3390/nu11010051",
+   "control_crossref": 469,
+   "control_sample": {
+    "source": "opencitations",
+    "pool": 459,
+    "read": 25
+   }
+  }
+ ],
+ "openalex": {
+  "citers": 302,
+  "citers_found": 302,
+  "page1_dois": 86,
+  "page1_found": 86,
+  "lookup_calls": 15,
+  "failed_lookup_calls": 0
+ },
+ "crossref_calls": 407,
+ "H1": "supported",
+ "H1_detail": {
+  "unsupported": 124,
+  "with_page1": 114,
+  "share": 0.9193548387096774,
+  "control_citers": 178,
+  "control_with_other_page1": 0,
+  "control_share": 0.0,
+  "p": 4.021617466397076e-72
+ },
+ "H2": "untestable",
+ "H2_detail": {
+  "page1": 1,
+  "page1_linked": 0,
+  "page1_rate": 0.0,
+  "other": 174,
+  "other_linked": 0,
+  "other_rate": 0.0
+ },
+ "H3": "supported",
+ "H3_detail": {
+  "references": 90,
+  "kept": 90,
+  "share": 1.0
+ },
+ "descriptive": {
+  "target_labels": {
+   "unsupported": 124,
+   "genuine": 40,
+   "too_few_references": 4,
+   "other_work": 18,
+   "doi_only": 13
+  },
+  "control_status": {
+   "found": 178,
+   "no_matching_reference": 13,
+   "cites_article1": 9
+  },
+  "unsupported_years": {
+   "to_2021": 124,
+   "from_2022": 0,
+   "unknown": 0
+  },
+  "unsupported_in_openalex": 124,
+  "openalex_links_target": 124,
+  "page1_refs": 120,
+  "page1_refs_with_doi": 90,
+  "unsupported_with_same_volume_ref": 122,
+  "median_openalex_minus_crossref_refs": 1.5,
+  "h2_to_2021": {
+   "page1": 0,
+   "page1_linked": 0,
+   "page1_rate": null,
+   "other": 89,
+   "other_linked": 0,
+   "other_rate": 0.0
+  },
+  "h2_from_2022": {
+   "page1": 1,
+   "page1_linked": 0,
+   "page1_rate": 0.0,
+   "other": 85,
+   "other_linked": 0,
+   "other_rate": 0.0
+  }
+ }
+}

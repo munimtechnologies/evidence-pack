@@ -1,0 +1,30 @@
+{
+ "main": "3c7c9e57091d35493151d2c4ca13cc7f90660e04",
+ "fetched_at": "2026-10-17T09:59:14Z",
+ "files": {
+  "findings/article-number-1-mechanism-prereg-v1-2026-10-17.md": {
+   "ref": "3c7c9e57091d35493151d2c4ca13cc7f90660e04",
+   "bytes": 7948
+  },
+  "article1_mechanism.py": {
+   "ref": "3c7c9e57091d35493151d2c4ca13cc7f90660e04",
+   "bytes": 16006
+  },
+  "test_article1_mechanism.py": {
+   "ref": "3c7c9e57091d35493151d2c4ca13cc7f90660e04",
+   "bytes": 19568
+  },
+  "article1_openalex_v2_units_oa.jsonl": {
+   "ref": "3c7c9e57091d35493151d2c4ca13cc7f90660e04",
+   "bytes": 375118
+  },
+  "article1_check.py": {
+   "ref": "a5a741e58f9f9519522877c632602e2ff1ae5e86",
+   "bytes": 16915
+  },
+  "openalex_article1.py": {
+   "ref": "1d2782e861c6fec469456401bf46863a45cdf99e",
+   "bytes": 11555
+  }
+ }
+}
