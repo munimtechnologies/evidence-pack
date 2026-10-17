@@ -72,7 +72,7 @@ This index lists every note in this folder, grouped by study. Each pre-registrat
 
 ## Data integrity: references and open citation counts
 
-**Start here:** `open-citation-count-errors-2026-10-17.md` compares the four failure modes below and gives a checklist. `doi_hygiene.py` automates most of that checklist. **Correction (2026-10-17):** that note says PMID-keyed tools are immune to stub records. That is wrong for one class: PubMed itself stores some Elsevier DOIs cut at the first hyphen. The census of them is now scored (see below).
+**Start here:** `open-citation-count-errors-2026-10-17.md` compares the four failure modes below and gives a checklist. `doi_hygiene.py` automates most of that checklist. **Correction (2026-10-17):** that note says PMID-keyed tools are immune to stub records. That is wrong for one class: PubMed itself stores some Elsevier DOIs cut at the first hyphen. The census of them is now scored (see below). **Addition (2026-10-17):** article-number-1 inflation also exists inside OpenAlex for MDPI and Frontiers, even though Crossref is clean there (see below).
 
 - Phantom included studies and references:
   - `phantom-included-studies-prereg-v1-2026-10-16.md`
@@ -102,10 +102,10 @@ This index lists every note in this folder, grouped by study. Each pre-registrat
 - Article number 1 outside Springer Nature (MDPI, Frontiers):
   - `article-number-1-prereg-v1-2026-10-17.md`
   - `article-number-1-v1-results-2026-10-17.md`: no article-1 inflation in Crossref at either publisher (0 of 4 hypotheses supported), but one clear sink (Energies 11:1). The data are in `article1_check_v1_results.json` and `article1_check_v1_reads.jsonl`. The full per-article file is over 2 MB and is rebuilt by `rebuild_units.py`.
-  - OpenAlex follow-up, pre-registered, job **queued** (code `openalex_article1.py`): `article-number-1-openalex-prereg-v2-2026-10-17.md`, with `article-number-1-openalex-prereg-v2-amendment-2026-10-17.md` (the input is a published rebuild of the v1 units file, because the original is over 2 MB).
+  - OpenAlex follow-up: `article-number-1-openalex-prereg-v2-2026-10-17.md`, its amendment `article-number-1-openalex-prereg-v2-amendment-2026-10-17.md`, and **results** `article-number-1-openalex-v2-results-2026-10-17.md`. In 74 of 86 volumes from 2016-2019, article 1 has the largest OpenAlex excess of its volume (about 4 expected), and only 2 of 119 sampled OpenAlex citers of three such records clearly cite them. The pattern is absent for 2021-2023. 3 of 4 predictions held. Data in `article1_openalex_v2_*`.
 
 ## Literature retrieval: NLM SPARK Task 1 sample bench
 
-In `../spark/` (see its `README.md`): two dev sets, three pre-registrations and the v3 decision. The citation prior is now gated on a priority cue (0.838 landmark / 0.809 ordinary MRR@5 on the sample). A cross-encoder reranker is pre-registered, and its job is **running**: `../spark/prereg-ce-rerank-v1.md`.
+In `../spark/` (see its `README.md`): three dev sets, four pre-registrations and their results. The citation prior is gated on a priority cue (0.838 landmark / 0.809 ordinary MRR@5 on the sample). The MedCPT cross-encoder test (`../spark/ce-rerank-v1-results-2026-10-17.md`) kept that ranking: no candidate passed the rule. A held-out test of an idea found afterwards is pre-registered (`../spark/prereg-ce-switch-v1.md`).
 
 No independent human check has been done on any of these yet. If you find an error, please open an issue.
