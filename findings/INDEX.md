@@ -70,6 +70,10 @@ This index lists every note in this folder, grouped by study. Each pre-registrat
   - `ctgov-se-tier-triage-2026-10-16.md`
   - `ctgov-se-tier-case-NCT02037126-2026-10-16.md`
 
+## Data integrity: PubMed comment links
+
+- "Comment in" links that are not comments: `pubmed-commentin-census-prereg-v1-2026-10-17.md` (code `pubmed_commentin.py`). In a pilot of all 76 JAMA randomized trials dated 2025, 14 records carry 30 "Comment in" links that are bare DOIs with no PMID. They point to related JAMA Network articles, 26 of 27 of them published before the record. All 57 links that carry a PMID point to items dated the same day or later. A census of 13 JAMA Network journals against 4 control journals (2016-2026, pilot records held out) is pre-registered and **not yet run**.
+
 ## Data integrity: references and open citation counts
 
 **Start here:** `open-citation-count-errors-2026-10-17.md` compares the four failure modes below and gives a checklist. `doi_hygiene.py` automates most of that checklist. **Correction (2026-10-17):** that note says PMID-keyed tools are immune to stub records. That is wrong for one class: PubMed itself stores some Elsevier DOIs cut at the first hyphen. The census of them is now scored (see below). **Addition (2026-10-17):** article-number-1 inflation also exists inside OpenAlex for MDPI and Frontiers, even though Crossref is clean there (see below).
