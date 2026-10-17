@@ -103,6 +103,7 @@ This index lists every note in this folder, grouped by study. Each pre-registrat
   - `article-number-1-prereg-v1-2026-10-17.md`
   - `article-number-1-v1-results-2026-10-17.md`: no article-1 inflation in Crossref at either publisher (0 of 4 hypotheses supported), but one clear sink (Energies 11:1). The data are in `article1_check_v1_results.json` and `article1_check_v1_reads.jsonl`. The full per-article file is over 2 MB and is rebuilt by `rebuild_units.py`.
   - OpenAlex follow-up: `article-number-1-openalex-prereg-v2-2026-10-17.md`, its amendment `article-number-1-openalex-prereg-v2-amendment-2026-10-17.md`, and **results** `article-number-1-openalex-v2-results-2026-10-17.md`. In 74 of 86 volumes from 2016-2019, article 1 has the largest OpenAlex excess of its volume (about 4 expected), and only 2 of 119 sampled OpenAlex citers of three such records clearly cite them. The pattern is absent for 2021-2023. 3 of 4 predictions held. Data in `article1_openalex_v2_*`.
+  - Mechanism, pre-registered and **not yet run**: `article-number-1-mechanism-prereg-v1-2026-10-17.md` (code `article1_mechanism.py`). It tests whether a reference giving a volume and first page "1" makes OpenAlex link the citer to that volume's article 1 as well as to the paper actually cited. A pilot of 4 citers, all from v2's published reads, fits that pattern.
 
 ## Literature retrieval: NLM SPARK Task 1 sample bench
 
