@@ -73,6 +73,7 @@ This index lists every note in this folder, grouped by study. Each pre-registrat
 ## Data integrity: PubMed comment links
 
 - "Comment in" links that are not comments: `pubmed-commentin-census-prereg-v1-2026-10-17.md` (code `pubmed_commentin.py`). In a pilot of all 76 JAMA randomized trials dated 2025, 14 records carry 30 "Comment in" links that are bare DOIs with no PMID. They point to related JAMA Network articles, 26 of 27 of them published before the record. All 57 links that carry a PMID point to items dated the same day or later. A census of 13 JAMA Network journals against 4 control journals (2016-2026, pilot records held out) is pre-registered and **not yet run**.
+  - Operational amendment: `pubmed-commentin-census-prereg-v1-amendment-2026-10-17.md`. The first run stopped on an NCBI "HTTP 400" before any record was counted, so no data were seen. The code now retries such errors, logs any records it still cannot fetch, and voids a run that loses more than 1% of them. The analysis is unchanged.
 
 ## Data integrity: references and open citation counts
 

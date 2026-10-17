@@ -3,6 +3,8 @@
 """pubmed_commentin: census of PubMed "Comment in" links that carry no PMID.
 
 Pre-registration: findings/pubmed-commentin-census-prereg-v1-2026-10-17.md.
+Operational amendment (retries only, no change to the analysis):
+findings/pubmed-commentin-census-prereg-v1-amendment-2026-10-17.md.
 
 A PubMed "Comment in" link (CommentsCorrections RefType="CommentIn") should
 point to a later item that comments on the record. A pilot on JAMA's 2025
@@ -34,7 +36,7 @@ import xml.etree.ElementTree as ET
 
 EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
 CROSSREF = "https://api.crossref.org/works"
-UA = "mv2-pubmed-commentin/1.0 (MV2 of Munim, Inc.; mailto:mv2@munimtech.com)"
+UA = "mv2-pubmed-commentin/1.1 (MV2 of Munim, Inc.; mailto:mv2@munimtech.com)"
 SEED = 20261017
 GROUPS = ("jama_network", "control")
 JAMA_NETWORK = ("JAMA", "JAMA Netw Open", "JAMA Intern Med", "JAMA Pediatr", "JAMA Cardiol",
@@ -45,6 +47,14 @@ YEARS = tuple(range(2016, 2027))
 PER_GROUP_PMID_DATED = 3000
 MAX_BARE_DATED = 20000
 PER_GROUP_RECIPROCITY = 300
+# Operational settings (amendment 2026-10-17). NCBI returns some backend
+# failures as HTTP 400, so E-utilities calls retry them; a batch that still
+# fails is re-tried in pieces of EFETCH_SPLIT, and pieces that still fail are
+# recorded, not fatal. More than VOID_SHARE of records lost voids the run.
+EFETCH_BATCH = 200
+EFETCH_SPLIT = 20
+EFETCH_MAX_FAILED_BATCHES = 10
+VOID_SHARE = 0.01
 # The 76 JAMA 2025 randomized-trial records read by hand in the pilot. They are
 # held out so the census tests the pattern on records nobody looked at.
 PILOT_PMIDS = frozenset("""
@@ -218,7 +228,8 @@ def verdicts(t, dating, recip, prefix):
     }
 
 
-def http(url, data=None, tries=4):
+def http(url, data=None, tries=4, retry_400=False):
+    """GET (or POST if data) with retries. 404 is final; 400 is final unless retry_400."""
     last = None
     for k in range(tries):
         try:
@@ -226,9 +237,13 @@ def http(url, data=None, tries=4):
             with urllib.request.urlopen(req, timeout=120) as resp:
                 return resp.read()
         except urllib.error.HTTPError as e:
-            if e.code in (400, 404):
+            if e.code == 404 or (e.code == 400 and not retry_400):
                 raise
-            last = e
+            try:
+                body = e.read()[:300].decode("utf-8", "replace")
+            except Exception:
+                body = ""
+            last = RuntimeError(f"HTTP {e.code}: {body}")
         except Exception as e:  # network hiccups: retry
             last = e
         time.sleep(3 * (k + 1))
@@ -237,7 +252,7 @@ def http(url, data=None, tries=4):
 
 def ncbi(url, data=None):
     try:
-        return http(url, data)
+        return http(url, data, tries=5, retry_400=True)
     finally:
         time.sleep(0.4)  # stay under 3 requests per second without an API key
 
@@ -274,14 +289,43 @@ def collect(journals, group, log):
     return recs
 
 
-def efetch(pmids):
-    out = {}
-    for i in range(0, len(pmids), 200):
-        body = urllib.parse.urlencode({"db": "pubmed", "id": ",".join(pmids[i:i + 200]),
-                                       "retmode": "xml"}).encode()
-        for a in parse_articles(ncbi(EUTILS + "efetch.fcgi", body)):
+def _efetch_post(body):
+    return ncbi(EUTILS + "efetch.fcgi", body)
+
+
+def efetch(pmids, errors=None, fetch=None):
+    """{pmid: record}. A failing batch is re-tried in pieces; pieces that still fail are logged
+    in errors as {"efetch_failed": [pmids], "error": ...} and left out. After
+    EFETCH_MAX_FAILED_BATCHES failed pieces, the rest is logged as skipped without fetching."""
+    fetch = fetch or _efetch_post
+    errors = [] if errors is None else errors
+    out, state = {}, {"failed": 0}
+
+    def one(chunk, may_split):
+        if state["failed"] >= EFETCH_MAX_FAILED_BATCHES:
+            errors.append({"efetch_failed": list(chunk), "error": "skipped after repeated failures"})
+            return
+        body = urllib.parse.urlencode({"db": "pubmed", "id": ",".join(chunk), "retmode": "xml"}).encode()
+        try:
+            arts = parse_articles(fetch(body))
+        except Exception as e:
+            if may_split and len(chunk) > EFETCH_SPLIT:
+                for j in range(0, len(chunk), EFETCH_SPLIT):
+                    one(chunk[j:j + EFETCH_SPLIT], False)
+            else:
+                state["failed"] += 1
+                errors.append({"efetch_failed": list(chunk), "error": repr(e)[:300]})
+            return
+        for a in arts:
             out[a["pmid"]] = a
+
+    for i in range(0, len(pmids), EFETCH_BATCH):
+        one(pmids[i:i + EFETCH_BATCH], True)
     return out
+
+
+def efetch_failed_count(errors):
+    return sum(len(e["efetch_failed"]) for e in errors if "efetch_failed" in e)
 
 
 def _item_date(it):
@@ -349,7 +393,10 @@ def main(argv=None):
     pmids = sorted(recs, key=int)
     if args.max_records:
         pmids = pmids[:args.max_records]
-    arts = {p: a for p, a in efetch(pmids).items() if p in recs}
+    fetch_errors = []
+    arts = {p: a for p, a in efetch(pmids, fetch_errors).items() if p in recs}
+    records_failed = efetch_failed_count(fetch_errors)
+    errors += fetch_errors
     links = build_links(arts, recs)
     t = tally(links)
 
@@ -379,7 +426,9 @@ def main(argv=None):
                         PER_GROUP_RECIPROCITY, rng):
             checks.append({"group": g, "cls": "pmid", "src_pmid": l["src_pmid"],
                            "tgt_doi": l["tgt_doi"], "tgt_pmid": l["tgt_pmid"]})
-    targets = efetch(sorted({c["tgt_pmid"] for c in checks if c["tgt_pmid"]}, key=int))
+    target_errors = []
+    targets = efetch(sorted({c["tgt_pmid"] for c in checks if c["tgt_pmid"]}, key=int), target_errors)
+    errors += target_errors
     for c in checks:
         tg = targets.get(c["tgt_pmid"])
         c["reciprocal"] = (c["src_pmid"] in tg["comment_on"]) if tg else None
@@ -389,10 +438,13 @@ def main(argv=None):
     prefixes = collections.Counter(l["tgt_doi"].split("/")[0] for l in links if l["cls"] == "bare_doi")
     results = {
         "prereg": "findings/pubmed-commentin-census-prereg-v1-2026-10-17.md",
+        "amendment": "findings/pubmed-commentin-census-prereg-v1-amendment-2026-10-17.md",
         "seed": SEED, "years": [YEARS[0], YEARS[-1]], "journals": {"jama_network": JAMA_NETWORK,
                                                                    "control": CONTROL},
         "records_found": len(recs) + len(held_out), "held_out_pilot_records": len(held_out),
-        "records_fetched": len(arts),
+        "records_fetched": len(arts), "records_failed": records_failed,
+        "reciprocity_targets_failed": efetch_failed_count(target_errors),
+        "void": records_failed > VOID_SHARE * max(len(pmids), 1),
         "records_without_comment_in": sum(1 for a in arts.values() if not a["comment_in"]),
         "links_by_class": t, "dating": dating, "reciprocity": recip, "prefix_10_1001": prefix,
         "bare_doi_target_prefixes": dict(prefixes.most_common(20)),
@@ -408,8 +460,8 @@ def main(argv=None):
     write_jsonl(os.path.join(args.out_dir, "pmid_dated_sample.jsonl"),
                 [l for l in dated if l["cls"] == "pmid"])
     write_jsonl(os.path.join(args.out_dir, "reciprocity.jsonl"), checks)
-    print(json.dumps({k: results[k] for k in ("records_fetched", "links_by_class", "dating",
-                                               "reciprocity", "prefix_10_1001", "hypotheses",
+    print(json.dumps({k: results[k] for k in ("records_fetched", "records_failed", "void", "links_by_class",
+                                               "dating", "reciprocity", "prefix_10_1001", "hypotheses",
                                                "n_errors", "minutes")}))
     return 0
 
