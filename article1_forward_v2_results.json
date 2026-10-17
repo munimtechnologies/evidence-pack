@@ -1,0 +1,121 @@
+{
+ "seed": 20261027,
+ "eras": {
+  "old": [
+   "2019-01-01",
+   "2021-12-31"
+  ],
+  "new": [
+   "2023-01-01",
+   "2025-12-31"
+  ]
+ },
+ "volume_years": [
+  2016,
+  2019
+ ],
+ "sampling": {
+  "old": {
+   "calls": 50,
+   "failed_calls": 0,
+   "works": 4998,
+   "duplicates": 2,
+   "citers": 670,
+   "unexposed_dropped": 352,
+   "pairs": 1070,
+   "exposed": 40
+  },
+  "new": {
+   "calls": 82,
+   "failed_calls": 0,
+   "works": 8199,
+   "duplicates": 1,
+   "citers": 1159,
+   "unexposed_dropped": 474,
+   "pairs": 1730,
+   "exposed": 42
+  }
+ },
+ "openalex": {
+  "citers": 593,
+  "citers_found": 592,
+  "article1s": 161,
+  "article1s_found": 159,
+  "calls": 28,
+  "failed_calls": 0
+ },
+ "H1": "supported",
+ "H1_detail": {
+  "exposed": 40,
+  "exposed_linked": 13,
+  "exposed_rate": 0.325,
+  "unexposed": 297,
+  "unexposed_linked": 0,
+  "unexposed_rate": 0.0,
+  "p": 1.3099632705587592e-13
+ },
+ "H2": "supported",
+ "H2_detail": {
+  "old_exposed": 40,
+  "old_linked": 13,
+  "old_rate": 0.325,
+  "new_exposed": 41,
+  "new_linked": 0,
+  "new_rate": 0.0,
+  "p": 3.205586059342924e-05
+ },
+ "descriptive": {
+  "old": {
+   "exposed": 40,
+   "exposed_linked": 13,
+   "exposed_rate": 0.325,
+   "unexposed": 297,
+   "unexposed_linked": 0,
+   "unexposed_rate": 0.0,
+   "by_publisher": {
+    "MDPI": {
+     "exposed": 15,
+     "exposed_linked": 5,
+     "exposed_rate": 0.3333333333333333,
+     "unexposed": 140,
+     "unexposed_linked": 0,
+     "unexposed_rate": 0.0
+    },
+    "Frontiers": {
+     "exposed": 25,
+     "exposed_linked": 8,
+     "exposed_rate": 0.32,
+     "unexposed": 157,
+     "unexposed_linked": 0,
+     "unexposed_rate": 0.0
+    }
+   }
+  },
+  "new": {
+   "exposed": 41,
+   "exposed_linked": 0,
+   "exposed_rate": 0.0,
+   "unexposed": 291,
+   "unexposed_linked": 0,
+   "unexposed_rate": 0.0,
+   "by_publisher": {
+    "MDPI": {
+     "exposed": 19,
+     "exposed_linked": 0,
+     "exposed_rate": 0.0,
+     "unexposed": 165,
+     "unexposed_linked": 0,
+     "unexposed_rate": 0.0
+    },
+    "Frontiers": {
+     "exposed": 22,
+     "exposed_linked": 0,
+     "exposed_rate": 0.0,
+     "unexposed": 126,
+     "unexposed_linked": 0,
+     "unexposed_rate": 0.0
+    }
+   }
+  }
+ }
+}

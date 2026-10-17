@@ -1,0 +1,30 @@
+{
+ "main": "0db83385598c1b87ba21ae2ee5354806d9bf4403",
+ "fetched_at": "2026-10-17T12:51:05Z",
+ "files": {
+  "findings/article-number-1-forward-prereg-v2-2026-10-17.md": {
+   "ref": "0db83385598c1b87ba21ae2ee5354806d9bf4403",
+   "bytes": 6007
+  },
+  "article1_forward.py": {
+   "ref": "0db83385598c1b87ba21ae2ee5354806d9bf4403",
+   "bytes": 10085
+  },
+  "test_article1_forward.py": {
+   "ref": "0db83385598c1b87ba21ae2ee5354806d9bf4403",
+   "bytes": 9788
+  },
+  "article1_check.py": {
+   "ref": "a5a741e58f9f9519522877c632602e2ff1ae5e86",
+   "bytes": 16915
+  },
+  "article1_mechanism.py": {
+   "ref": "3c7c9e57091d35493151d2c4ca13cc7f90660e04",
+   "bytes": 16006
+  },
+  "openalex_article1.py": {
+   "ref": "1d2782e861c6fec469456401bf46863a45cdf99e",
+   "bytes": 11555
+  }
+ }
+}
