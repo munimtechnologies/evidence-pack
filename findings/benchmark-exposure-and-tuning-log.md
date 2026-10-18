@@ -47,3 +47,10 @@ Rules for this file:
 - Our estimate (not measured): about 0.2 million PubMed title and abstract records in memory, well under 1.5 GB. If the job runs out of memory, that will be logged here, and the fix will be to memory use only.
 - Seen: nothing new from the benchmark. No document text, ranking or score exists yet.
 - Tuning: none. Human labor: none.
+
+### 2026-10-18 (08:44 to 09:09 UTC), tar-bench-v2 ran; scored the same morning
+- The job started at 08:44 UTC on the 3 GB host and finished at 09:09 UTC (24.6 minutes of ranking after the 15 unit tests passed). It fetched `tar_bench.py`, `test_tar_bench.py` and the pre-registration from main at commit cb2dd93 (the same files as pinned in v0.4.27; the commit moved because of unrelated files). CLEF-TAR commit dbc13d0, as pinned. 190,586 PMIDs fetched, 0 fetch failures, 1,002 records PubMed no longer returns (0.53%, not failures). The run was not void.
+- Seen by an AI agent while scoring: `results.json` in full (means, per-topic measures, topic statistics, verdicts), `retracted.jsonl` (78 lines), the job's stdout and stderr. Not seen: any document text, any ranked list (`runs/*.res.gz` were not opened).
+- Scored exactly as pre-registered (`findings/clef-tar-2018-bm25-v1-results-2026-10-18.md`): H1 supported (bool AP 0.1602 against 0.154, WSS@95 0.4009 against 0.361, both inside the margins); H2 supported (bool_title_prefix beats bool on AP in 22 of 30 topics; threshold 20).
+- Changed: nothing. No code, parameter, stop list, query rule or measure was changed before, during or after scoring. The gaps to the published numbers are reported as they are.
+- Tuning: none. Human labor: none. Nobody has been contacted about these results.
