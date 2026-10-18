@@ -1,0 +1,1294 @@
+{
+ "prereg": "findings/pubmed-commentin-census-prereg-v1-2026-10-17.md",
+ "amendment": "findings/pubmed-commentin-census-prereg-v1-amendment-2026-10-17.md",
+ "seed": 20261017,
+ "years": [
+  2016,
+  2026
+ ],
+ "journals": {
+  "jama_network": [
+   "JAMA",
+   "JAMA Netw Open",
+   "JAMA Intern Med",
+   "JAMA Pediatr",
+   "JAMA Cardiol",
+   "JAMA Neurol",
+   "JAMA Surg",
+   "JAMA Oncol",
+   "JAMA Psychiatry",
+   "JAMA Dermatol",
+   "JAMA Ophthalmol",
+   "JAMA Otolaryngol Head Neck Surg",
+   "JAMA Health Forum"
+  ],
+  "control": [
+   "N Engl J Med",
+   "Lancet",
+   "BMJ",
+   "Ann Intern Med"
+  ]
+ },
+ "records_found": 29371,
+ "held_out_pilot_records": 61,
+ "records_fetched": 29310,
+ "records_failed": 0,
+ "reciprocity_targets_failed": 0,
+ "void": false,
+ "records_without_comment_in": 0,
+ "links_by_class": {
+  "control": {
+   "pmid": 23106,
+   "bare_doi": 85,
+   "other_nopmid": 18
+  },
+  "jama_network": {
+   "pmid": 20878,
+   "bare_doi": 2877,
+   "other_nopmid": 3
+  }
+ },
+ "dating": {
+  "jama_network": {
+   "bare_doi": [
+    2877,
+    1091
+   ],
+   "pmid": [
+    2999,
+    63
+   ]
+  },
+  "control": {
+   "bare_doi": [
+    85,
+    55
+   ],
+   "pmid": [
+    2998,
+    69
+   ]
+  }
+ },
+ "reciprocity": {
+  "jama_network": {
+   "bare_doi": [
+    300,
+    0
+   ],
+   "pmid": [
+    300,
+    300
+   ]
+  },
+  "control": {
+   "bare_doi": [
+    85,
+    0
+   ],
+   "pmid": [
+    300,
+    300
+   ]
+  }
+ },
+ "prefix_10_1001": {
+  "jama_network": [
+   2877,
+   2877
+  ],
+  "control": [
+   85,
+   0
+  ]
+ },
+ "bare_doi_target_prefixes": {
+  "10.1001": 2877,
+  "10.7326": 76,
+  "10.1056": 9
+ },
+ "by_year": {
+  "control|2016": {
+   "records": 1758,
+   "with_bare_doi": 0,
+   "links": 3526,
+   "bare_doi_links": 0
+  },
+  "control|2017": {
+   "records": 1563,
+   "with_bare_doi": 0,
+   "links": 2886,
+   "bare_doi_links": 0
+  },
+  "control|2018": {
+   "records": 1539,
+   "with_bare_doi": 0,
+   "links": 2869,
+   "bare_doi_links": 0
+  },
+  "control|2019": {
+   "records": 1761,
+   "with_bare_doi": 0,
+   "links": 3068,
+   "bare_doi_links": 0
+  },
+  "control|2020": {
+   "records": 1668,
+   "with_bare_doi": 12,
+   "links": 3033,
+   "bare_doi_links": 17
+  },
+  "control|2021": {
+   "records": 1307,
+   "with_bare_doi": 9,
+   "links": 2081,
+   "bare_doi_links": 24
+  },
+  "control|2022": {
+   "records": 1156,
+   "with_bare_doi": 10,
+   "links": 1976,
+   "bare_doi_links": 31
+  },
+  "control|2023": {
+   "records": 949,
+   "with_bare_doi": 3,
+   "links": 1858,
+   "bare_doi_links": 12
+  },
+  "control|2024": {
+   "records": 659,
+   "with_bare_doi": 1,
+   "links": 1137,
+   "bare_doi_links": 1
+  },
+  "control|2025": {
+   "records": 222,
+   "with_bare_doi": 0,
+   "links": 584,
+   "bare_doi_links": 0
+  },
+  "control|2026": {
+   "records": 68,
+   "with_bare_doi": 0,
+   "links": 191,
+   "bare_doi_links": 0
+  },
+  "jama_network|2016": {
+   "records": 1472,
+   "with_bare_doi": 0,
+   "links": 2390,
+   "bare_doi_links": 0
+  },
+  "jama_network|2017": {
+   "records": 1598,
+   "with_bare_doi": 36,
+   "links": 2495,
+   "bare_doi_links": 65
+  },
+  "jama_network|2018": {
+   "records": 1747,
+   "with_bare_doi": 49,
+   "links": 2635,
+   "bare_doi_links": 73
+  },
+  "jama_network|2019": {
+   "records": 1660,
+   "with_bare_doi": 107,
+   "links": 2425,
+   "bare_doi_links": 141
+  },
+  "jama_network|2020": {
+   "records": 1858,
+   "with_bare_doi": 129,
+   "links": 2900,
+   "bare_doi_links": 356
+  },
+  "jama_network|2021": {
+   "records": 1857,
+   "with_bare_doi": 115,
+   "links": 2658,
+   "bare_doi_links": 245
+  },
+  "jama_network|2022": {
+   "records": 1704,
+   "with_bare_doi": 97,
+   "links": 2399,
+   "bare_doi_links": 212
+  },
+  "jama_network|2023": {
+   "records": 1556,
+   "with_bare_doi": 113,
+   "links": 2072,
+   "bare_doi_links": 227
+  },
+  "jama_network|2024": {
+   "records": 1323,
+   "with_bare_doi": 207,
+   "links": 1633,
+   "bare_doi_links": 379
+  },
+  "jama_network|2025": {
+   "records": 969,
+   "with_bare_doi": 479,
+   "links": 1100,
+   "bare_doi_links": 552
+  },
+  "jama_network|2026": {
+   "records": 916,
+   "with_bare_doi": 503,
+   "links": 1051,
+   "bare_doi_links": 627
+  }
+ },
+ "by_journal": {
+  "control|Ann Intern Med": {
+   "records": 1439,
+   "with_bare_doi": 26,
+   "links": 2348,
+   "bare_doi_links": 76
+  },
+  "control|BMJ": {
+   "records": 2275,
+   "with_bare_doi": 0,
+   "links": 3218,
+   "bare_doi_links": 0
+  },
+  "control|Lancet": {
+   "records": 3432,
+   "with_bare_doi": 0,
+   "links": 6080,
+   "bare_doi_links": 0
+  },
+  "control|N Engl J Med": {
+   "records": 5504,
+   "with_bare_doi": 9,
+   "links": 11563,
+   "bare_doi_links": 9
+  },
+  "jama_network|JAMA": {
+   "records": 4239,
+   "with_bare_doi": 517,
+   "links": 6868,
+   "bare_doi_links": 1335
+  },
+  "jama_network|JAMA Cardiol": {
+   "records": 839,
+   "with_bare_doi": 24,
+   "links": 1176,
+   "bare_doi_links": 28
+  },
+  "jama_network|JAMA Dermatol": {
+   "records": 483,
+   "with_bare_doi": 42,
+   "links": 625,
+   "bare_doi_links": 54
+  },
+  "jama_network|JAMA Health Forum": {
+   "records": 82,
+   "with_bare_doi": 30,
+   "links": 88,
+   "bare_doi_links": 34
+  },
+  "jama_network|JAMA Intern Med": {
+   "records": 1938,
+   "with_bare_doi": 95,
+   "links": 2900,
+   "bare_doi_links": 125
+  },
+  "jama_network|JAMA Netw Open": {
+   "records": 2675,
+   "with_bare_doi": 897,
+   "links": 2850,
+   "bare_doi_links": 1006
+  },
+  "jama_network|JAMA Neurol": {
+   "records": 674,
+   "with_bare_doi": 32,
+   "links": 961,
+   "bare_doi_links": 36
+  },
+  "jama_network|JAMA Oncol": {
+   "records": 1200,
+   "with_bare_doi": 32,
+   "links": 1896,
+   "bare_doi_links": 56
+  },
+  "jama_network|JAMA Ophthalmol": {
+   "records": 913,
+   "with_bare_doi": 42,
+   "links": 1144,
+   "bare_doi_links": 43
+  },
+  "jama_network|JAMA Otolaryngol Head Neck Surg": {
+   "records": 468,
+   "with_bare_doi": 43,
+   "links": 614,
+   "bare_doi_links": 61
+  },
+  "jama_network|JAMA Pediatr": {
+   "records": 1124,
+   "with_bare_doi": 39,
+   "links": 1669,
+   "bare_doi_links": 43
+  },
+  "jama_network|JAMA Psychiatry": {
+   "records": 560,
+   "with_bare_doi": 15,
+   "links": 806,
+   "bare_doi_links": 25
+  },
+  "jama_network|JAMA Surg": {
+   "records": 1465,
+   "with_bare_doi": 27,
+   "links": 2161,
+   "bare_doi_links": 31
+  }
+ },
+ "hypotheses": {
+  "H1": "supported",
+  "H2": "not supported",
+  "H3": "supported",
+  "H4": "supported"
+ },
+ "search_log": [
+  {
+   "term": "hascommentin AND \"JAMA\"[ta] AND 2016[dp]",
+   "count": 435,
+   "got": 435
+  },
+  {
+   "term": "hascommentin AND \"JAMA\"[ta] AND 2017[dp]",
+   "count": 461,
+   "got": 461
+  },
+  {
+   "term": "hascommentin AND \"JAMA\"[ta] AND 2018[dp]",
+   "count": 464,
+   "got": 464
+  },
+  {
+   "term": "hascommentin AND \"JAMA\"[ta] AND 2019[dp]",
+   "count": 405,
+   "got": 405
+  },
+  {
+   "term": "hascommentin AND \"JAMA\"[ta] AND 2020[dp]",
+   "count": 472,
+   "got": 472
+  },
+  {
+   "term": "hascommentin AND \"JAMA\"[ta] AND 2021[dp]",
+   "count": 424,
+   "got": 424
+  },
+  {
+   "term": "hascommentin AND \"JAMA\"[ta] AND 2022[dp]",
+   "count": 454,
+   "got": 454
+  },
+  {
+   "term": "hascommentin AND \"JAMA\"[ta] AND 2023[dp]",
+   "count": 456,
+   "got": 456
+  },
+  {
+   "term": "hascommentin AND \"JAMA\"[ta] AND 2024[dp]",
+   "count": 366,
+   "got": 366
+  },
+  {
+   "term": "hascommentin AND \"JAMA\"[ta] AND 2025[dp]",
+   "count": 179,
+   "got": 179
+  },
+  {
+   "term": "hascommentin AND \"JAMA\"[ta] AND 2026[dp]",
+   "count": 184,
+   "got": 184
+  },
+  {
+   "term": "hascommentin AND \"JAMA Netw Open\"[ta] AND 2016[dp]",
+   "count": 0,
+   "got": 0
+  },
+  {
+   "term": "hascommentin AND \"JAMA Netw Open\"[ta] AND 2017[dp]",
+   "count": 0,
+   "got": 0
+  },
+  {
+   "term": "hascommentin AND \"JAMA Netw Open\"[ta] AND 2018[dp]",
+   "count": 107,
+   "got": 107
+  },
+  {
+   "term": "hascommentin AND \"JAMA Netw Open\"[ta] AND 2019[dp]",
+   "count": 180,
+   "got": 180
+  },
+  {
+   "term": "hascommentin AND \"JAMA Netw Open\"[ta] AND 2020[dp]",
+   "count": 279,
+   "got": 279
+  },
+  {
+   "term": "hascommentin AND \"JAMA Netw Open\"[ta] AND 2021[dp]",
+   "count": 369,
+   "got": 369
+  },
+  {
+   "term": "hascommentin AND \"JAMA Netw Open\"[ta] AND 2022[dp]",
+   "count": 342,
+   "got": 342
+  },
+  {
+   "term": "hascommentin AND \"JAMA Netw Open\"[ta] AND 2023[dp]",
+   "count": 262,
+   "got": 262
+  },
+  {
+   "term": "hascommentin AND \"JAMA Netw Open\"[ta] AND 2024[dp]",
+   "count": 387,
+   "got": 387
+  },
+  {
+   "term": "hascommentin AND \"JAMA Netw Open\"[ta] AND 2025[dp]",
+   "count": 410,
+   "got": 410
+  },
+  {
+   "term": "hascommentin AND \"JAMA Netw Open\"[ta] AND 2026[dp]",
+   "count": 339,
+   "got": 339
+  },
+  {
+   "term": "hascommentin AND \"JAMA Intern Med\"[ta] AND 2016[dp]",
+   "count": 261,
+   "got": 261
+  },
+  {
+   "term": "hascommentin AND \"JAMA Intern Med\"[ta] AND 2017[dp]",
+   "count": 245,
+   "got": 245
+  },
+  {
+   "term": "hascommentin AND \"JAMA Intern Med\"[ta] AND 2018[dp]",
+   "count": 233,
+   "got": 233
+  },
+  {
+   "term": "hascommentin AND \"JAMA Intern Med\"[ta] AND 2019[dp]",
+   "count": 226,
+   "got": 226
+  },
+  {
+   "term": "hascommentin AND \"JAMA Intern Med\"[ta] AND 2020[dp]",
+   "count": 207,
+   "got": 207
+  },
+  {
+   "term": "hascommentin AND \"JAMA Intern Med\"[ta] AND 2021[dp]",
+   "count": 204,
+   "got": 204
+  },
+  {
+   "term": "hascommentin AND \"JAMA Intern Med\"[ta] AND 2022[dp]",
+   "count": 133,
+   "got": 133
+  },
+  {
+   "term": "hascommentin AND \"JAMA Intern Med\"[ta] AND 2023[dp]",
+   "count": 126,
+   "got": 126
+  },
+  {
+   "term": "hascommentin AND \"JAMA Intern Med\"[ta] AND 2024[dp]",
+   "count": 116,
+   "got": 116
+  },
+  {
+   "term": "hascommentin AND \"JAMA Intern Med\"[ta] AND 2025[dp]",
+   "count": 89,
+   "got": 89
+  },
+  {
+   "term": "hascommentin AND \"JAMA Intern Med\"[ta] AND 2026[dp]",
+   "count": 98,
+   "got": 98
+  },
+  {
+   "term": "hascommentin AND \"JAMA Pediatr\"[ta] AND 2016[dp]",
+   "count": 102,
+   "got": 102
+  },
+  {
+   "term": "hascommentin AND \"JAMA Pediatr\"[ta] AND 2017[dp]",
+   "count": 123,
+   "got": 123
+  },
+  {
+   "term": "hascommentin AND \"JAMA Pediatr\"[ta] AND 2018[dp]",
+   "count": 134,
+   "got": 134
+  },
+  {
+   "term": "hascommentin AND \"JAMA Pediatr\"[ta] AND 2019[dp]",
+   "count": 116,
+   "got": 116
+  },
+  {
+   "term": "hascommentin AND \"JAMA Pediatr\"[ta] AND 2020[dp]",
+   "count": 163,
+   "got": 163
+  },
+  {
+   "term": "hascommentin AND \"JAMA Pediatr\"[ta] AND 2021[dp]",
+   "count": 150,
+   "got": 150
+  },
+  {
+   "term": "hascommentin AND \"JAMA Pediatr\"[ta] AND 2022[dp]",
+   "count": 122,
+   "got": 122
+  },
+  {
+   "term": "hascommentin AND \"JAMA Pediatr\"[ta] AND 2023[dp]",
+   "count": 90,
+   "got": 90
+  },
+  {
+   "term": "hascommentin AND \"JAMA Pediatr\"[ta] AND 2024[dp]",
+   "count": 46,
+   "got": 46
+  },
+  {
+   "term": "hascommentin AND \"JAMA Pediatr\"[ta] AND 2025[dp]",
+   "count": 38,
+   "got": 38
+  },
+  {
+   "term": "hascommentin AND \"JAMA Pediatr\"[ta] AND 2026[dp]",
+   "count": 40,
+   "got": 40
+  },
+  {
+   "term": "hascommentin AND \"JAMA Cardiol\"[ta] AND 2016[dp]",
+   "count": 63,
+   "got": 63
+  },
+  {
+   "term": "hascommentin AND \"JAMA Cardiol\"[ta] AND 2017[dp]",
+   "count": 125,
+   "got": 125
+  },
+  {
+   "term": "hascommentin AND \"JAMA Cardiol\"[ta] AND 2018[dp]",
+   "count": 97,
+   "got": 97
+  },
+  {
+   "term": "hascommentin AND \"JAMA Cardiol\"[ta] AND 2019[dp]",
+   "count": 92,
+   "got": 92
+  },
+  {
+   "term": "hascommentin AND \"JAMA Cardiol\"[ta] AND 2020[dp]",
+   "count": 92,
+   "got": 92
+  },
+  {
+   "term": "hascommentin AND \"JAMA Cardiol\"[ta] AND 2021[dp]",
+   "count": 103,
+   "got": 103
+  },
+  {
+   "term": "hascommentin AND \"JAMA Cardiol\"[ta] AND 2022[dp]",
+   "count": 82,
+   "got": 82
+  },
+  {
+   "term": "hascommentin AND \"JAMA Cardiol\"[ta] AND 2023[dp]",
+   "count": 68,
+   "got": 68
+  },
+  {
+   "term": "hascommentin AND \"JAMA Cardiol\"[ta] AND 2024[dp]",
+   "count": 40,
+   "got": 40
+  },
+  {
+   "term": "hascommentin AND \"JAMA Cardiol\"[ta] AND 2025[dp]",
+   "count": 42,
+   "got": 42
+  },
+  {
+   "term": "hascommentin AND \"JAMA Cardiol\"[ta] AND 2026[dp]",
+   "count": 35,
+   "got": 35
+  },
+  {
+   "term": "hascommentin AND \"JAMA Neurol\"[ta] AND 2016[dp]",
+   "count": 144,
+   "got": 144
+  },
+  {
+   "term": "hascommentin AND \"JAMA Neurol\"[ta] AND 2017[dp]",
+   "count": 108,
+   "got": 108
+  },
+  {
+   "term": "hascommentin AND \"JAMA Neurol\"[ta] AND 2018[dp]",
+   "count": 92,
+   "got": 92
+  },
+  {
+   "term": "hascommentin AND \"JAMA Neurol\"[ta] AND 2019[dp]",
+   "count": 56,
+   "got": 56
+  },
+  {
+   "term": "hascommentin AND \"JAMA Neurol\"[ta] AND 2020[dp]",
+   "count": 63,
+   "got": 63
+  },
+  {
+   "term": "hascommentin AND \"JAMA Neurol\"[ta] AND 2021[dp]",
+   "count": 57,
+   "got": 57
+  },
+  {
+   "term": "hascommentin AND \"JAMA Neurol\"[ta] AND 2022[dp]",
+   "count": 43,
+   "got": 43
+  },
+  {
+   "term": "hascommentin AND \"JAMA Neurol\"[ta] AND 2023[dp]",
+   "count": 42,
+   "got": 42
+  },
+  {
+   "term": "hascommentin AND \"JAMA Neurol\"[ta] AND 2024[dp]",
+   "count": 24,
+   "got": 24
+  },
+  {
+   "term": "hascommentin AND \"JAMA Neurol\"[ta] AND 2025[dp]",
+   "count": 23,
+   "got": 23
+  },
+  {
+   "term": "hascommentin AND \"JAMA Neurol\"[ta] AND 2026[dp]",
+   "count": 22,
+   "got": 22
+  },
+  {
+   "term": "hascommentin AND \"JAMA Surg\"[ta] AND 2016[dp]",
+   "count": 125,
+   "got": 125
+  },
+  {
+   "term": "hascommentin AND \"JAMA Surg\"[ta] AND 2017[dp]",
+   "count": 117,
+   "got": 117
+  },
+  {
+   "term": "hascommentin AND \"JAMA Surg\"[ta] AND 2018[dp]",
+   "count": 133,
+   "got": 133
+  },
+  {
+   "term": "hascommentin AND \"JAMA Surg\"[ta] AND 2019[dp]",
+   "count": 158,
+   "got": 158
+  },
+  {
+   "term": "hascommentin AND \"JAMA Surg\"[ta] AND 2020[dp]",
+   "count": 170,
+   "got": 170
+  },
+  {
+   "term": "hascommentin AND \"JAMA Surg\"[ta] AND 2021[dp]",
+   "count": 154,
+   "got": 154
+  },
+  {
+   "term": "hascommentin AND \"JAMA Surg\"[ta] AND 2022[dp]",
+   "count": 163,
+   "got": 163
+  },
+  {
+   "term": "hascommentin AND \"JAMA Surg\"[ta] AND 2023[dp]",
+   "count": 168,
+   "got": 168
+  },
+  {
+   "term": "hascommentin AND \"JAMA Surg\"[ta] AND 2024[dp]",
+   "count": 111,
+   "got": 111
+  },
+  {
+   "term": "hascommentin AND \"JAMA Surg\"[ta] AND 2025[dp]",
+   "count": 82,
+   "got": 82
+  },
+  {
+   "term": "hascommentin AND \"JAMA Surg\"[ta] AND 2026[dp]",
+   "count": 84,
+   "got": 84
+  },
+  {
+   "term": "hascommentin AND \"JAMA Oncol\"[ta] AND 2016[dp]",
+   "count": 96,
+   "got": 96
+  },
+  {
+   "term": "hascommentin AND \"JAMA Oncol\"[ta] AND 2017[dp]",
+   "count": 126,
+   "got": 126
+  },
+  {
+   "term": "hascommentin AND \"JAMA Oncol\"[ta] AND 2018[dp]",
+   "count": 188,
+   "got": 188
+  },
+  {
+   "term": "hascommentin AND \"JAMA Oncol\"[ta] AND 2019[dp]",
+   "count": 130,
+   "got": 130
+  },
+  {
+   "term": "hascommentin AND \"JAMA Oncol\"[ta] AND 2020[dp]",
+   "count": 166,
+   "got": 166
+  },
+  {
+   "term": "hascommentin AND \"JAMA Oncol\"[ta] AND 2021[dp]",
+   "count": 136,
+   "got": 136
+  },
+  {
+   "term": "hascommentin AND \"JAMA Oncol\"[ta] AND 2022[dp]",
+   "count": 117,
+   "got": 117
+  },
+  {
+   "term": "hascommentin AND \"JAMA Oncol\"[ta] AND 2023[dp]",
+   "count": 119,
+   "got": 119
+  },
+  {
+   "term": "hascommentin AND \"JAMA Oncol\"[ta] AND 2024[dp]",
+   "count": 63,
+   "got": 63
+  },
+  {
+   "term": "hascommentin AND \"JAMA Oncol\"[ta] AND 2025[dp]",
+   "count": 38,
+   "got": 38
+  },
+  {
+   "term": "hascommentin AND \"JAMA Oncol\"[ta] AND 2026[dp]",
+   "count": 21,
+   "got": 21
+  },
+  {
+   "term": "hascommentin AND \"JAMA Psychiatry\"[ta] AND 2016[dp]",
+   "count": 95,
+   "got": 95
+  },
+  {
+   "term": "hascommentin AND \"JAMA Psychiatry\"[ta] AND 2017[dp]",
+   "count": 109,
+   "got": 109
+  },
+  {
+   "term": "hascommentin AND \"JAMA Psychiatry\"[ta] AND 2018[dp]",
+   "count": 77,
+   "got": 77
+  },
+  {
+   "term": "hascommentin AND \"JAMA Psychiatry\"[ta] AND 2019[dp]",
+   "count": 81,
+   "got": 81
+  },
+  {
+   "term": "hascommentin AND \"JAMA Psychiatry\"[ta] AND 2020[dp]",
+   "count": 56,
+   "got": 56
+  },
+  {
+   "term": "hascommentin AND \"JAMA Psychiatry\"[ta] AND 2021[dp]",
+   "count": 34,
+   "got": 34
+  },
+  {
+   "term": "hascommentin AND \"JAMA Psychiatry\"[ta] AND 2022[dp]",
+   "count": 41,
+   "got": 41
+  },
+  {
+   "term": "hascommentin AND \"JAMA Psychiatry\"[ta] AND 2023[dp]",
+   "count": 31,
+   "got": 31
+  },
+  {
+   "term": "hascommentin AND \"JAMA Psychiatry\"[ta] AND 2024[dp]",
+   "count": 18,
+   "got": 18
+  },
+  {
+   "term": "hascommentin AND \"JAMA Psychiatry\"[ta] AND 2025[dp]",
+   "count": 9,
+   "got": 9
+  },
+  {
+   "term": "hascommentin AND \"JAMA Psychiatry\"[ta] AND 2026[dp]",
+   "count": 9,
+   "got": 9
+  },
+  {
+   "term": "hascommentin AND \"JAMA Dermatol\"[ta] AND 2016[dp]",
+   "count": 43,
+   "got": 43
+  },
+  {
+   "term": "hascommentin AND \"JAMA Dermatol\"[ta] AND 2017[dp]",
+   "count": 50,
+   "got": 50
+  },
+  {
+   "term": "hascommentin AND \"JAMA Dermatol\"[ta] AND 2018[dp]",
+   "count": 60,
+   "got": 60
+  },
+  {
+   "term": "hascommentin AND \"JAMA Dermatol\"[ta] AND 2019[dp]",
+   "count": 76,
+   "got": 76
+  },
+  {
+   "term": "hascommentin AND \"JAMA Dermatol\"[ta] AND 2020[dp]",
+   "count": 56,
+   "got": 56
+  },
+  {
+   "term": "hascommentin AND \"JAMA Dermatol\"[ta] AND 2021[dp]",
+   "count": 50,
+   "got": 50
+  },
+  {
+   "term": "hascommentin AND \"JAMA Dermatol\"[ta] AND 2022[dp]",
+   "count": 43,
+   "got": 43
+  },
+  {
+   "term": "hascommentin AND \"JAMA Dermatol\"[ta] AND 2023[dp]",
+   "count": 40,
+   "got": 40
+  },
+  {
+   "term": "hascommentin AND \"JAMA Dermatol\"[ta] AND 2024[dp]",
+   "count": 31,
+   "got": 31
+  },
+  {
+   "term": "hascommentin AND \"JAMA Dermatol\"[ta] AND 2025[dp]",
+   "count": 19,
+   "got": 19
+  },
+  {
+   "term": "hascommentin AND \"JAMA Dermatol\"[ta] AND 2026[dp]",
+   "count": 15,
+   "got": 15
+  },
+  {
+   "term": "hascommentin AND \"JAMA Ophthalmol\"[ta] AND 2016[dp]",
+   "count": 86,
+   "got": 86
+  },
+  {
+   "term": "hascommentin AND \"JAMA Ophthalmol\"[ta] AND 2017[dp]",
+   "count": 85,
+   "got": 85
+  },
+  {
+   "term": "hascommentin AND \"JAMA Ophthalmol\"[ta] AND 2018[dp]",
+   "count": 109,
+   "got": 109
+  },
+  {
+   "term": "hascommentin AND \"JAMA Ophthalmol\"[ta] AND 2019[dp]",
+   "count": 90,
+   "got": 90
+  },
+  {
+   "term": "hascommentin AND \"JAMA Ophthalmol\"[ta] AND 2020[dp]",
+   "count": 68,
+   "got": 68
+  },
+  {
+   "term": "hascommentin AND \"JAMA Ophthalmol\"[ta] AND 2021[dp]",
+   "count": 98,
+   "got": 98
+  },
+  {
+   "term": "hascommentin AND \"JAMA Ophthalmol\"[ta] AND 2022[dp]",
+   "count": 89,
+   "got": 89
+  },
+  {
+   "term": "hascommentin AND \"JAMA Ophthalmol\"[ta] AND 2023[dp]",
+   "count": 100,
+   "got": 100
+  },
+  {
+   "term": "hascommentin AND \"JAMA Ophthalmol\"[ta] AND 2024[dp]",
+   "count": 68,
+   "got": 68
+  },
+  {
+   "term": "hascommentin AND \"JAMA Ophthalmol\"[ta] AND 2025[dp]",
+   "count": 73,
+   "got": 73
+  },
+  {
+   "term": "hascommentin AND \"JAMA Ophthalmol\"[ta] AND 2026[dp]",
+   "count": 47,
+   "got": 47
+  },
+  {
+   "term": "hascommentin AND \"JAMA Otolaryngol Head Neck Surg\"[ta] AND 2016[dp]",
+   "count": 22,
+   "got": 22
+  },
+  {
+   "term": "hascommentin AND \"JAMA Otolaryngol Head Neck Surg\"[ta] AND 2017[dp]",
+   "count": 49,
+   "got": 49
+  },
+  {
+   "term": "hascommentin AND \"JAMA Otolaryngol Head Neck Surg\"[ta] AND 2018[dp]",
+   "count": 54,
+   "got": 54
+  },
+  {
+   "term": "hascommentin AND \"JAMA Otolaryngol Head Neck Surg\"[ta] AND 2019[dp]",
+   "count": 50,
+   "got": 50
+  },
+  {
+   "term": "hascommentin AND \"JAMA Otolaryngol Head Neck Surg\"[ta] AND 2020[dp]",
+   "count": 66,
+   "got": 66
+  },
+  {
+   "term": "hascommentin AND \"JAMA Otolaryngol Head Neck Surg\"[ta] AND 2021[dp]",
+   "count": 55,
+   "got": 55
+  },
+  {
+   "term": "hascommentin AND \"JAMA Otolaryngol Head Neck Surg\"[ta] AND 2022[dp]",
+   "count": 59,
+   "got": 59
+  },
+  {
+   "term": "hascommentin AND \"JAMA Otolaryngol Head Neck Surg\"[ta] AND 2023[dp]",
+   "count": 40,
+   "got": 40
+  },
+  {
+   "term": "hascommentin AND \"JAMA Otolaryngol Head Neck Surg\"[ta] AND 2024[dp]",
+   "count": 39,
+   "got": 39
+  },
+  {
+   "term": "hascommentin AND \"JAMA Otolaryngol Head Neck Surg\"[ta] AND 2025[dp]",
+   "count": 18,
+   "got": 18
+  },
+  {
+   "term": "hascommentin AND \"JAMA Otolaryngol Head Neck Surg\"[ta] AND 2026[dp]",
+   "count": 17,
+   "got": 17
+  },
+  {
+   "term": "hascommentin AND \"JAMA Health Forum\"[ta] AND 2016[dp]",
+   "count": 0,
+   "got": 0
+  },
+  {
+   "term": "hascommentin AND \"JAMA Health Forum\"[ta] AND 2017[dp]",
+   "count": 0,
+   "got": 0
+  },
+  {
+   "term": "hascommentin AND \"JAMA Health Forum\"[ta] AND 2018[dp]",
+   "count": 0,
+   "got": 0
+  },
+  {
+   "term": "hascommentin AND \"JAMA Health Forum\"[ta] AND 2019[dp]",
+   "count": 0,
+   "got": 0
+  },
+  {
+   "term": "hascommentin AND \"JAMA Health Forum\"[ta] AND 2020[dp]",
+   "count": 0,
+   "got": 0
+  },
+  {
+   "term": "hascommentin AND \"JAMA Health Forum\"[ta] AND 2021[dp]",
+   "count": 23,
+   "got": 23
+  },
+  {
+   "term": "hascommentin AND \"JAMA Health Forum\"[ta] AND 2022[dp]",
+   "count": 16,
+   "got": 16
+  },
+  {
+   "term": "hascommentin AND \"JAMA Health Forum\"[ta] AND 2023[dp]",
+   "count": 14,
+   "got": 14
+  },
+  {
+   "term": "hascommentin AND \"JAMA Health Forum\"[ta] AND 2024[dp]",
+   "count": 14,
+   "got": 14
+  },
+  {
+   "term": "hascommentin AND \"JAMA Health Forum\"[ta] AND 2025[dp]",
+   "count": 10,
+   "got": 10
+  },
+  {
+   "term": "hascommentin AND \"JAMA Health Forum\"[ta] AND 2026[dp]",
+   "count": 5,
+   "got": 5
+  },
+  {
+   "term": "hascommentin AND \"N Engl J Med\"[ta] AND 2016[dp]",
+   "count": 778,
+   "got": 778
+  },
+  {
+   "term": "hascommentin AND \"N Engl J Med\"[ta] AND 2017[dp]",
+   "count": 711,
+   "got": 711
+  },
+  {
+   "term": "hascommentin AND \"N Engl J Med\"[ta] AND 2018[dp]",
+   "count": 753,
+   "got": 753
+  },
+  {
+   "term": "hascommentin AND \"N Engl J Med\"[ta] AND 2019[dp]",
+   "count": 718,
+   "got": 718
+  },
+  {
+   "term": "hascommentin AND \"N Engl J Med\"[ta] AND 2020[dp]",
+   "count": 784,
+   "got": 784
+  },
+  {
+   "term": "hascommentin AND \"N Engl J Med\"[ta] AND 2021[dp]",
+   "count": 631,
+   "got": 631
+  },
+  {
+   "term": "hascommentin AND \"N Engl J Med\"[ta] AND 2022[dp]",
+   "count": 548,
+   "got": 548
+  },
+  {
+   "term": "hascommentin AND \"N Engl J Med\"[ta] AND 2023[dp]",
+   "count": 281,
+   "got": 281
+  },
+  {
+   "term": "hascommentin AND \"N Engl J Med\"[ta] AND 2024[dp]",
+   "count": 201,
+   "got": 201
+  },
+  {
+   "term": "hascommentin AND \"N Engl J Med\"[ta] AND 2025[dp]",
+   "count": 188,
+   "got": 188
+  },
+  {
+   "term": "hascommentin AND \"N Engl J Med\"[ta] AND 2026[dp]",
+   "count": 82,
+   "got": 82
+  },
+  {
+   "term": "hascommentin AND \"Lancet\"[ta] AND 2016[dp]",
+   "count": 530,
+   "got": 530
+  },
+  {
+   "term": "hascommentin AND \"Lancet\"[ta] AND 2017[dp]",
+   "count": 424,
+   "got": 424
+  },
+  {
+   "term": "hascommentin AND \"Lancet\"[ta] AND 2018[dp]",
+   "count": 367,
+   "got": 367
+  },
+  {
+   "term": "hascommentin AND \"Lancet\"[ta] AND 2019[dp]",
+   "count": 490,
+   "got": 490
+  },
+  {
+   "term": "hascommentin AND \"Lancet\"[ta] AND 2020[dp]",
+   "count": 463,
+   "got": 463
+  },
+  {
+   "term": "hascommentin AND \"Lancet\"[ta] AND 2021[dp]",
+   "count": 368,
+   "got": 368
+  },
+  {
+   "term": "hascommentin AND \"Lancet\"[ta] AND 2022[dp]",
+   "count": 303,
+   "got": 303
+  },
+  {
+   "term": "hascommentin AND \"Lancet\"[ta] AND 2023[dp]",
+   "count": 329,
+   "got": 329
+  },
+  {
+   "term": "hascommentin AND \"Lancet\"[ta] AND 2024[dp]",
+   "count": 281,
+   "got": 281
+  },
+  {
+   "term": "hascommentin AND \"Lancet\"[ta] AND 2025[dp]",
+   "count": 65,
+   "got": 65
+  },
+  {
+   "term": "hascommentin AND \"Lancet\"[ta] AND 2026[dp]",
+   "count": 5,
+   "got": 5
+  },
+  {
+   "term": "hascommentin AND \"BMJ\"[ta] AND 2016[dp]",
+   "count": 260,
+   "got": 260
+  },
+  {
+   "term": "hascommentin AND \"BMJ\"[ta] AND 2017[dp]",
+   "count": 291,
+   "got": 291
+  },
+  {
+   "term": "hascommentin AND \"BMJ\"[ta] AND 2018[dp]",
+   "count": 210,
+   "got": 210
+  },
+  {
+   "term": "hascommentin AND \"BMJ\"[ta] AND 2019[dp]",
+   "count": 361,
+   "got": 361
+  },
+  {
+   "term": "hascommentin AND \"BMJ\"[ta] AND 2020[dp]",
+   "count": 257,
+   "got": 257
+  },
+  {
+   "term": "hascommentin AND \"BMJ\"[ta] AND 2021[dp]",
+   "count": 220,
+   "got": 220
+  },
+  {
+   "term": "hascommentin AND \"BMJ\"[ta] AND 2022[dp]",
+   "count": 230,
+   "got": 230
+  },
+  {
+   "term": "hascommentin AND \"BMJ\"[ta] AND 2023[dp]",
+   "count": 277,
+   "got": 277
+  },
+  {
+   "term": "hascommentin AND \"BMJ\"[ta] AND 2024[dp]",
+   "count": 163,
+   "got": 163
+  },
+  {
+   "term": "hascommentin AND \"BMJ\"[ta] AND 2025[dp]",
+   "count": 5,
+   "got": 5
+  },
+  {
+   "term": "hascommentin AND \"BMJ\"[ta] AND 2026[dp]",
+   "count": 1,
+   "got": 1
+  },
+  {
+   "term": "hascommentin AND \"Ann Intern Med\"[ta] AND 2016[dp]",
+   "count": 190,
+   "got": 190
+  },
+  {
+   "term": "hascommentin AND \"Ann Intern Med\"[ta] AND 2017[dp]",
+   "count": 206,
+   "got": 206
+  },
+  {
+   "term": "hascommentin AND \"Ann Intern Med\"[ta] AND 2018[dp]",
+   "count": 276,
+   "got": 276
+  },
+  {
+   "term": "hascommentin AND \"Ann Intern Med\"[ta] AND 2019[dp]",
+   "count": 234,
+   "got": 234
+  },
+  {
+   "term": "hascommentin AND \"Ann Intern Med\"[ta] AND 2020[dp]",
+   "count": 208,
+   "got": 208
+  },
+  {
+   "term": "hascommentin AND \"Ann Intern Med\"[ta] AND 2021[dp]",
+   "count": 154,
+   "got": 154
+  },
+  {
+   "term": "hascommentin AND \"Ann Intern Med\"[ta] AND 2022[dp]",
+   "count": 127,
+   "got": 127
+  },
+  {
+   "term": "hascommentin AND \"Ann Intern Med\"[ta] AND 2023[dp]",
+   "count": 98,
+   "got": 98
+  },
+  {
+   "term": "hascommentin AND \"Ann Intern Med\"[ta] AND 2024[dp]",
+   "count": 40,
+   "got": 40
+  },
+  {
+   "term": "hascommentin AND \"Ann Intern Med\"[ta] AND 2025[dp]",
+   "count": 1,
+   "got": 1
+  },
+  {
+   "term": "hascommentin AND \"Ann Intern Med\"[ta] AND 2026[dp]",
+   "count": 0,
+   "got": 0
+  }
+ ],
+ "errors": [],
+ "n_errors": 0,
+ "minutes": 14.3
+}
