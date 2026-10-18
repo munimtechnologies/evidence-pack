@@ -1,0 +1,669 @@
+{
+ "seed": 20261107,
+ "old": [
+  2016,
+  2019
+ ],
+ "new": [
+  2022,
+  2023
+ ],
+ "listing": {
+  "2016": {
+   "groups": 200,
+   "eligible_groups": 84,
+   "calls": 3,
+   "failed_calls": 0,
+   "no_total": 0,
+   "low_share": 17,
+   "candidates": 67
+  },
+  "2017": {
+   "groups": 200,
+   "eligible_groups": 88,
+   "calls": 3,
+   "failed_calls": 0,
+   "no_total": 0,
+   "low_share": 12,
+   "candidates": 76
+  },
+  "2018": {
+   "groups": 200,
+   "eligible_groups": 87,
+   "calls": 3,
+   "failed_calls": 0,
+   "no_total": 0,
+   "low_share": 19,
+   "candidates": 68
+  },
+  "2019": {
+   "groups": 200,
+   "eligible_groups": 89,
+   "calls": 3,
+   "failed_calls": 0,
+   "no_total": 0,
+   "low_share": 15,
+   "candidates": 74
+  },
+  "2022": {
+   "groups": 200,
+   "eligible_groups": 78,
+   "calls": 3,
+   "failed_calls": 0,
+   "no_total": 0,
+   "low_share": 14,
+   "candidates": 64
+  },
+  "2023": {
+   "groups": 200,
+   "eligible_groups": 80,
+   "calls": 3,
+   "failed_calls": 0,
+   "no_total": 0,
+   "low_share": 11,
+   "candidates": 69
+  }
+ },
+ "failed_examinations": 0,
+ "pool": {
+  "old": 285,
+  "new": 133
+ },
+ "status": {
+  "ok": 227,
+  "hindawi": 13
+ },
+ "void": false,
+ "H1": "not supported",
+ "H1_detail": {
+  "journal_years": 132,
+  "with_sink": 15,
+  "share": 0.11363636363636363
+ },
+ "H2": "supported",
+ "H2_detail": {
+  "old": 132,
+  "old_with_sink": 15,
+  "new": 70,
+  "new_with_sink": 0,
+  "new_share": 0.0,
+  "p": 0.0012613489882317295
+ },
+ "H5": "not supported",
+ "H5_detail": {
+  "pairs": 15,
+  "sink_higher": 15,
+  "control_higher": 0,
+  "p": 3.0517578125e-05,
+  "median_sink": 0.6588235294117647,
+  "median_control": 0.3235294117647059
+ },
+ "reads": {
+  "targets": [
+   {
+    "source": "S117354312",
+    "name": "Journal of Biomedical Optics",
+    "year": 2016,
+    "sink": "10.1117/1.jbo.21.9.099801",
+    "oa": 119,
+    "cr": 7,
+    "volume": "21",
+    "control": "10.1117/1.jbo.21.6.061007",
+    "journal_names": [
+     "journal biomedical optics",
+     "j biomed opt"
+    ],
+    "sink_sample": {
+     "returned": 15,
+     "lookup_calls": 1,
+     "failed_lookup_calls": 0
+    },
+    "control_sample": {
+     "returned": 15,
+     "lookup_calls": 0,
+     "failed_lookup_calls": 0
+    }
+   },
+   {
+    "source": "S72499069",
+    "name": "IEEE photonics journal",
+    "year": 2016,
+    "sink": "10.1109/jphot.2016.2530561",
+    "oa": 224,
+    "cr": 7,
+    "volume": "8",
+    "control": "10.1109/jphot.2016.2592705",
+    "journal_names": [
+     "ieee photonics journal",
+     "ieee photonics j"
+    ],
+    "sink_sample": {
+     "returned": 15,
+     "lookup_calls": 1,
+     "failed_lookup_calls": 0
+    },
+    "control_sample": {
+     "returned": 15,
+     "lookup_calls": 0,
+     "failed_lookup_calls": 0
+    }
+   },
+   {
+    "source": "S4210169746",
+    "name": "IMF Staff Country Reports",
+    "year": 2016,
+    "sink": "10.5089/9781475529685.002",
+    "oa": 107,
+    "cr": 0,
+    "volume": "2016",
+    "control": "10.5089/9781513524306.002",
+    "journal_names": [
+     "imf staff country reports"
+    ],
+    "sink_sample": {
+     "returned": 15,
+     "lookup_calls": 0,
+     "failed_lookup_calls": 0
+    },
+    "control_sample": {
+     "returned": 15,
+     "lookup_calls": 0,
+     "failed_lookup_calls": 0
+    }
+   },
+   {
+    "source": "S2764746358",
+    "name": "Indian Journal of Science and Technology",
+    "year": 2019,
+    "sink": "10.17485/ijst",
+    "oa": 1913,
+    "cr": 27,
+    "volume": "19",
+    "control": "10.17485/ijst/2019/v12i4/139729",
+    "journal_names": [],
+    "sink_sample": {
+     "returned": 15,
+     "lookup_calls": 0,
+     "failed_lookup_calls": 0
+    },
+    "control_sample": {
+     "returned": 15,
+     "lookup_calls": 0,
+     "failed_lookup_calls": 0
+    }
+   },
+   {
+    "source": "S4210171147",
+    "name": "IMF Working Paper",
+    "year": 2019,
+    "sink": "10.5089/9781498302708.001.a001",
+    "oa": 105,
+    "cr": 1,
+    "volume": "2019",
+    "control": "10.5089/9781498302708.001",
+    "journal_names": [],
+    "sink_sample": {
+     "returned": 15,
+     "lookup_calls": 0,
+     "failed_lookup_calls": 0
+    },
+    "control_sample": {
+     "returned": 15,
+     "lookup_calls": 0,
+     "failed_lookup_calls": 0
+    }
+   },
+   {
+    "source": "S4210189382",
+    "name": "Microbiology Research Journal International",
+    "year": 2019,
+    "sink": "10.9734/mrji",
+    "oa": 65,
+    "cr": 1,
+    "volume": "",
+    "control": "10.9734/mrji/2019/v28i330133",
+    "journal_names": [],
+    "sink_sample": {
+     "returned": 15,
+     "lookup_calls": 1,
+     "failed_lookup_calls": 0
+    },
+    "control_sample": {
+     "returned": 15,
+     "lookup_calls": 0,
+     "failed_lookup_calls": 0
+    }
+   },
+   {
+    "source": "S2764386882",
+    "name": "Pesquisa Brasileira em Odontopediatria e Clínica Integrada",
+    "year": 2019,
+    "sink": "10.4034/pboci.2019.191.61",
+    "oa": 201,
+    "cr": 16,
+    "volume": "19",
+    "control": "10.4034/pboci.2019.191.127",
+    "journal_names": [
+     "pesquisa brasileira em odontopediatria e cl nica integrada",
+     "pesqui bras odontopediatria cl n integr"
+    ],
+    "sink_sample": {
+     "returned": 15,
+     "lookup_calls": 0,
+     "failed_lookup_calls": 0
+    },
+    "control_sample": {
+     "returned": 15,
+     "lookup_calls": 0,
+     "failed_lookup_calls": 0
+    }
+   },
+   {
+    "source": "S4210196923",
+    "name": "Revista Panamericana de Salud Pública",
+    "year": 2017,
+    "sink": "10.26633/rpsp",
+    "oa": 89,
+    "cr": 2,
+    "volume": "",
+    "control": "10.26633/rpsp.2017.40",
+    "journal_names": [],
+    "sink_sample": {
+     "returned": 15,
+     "lookup_calls": 1,
+     "failed_lookup_calls": 0
+    },
+    "control_sample": {
+     "returned": 15,
+     "lookup_calls": 0,
+     "failed_lookup_calls": 0
+    }
+   }
+  ],
+  "crossref_calls": 255,
+  "openalex": {
+   "citers": 15,
+   "calls": 1,
+   "failed_calls": 0
+  }
+ },
+ "H3": "untestable",
+ "H3_detail": {
+  "readable": 31,
+  "sibling": 15,
+  "share": 0.4838709677419355,
+  "control_readable": 97,
+  "control_genuine": 97,
+  "control_share": 1.0,
+  "sink_genuine": 21
+ },
+ "H4": "untestable",
+ "H4_detail": {
+  "references": 3,
+  "kept": 3,
+  "share": 1.0
+ },
+ "labels": {
+  "sink": {
+   "genuine": 21,
+   "unsupported": 16,
+   "too_few_references": 67,
+   "sibling": 15
+  },
+  "control": {
+   "genuine": 97,
+   "too_few_references": 22,
+   "not_in_crossref": 1
+  }
+ },
+ "descriptive": {
+  "by_year": {
+   "2016": {
+    "journal_years": 29,
+    "with_sink": 5,
+    "phantom_citations": 663,
+    "multiple_over_threshold": 0,
+    "sink_rank_1": 3
+   },
+   "2017": {
+    "journal_years": 30,
+    "with_sink": 1,
+    "phantom_citations": 87,
+    "multiple_over_threshold": 0,
+    "sink_rank_1": 0
+   },
+   "2018": {
+    "journal_years": 37,
+    "with_sink": 2,
+    "phantom_citations": 259,
+    "multiple_over_threshold": 1,
+    "sink_rank_1": 0
+   },
+   "2019": {
+    "journal_years": 36,
+    "with_sink": 7,
+    "phantom_citations": 2473,
+    "multiple_over_threshold": 0,
+    "sink_rank_1": 6
+   },
+   "2022": {
+    "journal_years": 30,
+    "with_sink": 0,
+    "phantom_citations": 0,
+    "multiple_over_threshold": 0,
+    "sink_rank_1": 0
+   },
+   "2023": {
+    "journal_years": 40,
+    "with_sink": 0,
+    "phantom_citations": 0,
+    "multiple_over_threshold": 0,
+    "sink_rank_1": 0
+   }
+  },
+  "by_prefix_old": {
+   "10.9734": {
+    "journal_years": 38,
+    "with_sink": 5,
+    "phantom_citations": 427
+   },
+   "10.1145": {
+    "journal_years": 10,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.2352": {
+    "journal_years": 1,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.1109": {
+    "journal_years": 16,
+    "with_sink": 2,
+    "phantom_citations": 315
+   },
+   "10.5455": {
+    "journal_years": 8,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.5348": {
+    "journal_years": 1,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.1117": {
+    "journal_years": 15,
+    "with_sink": 1,
+    "phantom_citations": 112
+   },
+   "10.1214": {
+    "journal_years": 2,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.1071": {
+    "journal_years": 2,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.1176": {
+    "journal_years": 2,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.26633": {
+    "journal_years": 2,
+    "with_sink": 1,
+    "phantom_citations": 87
+   },
+   "10.4236": {
+    "journal_years": 2,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.5194": {
+    "journal_years": 1,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.4034": {
+    "journal_years": 2,
+    "with_sink": 1,
+    "phantom_citations": 185
+   },
+   "10.5089": {
+    "journal_years": 4,
+    "with_sink": 3,
+    "phantom_citations": 278
+   },
+   "10.5039": {
+    "journal_years": 1,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.1093": {
+    "journal_years": 2,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.21608": {
+    "journal_years": 1,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.1200": {
+    "journal_years": 4,
+    "with_sink": 1,
+    "phantom_citations": 192
+   },
+   "10.12737": {
+    "journal_years": 2,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.15641": {
+    "journal_years": 1,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.12968": {
+    "journal_years": 1,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.1177": {
+    "journal_years": 2,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.15628": {
+    "journal_years": 1,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.5304": {
+    "journal_years": 1,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.17485": {
+    "journal_years": 1,
+    "with_sink": 1,
+    "phantom_citations": 1886
+   },
+   "10.1108": {
+    "journal_years": 3,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.14232": {
+    "journal_years": 1,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.11144": {
+    "journal_years": 1,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.1002": {
+    "journal_years": 1,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.2224": {
+    "journal_years": 1,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.16986": {
+    "journal_years": 1,
+    "with_sink": 0,
+    "phantom_citations": 0
+   },
+   "10.18226": {
+    "journal_years": 1,
+    "with_sink": 0,
+    "phantom_citations": 0
+   }
+  },
+  "top_sinks": [
+   {
+    "source": "S2764746358",
+    "name": "Indian Journal of Science and Technology",
+    "year": 2019,
+    "doi": "10.17485/ijst",
+    "oa": 1913,
+    "cr": 27,
+    "title": "Indian Journal Of Science And Technology"
+   },
+   {
+    "source": "S72499069",
+    "name": "IEEE photonics journal",
+    "year": 2016,
+    "doi": "10.1109/jphot.2016.2530561",
+    "oa": 224,
+    "cr": 7,
+    "title": "Enhancing the Brightness of Quantum Dot Light-Emitting Diodes by Multilayer Heterostructures"
+   },
+   {
+    "source": "S2764879405",
+    "name": "Journal of Global Oncology",
+    "year": 2018,
+    "doi": "10.1200/jgo.18.21100",
+    "oa": 194,
+    "cr": 2,
+    "title": "Overview of Ten Years (2007-2016) Cervical and Breast Cancer Screening Program in Indonesia"
+   },
+   {
+    "source": "S2764386882",
+    "name": "Pesquisa Brasileira em Odontopediatria e Clínica Integrada",
+    "year": 2019,
+    "doi": "10.4034/pboci.2019.191.61",
+    "oa": 201,
+    "cr": 16,
+    "title": "Comparative Evaluation of Remineralizing Potential of a Paste Containing Bioactive Glass and a Topical Cream Containing "
+   },
+   {
+    "source": "S2764862491",
+    "name": "British Microbiology Research Journal",
+    "year": 2016,
+    "doi": "10.9734/bmrj",
+    "oa": 136,
+    "cr": 7,
+    "title": "British Microbiology Research Journal"
+   },
+   {
+    "source": "S117354312",
+    "name": "Journal of Biomedical Optics",
+    "year": 2016,
+    "doi": "10.1117/1.jbo.21.9.099801",
+    "oa": 119,
+    "cr": 7,
+    "title": "Errata: From Jöbsis to the present day: a review of clinical near-infrared spectroscopy measurements of cerebral cytochr"
+   },
+   {
+    "source": "S4210169746",
+    "name": "IMF Staff Country Reports",
+    "year": 2016,
+    "doi": "10.5089/9781475529685.002",
+    "oa": 107,
+    "cr": 0,
+    "title": "Central African Economic and Monetary Community (CEMAC)"
+   },
+   {
+    "source": "S4210171147",
+    "name": "IMF Working Paper",
+    "year": 2019,
+    "doi": "10.5089/9781498302708.001.a001",
+    "oa": 105,
+    "cr": 1,
+    "title": "Digging Deeper--Evidence on the Effects of Macroprudential Policies from a New Database"
+   },
+   {
+    "source": "S2764515546",
+    "name": "Journal of Scientific Research and Reports",
+    "year": 2019,
+    "doi": "10.9734/jsrr",
+    "oa": 109,
+    "cr": 10,
+    "title": "Journal of Scientific Research and Reports"
+   },
+   {
+    "source": "S119074828",
+    "name": "IEEE Transactions on Applied Superconductivity",
+    "year": 2016,
+    "doi": "10.1109/tasc.2016.2610258",
+    "oa": 98,
+    "cr": 0,
+    "title": "IEEE Transactions on Applied Superconductivity"
+   },
+   {
+    "source": "S4210196923",
+    "name": "Revista Panamericana de Salud Pública",
+    "year": 2017,
+    "doi": "10.26633/rpsp",
+    "oa": 89,
+    "cr": 2,
+    "title": "Revista Panamericana de Salud Pública"
+   },
+   {
+    "source": "S4210174049",
+    "name": "Journal of Economics Management and Trade",
+    "year": 2019,
+    "doi": "10.9734/jemt",
+    "oa": 74,
+    "cr": 0,
+    "title": "Journal of Economics, Management and Trade"
+   },
+   {
+    "source": "S4210169746",
+    "name": "IMF Staff Country Reports",
+    "year": 2018,
+    "doi": "10.5089/9781484376881.002",
+    "oa": 67,
+    "cr": 0,
+    "title": "Republic of Kazakhstan"
+   },
+   {
+    "source": "S4210189382",
+    "name": "Microbiology Research Journal International",
+    "year": 2019,
+    "doi": "10.9734/mrji",
+    "oa": 65,
+    "cr": 1,
+    "title": "Microbiology Research Journal International"
+   },
+   {
+    "source": "S2765036599",
+    "name": "Journal of Geography Environment and Earth Science International",
+    "year": 2019,
+    "doi": "10.9734/jgeesi",
+    "oa": 64,
+    "cr": 3,
+    "title": "Journal of Geography, Environment and Earth Science International"
+   }
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "main": "bfd46922360109cf15c89669337e3b6938aa3403",
+ "fetched_at": "2026-10-17T22:38:41Z",
+ "files": {
+  "findings/page1-sink-prereg-v1-2026-10-17.md": {
+   "ref": "bfd46922360109cf15c89669337e3b6938aa3403",
+   "bytes": 8012
+  },
+  "page1_sink.py": {
+   "ref": "bfd46922360109cf15c89669337e3b6938aa3403",
+   "bytes": 15907
+  },
+  "test_page1_sink.py": {
+   "ref": "bfd46922360109cf15c89669337e3b6938aa3403",
+   "bytes": 13952
+  },
+  "article1_check.py": {
+   "ref": "a5a741e58f9f9519522877c632602e2ff1ae5e86",
+   "bytes": 16915
+  },
+  "article1_mechanism.py": {
+   "ref": "3c7c9e57091d35493151d2c4ca13cc7f90660e04",
+   "bytes": 16006
+  },
+  "hindawi_sink.py": {
+   "ref": "c2bc568b88c6ece85aaa85be417b95cffeb968ef",
+   "bytes": 18754
+  },
+  "openalex_article1.py": {
+   "ref": "1d2782e861c6fec469456401bf46863a45cdf99e",
+   "bytes": 11555
+  }
+ }
+}
