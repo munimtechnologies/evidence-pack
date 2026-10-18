@@ -1,4 +1,4 @@
-# Findings index (2026-10-17)
+# Findings index (2026-10-18)
 
 MV2 of Munim, Inc. Researched and drafted by AI agents (Claude) working in MV2's name. Text CC BY 4.0.
 Research information, not medical advice.
@@ -60,12 +60,14 @@ This index lists every note in this folder, grouped by study. Each pre-registrat
 
 **Reference integrity of the packages**
 - `integrity-check-v1-2026-10-17.md` (see "Integrity module" below): on 2026-10-17 all 24 reference DOIs of packages 4 and 5 were clear in Crossref (Retraction Watch) and PubMed; 2 small-journal DOIs are not in PubMed.
+- `commentin-check-v1-2026-10-18.md`: the key trial of package 5 (PMID 40274279) has two "Comment in" links. Both are bare DOIs pointing to older JAMA Network items, a 2023 cohort study and a 2024 patient page, and neither is a comment on the trial.
 
 ## Evidence synthesis: screening benchmark (AHRQ challenge work)
 
 - Reproducible screening baseline on CLEF TAR 2018 (30 Cochrane diagnostic-test-accuracy reviews): `clef-tar-2018-bm25-prereg-v1-2026-10-17.md` (code `tar_bench.py`), pre-registered and **not yet run**. It ranks each review's search results by BM25 over PubMed title + abstract and scores them with the formulas of CLEF's own evaluator. H1 asks whether it reproduces a published BM25 baseline (Wang et al. 2023: MAP 0.154, WSS@95 0.361). H2 asks whether adding the review title and expanding truncated query words beats it in at least 20 of 30 reviews. It also counts records that PubMed now marks as retracted (exploratory).
 - **Exposure, labor and tuning log:** `benchmark-exposure-and-tuning-log.md`. An append-only record, kept as the work happens, of what benchmark material was looked at, what was changed or tuned, and what human labor went into this benchmark work (none so far). AHRQ's challenge rules ask for contemporaneous logs of this kind.
 - **Integrity module:** `integrity-check-v1-2026-10-17.md` (code `integrity_check.py`, offline tests `test_integrity_check.py`). One command over PMIDs and DOIs that reports, as of the day it runs, whether each record is retracted, under an expression of concern or corrected according to PubMed and to Crossref (which carries Retraction Watch notices), which source said so, and the `doi_hygiene` flags of its DOI. `--fail-on` makes it a gate. The note records what both APIs return today, the prior art (several Crossref-based checkers exist; the hygiene flags and the two-source report are the additions), and the hand pilot on the ReGen packages. Not yet run on live data in the sandbox.
+- **Comment-link module:** `commentin-check-v1-2026-10-18.md` (code `commentin_check.py`, offline tests `test_commentin_check.py`). For each PMID or DOI, it lists the PubMed "Comment in" links and reads each target. It flags bare-DOI links, targets older than the record, targets that do not name the record back, and targets that PubMed records as comments on a different article. `--fail-on-flag` makes it a gate. A flag means "read this before citing it as commentary", not a verdict.
 
 ## Data integrity: ClinicalTrials.gov results
 
@@ -84,6 +86,7 @@ This index lists every note in this folder, grouped by study. Each pre-registrat
 - "Comment in" links that are not comments: `pubmed-commentin-census-prereg-v1-2026-10-17.md` (code `pubmed_commentin.py`). In a pilot of all 76 JAMA randomized trials dated 2025, 14 records carry 30 "Comment in" links that are bare DOIs with no PMID. They point to related JAMA Network articles, 26 of 27 of them published before the record.
   - Operational amendment: `pubmed-commentin-census-prereg-v1-amendment-2026-10-17.md`. The first run stopped on an NCBI "HTTP 400" before any record was counted, so no data were seen. The code now retries such errors, logs any records it still cannot fetch, and voids a run that loses more than 1% of them. The analysis is unchanged.
   - **Results:** `pubmed-commentin-census-v1-results-2026-10-17.md`. 29,310 records, none lost. At JAMA Network 12.1% of "Comment in" entries are bare DOIs without PMIDs, against 0.37% at NEJM, Lancet, BMJ and Ann Intern Med; all point to JAMA Network DOIs, and none of 300 sampled targets links back. The share of JAMA Network records with such a link rose from 0% (2016) to 55% (2026). 3 of 4 predictions held. The failed one (only 38% of targets are earlier, not 80%) shows two kinds of link: earlier related articles, which cannot be comments, and same-issue companion pieces, which may be comments but are linked one way without a PMID. Data in `pubmed_commentin_v1_*`.
+- What the same-issue targets are: `commentin-targets-prereg-v1-2026-10-18.md` (code `commentin_targets.py`), pre-registered and **not yet run**. It reads all 1,786 JAMA Network bare-DOI targets not dated before their record and sorts each into one class: reciprocal, a comment PubMed records on a different article, typed comment, typed research, untyped, not in PubMed, or gone. H1: at most 5% reciprocal; H2: at least 10% comments on a different article; H3: at least 10% research. A disclosed pilot of the first 6 rows in the file found 2, 2 and 2 of the last three kinds, and none reciprocal.
 
 ## Data integrity: references and open citation counts
 
