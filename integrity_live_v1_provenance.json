@@ -1,0 +1,26 @@
+{
+ "main": "a61323eb1030e149fc2ce0e122c6feeb6a823be1",
+ "fetched_at": "2026-10-18T05:03:34Z",
+ "files": {
+  "integrity_check.py": {
+   "ref": "a61323eb1030e149fc2ce0e122c6feeb6a823be1",
+   "bytes": 16591
+  },
+  "test_integrity_check.py": {
+   "ref": "a61323eb1030e149fc2ce0e122c6feeb6a823be1",
+   "bytes": 14511
+  },
+  "doi_hygiene.py": {
+   "ref": "a61323eb1030e149fc2ce0e122c6feeb6a823be1",
+   "bytes": 12307
+  },
+  "stub_blocklist_v1.csv": {
+   "ref": "a61323eb1030e149fc2ce0e122c6feeb6a823be1",
+   "bytes": 3899
+  },
+  "findings/integrity-check-v1-2026-10-17.md": {
+   "ref": "a61323eb1030e149fc2ce0e122c6feeb6a823be1",
+   "bytes": 8207
+  }
+ }
+}
