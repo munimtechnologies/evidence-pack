@@ -1,0 +1,204 @@
+{
+ "prereg": "findings/commentin-targets-prereg-v1-2026-10-18.md",
+ "population": {
+  "control": 30,
+  "jama_network": 1786
+ },
+ "sources": 1492,
+ "sources_found": 1492,
+ "by_group": {
+  "control": {
+   "reciprocal": 0,
+   "comment_on_other": 3,
+   "comment_typed": 10,
+   "research_typed": 6,
+   "untyped": 11,
+   "not_in_pubmed": 0,
+   "unread": 0,
+   "link_gone": 0
+  },
+  "jama_network": {
+   "reciprocal": 1,
+   "comment_on_other": 81,
+   "comment_typed": 25,
+   "research_typed": 133,
+   "untyped": 1520,
+   "not_in_pubmed": 26,
+   "unread": 0,
+   "link_gone": 0
+  }
+ },
+ "by_era": {
+  "2016-2023": {
+   "reciprocal": 1,
+   "comment_on_other": 72,
+   "comment_typed": 21,
+   "research_typed": 93,
+   "untyped": 378,
+   "not_in_pubmed": 25,
+   "unread": 0,
+   "link_gone": 0
+  },
+  "2024": {
+   "reciprocal": 0,
+   "comment_on_other": 3,
+   "comment_typed": 4,
+   "research_typed": 12,
+   "untyped": 228,
+   "not_in_pubmed": 1,
+   "unread": 0,
+   "link_gone": 0
+  },
+  "2025-2026": {
+   "reciprocal": 0,
+   "comment_on_other": 6,
+   "comment_typed": 0,
+   "research_typed": 28,
+   "untyped": 914,
+   "not_in_pubmed": 0,
+   "unread": 0,
+   "link_gone": 0
+  }
+ },
+ "by_journal": {
+  "JAMA": {
+   "reciprocal": 0,
+   "comment_on_other": 22,
+   "comment_typed": 11,
+   "research_typed": 36,
+   "untyped": 227,
+   "not_in_pubmed": 1,
+   "unread": 0,
+   "link_gone": 0
+  },
+  "JAMA Cardiol": {
+   "reciprocal": 0,
+   "comment_on_other": 3,
+   "comment_typed": 0,
+   "research_typed": 3,
+   "untyped": 17,
+   "not_in_pubmed": 1,
+   "unread": 0,
+   "link_gone": 0
+  },
+  "JAMA Dermatol": {
+   "reciprocal": 0,
+   "comment_on_other": 7,
+   "comment_typed": 4,
+   "research_typed": 6,
+   "untyped": 35,
+   "not_in_pubmed": 0,
+   "unread": 0,
+   "link_gone": 0
+  },
+  "JAMA Health Forum": {
+   "reciprocal": 0,
+   "comment_on_other": 0,
+   "comment_typed": 0,
+   "research_typed": 0,
+   "untyped": 34,
+   "not_in_pubmed": 0,
+   "unread": 0,
+   "link_gone": 0
+  },
+  "JAMA Intern Med": {
+   "reciprocal": 0,
+   "comment_on_other": 11,
+   "comment_typed": 1,
+   "research_typed": 22,
+   "untyped": 74,
+   "not_in_pubmed": 1,
+   "unread": 0,
+   "link_gone": 0
+  },
+  "JAMA Netw Open": {
+   "reciprocal": 0,
+   "comment_on_other": 21,
+   "comment_typed": 3,
+   "research_typed": 26,
+   "untyped": 952,
+   "not_in_pubmed": 1,
+   "unread": 0,
+   "link_gone": 0
+  },
+  "JAMA Neurol": {
+   "reciprocal": 0,
+   "comment_on_other": 4,
+   "comment_typed": 0,
+   "research_typed": 3,
+   "untyped": 21,
+   "not_in_pubmed": 1,
+   "unread": 0,
+   "link_gone": 0
+  },
+  "JAMA Oncol": {
+   "reciprocal": 0,
+   "comment_on_other": 3,
+   "comment_typed": 1,
+   "research_typed": 13,
+   "untyped": 37,
+   "not_in_pubmed": 0,
+   "unread": 0,
+   "link_gone": 0
+  },
+  "JAMA Ophthalmol": {
+   "reciprocal": 0,
+   "comment_on_other": 3,
+   "comment_typed": 0,
+   "research_typed": 3,
+   "untyped": 36,
+   "not_in_pubmed": 0,
+   "unread": 0,
+   "link_gone": 0
+  },
+  "JAMA Otolaryngol Head Neck Surg": {
+   "reciprocal": 1,
+   "comment_on_other": 2,
+   "comment_typed": 1,
+   "research_typed": 17,
+   "untyped": 16,
+   "not_in_pubmed": 19,
+   "unread": 0,
+   "link_gone": 0
+  },
+  "JAMA Pediatr": {
+   "reciprocal": 0,
+   "comment_on_other": 1,
+   "comment_typed": 1,
+   "research_typed": 2,
+   "untyped": 35,
+   "not_in_pubmed": 1,
+   "unread": 0,
+   "link_gone": 0
+  },
+  "JAMA Psychiatry": {
+   "reciprocal": 0,
+   "comment_on_other": 0,
+   "comment_typed": 3,
+   "research_typed": 1,
+   "untyped": 17,
+   "not_in_pubmed": 0,
+   "unread": 0,
+   "link_gone": 0
+  },
+  "JAMA Surg": {
+   "reciprocal": 0,
+   "comment_on_other": 4,
+   "comment_typed": 0,
+   "research_typed": 1,
+   "untyped": 19,
+   "not_in_pubmed": 1,
+   "unread": 0,
+   "link_gone": 0
+  }
+ },
+ "void": false,
+ "hypotheses": {
+  "H1": "supported",
+  "H2": "not supported",
+  "H3": "not supported"
+ },
+ "errors": [],
+ "n_errors": 0,
+ "minutes": 2.9
+}
