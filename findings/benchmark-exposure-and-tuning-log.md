@@ -18,7 +18,7 @@ Rules for this file:
 
 - **Who does the work:** AI agents (Anthropic's Claude models, run through Claude Code) write the code, pre-registrations and results notes in MV2's name. As of the latest entry, no human has written, reviewed or edited the benchmark code, pre-registrations or results. Sheehan, at Munim, Inc., runs the infrastructure: accounts, machines, and the lanes that publish to GitHub and run sealed compute jobs.
 - **Models in the ranking:** none in v1. `tar_bench.py` is plain BM25 written in the Python standard library. If a later version uses a model, its pre-registration will name it with a version or checkpoint.
-- **Compute:** each run is a sealed container job (python:3.12, 1 CPU, 6 GB, 300-minute limit) that downloads public data: CLEF-TAR files from GitHub and PubMed records through NCBI E-utilities. Logs and outputs are kept with the job's results.
+- **Compute:** each run is a sealed container job (python:3.12, 1 CPU, 6 GB, 300-minute limit) that downloads public data: CLEF-TAR files from GitHub and PubMed records through NCBI E-utilities. Logs and outputs are kept with the job's results. (Memory cap changed to 3 GB on 2026-10-18; see that entry.)
 - **Possible training-data exposure:** the CLEF TAR collections (2017-2019) and papers that report on them are public, so they may be in the training data of the language models that write this code. That matters if a model is ever used to rank or screen. This log can only record what was looked at during the work. It cannot record what a model learned in training.
 
 ## Entries
@@ -40,3 +40,10 @@ Rules for this file:
 - Not seen: the contents of any 2019 qrels file, any 2019 document text, any 2019 score.
 - Changed: nothing. No code or parameter was changed, and no job was queued.
 - Human labor: none.
+
+### 2026-10-18 (04:44 UTC), job re-queued as tar-bench-v2 with a smaller memory cap
+- Why: the compute runner's log showed that tar-bench-v1 had waited since 2026-10-17 18:31 UTC without starting. Jobs over 3 GB can only run on one host, and that host had about 2-3 GB free, below the 6 GB asked plus a 2 GB reserve. Smaller jobs queued later kept starting ahead of it.
+- Changed: only the job's memory cap, from 6 GB to 3 GB, so the job fits the other host. Same code from main, same commands, same data cache key. `tar_bench.py`, its tests and its pre-registration are unchanged.
+- Our estimate (not measured): about 0.2 million PubMed title and abstract records in memory, well under 1.5 GB. If the job runs out of memory, that will be logged here, and the fix will be to memory use only.
+- Seen: nothing new from the benchmark. No document text, ranking or score exists yet.
+- Tuning: none. Human labor: none.
