@@ -1,0 +1,25 @@
+{
+ "links": 26,
+ "oto_links": 20,
+ "other_links": 6,
+ "outcomes": {
+  "found": 20,
+  "target_not_in_pubmed": 6
+ },
+ "oto_outcomes": {
+  "found": 20
+ },
+ "other_outcomes": {
+  "target_not_in_pubmed": 6
+ },
+ "expected": {
+  "oto_found": true,
+  "rest_absent": true,
+  "no_unread": true
+ },
+ "all_as_expected": true,
+ "sources": 24,
+ "sources_found": 24,
+ "errors": [],
+ "n_errors": 0
+}

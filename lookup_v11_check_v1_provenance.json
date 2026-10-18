@@ -1,0 +1,46 @@
+{
+ "main": "32d12b66a5b00fd86c9cc9a95d0f09c98c4402dd",
+ "fetched_at": "2026-10-18T10:03:13Z",
+ "files": {
+  "doi_hygiene.py": {
+   "ref": "32d12b66a5b00fd86c9cc9a95d0f09c98c4402dd",
+   "bytes": 12307,
+   "sha256": "27721837d85d3e4b19fd0c095803913de1f12651c6c609589e0d2fb6297d8da9"
+  },
+  "pubmed_commentin.py": {
+   "ref": "32d12b66a5b00fd86c9cc9a95d0f09c98c4402dd",
+   "bytes": 19715,
+   "sha256": "18e8e2a0f7ba362b01cd697a3b13b3fdf45d5a8322e1349fc173dc3bf1de3618"
+  },
+  "integrity_check.py": {
+   "ref": "job",
+   "bytes": 18697,
+   "sha256": "58d65cba400ddc602196825a5d0f4ab2024b744a9df47e17bca797a58465fb55"
+  },
+  "commentin_check.py": {
+   "ref": "job",
+   "bytes": 10677,
+   "sha256": "a07f0b0c53ec551b03cd07ac7a86f065b888617f02930324b14871d737d4e9c7"
+  },
+  "test_integrity_check.py": {
+   "ref": "job",
+   "bytes": 14788,
+   "sha256": "161ac44d54f1ea946ef848cabc068e3b9d471c4f94d0e377837d82a7b202c241"
+  },
+  "test_commentin_check.py": {
+   "ref": "job",
+   "bytes": 14074,
+   "sha256": "ba189abc4b61cb69a02476c496eb16a0db8fb82e43aaec73bc50f99414939f7d"
+  },
+  "test_lookup_v11.py": {
+   "ref": "job",
+   "bytes": 9471,
+   "sha256": "ac6bef1535b57021855682990f495c8d348a68b80b8255f46b3512a0ecb7ae94"
+  },
+  "validate_v11.py": {
+   "ref": "job",
+   "bytes": 4891,
+   "sha256": "e4c3b2de95d80ab3d891ffae7fcb96a8d5d496e6c9e2939fcfad8df197a27818"
+  }
+ }
+}
