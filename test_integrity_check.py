@@ -5,6 +5,7 @@ esummary and Crossref returned on 2026-10-17 for the retracted Wakefield 1998 La
 import contextlib
 import io
 import os
+import re
 import sys
 import tempfile
 import unittest
@@ -54,10 +55,12 @@ CR_NOTICE = {"DOI": NOTICE_DOI, "type": "journal-article", "issued": {"date-part
              "update-to": [{"DOI": WAKE_DOI, "type": "retraction", "label": "Retraction",
                             "source": "retraction-watch", "updated": {"date-parts": [[2010, 2, 6]]}}]}
 SUMMARIES = {"9500320": WAKE, "40274279": JAMA, "20137807": NOTICE}
+PMID_OF = {JAMA_DOI: "40274279", WAKE_DOI: "9500320"}
 
 
 class FakeGet:
-    """Stands in for http_json: answers esearch, esummary and Crossref URLs from the fixtures."""
+    """Stands in for http_json: answers esearch, esummary and Crossref URLs from the fixtures.
+    Like PubMed, esearch names each DOI it has no record for under quotedphrasesnotfound."""
 
     def __init__(self, fail_first=0):
         self.urls = []
@@ -70,12 +73,11 @@ class FakeGet:
             return None, "HTTP 400"
         q = urllib.parse.unquote(url)
         if "esearch.fcgi" in url:
-            ids = []
-            if JAMA_DOI in q:
-                ids.append("40274279")
-            if WAKE_DOI in q:
-                ids.append("9500320")
-            return {"esearchresult": {"count": str(len(ids)), "idlist": ids}}, None
+            asked = re.findall(r'"([^"]+)"\[doi\]', q)
+            ids = [PMID_OF[d] for d in asked if d in PMID_OF]
+            missing = ['"%s"[doi]' % d for d in asked if d not in PMID_OF]
+            return {"esearchresult": {"count": str(len(ids)), "idlist": ids,
+                                      "warninglist": {"quotedphrasesnotfound": missing}}}, None
         if "esummary.fcgi" in url:
             ids = url.rsplit("id=", 1)[1].split(",")
             result = {"uids": ids}

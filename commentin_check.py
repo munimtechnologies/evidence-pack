@@ -17,7 +17,9 @@ are older than the record.
 Facts per link (PubMed esummary only; read only, no keys, standard library only):
   cls          pmid | bare_doi | other_nopmid (the classifier of pubmed_commentin.py)
   tgt_pmid     the target's PMID, from the link or by looking up the DOI in it
-  earlier      the target's PubMed sort date is before the record's (None if either is unknown)
+  earlier      the target's PubMed sort date is more than one day before the record's (None if
+               either is unknown). v1.1: one day is allowed because PubMed can date a same-issue
+               commentary a day before its record (36218585, 2020/03/02, for 32125402, 2020/03/03).
   reciprocal   the target lists the record under "Comment on" (None if the target was not read)
   tgt_comment_on  the PMIDs the target itself lists under "Comment on"
 Link flags: bare_doi, other_nopmid, no_target_id, target_not_in_pubmed, target_unread (a lookup
@@ -25,6 +27,8 @@ failed), earlier, not_reciprocal, comment_on_other (the target is a comment on o
 does not name this one; e.g. 28208186 links 28208180, a comment on 28208174). A flag is a reason to open the target and read it, not a verdict:
 PubMed also links real comments to newer records (NEJM letter 38507769 lists an older Nat Rev
 Nephrol comment, 38012264, that names it back), and a real comment may not link back.
+v1.1: a bare-DOI target is "target_not_in_pubmed" only if PubMed's esearch names its DOI as not
+found; any other unread target is "target_unread" (see integrity_check.pubmed_lookup).
 """
 import argparse
 import datetime
@@ -40,6 +44,7 @@ from pubmed_commentin import classify, earlier, ref_doi  # noqa: E402
 FLAGS = ("bare_doi", "other_nopmid", "no_target_id", "target_not_in_pubmed", "target_unread",
          "earlier", "not_reciprocal", "comment_on_other")
 SORT_DATE = re.compile(r"(\d{4})/(\d{2})/(\d{2})")
+EARLIER_TOLERANCE_DAYS = 1
 
 
 def sort_date(rec):
@@ -53,6 +58,17 @@ def sort_date(rec):
 
 def iso(d):
     return "-".join(("%02d" % x) if i else str(x) for i, x in enumerate(d)) or None
+
+
+def is_earlier(t, s, tolerance=EARLIER_TOLERANCE_DAYS):
+    """earlier(t, s), except that a target dated at most `tolerance` days before the record is not
+    earlier when both dates have a day."""
+    if len(t or ()) == 3 and len(s or ()) == 3:
+        try:
+            return (datetime.date(*s) - datetime.date(*t)).days > tolerance
+        except ValueError:
+            pass
+    return earlier(t, s)
 
 
 def comment_links(rec):
@@ -73,8 +89,9 @@ def comment_on_pmids(rec):
             if str(ref.get("reftype") or "").strip().lower() == "comment on"}
 
 
-def describe(entry, rec, by_pmid, doi_to_pmid, lookup_failed, today=None):
-    """One output record: the source's "Comment in" links with their targets read and flagged."""
+def describe(entry, rec, by_pmid, doi_to_pmid, lookup_failed, today=None, absent=None):
+    """One output record: the source's "Comment in" links with their targets read and flagged.
+    absent: the DOIs PubMed named as not found (None: trust lookup_failed alone, as in v1)."""
     out = {"input": entry["input"], "pmid": entry.get("pmid"), "doi": entry.get("doi"), "title": "",
            "date": None, "found": rec is not None, "links": [], "counts": {},
            "checked_at": today or datetime.date.today().isoformat()}
@@ -97,12 +114,14 @@ def describe(entry, rec, by_pmid, doi_to_pmid, lookup_failed, today=None):
                          "tgt_date": iso(t_date),
                          "tgt_pubtypes": [str(p) for p in (t or {}).get("pubtype") or []],
                          "tgt_comment_on": sorted(p for p in comment_on_pmids(t) if p) if t is not None else [],
-                         "earlier": earlier(t_date, src_date),
+                         "earlier": is_earlier(t_date, src_date),
                          "reciprocal": (str(out["pmid"]) in comment_on_pmids(t)) if t is not None else None})
             flags = [link["cls"]] if link["cls"] != "pmid" else []
             if t is None:
                 if not tp and not link["tgt_doi"]:
                     flags.append("no_target_id")
+                elif not tp and absent is not None:
+                    flags.append("target_not_in_pubmed" if link["tgt_doi"] in absent else "target_unread")
                 else:
                     flags.append("target_unread" if lookup_failed else "target_not_in_pubmed")
             if link["earlier"]:
@@ -150,9 +169,10 @@ def check(tokens, get=None, pause=None, today=None):
     by_pmid, doi_to_pmid = dict(src["by_pmid"]), dict(src["doi_to_pmid"])
     by_pmid.update(tgt["by_pmid"])
     doi_to_pmid.update(tgt["doi_to_pmid"])
+    absent = set(src["absent_dois"]) | set(tgt["absent_dois"])
     errors = src["errors"] + tgt["errors"]
     records = [describe(e, src["by_pmid"].get(e["pmid"]) if e["pmid"] else None, by_pmid, doi_to_pmid,
-                        bool(errors), today) for e in entries]
+                        bool(errors), today, absent) for e in entries]
     return records, errors
 
 

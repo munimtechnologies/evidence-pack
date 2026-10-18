@@ -7,6 +7,7 @@ Nat Rev Nephrol comment (38012264), is older than the letter but names it back."
 import contextlib
 import io
 import os
+import re
 import sys
 import tempfile
 import unittest
@@ -60,6 +61,7 @@ DOIS = {RCT_DOI: "40274279", PAGE_DOI: "39541114", COHORT_DOI: "36939700", LETTE
 
 class FakeGet:
     """Stands in for integrity_check.http_json: answers esearch and esummary URLs from the fixtures.
+    Like PubMed, esearch names each DOI it has no record for under quotedphrasesnotfound.
     Calls numbered fail_from or later return HTTP 400."""
 
     def __init__(self, summaries=None, fail_from=None):
@@ -74,7 +76,10 @@ class FakeGet:
         q = urllib.parse.unquote(url)
         if "esearch.fcgi" in url:
             ids = [p for d, p in DOIS.items() if '"%s"[doi]' % d in q and p in self.summaries]
-            return {"esearchresult": {"count": str(len(ids)), "idlist": ids}}, None
+            missing = ['"%s"[doi]' % d for d in re.findall(r'"([^"]+)"\[doi\]', q)
+                       if not (d in DOIS and DOIS[d] in self.summaries)]
+            return {"esearchresult": {"count": str(len(ids)), "idlist": ids,
+                                      "warninglist": {"quotedphrasesnotfound": missing}}}, None
         if "esummary.fcgi" in url:
             ids = url.rsplit("id=", 1)[1].split(",")
             result = {"uids": ids}

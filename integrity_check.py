@@ -12,7 +12,11 @@ Sources (read only, no keys, standard library only):
   PubMed esummary: pubtype "Retracted Publication"; references with reftype "Retraction in",
     "Retracted and republished in" (retracted), "Expression of concern in" (concern), "Erratum in",
     "Update in", "Corrected and republished in" (corrected). "Comment in" links are not notices.
-    DOIs are mapped to PMIDs with one esearch per 18 DOIs ("<doi>"[doi] OR ...).
+    DOIs are mapped to PMIDs with one esearch per 18 DOIs ("<doi>"[doi] OR ...). A DOI counts as
+    absent from PubMed only if esearch names it under warninglist.quotedphrasesnotfound: an idlist
+    can come back short or empty with no error at all (v1.1, after 18 such DOIs were mislabelled
+    in findings/commentin-targets-v1-results-2026-10-18.md). A batch with fewer PMIDs than DOIs not
+    named absent is asked once more, then listed under errors.
   Crossref /works?filter=doi:...: "updated-by" entries (type retraction, partial_retraction, removal
     or withdrawal -> retracted; expression_of_concern -> concern; any other Crossmark type ->
     corrected), "update-to" (the record is itself a notice) and a title that starts with
@@ -21,7 +25,9 @@ Sources (read only, no keys, standard library only):
   doi_hygiene.check_doi: dash, truncated, stub, journal_level and blocklist flags
     (findings/open-citation-count-errors-2026-10-17.md).
 
-Status per record: retracted > concern > corrected > clear; "unknown" when neither source answered;
+Status per record: retracted > concern > corrected > not_an_article > clear; "not_an_article" when
+nothing else is wrong but Crossref types the DOI as a journal, volume, issue, series or component
+(v1.1: 10.17485/ijst, a whole journal, came back "clear"); "unknown" when neither source answered;
 "invalid" for a token that is neither a PMID nor a DOI. "said_by" names the sources behind the status,
 so a retraction known to one source only is visible. NCBI reports temporary failures as HTTP 400, so
 HTTP 400 and 5xx are retried; a batch that still fails is listed under errors and its records stay
@@ -42,7 +48,7 @@ import urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import doi_hygiene as dh  # noqa: E402
 
-UA = "evidence-pack integrity_check/0.1 (MV2, Munim, Inc.; mailto:mv2@munimtech.com)"
+UA = "evidence-pack integrity_check/1.1 (MV2, Munim, Inc.; mailto:mv2@munimtech.com)"
 EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
 CROSSREF = "https://api.crossref.org/works"
 MAILTO = "mv2@munimtech.com"
@@ -51,14 +57,17 @@ CROSSREF_BATCH = 40        # doi: filters per call
 NCBI_PAUSE = 0.34          # seconds between NCBI calls (3 per second without a key)
 RETRACTED_TYPES = {"retraction", "partial_retraction", "removal", "withdrawal"}
 CONCERN_TYPES = {"expression_of_concern"}
+NOT_ARTICLE_TYPES = {"journal", "journal-volume", "journal-issue", "proceedings", "proceedings-series",
+                     "book-series", "book-set", "report-series", "component"}
 PUBMED_RETRACTED = ("retraction in", "retracted and republished in")
 PUBMED_CONCERN = ("expression of concern in",)
 PUBMED_CORRECTED = ("erratum in", "update in", "corrected and republished in")
 PUBMED_NOTICE_OF = ("retraction of", "expression of concern for", "erratum for", "update of",
                     "retracted and republished from", "corrected and republished from")
 NOTICE_PUBTYPES = ("Retraction Notice", "Expression of Concern", "Published Erratum")
-STATUS_ORDER = ["retracted", "concern", "corrected", "clear", "unknown", "invalid"]
+STATUS_ORDER = ["retracted", "concern", "corrected", "not_an_article", "clear", "unknown", "invalid"]
 PMID_RE = re.compile(r"\bPMID:?\s*(\d{4,9})\b", re.I)
+QUOTED = re.compile(r'"([^"]+)"')
 # separators after the word: colon, hyphen, en dash (U+2013), em dash (U+2014); built with chr() to keep this file ASCII
 TITLE_PREFIX = re.compile("^(retracted|withdrawn)(\\s+article)?\\s*[:\\-" + chr(0x2013) + chr(0x2014) + "]", re.I)
 
@@ -119,22 +128,46 @@ def http_json(url, tries=4, sleep=time.sleep):
 
 # ---- PubMed ----
 
+def not_found_dois(data):
+    """The DOIs an esearch answer names under warninglist.quotedphrasesnotfound ('"<doi>"[doi]'),
+    the only proof PubMed has none of them."""
+    data = data if isinstance(data, dict) else {}
+    warn = (data.get("esearchresult") or {}).get("warninglist") or data.get("warninglist") or {}
+    out = set()
+    for phrase in warn.get("quotedphrasesnotfound") or []:
+        m = QUOTED.search(str(phrase))
+        if m:
+            out.add(dh.clean_doi(m.group(1)))
+    return out
+
+
 def pubmed_lookup(pmids, dois, get=None, pause=None):
-    """{"by_pmid": {pmid: esummary record}, "doi_to_pmid": {doi: pmid}, "errors": [text]}."""
+    """{"by_pmid": {pmid: esummary record}, "doi_to_pmid": {doi: pmid}, "absent_dois": [doi named
+    not found by esearch], "errors": [text]}."""
     get = get or http_json
     pause = pause or time.sleep
-    out = {"by_pmid": {}, "doi_to_pmid": {}, "errors": []}
+    out = {"by_pmid": {}, "doi_to_pmid": {}, "absent_dois": [], "errors": []}
     ids = [str(p) for p in pmids]
     for batch in chunks(list(dois), PUBMED_BATCH):
         term = " OR ".join('"%s"[doi]' % d for d in batch)
         url = EUTILS + "esearch.fcgi?db=pubmed&retmode=json&retmax=%d&term=%s" % (
             len(batch) * 2, urllib.parse.quote(term, safe=""))
-        data, err = get(url)
-        pause(NCBI_PAUSE)
-        if err or not isinstance(data, dict):
-            out["errors"].append("esearch from %s: %s" % (batch[0], err or "bad response"))
-            continue
-        ids.extend(str(i) for i in (data.get("esearchresult") or {}).get("idlist") or [])
+        found, absent = [], set()
+        for attempt in (1, 2):
+            data, err = get(url)
+            pause(NCBI_PAUSE)
+            if err or not isinstance(data, dict):
+                out["errors"].append("esearch from %s: %s" % (batch[0], err or "bad response"))
+                break
+            found = [str(i) for i in (data.get("esearchresult") or {}).get("idlist") or []]
+            absent = not_found_dois(data) & set(batch)
+            if len(found) >= len(batch) - len(absent):
+                break
+            if attempt == 2:
+                out["errors"].append("esearch from %s: short batch, %d PMIDs for %d DOIs not named absent" % (
+                    batch[0], len(found), len(batch) - len(absent)))
+        ids.extend(found)
+        out["absent_dois"].extend(d for d in batch if d in absent)
     seen = set()
     ids = [i for i in ids if not (i in seen or seen.add(i))]
     for batch in chunks(ids, PUBMED_BATCH):
@@ -266,6 +299,8 @@ def combine(entry, pub_rec, cr_item, blocklist=None, today=None):
     rec["title"] = (rec["pubmed"] or {}).get("title") or (rec["crossref"] or {}).get("title") or ""
     rec["year"] = (rec["crossref"] or {}).get("year") or (rec["pubmed"] or {}).get("year")
     rec["status"], rec["said_by"] = overall(rec["pubmed"], rec["crossref"])
+    if rec["status"] == "clear" and (rec["crossref"] or {}).get("type") in NOT_ARTICLE_TYPES:
+        rec["status"], rec["said_by"] = "not_an_article", ["crossref"]
     return rec
 
 
@@ -281,7 +316,7 @@ def run(tokens, get=None, pause=None, use_pubmed=True, use_crossref=True, blockl
         entries.append(e)
     pmids = [e["pmid"] for e in entries if e["pmid"]]
     dois = [e["doi"] for e in entries if e["doi"]]
-    empty_pub = {"by_pmid": {}, "doi_to_pmid": {}, "errors": []}
+    empty_pub = {"by_pmid": {}, "doi_to_pmid": {}, "absent_dois": [], "errors": []}
     pub = pubmed_lookup(pmids, dois, get, pause) if use_pubmed and (pmids or dois) else empty_pub
     for e in entries:
         if e["pmid"] and not e["doi"]:
@@ -306,7 +341,7 @@ def main(argv=None):
     ap.add_argument("ids", nargs="*", help="PMIDs and DOIs")
     ap.add_argument("--file", help="text file: one PMID or DOI per line, or free text with DOIs and 'PMID: n'")
     ap.add_argument("--out", help="write JSON lines here instead of stdout")
-    ap.add_argument("--fail-on", choices=["retracted", "concern", "corrected"],
+    ap.add_argument("--fail-on", choices=["retracted", "concern", "corrected", "not_an_article"],
                     help="exit 2 if any record is at this level or worse")
     ap.add_argument("--no-pubmed", action="store_true", help="skip PubMed")
     ap.add_argument("--no-crossref", action="store_true", help="skip Crossref")
