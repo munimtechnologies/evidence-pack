@@ -3,6 +3,7 @@
 """kpmp_feasibility: can a small CPU sandbox fetch and read open KPMP kidney biopsy slides?
 
 Pre-registration: findings/kpmp-feasibility-prereg-v1-2026-10-18.md.
+Results of run v1: findings/kpmp-feasibility-v1-results-2026-10-18.md.
 
 Four open files of the KPMP Kidney Tissue Atlas Repository, chosen before the run by
 rules applied to the Repository's own file-list export of 2026-10-18:
@@ -20,6 +21,14 @@ tables. For the workbook: sheets, headers and how many participants are scored.
 No KPMP file is copied to the output folder, only measurements and metadata. The
 large slide is deleted after it is measured. Download and table code use the
 standard library; slide reading uses tifffile + imagecodecs + numpy.
+
+v1.1 (2026-10-18), after run v1:
+  - hw_of() accepted at most 4 leading planes, so the 7-plane KPMP mask (one plane
+    per structure type) got no (height, width) and P4 was scored "fail" although the
+    mask is exactly the slide's full-resolution size. The limit is now MAX_PLANES.
+  - range_probe(): one extra measurement, not part of P1-P6: does the server honour
+    an HTTP Range request on a package? If it does, a later study can read a
+    package's small feature table without downloading the slide inside the zip.
 
 Usage: python -m kidney.kpmp_feasibility --out-dir /out --data-dir /data
 """
@@ -39,9 +48,10 @@ import xml.etree.ElementTree as ET
 import zipfile
 from collections import Counter
 
+VERSION = "1.1"
 PREREG = "findings/kpmp-feasibility-prereg-v1-2026-10-18.md"
 DOWNLOAD = "https://atlas.kpmp.org/api/v1/file/download/{package}/{name}"
-UA = "mv2-kpmp-feasibility/1.0 (MV2 of Munim, Inc.; mailto:mv2@munimtech.com)"
+UA = "mv2-kpmp-feasibility/1.1 (MV2 of Munim, Inc.; mailto:mv2@munimtech.com)"
 TARGETS = (
     {"key": "seg_small", "package": "6bc148ec-d1f4-4253-8124-399e25884bc2",
      "name": "253bfb15-4b81-42f7-a4d9-6c6ddd74489e_S-1904-008128_Seg_Masks_Features_v2.zip",
@@ -60,6 +70,7 @@ SMALL_KEYS = ("seg_small", "pas_small", "tiv")
 SIZE_TOLERANCE = 0.02
 TIV_EXPECTED, TIV_WINDOW = 340, 5   # participant IDs listed for the workbook in the export (hand count)
 MASK_FACTORS = (1, 2, 4, 8, 16, 32, 64)
+MAX_PLANES = 16                     # v1.1: a (planes, h, w) mask may have this many planes (v1: 4)
 READ_MAX_PIXELS = 60_000_000
 MASK_READ_MAX_PIXELS = 200_000_000
 TILE_GRID = 8
@@ -67,6 +78,7 @@ TISSUE_SAT = 20
 SMALL_RSS_MB, LARGE_RSS_MB, LARGE_MINUTES = 1536, 2560, 60
 CHUNK = 1 << 20
 MD_HEAD = 1500
+RANGE_BYTES = 1024
 UNITS = {"B": 1, "kB": 10**3, "MB": 10**6, "GB": 10**9, "TB": 10**12}
 ID_RE = re.compile(r"^\d{2,3}-\d{1,5}$")
 MPP_RE = re.compile(r"MPP\s*=\s*([0-9.]+)")
@@ -96,8 +108,10 @@ def download_url(package, name):
     return DOWNLOAD.format(package=urllib.parse.quote(package, safe=""), name=urllib.parse.quote(name, safe=""))
 
 
-def _open(url):
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
+def _open(url, headers=None):
+    h = {"User-Agent": UA}
+    h.update(headers or {})
+    req = urllib.request.Request(url, headers=h)
     return urllib.request.urlopen(req, timeout=300)
 
 
@@ -138,6 +152,25 @@ def download(url, dest, listed=None, get=None, pause=None, tries=3):
     return {"ok": False, "cached": False, "bytes": 0, "seconds": None, "error": last, "tries": k + 1}
 
 
+def range_probe(url, get=None, nbytes=RANGE_BYTES):
+    """v1.1. Ask for the first nbytes of url with an HTTP Range header and report what came back.
+    "honoured" means status 206 and no more than nbytes received. At most nbytes + 1 are read,
+    so a server that ignores the header costs one extra kilobyte, not a whole file."""
+    get = get or _open
+    try:
+        with get(url, {"Range": f"bytes=0-{nbytes - 1}"}) as resp:
+            status = getattr(resp, "status", None)
+            headers = getattr(resp, "headers", None)
+            crange = headers.get("Content-Range", "") if headers is not None else ""
+            data = resp.read(nbytes + 1)
+        return {"ok": True, "status": status, "content_range": crange, "bytes": len(data),
+                "honoured": bool(status == 206 and len(data) <= nbytes)}
+    except urllib.error.HTTPError as e:
+        return {"ok": False, "error": f"HTTP {e.code}", "honoured": False}
+    except Exception as e:
+        return {"ok": False, "error": repr(e)[:300], "honoured": False}
+
+
 def aligned(mask_hw, slide_hw, factors=MASK_FACTORS, slack=1):
     """The factor f for which mask (h, w) equals slide (h, w) / f within slack pixels, or None."""
     for f in factors:
@@ -146,8 +179,10 @@ def aligned(mask_hw, slide_hw, factors=MASK_FACTORS, slack=1):
     return None
 
 
-def hw_of(shape):
-    """(height, width) of an image shape: (h, w), (h, w, c) or (c, h, w) with c <= 4; else None."""
+def hw_of(shape, max_planes=MAX_PLANES):
+    """(height, width) of an image shape: (h, w), (h, w, c) with c <= 4, or (c, h, w) with
+    c <= max_planes; else None. v1.1: the limit on leading planes was 4, which gave None for
+    the 7-plane KPMP mask (one plane per structure type) and failed P4 in run v1."""
     dims = list(shape)
     while len(dims) > 2 and dims[0] == 1:
         dims = dims[1:]
@@ -156,7 +191,7 @@ def hw_of(shape):
     if len(dims) == 3:
         if dims[-1] <= 4:
             return tuple(dims[:2])
-        if dims[0] <= 4:
+        if dims[0] <= max_planes:
             return tuple(dims[1:])
     return None
 
@@ -534,7 +569,8 @@ def main(argv=None):
     store = os.path.join(args.data_dir, "kpmp")
     os.makedirs(store, exist_ok=True)
     t_start = time.time()
-    res = {"prereg": PREREG, "started_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+    res = {"prereg": PREREG, "code_version": VERSION,
+           "started_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
            "versions": versions(), "targets": list(TARGETS), "downloads": {}, "slides": {},
            "package": {}, "tiv": {}, "errors": []}
     by_key = {t["key"]: t for t in TARGETS}
@@ -559,6 +595,9 @@ def main(argv=None):
     seg = step("download seg_small", lambda: fetch("seg_small"))
     pas = step("download pas_small", lambda: fetch("pas_small"))
     tiv = step("download tiv", lambda: fetch("tiv"))
+    t_seg = by_key["seg_small"]
+    res["range_probe"] = step("range probe", lambda: range_probe(download_url(t_seg["package"], t_seg["name"])))
+    log(f"range_probe: {json.dumps(res['range_probe'])}")
     if pas:
         res["slides"]["pas_small"] = step("read pas_small", lambda: read_slide(pas)) or {"ok": False}
     if seg:
