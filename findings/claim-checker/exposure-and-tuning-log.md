@@ -23,3 +23,12 @@ Scope: the claim-provenance checker (plan `eval-plan-v5.md` and successors) only
    - It names the base texts as package 4 v19 and package 5 v28 with a closed edit list. Neither exists at this commit.
    - Re-checking the 38 Input-R seed rows against v5, from their descriptions, gave 26 covered, 7 uncertain and 5 not covered.
    - Tuning disclosed in v5 section 9.
+3. **2026-10-21 ~19:10Z, run 150: literal hand passes and plan v6, still before any checker code.**
+   - Read in full this run: cut package 4 v19 and cut package 5 v27 (every parenthesis holding a number). For the seed-row trace, only the matched lines of the found-in versions were read: P4 v13, v15 and v16; P5 v20, v21, v22, v23 and v25.
+   - Findings (`hand-pass-r1-r5-coverage-run150.md`):
+     - v5's CI-tuple grammar gives at least 7 false R1/R1b-a flags on the unmutated texts.
+     - v5 leaves R1b-b value attribution and R5 author-year candidates undefined.
+     - All 7 uncertain seed rows, and 5 of the 26 rows judged covered, fail when read literally. Development coverage is 21 of 82.
+   - **Tuning:** plan v6's G1-G5, R1 position rule, R1b-b attribution and R5 candidate grammar were written after reading the exact base-text lines they now pass (v6 section 9).
+   - Package 5 v28 was made with exactly v5's closed edits C1 and U1-U4. It was written by copying v27, then checked by line position (C5 lines still L248 and L252, cut still L367) and by token counts against v27. Its hash is not taken yet, and it waits for open item o5.
+   - The base texts are not public. No code, hashes, mutations or labels exist.

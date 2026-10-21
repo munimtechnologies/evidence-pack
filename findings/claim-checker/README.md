@@ -1,14 +1,15 @@
 # Claim-provenance checker: evaluation plan and development set
 
-MV2 of Munim, Inc. is building a deterministic checker that flags silent claim-provenance problems in drug-evidence summaries: a stated record count that doesn't match the registry IDs listed, a date-relative claim that will be false by the deadline, a "no difference" next to a CI that excludes the null, a reference that is never cited, and similar. It is planned as one feature of an entry to AHRQ's Clinical Evidence Synthesis Transformation Challenge.
+MV2 of Munim, Inc. is building a deterministic checker that flags silent claim-provenance problems in drug-evidence summaries. Examples: a stated record count that doesn't match the registry IDs listed; a date-relative claim that will be false by the deadline; a "no difference" next to a CI that excludes the null; a reference that is never cited. It is planned as one feature of an entry to AHRQ's Clinical Evidence Synthesis Transformation Challenge.
 
 **This folder is the pre-registration. It is committed before any checker code exists.** AI agents (Claude, claude-opus-5-5) research and draft this work in MV2's name. No human has reviewed any file here yet. Licence: CC BY 4.0 (text and data).
 
 ## What is here
 | File | What it is |
 |---|---|
-| `eval-plan-v5.md` | **The plan in force.** Module definitions, held-out sets, mutation layout, matching and pass rules, restated predictions, limits. |
-| `eval-plan-v1.md` ... `eval-plan-v4.md` | Earlier drafts, unedited, kept for the record. v5 says what changed and why. |
+| `eval-plan-v6.md` | **The plan in force.** A dated amendment to v5 (CI-tuple grammar, R1, R1b-b and R5 definitions, coverage, restated prediction, open item o5). Everything it doesn't replace stands as in v5. |
+| `eval-plan-v5.md` | Module definitions, held-out sets, mutation layout, matching and pass rules, limits. |
+| `eval-plan-v1.md` ... `eval-plan-v4.md` | Earlier drafts, unedited, kept for the record. |
 | `seed-set-v2.md`, `seed-set-v2.csv` | Development set: 82 naturally occurring problems found while auditing two draft evidence packages (package 4, spironolactone for alcohol use disorder; package 5, metformin for knee osteoarthritis). Each row has two AI labellings and an adjudicated label for the input needed to catch it. |
 | `seed-set-v1.md` | The first version of the set (79 rows). |
 | `seed-set-second-labels-blind.md` | The blind second labelling (input kappa 0.78, same model family). |
@@ -17,9 +18,12 @@ MV2 of Munim, Inc. is building a deterministic checker that flags silent claim-p
 | `hand-pass-r4-run146.md` | Literal hand pass of the date rule. |
 | `operator-vs-detector-run147.md` | For each module: does the planted-error operator produce text the detector reads? |
 | `r5-superlative-count-run148.md` | Full hand count of the superlative rule (which led to dropping it). |
+| `hand-pass-r1-r5-coverage-run150.md` | Literal passes of the CI-tuple grammar and R5's citation halves on both texts, and the trace of the seed rows against the package versions they were found in. |
 | `exposure-and-tuning-log.md` | Append-only log of what the authors saw and tuned, and when. |
 
-The two evidence packages these files refer to are unpublished drafts for the NCATS ReGen Drugs Evidence Package Challenge. Line numbers refer to package 5 v27 (cut at line 367) and package 4 v18 (cut at line 227). Their SHA-256 hashes, and those of the final base texts (package 4 v19, package 5 v28), will be logged before any planted-error job runs.
+The two evidence packages these files refer to are unpublished drafts for the NCATS ReGen Drugs Evidence Package Challenge.
+- Line numbers refer to package 5 v27 (cut at line 367; v28 keeps the same line numbers) and package 4 v18/v19 (cut at line 227).
+- The SHA-256 hashes of the final base texts (package 4 v19, package 5 v28) will be logged before any planted-error job runs.
 
 ## Path map
 The files cite each other by the local work-folder paths they were drafted under:
@@ -45,5 +49,6 @@ Other local paths mentioned in these files (package drafts and their check files
 
 ## Honest limits, in one place
 - Every label, rule and prediction so far comes from one model family. A human labelling is still wanted.
-- The rules were refined by hand against the same two texts that serve as planted-error base texts, so those texts are not a clean false-positive test. Plan v5 section 9 lists which rules were tuned.
-- Under v5, the deterministic modules cover only **26 to 33 of the 82** development problems. Most problems need a semantic judgement or an outside source (a cited paper, a registry or a literature search), and v1 doesn't attempt those.
+- The rules were refined by hand against the same two texts that serve as planted-error base texts, so those texts are not a clean false-positive test. Plan v5 and v6 section 9 list which rules were tuned.
+- **Traced literally against the texts they were found in, the deterministic modules cover only 21 of the 82 development problems (25.6%).** Plan v5 had estimated 26 to 33 from one-line descriptions. Most problems need a semantic judgement or an outside source (a cited paper, a registry or a literature search), and v1 doesn't attempt those.
+- Every literal hand pass so far has found a defect in the rules it read.
