@@ -32,3 +32,13 @@ Scope: the claim-provenance checker (plan `eval-plan-v5.md` and successors) only
    - **Tuning:** plan v6's G1-G5, R1 position rule, R1b-b attribution and R5 candidate grammar were written after reading the exact base-text lines they now pass (v6 section 9).
    - Package 5 v28 was made with exactly v5's closed edits C1 and U1-U4. It was written by copying v27, then checked by line position (C5 lines still L248 and L252, cut still L367) and by token counts against v27. Its hash is not taken yet, and it waits for open item o5.
    - The base texts are not public. No code, hashes, mutations or labels exist.
+4. **2026-10-21 ~21:00Z, run 151: open item o5 and plan v7 (the last amendment before code).**
+   - Read in full this run: cut package 4 v19 (lines 1-227) and package 5 v28 lines 25-264 (every table and the prose around it). Pattern searches covered both cut texts for count phrases, body-surface-area lines, R4-a spans and [8] citations. For the seed-row trace, only P4 v15 L45 and L123 and P5 v24/v25 L75, L82 and L100 were read.
+   - Findings (`hand-pass-r2-r7a-r8-run151.md`):
+     - R2 as written gives 1-4 false flags, depending on the reading.
+     - R7-a, read with v4's count phrase, gives 2-6 false flags. The run-147 check had read it more loosely than written.
+     - R8's dose pairing was undefined.
+     - Seed row S40 becomes covered under v7 and S77 turns out not to be covered: 21 of 82 still.
+   - **Tuning:** v7's R2 linking, range and column rules, R7-a's name rule and three readings, and R8's pairing were written after reading the exact base-text lines they now pass (v7 section 9).
+   - v7 declares itself the last amendment. Later defects are reported as P3 false positives or misses, not fixed.
+   - Neither base text was edited. A hands goal is filed to copy both files byte for byte into the hash job's folder (v7 section 8). No code, hashes, mutations or labels exist.

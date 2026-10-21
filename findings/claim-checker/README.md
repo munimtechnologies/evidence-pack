@@ -7,7 +7,8 @@ MV2 of Munim, Inc. is building a deterministic checker that flags silent claim-p
 ## What is here
 | File | What it is |
 |---|---|
-| `eval-plan-v6.md` | **The plan in force.** A dated amendment to v5 (CI-tuple grammar, R1, R1b-b and R5 definitions, coverage, restated prediction, open item o5). Everything it doesn't replace stands as in v5. |
+| `eval-plan-v7.md` | **The plan in force, and the last amendment before code.** It defines R2 (tables), R7-a (counts vs lists) and R8 (dose conversions) literally, restates the prediction and sets the order of work. Everything it doesn't replace stands as in v6 and v5. |
+| `eval-plan-v6.md` | Amendment: CI-tuple grammar, R1, R1b-b and R5 definitions, literal coverage. |
 | `eval-plan-v5.md` | Module definitions, held-out sets, mutation layout, matching and pass rules, limits. |
 | `eval-plan-v1.md` ... `eval-plan-v4.md` | Earlier drafts, unedited, kept for the record. |
 | `seed-set-v2.md`, `seed-set-v2.csv` | Development set: 82 naturally occurring problems found while auditing two draft evidence packages (package 4, spironolactone for alcohol use disorder; package 5, metformin for knee osteoarthritis). Each row has two AI labellings and an adjudicated label for the input needed to catch it. |
@@ -16,13 +17,14 @@ MV2 of Munim, Inc. is building a deterministic checker that flags silent claim-p
 | `seed-set-input-adjudication.md` | The input-label adjudication. |
 | `hand-pass-r2b-r5b-run141.md`, `hand-pass-r2b-r5b-run144.md` | Literal hand passes of the registry-count and registry-ID rules. |
 | `hand-pass-r4-run146.md` | Literal hand pass of the date rule. |
-| `operator-vs-detector-run147.md` | For each module: does the planted-error operator produce text the detector reads? |
+| `operator-vs-detector-run147.md` | For each module: does the planted-error operator produce text the detector reads? (Its R7-a reading was looser than the rule; see the run-151 note.) |
 | `r5-superlative-count-run148.md` | Full hand count of the superlative rule (which led to dropping it). |
 | `hand-pass-r1-r5-coverage-run150.md` | Literal passes of the CI-tuple grammar and R5's citation halves on both texts, and the trace of the seed rows against the package versions they were found in. |
+| `hand-pass-r2-r7a-r8-run151.md` | Literal passes of the table rule, the count-vs-list rule and the dose rule on both texts. |
 | `exposure-and-tuning-log.md` | Append-only log of what the authors saw and tuned, and when. |
 
 The two evidence packages these files refer to are unpublished drafts for the NCATS ReGen Drugs Evidence Package Challenge.
-- Line numbers refer to package 5 v27 (cut at line 367; v28 keeps the same line numbers) and package 4 v18/v19 (cut at line 227).
+- Line numbers refer to package 5 v27/v28 (cut at line 367; v28 keeps v27's line numbers) and package 4 v18/v19 (cut at line 227).
 - The SHA-256 hashes of the final base texts (package 4 v19, package 5 v28) will be logged before any planted-error job runs.
 
 ## Path map
@@ -49,6 +51,6 @@ Other local paths mentioned in these files (package drafts and their check files
 
 ## Honest limits, in one place
 - Every label, rule and prediction so far comes from one model family. A human labelling is still wanted.
-- The rules were refined by hand against the same two texts that serve as planted-error base texts, so those texts are not a clean false-positive test. Plan v5 and v6 section 9 list which rules were tuned.
+- The rules were refined by hand against the same two texts that serve as planted-error base texts, so those texts are not a clean false-positive test. Plan v5, v6 and v7 section 9 list which rules were tuned.
 - **Traced literally against the texts they were found in, the deterministic modules cover only 21 of the 82 development problems (25.6%).** Plan v5 had estimated 26 to 33 from one-line descriptions. Most problems need a semantic judgement or an outside source (a cited paper, a registry or a literature search), and v1 doesn't attempt those.
-- Every literal hand pass so far has found a defect in the rules it read.
+- Every literal hand pass so far has found a defect in the rules it read. Loose readings and one-line descriptions overstated coverage three times. From v7 on, defects found after code freeze are reported, not fixed by new plan versions.
