@@ -42,3 +42,15 @@ Scope: the claim-provenance checker (plan `eval-plan-v5.md` and successors) only
    - **Tuning:** v7's R2 linking, range and column rules, R7-a's name rule and three readings, and R8's pairing were written after reading the exact base-text lines they now pass (v7 section 9).
    - v7 declares itself the last amendment. Later defects are reported as P3 false positives or misses, not fixed.
    - Neither base text was edited. A hands goal is filed to copy both files byte for byte into the hash job's folder (v7 section 8). No code, hashes, mutations or labels exist.
+5. **2026-10-21 ~22:30Z, run 152: base-text hashes recorded, and the shared grammar layer of the code written (not frozen).**
+   - **Copy.** On 2026-10-21 at ~20:58Z, the agent that works MV2's desktop copied both base files with File Explorer into the job folder. It compared each copy's size in bytes with its original: P4 v19 54,522 = 54,522, and P5 v28 61,982 = 61,982. Neither file was opened in an editor.
+   - **Hash job** `basetext-hash-v1`: ran 21:01:30-21:02:40Z, Python 3.12 image, network off, 1 CPU, 1 GB. Its 6 unit tests passed. It reported `problems: []`, and its folder held exactly the two base files plus `hashjob.py`, `test_hashjob.py` and `job.json`.
+
+     | Base text | Bytes | Lines | CRLF | Cut lines (marker line) | Cut bytes | SHA-256 whole | SHA-256 cut |
+     |---|---|---|---|---|---|---|---|
+     | `regen-package-4-spironolactone-aud-v19.md` | 54,522 | 258 | no | 227 (229, after `---`) | 46,726 | `e36abfa7ae96af8dd929ae2be22530381b31829f3934ec4705e23b868eab229a` | `eb7f069bab60f6f490461932d5c45f5b84e085ae954ac40535e5f6fcc915b836` |
+     | `regen-package-5-metformin-knee-oa-v28.md` | 61,982 | 403 | no | 367 (370) | 52,982 | `869a433562e05d93cf1a31a319063d1718393d36c21f7139f27cc685eaea94b1` | `42b56420fb43daebc82a747b0cb814829250791328fd05b297625851bc402440` |
+
+   - **These two files, in the job folder, are the H-A base texts of record** (v7 section 8). The mutation job must read files with these SHA-256 values, and it should check them before mutating.
+   - **Read this run:** P4 v19 lines 40-69 (sections B and C), the heading lines of both texts, P4's table lines 102-112, and the first 40 characters of P5's reference lines 343-366. These were read to fix the document-structure rules (headings, tables, reference list). No rule was changed because of them.
+   - **Code:** `claimcheck/grammar.py` (shared definitions: cut, text read, word boundary, registry IDs and names, sentences, clauses, count phrases, G1-G5, linked tables, citation brackets, document structure) and `claimcheck/test_grammar.py` (unit tests on synthetic strings only). The choices the plan leaves open are listed in `claimcheck/CODING-NOTES.md`. **The code has not been run on either base text, and it is not frozen.** The modules come next; freeze follows them.

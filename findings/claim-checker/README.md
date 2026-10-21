@@ -2,7 +2,7 @@
 
 MV2 of Munim, Inc. is building a deterministic checker that flags silent claim-provenance problems in drug-evidence summaries. Examples: a stated record count that doesn't match the registry IDs listed; a date-relative claim that will be false by the deadline; a "no difference" next to a CI that excludes the null; a reference that is never cited. It is planned as one feature of an entry to AHRQ's Clinical Evidence Synthesis Transformation Challenge.
 
-**This folder is the pre-registration. It is committed before any checker code exists.** AI agents (Claude, claude-opus-5-5) research and draft this work in MV2's name. No human has reviewed any file here yet. Licence: CC BY 4.0 (text and data).
+**This folder is the pre-registration. Plan v7, the last amendment, was committed before any checker code existed.** The code is being written to it in `claimcheck/` at the repository root (shared grammar layer first; not frozen yet). AI agents (Claude, claude-opus-5-5) research and draft this work in MV2's name. No human has reviewed any file here yet. Licence: CC BY 4.0 (text and data); code Apache-2.0.
 
 ## What is here
 | File | What it is |
@@ -21,11 +21,11 @@ MV2 of Munim, Inc. is building a deterministic checker that flags silent claim-p
 | `r5-superlative-count-run148.md` | Full hand count of the superlative rule (which led to dropping it). |
 | `hand-pass-r1-r5-coverage-run150.md` | Literal passes of the CI-tuple grammar and R5's citation halves on both texts, and the trace of the seed rows against the package versions they were found in. |
 | `hand-pass-r2-r7a-r8-run151.md` | Literal passes of the table rule, the count-vs-list rule and the dose rule on both texts. |
-| `exposure-and-tuning-log.md` | Append-only log of what the authors saw and tuned, and when. |
+| `exposure-and-tuning-log.md` | Append-only log of what the authors saw and tuned, and when. **Entry 5 holds the SHA-256 hashes of the two base texts.** |
 
 The two evidence packages these files refer to are unpublished drafts for the NCATS ReGen Drugs Evidence Package Challenge.
 - Line numbers refer to package 5 v27/v28 (cut at line 367; v28 keeps v27's line numbers) and package 4 v18/v19 (cut at line 227).
-- The SHA-256 hashes of the final base texts (package 4 v19, package 5 v28) will be logged before any planted-error job runs.
+- The SHA-256 hashes of the final base texts (package 4 v19, package 5 v28), whole and cut, were recorded by a sealed job on 2026-10-21 and are in log entry 5. The texts stay unpublished until the evaluation is scored; anyone given them later can check them against those hashes.
 
 ## Path map
 The files cite each other by the local work-folder paths they were drafted under:
@@ -54,3 +54,4 @@ Other local paths mentioned in these files (package drafts and their check files
 - The rules were refined by hand against the same two texts that serve as planted-error base texts, so those texts are not a clean false-positive test. Plan v5, v6 and v7 section 9 list which rules were tuned.
 - **Traced literally against the texts they were found in, the deterministic modules cover only 21 of the 82 development problems (25.6%).** Plan v5 had estimated 26 to 33 from one-line descriptions. Most problems need a semantic judgement or an outside source (a cited paper, a registry or a literature search), and v1 doesn't attempt those.
 - Every literal hand pass so far has found a defect in the rules it read. Loose readings and one-line descriptions overstated coverage three times. From v7 on, defects found after code freeze are reported, not fixed by new plan versions.
+- Coding the plan needs choices the plan doesn't make (for example, how a URL is recognised). They are listed in `claimcheck/CODING-NOTES.md` before the code runs on any base text.
