@@ -1,0 +1,83 @@
+id,run,package,section,problem,class_first,class_second,input_first,input_second,input_adjudicated,v3_coverage,found_in,false_lead
+S01,115,P5,D,"""rose about linearly"" loosened the label",A,A,Xs,Xs,Xs,,,0
+S02,116,P4,Overview,"Quoted label sentence dropped ""or titration""",A,A,Xs,Xs,Xs,,,0
+S03,117,P5,A,"""The 2026 update's only new recommendation"" false against ACR's press release",C,C,Xl,Xs,Xl,,,0
+S04,117,P5,A,Fu 2024 MVMR verification left out,E,E,Xs,Xs,Xs,,,0
+S05,118,P4,E.5,Design-abstract quotes credited to the registry record,B,B,Xs+Xr,Xr,Xs+Xr,,,0
+S06,118,P4,E.3e,"Authors' 0.5 threshold written as observed ""up to about 0.5"" (max 0.31)",I,I,Xs,Xs,Xs,,,0
+S07,119,P5,A,"""First positive placebo-controlled trial"": two earlier positive trials",C,C,Xl,Xl,Xl,,,0
+S08,119,P5,"E.2, B","""First registered independent replication"" (NCT07065591 earlier)",C,C,Xr,Xr,Xr,,,0
+S09,119,P5,E.2,"""Only registered placebo trial with a structural primary"": overbroad",C,C,Xr,Xr,Xr,,,0
+S10,119,P5,D,"""No human PK/PD study of metformin for pain exists"" (Kialka 2016)",C,C,Xl,Xl,Xl,,,0
+S11,119,P5,F,Superlative co-medication claim with no source,J,J,R,R,R,R5,,0
+S12,120,P5,"E.3, E.5",Jiang 2025 NMA and Chen S 2022 missing,E,E,Xl,Xl,Xl,,,0
+S13,121,P4,C,Animal section one-sided: four null studies missing,E,E,Xl,Xl,Xl,,,0
+S14,121,P4,A,Amygdala mechanism sentence uncited,J,J,S,S,S,,,0
+S15,122,P5,C,Animal section one-sided: Minton 2021 and two retracted studies missing,E,E,Xl,Xl,Xl,,,0
+S16,123,P5,ref 47,Minton 2021 erratum not cited,J,J,Xb,Xb,Xb,,,0
+S17,123,P5,C,Cited synthesis (Yao 2026) cites a retracted study; not noted,J,J,Xb,Xb,Xb,,,0
+S18,123,P5,ref 23,Mohammed year flagged; not an error (Crossref online date),J,J,Xb,Xb,Xb,,,1
+S19,124,P5,B,"Summary kept ""two animal studies point the same way"" after C changed",F,F,S,S,S,,,0
+S20,125,P4,A,"Pince quote cut before ""in ASUD""",A,A,Xs,Xs,Xs,,,0
+S21,125,P4,A,"""66 years on the US market"" false from 2027-01-21",K,K,R,R,R,R4,,0
+S22,125,P4,D,Named trial RALES uncited,J,J,R,R,R,R5,,0
+S23,126,P5,C,"Minton quote cut dropped ""added to rapamycin""",A,A,Xs,Xs,Xs,,,0
+S24,126,P5,E.2,"""Unreported nearly 22 months after completion"" false at the deadline",K,K,R,R,R,R4,,0
+S25,126,P5,A,"""Full manuscript not yet published"" unanchored",K,K,R,R,R,R4,,0
+S26,126,P5,E.5b,"""Zhang 2022"" collides with ref 15",J,J,R,R,R,R5,,0
+S27,126,P5,"E.5a, E.6","Internal labels ""version 5"", ""version 18""",L,L,R,R,R,R6,,0
+S28,127,P4,refs,Ref 12 never cited,J,J,R,R,R,R5,,0
+S29,127,P4,E.5,"""Terminated 2017"": last-update date read as end date",D,D,Xr,Xr,Xr,,,0
+S30,127,P4,E.5,"""Are not AUD trials"": one lists Alcoholism",C,D,Xr,Xr,Xr,,,0
+S31,127,P4,A,"""The only registered clinical studies are ..."" too broad",C,C,Xr,Xr,Xr,,,0
+S32,128,P5,A,Ref 32 cited only by guideline name,J,J,R,R,R,R5,,0
+S33,128,P5,A,"Ref 34 cited only as ""OARSI 2019""",J,J,R,R,R,R5,,0
+S34,128,P5,E.2,NCT06126029 not described as a second unreported placebo trial,E,E,Xr,Xr,Xr,,,0
+S35,128,P5,E.2,METRO listed with no registry ID,E,J,Xr,R,R,R5b,P5 v21 E.2,0
+S36,128,P5,E.2,3 of the 11 search records unaccounted for,E,E,Xr,R,R,R2b,P5 v21 E.2,0
+S37,128,P5,E.2,NCT07065591 referral criterion missing,D,D,Xr,Xr,Xr,,,0
+S38,129,P4,E.3a,"""10.4% in eight comparisons"" (six)",F,F,R,Xs,R,R2,P4 v18 (table printed),0
+S39,129,P4,B,Column maximum paired with the full comparator range,F,F,R,Xs,R,R2,P4 v18 (table printed),0
+S40,129,P4,B,"""HR 0.77-0.81 in seven of nine"" (eight)",F,F,R,R,R,R2,,0
+S41,129,P4,E.3a,"""Seven of nine below 1"" (all nine)",F,F,R,R,R,R2,,0
+S42,129,P4,E.3c,"""All 27 printed estimates"" vs the job's four inputs",H,H,R,R,R,R7,,0
+S43,129,P4,Overview,"""Two senior authors"" (one is first author)",F,B,Xs,Xb,Xs,,,0
+S44,129,P4,C,"""The doses that worked in [5]"" (10 mg/kg did not)",F,A,S,Xs,S,,P4 v15 C,0
+S45,130,P5,B,"""About SMD 0.4"" vs E.1a 0.40-0.51",F,F,R,R,R,R1,,0
+S46,130,P5,B,"""The exception"" when E.3 has several",F,F,S,S,S,,,0
+S47,130,P5,B,"""Lower risk in five of six"" (CI below 1 in four)",G,G,R,R,R,R3,,0
+S48,130,P5,E.3,"""Two of the five"" incident-OA studies (row set needs judgement)",F,F,R,S,S,,P5 v22 E.3,0
+S49,130,P5,E.3,Case/control counts printed as exposure groups,L,L,Xs,Xs,Xs,,,0
+S50,130,P5,E.5a,Pooled safety estimates listed as job-checked,H,H,R,R,R,R7,,0
+S51,130,P5,E.5a,"""Every printed estimate"" included an unchecked CI",H,H,R,R,R,R7,,0
+S52,130,P5,"E.2, E.5",Alimoradi attrition credited to the wrong report,B,B,Xs,Xs,Xs,,,0
+S53,130,P5,E.5b,"""Five distinct oral randomised reports"" (trials)",F,F,S,S,S,,,0
+S54,130,P5,E.5,"Pan ""0.43"" unlabelled beside other values",F,F,R,R,R,R1,,0
+S55,130,P5,A,OAI called a diabetes cohort,L,L,Xs,Xs,Xs,,,0
+S56,131,P4,B,"""Less likely"" asserted for CIs crossing 1",G,G,R,R,R,R3,,0
+S57,131,P4,E.1,"""No effect"" for a CI spanning 0",G,G,R,R,R,R3,,0
+S58,131,P4,E.6,"""Three outcome measures"" not recomputable",F,F,S,S,S,,,0
+S59,132,P5,B,"""No difference at 3 months"" (CI spans 0)",G,G,R,R,R,R3,,0
+S60,132,P5,G,"""No benefit at 3 months""",G,G,R,R,R,R3,,0
+S61,132,P5,B,"""No different from SGLT-2 inhibitors""",G,G,R,R,R,R3,,0
+S62,132,P5,E.3,"""No differently from SGLT-2 inhibitors""",G,G,R,R,R,R3,,0
+S63,132,P5,C,"Effect ""absent"" (non-significant)",G,G,R,R,R,R3,,0
+S64,132,P5,F,"""No interaction by sex"" from P values",G,G,R,R,R,R3,,0
+S65,132,P5,F,"""Effects look stronger"" with no CIs printed",G,G,R,S,R,R3,P5 v23 F,0
+S66,132,P5,E.5a,"""The four meta-analyses that print CIs"" (five)",H,H,R,R,R,R7,,0
+S67,132,P5,E.6,Source list omits Drugs@FDA and PMC,E,E,R,R,R,R8,,0
+S68,132,P5,E.5,"""Every leave-one-out pool"": two computed",H,H,R,R,R,R7,,0
+S69,133,P5,E.5,"KOOS and VAS SDs called ""WOMAC pain SDs""",I,I,Xs,Xs,Xs,,,0
+S70,133,P5,E.1a,SMDs used one arm's SD,I,I,Xs,R,Xs,,P5 v24 E.1a,0
+S71,134,P4,E.3e,"""About 50-60 patients per arm"" (one arm 64)",I,F,Xs,Xs,Xs,,,0
+S72,134,P4,E.3e,Signed DiDs with opposite conventions side by side,I,I,Xs,Xs,Xs,,,0
+S73,134,P4,E.3e,VA heavy-drinker rows left out,E,E,Xs,Xs,Xs,,,0
+S74,134,P4,E.4,"Follow-up checks called ""pre-registered""",L,L,R,R,R,R6,,0
+S75,135,P5,"E.1a, E.5",SMD sign convention unstated; both signs printed,I,I,S,R,R,R1b,P5 v25 E.1a,0
+S76,135,P5,E.1a,0.43 not credited as the trial's own SMD,B,I,Xs,Xs,Xs,,,0
+S77,135,P5,C,Animal-to-human doses on different body weights,I,I,R,R,R,R8,,0
+S78,135,P5,E.5b,"Crossref deposits called ""complete""",J,J,Xb,Xb,Xb,,,0
+S79,135,P5,E.5,Pool's n 44/44 not stated beside the attrition,H,I,S,R,S,,P5 v25 E.5,0
+S80,137,P4,C,"Only the mouse dose translated; female-rat dose ~490 mg/day, above the 400 mg maximum",E,I,S,Xs,Xs,,P4 v18 C,0
+S81,137,P4,C,Single injected rodent dose translated to a daily oral dose unsaid,I,I,Xs,Xs,Xs,,,0
+S82,141,P5,"E.2, ref 39","Two of the 11 search records described without IDs (NCT07395895, NCT07738692)",J,,R,,R,R2b;R5b,P5 v26 E.2,0
