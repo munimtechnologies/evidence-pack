@@ -9,6 +9,7 @@ MV2 of Munim, Inc. Text CC BY 4.0; code Apache-2.0. Written on 2026-10-22 (UTC) 
   - 599 `/subject` pages and 599 `/subject-mapping` pages at `per_page=100`, plus the GDC TARGET cases. Three larger first-page probes (1,000, 500 and 250 per page) were fetched and not used.
 - **Outputs:** `concordance.json` holds every number below; it contains aggregates only. `fetch-log.json` gives the URL, status, size and SHA-256 of every response.
 - **Snapshot:** every number describes the APIs as served on 2026-10-22. Federation contents change over time.
+- **Update (tag v0.5.7):** one sentence about CCDI-DCC race values is corrected below. See `post-hoc-demographics.md` for the correction, a table of field completeness by source, and a post-hoc race/ethnicity standards finding.
 
 ## Grades (as computed by `analyze.py`, unchanged)
 
@@ -45,7 +46,7 @@ The GDC TARGET-federation pairs (9,935) show the same: race 8,440 agree / 2 disa
   - race covers 35,781, which leaves out 2,659 records served as "Unknown";
   - sex covers 38,439, and one record is served with no sex.
 - **PCDC demographics:** about 300 served PCDC records have a null value that the count endpoints count under a real value. Net of the endpoint's own missing counts, that is 304 for sex (315 null served against 11 missing at the endpoint), 303 for ethnicity (304 against 1) and 304 for race (304 against 0). Whether these are the same records is not known.
-- **CCDI-DCC:** 24 records carry the race value "White, Hispanic or Latino", which mixes an ethnicity into race. The race endpoint counts them as missing.
+- **CCDI-DCC:** 24 records carry the race value "White, Hispanic or Latino". *Corrected at v0.5.7:* this is a two-value race list that the CCDI data model allows (its race list includes "Hispanic or Latino", following the 2024 OMB standard), served as one string that is not in the Federation API's race list. It is not a data-entry error, as v0.5.6 implied. The race endpoint counts these records as missing. See `post-hoc-demographics.md`.
 - **Exact matches:** CCDI-DCC, StJude, Treehouse, ccdi-ecDNA and ccdi-iusccc-pst match their count endpoints exactly on sex, ethnicity and vital status.
 
 **3. Vital status conflicts cluster in one source pair.** Among linked pairs where both records give Alive or Dead (1,415), 149 disagree.
@@ -71,6 +72,7 @@ We predicted that linked TARGET records would often show an "Alive" in one sourc
 - **The 100 PCDC subjects the census missed are a fetch artifact, not a data finding.** On exactly one in-range page, PCDC returned something other than a record list. The page counts make this clear: 355 non-list PCDC page items = 354 pages past PCDC's last page + 1 in range. This is why 24,332 subjects were served against a summary total of 24,432.
 - **CCDI-DCC | ccdi-ecDNA ages do not line up.** All 10 pairs where both say Dead differ in age at death by more than 30 days, and so do 5 of 6 KidsFirst | ccdi-ecDNA pairs. The two sources' `age_at_vital_status` may use different reference points. So the census's 106 "alive after death" labels (all in this pair) should not be read as contradictions yet. The Alive-versus-Dead disagreement itself (145 pairs) does not depend on ages.
 - **4 of the 7 sex disagreements are KidsFirst | StJude:** 4 of 43 pairs. That is a small number, but a far higher rate than any other pair.
+- **Race/ethnicity standards (added at v0.5.7):** CCDI-DCC serves no "Not Hispanic or Latino" record. At least 40,780 of its subjects (68.2%) are served with race "White" and ethnicity "Not reported". This fits a translation from the CCDI data model's combined race list (2024 OMB standard) into the Federation API's separate ethnicity field (1997 standard). Details, filter counts and limits are in `post-hoc-demographics.md`.
 - **Next:** a post-hoc diagnostic job (`ccdi-diag-v1`, code in `../diagnostics-v1/`) re-fetches a second snapshot. It retries the failed page, measures the age offsets per source pair, reports conflicts by study namespace, and tests looser matches for the unresolved links. Everything it produces will be labelled post hoc.
 
 ## Limits
