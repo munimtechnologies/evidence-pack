@@ -1,0 +1,20 @@
+{
+  "name": "ccdi-diag-v1",
+  "kind": "compete",
+  "workdir": "E:/MV2-Pursuit/work/20261022T183116Z-medicine/compete/ccdi-diag",
+  "image": "python:3.12",
+  "setup": [
+    "python get_code.py",
+    "python -m unittest -v test_diag",
+    "python fetch_ccdi.py"
+  ],
+  "run": [
+    "python diag.py --raw raw --out /out --retry --keep /data/ccdi-raw-snapshot2"
+  ],
+  "network": true,
+  "data_urls": [],
+  "data_key": "ccdi-raw",
+  "cpu": 1,
+  "memory_gb": 2,
+  "timeout_minutes": 300
+}
