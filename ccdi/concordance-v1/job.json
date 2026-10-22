@@ -1,0 +1,18 @@
+{
+  "name": "ccdi-concord-v1",
+  "kind": "compete",
+  "workdir": "E:/MV2-Pursuit/work/20261022T134748Z-medicine/compete/ccdi-concord",
+  "image": "python:3.12",
+  "setup": [
+    "python -m unittest -v test_analyze",
+    "python fetch_ccdi.py"
+  ],
+  "run": [
+    "python analyze.py --raw raw --out /out"
+  ],
+  "network": true,
+  "data_urls": [],
+  "cpu": 1,
+  "memory_gb": 2,
+  "timeout_minutes": 300
+}
