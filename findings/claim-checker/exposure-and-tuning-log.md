@@ -61,3 +61,19 @@ Scope: the claim-provenance checker (plan `eval-plan-v5.md` and successors) only
    - `claimcheck/CODING-NOTES.md` at de3066f lists 59 readings where the plan's words allowed more than one implementation, and fixes the H-A plan files and job manifest. Four readings follow the literal text where it and the evident intent diverge (readings 32, 37, 42 and 53). Reading 53 has a stated cost: a "pre-registered" sentence whose reference lists both a before-results plan and an after-results follow-up plan is flagged.
    - **Seen while coding:** as listed in CODING-NOTES "What was read while coding". No base text of record was opened by the code or its tests.
    - **Not yet done:** the mutation job, the checker job, the scoring. No mutations or labels exist.
+7. **2026-10-22 ~09:45Z, run 157: the mutation job ran; the scorer was written before the checker job.**
+   - **Copy.** At ~07:57Z the agent that works MV2's desktop copied both base files of record (entry 5) into the mutation job's folder with File Explorer: 54,522 = 54,522 bytes and 61,982 = 61,982 bytes. Neither file was opened in an editor. It then switched the job on.
+   - **Mutation job** `ha-mutate-v1` (`mutation-job/mutate.py` as committed at v0.5.1): ran 08:27:06-08:28:17Z, Python 3.12 image, network off, 1 CPU, 1 GB. Its 11 unit tests passed. It reported `problems: []`, so both base texts matched entry 5's SHA-256 values, whole and cut.
+     - Seed 20261021. Site file SHA-256 `ebc12371c04e30136bd1c0e5367bfe46ad10bc18cb52564485d833038b89d5b3`. **Labels SHA-256 `2b6948969e8145ddfc8494dec4b76a665b122151f9036711475c951ec08f091b`.**
+     - Valid sites 123 (P4 54, P5 69). Invalid sites: none.
+     - **Planted: 80**, as mutation-notes section 3 predicted. Shortfalls exactly as predicted: R2 3, R2b 1, R3 4.
+
+       | Module | R1 | R1b | R2 | R2b | R3 | R4 | R5 | R5b | R6 | R7 | R8 | Total |
+       |---|---|---|---|---|---|---|---|---|---|---|---|---|
+       | P4 | 4 | 4 | 5 | 3 | 1 | 4 | 4 | 3 | 4 | 2 | 4 | 38 |
+       | P5 | 4 | 4 | 0 | 4 | 3 | 4 | 4 | 5 | 4 | 6 | 4 | 42 |
+
+     - Layout: 16 collisions, 5 redrawn from the reserve, 11 moved to another copy, 7 new copies. No mutation was dropped (reading M2). Copies: P4 8, P5 10, plus the two unmutated cut texts, whose SHA-256 equal entry 5's cut hashes.
+   - **Seen this run:** the job's summary, stdout (the label-free report) and stderr, and `manifest.json` (file names and hashes only). **`labels.json` and the mutated copies were not opened.** The scorer was written from the label format in `mutate.py`.
+   - **Scorer** `score-job/score.py` with unit tests on synthetic data (`score-job/test_score.py`), and its readings S1-S10 and forecasts in `scoring-notes.md`, all written before the checker job has run. Its tests run in the sealed job `ha-score-test-v1`.
+   - **Checker job** `ha-check-v1` is staged: claimcheck 1.0.0 fetched at tag v0.5.0, network off in the run steps. It starts once the desktop agent has copied the 20 texts, `manifest.json` and `recheck.json` (never `labels.json`) into its inputs.
