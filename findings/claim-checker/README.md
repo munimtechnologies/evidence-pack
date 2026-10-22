@@ -2,7 +2,7 @@
 
 MV2 of Munim, Inc. is building a deterministic checker that flags silent claim-provenance problems in drug-evidence summaries. Examples: a stated record count that doesn't match the registry IDs listed; a date-relative claim that will be false by the deadline; a "no difference" next to a CI that excludes the null; a reference that is never cited. It is planned as one feature of an entry to AHRQ's Clinical Evidence Synthesis Transformation Challenge.
 
-**This folder is the pre-registration. Plan v7, the last amendment, was committed before any checker code existed.** The code is being written to it in `claimcheck/` at the repository root (shared grammar layer first; not frozen yet). AI agents (Claude, claude-opus-5-5) research and draft this work in MV2's name. No human has reviewed any file here yet. Licence: CC BY 4.0 (text and data); code Apache-2.0.
+**This folder is the pre-registration. Plan v7, the last amendment, was committed before any checker code existed.** The code is in `claimcheck/` at the repository root. **It is frozen at claimcheck 1.0.0 (tag v0.5.0): the code as committed at de3066f (tag v0.4.47), with only the version number changed. Log entry 6 records the freeze.** It has not yet been run on either base text. AI agents (Claude, claude-opus-5-5) research and draft this work in MV2's name. No human has reviewed any file here yet. Licence: CC BY 4.0 (text and data); code Apache-2.0.
 
 ## What is here
 | File | What it is |
@@ -21,7 +21,8 @@ MV2 of Munim, Inc. is building a deterministic checker that flags silent claim-p
 | `r5-superlative-count-run148.md` | Full hand count of the superlative rule (which led to dropping it). |
 | `hand-pass-r1-r5-coverage-run150.md` | Literal passes of the CI-tuple grammar and R5's citation halves on both texts, and the trace of the seed rows against the package versions they were found in. |
 | `hand-pass-r2-r7a-r8-run151.md` | Literal passes of the table rule, the count-vs-list rule and the dose rule on both texts. |
-| `exposure-and-tuning-log.md` | Append-only log of what the authors saw and tuned, and when. **Entry 5 holds the SHA-256 hashes of the two base texts.** |
+| `exposure-and-tuning-log.md` | Append-only log of what the authors saw and tuned, and when. **Entry 5 holds the SHA-256 hashes of the two base texts; entry 6 records the code freeze.** |
+| `../../claimcheck/CODING-NOTES.md` | The 59 readings the code takes where the plan's words allowed more than one implementation, fixed before freeze, and the plan files and job manifest the held-out run will use. |
 
 The two evidence packages these files refer to are unpublished drafts for the NCATS ReGen Drugs Evidence Package Challenge.
 - Line numbers refer to package 5 v27/v28 (cut at line 367; v28 keeps v27's line numbers) and package 4 v18/v19 (cut at line 227).
@@ -54,4 +55,4 @@ Other local paths mentioned in these files (package drafts and their check files
 - The rules were refined by hand against the same two texts that serve as planted-error base texts, so those texts are not a clean false-positive test. Plan v5, v6 and v7 section 9 list which rules were tuned.
 - **Traced literally against the texts they were found in, the deterministic modules cover only 21 of the 82 development problems (25.6%).** Plan v5 had estimated 26 to 33 from one-line descriptions. Most problems need a semantic judgement or an outside source (a cited paper, a registry or a literature search), and v1 doesn't attempt those.
 - Every literal hand pass so far has found a defect in the rules it read. Loose readings and one-line descriptions overstated coverage three times. From v7 on, defects found after code freeze are reported, not fixed by new plan versions.
-- Coding the plan needs choices the plan doesn't make (for example, how a URL is recognised). They are listed in `claimcheck/CODING-NOTES.md` before the code runs on any base text.
+- Coding the plan needed 59 choices the plan doesn't make (for example, how a URL is recognised). They are listed in `claimcheck/CODING-NOTES.md`, fixed before the code runs on any base text. In four of them the code follows the literal text where it and the evident intent diverge.
