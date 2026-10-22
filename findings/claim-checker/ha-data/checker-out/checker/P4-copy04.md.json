@@ -1,0 +1,258 @@
+{
+ "package": "P4-copy04.md",
+ "checker": "claimcheck 1.0.0",
+ "lines_total": 227,
+ "lines_cut": 227,
+ "flags": [
+  {
+   "module": "R8",
+   "rule": "source",
+   "line": 10,
+   "evidence": [
+    163,
+    164,
+    166,
+    167,
+    168,
+    169
+   ],
+   "span": "openFDA",
+   "reason": "source named in the package but missing from E.6",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 34,
+   "evidence": [],
+   "span": "The 2021",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R2",
+   "rule": "N-of-M",
+   "line": 45,
+   "evidence": [
+    102,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112
+   ],
+   "span": "CI below 1 ... six of nine",
+   "reason": "N-of-M claim fails in every candidate column",
+   "data": {
+    "columns": [
+     [
+      0,
+      3,
+      "Remission HR (95% CI)"
+     ],
+     [
+      0,
+      5,
+      "Intoxication HR (95% CI)"
+     ]
+    ]
+   },
+   "scored": true
+  },
+  {
+   "module": "R2",
+   "rule": "no-predicate",
+   "line": 45,
+   "evidence": [],
+   "span": "eight of nine",
+   "reason": "N-of-M with no fixed predicate: out of scope",
+   "data": {},
+   "scored": false
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 63,
+   "evidence": [],
+   "span": "The 2023",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R6",
+   "rule": "b-no-plan",
+   "line": 81,
+   "evidence": [],
+   "span": "pre-registered",
+   "reason": "'pre-registered' with no plan file cited",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R1",
+   "rule": "twin",
+   "line": 124,
+   "evidence": [
+    112
+   ],
+   "span": "1.82 (1.38-2.49",
+   "reason": "CI tuple shares two values with line 112 but its first bound differs",
+   "data": {
+    "earlier": "1.82 (1.33-2.49",
+    "later": "1.82 (1.38-2.49"
+   },
+   "scored": true
+  },
+  {
+   "module": "R4",
+   "rule": "b",
+   "line": 131,
+   "evidence": [],
+   "span": "exist",
+   "reason": "status claim with no as-of anchor in scope",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R4",
+   "rule": "b",
+   "line": 131,
+   "evidence": [],
+   "span": "exists",
+   "reason": "status claim with no as-of anchor in scope",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-count",
+   "line": 134,
+   "evidence": [],
+   "span": "5",
+   "reason": "stated count matches no count of the job file",
+   "data": {
+    "tool": "rwe_recheck",
+    "stated": 5,
+    "file_counts": [
+     0,
+     27
+    ]
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 134,
+   "evidence": [],
+   "span": "Georgescu",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R1b",
+   "rule": "a",
+   "line": 153,
+   "evidence": [],
+   "span": "0.34 drinks per drinking day (95% CI -0.62 to -0.06",
+   "reason": "estimate lies outside its own interval",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R6",
+   "rule": "a",
+   "line": 155,
+   "evidence": [],
+   "span": "v16",
+   "reason": "internal workflow label in judge-facing text",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R2b",
+   "rule": "count",
+   "line": 160,
+   "evidence": [],
+   "span": "Three other hits",
+   "reason": "stated count 3, distinct in-scope registry IDs 2",
+   "data": {
+    "stated": 3,
+    "in_scope": [
+     "NCT00226109",
+     "NCT05014087"
+    ],
+    "out_of_scope": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R5b",
+   "rule": "item",
+   "line": 160,
+   "evidence": [],
+   "span": "(spironolactone/propranolol haemodynamics in alcoholic cirrhosis; 1995-2003, terminated)",
+   "reason": "enumerated item without a registry ID",
+   "data": {
+    "count": 3
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "a",
+   "line": 160,
+   "evidence": [],
+   "span": "Three other hits",
+   "reason": "stated count matches no reading of its own list",
+   "data": {
+    "stated": 3,
+    "readings": {
+     "A": 1,
+     "B": 2
+    }
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "never-cited",
+   "line": 226,
+   "evidence": [],
+   "span": "[29]",
+   "reason": "reference is never cited in the text",
+   "data": {},
+   "scored": true
+  }
+ ],
+ "counts": {
+  "R8": 1,
+  "R5": 3,
+  "R2": 1,
+  "R6": 2,
+  "R1": 1,
+  "R4": 2,
+  "R7": 3,
+  "R1b": 1,
+  "R2b": 1,
+  "R5b": 1
+ },
+ "scored": 16,
+ "info": 1,
+ "runtime_seconds": 0.431
+}

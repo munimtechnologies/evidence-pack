@@ -1,0 +1,338 @@
+{
+ "package": "P5-copy01.md",
+ "checker": "claimcheck 1.0.0",
+ "lines_total": 367,
+ "lines_cut": 367,
+ "flags": [
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 38,
+   "evidence": [],
+   "span": "The ACR 2026",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 61,
+   "evidence": [],
+   "span": "The ACR 2026",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R4",
+   "rule": "b",
+   "line": 68,
+   "evidence": [],
+   "span": "unreported",
+   "reason": "status claim with no as-of anchor in scope",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R1",
+   "rule": "twin",
+   "line": 111,
+   "evidence": [
+    55
+   ],
+   "span": "1.97 (1.09-3.67",
+   "reason": "CI tuple shares two values with line 55 but its first bound differs",
+   "data": {
+    "earlier": "1.97 (1.06-3.67",
+    "later": "1.97 (1.09-3.67"
+   },
+   "scored": true
+  },
+  {
+   "module": "R1b",
+   "rule": "a",
+   "line": 141,
+   "evidence": [],
+   "span": "179.8 (-313.0 to -46.6",
+   "reason": "estimate lies outside its own interval",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R2b",
+   "rule": "count",
+   "line": 163,
+   "evidence": [
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173
+   ],
+   "span": "11 records",
+   "reason": "stated count 11, distinct in-scope registry IDs 10",
+   "data": {
+    "stated": 11,
+    "in_scope": [
+     "NCT05034029",
+     "NCT05638893",
+     "NCT06096259",
+     "NCT06126029",
+     "NCT06231758",
+     "NCT06328426",
+     "NCT06367283",
+     "NCT07065591",
+     "NCT07395895",
+     "NCT07738692"
+    ],
+    "out_of_scope": [
+     "ChiCTR2500107918"
+    ]
+   },
+   "scored": true
+  },
+  {
+   "module": "R2b",
+   "rule": "count",
+   "line": 173,
+   "evidence": [],
+   "span": "three records",
+   "reason": "stated count 3, distinct in-scope registry IDs 2",
+   "data": {
+    "stated": 3,
+    "in_scope": [
+     "NCT07395895",
+     "NCT07738692"
+    ],
+    "out_of_scope": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R5b",
+   "rule": "item",
+   "line": 173,
+   "evidence": [],
+   "span": "a withdrawn placebo-controlled trial (no participants enrolled)",
+   "reason": "enumerated item without a registry ID",
+   "data": {
+    "count": 3
+   },
+   "scored": true
+  },
+  {
+   "module": "R6",
+   "rule": "a",
+   "line": 197,
+   "evidence": [],
+   "span": "gate 5",
+   "reason": "internal workflow label in judge-facing text",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 226,
+   "evidence": [],
+   "span": "Georgescu",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Chen",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Chenchula",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Guo",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Haj Shehadeh",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Hatano",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Jiang",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 248,
+   "evidence": [],
+   "span": "Shi S 2018",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "a",
+   "line": 250,
+   "evidence": [],
+   "span": "six distinct oral randomised trials",
+   "reason": "stated count matches no reading of its own list",
+   "data": {
+    "stated": 6,
+    "readings": {
+     "A": 5,
+     "B": 2
+    }
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 252,
+   "evidence": [],
+   "span": "Shi S 2018",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 252,
+   "evidence": [],
+   "span": "Zhang C 2022",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "acronym",
+   "line": 280,
+   "evidence": [],
+   "span": "BRENTA",
+   "reason": "named trial or study with no reference whose title contains it",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R3",
+   "rule": "no-ci",
+   "line": 298,
+   "evidence": [],
+   "span": "no benefit",
+   "reason": "no-difference wording in a clause with no CI",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R8",
+   "rule": "source",
+   "line": 353,
+   "evidence": [
+    255,
+    256,
+    257,
+    258,
+    259
+   ],
+   "span": "DailyMed",
+   "reason": "source named in the package but missing from E.6",
+   "data": {},
+   "scored": true
+  }
+ ],
+ "counts": {
+  "R5": 6,
+  "R4": 1,
+  "R1": 1,
+  "R1b": 1,
+  "R2b": 2,
+  "R5b": 1,
+  "R6": 1,
+  "R7": 8,
+  "R3": 1,
+  "R8": 1
+ },
+ "scored": 23,
+ "info": 0,
+ "runtime_seconds": 0.475
+}

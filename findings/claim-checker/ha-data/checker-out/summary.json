@@ -1,0 +1,411 @@
+{
+ "checker": "claimcheck 1.0.0",
+ "problems": [],
+ "recheck_sha256": "58d14f36b175a791d22753aba31a6a597aeedceca106a2887ad5095c160c9964",
+ "plans": {
+  "spironolactone-nhanes-followup-prereg-2026-10-15.md": "c72bad334809638957f05c2371e07da78ce10a20bffe176d134854cc011c2f68",
+  "spironolactone-nhanes-prereg-2026-10-15.md": "8bbe4fbec662bbc4d5d9f2734a2638e3a53eb2cf16ee60087c3e26b82b658839",
+  "trinetx-consistency-prereg-6-results-2026-10-15.md": "c27fa502992f3c487b987b88b02fb9483caa792e9c247e83addc670925740a3a"
+ },
+ "files": [
+  {
+   "file": "P4-cut.md",
+   "package": "P4",
+   "copy": 0,
+   "checker_scored": 5,
+   "checker_info": 1,
+   "checker_counts": {
+    "R5": 2,
+    "R6": 1,
+    "R7": 2
+   },
+   "checker_seconds": 0.369,
+   "baseline_flags": 268,
+   "baseline_seconds": 0.046,
+   "checker_sha256": "5519f0e5ec754cff2b882f4b78131255c318367befe8bee7ccc4c5e28bad2247",
+   "baseline_sha256": "0bfd7680edadd40b2d6e91e43c1f28a89a3c2e502671b403a565a6b3a00ccca9"
+  },
+  {
+   "file": "P4-copy01.md",
+   "package": "P4",
+   "copy": 1,
+   "checker_scored": 16,
+   "checker_info": 1,
+   "checker_counts": {
+    "R5": 4,
+    "R2": 1,
+    "R6": 2,
+    "R3": 1,
+    "R1b": 1,
+    "R7": 3,
+    "R1": 1,
+    "R2b": 1,
+    "R4": 2
+   },
+   "checker_seconds": 0.403,
+   "baseline_flags": 271,
+   "baseline_seconds": 0.045,
+   "checker_sha256": "8135a9bf2b674e9886db6a9db5fcf0b536bf24a3e643149ac9c6556511308544",
+   "baseline_sha256": "60163214cf9f0292fe36a40517c6a8c7771e56eb586dbf57f3bbc75d8e56ce6c"
+  },
+  {
+   "file": "P4-copy02.md",
+   "package": "P4",
+   "copy": 2,
+   "checker_scored": 14,
+   "checker_info": 1,
+   "checker_counts": {
+    "R8": 1,
+    "R5": 3,
+    "R4": 1,
+    "R2": 1,
+    "R6": 2,
+    "R1b": 1,
+    "R1": 1,
+    "R7": 3,
+    "R2b": 1
+   },
+   "checker_seconds": 0.388,
+   "baseline_flags": 272,
+   "baseline_seconds": 0.041,
+   "checker_sha256": "69c7664ef0f1cad2b2391a21f20d6c094d95a42daeed3e01f639ebe4d568958b",
+   "baseline_sha256": "aa421bdcd9fa7b8ee54caf5482ec47d6ed8b45a31207b99979d0321e2b5c7519"
+  },
+  {
+   "file": "P4-copy03.md",
+   "package": "P4",
+   "copy": 3,
+   "checker_scored": 15,
+   "checker_info": 1,
+   "checker_counts": {
+    "R5": 3,
+    "R4": 1,
+    "R2": 1,
+    "R8": 3,
+    "R6": 2,
+    "R7": 2,
+    "R1": 1,
+    "R1b": 1,
+    "R2b": 1
+   },
+   "checker_seconds": 0.411,
+   "baseline_flags": 271,
+   "baseline_seconds": 0.044,
+   "checker_sha256": "74363cee6a8c6709f84ddae72d84b50a6f621d5d00e3ba1be13962ed107c4569",
+   "baseline_sha256": "ecd889f87df768193c6ee953ec20a1a2d3f39e4f1ccbd35668fe997aa84f1a08"
+  },
+  {
+   "file": "P4-copy04.md",
+   "package": "P4",
+   "copy": 4,
+   "checker_scored": 16,
+   "checker_info": 1,
+   "checker_counts": {
+    "R8": 1,
+    "R5": 3,
+    "R2": 1,
+    "R6": 2,
+    "R1": 1,
+    "R4": 2,
+    "R7": 3,
+    "R1b": 1,
+    "R2b": 1,
+    "R5b": 1
+   },
+   "checker_seconds": 0.431,
+   "baseline_flags": 268,
+   "baseline_seconds": 0.046,
+   "checker_sha256": "2a0bbcb37451ccff701c5074297f082198a48239a2eb066f310020a1e4b0f886",
+   "baseline_sha256": "15e31180f402e1da370612f797782df5fac565ddd5e7c664a689c214b1bc2f96"
+  },
+  {
+   "file": "P4-copy05.md",
+   "package": "P4",
+   "copy": 5,
+   "checker_scored": 9,
+   "checker_info": 1,
+   "checker_counts": {
+    "R5": 2,
+    "R2": 1,
+    "R6": 1,
+    "R7": 3,
+    "R2b": 1,
+    "R5b": 1
+   },
+   "checker_seconds": 0.446,
+   "baseline_flags": 268,
+   "baseline_seconds": 0.045,
+   "checker_sha256": "dd492afecbd91edcf0af4bc01ca7da12c33dcf6f3f5ef9a9663d4151158a8550",
+   "baseline_sha256": "cb1d4d497e62f5c2366a66d734e9d2a072ac4217e18303368faef11ee5c0f15b"
+  },
+  {
+   "file": "P4-copy06.md",
+   "package": "P4",
+   "copy": 6,
+   "checker_scored": 8,
+   "checker_info": 1,
+   "checker_counts": {
+    "R5": 2,
+    "R6": 1,
+    "R7": 3,
+    "R2b": 1,
+    "R5b": 1
+   },
+   "checker_seconds": 0.402,
+   "baseline_flags": 268,
+   "baseline_seconds": 0.039,
+   "checker_sha256": "a73858475a28a40dfe2fd849db131d74a3cfc1d7ec49289b970fe8d72e2ee673",
+   "baseline_sha256": "d73b2edd734e46e14e626041d80f7ae6038d0c16e444f9f4375dfcecfaace63b"
+  },
+  {
+   "file": "P4-copy07.md",
+   "package": "P4",
+   "copy": 7,
+   "checker_scored": 7,
+   "checker_info": 1,
+   "checker_counts": {
+    "R5": 2,
+    "R6": 1,
+    "R7": 3,
+    "R2b": 1
+   },
+   "checker_seconds": 0.363,
+   "baseline_flags": 268,
+   "baseline_seconds": 0.038,
+   "checker_sha256": "2b1945556fdd860174037b90fad1d746b767c7da04d9f6e55c9dfd60a75ca20c",
+   "baseline_sha256": "033ff351fef715197d37e67c88a95ba9d804171959c8bd56be29163dc86c4e37"
+  },
+  {
+   "file": "P4-copy08.md",
+   "package": "P4",
+   "copy": 8,
+   "checker_scored": 6,
+   "checker_info": 1,
+   "checker_counts": {
+    "R5": 2,
+    "R6": 1,
+    "R7": 2,
+    "R8": 1
+   },
+   "checker_seconds": 0.362,
+   "baseline_flags": 268,
+   "baseline_seconds": 0.041,
+   "checker_sha256": "4f0d93c28d01277ded41801795463857731e180e0cf2c76ad4e2e6c85f276443",
+   "baseline_sha256": "4ecf9570f1ea687198a2525eb49b5625189fb72328f37fe3fb47e69031206fd6"
+  },
+  {
+   "file": "P5-cut.md",
+   "package": "P5",
+   "copy": 0,
+   "checker_scored": 12,
+   "checker_info": 0,
+   "checker_counts": {
+    "R5": 5,
+    "R7": 7
+   },
+   "checker_seconds": 0.473,
+   "baseline_flags": 433,
+   "baseline_seconds": 0.054,
+   "checker_sha256": "e182df49fda2079bdc22bf66f3e33200f2dbd7369a66d0e0ee51502282b0863e",
+   "baseline_sha256": "c5029326a23ce45d49ea3e5f60cbd1af8a5418242d91520181b1734f0d60d2d6"
+  },
+  {
+   "file": "P5-copy01.md",
+   "package": "P5",
+   "copy": 1,
+   "checker_scored": 23,
+   "checker_info": 0,
+   "checker_counts": {
+    "R5": 6,
+    "R4": 1,
+    "R1": 1,
+    "R1b": 1,
+    "R2b": 2,
+    "R5b": 1,
+    "R6": 1,
+    "R7": 8,
+    "R3": 1,
+    "R8": 1
+   },
+   "checker_seconds": 0.475,
+   "baseline_flags": 435,
+   "baseline_seconds": 0.05,
+   "checker_sha256": "4aea3076568df8760792bb424825c431cb1dc7446be08c3c5b1161f1e6cff09a",
+   "baseline_sha256": "93bfa40a9873e1c07cd7c1d713b04471a1cd01cb7eed6dc0d7e21fd22b482274"
+  },
+  {
+   "file": "P5-copy02.md",
+   "package": "P5",
+   "copy": 2,
+   "checker_scored": 24,
+   "checker_info": 0,
+   "checker_counts": {
+    "R6": 1,
+    "R5": 7,
+    "R3": 1,
+    "R8": 2,
+    "R1b": 1,
+    "R2b": 2,
+    "R1": 1,
+    "R7": 8,
+    "R4": 1
+   },
+   "checker_seconds": 0.482,
+   "baseline_flags": 434,
+   "baseline_seconds": 0.051,
+   "checker_sha256": "31d230f7f22561d124d684501eac6a028d7cb65b70bf159be66c78f1954f5282",
+   "baseline_sha256": "7cbb6a18cda1b8d5958abe7caf5fad4377801c555f0b9de46787e7eb57bafdf7"
+  },
+  {
+   "file": "P5-copy03.md",
+   "package": "P5",
+   "copy": 3,
+   "checker_scored": 19,
+   "checker_info": 0,
+   "checker_counts": {
+    "R5": 6,
+    "R3": 1,
+    "R4": 1,
+    "R6": 1,
+    "R2b": 1,
+    "R1": 1,
+    "R7": 7,
+    "R8": 1
+   },
+   "checker_seconds": 0.489,
+   "baseline_flags": 433,
+   "baseline_seconds": 0.056,
+   "checker_sha256": "133372795aa75621372d0581d717f4d51b05f3695aaa5febff15c14a256be8a0",
+   "baseline_sha256": "ffa7bf84ed43e0398be773941196990b89ad0883b8550180b089206c4289958c"
+  },
+  {
+   "file": "P5-copy04.md",
+   "package": "P5",
+   "copy": 4,
+   "checker_scored": 22,
+   "checker_info": 0,
+   "checker_counts": {
+    "R4": 1,
+    "R5": 7,
+    "R8": 2,
+    "R1": 1,
+    "R2b": 1,
+    "R1b": 1,
+    "R6": 1,
+    "R7": 8
+   },
+   "checker_seconds": 0.509,
+   "baseline_flags": 431,
+   "baseline_seconds": 0.062,
+   "checker_sha256": "96bc73a9ae8e041840f154866193d634a9c3167b834387e4adb9bccd1b00d21d",
+   "baseline_sha256": "285768dd99a3884f6e01464470e4a47c04de9eb910b0fb413a8b19bf57c6d2ea"
+  },
+  {
+   "file": "P5-copy05.md",
+   "package": "P5",
+   "copy": 5,
+   "checker_scored": 14,
+   "checker_info": 0,
+   "checker_counts": {
+    "R5": 5,
+    "R2b": 1,
+    "R7": 8
+   },
+   "checker_seconds": 0.506,
+   "baseline_flags": 433,
+   "baseline_seconds": 0.057,
+   "checker_sha256": "8533208384dc341d00bfa1a97763a9f67a0a9d447cfca30f1bea53c67b3a0e04",
+   "baseline_sha256": "14bff6b5079ec7cdd1e8fdc192790cb37934cf64da10291f5cd113406184b1b3"
+  },
+  {
+   "file": "P5-copy06.md",
+   "package": "P5",
+   "copy": 6,
+   "checker_scored": 15,
+   "checker_info": 0,
+   "checker_counts": {
+    "R5": 5,
+    "R2b": 1,
+    "R5b": 1,
+    "R7": 8
+   },
+   "checker_seconds": 0.554,
+   "baseline_flags": 433,
+   "baseline_seconds": 0.055,
+   "checker_sha256": "1374e3f3c836c8b8f1f0e8c252c2ef85f1b64abc561f42fb9e4633c6443429b9",
+   "baseline_sha256": "31345a6432a4be419e212cdfd8d6c1eeac41f784f011c3c3cb9c15b9aacf8ffc"
+  },
+  {
+   "file": "P5-copy07.md",
+   "package": "P5",
+   "copy": 7,
+   "checker_scored": 14,
+   "checker_info": 0,
+   "checker_counts": {
+    "R5": 5,
+    "R2b": 1,
+    "R5b": 1,
+    "R7": 7
+   },
+   "checker_seconds": 0.564,
+   "baseline_flags": 433,
+   "baseline_seconds": 0.056,
+   "checker_sha256": "7ad170a8615e1cef61c141fef2ad546ed8cda4a5ec193a8ae4cb5d8b89ca9a6b",
+   "baseline_sha256": "5f6235ba94e8287e48f9f43fd3a1ab179c7af76f7179d5b4a77a7cb6c573ff92"
+  },
+  {
+   "file": "P5-copy08.md",
+   "package": "P5",
+   "copy": 8,
+   "checker_scored": 16,
+   "checker_info": 0,
+   "checker_counts": {
+    "R5": 5,
+    "R2b": 2,
+    "R5b": 1,
+    "R7": 8
+   },
+   "checker_seconds": 0.525,
+   "baseline_flags": 433,
+   "baseline_seconds": 0.058,
+   "checker_sha256": "b1c8b149264688a56ae4ecbec931a5776dac42d8c62bc7b44f3fdf2df09ce4c2",
+   "baseline_sha256": "256a5d763f77da83f8d1e1bc1e57dfd6bc820342673402d04883eab33fa7b943"
+  },
+  {
+   "file": "P5-copy09.md",
+   "package": "P5",
+   "copy": 9,
+   "checker_scored": 14,
+   "checker_info": 0,
+   "checker_counts": {
+    "R5": 5,
+    "R2b": 1,
+    "R5b": 1,
+    "R7": 7
+   },
+   "checker_seconds": 0.483,
+   "baseline_flags": 433,
+   "baseline_seconds": 0.048,
+   "checker_sha256": "26d8d23f3d1c71a562f78917178c80d98a32463756a28763c7bff38eacdb2ee4",
+   "baseline_sha256": "9a41d3ddf9055ce4be7da670e8ad20e7e3ecd94af353231582b040abd6a321ce"
+  },
+  {
+   "file": "P5-copy10.md",
+   "package": "P5",
+   "copy": 10,
+   "checker_scored": 14,
+   "checker_info": 0,
+   "checker_counts": {
+    "R5": 5,
+    "R2b": 1,
+    "R7": 8
+   },
+   "checker_seconds": 0.479,
+   "baseline_flags": 433,
+   "baseline_seconds": 0.051,
+   "checker_sha256": "c3f0e44214701f86b800d1d61887f3fd3171e9b2fa87bc47bad3eb6566f258d5",
+   "baseline_sha256": "05dd07cf774a2722920b493dc8d41704b8f845e3382fda52c56f805353875685"
+  }
+ ],
+ "max_checker_seconds": 0.564
+}

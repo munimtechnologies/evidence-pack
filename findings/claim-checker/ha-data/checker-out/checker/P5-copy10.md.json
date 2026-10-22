@@ -1,0 +1,200 @@
+{
+ "package": "P5-copy10.md",
+ "checker": "claimcheck 1.0.0",
+ "lines_total": 367,
+ "lines_cut": 367,
+ "flags": [
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 38,
+   "evidence": [],
+   "span": "The ACR 2026",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 61,
+   "evidence": [],
+   "span": "The ACR 2026",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R2b",
+   "rule": "count",
+   "line": 172,
+   "evidence": [],
+   "span": "Three other placebo-controlled trials",
+   "reason": "stated count 3, distinct in-scope registry IDs 2",
+   "data": {
+    "stated": 3,
+    "in_scope": [
+     "NCT06096259",
+     "NCT06328426"
+    ],
+    "out_of_scope": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "a",
+   "line": 172,
+   "evidence": [],
+   "span": "Three other placebo-controlled trials",
+   "reason": "stated count matches no reading of its own list",
+   "data": {
+    "stated": 3,
+    "readings": {
+     "A": 2,
+     "B": 1
+    }
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 226,
+   "evidence": [],
+   "span": "Georgescu",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Chen",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Chenchula",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Guo",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Haj Shehadeh",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Hatano",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Jiang",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 248,
+   "evidence": [],
+   "span": "Shi S 2018",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 252,
+   "evidence": [],
+   "span": "Shi S 2018",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 252,
+   "evidence": [],
+   "span": "Zhang C 2022",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  }
+ ],
+ "counts": {
+  "R5": 5,
+  "R2b": 1,
+  "R7": 8
+ },
+ "scored": 14,
+ "info": 0,
+ "runtime_seconds": 0.479
+}

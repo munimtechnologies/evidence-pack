@@ -1,0 +1,264 @@
+{
+ "package": "P5-copy03.md",
+ "checker": "claimcheck 1.0.0",
+ "lines_total": 367,
+ "lines_cut": 367,
+ "flags": [
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 38,
+   "evidence": [],
+   "span": "The ACR 2026",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R3",
+   "rule": "ci-includes-null",
+   "line": 51,
+   "evidence": [],
+   "span": "lower risk",
+   "reason": "directional wording beside a CI that includes the null",
+   "data": {
+    "ci": "1.05, 0.94-1.18",
+    "null": 1
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 61,
+   "evidence": [],
+   "span": "The ACR 2026",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R4",
+   "rule": "b",
+   "line": 86,
+   "evidence": [],
+   "span": "published",
+   "reason": "status claim with no as-of anchor in scope",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R6",
+   "rule": "a",
+   "line": 154,
+   "evidence": [],
+   "span": "run 133",
+   "reason": "internal workflow label in judge-facing text",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R2b",
+   "rule": "count",
+   "line": 173,
+   "evidence": [],
+   "span": "four records",
+   "reason": "stated count 4, distinct in-scope registry IDs 3",
+   "data": {
+    "stated": 4,
+    "in_scope": [
+     "NCT04767841",
+     "NCT07395895",
+     "NCT07738692"
+    ],
+    "out_of_scope": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R1",
+   "rule": "twin",
+   "line": 218,
+   "evidence": [
+    50
+   ],
+   "span": "0.97 (0.36 to 1.57",
+   "reason": "CI tuple shares two values with line 50 but its second bound differs",
+   "data": {
+    "earlier": "0.97 (0.36-1.51",
+    "later": "0.97 (0.36 to 1.57"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 226,
+   "evidence": [],
+   "span": "Georgescu",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Chen",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Chenchula",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Guo",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Haj Shehadeh",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Hatano",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Jiang",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 248,
+   "evidence": [],
+   "span": "Shi S 2018",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 252,
+   "evidence": [],
+   "span": "Shi S 2018",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 252,
+   "evidence": [],
+   "span": "Zhang C 2022",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "never-cited",
+   "line": 352,
+   "evidence": [],
+   "span": "[35]",
+   "reason": "reference is never cited in the text",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R8",
+   "rule": "source",
+   "line": 356,
+   "evidence": [
+    255,
+    256,
+    257,
+    258,
+    259
+   ],
+   "span": "WHO ICTRP",
+   "reason": "source named in the package but missing from E.6",
+   "data": {},
+   "scored": true
+  }
+ ],
+ "counts": {
+  "R5": 6,
+  "R3": 1,
+  "R4": 1,
+  "R6": 1,
+  "R2b": 1,
+  "R1": 1,
+  "R7": 7,
+  "R8": 1
+ },
+ "scored": 19,
+ "info": 0,
+ "runtime_seconds": 0.489
+}

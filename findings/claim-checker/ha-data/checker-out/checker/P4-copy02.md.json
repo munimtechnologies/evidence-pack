@@ -1,0 +1,247 @@
+{
+ "package": "P4-copy02.md",
+ "checker": "claimcheck 1.0.0",
+ "lines_total": 227,
+ "lines_cut": 227,
+ "flags": [
+  {
+   "module": "R8",
+   "rule": "source",
+   "line": 9,
+   "evidence": [
+    163,
+    164,
+    166,
+    167,
+    168,
+    169,
+    207
+   ],
+   "span": "Drugs@FDA",
+   "reason": "source named in the package but missing from E.6",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 34,
+   "evidence": [],
+   "span": "The 2021",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R4",
+   "rule": "a",
+   "line": 38,
+   "evidence": [],
+   "span": "more than 70 years on the US market",
+   "reason": "elapsed span breaks its qualifier",
+   "data": {
+    "start": "1960-01-21",
+    "end": "2027-03-26",
+    "length": 67.18
+   },
+   "scored": true
+  },
+  {
+   "module": "R2",
+   "rule": "no-predicate",
+   "line": 45,
+   "evidence": [],
+   "span": "eight of nine",
+   "reason": "N-of-M with no fixed predicate: out of scope",
+   "data": {},
+   "scored": false
+  },
+  {
+   "module": "R2",
+   "rule": "range",
+   "line": 45,
+   "evidence": [
+    102,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112
+   ],
+   "span": "8.0-10.9%",
+   "reason": "range claim fails in every candidate column",
+   "data": {
+    "columns": [
+     [
+      0,
+      2,
+      "Remission, spiro vs comparator"
+     ],
+     [
+      0,
+      3,
+      "Remission HR (95% CI)"
+     ]
+    ]
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 63,
+   "evidence": [],
+   "span": "The 2023",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R6",
+   "rule": "b-no-plan",
+   "line": 81,
+   "evidence": [],
+   "span": "pre-registered",
+   "reason": "'pre-registered' with no plan file cited",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R1b",
+   "rule": "a",
+   "line": 94,
+   "evidence": [],
+   "span": "-0.47 (0.29-0.66",
+   "reason": "estimate lies outside its own interval",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R1",
+   "rule": "twin",
+   "line": 122,
+   "evidence": [
+    110
+   ],
+   "span": "1.24 (1.06-1.43",
+   "reason": "CI tuple shares two values with line 110 but its second bound differs",
+   "data": {
+    "earlier": "1.24 (1.06-1.45",
+    "later": "1.24 (1.06-1.43"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-count",
+   "line": 134,
+   "evidence": [],
+   "span": "5",
+   "reason": "stated count matches no count of the job file",
+   "data": {
+    "tool": "rwe_recheck",
+    "stated": 5,
+    "file_counts": [
+     0,
+     27
+    ]
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 134,
+   "evidence": [],
+   "span": "Georgescu",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R6",
+   "rule": "b-after",
+   "line": 154,
+   "evidence": [
+    210
+   ],
+   "span": "pre-registered",
+   "reason": "cited plan file says it was written after results",
+   "data": {
+    "plans": [
+     "spironolactone-nhanes-followup-prereg-2026-10-15.md"
+    ]
+   },
+   "scored": true
+  },
+  {
+   "module": "R2b",
+   "rule": "count",
+   "line": 160,
+   "evidence": [],
+   "span": "Five other hits",
+   "reason": "stated count 5, distinct in-scope registry IDs 3",
+   "data": {
+    "stated": 5,
+    "in_scope": [
+     "NCT00188045",
+     "NCT00226109",
+     "NCT05014087"
+    ],
+    "out_of_scope": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "a",
+   "line": 160,
+   "evidence": [],
+   "span": "Five other hits",
+   "reason": "stated count matches no reading of its own list",
+   "data": {
+    "stated": 5,
+    "readings": {
+     "A": 1,
+     "B": 3
+    }
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "never-cited",
+   "line": 198,
+   "evidence": [],
+   "span": "[1]",
+   "reason": "reference is never cited in the text",
+   "data": {},
+   "scored": true
+  }
+ ],
+ "counts": {
+  "R8": 1,
+  "R5": 3,
+  "R4": 1,
+  "R2": 1,
+  "R6": 2,
+  "R1b": 1,
+  "R1": 1,
+  "R7": 3,
+  "R2b": 1
+ },
+ "scored": 14,
+ "info": 1,
+ "runtime_seconds": 0.388
+}

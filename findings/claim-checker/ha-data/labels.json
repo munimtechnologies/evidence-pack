@@ -1,0 +1,1574 @@
+{
+ "plan": "findings/claim-checker eval-plan v5 + v6 + v7",
+ "seed": 20261021,
+ "sites_sha256": "ebc12371c04e30136bd1c0e5367bfe46ad10bc18cb52564485d833038b89d5b3",
+ "base": {
+  "P4": {
+   "sha256_whole": "e36abfa7ae96af8dd929ae2be22530381b31829f3934ec4705e23b868eab229a",
+   "sha256_cut": "eb7f069bab60f6f490461932d5c45f5b84e085ae954ac40535e5f6fcc915b836",
+   "cut_lines": 227
+  },
+  "P5": {
+   "sha256_whole": "869a433562e05d93cf1a31a319063d1718393d36c21f7139f27cc685eaea94b1",
+   "sha256_cut": "42b56420fb43daebc82a747b0cb814829250791328fd05b297625851bc402440",
+   "cut_lines": 367
+  }
+ },
+ "copies": [
+  {
+   "file": "P4-cut.md",
+   "package": "P4",
+   "copy": 0,
+   "sha256": "eb7f069bab60f6f490461932d5c45f5b84e085ae954ac40535e5f6fcc915b836",
+   "mutations": []
+  },
+  {
+   "file": "P4-copy01.md",
+   "package": "P4",
+   "copy": 1,
+   "sha256": "4725a3896241e3121e542356494bd97faccbc05488ac8e148e8c4a35be1f7506",
+   "mutations": [
+    {
+     "id": "R1-P4-03",
+     "module": "R1",
+     "operator": "digit",
+     "line": 88,
+     "evidence": [
+      147
+     ],
+     "original": "  - More than 7 a week (126 treated, 570 untreated): -4.18 (-5.38 to -2.97); unadjusted, -4.30.",
+     "mutated": "  - More than 7 a week (126 treated, 570 untreated): -4.18 (-5.38 to -2.91); unadjusted, -4.30.",
+     "find": "-4.18 (-5.38 to -2.97)",
+     "replace": "-4.18 (-5.38 to -2.91)"
+    },
+    {
+     "id": "R1b-P4-02",
+     "module": "R1b",
+     "operator": "flip",
+     "line": 94,
+     "evidence": [],
+     "original": "- **Results:** difference-in-difference AUDIT-C fall of 0.17 (0.09-0.25) overall. By baseline AUDIT-C: 1-3: 0.07 (0.01-0.14); 4-7: 0.13 (0.02-0.24); \u2265 8: 0.47 (0.29-0.66). At \u2265 50 mg/day: 0.69 (0.50-0.89).",
+     "mutated": "- **Results:** difference-in-difference AUDIT-C fall of -0.17 (0.09-0.25) overall. By baseline AUDIT-C: 1-3: 0.07 (0.01-0.14); 4-7: 0.13 (0.02-0.24); \u2265 8: 0.47 (0.29-0.66). At \u2265 50 mg/day: 0.69 (0.50-0.89).",
+     "find": "fall of 0.17 (0.09-0.25)",
+     "replace": "fall of -0.17 (0.09-0.25)"
+    },
+    {
+     "id": "R2-P4-04",
+     "module": "R2",
+     "operator": "range-endpoint",
+     "line": 45,
+     "evidence": [
+      96,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112
+     ],
+     "original": "  - A first recorded AUD remission within one year was 1.24-2.07 times as likely as with each of nine other antihypertensive classes (TriNetX [8]; 8.0-10.4% vs 4.4-7.4%). Point estimates for alcohol intoxication diagnoses were about 20% lower in eight of nine comparisons (HR 0.77-0.81; 0.97 vs ARBs), with the 95% CI below 1 in seven of nine.",
+     "mutated": "  - A first recorded AUD remission within one year was 1.24-2.07 times as likely as with each of nine other antihypertensive classes (TriNetX [8]; 8.0-10.4% vs 4.4-7.4%). Point estimates for alcohol intoxication diagnoses were about 20% lower in eight of nine comparisons (HR 0.77-0.84; 0.97 vs ARBs), with the 95% CI below 1 in seven of nine.",
+     "find": "(HR 0.77-0.81;",
+     "replace": "(HR 0.77-0.84;"
+    },
+    {
+     "id": "R2b-P4-03",
+     "module": "R2b",
+     "operator": "delete-id",
+     "line": 160,
+     "evidence": [],
+     "original": "- **Search:** ClinicalTrials.gov by API (intervention spironolactone, condition alcohol, plus a term search; 2026-10-16, 2026-10-17 and 2026-10-20) found no other AUD treatment trial. Three other hits have no drinking outcome: NCT05014087 (digoxin in alcohol-associated hepatitis; terminated, slow accrual); NCT00188045 (spironolactone/propranolol haemodynamics in alcoholic cirrhosis; 1995-2003, terminated); NCT00226109 (spironolactone on heart and muscle function in chronic alcoholics; suspended, last updated 2010). Eplerenone, finerenone, canrenone, esaxerenone or \"mineralocorticoid\" as intervention with alcohol as condition returned only NCT05807139 (2026-10-20). In the WHO ICTRP Search Portal (browser, 2026-10-17), \"spironolactone AND alcohol\" and an advanced search (condition \"alcohol\", intervention \"spironolactone\", all statuses) each gave the same 2 trials, NCT06004830 and NCT05807139; \"spironolactone AND drinking\" gave none.",
+     "mutated": "- **Search:** ClinicalTrials.gov by API (intervention spironolactone, condition alcohol, plus a term search; 2026-10-16, 2026-10-17 and 2026-10-20) found no other AUD treatment trial. Three other hits have no drinking outcome: NCT05014087 (digoxin in alcohol-associated hepatitis; terminated, slow accrual); NCT00188045 (spironolactone/propranolol haemodynamics in alcoholic cirrhosis; 1995-2003, terminated); NCT00226109 (spironolactone on heart and muscle function in chronic alcoholics; suspended, last updated 2010). Eplerenone, finerenone, canrenone, esaxerenone or \"mineralocorticoid\" as intervention with alcohol as condition returned only NCT05807139 (2026-10-20). In the WHO ICTRP Search Portal (browser, 2026-10-17), \"spironolactone AND alcohol\" and an advanced search (condition \"alcohol\", intervention \"spironolactone\", all statuses) each gave the same 2 trials, NCT05807139; \"spironolactone AND drinking\" gave none.",
+     "find": "the same 2 trials, NCT06004830 and NCT05807139",
+     "replace": "the same 2 trials, NCT05807139"
+    },
+    {
+     "id": "R3-P4-01",
+     "module": "R3",
+     "operator": "no-difference",
+     "line": 87,
+     "evidence": [],
+     "original": "  - \u2264 7 drinks a week at baseline: no clear difference, 0.12 (-0.56 to 0.81).",
+     "mutated": "  - \u2264 7 drinks a week at baseline: no difference, 0.12 (-0.56 to 0.81).",
+     "find": "no clear difference, 0.12",
+     "replace": "no difference, 0.12"
+    },
+    {
+     "id": "R4-P4-03",
+     "module": "R4",
+     "operator": "delete-anchor",
+     "line": 161,
+     "evidence": [],
+     "original": "- As of 2026-10-20, no randomized efficacy trial of spironolactone for AUD is registered, and none has posted results.",
+     "mutated": "- No randomized efficacy trial of spironolactone for AUD is registered, and none has posted results.",
+     "find": "As of 2026-10-20, no randomized efficacy trial",
+     "replace": "No randomized efficacy trial"
+    },
+    {
+     "id": "R5-P4-05",
+     "module": "R5",
+     "operator": "remove-citation",
+     "line": 35,
+     "evidence": [
+      215
+     ],
+     "original": "- The APA practice guideline for AUD (2018) [18] does not mention spironolactone, aldosterone or mineralocorticoids. Its literature search ended in April 2016 and did not include spironolactone among the off-label agents searched, so it predates every human study cited in E.",
+     "mutated": "- The APA practice guideline for AUD (2018) does not mention spironolactone, aldosterone or mineralocorticoids. Its literature search ended in April 2016 and did not include spironolactone among the off-label agents searched, so it predates every human study cited in E.",
+     "find": "(2018) [18] does not",
+     "replace": "(2018) does not"
+    },
+    {
+     "id": "R6-P4-04",
+     "module": "R6",
+     "operator": "insert-token",
+     "line": 164,
+     "evidence": [],
+     "original": "**Triangulation:** four data sources (three health systems plus our survey check*), two kinds of outcome (self-reported drinking on three scales, and recorded remission and intoxication diagnoses) and three designs all point the same way; the survey check adds little weight. Effects are larger in heavier drinkers and at higher doses, and only the heavier-drinker effect is well beyond the design's noise floor (E.3e). Unmeasured confounding remains possible, and all three cohorts come from one collaboration. The most conservative estimates (loop-diuretic comparator, intoxication outcome) are smaller but still favour spironolactone. No human study points the other way, though four earlier animal studies were null (C), and the same collaboration's null for calcium-channel blockers shows the design can return a null.",
+     "mutated": "**Triangulation (gate 7):** four data sources (three health systems plus our survey check*), two kinds of outcome (self-reported drinking on three scales, and recorded remission and intoxication diagnoses) and three designs all point the same way; the survey check adds little weight. Effects are larger in heavier drinkers and at higher doses, and only the heavier-drinker effect is well beyond the design's noise floor (E.3e). Unmeasured confounding remains possible, and all three cohorts come from one collaboration. The most conservative estimates (loop-diuretic comparator, intoxication outcome) are smaller but still favour spironolactone. No human study points the other way, though four earlier animal studies were null (C), and the same collaboration's null for calcium-channel blockers shows the design can return a null.",
+     "find": "**Triangulation:**",
+     "replace": "**Triangulation (gate 7):**"
+    },
+    {
+     "id": "R7-P4-02",
+     "module": "R7",
+     "operator": "add-name",
+     "line": 134,
+     "evidence": [],
+     "original": "- **Checked:** 27 estimates with 95% CIs from the three papers (Loften 9 remission + 9 intoxication HRs with event counts; Palzes 4: the overall difference, each arm's change and the > 7 drinks a week subgroup; Farokhnia 5 AUDIT-C estimates), with the open tool `rwe_recheck` [17], following Georgescu and Wren [15]. Palzes's \u2264 7 subgroup estimate, added to E.1 later, was checked by hand.",
+     "mutated": "- **Checked:** 27 estimates with 95% CIs from the three papers (Loften 9 remission + 9 intoxication HRs with event counts; Palzes 4: the overall difference, each arm's change and the > 7 drinks a week subgroup; Farokhnia 5 AUDIT-C estimates), with the open tool `rwe_recheck` [17], following Georgescu and Wren [15] and Okafor 2019. Palzes's \u2264 7 subgroup estimate, added to E.1 later, was checked by hand.",
+     "find": "following Georgescu and Wren [15].",
+     "replace": "following Georgescu and Wren [15] and Okafor 2019."
+    }
+   ]
+  },
+  {
+   "file": "P4-copy02.md",
+   "package": "P4",
+   "copy": 2,
+   "sha256": "05db067e183dc89e43a023251447c2fe3597f1de9bd599975fced25dfebafa73",
+   "mutations": [
+    {
+     "id": "R1-P4-06",
+     "module": "R1",
+     "operator": "digit",
+     "line": 122,
+     "evidence": [
+      110
+     ],
+     "original": "2. **The most indication-alike comparator gives the weakest effect.** Loop diuretics share spironolactone's non-hypertension uses (heart-failure and cirrhotic edema). Against them the comparator remission risk is highest (7.4%) and the HR lowest, 1.24 (1.06-1.45), and this is the only comparison where the HR sits clearly below the crude risk ratio (369/266 = 1.39, a gap of 0.15; 0.09 or less elsewhere). The loop-diuretic group also had shorter mean follow-up (260.8 \u00b1 80.9 vs 294.5 \u00b1 58.6 days; supplement Figure S11), consistent with more deaths or losses, a competing risk Cox models do not handle. This most conservative estimate should be the headline. It is still above 1.",
+     "mutated": "2. **The most indication-alike comparator gives the weakest effect.** Loop diuretics share spironolactone's non-hypertension uses (heart-failure and cirrhotic edema). Against them the comparator remission risk is highest (7.4%) and the HR lowest, 1.24 (1.06-1.43), and this is the only comparison where the HR sits clearly below the crude risk ratio (369/266 = 1.39, a gap of 0.15; 0.09 or less elsewhere). The loop-diuretic group also had shorter mean follow-up (260.8 \u00b1 80.9 vs 294.5 \u00b1 58.6 days; supplement Figure S11), consistent with more deaths or losses, a competing risk Cox models do not handle. This most conservative estimate should be the headline. It is still above 1.",
+     "find": "1.24 (1.06-1.45)",
+     "replace": "1.24 (1.06-1.43)"
+    },
+    {
+     "id": "R1b-P4-03",
+     "module": "R1b",
+     "operator": "flip",
+     "line": 94,
+     "evidence": [],
+     "original": "- **Results:** difference-in-difference AUDIT-C fall of 0.17 (0.09-0.25) overall. By baseline AUDIT-C: 1-3: 0.07 (0.01-0.14); 4-7: 0.13 (0.02-0.24); \u2265 8: 0.47 (0.29-0.66). At \u2265 50 mg/day: 0.69 (0.50-0.89).",
+     "mutated": "- **Results:** difference-in-difference AUDIT-C fall of 0.17 (0.09-0.25) overall. By baseline AUDIT-C: 1-3: 0.07 (0.01-0.14); 4-7: 0.13 (0.02-0.24); \u2265 8: -0.47 (0.29-0.66). At \u2265 50 mg/day: 0.69 (0.50-0.89).",
+     "find": "8: 0.47 (0.29-0.66)",
+     "replace": "8: -0.47 (0.29-0.66)"
+    },
+    {
+     "id": "R2-P4-02",
+     "module": "R2",
+     "operator": "range-endpoint",
+     "line": 45,
+     "evidence": [
+      96,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112
+     ],
+     "original": "  - A first recorded AUD remission within one year was 1.24-2.07 times as likely as with each of nine other antihypertensive classes (TriNetX [8]; 8.0-10.4% vs 4.4-7.4%). Point estimates for alcohol intoxication diagnoses were about 20% lower in eight of nine comparisons (HR 0.77-0.81; 0.97 vs ARBs), with the 95% CI below 1 in seven of nine.",
+     "mutated": "  - A first recorded AUD remission within one year was 1.24-2.07 times as likely as with each of nine other antihypertensive classes (TriNetX [8]; 8.0-10.9% vs 4.4-7.4%). Point estimates for alcohol intoxication diagnoses were about 20% lower in eight of nine comparisons (HR 0.77-0.81; 0.97 vs ARBs), with the 95% CI below 1 in seven of nine.",
+     "find": "8.0-10.4% vs",
+     "replace": "8.0-10.9% vs"
+    },
+    {
+     "id": "R2b-P4-02",
+     "module": "R2b",
+     "operator": "count",
+     "line": 160,
+     "evidence": [],
+     "original": "- **Search:** ClinicalTrials.gov by API (intervention spironolactone, condition alcohol, plus a term search; 2026-10-16, 2026-10-17 and 2026-10-20) found no other AUD treatment trial. Three other hits have no drinking outcome: NCT05014087 (digoxin in alcohol-associated hepatitis; terminated, slow accrual); NCT00188045 (spironolactone/propranolol haemodynamics in alcoholic cirrhosis; 1995-2003, terminated); NCT00226109 (spironolactone on heart and muscle function in chronic alcoholics; suspended, last updated 2010). Eplerenone, finerenone, canrenone, esaxerenone or \"mineralocorticoid\" as intervention with alcohol as condition returned only NCT05807139 (2026-10-20). In the WHO ICTRP Search Portal (browser, 2026-10-17), \"spironolactone AND alcohol\" and an advanced search (condition \"alcohol\", intervention \"spironolactone\", all statuses) each gave the same 2 trials, NCT06004830 and NCT05807139; \"spironolactone AND drinking\" gave none.",
+     "mutated": "- **Search:** ClinicalTrials.gov by API (intervention spironolactone, condition alcohol, plus a term search; 2026-10-16, 2026-10-17 and 2026-10-20) found no other AUD treatment trial. Five other hits have no drinking outcome: NCT05014087 (digoxin in alcohol-associated hepatitis; terminated, slow accrual); NCT00188045 (spironolactone/propranolol haemodynamics in alcoholic cirrhosis; 1995-2003, terminated); NCT00226109 (spironolactone on heart and muscle function in chronic alcoholics; suspended, last updated 2010). Eplerenone, finerenone, canrenone, esaxerenone or \"mineralocorticoid\" as intervention with alcohol as condition returned only NCT05807139 (2026-10-20). In the WHO ICTRP Search Portal (browser, 2026-10-17), \"spironolactone AND alcohol\" and an advanced search (condition \"alcohol\", intervention \"spironolactone\", all statuses) each gave the same 2 trials, NCT06004830 and NCT05807139; \"spironolactone AND drinking\" gave none.",
+     "find": "Three other hits have",
+     "replace": "Five other hits have"
+    },
+    {
+     "id": "R4-P4-04",
+     "module": "R4",
+     "operator": "duration",
+     "line": 38,
+     "evidence": [
+      9
+     ],
+     "original": "**Intended benefit:** spironolactone is a cheap, once-daily generic with more than 65 years on the US market, which primary-care and cardiology clinicians already prescribe and monitor. It could add an option for people with AUD and hypertension, and for those who can't take naltrexone (opioid use) or acamprosate (severe renal impairment).",
+     "mutated": "**Intended benefit:** spironolactone is a cheap, once-daily generic with more than 70 years on the US market, which primary-care and cardiology clinicians already prescribe and monitor. It could add an option for people with AUD and hypertension, and for those who can't take naltrexone (opioid use) or acamprosate (severe renal impairment).",
+     "find": "more than 65 years on the US market",
+     "replace": "more than 70 years on the US market"
+    },
+    {
+     "id": "R5-P4-01",
+     "module": "R5",
+     "operator": "remove-citation",
+     "line": 31,
+     "evidence": [
+      198
+     ],
+     "original": "**Cost of the condition:** excessive drinking cost the US $249.0 billion in 2010 [1]. Of about 14.1 million US adults with past-year AUD in 2019, 1.6% received a medication for it [2].",
+     "mutated": "**Cost of the condition:** excessive drinking cost the US $249.0 billion in 2010. Of about 14.1 million US adults with past-year AUD in 2019, 1.6% received a medication for it [2].",
+     "find": "in 2010 [1].",
+     "replace": "in 2010."
+    },
+    {
+     "id": "R6-P4-05",
+     "module": "R6",
+     "operator": "pre-registered",
+     "line": 154,
+     "evidence": [
+      210
+     ],
+     "original": "- **Follow-up checks, final label \"not robust\"** (planned in writing after the primary result and before the checks ran; the plan was published with their results [13]): randomization inference p 0.134 (268 of 2,000 within-stratum shuffles as extreme); regimens of 3+ antihypertensives -0.19 (-0.51 to +0.13); leaving out the 2007-2008 or 2015-2016 cycle makes it inconclusive. Negative-control drug groups are all near 0 (central agents/vasodilators +0.03, amiloride/triamterene +0.00, loop diuretics -0.01), so there is no sign of a general \"extra antihypertensive\" bias, and 70 of 70 leave-one-out refits stay supported.",
+     "mutated": "- **Follow-up checks, final label \"not robust\"** (pre-registered; the plan was published with their results [13]): randomization inference p 0.134 (268 of 2,000 within-stratum shuffles as extreme); regimens of 3+ antihypertensives -0.19 (-0.51 to +0.13); leaving out the 2007-2008 or 2015-2016 cycle makes it inconclusive. Negative-control drug groups are all near 0 (central agents/vasodilators +0.03, amiloride/triamterene +0.00, loop diuretics -0.01), so there is no sign of a general \"extra antihypertensive\" bias, and 70 of 70 leave-one-out refits stay supported.",
+     "find": "planned in writing after the primary result and before the checks ran",
+     "replace": "pre-registered"
+    },
+    {
+     "id": "R8-P4-03",
+     "module": "R8",
+     "operator": "delete-source",
+     "line": 167,
+     "evidence": [
+      9,
+      163,
+      164,
+      165,
+      166,
+      168,
+      169,
+      207
+     ],
+     "original": "- Retrieval and extraction used the NCBI E-utilities, the ClinicalTrials.gov API v2, Crossref, Europe PMC, openFDA, Drugs@FDA and the FDA Orange Book, read with Claude (Anthropic; model claude-opus-5-5, default parameters) running as an agent. Figure values and the WHO ICTRP records were read by an agent using a web browser, then checked arithmetically (E.3 note). Every flagged quotation was read a second time with a different prompt. Table values in E.1 and E.3e were read from two separate copies of each paper where available and checked row by row (change = post minus pre).",
+     "mutated": "- Retrieval and extraction used the NCBI E-utilities, the ClinicalTrials.gov API v2, Crossref, Europe PMC, openFDA and the FDA Orange Book, read with Claude (Anthropic; model claude-opus-5-5, default parameters) running as an agent. Figure values and the WHO ICTRP records were read by an agent using a web browser, then checked arithmetically (E.3 note). Every flagged quotation was read a second time with a different prompt. Table values in E.1 and E.3e were read from two separate copies of each paper where available and checked row by row (change = post minus pre).",
+     "find": "openFDA, Drugs@FDA and the FDA Orange Book",
+     "replace": "openFDA and the FDA Orange Book"
+    }
+   ]
+  },
+  {
+   "file": "P4-copy03.md",
+   "package": "P4",
+   "copy": 3,
+   "sha256": "2915f286b396a49814b6c8c7471ada4df34fdfea86e0987464eff58b9d166c27",
+   "mutations": [
+    {
+     "id": "R1-P4-02",
+     "module": "R1",
+     "operator": "digit",
+     "line": 147,
+     "evidence": [
+      86
+     ],
+     "original": "- **Spironolactone against that floor** (E.1): the heavier-drinker estimate (-4.18, 95% CI -5.38 to -2.97) is about 8 times the 0.5 threshold, and its whole CI lies beyond it. The overall estimate (-0.76, CI -1.43 to -0.11) is above the threshold, but the end of its CI nearest zero lies inside it, so it should be cited as modest. Heavy-drinker subgroups are where this design strays from 0. In the KPNC heavy-drinker rows of [20], with 51-64 patients per arm, imprecise DiDs reached 1.42 and 4.05 with CIs crossing 0. In the much larger VA heavy-drinker rows, all three contrasts had CIs excluding 0 but stayed near the floor (sizes 0.42-0.52), which the authors suggest may reflect residual confounding. [20] defines heavy drinking as more than 14 drinks a week for men or 7 for women; Palzes's subgroup is more than 7 for everyone. The Palzes heavy-drinker group is larger than the KPNC rows (126 treated), its CI excludes 0, and it is about 8 times the largest VA heavy-drinker size, but the baseline imbalance in E.1 still applies.",
+     "mutated": "- **Spironolactone against that floor** (E.1): the heavier-drinker estimate (-4.18, 95% CI -5.38 to -2.97) is about 8 times the 0.5 threshold, and its whole CI lies beyond it. The overall estimate (-0.79, CI -1.43 to -0.11) is above the threshold, but the end of its CI nearest zero lies inside it, so it should be cited as modest. Heavy-drinker subgroups are where this design strays from 0. In the KPNC heavy-drinker rows of [20], with 51-64 patients per arm, imprecise DiDs reached 1.42 and 4.05 with CIs crossing 0. In the much larger VA heavy-drinker rows, all three contrasts had CIs excluding 0 but stayed near the floor (sizes 0.42-0.52), which the authors suggest may reflect residual confounding. [20] defines heavy drinking as more than 14 drinks a week for men or 7 for women; Palzes's subgroup is more than 7 for everyone. The Palzes heavy-drinker group is larger than the KPNC rows (126 treated), its CI excludes 0, and it is about 8 times the largest VA heavy-drinker size, but the baseline imbalance in E.1 still applies.",
+     "find": "(-0.76, CI -1.43 to -0.11)",
+     "replace": "(-0.79, CI -1.43 to -0.11)"
+    },
+    {
+     "id": "R1b-P4-06",
+     "module": "R1b",
+     "operator": "flip",
+     "line": 153,
+     "evidence": [],
+     "original": "- **Result** (negative = fewer drinks among spironolactone users): 70 spironolactone users and 5,055 users of other antihypertensives, from 76,496 NHANES participants. Adjusted difference -0.34 drinks per drinking day (95% CI -0.62 to -0.06; p 0.017); weighted means 1.59 vs 2.18. Users of 90 days or more (n 61): -0.52 (-0.76 to -0.27). Unweighted: -0.20 (-0.56 to +0.17). Heavy-drinking-day share: -2.4 points (-7.9 to +3.2).",
+     "mutated": "- **Result** (negative = fewer drinks among spironolactone users): 70 spironolactone users and 5,055 users of other antihypertensives, from 76,496 NHANES participants. Adjusted difference -0.34 drinks per drinking day (95% CI -0.62 to -0.06; p 0.017); weighted means 1.59 vs 2.18. Users of 90 days or more (n 61): 0.52 (-0.76 to -0.27). Unweighted: -0.20 (-0.56 to +0.17). Heavy-drinking-day share: -2.4 points (-7.9 to +3.2).",
+     "find": "(n 61): -0.52 (-0.76 to -0.27)",
+     "replace": "(n 61): 0.52 (-0.76 to -0.27)"
+    },
+    {
+     "id": "R2-P4-03",
+     "module": "R2",
+     "operator": "range-endpoint",
+     "line": 45,
+     "evidence": [
+      96,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112
+     ],
+     "original": "  - A first recorded AUD remission within one year was 1.24-2.07 times as likely as with each of nine other antihypertensive classes (TriNetX [8]; 8.0-10.4% vs 4.4-7.4%). Point estimates for alcohol intoxication diagnoses were about 20% lower in eight of nine comparisons (HR 0.77-0.81; 0.97 vs ARBs), with the 95% CI below 1 in seven of nine.",
+     "mutated": "  - A first recorded AUD remission within one year was 1.24-2.07 times as likely as with each of nine other antihypertensive classes (TriNetX [8]; 8.0-10.4% vs 4.4-7.9%). Point estimates for alcohol intoxication diagnoses were about 20% lower in eight of nine comparisons (HR 0.77-0.81; 0.97 vs ARBs), with the 95% CI below 1 in seven of nine.",
+     "find": "vs 4.4-7.4%)",
+     "replace": "vs 4.4-7.9%)"
+    },
+    {
+     "id": "R2b-P4-01",
+     "module": "R2b",
+     "operator": "count",
+     "line": 160,
+     "evidence": [],
+     "original": "- **Search:** ClinicalTrials.gov by API (intervention spironolactone, condition alcohol, plus a term search; 2026-10-16, 2026-10-17 and 2026-10-20) found no other AUD treatment trial. Three other hits have no drinking outcome: NCT05014087 (digoxin in alcohol-associated hepatitis; terminated, slow accrual); NCT00188045 (spironolactone/propranolol haemodynamics in alcoholic cirrhosis; 1995-2003, terminated); NCT00226109 (spironolactone on heart and muscle function in chronic alcoholics; suspended, last updated 2010). Eplerenone, finerenone, canrenone, esaxerenone or \"mineralocorticoid\" as intervention with alcohol as condition returned only NCT05807139 (2026-10-20). In the WHO ICTRP Search Portal (browser, 2026-10-17), \"spironolactone AND alcohol\" and an advanced search (condition \"alcohol\", intervention \"spironolactone\", all statuses) each gave the same 2 trials, NCT06004830 and NCT05807139; \"spironolactone AND drinking\" gave none.",
+     "mutated": "- **Search:** ClinicalTrials.gov by API (intervention spironolactone, condition alcohol, plus a term search; 2026-10-16, 2026-10-17 and 2026-10-20) found no other AUD treatment trial. Three other hits have no drinking outcome: NCT05014087 (digoxin in alcohol-associated hepatitis; terminated, slow accrual); NCT00188045 (spironolactone/propranolol haemodynamics in alcoholic cirrhosis; 1995-2003, terminated); NCT00226109 (spironolactone on heart and muscle function in chronic alcoholics; suspended, last updated 2010). Eplerenone, finerenone, canrenone, esaxerenone or \"mineralocorticoid\" as intervention with alcohol as condition returned only NCT05807139 (2026-10-20). In the WHO ICTRP Search Portal (browser, 2026-10-17), \"spironolactone AND alcohol\" and an advanced search (condition \"alcohol\", intervention \"spironolactone\", all statuses) each gave the same 3 trials, NCT06004830 and NCT05807139; \"spironolactone AND drinking\" gave none.",
+     "find": "each gave the same 2 trials",
+     "replace": "each gave the same 3 trials"
+    },
+    {
+     "id": "R4-P4-01",
+     "module": "R4",
+     "operator": "delete-anchor",
+     "line": 36,
+     "evidence": [],
+     "original": "- As of 2026-10-20, the only registered studies of spironolactone as a treatment for AUD are a phase 1b pharmacokinetic study and a 21-person feasibility pilot (E.5). Spironolactone is not in use for AUD.",
+     "mutated": "- The only registered studies of spironolactone as a treatment for AUD are a phase 1b pharmacokinetic study and a 21-person feasibility pilot (E.5). Spironolactone is not in use for AUD.",
+     "find": "As of 2026-10-20, the only registered studies",
+     "replace": "The only registered studies"
+    },
+    {
+     "id": "R5-P4-03",
+     "module": "R5",
+     "operator": "remove-citation",
+     "line": 34,
+     "evidence": [
+      208
+     ],
+     "original": "- The 2021 VA/DoD guideline [11] lists naltrexone and topiramate (strong for), acamprosate and disulfiram (weak for) and gabapentin (second line). It does not list spironolactone.",
+     "mutated": "- The 2021 VA/DoD guideline lists naltrexone and topiramate (strong for), acamprosate and disulfiram (weak for) and gabapentin (second line). It does not list spironolactone.",
+     "find": "guideline [11] lists",
+     "replace": "guideline lists"
+    },
+    {
+     "id": "R6-P4-02",
+     "module": "R6",
+     "operator": "insert-token",
+     "line": 114,
+     "evidence": [],
+     "original": "(Figures 2 and 5 of PMC13559846, read from the images; percentages as printed, which TriNetX truncates rather than rounds. All 36 percentages reproduce from cases/n by truncation, 19 of them differing from what rounding would give, and the matched n agree with supplement Figures S2-S10.)",
+     "mutated": "(Figures 2 and 5 of PMC13559846, read from the images in run 128; percentages as printed, which TriNetX truncates rather than rounds. All 36 percentages reproduce from cases/n by truncation, 19 of them differing from what rounding would give, and the matched n agree with supplement Figures S2-S10.)",
+     "find": "read from the images;",
+     "replace": "read from the images in run 128;"
+    },
+    {
+     "id": "R8-P4-01",
+     "module": "R8",
+     "operator": "weight",
+     "line": 65,
+     "evidence": [],
+     "original": "- **Dose translation (our arithmetic, on the body-surface-area basis Farokhnia et al. used to choose doses [6]; 60 kg adult):** the lowest effective doses, 50 mg/kg in mice and 25 mg/kg in male rats, are each about 4 mg/kg (about 240 mg); 50 mg/kg in female rats is about 8 mg/kg (about 490 mg), above the 400 mg/day labeled maximum. These were single injected doses before drinking; the proposed use is a daily oral tablet.",
+     "mutated": "- **Dose translation (our arithmetic, on the body-surface-area basis Farokhnia et al. used to choose doses [6]; 70 kg adult):** the lowest effective doses, 50 mg/kg in mice and 25 mg/kg in male rats, are each about 4 mg/kg (about 240 mg); 50 mg/kg in female rats is about 8 mg/kg (about 490 mg), above the 400 mg/day labeled maximum. These were single injected doses before drinking; the proposed use is a daily oral tablet.",
+     "find": "; 60 kg adult):**",
+     "replace": "; 70 kg adult):**"
+    }
+   ]
+  },
+  {
+   "file": "P4-copy04.md",
+   "package": "P4",
+   "copy": 4,
+   "sha256": "3304bf6714677e96b251e35e93cdf6b160deeb18e535c370a4a964ee61984595",
+   "mutations": [
+    {
+     "id": "R1-P4-08",
+     "module": "R1",
+     "operator": "digit",
+     "line": 124,
+     "evidence": [
+      112
+     ],
+     "original": "4. **Does the effect run through the MR? The data cannot yet say.** The Methods define the ninth comparator as \"potassium-sparing diuretics except spironolactone (triamterene, finerenone, eplerenone, amiloride)\"; finerenone and eplerenone are MR antagonists that reduced binge-like drinking in mice [9]. If the human association ran only through the MR, this comparator should give an HR nearer 1. It gives 1.82 (1.33-2.49). Either MR antagonists are a small share of that comparator (triamterene is common in fixed combinations; finerenone was approved in 2021), or the association is not MR-specific. This is an open question for the trial in H, not a flaw in the study.",
+     "mutated": "4. **Does the effect run through the MR? The data cannot yet say.** The Methods define the ninth comparator as \"potassium-sparing diuretics except spironolactone (triamterene, finerenone, eplerenone, amiloride)\"; finerenone and eplerenone are MR antagonists that reduced binge-like drinking in mice [9]. If the human association ran only through the MR, this comparator should give an HR nearer 1. It gives 1.82 (1.38-2.49). Either MR antagonists are a small share of that comparator (triamterene is common in fixed combinations; finerenone was approved in 2021), or the association is not MR-specific. This is an open question for the trial in H, not a flaw in the study.",
+     "find": "It gives 1.82 (1.33-2.49)",
+     "replace": "It gives 1.82 (1.38-2.49)"
+    },
+    {
+     "id": "R1b-P4-05",
+     "module": "R1b",
+     "operator": "flip",
+     "line": 153,
+     "evidence": [],
+     "original": "- **Result** (negative = fewer drinks among spironolactone users): 70 spironolactone users and 5,055 users of other antihypertensives, from 76,496 NHANES participants. Adjusted difference -0.34 drinks per drinking day (95% CI -0.62 to -0.06; p 0.017); weighted means 1.59 vs 2.18. Users of 90 days or more (n 61): -0.52 (-0.76 to -0.27). Unweighted: -0.20 (-0.56 to +0.17). Heavy-drinking-day share: -2.4 points (-7.9 to +3.2).",
+     "mutated": "- **Result** (negative = fewer drinks among spironolactone users): 70 spironolactone users and 5,055 users of other antihypertensives, from 76,496 NHANES participants. Adjusted difference 0.34 drinks per drinking day (95% CI -0.62 to -0.06; p 0.017); weighted means 1.59 vs 2.18. Users of 90 days or more (n 61): -0.52 (-0.76 to -0.27). Unweighted: -0.20 (-0.56 to +0.17). Heavy-drinking-day share: -2.4 points (-7.9 to +3.2).",
+     "find": "-0.34 drinks per drinking day (95% CI",
+     "replace": "0.34 drinks per drinking day (95% CI"
+    },
+    {
+     "id": "R2-P4-05",
+     "module": "R2",
+     "operator": "n-of-m",
+     "line": 45,
+     "evidence": [
+      96,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112
+     ],
+     "original": "  - A first recorded AUD remission within one year was 1.24-2.07 times as likely as with each of nine other antihypertensive classes (TriNetX [8]; 8.0-10.4% vs 4.4-7.4%). Point estimates for alcohol intoxication diagnoses were about 20% lower in eight of nine comparisons (HR 0.77-0.81; 0.97 vs ARBs), with the 95% CI below 1 in seven of nine.",
+     "mutated": "  - A first recorded AUD remission within one year was 1.24-2.07 times as likely as with each of nine other antihypertensive classes (TriNetX [8]; 8.0-10.4% vs 4.4-7.4%). Point estimates for alcohol intoxication diagnoses were about 20% lower in eight of nine comparisons (HR 0.77-0.81; 0.97 vs ARBs), with the 95% CI below 1 in six of nine.",
+     "find": "in seven of nine.",
+     "replace": "in six of nine."
+    },
+    {
+     "id": "R4-P4-02",
+     "module": "R4",
+     "operator": "delete-anchor",
+     "line": 131,
+     "evidence": [],
+     "original": "- **Result (as of 2026-10-20):** exactly three human MRA-drinking cohort studies exist [6-8]. All are US, all share Farokhnia and Leggio, and all point the same way. None from another country or group exists, and none points the other way. Near misses: Danpanichkul 2026 [14] (TriNetX; ACEI/ARB vs CCB in alcohol-associated liver disease; no spironolactone and no drinking outcome); Rentsch et al. 2026 [28] (genomics to drug targets; its health-record analysis is of baclofen).",
+     "mutated": "- **Result:** exactly three human MRA-drinking cohort studies exist [6-8]. All are US, all share Farokhnia and Leggio, and all point the same way. None from another country or group exists, and none points the other way. Near misses: Danpanichkul 2026 [14] (TriNetX; ACEI/ARB vs CCB in alcohol-associated liver disease; no spironolactone and no drinking outcome); Rentsch et al. 2026 [28] (genomics to drug targets; its health-record analysis is of baclofen).",
+     "find": "**Result (as of 2026-10-20):**",
+     "replace": "**Result:**"
+    },
+    {
+     "id": "R5-P4-06",
+     "module": "R5",
+     "operator": "remove-citation",
+     "line": 76,
+     "evidence": [
+      226
+     ],
+     "original": "- **Long-term toxicity:** USPI 13.1 reports tumorigenicity in dietary studies in Sprague Dawley rats: benign thyroid and testicular adenomas; hepatocellular adenomas and testicular interstitial-cell tumors in males; thyroid follicular adenomas and carcinomas in both sexes; benign uterine endometrial stromal polyps in females. Mutagenicity tests were negative in bacteria and yeast; in mammalian cells in vitro, negative without metabolic activation and negative or \"inconclusive (but slightly positive)\" with it. Decades of heart-failure use (RALES [29] and later trials) give a large human safety base.",
+     "mutated": "- **Long-term toxicity:** USPI 13.1 reports tumorigenicity in dietary studies in Sprague Dawley rats: benign thyroid and testicular adenomas; hepatocellular adenomas and testicular interstitial-cell tumors in males; thyroid follicular adenomas and carcinomas in both sexes; benign uterine endometrial stromal polyps in females. Mutagenicity tests were negative in bacteria and yeast; in mammalian cells in vitro, negative without metabolic activation and negative or \"inconclusive (but slightly positive)\" with it. Decades of heart-failure use (RALES and later trials) give a large human safety base.",
+     "find": "(RALES [29] and later trials)",
+     "replace": "(RALES and later trials)"
+    },
+    {
+     "id": "R5b-P4-02",
+     "module": "R5b",
+     "operator": "strip-id",
+     "line": 160,
+     "evidence": [],
+     "original": "- **Search:** ClinicalTrials.gov by API (intervention spironolactone, condition alcohol, plus a term search; 2026-10-16, 2026-10-17 and 2026-10-20) found no other AUD treatment trial. Three other hits have no drinking outcome: NCT05014087 (digoxin in alcohol-associated hepatitis; terminated, slow accrual); NCT00188045 (spironolactone/propranolol haemodynamics in alcoholic cirrhosis; 1995-2003, terminated); NCT00226109 (spironolactone on heart and muscle function in chronic alcoholics; suspended, last updated 2010). Eplerenone, finerenone, canrenone, esaxerenone or \"mineralocorticoid\" as intervention with alcohol as condition returned only NCT05807139 (2026-10-20). In the WHO ICTRP Search Portal (browser, 2026-10-17), \"spironolactone AND alcohol\" and an advanced search (condition \"alcohol\", intervention \"spironolactone\", all statuses) each gave the same 2 trials, NCT06004830 and NCT05807139; \"spironolactone AND drinking\" gave none.",
+     "mutated": "- **Search:** ClinicalTrials.gov by API (intervention spironolactone, condition alcohol, plus a term search; 2026-10-16, 2026-10-17 and 2026-10-20) found no other AUD treatment trial. Three other hits have no drinking outcome: NCT05014087 (digoxin in alcohol-associated hepatitis; terminated, slow accrual); (spironolactone/propranolol haemodynamics in alcoholic cirrhosis; 1995-2003, terminated); NCT00226109 (spironolactone on heart and muscle function in chronic alcoholics; suspended, last updated 2010). Eplerenone, finerenone, canrenone, esaxerenone or \"mineralocorticoid\" as intervention with alcohol as condition returned only NCT05807139 (2026-10-20). In the WHO ICTRP Search Portal (browser, 2026-10-17), \"spironolactone AND alcohol\" and an advanced search (condition \"alcohol\", intervention \"spironolactone\", all statuses) each gave the same 2 trials, NCT06004830 and NCT05807139; \"spironolactone AND drinking\" gave none.",
+     "find": "; NCT00188045 (spironolactone",
+     "replace": "; (spironolactone"
+    },
+    {
+     "id": "R6-P4-03",
+     "module": "R6",
+     "operator": "insert-token",
+     "line": 155,
+     "evidence": [],
+     "original": "- **Reading:** independent of the three cohorts and pointing the same way, but weak (70 users, few treated clusters) and not robust by its own tests. It adds little weight, and patients with resistant hypertension being told to drink less could explain it.",
+     "mutated": "- **Reading (v16):** independent of the three cohorts and pointing the same way, but weak (70 users, few treated clusters) and not robust by its own tests. It adds little weight, and patients with resistant hypertension being told to drink less could explain it.",
+     "find": "**Reading:** independent",
+     "replace": "**Reading (v16):** independent"
+    },
+    {
+     "id": "R8-P4-02",
+     "module": "R8",
+     "operator": "delete-source",
+     "line": 167,
+     "evidence": [
+      10,
+      163,
+      164,
+      165,
+      166,
+      168,
+      169
+     ],
+     "original": "- Retrieval and extraction used the NCBI E-utilities, the ClinicalTrials.gov API v2, Crossref, Europe PMC, openFDA, Drugs@FDA and the FDA Orange Book, read with Claude (Anthropic; model claude-opus-5-5, default parameters) running as an agent. Figure values and the WHO ICTRP records were read by an agent using a web browser, then checked arithmetically (E.3 note). Every flagged quotation was read a second time with a different prompt. Table values in E.1 and E.3e were read from two separate copies of each paper where available and checked row by row (change = post minus pre).",
+     "mutated": "- Retrieval and extraction used the NCBI E-utilities, the ClinicalTrials.gov API v2, Crossref, Europe PMC, Drugs@FDA and the FDA Orange Book, read with Claude (Anthropic; model claude-opus-5-5, default parameters) running as an agent. Figure values and the WHO ICTRP records were read by an agent using a web browser, then checked arithmetically (E.3 note). Every flagged quotation was read a second time with a different prompt. Table values in E.1 and E.3e were read from two separate copies of each paper where available and checked row by row (change = post minus pre).",
+     "find": "Europe PMC, openFDA, Drugs@FDA",
+     "replace": "Europe PMC, Drugs@FDA"
+    }
+   ]
+  },
+  {
+   "file": "P4-copy05.md",
+   "package": "P4",
+   "copy": 5,
+   "sha256": "6174f4befcacc61f24b1f611bd1e7a946fbcc75596542e3a76e1904474403715",
+   "mutations": [
+    {
+     "id": "R2-P4-01",
+     "module": "R2",
+     "operator": "range-endpoint",
+     "line": 45,
+     "evidence": [
+      96,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112
+     ],
+     "original": "  - A first recorded AUD remission within one year was 1.24-2.07 times as likely as with each of nine other antihypertensive classes (TriNetX [8]; 8.0-10.4% vs 4.4-7.4%). Point estimates for alcohol intoxication diagnoses were about 20% lower in eight of nine comparisons (HR 0.77-0.81; 0.97 vs ARBs), with the 95% CI below 1 in seven of nine.",
+     "mutated": "  - A first recorded AUD remission within one year was 1.24-2.17 times as likely as with each of nine other antihypertensive classes (TriNetX [8]; 8.0-10.4% vs 4.4-7.4%). Point estimates for alcohol intoxication diagnoses were about 20% lower in eight of nine comparisons (HR 0.77-0.81; 0.97 vs ARBs), with the 95% CI below 1 in seven of nine.",
+     "find": "1.24-2.07 times",
+     "replace": "1.24-2.17 times"
+    },
+    {
+     "id": "R5b-P4-01",
+     "module": "R5b",
+     "operator": "strip-id",
+     "line": 160,
+     "evidence": [],
+     "original": "- **Search:** ClinicalTrials.gov by API (intervention spironolactone, condition alcohol, plus a term search; 2026-10-16, 2026-10-17 and 2026-10-20) found no other AUD treatment trial. Three other hits have no drinking outcome: NCT05014087 (digoxin in alcohol-associated hepatitis; terminated, slow accrual); NCT00188045 (spironolactone/propranolol haemodynamics in alcoholic cirrhosis; 1995-2003, terminated); NCT00226109 (spironolactone on heart and muscle function in chronic alcoholics; suspended, last updated 2010). Eplerenone, finerenone, canrenone, esaxerenone or \"mineralocorticoid\" as intervention with alcohol as condition returned only NCT05807139 (2026-10-20). In the WHO ICTRP Search Portal (browser, 2026-10-17), \"spironolactone AND alcohol\" and an advanced search (condition \"alcohol\", intervention \"spironolactone\", all statuses) each gave the same 2 trials, NCT06004830 and NCT05807139; \"spironolactone AND drinking\" gave none.",
+     "mutated": "- **Search:** ClinicalTrials.gov by API (intervention spironolactone, condition alcohol, plus a term search; 2026-10-16, 2026-10-17 and 2026-10-20) found no other AUD treatment trial. Three other hits have no drinking outcome: (digoxin in alcohol-associated hepatitis; terminated, slow accrual); NCT00188045 (spironolactone/propranolol haemodynamics in alcoholic cirrhosis; 1995-2003, terminated); NCT00226109 (spironolactone on heart and muscle function in chronic alcoholics; suspended, last updated 2010). Eplerenone, finerenone, canrenone, esaxerenone or \"mineralocorticoid\" as intervention with alcohol as condition returned only NCT05807139 (2026-10-20). In the WHO ICTRP Search Portal (browser, 2026-10-17), \"spironolactone AND alcohol\" and an advanced search (condition \"alcohol\", intervention \"spironolactone\", all statuses) each gave the same 2 trials, NCT06004830 and NCT05807139; \"spironolactone AND drinking\" gave none.",
+     "find": "outcome: NCT05014087 (digoxin",
+     "replace": "outcome: (digoxin"
+    }
+   ]
+  },
+  {
+   "file": "P4-copy06.md",
+   "package": "P4",
+   "copy": 6,
+   "sha256": "d21ee577f1b554dafd0cea707445ca5f43c3faad1eb24580d5cd49003671adbf",
+   "mutations": [
+    {
+     "id": "R5b-P4-03",
+     "module": "R5b",
+     "operator": "strip-id",
+     "line": 160,
+     "evidence": [],
+     "original": "- **Search:** ClinicalTrials.gov by API (intervention spironolactone, condition alcohol, plus a term search; 2026-10-16, 2026-10-17 and 2026-10-20) found no other AUD treatment trial. Three other hits have no drinking outcome: NCT05014087 (digoxin in alcohol-associated hepatitis; terminated, slow accrual); NCT00188045 (spironolactone/propranolol haemodynamics in alcoholic cirrhosis; 1995-2003, terminated); NCT00226109 (spironolactone on heart and muscle function in chronic alcoholics; suspended, last updated 2010). Eplerenone, finerenone, canrenone, esaxerenone or \"mineralocorticoid\" as intervention with alcohol as condition returned only NCT05807139 (2026-10-20). In the WHO ICTRP Search Portal (browser, 2026-10-17), \"spironolactone AND alcohol\" and an advanced search (condition \"alcohol\", intervention \"spironolactone\", all statuses) each gave the same 2 trials, NCT06004830 and NCT05807139; \"spironolactone AND drinking\" gave none.",
+     "mutated": "- **Search:** ClinicalTrials.gov by API (intervention spironolactone, condition alcohol, plus a term search; 2026-10-16, 2026-10-17 and 2026-10-20) found no other AUD treatment trial. Three other hits have no drinking outcome: NCT05014087 (digoxin in alcohol-associated hepatitis; terminated, slow accrual); NCT00188045 (spironolactone/propranolol haemodynamics in alcoholic cirrhosis; 1995-2003, terminated); (spironolactone on heart and muscle function in chronic alcoholics; suspended, last updated 2010). Eplerenone, finerenone, canrenone, esaxerenone or \"mineralocorticoid\" as intervention with alcohol as condition returned only NCT05807139 (2026-10-20). In the WHO ICTRP Search Portal (browser, 2026-10-17), \"spironolactone AND alcohol\" and an advanced search (condition \"alcohol\", intervention \"spironolactone\", all statuses) each gave the same 2 trials, NCT06004830 and NCT05807139; \"spironolactone AND drinking\" gave none.",
+     "find": "; NCT00226109 (spironolactone",
+     "replace": "; (spironolactone"
+    }
+   ]
+  },
+  {
+   "file": "P4-copy07.md",
+   "package": "P4",
+   "copy": 7,
+   "sha256": "b41d9cc5de1f574a7ce0058039e998010af8e7ebc63af3663b20b6db6fbbc70a",
+   "mutations": [
+    {
+     "id": "R7-P4-01",
+     "module": "R7",
+     "operator": "count+1",
+     "line": 160,
+     "evidence": [],
+     "original": "- **Search:** ClinicalTrials.gov by API (intervention spironolactone, condition alcohol, plus a term search; 2026-10-16, 2026-10-17 and 2026-10-20) found no other AUD treatment trial. Three other hits have no drinking outcome: NCT05014087 (digoxin in alcohol-associated hepatitis; terminated, slow accrual); NCT00188045 (spironolactone/propranolol haemodynamics in alcoholic cirrhosis; 1995-2003, terminated); NCT00226109 (spironolactone on heart and muscle function in chronic alcoholics; suspended, last updated 2010). Eplerenone, finerenone, canrenone, esaxerenone or \"mineralocorticoid\" as intervention with alcohol as condition returned only NCT05807139 (2026-10-20). In the WHO ICTRP Search Portal (browser, 2026-10-17), \"spironolactone AND alcohol\" and an advanced search (condition \"alcohol\", intervention \"spironolactone\", all statuses) each gave the same 2 trials, NCT06004830 and NCT05807139; \"spironolactone AND drinking\" gave none.",
+     "mutated": "- **Search:** ClinicalTrials.gov by API (intervention spironolactone, condition alcohol, plus a term search; 2026-10-16, 2026-10-17 and 2026-10-20) found no other AUD treatment trial. Four other hits have no drinking outcome: NCT05014087 (digoxin in alcohol-associated hepatitis; terminated, slow accrual); NCT00188045 (spironolactone/propranolol haemodynamics in alcoholic cirrhosis; 1995-2003, terminated); NCT00226109 (spironolactone on heart and muscle function in chronic alcoholics; suspended, last updated 2010). Eplerenone, finerenone, canrenone, esaxerenone or \"mineralocorticoid\" as intervention with alcohol as condition returned only NCT05807139 (2026-10-20). In the WHO ICTRP Search Portal (browser, 2026-10-17), \"spironolactone AND alcohol\" and an advanced search (condition \"alcohol\", intervention \"spironolactone\", all statuses) each gave the same 2 trials, NCT06004830 and NCT05807139; \"spironolactone AND drinking\" gave none.",
+     "find": "Three other hits have",
+     "replace": "Four other hits have"
+    }
+   ]
+  },
+  {
+   "file": "P4-copy08.md",
+   "package": "P4",
+   "copy": 8,
+   "sha256": "26d90435899d50b8dd26ad9097f5cc360424aaa4781d5a1c32bfd7ea1df3856f",
+   "mutations": [
+    {
+     "id": "R8-P4-06",
+     "module": "R8",
+     "operator": "delete-source",
+     "line": 167,
+     "evidence": [
+      158,
+      159,
+      160,
+      163,
+      164,
+      165,
+      166,
+      168,
+      169,
+      209
+     ],
+     "original": "- Retrieval and extraction used the NCBI E-utilities, the ClinicalTrials.gov API v2, Crossref, Europe PMC, openFDA, Drugs@FDA and the FDA Orange Book, read with Claude (Anthropic; model claude-opus-5-5, default parameters) running as an agent. Figure values and the WHO ICTRP records were read by an agent using a web browser, then checked arithmetically (E.3 note). Every flagged quotation was read a second time with a different prompt. Table values in E.1 and E.3e were read from two separate copies of each paper where available and checked row by row (change = post minus pre).",
+     "mutated": "- Retrieval and extraction used the NCBI E-utilities, Crossref, Europe PMC, openFDA, Drugs@FDA and the FDA Orange Book, read with Claude (Anthropic; model claude-opus-5-5, default parameters) running as an agent. Figure values and the WHO ICTRP records were read by an agent using a web browser, then checked arithmetically (E.3 note). Every flagged quotation was read a second time with a different prompt. Table values in E.1 and E.3e were read from two separate copies of each paper where available and checked row by row (change = post minus pre).",
+     "find": "the ClinicalTrials.gov API v2, ",
+     "replace": ""
+    }
+   ]
+  },
+  {
+   "file": "P5-cut.md",
+   "package": "P5",
+   "copy": 0,
+   "sha256": "42b56420fb43daebc82a747b0cb814829250791328fd05b297625851bc402440",
+   "mutations": []
+  },
+  {
+   "file": "P5-copy01.md",
+   "package": "P5",
+   "copy": 1,
+   "sha256": "482f90243304ebf727e7084437508166c649bacdb207e1edeeb26fe723903842",
+   "mutations": [
+    {
+     "id": "R1-P5-06",
+     "module": "R1",
+     "operator": "digit",
+     "line": 111,
+     "evidence": [
+      55
+     ],
+     "original": "- **Pooled RCTs:** GI adverse events RR 1.97 (1.06-3.67), I\u00b2 0% (Chenchula 2026). Non-serious adverse events OR 2.07 (1.19-3.60) (Chen Z 2026). For planning, the trial's own counts come first (E.5b).",
+     "mutated": "- **Pooled RCTs:** GI adverse events RR 1.97 (1.09-3.67), I\u00b2 0% (Chenchula 2026). Non-serious adverse events OR 2.07 (1.19-3.60) (Chen Z 2026). For planning, the trial's own counts come first (E.5b).",
+     "find": "RR 1.97 (1.06-3.67)",
+     "replace": "RR 1.97 (1.09-3.67)"
+    },
+    {
+     "id": "R1b-P5-04",
+     "module": "R1b",
+     "operator": "flip",
+     "line": 141,
+     "evidence": [],
+     "original": "| WOMAC function (0-1700) | -426.1 | -221.7 | -179.8 (-313.0 to -46.6) | .009 |",
+     "mutated": "| WOMAC function (0-1700) | -426.1 | -221.7 | 179.8 (-313.0 to -46.6) | .009 |",
+     "find": "| -179.8 (-313.0 to -46.6) |",
+     "replace": "| 179.8 (-313.0 to -46.6) |"
+    },
+    {
+     "id": "R2b-P5-04",
+     "module": "R2b",
+     "operator": "delete-id",
+     "line": 173,
+     "evidence": [
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172
+     ],
+     "original": "- **Other registered trials:** NCT05638893 (Aiad 2024; completed 2022; no posted results); NCT06231758 (celecoxib and metformin arms, no placebo; phase 3, n = 70, recruiting; primary completion 2026-11); NCT06126029 (metformin ER vs placebo, both added to ibuprofen; primary completion 2024-04, last updated 2023-11, status unknown, no results: a second unreported placebo-controlled trial); NCT06367283 (METRO, hand OA; protocol PMID 40139705; primary completion 2025-12). The remaining three records are a withdrawn placebo-controlled trial (NCT04767841; no participants enrolled), a topical iontophoresis trial (NCT07395895) and an ultrasound-therapy study (NCT07738692).",
+     "mutated": "- **Other registered trials:** NCT05638893 (Aiad 2024; completed 2022; no posted results); NCT06231758 (celecoxib and metformin arms, no placebo; phase 3, n = 70, recruiting; primary completion 2026-11); NCT06126029 (metformin ER vs placebo, both added to ibuprofen; primary completion 2024-04, last updated 2023-11, status unknown, no results: a second unreported placebo-controlled trial); NCT06367283 (METRO, hand OA; protocol PMID 40139705; primary completion 2025-12). The remaining three records are a withdrawn placebo-controlled trial (no participants enrolled), a topical iontophoresis trial (NCT07395895) and an ultrasound-therapy study (NCT07738692).",
+     "find": "a withdrawn placebo-controlled trial (NCT04767841; no participants enrolled)",
+     "replace": "a withdrawn placebo-controlled trial (no participants enrolled)"
+    },
+    {
+     "id": "R3-P5-03",
+     "module": "R3",
+     "operator": "no-benefit",
+     "line": 298,
+     "evidence": [],
+     "original": "- **Timing:** there was no clear benefit at 3 months (E.1), so allow at least 6 months before judging response.",
+     "mutated": "- **Timing:** there was no benefit at 3 months (E.1), so allow at least 6 months before judging response.",
+     "find": "no clear benefit at 3 months",
+     "replace": "no benefit at 3 months"
+    },
+    {
+     "id": "R4-P5-02",
+     "module": "R4",
+     "operator": "delete-anchor",
+     "line": 68,
+     "evidence": [],
+     "original": "**Studies needed for a compelling case** (H): a phase 3 efficacy trial, the structural trial unreported as of 2026-10-20, an active-comparator RWE replication and a pre-registered meta-analysis. No new safety study is needed beyond the phase 3 trial's monitoring (D).",
+     "mutated": "**Studies needed for a compelling case** (H): a phase 3 efficacy trial, the structural trial unreported, an active-comparator RWE replication and a pre-registered meta-analysis. No new safety study is needed beyond the phase 3 trial's monitoring (D).",
+     "find": "unreported as of 2026-10-20,",
+     "replace": "unreported,"
+    },
+    {
+     "id": "R5-P5-11",
+     "module": "R5",
+     "operator": "insert-acronym",
+     "line": 280,
+     "evidence": [],
+     "original": "- **Adjunctive, not stand-alone:** added to standard care (exercise, weight management, and analgesics as needed), as in Pan 2025, where acetaminophen was allowed.",
+     "mutated": "- **Adjunctive, not stand-alone:** added to standard care (exercise, weight management, and analgesics as needed), as in Pan 2025 and the BRENTA trial, where acetaminophen was allowed.",
+     "find": "as in Pan 2025, where acetaminophen",
+     "replace": "as in Pan 2025 and the BRENTA trial, where acetaminophen"
+    },
+    {
+     "id": "R6-P5-02",
+     "module": "R6",
+     "operator": "insert-token",
+     "line": 197,
+     "evidence": [],
+     "original": "  - The RWE is in diabetes, where metformin is already on label; the RCT is in people without diabetes.",
+     "mutated": "  - The RWE is in diabetes (gate 5), where metformin is already on label; the RCT is in people without diabetes.",
+     "find": "The RWE is in diabetes,",
+     "replace": "The RWE is in diabetes (gate 5),"
+    },
+    {
+     "id": "R7-P5-04",
+     "module": "R7",
+     "operator": "count+1",
+     "line": 250,
+     "evidence": [],
+     "original": "- **Chenchula 2026 (source of the GI RR)** reports \"six RCTs\", but its deposited references hold five distinct oral randomised trials (Pan, Alimoradi, Aiad, Mohammed, Varshini; Alimoradi also as its 2025 report); the sixth must be topical, non-randomised, a second report of an included trial, the unverifiable \"Aiad 2024, Mol Biol Rep\", or an entry missing from the deposit. We do not claim the RR double-counts a trial.",
+     "mutated": "- **Chenchula 2026 (source of the GI RR)** reports \"six RCTs\", but its deposited references hold six distinct oral randomised trials (Pan, Alimoradi, Aiad, Mohammed, Varshini; Alimoradi also as its 2025 report); the sixth must be topical, non-randomised, a second report of an included trial, the unverifiable \"Aiad 2024, Mol Biol Rep\", or an entry missing from the deposit. We do not claim the RR double-counts a trial.",
+     "find": "five distinct oral randomised trials",
+     "replace": "six distinct oral randomised trials"
+    },
+    {
+     "id": "R8-P5-04",
+     "module": "R8",
+     "operator": "delete-source",
+     "line": 256,
+     "evidence": [
+      255,
+      257,
+      258,
+      259,
+      353
+     ],
+     "original": "- **AI tool and parameters:** Claude (Anthropic; models claude-opus-5-5 and claude-fable-5-1, default parameters), running as an agent, retrieved and extracted from the NCBI E-utilities and PMC full text, the ClinicalTrials.gov API v2, the WHO ICTRP and ChiCTR registries, openFDA, DailyMed, Drugs@FDA, the FDA Orange Book, the Crossref and Europe PMC APIs and publisher pages. The Pan 2025 full text and the ChiCTR2500107918 record were read by an agent using a web browser. **No AI model generated any estimate.**",
+     "mutated": "- **AI tool and parameters:** Claude (Anthropic; models claude-opus-5-5 and claude-fable-5-1, default parameters), running as an agent, retrieved and extracted from the NCBI E-utilities and PMC full text, the ClinicalTrials.gov API v2, the WHO ICTRP and ChiCTR registries, openFDA, Drugs@FDA, the FDA Orange Book, the Crossref and Europe PMC APIs and publisher pages. The Pan 2025 full text and the ChiCTR2500107918 record were read by an agent using a web browser. **No AI model generated any estimate.**",
+     "find": "openFDA, DailyMed, Drugs@FDA,",
+     "replace": "openFDA, Drugs@FDA,"
+    }
+   ]
+  },
+  {
+   "file": "P5-copy02.md",
+   "package": "P5",
+   "copy": 2,
+   "sha256": "3451a3de3efa1b7a8584182e2e8d45e486feb62e053555893adad76559cac2f3",
+   "mutations": [
+    {
+     "id": "R1-P5-04",
+     "module": "R1",
+     "operator": "digit",
+     "line": 218,
+     "evidence": [
+      50
+     ],
+     "original": "| All three | 3 | 0.97 (0.36 to 1.57) | -0.38 to 2.31 | 78% |",
+     "mutated": "| All three | 3 | 0.97 (0.38 to 1.57) | -0.38 to 2.31 | 78% |",
+     "find": "| 0.97 (0.36 to 1.57) |",
+     "replace": "| 0.97 (0.38 to 1.57) |"
+    },
+    {
+     "id": "R1b-P5-03",
+     "module": "R1b",
+     "operator": "flip",
+     "line": 140,
+     "evidence": [],
+     "original": "| WOMAC stiffness (0-200) | -56.9 | -26.7 | -23.0 (-40.4 to -5.7) | .01 |",
+     "mutated": "| WOMAC stiffness (0-200) | -56.9 | -26.7 | 23.0 (-40.4 to -5.7) | .01 |",
+     "find": "| -23.0 (-40.4 to -5.7) |",
+     "replace": "| 23.0 (-40.4 to -5.7) |"
+    },
+    {
+     "id": "R2b-P5-02",
+     "module": "R2b",
+     "operator": "delete-id",
+     "line": 172,
+     "evidence": [
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      173
+     ],
+     "original": "  - **On ClinicalTrials.gov, the only placebo-controlled trial of metformin alone in established knee OA with cartilage loss as a primary outcome; no results posted as of 2026-10-20, nearly 22 months after its planned completion.** We assume nothing about its result; it is an evidence gap and a possible source of publication bias. Two other placebo-controlled trials have imaging primary outcomes: PIKASO (NCT06096259; n = 512; MOAKS cartilage score at 24 months, after ACL tear and before radiographic OA) and NCT06328426 (vitamin D plus metformin; ultrasound effusion-synovitis volume).",
+     "mutated": "  - **On ClinicalTrials.gov, the only placebo-controlled trial of metformin alone in established knee OA with cartilage loss as a primary outcome; no results posted as of 2026-10-20, nearly 22 months after its planned completion.** We assume nothing about its result; it is an evidence gap and a possible source of publication bias. Two other placebo-controlled trials have imaging primary outcomes: PIKASO (n = 512; MOAKS cartilage score at 24 months, after ACL tear and before radiographic OA) and NCT06328426 (vitamin D plus metformin; ultrasound effusion-synovitis volume).",
+     "find": "PIKASO (NCT06096259; n = 512;",
+     "replace": "PIKASO (n = 512;"
+    },
+    {
+     "id": "R3-P5-01",
+     "module": "R3",
+     "operator": "no-difference",
+     "line": 49,
+     "evidence": [],
+     "original": "- **Pan 2025 RCT** (non-diabetic adults, BMI 25 or more; E.1): at 6 months the adjusted VAS pain difference was -11.4 mm (95% CI -20.1 to -2.6) against placebo, below the trial's 15 mm MCID; responders 65% vs 45% (P = .07); no clear difference at 3 months.",
+     "mutated": "- **Pan 2025 RCT** (non-diabetic adults, BMI 25 or more; E.1): at 6 months the adjusted VAS pain difference was -11.4 mm (95% CI -20.1 to -2.6) against placebo, below the trial's 15 mm MCID; responders 65% vs 45% (P = .07); no difference at 3 months.",
+     "find": "no clear difference at 3 months",
+     "replace": "no difference at 3 months"
+    },
+    {
+     "id": "R4-P5-06",
+     "module": "R4",
+     "operator": "delete-anchor",
+     "line": 253,
+     "evidence": [],
+     "original": "- **Novelty:** as of 2026-10-20, we found no published comparison of these meta-analyses' trial sets.",
+     "mutated": "- **Novelty:** we found no published comparison of these meta-analyses' trial sets.",
+     "find": "as of 2026-10-20, we found",
+     "replace": "we found"
+    },
+    {
+     "id": "R5-P5-08",
+     "module": "R5",
+     "operator": "ambiguous",
+     "line": 111,
+     "evidence": [
+      321,
+      324
+     ],
+     "original": "- **Pooled RCTs:** GI adverse events RR 1.97 (1.06-3.67), I\u00b2 0% (Chenchula 2026). Non-serious adverse events OR 2.07 (1.19-3.60) (Chen Z 2026). For planning, the trial's own counts come first (E.5b).",
+     "mutated": "- **Pooled RCTs:** GI adverse events RR 1.97 (1.06-3.67), I\u00b2 0% (Chenchula 2026). Non-serious adverse events OR 2.07 (1.19-3.60) (Chen 2026). For planning, the trial's own counts come first (E.5b).",
+     "find": "(Chen Z 2026)",
+     "replace": "(Chen 2026)"
+    },
+    {
+     "id": "R6-P5-01",
+     "module": "R6",
+     "operator": "insert-token",
+     "line": 30,
+     "evidence": [],
+     "original": "  - **Reading:** one instrument is null for the knee, and the other is positive but neither colocalised nor replicated. The genetic evidence is supportive at most.",
+     "mutated": "  - **Reading (v22):** one instrument is null for the knee, and the other is positive but neither colocalised nor replicated. The genetic evidence is supportive at most.",
+     "find": "**Reading:** one instrument",
+     "replace": "**Reading (v22):** one instrument"
+    },
+    {
+     "id": "R7-P5-06",
+     "module": "R7",
+     "operator": "add-name",
+     "line": 226,
+     "evidence": [],
+     "original": "- **Method:** every printed effect estimate and 95% CI in this package (not the modelled spending figure in A, whose CI is asymmetric) was checked by `rwe_recheck` or by hand, allowing for the rounding of every printed digit: the estimate must sit at the CI midpoint (log scale for ratios; Georgescu & Wren 2018, PMID 29309530, found 5.6-7.5% of MEDLINE ratio/CI items discrepant), and a crude OR must reproduce from its own 2\u00d72 counts.",
+     "mutated": "- **Method:** every printed effect estimate and 95% CI in this package (not the modelled spending figure in A, whose CI is asymmetric) was checked by `rwe_recheck` or by hand, allowing for the rounding of every printed digit: the estimate must sit at the CI midpoint (log scale for ratios; Georgescu & Wren 2018, PMID 29309530, found 5.6-7.5% of MEDLINE ratio/CI items discrepant, as did Tanabe 2021), and a crude OR must reproduce from its own 2\u00d72 counts.",
+     "find": "found 5.6-7.5% of MEDLINE ratio/CI items discrepant)",
+     "replace": "found 5.6-7.5% of MEDLINE ratio/CI items discrepant, as did Tanabe 2021)"
+    },
+    {
+     "id": "R8-P5-01",
+     "module": "R8",
+     "operator": "weight",
+     "line": 75,
+     "evidence": [
+      82
+     ],
+     "original": "  - **Dose:** metformin 200 mg/kg by gavage once daily for 8 weeks, which the authors equate by body-surface-area scaling to a human 1,000 mg/day (no body weight stated; about 1.1 g/day for 70 kg, the basis used for Koca 2026 below): about half the proposed dose.",
+     "mutated": "  - **Dose:** metformin 200 mg/kg by gavage once daily for 8 weeks, which the authors equate by body-surface-area scaling to a human 1,000 mg/day (no body weight stated; about 1.1 g/day for 60 kg, the basis used for Koca 2026 below): about half the proposed dose.",
+     "find": "for 70 kg, the basis",
+     "replace": "for 60 kg, the basis"
+    }
+   ]
+  },
+  {
+   "file": "P5-copy03.md",
+   "package": "P5",
+   "copy": 3,
+   "sha256": "60a2ed58ffca44ed18e83a44f0522c50f16327ee7a8012c28fca44ace7eeb289",
+   "mutations": [
+    {
+     "id": "R1-P5-03",
+     "module": "R1",
+     "operator": "digit",
+     "line": 50,
+     "evidence": [
+      218
+     ],
+     "original": "- **Pooled oral, placebo-controlled RCTs* (E.5):** SMD 0.97 (0.36-1.57), I\u00b2 78%; HKSJ interval -0.38 to 2.31. The two small trials behind the larger value have serious weaknesses, so the planning value stays at **SMD 0.4**, the Pan 2025 value.",
+     "mutated": "- **Pooled oral, placebo-controlled RCTs* (E.5):** SMD 0.97 (0.36-1.51), I\u00b2 78%; HKSJ interval -0.38 to 2.31. The two small trials behind the larger value have serious weaknesses, so the planning value stays at **SMD 0.4**, the Pan 2025 value.",
+     "find": "SMD 0.97 (0.36-1.57)",
+     "replace": "SMD 0.97 (0.36-1.51)"
+    },
+    {
+     "id": "R1b-P5-01",
+     "module": "R1b",
+     "operator": "delete-convention",
+     "line": 214,
+     "evidence": [
+      202,
+      206,
+      207,
+      208,
+      209,
+      210,
+      218,
+      219,
+      220,
+      221
+     ],
+     "original": "**Oral, placebo-controlled pool** (Pan 2025, Alimoradi 2023, Aiad 2024; DerSimonian-Laird with HKSJ, reproduced in a sealed run). Here a positive SMD means less pain on metformin; the meta-analyses above print benefit as negative. Alimoradi enters with its table's n of 44 per arm.",
+     "mutated": "**Oral, placebo-controlled pool** (Pan 2025, Alimoradi 2023, Aiad 2024; DerSimonian-Laird with HKSJ, reproduced in a sealed run). Alimoradi enters with its table's n of 44 per arm.",
+     "find": "Here a positive SMD means less pain on metformin; the meta-analyses above print benefit as negative. ",
+     "replace": ""
+    },
+    {
+     "id": "R2b-P5-03",
+     "module": "R2b",
+     "operator": "count",
+     "line": 173,
+     "evidence": [
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172
+     ],
+     "original": "- **Other registered trials:** NCT05638893 (Aiad 2024; completed 2022; no posted results); NCT06231758 (celecoxib and metformin arms, no placebo; phase 3, n = 70, recruiting; primary completion 2026-11); NCT06126029 (metformin ER vs placebo, both added to ibuprofen; primary completion 2024-04, last updated 2023-11, status unknown, no results: a second unreported placebo-controlled trial); NCT06367283 (METRO, hand OA; protocol PMID 40139705; primary completion 2025-12). The remaining three records are a withdrawn placebo-controlled trial (NCT04767841; no participants enrolled), a topical iontophoresis trial (NCT07395895) and an ultrasound-therapy study (NCT07738692).",
+     "mutated": "- **Other registered trials:** NCT05638893 (Aiad 2024; completed 2022; no posted results); NCT06231758 (celecoxib and metformin arms, no placebo; phase 3, n = 70, recruiting; primary completion 2026-11); NCT06126029 (metformin ER vs placebo, both added to ibuprofen; primary completion 2024-04, last updated 2023-11, status unknown, no results: a second unreported placebo-controlled trial); NCT06367283 (METRO, hand OA; protocol PMID 40139705; primary completion 2025-12). The remaining four records are a withdrawn placebo-controlled trial (NCT04767841; no participants enrolled), a topical iontophoresis trial (NCT07395895) and an ultrasound-therapy study (NCT07738692).",
+     "find": "The remaining three records",
+     "replace": "The remaining four records"
+    },
+    {
+     "id": "R3-P5-02",
+     "module": "R3",
+     "operator": "lower-risk",
+     "line": 51,
+     "evidence": [],
+     "original": "- **Real-world evidence, mostly in diabetes (E.3):** joint-replacement point estimates favour metformin in five of six studies against non-users, with the CI below 1 in four (aHR 0.70, Taiwan; HR 0.72, UK Biobank), but not in the largest (knee replacement aHR 1.05, 0.94-1.18); lower incident OA than with sulfonylureas, aHR 0.76 (Optum), but not clearly different from SGLT-2 inhibitors.",
+     "mutated": "- **Real-world evidence, mostly in diabetes (E.3):** joint replacement was at lower risk with metformin in five of six studies against non-users, with the CI below 1 in four (aHR 0.70, Taiwan; HR 0.72, UK Biobank), but not in the largest (knee replacement aHR 1.05, 0.94-1.18); lower incident OA than with sulfonylureas, aHR 0.76 (Optum), but not clearly different from SGLT-2 inhibitors.",
+     "find": "joint-replacement point estimates favour metformin",
+     "replace": "joint replacement was at lower risk with metformin"
+    },
+    {
+     "id": "R4-P5-03",
+     "module": "R4",
+     "operator": "delete-anchor",
+     "line": 86,
+     "evidence": [],
+     "original": "- **Reading:** in induced rodent OA, the analgesic effect is consistent at high doses. Structural results are mostly positive in rodents (Lim 2022 and later studies, including Koca 2026), not significant in the Nrf2 mouse study, and not shown in the one spontaneous-OA model, where metformin was given with rapamycin. As of 2026-10-20, almost no null result for metformin alone has been published, and two supportive studies were retracted: signs of publication bias, so the preclinical case is weaker than its count of positive studies. Structural benefit is unproven in humans, so this package proposes a symptomatic indication.",
+     "mutated": "- **Reading:** in induced rodent OA, the analgesic effect is consistent at high doses. Structural results are mostly positive in rodents (Lim 2022 and later studies, including Koca 2026), not significant in the Nrf2 mouse study, and not shown in the one spontaneous-OA model, where metformin was given with rapamycin. Almost no null result for metformin alone has been published, and two supportive studies were retracted: signs of publication bias, so the preclinical case is weaker than its count of positive studies. Structural benefit is unproven in humans, so this package proposes a symptomatic indication.",
+     "find": "As of 2026-10-20, almost no null result",
+     "replace": "Almost no null result"
+    },
+    {
+     "id": "R5-P5-04",
+     "module": "R5",
+     "operator": "remove-citation",
+     "line": 112,
+     "evidence": [
+      352
+     ],
+     "original": "- **Long-term safety without diabetes:** in the Diabetes Prevention Program, adults with prediabetes took metformin 850 mg twice daily (Knowler 2002; PMID 11832527).",
+     "mutated": "- **Long-term safety without diabetes:** in the Diabetes Prevention Program, adults with prediabetes took metformin 850 mg twice daily.",
+     "find": " (Knowler 2002; PMID 11832527)",
+     "replace": ""
+    },
+    {
+     "id": "R6-P5-04",
+     "module": "R6",
+     "operator": "insert-token",
+     "line": 154,
+     "evidence": [],
+     "original": "- **Planning value:** the trial supports an effect of about SMD 0.4.",
+     "mutated": "- **Planning value (run 133):** the trial supports an effect of about SMD 0.4.",
+     "find": "**Planning value:** the trial",
+     "replace": "**Planning value (run 133):** the trial"
+    },
+    {
+     "id": "R8-P5-07",
+     "module": "R8",
+     "operator": "delete-source",
+     "line": 256,
+     "evidence": [
+      255,
+      257,
+      258,
+      259,
+      356
+     ],
+     "original": "- **AI tool and parameters:** Claude (Anthropic; models claude-opus-5-5 and claude-fable-5-1, default parameters), running as an agent, retrieved and extracted from the NCBI E-utilities and PMC full text, the ClinicalTrials.gov API v2, the WHO ICTRP and ChiCTR registries, openFDA, DailyMed, Drugs@FDA, the FDA Orange Book, the Crossref and Europe PMC APIs and publisher pages. The Pan 2025 full text and the ChiCTR2500107918 record were read by an agent using a web browser. **No AI model generated any estimate.**",
+     "mutated": "- **AI tool and parameters:** Claude (Anthropic; models claude-opus-5-5 and claude-fable-5-1, default parameters), running as an agent, retrieved and extracted from the NCBI E-utilities and PMC full text, the ClinicalTrials.gov API v2, the ChiCTR registry, openFDA, DailyMed, Drugs@FDA, the FDA Orange Book, the Crossref and Europe PMC APIs and publisher pages. The Pan 2025 full text and the ChiCTR2500107918 record were read by an agent using a web browser. **No AI model generated any estimate.**",
+     "find": "the WHO ICTRP and ChiCTR registries",
+     "replace": "the ChiCTR registry"
+    }
+   ]
+  },
+  {
+   "file": "P5-copy04.md",
+   "package": "P5",
+   "copy": 4,
+   "sha256": "f7be070ef5d1b0a39279584c4c33f6c09a5c667d9d90ff8a3605a22b1efd224a",
+   "mutations": [
+    {
+     "id": "R1-P5-05",
+     "module": "R1",
+     "operator": "digit",
+     "line": 55,
+     "evidence": [
+      111
+     ],
+     "original": "- **Pooled RCTs:** mild, non-serious GI adverse events RR 1.97 (1.06-3.67), moderate certainty (Chenchula 2026); \"no serious metformin-related events\" (Chen Z 2026). D and E.5b give the full estimates and which trials these pools can contain.",
+     "mutated": "- **Pooled RCTs:** mild, non-serious GI adverse events RR 1.97 (1.06-3.61), moderate certainty (Chenchula 2026); \"no serious metformin-related events\" (Chen Z 2026). D and E.5b give the full estimates and which trials these pools can contain.",
+     "find": "RR 1.97 (1.06-3.67)",
+     "replace": "RR 1.97 (1.06-3.61)"
+    },
+    {
+     "id": "R1b-P5-08",
+     "module": "R1b",
+     "operator": "flip",
+     "line": 210,
+     "evidence": [],
+     "original": "| Jiang 2025, network MA (40325308) | 9 RCTs to December 2024, so not Pan 2025 | MD -1.13 (-1.48 to -0.78) vs \"usual care\"; scale not stated | ranked first (E.5b) |",
+     "mutated": "| Jiang 2025, network MA (40325308) | 9 RCTs to December 2024, so not Pan 2025 | MD 1.13 (-1.48 to -0.78) vs \"usual care\"; scale not stated | ranked first (E.5b) |",
+     "find": "MD -1.13 (-1.48 to -0.78)",
+     "replace": "MD 1.13 (-1.48 to -0.78)"
+    },
+    {
+     "id": "R2b-P5-01",
+     "module": "R2b",
+     "operator": "count",
+     "line": 163,
+     "evidence": [
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173
+     ],
+     "original": "**Registered trials** (ClinicalTrials.gov, searched 2026-10-15 and 2026-10-20: 11 records for metformin and osteoarthritis, all accounted for below; the records described were re-read field by field on 2026-10-20; the ChiCTR record read in full 2026-10-16):",
+     "mutated": "**Registered trials** (ClinicalTrials.gov, searched 2026-10-15 and 2026-10-20: 12 records for metformin and osteoarthritis, all accounted for below; the records described were re-read field by field on 2026-10-20; the ChiCTR record read in full 2026-10-16):",
+     "find": "11 records for metformin",
+     "replace": "12 records for metformin"
+    },
+    {
+     "id": "R4-P5-01",
+     "module": "R4",
+     "operator": "delete-anchor",
+     "line": 36,
+     "evidence": [],
+     "original": "- Neither the 2019 ACR/Arthritis Foundation guideline (Kolasinski 2020) nor the ACR's 2026 update (summary approved 8 September 2026; full manuscript not published as of 2026-10-20) mentions metformin. OARSI 2019 (Bannuru 2019) does not recommend it either.",
+     "mutated": "- Neither the 2019 ACR/Arthritis Foundation guideline (Kolasinski 2020) nor the ACR's 2026 update (summary approved 8 September 2026; full manuscript not published) mentions metformin. OARSI 2019 (Bannuru 2019) does not recommend it either.",
+     "find": "not published as of 2026-10-20)",
+     "replace": "not published)"
+    },
+    {
+     "id": "R5-P5-01",
+     "module": "R5",
+     "operator": "remove-citation",
+     "line": 259,
+     "evidence": [
+      358
+     ],
+     "original": "- **Update searches** (PubMed): metformin with knee osteoarthritis (entry dates 2025-01-01 to 2026-10-17; 35 records); with osteoarthritis (from 2026-10-01; last run 2026-10-18); with arthroplasty or joint replacement and osteoarthritis in title or abstract (all dates; 16 records; 2026-10-20); and with OA or cartilage and animal-model terms (all dates; 68 records; 2026-10-20). They added Liu 2026, Jiang 2025, Chen S 2022, Hatano 2025, Haj Shehadeh 2025 and Minton 2021, and one narrative review with no new primary data (PMID 42875857).",
+     "mutated": "- **Update searches** (PubMed): metformin with knee osteoarthritis (entry dates 2025-01-01 to 2026-10-17; 35 records); with osteoarthritis (from 2026-10-01; last run 2026-10-18); with arthroplasty or joint replacement and osteoarthritis in title or abstract (all dates; 16 records; 2026-10-20); and with OA or cartilage and animal-model terms (all dates; 68 records; 2026-10-20). They added Liu 2026, Jiang 2025, Chen S 2022, Hatano 2025, Haj Shehadeh 2025 and Minton 2021, and one narrative review with no new primary data.",
+     "find": " (PMID 42875857)",
+     "replace": ""
+    },
+    {
+     "id": "R6-P5-03",
+     "module": "R6",
+     "operator": "insert-token",
+     "line": 223,
+     "evidence": [],
+     "original": "- **Reading:** both leave-one-out pools that keep Pan are above Pan alone, because both small trials report effects 2.5-3.5 times larger. Alimoradi lost 39% of its metformin arm and none on placebo and does not describe its imputation. Aiad is a completers analysis whose WOMAC pain SDs (0-20 scale) are 7-10% of the scale range, against 18.5-21% for the pain scores pooled from the other two trials (Pan's VAS pain at baseline; Alimoradi's KOOS pain, 0-100). With k = 2 or 3 the HKSJ intervals are very wide. **The planning value stays at SMD 0.4.**",
+     "mutated": "- **Reading (version 3):** both leave-one-out pools that keep Pan are above Pan alone, because both small trials report effects 2.5-3.5 times larger. Alimoradi lost 39% of its metformin arm and none on placebo and does not describe its imputation. Aiad is a completers analysis whose WOMAC pain SDs (0-20 scale) are 7-10% of the scale range, against 18.5-21% for the pain scores pooled from the other two trials (Pan's VAS pain at baseline; Alimoradi's KOOS pain, 0-100). With k = 2 or 3 the HKSJ intervals are very wide. **The planning value stays at SMD 0.4.**",
+     "find": "**Reading:** both leave-one-out",
+     "replace": "**Reading (version 3):** both leave-one-out"
+    },
+    {
+     "id": "R7-P5-05",
+     "module": "R7",
+     "operator": "add-name",
+     "line": 228,
+     "evidence": [],
+     "original": "  - Pan 2025, four meta-analyses (Chenchula, Guo, Kao, Chen Z), seven RWE studies (Zhu, Lu, Baker, Wang, Kang, Barnett, Dell'Isola) and the AMPK MR study are consistent (`rwe_recheck`); so, checked by hand, are Jiang, Hatano, Haj Shehadeh, Chen S's adjusted and IPTW ratios, and both pooled safety estimates.",
+     "mutated": "  - Pan 2025, four meta-analyses (Chenchula, Guo, Kao, Chen Z), seven RWE studies (Zhu, Lu, Baker, Wang, Kang, Barnett, Dell'Isola) and the AMPK MR study, with Lindqvist 2020, are consistent (`rwe_recheck`); so, checked by hand, are Jiang, Hatano, Haj Shehadeh, Chen S's adjusted and IPTW ratios, and both pooled safety estimates.",
+     "find": "and the AMPK MR study are consistent",
+     "replace": "and the AMPK MR study, with Lindqvist 2020, are consistent"
+    },
+    {
+     "id": "R8-P5-02",
+     "module": "R8",
+     "operator": "weight",
+     "line": 82,
+     "evidence": [
+      75
+     ],
+     "original": "  - **Dose context:** 200 mg/kg is about 2.3 g/day for 70 kg by body-surface-area scaling (our calculation), but given intraperitoneally.",
+     "mutated": "  - **Dose context:** 200 mg/kg is about 2.3 g/day for 60 kg by body-surface-area scaling (our calculation), but given intraperitoneally.",
+     "find": "about 2.3 g/day for 70 kg",
+     "replace": "about 2.3 g/day for 60 kg"
+    }
+   ]
+  },
+  {
+   "file": "P5-copy05.md",
+   "package": "P5",
+   "copy": 5,
+   "sha256": "ab3191f7e974f8ae05190ac54f7e3cf94e1830a084540941cd0462afbcaf3f84",
+   "mutations": [
+    {
+     "id": "R5b-P5-04",
+     "module": "R5b",
+     "operator": "strip-id",
+     "line": 173,
+     "evidence": [
+      163
+     ],
+     "original": "- **Other registered trials:** NCT05638893 (Aiad 2024; completed 2022; no posted results); NCT06231758 (celecoxib and metformin arms, no placebo; phase 3, n = 70, recruiting; primary completion 2026-11); NCT06126029 (metformin ER vs placebo, both added to ibuprofen; primary completion 2024-04, last updated 2023-11, status unknown, no results: a second unreported placebo-controlled trial); NCT06367283 (METRO, hand OA; protocol PMID 40139705; primary completion 2025-12). The remaining three records are a withdrawn placebo-controlled trial (NCT04767841; no participants enrolled), a topical iontophoresis trial (NCT07395895) and an ultrasound-therapy study (NCT07738692).",
+     "mutated": "- **Other registered trials:** NCT05638893 (Aiad 2024; completed 2022; no posted results); NCT06231758 (celecoxib and metformin arms, no placebo; phase 3, n = 70, recruiting; primary completion 2026-11); NCT06126029 (metformin ER vs placebo, both added to ibuprofen; primary completion 2024-04, last updated 2023-11, status unknown, no results: a second unreported placebo-controlled trial); (METRO, hand OA; protocol PMID 40139705; primary completion 2025-12). The remaining three records are a withdrawn placebo-controlled trial (NCT04767841; no participants enrolled), a topical iontophoresis trial (NCT07395895) and an ultrasound-therapy study (NCT07738692).",
+     "find": "; NCT06367283 (METRO",
+     "replace": "; (METRO"
+    },
+    {
+     "id": "R7-P5-02",
+     "module": "R7",
+     "operator": "count+1",
+     "line": 223,
+     "evidence": [],
+     "original": "- **Reading:** both leave-one-out pools that keep Pan are above Pan alone, because both small trials report effects 2.5-3.5 times larger. Alimoradi lost 39% of its metformin arm and none on placebo and does not describe its imputation. Aiad is a completers analysis whose WOMAC pain SDs (0-20 scale) are 7-10% of the scale range, against 18.5-21% for the pain scores pooled from the other two trials (Pan's VAS pain at baseline; Alimoradi's KOOS pain, 0-100). With k = 2 or 3 the HKSJ intervals are very wide. **The planning value stays at SMD 0.4.**",
+     "mutated": "- **Reading:** both leave-one-out pools that keep Pan are above Pan alone, because both small trials report effects 2.5-3.5 times larger. Alimoradi lost 39% of its metformin arm and none on placebo and does not describe its imputation. Aiad is a completers analysis whose WOMAC pain SDs (0-20 scale) are 7-10% of the scale range, against 18.5-21% for the pain scores pooled from the other three trials (Pan's VAS pain at baseline; Alimoradi's KOOS pain, 0-100). With k = 2 or 3 the HKSJ intervals are very wide. **The planning value stays at SMD 0.4.**",
+     "find": "from the other two trials (",
+     "replace": "from the other three trials ("
+    }
+   ]
+  },
+  {
+   "file": "P5-copy06.md",
+   "package": "P5",
+   "copy": 6,
+   "sha256": "3fea4fc485762c6179fcaa256aec1a2746a9f2f338dc5c7a7c6be75f59794abb",
+   "mutations": [
+    {
+     "id": "R5b-P5-01",
+     "module": "R5b",
+     "operator": "strip-id",
+     "line": 173,
+     "evidence": [
+      163
+     ],
+     "original": "- **Other registered trials:** NCT05638893 (Aiad 2024; completed 2022; no posted results); NCT06231758 (celecoxib and metformin arms, no placebo; phase 3, n = 70, recruiting; primary completion 2026-11); NCT06126029 (metformin ER vs placebo, both added to ibuprofen; primary completion 2024-04, last updated 2023-11, status unknown, no results: a second unreported placebo-controlled trial); NCT06367283 (METRO, hand OA; protocol PMID 40139705; primary completion 2025-12). The remaining three records are a withdrawn placebo-controlled trial (NCT04767841; no participants enrolled), a topical iontophoresis trial (NCT07395895) and an ultrasound-therapy study (NCT07738692).",
+     "mutated": "- **Other registered trials:** (Aiad 2024; completed 2022; no posted results); NCT06231758 (celecoxib and metformin arms, no placebo; phase 3, n = 70, recruiting; primary completion 2026-11); NCT06126029 (metformin ER vs placebo, both added to ibuprofen; primary completion 2024-04, last updated 2023-11, status unknown, no results: a second unreported placebo-controlled trial); NCT06367283 (METRO, hand OA; protocol PMID 40139705; primary completion 2025-12). The remaining three records are a withdrawn placebo-controlled trial (NCT04767841; no participants enrolled), a topical iontophoresis trial (NCT07395895) and an ultrasound-therapy study (NCT07738692).",
+     "find": "trials:** NCT05638893 (Aiad 2024;",
+     "replace": "trials:** (Aiad 2024;"
+    },
+    {
+     "id": "R7-P5-03",
+     "module": "R7",
+     "operator": "count+1",
+     "line": 228,
+     "evidence": [],
+     "original": "  - Pan 2025, four meta-analyses (Chenchula, Guo, Kao, Chen Z), seven RWE studies (Zhu, Lu, Baker, Wang, Kang, Barnett, Dell'Isola) and the AMPK MR study are consistent (`rwe_recheck`); so, checked by hand, are Jiang, Hatano, Haj Shehadeh, Chen S's adjusted and IPTW ratios, and both pooled safety estimates.",
+     "mutated": "  - Pan 2025, four meta-analyses (Chenchula, Guo, Kao, Chen Z), eight RWE studies (Zhu, Lu, Baker, Wang, Kang, Barnett, Dell'Isola) and the AMPK MR study are consistent (`rwe_recheck`); so, checked by hand, are Jiang, Hatano, Haj Shehadeh, Chen S's adjusted and IPTW ratios, and both pooled safety estimates.",
+     "find": "seven RWE studies (Zhu",
+     "replace": "eight RWE studies (Zhu"
+    }
+   ]
+  },
+  {
+   "file": "P5-copy07.md",
+   "package": "P5",
+   "copy": 7,
+   "sha256": "dbf9cd1a391f9967f8c65939c6348585cc5492d8961e8b532f96dd4a85ec708b",
+   "mutations": [
+    {
+     "id": "R5b-P5-02",
+     "module": "R5b",
+     "operator": "strip-id",
+     "line": 173,
+     "evidence": [
+      163
+     ],
+     "original": "- **Other registered trials:** NCT05638893 (Aiad 2024; completed 2022; no posted results); NCT06231758 (celecoxib and metformin arms, no placebo; phase 3, n = 70, recruiting; primary completion 2026-11); NCT06126029 (metformin ER vs placebo, both added to ibuprofen; primary completion 2024-04, last updated 2023-11, status unknown, no results: a second unreported placebo-controlled trial); NCT06367283 (METRO, hand OA; protocol PMID 40139705; primary completion 2025-12). The remaining three records are a withdrawn placebo-controlled trial (NCT04767841; no participants enrolled), a topical iontophoresis trial (NCT07395895) and an ultrasound-therapy study (NCT07738692).",
+     "mutated": "- **Other registered trials:** NCT05638893 (Aiad 2024; completed 2022; no posted results); (celecoxib and metformin arms, no placebo; phase 3, n = 70, recruiting; primary completion 2026-11); NCT06126029 (metformin ER vs placebo, both added to ibuprofen; primary completion 2024-04, last updated 2023-11, status unknown, no results: a second unreported placebo-controlled trial); NCT06367283 (METRO, hand OA; protocol PMID 40139705; primary completion 2025-12). The remaining three records are a withdrawn placebo-controlled trial (NCT04767841; no participants enrolled), a topical iontophoresis trial (NCT07395895) and an ultrasound-therapy study (NCT07738692).",
+     "find": "; NCT06231758 (celecoxib",
+     "replace": "; (celecoxib"
+    }
+   ]
+  },
+  {
+   "file": "P5-copy08.md",
+   "package": "P5",
+   "copy": 8,
+   "sha256": "e4279312a1f8308314b2adcb568bd032a419f49015b22bade8a34f28864240ed",
+   "mutations": [
+    {
+     "id": "R5b-P5-07",
+     "module": "R5b",
+     "operator": "strip-id",
+     "line": 172,
+     "evidence": [
+      163
+     ],
+     "original": "  - **On ClinicalTrials.gov, the only placebo-controlled trial of metformin alone in established knee OA with cartilage loss as a primary outcome; no results posted as of 2026-10-20, nearly 22 months after its planned completion.** We assume nothing about its result; it is an evidence gap and a possible source of publication bias. Two other placebo-controlled trials have imaging primary outcomes: PIKASO (NCT06096259; n = 512; MOAKS cartilage score at 24 months, after ACL tear and before radiographic OA) and NCT06328426 (vitamin D plus metformin; ultrasound effusion-synovitis volume).",
+     "mutated": "  - **On ClinicalTrials.gov, the only placebo-controlled trial of metformin alone in established knee OA with cartilage loss as a primary outcome; no results posted as of 2026-10-20, nearly 22 months after its planned completion.** We assume nothing about its result; it is an evidence gap and a possible source of publication bias. Two other placebo-controlled trials have imaging primary outcomes: PIKASO (NCT06096259; n = 512; MOAKS cartilage score at 24 months, after ACL tear and before radiographic OA) and (vitamin D plus metformin; ultrasound effusion-synovitis volume).",
+     "find": "and NCT06328426 (vitamin D",
+     "replace": "and (vitamin D"
+    }
+   ]
+  },
+  {
+   "file": "P5-copy09.md",
+   "package": "P5",
+   "copy": 9,
+   "sha256": "e578a1715d84f7b195e4534ab2082e10285e29e168fc08759662237517f8d1d5",
+   "mutations": [
+    {
+     "id": "R5b-P5-03",
+     "module": "R5b",
+     "operator": "strip-id",
+     "line": 173,
+     "evidence": [
+      163
+     ],
+     "original": "- **Other registered trials:** NCT05638893 (Aiad 2024; completed 2022; no posted results); NCT06231758 (celecoxib and metformin arms, no placebo; phase 3, n = 70, recruiting; primary completion 2026-11); NCT06126029 (metformin ER vs placebo, both added to ibuprofen; primary completion 2024-04, last updated 2023-11, status unknown, no results: a second unreported placebo-controlled trial); NCT06367283 (METRO, hand OA; protocol PMID 40139705; primary completion 2025-12). The remaining three records are a withdrawn placebo-controlled trial (NCT04767841; no participants enrolled), a topical iontophoresis trial (NCT07395895) and an ultrasound-therapy study (NCT07738692).",
+     "mutated": "- **Other registered trials:** NCT05638893 (Aiad 2024; completed 2022; no posted results); NCT06231758 (celecoxib and metformin arms, no placebo; phase 3, n = 70, recruiting; primary completion 2026-11); (metformin ER vs placebo, both added to ibuprofen; primary completion 2024-04, last updated 2023-11, status unknown, no results: a second unreported placebo-controlled trial); NCT06367283 (METRO, hand OA; protocol PMID 40139705; primary completion 2025-12). The remaining three records are a withdrawn placebo-controlled trial (NCT04767841; no participants enrolled), a topical iontophoresis trial (NCT07395895) and an ultrasound-therapy study (NCT07738692).",
+     "find": "; NCT06126029 (metformin ER",
+     "replace": "; (metformin ER"
+    }
+   ]
+  },
+  {
+   "file": "P5-copy10.md",
+   "package": "P5",
+   "copy": 10,
+   "sha256": "5b76591c939b5ead3335b72ed248529e5be4197b25962732efec80cc6086e706",
+   "mutations": [
+    {
+     "id": "R7-P5-01",
+     "module": "R7",
+     "operator": "count+1",
+     "line": 172,
+     "evidence": [
+      163
+     ],
+     "original": "  - **On ClinicalTrials.gov, the only placebo-controlled trial of metformin alone in established knee OA with cartilage loss as a primary outcome; no results posted as of 2026-10-20, nearly 22 months after its planned completion.** We assume nothing about its result; it is an evidence gap and a possible source of publication bias. Two other placebo-controlled trials have imaging primary outcomes: PIKASO (NCT06096259; n = 512; MOAKS cartilage score at 24 months, after ACL tear and before radiographic OA) and NCT06328426 (vitamin D plus metformin; ultrasound effusion-synovitis volume).",
+     "mutated": "  - **On ClinicalTrials.gov, the only placebo-controlled trial of metformin alone in established knee OA with cartilage loss as a primary outcome; no results posted as of 2026-10-20, nearly 22 months after its planned completion.** We assume nothing about its result; it is an evidence gap and a possible source of publication bias. Three other placebo-controlled trials have imaging primary outcomes: PIKASO (NCT06096259; n = 512; MOAKS cartilage score at 24 months, after ACL tear and before radiographic OA) and NCT06328426 (vitamin D plus metformin; ultrasound effusion-synovitis volume).",
+     "find": "Two other placebo-controlled trials",
+     "replace": "Three other placebo-controlled trials"
+    }
+   ]
+  }
+ ],
+ "layout_log": [
+  {
+   "event": "collision",
+   "package": "P4",
+   "module": "R5",
+   "copy": 4,
+   "site": "R5-P4-08",
+   "with": [
+    "R4-P4-02"
+   ]
+  },
+  {
+   "event": "redrawn",
+   "package": "P4",
+   "module": "R5",
+   "copy": 4,
+   "site": "R5-P4-06",
+   "replaces": "R5-P4-08"
+  },
+  {
+   "event": "collision",
+   "package": "P4",
+   "module": "R5b",
+   "copy": 1,
+   "site": "R5b-P4-02",
+   "with": [
+    "R2b-P4-03"
+   ]
+  },
+  {
+   "event": "moved",
+   "package": "P4",
+   "module": "R5b",
+   "copy": 4,
+   "site": "R5b-P4-02"
+  },
+  {
+   "event": "collision",
+   "package": "P4",
+   "module": "R5b",
+   "copy": 2,
+   "site": "R5b-P4-01",
+   "with": [
+    "R2b-P4-02"
+   ]
+  },
+  {
+   "event": "moved",
+   "package": "P4",
+   "module": "R5b",
+   "copy": 5,
+   "site": "R5b-P4-01"
+  },
+  {
+   "event": "collision",
+   "package": "P4",
+   "module": "R5b",
+   "copy": 3,
+   "site": "R5b-P4-03",
+   "with": [
+    "R2b-P4-01"
+   ]
+  },
+  {
+   "event": "new copy",
+   "package": "P4",
+   "copy": 6
+  },
+  {
+   "event": "moved",
+   "package": "P4",
+   "module": "R5b",
+   "copy": 6,
+   "site": "R5b-P4-03"
+  },
+  {
+   "event": "collision",
+   "package": "P4",
+   "module": "R7",
+   "copy": 2,
+   "site": "R7-P4-01",
+   "with": [
+    "R2b-P4-02"
+   ]
+  },
+  {
+   "event": "new copy",
+   "package": "P4",
+   "copy": 7
+  },
+  {
+   "event": "moved",
+   "package": "P4",
+   "module": "R7",
+   "copy": 7,
+   "site": "R7-P4-01"
+  },
+  {
+   "event": "collision",
+   "package": "P4",
+   "module": "R8",
+   "copy": 1,
+   "site": "R8-P4-06",
+   "with": [
+    "R2b-P4-03",
+    "R6-P4-04"
+   ]
+  },
+  {
+   "event": "new copy",
+   "package": "P4",
+   "copy": 8
+  },
+  {
+   "event": "moved",
+   "package": "P4",
+   "module": "R8",
+   "copy": 8,
+   "site": "R8-P4-06"
+  },
+  {
+   "event": "collision",
+   "package": "P4",
+   "module": "R8",
+   "copy": 4,
+   "site": "R8-P4-07",
+   "with": [
+    "R5b-P4-02"
+   ]
+  },
+  {
+   "event": "redrawn",
+   "package": "P4",
+   "module": "R8",
+   "copy": 4,
+   "site": "R8-P4-02",
+   "replaces": "R8-P4-07"
+  },
+  {
+   "event": "collision",
+   "package": "P5",
+   "module": "R4",
+   "copy": 4,
+   "site": "R4-P5-05",
+   "with": [
+    "R2b-P5-01"
+   ]
+  },
+  {
+   "event": "redrawn",
+   "package": "P5",
+   "module": "R4",
+   "copy": 4,
+   "site": "R4-P5-01",
+   "replaces": "R4-P5-05"
+  },
+  {
+   "event": "collision",
+   "package": "P5",
+   "module": "R5",
+   "copy": 2,
+   "site": "R5-P5-02",
+   "with": [
+    "R2b-P5-02"
+   ]
+  },
+  {
+   "event": "redrawn",
+   "package": "P5",
+   "module": "R5",
+   "copy": 2,
+   "site": "R5-P5-08",
+   "replaces": "R5-P5-02"
+  },
+  {
+   "event": "collision",
+   "package": "P5",
+   "module": "R5b",
+   "copy": 1,
+   "site": "R5b-P5-04",
+   "with": [
+    "R2b-P5-04"
+   ]
+  },
+  {
+   "event": "moved",
+   "package": "P5",
+   "module": "R5b",
+   "copy": 5,
+   "site": "R5b-P5-04"
+  },
+  {
+   "event": "collision",
+   "package": "P5",
+   "module": "R5b",
+   "copy": 2,
+   "site": "R5b-P5-01",
+   "with": [
+    "R2b-P5-02"
+   ]
+  },
+  {
+   "event": "moved",
+   "package": "P5",
+   "module": "R5b",
+   "copy": 6,
+   "site": "R5b-P5-01"
+  },
+  {
+   "event": "collision",
+   "package": "P5",
+   "module": "R5b",
+   "copy": 3,
+   "site": "R5b-P5-02",
+   "with": [
+    "R2b-P5-03"
+   ]
+  },
+  {
+   "event": "new copy",
+   "package": "P5",
+   "copy": 7
+  },
+  {
+   "event": "moved",
+   "package": "P5",
+   "module": "R5b",
+   "copy": 7,
+   "site": "R5b-P5-02"
+  },
+  {
+   "event": "collision",
+   "package": "P5",
+   "module": "R5b",
+   "copy": 4,
+   "site": "R5b-P5-07",
+   "with": [
+    "R2b-P5-01"
+   ]
+  },
+  {
+   "event": "new copy",
+   "package": "P5",
+   "copy": 8
+  },
+  {
+   "event": "moved",
+   "package": "P5",
+   "module": "R5b",
+   "copy": 8,
+   "site": "R5b-P5-07"
+  },
+  {
+   "event": "collision",
+   "package": "P5",
+   "module": "R5b",
+   "copy": 5,
+   "site": "R5b-P5-03",
+   "with": [
+    "R5b-P5-04"
+   ]
+  },
+  {
+   "event": "new copy",
+   "package": "P5",
+   "copy": 9
+  },
+  {
+   "event": "moved",
+   "package": "P5",
+   "module": "R5b",
+   "copy": 9,
+   "site": "R5b-P5-03"
+  },
+  {
+   "event": "collision",
+   "package": "P5",
+   "module": "R7",
+   "copy": 3,
+   "site": "R7-P5-01",
+   "with": [
+    "R2b-P5-03"
+   ]
+  },
+  {
+   "event": "new copy",
+   "package": "P5",
+   "copy": 10
+  },
+  {
+   "event": "moved",
+   "package": "P5",
+   "module": "R7",
+   "copy": 10,
+   "site": "R7-P5-01"
+  },
+  {
+   "event": "collision",
+   "package": "P5",
+   "module": "R8",
+   "copy": 4,
+   "site": "R8-P5-06",
+   "with": [
+    "R5-P5-01"
+   ]
+  },
+  {
+   "event": "redrawn",
+   "package": "P5",
+   "module": "R8",
+   "copy": 4,
+   "site": "R8-P5-02",
+   "replaces": "R8-P5-06"
+  }
+ ],
+ "invalid_sites": []
+}

@@ -1,0 +1,357 @@
+{
+ "package": "P5-copy02.md",
+ "checker": "claimcheck 1.0.0",
+ "lines_total": 367,
+ "lines_cut": 367,
+ "flags": [
+  {
+   "module": "R6",
+   "rule": "a",
+   "line": 30,
+   "evidence": [],
+   "span": "v22",
+   "reason": "internal workflow label in judge-facing text",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 38,
+   "evidence": [],
+   "span": "The ACR 2026",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R3",
+   "rule": "no-ci",
+   "line": 49,
+   "evidence": [],
+   "span": "no difference",
+   "reason": "no-difference wording in a clause with no CI",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 61,
+   "evidence": [],
+   "span": "The ACR 2026",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R8",
+   "rule": "total",
+   "line": 75,
+   "evidence": [],
+   "span": "200 -> 1.1",
+   "reason": "dose x factor x weight is more than 10% off the total",
+   "data": {
+    "dose": 200.0,
+    "factor": 0.08108108108108109,
+    "weight": 60.0,
+    "total_mg": 1100.0
+   },
+   "scored": true
+  },
+  {
+   "module": "R8",
+   "rule": "weight",
+   "line": 82,
+   "evidence": [
+    75
+   ],
+   "span": "70 kg",
+   "reason": "conversions in one package use different body weights",
+   "data": {
+    "weights": [
+     60.0,
+     70.0
+    ]
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-ambiguous",
+   "line": 111,
+   "evidence": [
+    321,
+    324
+   ],
+   "span": "Chen 2026",
+   "reason": "author-year matches 2 references",
+   "data": {
+    "keys": [
+     "4",
+     "7"
+    ]
+   },
+   "scored": true
+  },
+  {
+   "module": "R1b",
+   "rule": "a",
+   "line": 140,
+   "evidence": [],
+   "span": "23.0 (-40.4 to -5.7",
+   "reason": "estimate lies outside its own interval",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R2b",
+   "rule": "count",
+   "line": 163,
+   "evidence": [
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173
+   ],
+   "span": "11 records",
+   "reason": "stated count 11, distinct in-scope registry IDs 10",
+   "data": {
+    "stated": 11,
+    "in_scope": [
+     "NCT04767841",
+     "NCT05034029",
+     "NCT05638893",
+     "NCT06126029",
+     "NCT06231758",
+     "NCT06328426",
+     "NCT06367283",
+     "NCT07065591",
+     "NCT07395895",
+     "NCT07738692"
+    ],
+    "out_of_scope": [
+     "ChiCTR2500107918"
+    ]
+   },
+   "scored": true
+  },
+  {
+   "module": "R2b",
+   "rule": "count",
+   "line": 172,
+   "evidence": [],
+   "span": "Two other placebo-controlled trials",
+   "reason": "stated count 2, distinct in-scope registry IDs 1",
+   "data": {
+    "stated": 2,
+    "in_scope": [
+     "NCT06328426"
+    ],
+    "out_of_scope": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R1",
+   "rule": "twin",
+   "line": 218,
+   "evidence": [
+    50
+   ],
+   "span": "0.97 (0.38 to 1.57",
+   "reason": "CI tuple shares two values with line 50 but its first bound differs",
+   "data": {
+    "earlier": "0.97 (0.36-1.57",
+    "later": "0.97 (0.38 to 1.57"
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 226,
+   "evidence": [],
+   "span": "Tanabe 2021",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 226,
+   "evidence": [],
+   "span": "Georgescu",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 226,
+   "evidence": [],
+   "span": "Tanabe",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Chen",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Chenchula",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Guo",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Haj Shehadeh",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Hatano",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 228,
+   "evidence": [],
+   "span": "Jiang",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 248,
+   "evidence": [],
+   "span": "Shi S 2018",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 252,
+   "evidence": [],
+   "span": "Shi S 2018",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 252,
+   "evidence": [],
+   "span": "Zhang C 2022",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R4",
+   "rule": "b",
+   "line": 253,
+   "evidence": [],
+   "span": "published",
+   "reason": "status claim with no as-of anchor in scope",
+   "data": {},
+   "scored": true
+  }
+ ],
+ "counts": {
+  "R6": 1,
+  "R5": 7,
+  "R3": 1,
+  "R8": 2,
+  "R1b": 1,
+  "R2b": 2,
+  "R1": 1,
+  "R7": 8,
+  "R4": 1
+ },
+ "scored": 24,
+ "info": 0,
+ "runtime_seconds": 0.482
+}

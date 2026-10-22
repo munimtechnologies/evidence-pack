@@ -1,0 +1,254 @@
+{
+ "package": "P4-copy01.md",
+ "checker": "claimcheck 1.0.0",
+ "lines_total": 227,
+ "lines_cut": 227,
+ "flags": [
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 34,
+   "evidence": [],
+   "span": "The 2021",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R2",
+   "rule": "no-predicate",
+   "line": 45,
+   "evidence": [],
+   "span": "eight of nine",
+   "reason": "N-of-M with no fixed predicate: out of scope",
+   "data": {},
+   "scored": false
+  },
+  {
+   "module": "R2",
+   "rule": "range",
+   "line": 45,
+   "evidence": [
+    102,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112
+   ],
+   "span": "0.77-0.84",
+   "reason": "range claim fails in every candidate column",
+   "data": {
+    "columns": [
+     [
+      0,
+      3,
+      "Remission HR (95% CI)"
+     ],
+     [
+      0,
+      4,
+      "Intoxication, spiro vs comparator"
+     ],
+     [
+      0,
+      5,
+      "Intoxication HR (95% CI)"
+     ]
+    ]
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 63,
+   "evidence": [],
+   "span": "The 2023",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R6",
+   "rule": "b-no-plan",
+   "line": 81,
+   "evidence": [],
+   "span": "pre-registered",
+   "reason": "'pre-registered' with no plan file cited",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R3",
+   "rule": "ci-includes-null",
+   "line": 87,
+   "evidence": [],
+   "span": "no difference",
+   "reason": "directional wording beside a CI that includes the null",
+   "data": {
+    "ci": "0.12 (-0.56 to 0.81",
+    "null": 0
+   },
+   "scored": true
+  },
+  {
+   "module": "R1b",
+   "rule": "a",
+   "line": 94,
+   "evidence": [],
+   "span": "-0.17 (0.09-0.25",
+   "reason": "estimate lies outside its own interval",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 134,
+   "evidence": [],
+   "span": "Okafor 2019",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-count",
+   "line": 134,
+   "evidence": [],
+   "span": "5",
+   "reason": "stated count matches no count of the job file",
+   "data": {
+    "tool": "rwe_recheck",
+    "stated": 5,
+    "file_counts": [
+     0,
+     27
+    ]
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 134,
+   "evidence": [],
+   "span": "Georgescu",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 134,
+   "evidence": [],
+   "span": "Okafor",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R1",
+   "rule": "twin",
+   "line": 147,
+   "evidence": [
+    88
+   ],
+   "span": "-4.18, 95% CI -5.38 to -2.97",
+   "reason": "CI tuple shares two values with line 88 but its second bound differs",
+   "data": {
+    "earlier": "-4.18 (-5.38 to -2.91",
+    "later": "-4.18, 95% CI -5.38 to -2.97"
+   },
+   "scored": true
+  },
+  {
+   "module": "R2b",
+   "rule": "count",
+   "line": 160,
+   "evidence": [],
+   "span": "2 trials,",
+   "reason": "stated count 2, distinct in-scope registry IDs 1",
+   "data": {
+    "stated": 2,
+    "in_scope": [
+     "NCT05807139"
+    ],
+    "out_of_scope": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R4",
+   "rule": "b",
+   "line": 161,
+   "evidence": [],
+   "span": "posted",
+   "reason": "status claim with no as-of anchor in scope",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R4",
+   "rule": "b",
+   "line": 161,
+   "evidence": [],
+   "span": "registered",
+   "reason": "status claim with no as-of anchor in scope",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R6",
+   "rule": "a",
+   "line": 164,
+   "evidence": [],
+   "span": "gate 7",
+   "reason": "internal workflow label in judge-facing text",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "never-cited",
+   "line": 215,
+   "evidence": [],
+   "span": "[18]",
+   "reason": "reference is never cited in the text",
+   "data": {},
+   "scored": true
+  }
+ ],
+ "counts": {
+  "R5": 4,
+  "R2": 1,
+  "R6": 2,
+  "R3": 1,
+  "R1b": 1,
+  "R7": 3,
+  "R1": 1,
+  "R2b": 1,
+  "R4": 2
+ },
+ "scored": 16,
+ "info": 1,
+ "runtime_seconds": 0.403
+}

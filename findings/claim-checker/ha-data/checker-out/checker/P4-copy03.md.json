@@ -1,0 +1,247 @@
+{
+ "package": "P4-copy03.md",
+ "checker": "claimcheck 1.0.0",
+ "lines_total": 227,
+ "lines_cut": 227,
+ "flags": [
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 34,
+   "evidence": [],
+   "span": "The 2021",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R4",
+   "rule": "b",
+   "line": 36,
+   "evidence": [],
+   "span": "registered",
+   "reason": "status claim with no as-of anchor in scope",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R2",
+   "rule": "no-predicate",
+   "line": 45,
+   "evidence": [],
+   "span": "eight of nine",
+   "reason": "N-of-M with no fixed predicate: out of scope",
+   "data": {},
+   "scored": false
+  },
+  {
+   "module": "R2",
+   "rule": "range",
+   "line": 45,
+   "evidence": [
+    102,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112
+   ],
+   "span": "4.4-7.9%",
+   "reason": "range claim fails in every candidate column",
+   "data": {
+    "columns": [
+     [
+      0,
+      2,
+      "Remission, spiro vs comparator"
+     ],
+     [
+      0,
+      3,
+      "Remission HR (95% CI)"
+     ]
+    ]
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "author-year-none",
+   "line": 63,
+   "evidence": [],
+   "span": "The 2023",
+   "reason": "author-year matches 0 references",
+   "data": {
+    "keys": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R8",
+   "rule": "total",
+   "line": 65,
+   "evidence": [],
+   "span": "25 -> 240",
+   "reason": "dose x factor x weight is more than 10% off the total",
+   "data": {
+    "dose": 25.0,
+    "factor": 0.16216216216216217,
+    "weight": 70.0,
+    "total_mg": 240.0
+   },
+   "scored": true
+  },
+  {
+   "module": "R8",
+   "rule": "total",
+   "line": 65,
+   "evidence": [],
+   "span": "50 -> 240",
+   "reason": "dose x factor x weight is more than 10% off the total",
+   "data": {
+    "dose": 50.0,
+    "factor": 0.08108108108108109,
+    "weight": 70.0,
+    "total_mg": 240.0
+   },
+   "scored": true
+  },
+  {
+   "module": "R8",
+   "rule": "total",
+   "line": 65,
+   "evidence": [],
+   "span": "50 -> 490",
+   "reason": "dose x factor x weight is more than 10% off the total",
+   "data": {
+    "dose": 50.0,
+    "factor": 0.16216216216216217,
+    "weight": 70.0,
+    "total_mg": 490.0
+   },
+   "scored": true
+  },
+  {
+   "module": "R6",
+   "rule": "b-no-plan",
+   "line": 81,
+   "evidence": [],
+   "span": "pre-registered",
+   "reason": "'pre-registered' with no plan file cited",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R6",
+   "rule": "a",
+   "line": 114,
+   "evidence": [],
+   "span": "run 128",
+   "reason": "internal workflow label in judge-facing text",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-count",
+   "line": 134,
+   "evidence": [],
+   "span": "5",
+   "reason": "stated count matches no count of the job file",
+   "data": {
+    "tool": "rwe_recheck",
+    "stated": 5,
+    "file_counts": [
+     0,
+     27
+    ]
+   },
+   "scored": true
+  },
+  {
+   "module": "R7",
+   "rule": "b-name",
+   "line": 134,
+   "evidence": [],
+   "span": "Georgescu",
+   "reason": "name absent from the job file's labels",
+   "data": {
+    "tool": "rwe_recheck",
+    "file": "recheck.json"
+   },
+   "scored": true
+  },
+  {
+   "module": "R1",
+   "rule": "twin",
+   "line": 147,
+   "evidence": [
+    86
+   ],
+   "span": "-0.79, CI -1.43 to -0.11",
+   "reason": "CI tuple shares two values with line 86 but its estimate differs",
+   "data": {
+    "earlier": "-0.76 drinks a week (95% CI -1.43 to -0.11",
+    "later": "-0.79, CI -1.43 to -0.11"
+   },
+   "scored": true
+  },
+  {
+   "module": "R1b",
+   "rule": "a",
+   "line": 153,
+   "evidence": [],
+   "span": "0.52 (-0.76 to -0.27",
+   "reason": "estimate lies outside its own interval",
+   "data": {},
+   "scored": true
+  },
+  {
+   "module": "R2b",
+   "rule": "count",
+   "line": 160,
+   "evidence": [],
+   "span": "3 trials,",
+   "reason": "stated count 3, distinct in-scope registry IDs 2",
+   "data": {
+    "stated": 3,
+    "in_scope": [
+     "NCT05807139",
+     "NCT06004830"
+    ],
+    "out_of_scope": []
+   },
+   "scored": true
+  },
+  {
+   "module": "R5",
+   "rule": "never-cited",
+   "line": 208,
+   "evidence": [],
+   "span": "[11]",
+   "reason": "reference is never cited in the text",
+   "data": {},
+   "scored": true
+  }
+ ],
+ "counts": {
+  "R5": 3,
+  "R4": 1,
+  "R2": 1,
+  "R8": 3,
+  "R6": 2,
+  "R7": 2,
+  "R1": 1,
+  "R1b": 1,
+  "R2b": 1
+ },
+ "scored": 15,
+ "info": 1,
+ "runtime_seconds": 0.411
+}

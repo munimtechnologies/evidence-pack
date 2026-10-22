@@ -1,0 +1,16 @@
+{
+  "name": "ha-repro-v1",
+  "kind": "poc",
+  "workdir": "E:/MV2-Pursuit/work/20261022T124834Z-medicine/compete/ha-repro",
+  "image": "python:3.12",
+  "setup": ["python fetch_public.py"],
+  "run": [
+    "python -m unittest -v test_check_repro",
+    "python check_repro.py --pub pub --out /out"
+  ],
+  "network": true,
+  "data_urls": [],
+  "cpu": 1,
+  "memory_gb": 1,
+  "timeout_minutes": 40
+}
