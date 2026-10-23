@@ -1,0 +1,64 @@
+{
+ "contract": "mv2-compete-result-v1",
+ "name": "ccdi-paging-v1",
+ "id": "cb804119d5b7",
+ "field": "medicine",
+ "run": "20261023T181203Z-medicine",
+ "kind": "compete",
+ "status": "ok",
+ "reason": "",
+ "host": "blade",
+ "image": "python:3.12",
+ "started_at": "2026-10-23T18:48:12.639632+00:00",
+ "finished_at": "2026-10-23T18:50:44.305371+00:00",
+ "duration_seconds": 151,
+ "limits": {
+  "cpu": 1.0,
+  "memory_gb": 2.0,
+  "timeout_minutes": 360.0
+ },
+ "peak_memory_gb": null,
+ "network": {
+  "setup": true,
+  "run": true
+ },
+ "steps": [
+  {
+   "step": "setup-01-python",
+   "cmd": "python get_code.py",
+   "exit": 0,
+   "seconds": 2
+  },
+  {
+   "step": "setup-02-python",
+   "cmd": "python -m unittest -v test_linkcheck test_paging test_ccdi_pages",
+   "exit": 0,
+   "seconds": 0
+  },
+  {
+   "step": "setup-03-python",
+   "cmd": "python ensure_snapshot.py /data/ccdi-raw-snapshot2",
+   "exit": 0,
+   "seconds": 0
+  },
+  {
+   "step": "run-01-python",
+   "cmd": "python ccdi_pages.py --raw /data/ccdi-raw-snapshot2 --fallback-raw raw --out /out",
+   "exit": 0,
+   "seconds": 3
+  }
+ ],
+ "out_files": [
+  "paging-audit.json"
+ ],
+ "out_files_total": 1,
+ "out_skipped": [],
+ "upload_skipped": [],
+ "summary_tail": "[run-01-python stdout] al\": 38440,\n      \"unexplained\": 0\n     },\n     \"PCDC\": {\n      \"errors_past_end\": 0,\n      \"lost\": 100,\n      \"not_judged\": 0,\n      \"served\": 24332,\n      \"total\": 24432,\n      \"unexplained\": 0\n     },\n     \"StJude\": {\n      \"errors_past_end\": 0,\n      \"lost\": 0,\n      \"not_judged\": 0,\n      \"served\": 14681,\n      \"total\": 14681,\n      \"unexplained\": 0\n     },\n     \"Treehouse\": {\n      \"errors_past_end\": 0,\n      \"lost\": 0,\n      \"not_judged\": 0,\n      \"served\": 12723,\n      \"total\": 12723,\n      \"unexplained\": 0\n     },\n     \"ccdi-ecDNA\": {\n      \"errors_past_end\": 0,\n      \"lost\": 0,\n      \"not_judged\": 0,\n      \"served\": 3205,\n      \"total\": 3205,\n      \"unexplained\": 0\n     },\n     \"ccdi-iusccc-pst\": {\n      \"errors_past_end\": 0,\n      \"lost\": 0,\n      \"not_judged\": 0,\n      \"served\": 504,\n      \"total\": 504,\n      \"unexplained\": 0\n     }\n    },\n    \"unmapped\": 0\n   }\n  },\n  \"Q5\": {\n   \"grade\": \"pass\",\n   \"observed\": {\n    \"mapping_flags\": 1,\n    \"not_flagged_on_subject\": [],\n    \"vacuous\": false\n   }\n  },\n  \"Q6\": {\n   \"grade\": \"pass\",\n   \"observed\": {\n    \"unexplained_not_zero\": {\n     \"mapping\": {},\n     \"subject\": {}\n    }\n   }\n  }\n },\n \"snapshot\": \"kept second snapshot\"\n}\n",
+ "paths": {
+  "workdir": "/work (copy of E:\\MV2-Pursuit\\work\\20261023T181203Z-medicine\\compete\\paging-audit)",
+  "out": "/out -> out/",
+  "data": "/data (docker volume mv2c-data-ccdi-raw, kept for later jobs)"
+ },
+ "note": ""
+}

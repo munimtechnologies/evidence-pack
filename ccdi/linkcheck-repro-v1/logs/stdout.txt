@@ -1,0 +1,1168 @@
+===== setup-01-python: python get_code.py
+v0.5.5/ccdi/concordance-v1/analyze.py 20808 bytes sha256 aa22639f75436c099c339191d5b92ee2b3e2f3a79a8ed6273b6693044ba4fca6
+v0.5.5/ccdi/concordance-v1/fetch_ccdi.py 7364 bytes sha256 479b79aecbeaa9481e1fb16bed26b8fde47edcde671ecdd0dca8bdc075ec8214
+v0.6.0/linkcheck/linkcheck/__init__.py 327 bytes sha256 7f05d67603cdd1dfeef8d75fbe5db95813f573c8e097241c1857aebff45c3941
+v0.6.0/linkcheck/linkcheck/core.py 15848 bytes sha256 75f4bd55106ae7887765a7c0573cf086c56942dc6e27f84cb8c36ced5a3652f2
+v0.6.0/linkcheck/linkcheck/__main__.py 2017 bytes sha256 709e0513dc5de1788aa67b68d0ca8f3d2ac391c1c689fac15ddca4eff31f9498
+v0.6.0/ccdi/linkcheck-repro-v1/repro.py 10550 bytes sha256 b53935df43517aeaf59e94544cb9b4e5972e11e7bbaf896ead9726f592ce7802
+v0.6.0/ccdi/linkcheck-repro-v1/test_repro.py 8141 bytes sha256 6fc40816dfb713d793e688a8ca24f9984ddb115399528b51b17f546b8769a306
+v0.6.0/ccdi/linkcheck-repro-v1/ensure_snapshot.py 1082 bytes sha256 5324f6a69b17625fe9d7f18619f2026dee210b6af426e35c733c5ce71e473fb6
+
+===== setup-02-python: python -m unittest -v test_repro
+{
+ "grades": {
+  "P1": {
+   "grade": "pass",
+   "observed": {
+    "census_subjects": 7,
+    "linkcheck_records": 7,
+    "repeated_records": 0
+   }
+  },
+  "P2": {
+   "grade": "pass",
+   "observed": {
+    "census_only": 0,
+    "census_pairs": 2,
+    "linkcheck_only": 0,
+    "linkcheck_pairs": 2
+   }
+  },
+  "P3": {
+   "grade": "pass",
+   "observed": {
+    "census": {
+     "linked_persons": 2,
+     "naive_overcount": 2,
+     "persons": 5,
+     "records_in_links": 4
+    },
+    "linkcheck": {
+     "linked_persons": 2,
+     "naive_overcount": 2,
+     "persons": 5,
+     "records_in_links": 4
+    }
+   }
+  },
+  "P4": {
+   "grade": "pass",
+   "observed": {
+    "all_equal": true,
+    "source_pairs": 2,
+    "source_pairs_differing": []
+   }
+  },
+  "P5": {
+   "grade": "not graded",
+   "why": "fresh snapshot: the stage-2 numbers belong to snapshot 2"
+  },
+  "P6": {
+   "grade": "not graded",
+   "why": "fresh snapshot: the stage-2 numbers belong to snapshot 2"
+  }
+ },
+ "snapshot": "fresh snapshot taken by this job"
+}
+{
+ "grades": {
+  "P1": {
+   "grade": "pass",
+   "observed": {
+    "census_subjects": 7,
+    "linkcheck_records": 7,
+    "repeated_records": 0
+   }
+  },
+  "P2": {
+   "grade": "pass",
+   "observed": {
+    "census_only": 0,
+    "census_pairs": 2,
+    "linkcheck_only": 0,
+    "linkcheck_pairs": 2
+   }
+  },
+  "P3": {
+   "grade": "pass",
+   "observed": {
+    "census": {
+     "linked_persons": 2,
+     "naive_overcount": 2,
+     "persons": 5,
+     "records_in_links": 4
+    },
+    "linkcheck": {
+     "linked_persons": 2,
+     "naive_overcount": 2,
+     "persons": 5,
+     "records_in_links": 4
+    }
+   }
+  },
+  "P4": {
+   "grade": "pass",
+   "observed": {
+    "all_equal": true,
+    "source_pairs": 2,
+    "source_pairs_differing": []
+   }
+  },
+  "P5": {
+   "grade": "fail",
+   "observed": {
+    "extra_disagree": {
+     "ethnicity": 0,
+     "race": 0,
+     "sex": 2
+    },
+    "overcount_with_rules": {
+     "linked_persons": 2,
+     "naive_overcount": 4,
+     "persons": 3,
+     "records_in_links": 6
+    },
+    "pairs_added_by_rule": {
+     "alt_id": 1,
+     "suffix": 1
+    },
+    "pairs_with_rules": 4
+   }
+  },
+  "P6": {
+   "grade": "fail",
+   "observed": {
+    "linked_persons": 2,
+    "naive_overcount": 2,
+    "pairs_exact": 2,
+    "persons": 5,
+    "records": 7,
+    "records_in_links": 4
+   }
+  }
+ },
+ "snapshot": "kept second snapshot"
+}
+
+===== setup-03-python: python ensure_snapshot.py /data/ccdi-raw-snapshot2
+kept snapshot not found under /data/ccdi-raw-snapshot2; taking a fresh snapshot
+fed/subject-summary.json 200 349 bytes 2.5 s
+fed/count-sex.json 200 961 bytes 3.1 s
+fed/count-race.json 200 2089 bytes 3.0 s
+fed/count-ethnicity.json 200 1193 bytes 3.8 s
+fed/count-vital_status.json 200 1075 bytes 12.3 s
+fed/count-age_at_vital_status.json 200 331408 bytes 2.4 s
+fed/count-depositions.json 200 2402 bytes 0.6 s
+fed/info.json 200 4381 bytes 0.4 s
+gdc/cases-00000.json 200 1917707 bytes 4.1 s
+gdc/cases-05000.json 200 618212 bytes 1.5 s
+subject/probe-1000.json 200 6051453 bytes 11.4 s
+subject/probe-500.json 200 3648441 bytes 9.8 s
+subject/probe-250.json 200 1844414 bytes 9.8 s
+subject/probe-100.json 200 760472 bytes 8.0 s
+subject/page-0002.json 200 770028 bytes 8.4 s
+subject/page-0003.json 200 769169 bytes 8.2 s
+subject/page-0004.json 200 773341 bytes 8.2 s
+subject/page-0005.json 200 769953 bytes 7.7 s
+subject/page-0006.json 200 640264 bytes 73.4 s
+subject/page-0007.json 200 678053 bytes 74.2 s
+subject/page-0008.json 200 684438 bytes 9.4 s
+subject/page-0009.json 200 688454 bytes 7.5 s
+subject/page-0010.json 200 682227 bytes 8.0 s
+subject/page-0011.json 200 678139 bytes 8.3 s
+subject/page-0012.json 200 679407 bytes 7.5 s
+subject/page-0013.json 200 690520 bytes 8.0 s
+subject/page-0014.json 200 696412 bytes 9.2 s
+subject/page-0015.json 200 699752 bytes 8.0 s
+subject/page-0016.json 200 694673 bytes 8.4 s
+subject/page-0017.json 200 720897 bytes 7.5 s
+subject/page-0018.json 200 716544 bytes 74.7 s
+subject/page-0019.json 200 713287 bytes 9.1 s
+subject/page-0020.json 200 712882 bytes 8.3 s
+subject/page-0021.json 200 706558 bytes 7.9 s
+subject/page-0022.json 200 688128 bytes 8.2 s
+subject/page-0023.json 200 686944 bytes 9.6 s
+subject/page-0024.json 200 686641 bytes 8.2 s
+subject/page-0025.json 200 694311 bytes 8.7 s
+subject/page-0026.json 200 695531 bytes 8.8 s
+subject/page-0027.json 200 696348 bytes 8.5 s
+subject/page-0028.json 200 697238 bytes 8.0 s
+subject/page-0029.json 200 694596 bytes 7.8 s
+subject/page-0030.json 200 692053 bytes 7.8 s
+subject/page-0031.json 200 691143 bytes 8.5 s
+subject/page-0032.json 200 688104 bytes 8.8 s
+subject/page-0033.json 200 649574 bytes 7.7 s
+subject/page-0034.json 200 646704 bytes 8.8 s
+subject/page-0035.json 200 473425 bytes 8.9 s
+subject/page-0036.json 200 649286 bytes 8.9 s
+subject/page-0037.json 200 666833 bytes 8.3 s
+subject/page-0038.json 200 681371 bytes 7.3 s
+subject/page-0039.json 200 673281 bytes 8.6 s
+subject/page-0040.json 200 658191 bytes 8.3 s
+subject/page-0041.json 200 669361 bytes 8.1 s
+subject/page-0042.json 200 656161 bytes 7.7 s
+subject/page-0043.json 200 657494 bytes 7.5 s
+subject/page-0044.json 200 656294 bytes 8.3 s
+subject/page-0045.json 200 655086 bytes 8.1 s
+subject/page-0046.json 200 655379 bytes 7.5 s
+subject/page-0047.json 200 657626 bytes 8.2 s
+subject/page-0048.json 200 657393 bytes 8.6 s
+subject/page-0049.json 200 654780 bytes 7.6 s
+subject/page-0050.json 200 653662 bytes 8.2 s
+subject/page-0051.json 200 659291 bytes 20.8 s
+subject/page-0052.json 200 655135 bytes 8.9 s
+subject/page-0053.json 200 667098 bytes 6.9 s
+subject/page-0054.json 200 673278 bytes 8.8 s
+subject/page-0055.json 200 657230 bytes 9.6 s
+subject/page-0056.json 200 660094 bytes 8.5 s
+subject/page-0057.json 200 653567 bytes 8.6 s
+subject/page-0058.json 200 654337 bytes 8.0 s
+subject/page-0059.json 200 656830 bytes 8.8 s
+subject/page-0060.json 200 659753 bytes 9.2 s
+subject/page-0061.json 200 657452 bytes 8.7 s
+subject/page-0062.json 200 658538 bytes 8.5 s
+subject/page-0063.json 200 659110 bytes 8.2 s
+subject/page-0064.json 200 662247 bytes 7.8 s
+subject/page-0065.json 200 660776 bytes 8.0 s
+subject/page-0066.json 200 662207 bytes 7.6 s
+subject/page-0067.json 200 663427 bytes 8.3 s
+subject/page-0068.json 200 671302 bytes 7.9 s
+subject/page-0069.json 200 662347 bytes 8.3 s
+subject/page-0070.json 200 665025 bytes 9.0 s
+subject/page-0071.json 200 670055 bytes 8.2 s
+subject/page-0072.json 200 664731 bytes 8.0 s
+subject/page-0073.json 200 670445 bytes 9.4 s
+subject/page-0074.json 200 670789 bytes 7.9 s
+subject/page-0075.json 200 669345 bytes 7.9 s
+subject/page-0076.json 200 679600 bytes 7.5 s
+subject/page-0077.json 200 676226 bytes 8.6 s
+subject/page-0078.json 200 646577 bytes 8.7 s
+subject/page-0079.json 200 649661 bytes 8.3 s
+subject/page-0080.json 200 648685 bytes 8.7 s
+subject/page-0081.json 200 647477 bytes 8.1 s
+subject/page-0082.json 200 650781 bytes 9.0 s
+subject/page-0083.json 200 646628 bytes 7.8 s
+subject/page-0084.json 200 645674 bytes 8.5 s
+subject/page-0085.json 200 651543 bytes 8.4 s
+subject/page-0086.json 200 658498 bytes 8.5 s
+subject/page-0087.json 200 646988 bytes 8.7 s
+subject/page-0088.json 200 645332 bytes 9.4 s
+subject/page-0089.json 200 645261 bytes 8.3 s
+subject/page-0090.json 200 641525 bytes 8.4 s
+subject/page-0091.json 200 649499 bytes 8.0 s
+subject/page-0092.json 200 651793 bytes 8.3 s
+subject/page-0093.json 200 648760 bytes 8.4 s
+subject/page-0094.json 200 657567 bytes 9.5 s
+subject/page-0095.json 200 650624 bytes 6.4 s
+subject/page-0096.json 200 648920 bytes 8.3 s
+subject/page-0097.json 200 644528 bytes 8.5 s
+subject/page-0098.json 200 655524 bytes 8.0 s
+subject/page-0099.json 200 641187 bytes 7.4 s
+subject/page-0100.json 200 639630 bytes 9.2 s
+subject/page-0101.json 200 640592 bytes 8.4 s
+subject/page-0102.json 200 647466 bytes 8.1 s
+subject/page-0103.json 200 656352 bytes 7.1 s
+subject/page-0104.json 200 673118 bytes 8.6 s
+subject/page-0105.json 200 644247 bytes 9.0 s
+subject/page-0106.json 200 646067 bytes 8.2 s
+subject/page-0107.json 200 645064 bytes 7.7 s
+subject/page-0108.json 200 643412 bytes 10.1 s
+subject/page-0109.json 200 644145 bytes 9.0 s
+subject/page-0110.json 200 648959 bytes 8.3 s
+subject/page-0111.json 200 645112 bytes 17.5 s
+subject/page-0112.json 200 646299 bytes 8.6 s
+subject/page-0113.json 200 644437 bytes 8.1 s
+subject/page-0114.json 200 651505 bytes 7.8 s
+subject/page-0115.json 200 645469 bytes 9.0 s
+subject/page-0116.json 200 643642 bytes 9.2 s
+subject/page-0117.json 200 639572 bytes 8.8 s
+subject/page-0118.json 200 644954 bytes 8.1 s
+subject/page-0119.json 200 648846 bytes 8.1 s
+subject/page-0120.json 200 645267 bytes 8.3 s
+subject/page-0121.json 200 643576 bytes 8.3 s
+subject/page-0122.json 200 648199 bytes 7.8 s
+subject/page-0123.json 200 646967 bytes 8.9 s
+subject/page-0124.json 200 644935 bytes 7.8 s
+subject/page-0125.json 200 643458 bytes 8.6 s
+subject/page-0126.json 200 648978 bytes 8.2 s
+subject/page-0127.json 200 643677 bytes 8.1 s
+subject/page-0128.json 200 580101 bytes 8.3 s
+subject/page-0129.json 200 553519 bytes 7.8 s
+subject/page-0130.json 200 556738 bytes 8.2 s
+subject/page-0131.json 200 555971 bytes 8.1 s
+subject/page-0132.json 200 558660 bytes 9.6 s
+subject/page-0133.json 200 552004 bytes 7.6 s
+subject/page-0134.json 200 561131 bytes 8.2 s
+subject/page-0135.json 200 559452 bytes 8.3 s
+subject/page-0136.json 200 559198 bytes 8.8 s
+subject/page-0137.json 200 556477 bytes 7.7 s
+subject/page-0138.json 200 557258 bytes 8.3 s
+subject/page-0139.json 200 561579 bytes 7.9 s
+subject/page-0140.json 200 561227 bytes 8.6 s
+subject/page-0141.json 200 559933 bytes 8.4 s
+subject/page-0142.json 200 561587 bytes 8.3 s
+subject/page-0143.json 200 561406 bytes 8.4 s
+subject/page-0144.json 200 561988 bytes 9.1 s
+subject/page-0145.json 200 579309 bytes 9.8 s
+subject/page-0146.json 200 569314 bytes 8.5 s
+subject/page-0147.json 200 545924 bytes 8.6 s
+subject/page-0148.json 200 348269 bytes 8.1 s
+subject/page-0149.json 200 347147 bytes 7.2 s
+subject/page-0150.json 200 343710 bytes 8.5 s
+subject/page-0151.json 200 339777 bytes 7.6 s
+subject/page-0152.json 200 343075 bytes 9.0 s
+subject/page-0153.json 200 339979 bytes 8.8 s
+subject/page-0154.json 200 339727 bytes 7.3 s
+subject/page-0155.json 200 338276 bytes 8.0 s
+subject/page-0156.json 200 338407 bytes 7.5 s
+subject/page-0157.json 200 340722 bytes 7.5 s
+subject/page-0158.json 200 340526 bytes 8.4 s
+subject/page-0159.json 200 339788 bytes 7.6 s
+subject/page-0160.json 200 343247 bytes 18.7 s
+subject/page-0161.json 200 337640 bytes 8.4 s
+subject/page-0162.json 200 344595 bytes 8.6 s
+subject/page-0163.json 200 340568 bytes 7.8 s
+subject/page-0164.json 200 340617 bytes 8.1 s
+subject/page-0165.json 200 342668 bytes 9.1 s
+subject/page-0166.json 200 342646 bytes 7.7 s
+subject/page-0167.json 200 341582 bytes 9.1 s
+subject/page-0168.json 200 342759 bytes 7.8 s
+subject/page-0169.json 200 340981 bytes 9.0 s
+subject/page-0170.json 200 343624 bytes 8.2 s
+subject/page-0171.json 200 344039 bytes 8.3 s
+subject/page-0172.json 200 345388 bytes 7.1 s
+subject/page-0173.json 200 345281 bytes 8.8 s
+subject/page-0174.json 200 347031 bytes 9.2 s
+subject/page-0175.json 200 347237 bytes 8.0 s
+subject/page-0176.json 200 347393 bytes 8.3 s
+subject/page-0177.json 200 347544 bytes 8.3 s
+subject/page-0178.json 200 347282 bytes 8.6 s
+subject/page-0179.json 200 347128 bytes 8.0 s
+subject/page-0180.json 200 347124 bytes 8.4 s
+subject/page-0181.json 200 346351 bytes 9.0 s
+subject/page-0182.json 200 346808 bytes 8.3 s
+subject/page-0183.json 200 346699 bytes 9.1 s
+subject/page-0184.json 200 346780 bytes 8.2 s
+subject/page-0185.json 200 345646 bytes 8.2 s
+subject/page-0186.json 200 345485 bytes 8.3 s
+subject/page-0187.json 200 346127 bytes 7.7 s
+subject/page-0188.json 200 346132 bytes 7.7 s
+subject/page-0189.json 200 345994 bytes 7.3 s
+subject/page-0190.json 200 346357 bytes 9.1 s
+subject/page-0191.json 200 346334 bytes 7.7 s
+subject/page-0192.json 200 345493 bytes 8.1 s
+subject/page-0193.json 200 345404 bytes 8.5 s
+subject/page-0194.json 200 344490 bytes 7.9 s
+subject/page-0195.json 200 345262 bytes 7.8 s
+subject/page-0196.json 200 344748 bytes 8.4 s
+subject/page-0197.json 200 346271 bytes 8.6 s
+subject/page-0198.json 200 347629 bytes 7.7 s
+subject/page-0199.json 200 346240 bytes 7.6 s
+subject/page-0200.json 200 347124 bytes 8.3 s
+subject/page-0201.json 200 347056 bytes 7.7 s
+subject/page-0202.json 200 340029 bytes 7.3 s
+subject/page-0203.json 200 333958 bytes 8.2 s
+subject/page-0204.json 200 331687 bytes 6.8 s
+subject/page-0205.json 200 344523 bytes 8.1 s
+subject/page-0206.json 200 345646 bytes 8.9 s
+subject/page-0207.json 200 342747 bytes 8.6 s
+subject/page-0208.json 200 342252 bytes 18.3 s
+subject/page-0209.json 200 342632 bytes 8.7 s
+subject/page-0210.json 200 342268 bytes 7.0 s
+subject/page-0211.json 200 342206 bytes 8.0 s
+subject/page-0212.json 200 336458 bytes 8.6 s
+subject/page-0213.json 200 336125 bytes 8.3 s
+subject/page-0214.json 200 335402 bytes 8.1 s
+subject/page-0215.json 200 335055 bytes 7.8 s
+subject/page-0216.json 200 335941 bytes 8.5 s
+subject/page-0217.json 200 337080 bytes 8.0 s
+subject/page-0218.json 200 334501 bytes 8.9 s
+subject/page-0219.json 200 333477 bytes 8.3 s
+subject/page-0220.json 200 332103 bytes 8.2 s
+subject/page-0221.json 200 332738 bytes 8.1 s
+subject/page-0222.json 200 332380 bytes 8.0 s
+subject/page-0223.json 200 331886 bytes 9.2 s
+subject/page-0224.json 200 331438 bytes 8.2 s
+subject/page-0225.json 200 330964 bytes 8.1 s
+subject/page-0226.json 200 331965 bytes 8.1 s
+subject/page-0227.json 200 342114 bytes 8.4 s
+subject/page-0228.json 200 346372 bytes 8.4 s
+subject/page-0229.json 200 339237 bytes 9.9 s
+subject/page-0230.json 200 344012 bytes 7.8 s
+subject/page-0231.json 200 344541 bytes 8.3 s
+subject/page-0232.json 200 345184 bytes 9.1 s
+subject/page-0233.json 200 344601 bytes 9.1 s
+subject/page-0234.json 200 345336 bytes 7.7 s
+subject/page-0235.json 200 344767 bytes 8.0 s
+subject/page-0236.json 200 343539 bytes 8.1 s
+subject/page-0237.json 200 344482 bytes 8.6 s
+subject/page-0238.json 200 343406 bytes 7.3 s
+subject/page-0239.json 200 336257 bytes 8.0 s
+subject/page-0240.json 200 334618 bytes 7.6 s
+subject/page-0241.json 200 334417 bytes 7.8 s
+subject/page-0242.json 200 334407 bytes 8.4 s
+subject/page-0243.json 200 334292 bytes 8.1 s
+subject/page-0244.json 200 334430 bytes 7.3 s
+subject/page-0245.json 200 224875 bytes 7.7 s
+subject/page-0246.json 200 171383 bytes 8.4 s
+subject/page-0247.json 200 170968 bytes 8.2 s
+subject/page-0248.json 200 171610 bytes 7.5 s
+subject/page-0249.json 200 171514 bytes 8.0 s
+subject/page-0250.json 200 170963 bytes 7.7 s
+subject/page-0251.json 200 171020 bytes 8.0 s
+subject/page-0252.json 200 170886 bytes 8.0 s
+subject/page-0253.json 200 171363 bytes 8.1 s
+subject/page-0254.json 200 171441 bytes 8.0 s
+subject/page-0255.json 200 171122 bytes 7.4 s
+subject/page-0256.json 200 171230 bytes 8.2 s
+subject/page-0257.json 200 171176 bytes 6.6 s
+subject/page-0258.json 200 170742 bytes 8.5 s
+subject/page-0259.json 200 171086 bytes 6.9 s
+subject/page-0260.json 200 171608 bytes 8.0 s
+subject/page-0261.json 200 171365 bytes 7.4 s
+subject/page-0262.json 200 171417 bytes 7.5 s
+subject/page-0263.json 200 171187 bytes 8.5 s
+subject/page-0264.json 200 165591 bytes 8.0 s
+subject/page-0265.json 200 158772 bytes 7.2 s
+subject/page-0266.json 200 159164 bytes 7.8 s
+subject/page-0267.json 200 158909 bytes 8.0 s
+subject/page-0268.json 200 158935 bytes 7.1 s
+subject/page-0269.json 200 159023 bytes 7.5 s
+subject/page-0270.json 200 159468 bytes 7.9 s
+subject/page-0271.json 200 159217 bytes 7.7 s
+subject/page-0272.json 200 158575 bytes 7.6 s
+subject/page-0273.json 200 159200 bytes 7.3 s
+subject/page-0274.json 200 159342 bytes 8.6 s
+subject/page-0275.json 200 159058 bytes 6.9 s
+subject/page-0276.json 200 158605 bytes 8.8 s
+subject/page-0277.json 200 159351 bytes 7.4 s
+subject/page-0278.json 200 159085 bytes 6.6 s
+subject/page-0279.json 200 159166 bytes 7.9 s
+subject/page-0280.json 200 159223 bytes 7.1 s
+subject/page-0281.json 200 159224 bytes 7.1 s
+subject/page-0282.json 200 158865 bytes 8.4 s
+subject/page-0283.json 200 158815 bytes 9.5 s
+subject/page-0284.json 200 158882 bytes 7.4 s
+subject/page-0285.json 200 158852 bytes 7.7 s
+subject/page-0286.json 200 159143 bytes 7.2 s
+subject/page-0287.json 200 158903 bytes 8.9 s
+subject/page-0288.json 200 159123 bytes 6.9 s
+subject/page-0289.json 200 159177 bytes 8.5 s
+subject/page-0290.json 200 158950 bytes 8.1 s
+subject/page-0291.json 200 159145 bytes 7.4 s
+subject/page-0292.json 200 158952 bytes 8.8 s
+subject/page-0293.json 200 158966 bytes 7.6 s
+subject/page-0294.json 200 158793 bytes 7.5 s
+subject/page-0295.json 200 159403 bytes 8.4 s
+subject/page-0296.json 200 159036 bytes 8.4 s
+subject/page-0297.json 200 159330 bytes 7.3 s
+subject/page-0298.json 200 159130 bytes 8.5 s
+subject/page-0299.json 200 159074 bytes 7.7 s
+subject/page-0300.json 200 158901 bytes 8.2 s
+subject/page-0301.json 200 158513 bytes 8.1 s
+subject/page-0302.json 200 159216 bytes 7.6 s
+subject/page-0303.json 200 159002 bytes 9.0 s
+subject/page-0304.json 200 159232 bytes 6.6 s
+subject/page-0305.json 200 159178 bytes 8.6 s
+subject/page-0306.json 200 158883 bytes 7.6 s
+subject/page-0307.json 200 159012 bytes 8.1 s
+subject/page-0308.json 200 159202 bytes 8.7 s
+subject/page-0309.json 200 158773 bytes 8.3 s
+subject/page-0310.json 200 158954 bytes 7.6 s
+subject/page-0311.json 200 158904 bytes 8.5 s
+subject/page-0312.json 200 159281 bytes 10.6 s
+subject/page-0313.json 200 159148 bytes 8.4 s
+subject/page-0314.json 200 159201 bytes 7.4 s
+subject/page-0315.json 200 168244 bytes 6.9 s
+subject/page-0316.json 200 166790 bytes 9.5 s
+subject/page-0317.json 200 167830 bytes 6.7 s
+subject/page-0318.json 200 167698 bytes 9.2 s
+subject/page-0319.json 200 166614 bytes 8.1 s
+subject/page-0320.json 200 168532 bytes 7.2 s
+subject/page-0321.json 200 166632 bytes 8.7 s
+subject/page-0322.json 200 168295 bytes 7.5 s
+subject/page-0323.json 200 165761 bytes 6.7 s
+subject/page-0324.json 200 167176 bytes 7.1 s
+subject/page-0325.json 200 154757 bytes 7.7 s
+subject/page-0326.json 200 160984 bytes 8.0 s
+subject/page-0327.json 200 166585 bytes 7.7 s
+subject/page-0328.json 200 167347 bytes 6.8 s
+subject/page-0329.json 200 166268 bytes 9.7 s
+subject/page-0330.json 200 165359 bytes 7.5 s
+subject/page-0331.json 200 164541 bytes 8.2 s
+subject/page-0332.json 200 166066 bytes 8.2 s
+subject/page-0333.json 200 166307 bytes 7.6 s
+subject/page-0334.json 200 165106 bytes 8.1 s
+subject/page-0335.json 200 165129 bytes 7.7 s
+subject/page-0336.json 200 164878 bytes 7.6 s
+subject/page-0337.json 200 165236 bytes 9.1 s
+subject/page-0338.json 200 165385 bytes 8.2 s
+subject/page-0339.json 200 164766 bytes 6.8 s
+subject/page-0340.json 200 165952 bytes 7.7 s
+subject/page-0341.json 200 165690 bytes 8.0 s
+subject/page-0342.json 200 164675 bytes 7.4 s
+subject/page-0343.json 200 165616 bytes 8.8 s
+subject/page-0344.json 200 165444 bytes 6.7 s
+subject/page-0345.json 200 165687 bytes 10.1 s
+subject/page-0346.json 200 165235 bytes 7.0 s
+subject/page-0347.json 200 165730 bytes 9.0 s
+subject/page-0348.json 200 165426 bytes 8.7 s
+subject/page-0349.json 200 165512 bytes 7.9 s
+subject/page-0350.json 200 165369 bytes 7.8 s
+subject/page-0351.json 200 165869 bytes 7.9 s
+subject/page-0352.json 200 168690 bytes 7.5 s
+subject/page-0353.json 200 169044 bytes 8.3 s
+subject/page-0354.json 200 167508 bytes 8.9 s
+subject/page-0355.json 200 167971 bytes 7.0 s
+subject/page-0356.json 200 168330 bytes 8.1 s
+subject/page-0357.json 200 167783 bytes 6.7 s
+subject/page-0358.json 200 167421 bytes 8.5 s
+subject/page-0359.json 200 168282 bytes 8.3 s
+subject/page-0360.json 200 168152 bytes 8.8 s
+subject/page-0361.json 200 167010 bytes 7.9 s
+subject/page-0362.json 200 167558 bytes 7.0 s
+subject/page-0363.json 200 167403 bytes 8.2 s
+subject/page-0364.json 200 165786 bytes 7.6 s
+subject/page-0365.json 200 166670 bytes 7.0 s
+subject/page-0366.json 200 165654 bytes 7.7 s
+subject/page-0367.json 200 166804 bytes 7.8 s
+subject/page-0368.json 200 166465 bytes 6.8 s
+subject/page-0369.json 200 166381 bytes 8.4 s
+subject/page-0370.json 200 165935 bytes 8.1 s
+subject/page-0371.json 200 165966 bytes 7.8 s
+subject/page-0372.json 200 165202 bytes 8.2 s
+subject/page-0373.json 200 165754 bytes 13.7 s
+subject/page-0374.json 200 165593 bytes 7.8 s
+subject/page-0375.json 200 165954 bytes 6.5 s
+subject/page-0376.json 200 166444 bytes 8.3 s
+subject/page-0377.json 200 166559 bytes 7.3 s
+subject/page-0378.json 200 166632 bytes 7.2 s
+subject/page-0379.json 200 165966 bytes 8.7 s
+subject/page-0380.json 200 166079 bytes 7.4 s
+subject/page-0381.json 200 166563 bytes 8.9 s
+subject/page-0382.json 200 166550 bytes 7.7 s
+subject/page-0383.json 200 166758 bytes 8.1 s
+subject/page-0384.json 200 167150 bytes 7.1 s
+subject/page-0385.json 200 111243 bytes 8.5 s
+subject/page-0386.json 200 73875 bytes 7.8 s
+subject/page-0387.json 200 74475 bytes 8.3 s
+subject/page-0388.json 200 75247 bytes 8.1 s
+subject/page-0389.json 200 74243 bytes 8.1 s
+subject/page-0390.json 200 81201 bytes 7.7 s
+subject/page-0391.json 200 84069 bytes 8.2 s
+subject/page-0392.json 200 85198 bytes 7.7 s
+subject/page-0393.json 200 84416 bytes 8.1 s
+subject/page-0394.json 200 84566 bytes 7.5 s
+subject/page-0395.json 200 83667 bytes 8.6 s
+subject/page-0396.json 200 81318 bytes 7.3 s
+subject/page-0397.json 200 81735 bytes 6.6 s
+subject/page-0398.json 200 83175 bytes 7.6 s
+subject/page-0399.json 200 82177 bytes 8.8 s
+subject/page-0400.json 200 81943 bytes 8.5 s
+subject/page-0401.json 200 81798 bytes 7.9 s
+subject/page-0402.json 200 82811 bytes 7.7 s
+subject/page-0403.json 200 81658 bytes 8.7 s
+subject/page-0404.json 200 82580 bytes 7.9 s
+subject/page-0405.json 200 83289 bytes 7.8 s
+subject/page-0406.json 200 82163 bytes 8.7 s
+subject/page-0407.json 200 81865 bytes 7.1 s
+subject/page-0408.json 200 83368 bytes 9.2 s
+subject/page-0409.json 200 81889 bytes 8.3 s
+subject/page-0410.json 200 81025 bytes 7.2 s
+subject/page-0411.json 200 82909 bytes 8.3 s
+subject/page-0412.json 200 83874 bytes 7.2 s
+subject/page-0413.json 200 81142 bytes 8.7 s
+subject/page-0414.json 200 81514 bytes 7.9 s
+subject/page-0415.json 200 80984 bytes 7.5 s
+subject/page-0416.json 200 80830 bytes 7.4 s
+subject/page-0417.json 200 79377 bytes 7.1 s
+subject/page-0418.json 200 79861 bytes 7.6 s
+subject/page-0419.json 200 74426 bytes 7.1 s
+subject/page-0420.json 200 60096 bytes 8.0 s
+subject/page-0421.json 200 60096 bytes 7.8 s
+subject/page-0422.json 200 60096 bytes 8.2 s
+subject/page-0423.json 200 60096 bytes 7.5 s
+subject/page-0424.json 200 60096 bytes 7.7 s
+subject/page-0425.json 200 60096 bytes 7.0 s
+subject/page-0426.json 200 60096 bytes 7.2 s
+subject/page-0427.json 200 60096 bytes 8.9 s
+subject/page-0428.json 200 60096 bytes 7.3 s
+subject/page-0429.json 200 60096 bytes 7.9 s
+subject/page-0430.json 200 60096 bytes 7.3 s
+subject/page-0431.json 200 60096 bytes 8.2 s
+subject/page-0432.json 200 60096 bytes 8.0 s
+subject/page-0433.json 200 67637 bytes 8.2 s
+subject/page-0434.json 200 72263 bytes 6.7 s
+subject/page-0435.json 200 72379 bytes 8.0 s
+subject/page-0436.json 200 71354 bytes 6.6 s
+subject/page-0437.json 200 72933 bytes 7.4 s
+subject/page-0438.json 200 71247 bytes 8.3 s
+subject/page-0439.json 200 74679 bytes 17.4 s
+subject/page-0440.json 200 71414 bytes 6.5 s
+subject/page-0441.json 200 71686 bytes 8.5 s
+subject/page-0442.json 200 73640 bytes 8.6 s
+subject/page-0443.json 200 73864 bytes 7.3 s
+subject/page-0444.json 200 73801 bytes 7.1 s
+subject/page-0445.json 200 71624 bytes 9.2 s
+subject/page-0446.json 200 71942 bytes 7.3 s
+subject/page-0447.json 200 72465 bytes 8.3 s
+subject/page-0448.json 200 73424 bytes 8.6 s
+subject/page-0449.json 200 73478 bytes 7.3 s
+subject/page-0450.json 200 73386 bytes 9.6 s
+subject/page-0451.json 200 74589 bytes 7.6 s
+subject/page-0452.json 200 72270 bytes 6.8 s
+subject/page-0453.json 200 72623 bytes 7.2 s
+subject/page-0454.json 200 71865 bytes 7.8 s
+subject/page-0455.json 200 72769 bytes 7.0 s
+subject/page-0456.json 200 72266 bytes 8.6 s
+subject/page-0457.json 200 71627 bytes 6.8 s
+subject/page-0458.json 200 73347 bytes 8.5 s
+subject/page-0459.json 200 73994 bytes 6.7 s
+subject/page-0460.json 200 72630 bytes 8.8 s
+subject/page-0461.json 200 71655 bytes 7.7 s
+subject/page-0462.json 200 74093 bytes 8.9 s
+subject/page-0463.json 200 71592 bytes 7.8 s
+subject/page-0464.json 200 72750 bytes 6.6 s
+subject/page-0465.json 200 72670 bytes 8.6 s
+subject/page-0466.json 200 73458 bytes 7.8 s
+subject/page-0467.json 200 72556 bytes 6.4 s
+subject/page-0468.json 200 74253 bytes 7.9 s
+subject/page-0469.json 200 73648 bytes 8.4 s
+subject/page-0470.json 200 74451 bytes 7.5 s
+subject/page-0471.json 200 73676 bytes 7.6 s
+subject/page-0472.json 200 74258 bytes 6.8 s
+subject/page-0473.json 200 72169 bytes 8.4 s
+subject/page-0474.json 200 74309 bytes 6.7 s
+subject/page-0475.json 200 72685 bytes 8.8 s
+subject/page-0476.json 200 73566 bytes 6.7 s
+subject/page-0477.json 200 75099 bytes 7.8 s
+subject/page-0478.json 200 72457 bytes 7.9 s
+subject/page-0479.json 200 71085 bytes 6.8 s
+subject/page-0480.json 200 71720 bytes 8.2 s
+subject/page-0481.json 200 75342 bytes 8.2 s
+subject/page-0482.json 200 72686 bytes 7.5 s
+subject/page-0483.json 200 72727 bytes 8.1 s
+subject/page-0484.json 200 72459 bytes 9.0 s
+subject/page-0485.json 200 73036 bytes 9.0 s
+subject/page-0486.json 200 72862 bytes 8.2 s
+subject/page-0487.json 200 75171 bytes 6.6 s
+subject/page-0488.json 200 73380 bytes 8.6 s
+subject/page-0489.json 200 70745 bytes 7.0 s
+subject/page-0490.json 200 73444 bytes 8.4 s
+subject/page-0491.json 200 73516 bytes 7.8 s
+subject/page-0492.json 200 72937 bytes 6.4 s
+subject/page-0493.json 200 72540 bytes 7.5 s
+subject/page-0494.json 200 72302 bytes 7.5 s
+subject/page-0495.json 200 71547 bytes 6.6 s
+subject/page-0496.json 200 73456 bytes 16.3 s
+subject/page-0497.json 200 73032 bytes 9.2 s
+subject/page-0498.json 200 71760 bytes 8.3 s
+subject/page-0499.json 200 72904 bytes 9.4 s
+subject/page-0500.json 200 76381 bytes 9.4 s
+subject/page-0501.json 200 70723 bytes 7.8 s
+subject/page-0502.json 200 73958 bytes 6.9 s
+subject/page-0503.json 200 70388 bytes 8.0 s
+subject/page-0504.json 200 72605 bytes 7.7 s
+subject/page-0505.json 200 72041 bytes 8.8 s
+subject/page-0506.json 200 73702 bytes 8.0 s
+subject/page-0507.json 200 71719 bytes 8.3 s
+subject/page-0508.json 200 73021 bytes 7.0 s
+subject/page-0509.json 200 72857 bytes 9.7 s
+subject/page-0510.json 200 74610 bytes 7.6 s
+subject/page-0511.json 200 71919 bytes 8.9 s
+subject/page-0512.json 200 71520 bytes 7.4 s
+subject/page-0513.json 200 70700 bytes 9.7 s
+subject/page-0514.json 200 74129 bytes 7.1 s
+subject/page-0515.json 200 72315 bytes 8.5 s
+subject/page-0516.json 200 72620 bytes 8.7 s
+subject/page-0517.json 200 71608 bytes 7.8 s
+subject/page-0518.json 200 74470 bytes 8.6 s
+subject/page-0519.json 200 75667 bytes 7.9 s
+subject/page-0520.json 200 75690 bytes 7.2 s
+subject/page-0521.json 200 76376 bytes 8.1 s
+subject/page-0522.json 200 76105 bytes 8.3 s
+subject/page-0523.json 200 75334 bytes 8.0 s
+subject/page-0524.json 200 75760 bytes 8.7 s
+subject/page-0525.json 200 75555 bytes 7.2 s
+subject/page-0526.json 200 75814 bytes 8.1 s
+subject/page-0527.json 200 75492 bytes 7.1 s
+subject/page-0528.json 200 75515 bytes 9.1 s
+subject/page-0529.json 200 76812 bytes 7.3 s
+subject/page-0530.json 200 77823 bytes 8.6 s
+subject/page-0531.json 200 77765 bytes 8.1 s
+subject/page-0532.json 200 77714 bytes 7.1 s
+subject/page-0533.json 200 77656 bytes 9.5 s
+subject/page-0534.json 200 77816 bytes 7.7 s
+subject/page-0535.json 200 77700 bytes 7.1 s
+subject/page-0536.json 200 77793 bytes 8.5 s
+subject/page-0537.json 200 77836 bytes 8.2 s
+subject/page-0538.json 200 77736 bytes 7.5 s
+subject/page-0539.json 200 77653 bytes 9.1 s
+subject/page-0540.json 200 77716 bytes 7.6 s
+subject/page-0541.json 200 77747 bytes 8.5 s
+subject/page-0542.json 200 77695 bytes 7.5 s
+subject/page-0543.json 200 78155 bytes 8.5 s
+subject/page-0544.json 200 78212 bytes 7.4 s
+subject/page-0545.json 200 78444 bytes 7.8 s
+subject/page-0546.json 200 78340 bytes 8.2 s
+subject/page-0547.json 200 78358 bytes 7.4 s
+subject/page-0548.json 200 78865 bytes 8.3 s
+subject/page-0549.json 200 77142 bytes 8.1 s
+subject/page-0550.json 200 77011 bytes 7.0 s
+subject/page-0551.json 200 77038 bytes 8.1 s
+subject/page-0552.json 200 76955 bytes 8.1 s
+subject/page-0553.json 200 77157 bytes 8.5 s
+subject/page-0554.json 200 77082 bytes 8.9 s
+subject/page-0555.json 200 77163 bytes 7.1 s
+subject/page-0556.json 200 77055 bytes 8.5 s
+subject/page-0557.json 200 77158 bytes 7.9 s
+subject/page-0558.json 200 77123 bytes 9.1 s
+subject/page-0559.json 200 77020 bytes 7.3 s
+subject/page-0560.json 200 77155 bytes 8.0 s
+subject/page-0561.json 200 76985 bytes 7.5 s
+subject/page-0562.json 200 77055 bytes 6.5 s
+subject/page-0563.json 200 77141 bytes 9.6 s
+subject/page-0564.json 200 77078 bytes 7.6 s
+subject/page-0565.json 200 77056 bytes 7.7 s
+subject/page-0566.json 200 76975 bytes 8.3 s
+subject/page-0567.json 200 77195 bytes 8.0 s
+subject/page-0568.json 200 77070 bytes 7.4 s
+subject/page-0569.json 200 79470 bytes 8.5 s
+subject/page-0570.json 200 77258 bytes 7.0 s
+subject/page-0571.json 200 77294 bytes 9.7 s
+subject/page-0572.json 200 77379 bytes 7.1 s
+subject/page-0573.json 200 77506 bytes 9.1 s
+subject/page-0574.json 200 77558 bytes 6.9 s
+subject/page-0575.json 200 77374 bytes 8.1 s
+subject/page-0576.json 200 77491 bytes 8.7 s
+subject/page-0577.json 200 77485 bytes 7.3 s
+subject/page-0578.json 200 77491 bytes 8.0 s
+subject/page-0579.json 200 77468 bytes 8.2 s
+subject/page-0580.json 200 77473 bytes 6.7 s
+subject/page-0581.json 200 77537 bytes 7.8 s
+subject/page-0582.json 200 77762 bytes 7.9 s
+subject/page-0583.json 200 77920 bytes 8.2 s
+subject/page-0584.json 200 78081 bytes 7.8 s
+subject/page-0585.json 200 78207 bytes 8.4 s
+subject/page-0586.json 200 78154 bytes 9.5 s
+subject/page-0587.json 200 78128 bytes 7.0 s
+subject/page-0588.json 200 78245 bytes 9.2 s
+subject/page-0589.json 200 78153 bytes 6.8 s
+subject/page-0590.json 200 78134 bytes 8.0 s
+subject/page-0591.json 200 77576 bytes 7.6 s
+subject/page-0592.json 200 76517 bytes 6.5 s
+subject/page-0593.json 200 77059 bytes 7.9 s
+subject/page-0594.json 200 75207 bytes 7.3 s
+subject/page-0595.json 200 74980 bytes 7.9 s
+subject/page-0596.json 200 78409 bytes 8.0 s
+subject/page-0597.json 200 79127 bytes 8.0 s
+subject/page-0598.json 200 75103 bytes 8.0 s
+subject/page-0599.json 200 1095 bytes 8.0 s
+mapping/page-0001.json 200 98303 bytes 12.0 s
+mapping/page-0002.json 200 100018 bytes 10.5 s
+mapping/page-0003.json 200 148339 bytes 10.2 s
+mapping/page-0004.json 200 159371 bytes 9.5 s
+mapping/page-0005.json 200 160814 bytes 9.3 s
+mapping/page-0006.json 200 151568 bytes 10.9 s
+mapping/page-0007.json 200 145594 bytes 9.8 s
+mapping/page-0008.json 200 144527 bytes 8.8 s
+mapping/page-0009.json 200 135774 bytes 9.3 s
+mapping/page-0010.json 200 138651 bytes 9.6 s
+mapping/page-0011.json 200 137537 bytes 9.7 s
+mapping/page-0012.json 200 139774 bytes 10.5 s
+mapping/page-0013.json 200 139184 bytes 9.5 s
+mapping/page-0014.json 200 147767 bytes 11.7 s
+mapping/page-0015.json 200 135388 bytes 10.7 s
+mapping/page-0016.json 200 140978 bytes 9.7 s
+mapping/page-0017.json 200 151373 bytes 9.4 s
+mapping/page-0018.json 200 173363 bytes 10.3 s
+mapping/page-0019.json 200 156833 bytes 8.7 s
+mapping/page-0020.json 200 211845 bytes 8.6 s
+mapping/page-0021.json 200 180844 bytes 8.9 s
+mapping/page-0022.json 200 185999 bytes 9.6 s
+mapping/page-0023.json 200 196977 bytes 9.5 s
+mapping/page-0024.json 200 183267 bytes 9.5 s
+mapping/page-0025.json 200 176783 bytes 9.4 s
+mapping/page-0026.json 200 178772 bytes 9.0 s
+mapping/page-0027.json 200 189249 bytes 11.0 s
+mapping/page-0028.json 200 188248 bytes 8.6 s
+mapping/page-0029.json 200 164034 bytes 9.5 s
+mapping/page-0030.json 200 157489 bytes 9.3 s
+mapping/page-0031.json 200 100263 bytes 8.5 s
+mapping/page-0032.json 200 95951 bytes 8.4 s
+mapping/page-0033.json 200 76779 bytes 9.1 s
+mapping/page-0034.json 200 69163 bytes 8.6 s
+mapping/page-0035.json 200 70522 bytes 8.8 s
+mapping/page-0036.json 200 80357 bytes 9.7 s
+mapping/page-0037.json 200 121552 bytes 9.7 s
+mapping/page-0038.json 200 131466 bytes 10.8 s
+mapping/page-0039.json 200 117404 bytes 8.9 s
+mapping/page-0040.json 200 80974 bytes 9.7 s
+mapping/page-0041.json 200 91741 bytes 9.0 s
+mapping/page-0042.json 200 76852 bytes 9.2 s
+mapping/page-0043.json 200 79719 bytes 9.8 s
+mapping/page-0044.json 200 76877 bytes 9.2 s
+mapping/page-0045.json 200 74751 bytes 9.3 s
+mapping/page-0046.json 200 80464 bytes 8.4 s
+mapping/page-0047.json 200 72879 bytes 9.2 s
+mapping/page-0048.json 200 77973 bytes 9.8 s
+mapping/page-0049.json 200 74682 bytes 9.7 s
+mapping/page-0050.json 200 77853 bytes 9.2 s
+mapping/page-0051.json 200 75324 bytes 9.6 s
+mapping/page-0052.json 200 75083 bytes 7.6 s
+mapping/page-0053.json 200 77855 bytes 9.6 s
+mapping/page-0054.json 200 73568 bytes 9.7 s
+mapping/page-0055.json 200 69942 bytes 8.7 s
+mapping/page-0056.json 200 72034 bytes 276.5 s
+mapping/page-0057.json 200 74492 bytes 11.6 s
+mapping/page-0058.json 200 73653 bytes 10.1 s
+mapping/page-0059.json 200 78657 bytes 9.5 s
+mapping/page-0060.json 200 73577 bytes 10.4 s
+mapping/page-0061.json 200 79596 bytes 9.4 s
+mapping/page-0062.json 200 73704 bytes 10.4 s
+mapping/page-0063.json 200 73082 bytes 8.3 s
+mapping/page-0064.json 200 79381 bytes 9.3 s
+mapping/page-0065.json 200 72027 bytes 9.3 s
+mapping/page-0066.json 200 75549 bytes 8.8 s
+mapping/page-0067.json 200 69896 bytes 11.1 s
+mapping/page-0068.json 200 70534 bytes 9.2 s
+mapping/page-0069.json 200 70713 bytes 9.1 s
+mapping/page-0070.json 200 74231 bytes 9.2 s
+mapping/page-0071.json 200 72079 bytes 7.6 s
+mapping/page-0072.json 200 71815 bytes 11.7 s
+mapping/page-0073.json 200 74446 bytes 9.8 s
+mapping/page-0074.json 200 73370 bytes 10.1 s
+mapping/page-0075.json 200 71541 bytes 8.3 s
+mapping/page-0076.json 200 71631 bytes 8.4 s
+mapping/page-0077.json 200 69837 bytes 9.0 s
+mapping/page-0078.json 200 70975 bytes 9.4 s
+mapping/page-0079.json 200 69961 bytes 10.0 s
+mapping/page-0080.json 200 72807 bytes 9.2 s
+mapping/page-0081.json 200 74424 bytes 8.4 s
+mapping/page-0082.json 200 73737 bytes 8.5 s
+mapping/page-0083.json 200 66770 bytes 10.6 s
+mapping/page-0084.json 200 69605 bytes 9.0 s
+mapping/page-0085.json 200 70971 bytes 8.5 s
+mapping/page-0086.json 200 76181 bytes 9.6 s
+mapping/page-0087.json 200 68862 bytes 8.2 s
+mapping/page-0088.json 200 73932 bytes 10.5 s
+mapping/page-0089.json 200 73758 bytes 8.5 s
+mapping/page-0090.json 200 71444 bytes 9.1 s
+mapping/page-0091.json 200 74019 bytes 8.8 s
+mapping/page-0092.json 200 70666 bytes 10.1 s
+mapping/page-0093.json 200 71402 bytes 9.9 s
+mapping/page-0094.json 200 73785 bytes 9.8 s
+mapping/page-0095.json 200 72330 bytes 9.3 s
+mapping/page-0096.json 200 71891 bytes 9.5 s
+mapping/page-0097.json 200 69521 bytes 10.9 s
+mapping/page-0098.json 200 72367 bytes 9.1 s
+mapping/page-0099.json 200 70059 bytes 8.3 s
+mapping/page-0100.json 200 73305 bytes 10.4 s
+mapping/page-0101.json 200 71838 bytes 9.4 s
+mapping/page-0102.json 200 74402 bytes 8.5 s
+mapping/page-0103.json 200 68302 bytes 8.5 s
+mapping/page-0104.json 200 75692 bytes 10.4 s
+mapping/page-0105.json 200 72043 bytes 9.2 s
+mapping/page-0106.json 200 70687 bytes 9.5 s
+mapping/page-0107.json 200 71612 bytes 10.0 s
+mapping/page-0108.json 200 71437 bytes 10.0 s
+mapping/page-0109.json 200 69046 bytes 10.2 s
+mapping/page-0110.json 200 69768 bytes 10.3 s
+mapping/page-0111.json 200 74647 bytes 9.2 s
+mapping/page-0112.json 200 73936 bytes 10.2 s
+mapping/page-0113.json 200 74284 bytes 10.4 s
+mapping/page-0114.json 200 69344 bytes 9.0 s
+mapping/page-0115.json 200 73230 bytes 9.0 s
+mapping/page-0116.json 200 72587 bytes 9.2 s
+mapping/page-0117.json 200 72106 bytes 8.0 s
+mapping/page-0118.json 200 69626 bytes 9.3 s
+mapping/page-0119.json 200 69988 bytes 9.0 s
+mapping/page-0120.json 200 67957 bytes 9.6 s
+mapping/page-0121.json 200 69223 bytes 11.4 s
+mapping/page-0122.json 200 75961 bytes 9.8 s
+mapping/page-0123.json 200 69308 bytes 8.6 s
+mapping/page-0124.json 200 71986 bytes 9.4 s
+mapping/page-0125.json 200 74228 bytes 9.2 s
+mapping/page-0126.json 200 73181 bytes 9.5 s
+mapping/page-0127.json 200 66393 bytes 9.2 s
+mapping/page-0128.json 200 66393 bytes 9.4 s
+mapping/page-0129.json 200 61916 bytes 8.4 s
+mapping/page-0130.json 200 62823 bytes 10.3 s
+mapping/page-0131.json 200 65410 bytes 8.3 s
+mapping/page-0132.json 200 61992 bytes 10.2 s
+mapping/page-0133.json 200 61659 bytes 8.9 s
+mapping/page-0134.json 200 61607 bytes 9.1 s
+mapping/page-0135.json 200 61736 bytes 9.0 s
+mapping/page-0136.json 200 65079 bytes 10.9 s
+mapping/page-0137.json 200 60525 bytes 8.8 s
+mapping/page-0138.json 200 64056 bytes 11.0 s
+mapping/page-0139.json 200 60220 bytes 9.8 s
+mapping/page-0140.json 200 63933 bytes 8.5 s
+mapping/page-0141.json 200 60696 bytes 10.5 s
+mapping/page-0142.json 200 64454 bytes 8.6 s
+mapping/page-0143.json 200 63056 bytes 8.8 s
+mapping/page-0144.json 200 66787 bytes 8.6 s
+mapping/page-0145.json 200 66960 bytes 9.1 s
+mapping/page-0146.json 200 68633 bytes 10.1 s
+mapping/page-0147.json 200 53648 bytes 9.4 s
+mapping/page-0148.json 200 47349 bytes 9.0 s
+mapping/page-0149.json 200 47512 bytes 9.0 s
+mapping/page-0150.json 200 48777 bytes 8.3 s
+mapping/page-0151.json 200 50381 bytes 9.5 s
+mapping/page-0152.json 200 46200 bytes 9.8 s
+mapping/page-0153.json 200 46953 bytes 9.8 s
+mapping/page-0154.json 200 48920 bytes 10.3 s
+mapping/page-0155.json 200 48234 bytes 9.0 s
+mapping/page-0156.json 200 45567 bytes 11.3 s
+mapping/page-0157.json 200 46610 bytes 8.4 s
+mapping/page-0158.json 200 53053 bytes 8.7 s
+mapping/page-0159.json 200 46493 bytes 9.7 s
+mapping/page-0160.json 200 50864 bytes 7.9 s
+mapping/page-0161.json 200 51158 bytes 9.2 s
+mapping/page-0162.json 200 50668 bytes 9.6 s
+mapping/page-0163.json 200 46146 bytes 10.3 s
+mapping/page-0164.json 200 50832 bytes 9.8 s
+mapping/page-0165.json 200 47943 bytes 8.7 s
+mapping/page-0166.json 200 47473 bytes 9.2 s
+mapping/page-0167.json 200 50021 bytes 9.7 s
+mapping/page-0168.json 200 45385 bytes 9.1 s
+mapping/page-0169.json 200 48001 bytes 9.8 s
+mapping/page-0170.json 200 47163 bytes 8.8 s
+mapping/page-0171.json 200 48715 bytes 8.6 s
+mapping/page-0172.json 200 49105 bytes 11.7 s
+mapping/page-0173.json 200 49440 bytes 8.8 s
+mapping/page-0174.json 200 49331 bytes 8.8 s
+mapping/page-0175.json 200 48745 bytes 10.0 s
+mapping/page-0176.json 200 50388 bytes 9.3 s
+mapping/page-0177.json 200 44878 bytes 11.5 s
+mapping/page-0178.json 200 47383 bytes 9.6 s
+mapping/page-0179.json 200 51154 bytes 8.8 s
+mapping/page-0180.json 200 50372 bytes 8.7 s
+mapping/page-0181.json 200 48697 bytes 9.8 s
+mapping/page-0182.json 200 47567 bytes 9.0 s
+mapping/page-0183.json 200 46159 bytes 10.6 s
+mapping/page-0184.json 200 46793 bytes 8.8 s
+mapping/page-0185.json 200 51300 bytes 9.3 s
+mapping/page-0186.json 200 46696 bytes 9.7 s
+mapping/page-0187.json 200 49505 bytes 9.5 s
+mapping/page-0188.json 200 45678 bytes 8.8 s
+mapping/page-0189.json 200 46121 bytes 9.2 s
+mapping/page-0190.json 200 46986 bytes 7.5 s
+mapping/page-0191.json 200 49913 bytes 11.0 s
+mapping/page-0192.json 200 50723 bytes 9.5 s
+mapping/page-0193.json 200 48752 bytes 9.7 s
+mapping/page-0194.json 200 47236 bytes 10.5 s
+mapping/page-0195.json 200 45829 bytes 8.3 s
+mapping/page-0196.json 200 50902 bytes 10.6 s
+mapping/page-0197.json 200 49928 bytes 10.5 s
+mapping/page-0198.json 200 48280 bytes 9.3 s
+mapping/page-0199.json 200 49685 bytes 9.7 s
+mapping/page-0200.json 200 50096 bytes 8.4 s
+mapping/page-0201.json 200 50233 bytes 10.1 s
+mapping/page-0202.json 200 48893 bytes 9.1 s
+mapping/page-0203.json 200 48715 bytes 9.9 s
+mapping/page-0204.json 200 48537 bytes 10.1 s
+mapping/page-0205.json 200 45531 bytes 9.9 s
+mapping/page-0206.json 200 49558 bytes 9.2 s
+mapping/page-0207.json 200 48528 bytes 9.5 s
+mapping/page-0208.json 200 44948 bytes 9.2 s
+mapping/page-0209.json 200 50486 bytes 9.6 s
+mapping/page-0210.json 200 49838 bytes 9.1 s
+mapping/page-0211.json 200 46776 bytes 9.3 s
+mapping/page-0212.json 200 49058 bytes 8.6 s
+mapping/page-0213.json 200 48939 bytes 9.0 s
+mapping/page-0214.json 200 49666 bytes 9.6 s
+mapping/page-0215.json 200 49238 bytes 10.6 s
+mapping/page-0216.json 200 52959 bytes 8.3 s
+mapping/page-0217.json 200 50194 bytes 10.1 s
+mapping/page-0218.json 200 49551 bytes 7.2 s
+mapping/page-0219.json 200 44541 bytes 9.7 s
+mapping/page-0220.json 200 47140 bytes 9.9 s
+mapping/page-0221.json 200 47281 bytes 8.7 s
+mapping/page-0222.json 200 49629 bytes 8.7 s
+mapping/page-0223.json 200 47329 bytes 8.9 s
+mapping/page-0224.json 200 50355 bytes 9.1 s
+mapping/page-0225.json 200 46897 bytes 10.9 s
+mapping/page-0226.json 200 46341 bytes 8.8 s
+mapping/page-0227.json 200 49386 bytes 9.9 s
+mapping/page-0228.json 200 48858 bytes 8.2 s
+mapping/page-0229.json 200 49961 bytes 10.6 s
+mapping/page-0230.json 200 47149 bytes 8.7 s
+mapping/page-0231.json 200 49006 bytes 10.1 s
+mapping/page-0232.json 200 48347 bytes 9.4 s
+mapping/page-0233.json 200 49363 bytes 8.4 s
+mapping/page-0234.json 200 44322 bytes 8.5 s
+mapping/page-0235.json 200 48008 bytes 12.3 s
+mapping/page-0236.json 200 49783 bytes 8.4 s
+mapping/page-0237.json 200 48062 bytes 8.2 s
+mapping/page-0238.json 200 49736 bytes 8.6 s
+mapping/page-0239.json 200 51756 bytes 8.7 s
+mapping/page-0240.json 200 49488 bytes 9.0 s
+mapping/page-0241.json 200 48790 bytes 9.2 s
+mapping/page-0242.json 200 51042 bytes 8.9 s
+mapping/page-0243.json 200 48055 bytes 8.1 s
+mapping/page-0244.json 200 47589 bytes 8.6 s
+mapping/page-0245.json 200 43999 bytes 8.9 s
+mapping/page-0246.json 200 43091 bytes 11.9 s
+mapping/page-0247.json 200 38429 bytes 8.3 s
+mapping/page-0248.json 200 42923 bytes 11.3 s
+mapping/page-0249.json 200 42862 bytes 6.9 s
+mapping/page-0250.json 200 40559 bytes 9.2 s
+mapping/page-0251.json 200 39024 bytes 10.0 s
+mapping/page-0252.json 200 39509 bytes 7.8 s
+mapping/page-0253.json 200 42875 bytes 9.6 s
+mapping/page-0254.json 200 41578 bytes 7.9 s
+mapping/page-0255.json 200 43622 bytes 8.6 s
+mapping/page-0256.json 200 40873 bytes 8.8 s
+mapping/page-0257.json 200 43591 bytes 11.3 s
+mapping/page-0258.json 200 40230 bytes 8.9 s
+mapping/page-0259.json 200 41275 bytes 9.1 s
+mapping/page-0260.json 200 43546 bytes 8.4 s
+mapping/page-0261.json 200 43029 bytes 10.6 s
+mapping/page-0262.json 200 39413 bytes 9.9 s
+mapping/page-0263.json 200 41699 bytes 9.5 s
+mapping/page-0264.json 200 39364 bytes 7.7 s
+mapping/page-0265.json 200 42283 bytes 10.0 s
+mapping/page-0266.json 200 40983 bytes 8.6 s
+mapping/page-0267.json 200 38433 bytes 8.1 s
+mapping/page-0268.json 200 42201 bytes 9.8 s
+mapping/page-0269.json 200 44920 bytes 8.9 s
+mapping/page-0270.json 200 40334 bytes 8.8 s
+mapping/page-0271.json 200 43029 bytes 9.3 s
+mapping/page-0272.json 200 36849 bytes 8.6 s
+mapping/page-0273.json 200 40146 bytes 10.3 s
+mapping/page-0274.json 200 43058 bytes 8.6 s
+mapping/page-0275.json 200 40343 bytes 9.8 s
+mapping/page-0276.json 200 40001 bytes 8.2 s
+mapping/page-0277.json 200 41926 bytes 9.6 s
+mapping/page-0278.json 200 42178 bytes 8.8 s
+mapping/page-0279.json 200 42421 bytes 8.7 s
+mapping/page-0280.json 200 44680 bytes 9.9 s
+mapping/page-0281.json 200 42048 bytes 9.0 s
+mapping/page-0282.json 200 43688 bytes 8.5 s
+mapping/page-0283.json 200 43605 bytes 9.1 s
+mapping/page-0284.json 200 41641 bytes 9.4 s
+mapping/page-0285.json 200 39239 bytes 8.6 s
+mapping/page-0286.json 200 39732 bytes 8.7 s
+mapping/page-0287.json 200 44320 bytes 9.6 s
+mapping/page-0288.json 200 41447 bytes 7.5 s
+mapping/page-0289.json 200 42552 bytes 11.7 s
+mapping/page-0290.json 200 41155 bytes 9.3 s
+mapping/page-0291.json 200 40003 bytes 8.8 s
+mapping/page-0292.json 200 39178 bytes 9.8 s
+mapping/page-0293.json 200 36616 bytes 8.5 s
+mapping/page-0294.json 200 38628 bytes 8.9 s
+mapping/page-0295.json 200 41816 bytes 9.6 s
+mapping/page-0296.json 200 44409 bytes 10.4 s
+mapping/page-0297.json 200 40067 bytes 8.0 s
+mapping/page-0298.json 200 42599 bytes 8.8 s
+mapping/page-0299.json 200 44032 bytes 9.2 s
+mapping/page-0300.json 200 41865 bytes 9.9 s
+mapping/page-0301.json 200 40532 bytes 9.3 s
+mapping/page-0302.json 200 43202 bytes 9.1 s
+mapping/page-0303.json 200 38920 bytes 8.4 s
+mapping/page-0304.json 200 41693 bytes 10.8 s
+mapping/page-0305.json 200 47271 bytes 9.0 s
+mapping/page-0306.json 200 40954 bytes 7.8 s
+mapping/page-0307.json 200 41689 bytes 8.3 s
+mapping/page-0308.json 200 38699 bytes 7.6 s
+mapping/page-0309.json 200 39471 bytes 8.7 s
+mapping/page-0310.json 200 41789 bytes 10.4 s
+mapping/page-0311.json 200 38447 bytes 9.8 s
+mapping/page-0312.json 200 40161 bytes 8.5 s
+mapping/page-0313.json 200 41137 bytes 8.6 s
+mapping/page-0314.json 200 42572 bytes 8.4 s
+mapping/page-0315.json 200 45612 bytes 8.9 s
+mapping/page-0316.json 200 52240 bytes 9.3 s
+mapping/page-0317.json 200 50718 bytes 8.6 s
+mapping/page-0318.json 200 48764 bytes 10.1 s
+mapping/page-0319.json 200 48674 bytes 9.6 s
+mapping/page-0320.json 200 50745 bytes 8.6 s
+mapping/page-0321.json 200 51971 bytes 8.2 s
+mapping/page-0322.json 200 52846 bytes 9.8 s
+mapping/page-0323.json 200 49067 bytes 7.9 s
+mapping/page-0324.json 200 31669 bytes 10.0 s
+mapping/page-0325.json 200 28969 bytes 8.3 s
+mapping/page-0326.json 200 40266 bytes 9.7 s
+mapping/page-0327.json 200 40628 bytes 9.9 s
+mapping/page-0328.json 200 41589 bytes 8.7 s
+mapping/page-0329.json 200 50299 bytes 9.0 s
+mapping/page-0330.json 200 55727 bytes 9.6 s
+mapping/page-0331.json 200 52016 bytes 8.0 s
+mapping/page-0332.json 200 45404 bytes 8.7 s
+mapping/page-0333.json 200 58388 bytes 10.2 s
+mapping/page-0334.json 200 86018 bytes 10.2 s
+mapping/page-0335.json 200 76216 bytes 8.7 s
+mapping/page-0336.json 200 88535 bytes 11.3 s
+mapping/page-0337.json 200 85709 bytes 9.6 s
+mapping/page-0338.json 200 93928 bytes 12.5 s
+mapping/page-0339.json 200 87878 bytes 10.8 s
+mapping/page-0340.json 200 87919 bytes 8.4 s
+mapping/page-0341.json 200 82456 bytes 10.2 s
+mapping/page-0342.json 200 70198 bytes 10.2 s
+mapping/page-0343.json 200 68418 bytes 7.8 s
+mapping/page-0344.json 200 69770 bytes 9.6 s
+mapping/page-0345.json 200 100 bytes 8.5 s
+fetch_ccdi.py exited with 0
+
+===== run-01-python: python repro.py --raw /data/ccdi-raw-snapshot2 --fallback-raw raw --out /out
+{
+ "grades": {
+  "P1": {
+   "grade": "fail",
+   "observed": {
+    "census_subjects": 153580,
+    "linkcheck_records": 153493,
+    "repeated_records": 87
+   }
+  },
+  "P2": {
+   "grade": "fail",
+   "observed": {
+    "census_only": 0,
+    "census_pairs": 5738,
+    "linkcheck_only": 0,
+    "linkcheck_pairs": 5695
+   }
+  },
+  "P3": {
+   "grade": "fail",
+   "observed": {
+    "census": {
+     "linked_persons": 5101,
+     "naive_overcount": 5437,
+     "persons": 148143,
+     "records_in_links": 10538
+    },
+    "linkcheck": {
+     "linked_persons": 5101,
+     "naive_overcount": 5399,
+     "persons": 148094,
+     "records_in_links": 10500
+    }
+   }
+  },
+  "P4": {
+   "grade": "fail",
+   "observed": {
+    "all_equal": false,
+    "source_pairs": 11,
+    "source_pairs_differing": [
+     "CCDI-DCC | KidsFirst",
+     "CCDI-DCC | PCDC",
+     "CCDI-DCC | StJude",
+     "CCDI-DCC | Treehouse"
+    ]
+   }
+  },
+  "P5": {
+   "grade": "not graded",
+   "why": "fresh snapshot: the stage-2 numbers belong to snapshot 2"
+  },
+  "P6": {
+   "grade": "not graded",
+   "why": "fresh snapshot: the stage-2 numbers belong to snapshot 2"
+  }
+ },
+ "snapshot": "fresh snapshot taken by this job"
+}

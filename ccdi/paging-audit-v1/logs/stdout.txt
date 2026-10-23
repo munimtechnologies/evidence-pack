@@ -1,0 +1,281 @@
+===== setup-01-python: python get_code.py
+v0.5.5/ccdi/concordance-v1/fetch_ccdi.py 7364 bytes sha256 479b79aecbeaa9481e1fb16bed26b8fde47edcde671ecdd0dca8bdc075ec8214
+v0.6.0/ccdi/linkcheck-repro-v1/ensure_snapshot.py 1082 bytes sha256 5324f6a69b17625fe9d7f18619f2026dee210b6af426e35c733c5ce71e473fb6
+v0.7.0/linkcheck/linkcheck/__init__.py 327 bytes sha256 7f05d67603cdd1dfeef8d75fbe5db95813f573c8e097241c1857aebff45c3941
+v0.7.0/linkcheck/linkcheck/core.py 15921 bytes sha256 19ee132753be2f4c69b3972ca4078ea797f2b79d80bcdbd2182f5ccc046ea1e1
+v0.7.0/linkcheck/linkcheck/__main__.py 2017 bytes sha256 709e0513dc5de1788aa67b68d0ca8f3d2ac391c1c689fac15ddca4eff31f9498
+v0.7.0/linkcheck/linkcheck/paging.py 8190 bytes sha256 2a5ebca59c3bce95faa320257c7d085e3de59516708b419c0943137811cd692b
+v0.7.0/linkcheck/test_linkcheck.py 7747 bytes sha256 6d37a04355edcdab41a4f9331b9609594387c6be8781110a436222b177e8c0a4
+v0.7.0/linkcheck/test_paging.py 6131 bytes sha256 5bd21b202e79be7a797c799991f3a27426f96595f2a3227fb2fd35429078f124
+v0.7.0/linkcheck/examples/records.jsonl 975 bytes sha256 b4071fc0526b1af1e4a03ca9d92a80d7314280f1f5f6b87f5de0e86e2617d3ff
+v0.7.0/linkcheck/examples/links.jsonl 607 bytes sha256 55faed2e36ffaa9b34b9e48f08a0b340449b2a59de7ad1d4f115b8a058f5abbf
+v0.7.0/ccdi/paging-audit-v1/ccdi_pages.py 10378 bytes sha256 e13785c24d22dcaf8d6ac7f946b713850a4922fc8adb8add32f79ef7a65499ed
+v0.7.0/ccdi/paging-audit-v1/test_ccdi_pages.py 5748 bytes sha256 1562a021cc4778790c4e7e5110dc31d855a57094ccfeb5559fc2587eab0a124b
+
+===== setup-02-python: python -m unittest -v test_linkcheck test_paging test_ccdi_pages
+{
+ "exact": {
+  "largest_person": 3,
+  "linked_persons": 2,
+  "naive_overcount": 3,
+  "persons": 7,
+  "persons_with_2plus_records_in_one_source": 0,
+  "records": 10,
+  "records_in_links": 5
+ },
+ "with_rules": {
+  "largest_person": 3,
+  "linked_persons": 3,
+  "naive_overcount": 4,
+  "persons": 6,
+  "persons_with_2plus_records_in_one_source": 0,
+  "records": 10,
+  "records_in_links": 7
+ }
+}
+{
+ "flag_counts": {
+  "short": 2
+ },
+ "unexplained": {
+  "P": 0,
+  "Q": 0
+ }
+}
+{
+ "grades": {
+  "Q1": {
+   "grade": "not graded",
+   "why": "fresh snapshot: the predicted numbers belong to snapshot 2"
+  },
+  "Q2": {
+   "grade": "not graded",
+   "why": "fresh snapshot: the predicted numbers belong to snapshot 2"
+  },
+  "Q3": {
+   "grade": "not graded",
+   "why": "fresh snapshot: the predicted numbers belong to snapshot 2"
+  },
+  "Q4": {
+   "grade": "not graded",
+   "why": "fresh snapshot: the predicted numbers belong to snapshot 2"
+  },
+  "Q5": {
+   "grade": "pass",
+   "observed": {
+    "mapping_flags": 1,
+    "not_flagged_on_subject": [],
+    "vacuous": false
+   }
+  },
+  "Q6": {
+   "grade": "pass",
+   "observed": {
+    "unexplained_not_zero": {
+     "mapping": {},
+     "subject": {}
+    }
+   }
+  }
+ },
+ "snapshot": "fresh snapshot taken by this job"
+}
+
+===== setup-03-python: python ensure_snapshot.py /data/ccdi-raw-snapshot2
+kept snapshot found under /data/ccdi-raw-snapshot2; nothing to fetch
+
+===== run-01-python: python ccdi_pages.py --raw /data/ccdi-raw-snapshot2 --fallback-raw raw --out /out
+{
+ "grades": {
+  "Q1": {
+   "grade": "pass",
+   "observed": {
+    "flags": [
+     [
+      12,
+      "PCDC",
+      "error",
+      null,
+      100
+     ],
+     [
+      35,
+      "PCDC",
+      "error",
+      null,
+      100
+     ]
+    ],
+    "last_page": 599,
+    "missing_pages": [],
+    "pages": 599,
+    "per_page": 100,
+    "whole_page_failures": []
+   }
+  },
+  "Q2": {
+   "grade": "pass",
+   "observed": {
+    "sources": {
+     "CCDI-DCC": {
+      "errors_past_end": 0,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 59795,
+      "total": 59795,
+      "unexplained": 0
+     },
+     "KidsFirst": {
+      "errors_past_end": 0,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 38440,
+      "total": 38440,
+      "unexplained": 0
+     },
+     "PCDC": {
+      "errors_past_end": 354,
+      "lost": 200,
+      "not_judged": 0,
+      "served": 24232,
+      "total": 24432,
+      "unexplained": 0
+     },
+     "StJude": {
+      "errors_past_end": 452,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 14681,
+      "total": 14681,
+      "unexplained": 0
+     },
+     "Treehouse": {
+      "errors_past_end": 471,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 12723,
+      "total": 12723,
+      "unexplained": 0
+     },
+     "ccdi-ecDNA": {
+      "errors_past_end": 566,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 3205,
+      "total": 3205,
+      "unexplained": 0
+     },
+     "ccdi-iusccc-pst": {
+      "errors_past_end": 0,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 504,
+      "total": 504,
+      "unexplained": 0
+     }
+    }
+   }
+  },
+  "Q3": {
+   "grade": "pass",
+   "observed": {
+    "flags": [
+     [
+      35,
+      "PCDC",
+      "short",
+      0,
+      100
+     ]
+    ],
+    "last_page": 599,
+    "missing_pages": [],
+    "pages": 599,
+    "per_page": 100,
+    "whole_page_failures": []
+   }
+  },
+  "Q4": {
+   "grade": "pass",
+   "observed": {
+    "sources": {
+     "CCDI-DCC": {
+      "errors_past_end": 0,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 59795,
+      "total": 59795,
+      "unexplained": 0
+     },
+     "KidsFirst": {
+      "errors_past_end": 0,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 38440,
+      "total": 38440,
+      "unexplained": 0
+     },
+     "PCDC": {
+      "errors_past_end": 0,
+      "lost": 100,
+      "not_judged": 0,
+      "served": 24332,
+      "total": 24432,
+      "unexplained": 0
+     },
+     "StJude": {
+      "errors_past_end": 0,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 14681,
+      "total": 14681,
+      "unexplained": 0
+     },
+     "Treehouse": {
+      "errors_past_end": 0,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 12723,
+      "total": 12723,
+      "unexplained": 0
+     },
+     "ccdi-ecDNA": {
+      "errors_past_end": 0,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 3205,
+      "total": 3205,
+      "unexplained": 0
+     },
+     "ccdi-iusccc-pst": {
+      "errors_past_end": 0,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 504,
+      "total": 504,
+      "unexplained": 0
+     }
+    },
+    "unmapped": 0
+   }
+  },
+  "Q5": {
+   "grade": "pass",
+   "observed": {
+    "mapping_flags": 1,
+    "not_flagged_on_subject": [],
+    "vacuous": false
+   }
+  },
+  "Q6": {
+   "grade": "pass",
+   "observed": {
+    "unexplained_not_zero": {
+     "mapping": {},
+     "subject": {}
+    }
+   }
+  }
+ },
+ "snapshot": "kept second snapshot"
+}

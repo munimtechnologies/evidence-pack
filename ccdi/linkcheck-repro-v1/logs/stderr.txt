@@ -1,0 +1,37 @@
+===== setup-01-python: python get_code.py
+
+===== setup-02-python: python -m unittest -v test_repro
+test_adapt (test_repro.Repro.test_adapt) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp75ar9zzb/raw/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_census (test_repro.Repro.test_census) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpbq6kwgvg/raw/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_grade_catches_a_difference (test_repro.Repro.test_grade_catches_a_difference) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp3hzv1r83/raw/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_main_fresh_snapshot (test_repro.Repro.test_main_fresh_snapshot) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmplzj5vfx2/raw/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_main_kept_snapshot (test_repro.Repro.test_main_kept_snapshot) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpdfwzkxgh/raw/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_main_no_snapshot (test_repro.Repro.test_main_no_snapshot) ... ok
+test_run_all_pass (test_repro.Repro.test_run_all_pass) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpb29j_pjo/raw/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.049s
+
+OK
+
+===== setup-03-python: python ensure_snapshot.py /data/ccdi-raw-snapshot2
+
+===== run-01-python: python repro.py --raw /data/ccdi-raw-snapshot2 --fallback-raw raw --out /out

@@ -1,0 +1,42 @@
+===== setup-01-python: python get_code.py
+
+===== setup-02-python: python -m unittest -v test_linkcheck test_paging test_ccdi_pages
+test_main (test_linkcheck.CommandLine.test_main) ... ok
+test_ambiguous_alt_id (test_linkcheck.Links.test_ambiguous_alt_id) ... ok
+test_bad_input (test_linkcheck.Links.test_bad_input) ... ok
+test_exact_only (test_linkcheck.Links.test_exact_only) ... ok
+test_link_order_does_not_matter (test_linkcheck.Links.test_link_order_does_not_matter) ... ok
+test_resolution (test_linkcheck.Links.test_resolution) ... ok
+test_cohort (test_linkcheck.Report.test_cohort) ... ok
+test_cohort_summary (test_linkcheck.Report.test_cohort_summary) ... ok
+test_completeness (test_linkcheck.Report.test_completeness) ... ok
+test_conflicts (test_linkcheck.Report.test_conflicts) ... ok
+test_overcount (test_linkcheck.Report.test_overcount) ... ok
+test_priority_order (test_linkcheck.Report.test_priority_order) ... ok
+test_report_has_no_record_ids (test_linkcheck.Report.test_report_has_no_record_ids) ... ok
+test_suppress (test_linkcheck.Report.test_suppress) ... ok
+test_duplicate_page (test_paging.CommandLine.test_duplicate_page) ... ok
+test_main (test_paging.CommandLine.test_main) ... ok
+test_expected (test_paging.Expected.test_expected) ... ok
+test_bad_input (test_paging.Gaps.test_bad_input) ... ok
+test_over_whole_failure_missing_and_unwalked (test_paging.Gaps.test_over_whole_failure_missing_and_unwalked) ... ok
+test_error_page_is_explained (test_paging.Mixed.test_error_page_is_explained) ... ok
+test_errors_past_end_lose_nothing (test_paging.Mixed.test_errors_past_end_lose_nothing) ... ok
+test_flags (test_paging.Mixed.test_flags) ... ok
+test_no_total (test_paging.Mixed.test_no_total) ... ok
+test_short_page_found_without_totals (test_paging.Silent.test_short_page_found_without_totals) ... ok
+test_short_pages_with_totals (test_paging.Silent.test_short_pages_with_totals) ... ok
+test_grader_can_fail (test_ccdi_pages.Snapshot.test_grader_can_fail) ... ok
+test_grades_with_expected_numbers (test_ccdi_pages.Snapshot.test_grades_with_expected_numbers) ... ok
+test_main_on_fresh_snapshot (test_ccdi_pages.Snapshot.test_main_on_fresh_snapshot) ... ok
+test_walks (test_ccdi_pages.Snapshot.test_walks) ... ok
+test_whole_page_failure (test_ccdi_pages.Snapshot.test_whole_page_failure) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.038s
+
+OK
+
+===== setup-03-python: python ensure_snapshot.py /data/ccdi-raw-snapshot2
+
+===== run-01-python: python ccdi_pages.py --raw /data/ccdi-raw-snapshot2 --fallback-raw raw --out /out

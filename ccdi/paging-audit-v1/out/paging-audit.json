@@ -1,0 +1,536 @@
+{
+ "grades": {
+  "Q1": {
+   "grade": "pass",
+   "observed": {
+    "flags": [
+     [
+      12,
+      "PCDC",
+      "error",
+      null,
+      100
+     ],
+     [
+      35,
+      "PCDC",
+      "error",
+      null,
+      100
+     ]
+    ],
+    "last_page": 599,
+    "missing_pages": [],
+    "pages": 599,
+    "per_page": 100,
+    "whole_page_failures": []
+   }
+  },
+  "Q2": {
+   "grade": "pass",
+   "observed": {
+    "sources": {
+     "CCDI-DCC": {
+      "errors_past_end": 0,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 59795,
+      "total": 59795,
+      "unexplained": 0
+     },
+     "KidsFirst": {
+      "errors_past_end": 0,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 38440,
+      "total": 38440,
+      "unexplained": 0
+     },
+     "PCDC": {
+      "errors_past_end": 354,
+      "lost": 200,
+      "not_judged": 0,
+      "served": 24232,
+      "total": 24432,
+      "unexplained": 0
+     },
+     "StJude": {
+      "errors_past_end": 452,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 14681,
+      "total": 14681,
+      "unexplained": 0
+     },
+     "Treehouse": {
+      "errors_past_end": 471,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 12723,
+      "total": 12723,
+      "unexplained": 0
+     },
+     "ccdi-ecDNA": {
+      "errors_past_end": 566,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 3205,
+      "total": 3205,
+      "unexplained": 0
+     },
+     "ccdi-iusccc-pst": {
+      "errors_past_end": 0,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 504,
+      "total": 504,
+      "unexplained": 0
+     }
+    }
+   }
+  },
+  "Q3": {
+   "grade": "pass",
+   "observed": {
+    "flags": [
+     [
+      35,
+      "PCDC",
+      "short",
+      0,
+      100
+     ]
+    ],
+    "last_page": 599,
+    "missing_pages": [],
+    "pages": 599,
+    "per_page": 100,
+    "whole_page_failures": []
+   }
+  },
+  "Q4": {
+   "grade": "pass",
+   "observed": {
+    "sources": {
+     "CCDI-DCC": {
+      "errors_past_end": 0,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 59795,
+      "total": 59795,
+      "unexplained": 0
+     },
+     "KidsFirst": {
+      "errors_past_end": 0,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 38440,
+      "total": 38440,
+      "unexplained": 0
+     },
+     "PCDC": {
+      "errors_past_end": 0,
+      "lost": 100,
+      "not_judged": 0,
+      "served": 24332,
+      "total": 24432,
+      "unexplained": 0
+     },
+     "StJude": {
+      "errors_past_end": 0,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 14681,
+      "total": 14681,
+      "unexplained": 0
+     },
+     "Treehouse": {
+      "errors_past_end": 0,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 12723,
+      "total": 12723,
+      "unexplained": 0
+     },
+     "ccdi-ecDNA": {
+      "errors_past_end": 0,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 3205,
+      "total": 3205,
+      "unexplained": 0
+     },
+     "ccdi-iusccc-pst": {
+      "errors_past_end": 0,
+      "lost": 0,
+      "not_judged": 0,
+      "served": 504,
+      "total": 504,
+      "unexplained": 0
+     }
+    },
+    "unmapped": 0
+   }
+  },
+  "Q5": {
+   "grade": "pass",
+   "observed": {
+    "mapping_flags": 1,
+    "not_flagged_on_subject": [],
+    "vacuous": false
+   }
+  },
+  "Q6": {
+   "grade": "pass",
+   "observed": {
+    "unexplained_not_zero": {
+     "mapping": {},
+     "subject": {}
+    }
+   }
+  }
+ },
+ "input": {
+  "mapping_pages": 599,
+  "per_page": 100,
+  "snapshot": "kept second snapshot",
+  "subject_pages": 599,
+  "summary_totals": {
+   "CCDI-DCC": 59795,
+   "KidsFirst": 38440,
+   "PCDC": 24432,
+   "StJude": 14681,
+   "Treehouse": 12723,
+   "ccdi-ecDNA": 3205,
+   "ccdi-iusccc-pst": 504
+  },
+  "unmapped_mapping_entries": 0
+ },
+ "label": "PRE-REGISTERED: predictions Q1-Q6 in README.md, published at evidence-pack tag v0.7.0 before this job ran",
+ "mapping": {
+  "flag_counts": {
+   "short": 1
+  },
+  "flags": [
+   {
+    "entries": 0,
+    "expected": 100,
+    "kind": "short",
+    "page": 35,
+    "source": "PCDC"
+   }
+  ],
+  "last_page": 599,
+  "missing_pages": [],
+  "pages": 599,
+  "per_page": 100,
+  "sources": {
+   "CCDI-DCC": {
+    "error_pages": [],
+    "errors_not_judged": 0,
+    "errors_past_end": 0,
+    "excess": 0,
+    "lost": {
+     "error_pages": 0,
+     "missing_pages": 0,
+     "pages_not_walked": 0,
+     "short_pages": 0
+    },
+    "not_judged": 0,
+    "over_pages": [],
+    "pages_with_entries": 598,
+    "served": 59795,
+    "short_pages": [],
+    "total": 59795,
+    "unexplained": 0
+   },
+   "KidsFirst": {
+    "error_pages": [],
+    "errors_not_judged": 0,
+    "errors_past_end": 0,
+    "excess": 0,
+    "lost": {
+     "error_pages": 0,
+     "missing_pages": 0,
+     "pages_not_walked": 0,
+     "short_pages": 0
+    },
+    "not_judged": 0,
+    "over_pages": [],
+    "pages_with_entries": 385,
+    "served": 38440,
+    "short_pages": [],
+    "total": 38440,
+    "unexplained": 0
+   },
+   "PCDC": {
+    "error_pages": [],
+    "errors_not_judged": 0,
+    "errors_past_end": 0,
+    "excess": 0,
+    "lost": {
+     "error_pages": 0,
+     "missing_pages": 0,
+     "pages_not_walked": 0,
+     "short_pages": 100
+    },
+    "not_judged": 0,
+    "over_pages": [],
+    "pages_with_entries": 244,
+    "served": 24332,
+    "short_pages": [
+     [
+      35,
+      100
+     ]
+    ],
+    "total": 24432,
+    "unexplained": 0
+   },
+   "StJude": {
+    "error_pages": [],
+    "errors_not_judged": 0,
+    "errors_past_end": 0,
+    "excess": 0,
+    "lost": {
+     "error_pages": 0,
+     "missing_pages": 0,
+     "pages_not_walked": 0,
+     "short_pages": 0
+    },
+    "not_judged": 0,
+    "over_pages": [],
+    "pages_with_entries": 147,
+    "served": 14681,
+    "short_pages": [],
+    "total": 14681,
+    "unexplained": 0
+   },
+   "Treehouse": {
+    "error_pages": [],
+    "errors_not_judged": 0,
+    "errors_past_end": 0,
+    "excess": 0,
+    "lost": {
+     "error_pages": 0,
+     "missing_pages": 0,
+     "pages_not_walked": 0,
+     "short_pages": 0
+    },
+    "not_judged": 0,
+    "over_pages": [],
+    "pages_with_entries": 128,
+    "served": 12723,
+    "short_pages": [],
+    "total": 12723,
+    "unexplained": 0
+   },
+   "ccdi-ecDNA": {
+    "error_pages": [],
+    "errors_not_judged": 0,
+    "errors_past_end": 0,
+    "excess": 0,
+    "lost": {
+     "error_pages": 0,
+     "missing_pages": 0,
+     "pages_not_walked": 0,
+     "short_pages": 0
+    },
+    "not_judged": 0,
+    "over_pages": [],
+    "pages_with_entries": 33,
+    "served": 3205,
+    "short_pages": [],
+    "total": 3205,
+    "unexplained": 0
+   },
+   "ccdi-iusccc-pst": {
+    "error_pages": [],
+    "errors_not_judged": 0,
+    "errors_past_end": 0,
+    "excess": 0,
+    "lost": {
+     "error_pages": 0,
+     "missing_pages": 0,
+     "pages_not_walked": 0,
+     "short_pages": 0
+    },
+    "not_judged": 0,
+    "over_pages": [],
+    "pages_with_entries": 6,
+    "served": 504,
+    "short_pages": [],
+    "total": 504,
+    "unexplained": 0
+   }
+  },
+  "tool": "linkcheck paging 0.2.0",
+  "whole_page_failures": []
+ },
+ "subject": {
+  "flag_counts": {
+   "error": 2
+  },
+  "flags": [
+   {
+    "entries": null,
+    "expected": 100,
+    "kind": "error",
+    "page": 12,
+    "source": "PCDC"
+   },
+   {
+    "entries": null,
+    "expected": 100,
+    "kind": "error",
+    "page": 35,
+    "source": "PCDC"
+   }
+  ],
+  "last_page": 599,
+  "missing_pages": [],
+  "pages": 599,
+  "per_page": 100,
+  "sources": {
+   "CCDI-DCC": {
+    "error_pages": [],
+    "errors_not_judged": 0,
+    "errors_past_end": 0,
+    "excess": 0,
+    "lost": {
+     "error_pages": 0,
+     "missing_pages": 0,
+     "pages_not_walked": 0,
+     "short_pages": 0
+    },
+    "not_judged": 0,
+    "over_pages": [],
+    "pages_with_entries": 598,
+    "served": 59795,
+    "short_pages": [],
+    "total": 59795,
+    "unexplained": 0
+   },
+   "KidsFirst": {
+    "error_pages": [],
+    "errors_not_judged": 0,
+    "errors_past_end": 0,
+    "excess": 0,
+    "lost": {
+     "error_pages": 0,
+     "missing_pages": 0,
+     "pages_not_walked": 0,
+     "short_pages": 0
+    },
+    "not_judged": 0,
+    "over_pages": [],
+    "pages_with_entries": 385,
+    "served": 38440,
+    "short_pages": [],
+    "total": 38440,
+    "unexplained": 0
+   },
+   "PCDC": {
+    "error_pages": [
+     12,
+     35
+    ],
+    "errors_not_judged": 0,
+    "errors_past_end": 354,
+    "excess": 0,
+    "lost": {
+     "error_pages": 200,
+     "missing_pages": 0,
+     "pages_not_walked": 0,
+     "short_pages": 0
+    },
+    "not_judged": 0,
+    "over_pages": [],
+    "pages_with_entries": 243,
+    "served": 24232,
+    "short_pages": [],
+    "total": 24432,
+    "unexplained": 0
+   },
+   "StJude": {
+    "error_pages": [],
+    "errors_not_judged": 0,
+    "errors_past_end": 452,
+    "excess": 0,
+    "lost": {
+     "error_pages": 0,
+     "missing_pages": 0,
+     "pages_not_walked": 0,
+     "short_pages": 0
+    },
+    "not_judged": 0,
+    "over_pages": [],
+    "pages_with_entries": 147,
+    "served": 14681,
+    "short_pages": [],
+    "total": 14681,
+    "unexplained": 0
+   },
+   "Treehouse": {
+    "error_pages": [],
+    "errors_not_judged": 0,
+    "errors_past_end": 471,
+    "excess": 0,
+    "lost": {
+     "error_pages": 0,
+     "missing_pages": 0,
+     "pages_not_walked": 0,
+     "short_pages": 0
+    },
+    "not_judged": 0,
+    "over_pages": [],
+    "pages_with_entries": 128,
+    "served": 12723,
+    "short_pages": [],
+    "total": 12723,
+    "unexplained": 0
+   },
+   "ccdi-ecDNA": {
+    "error_pages": [],
+    "errors_not_judged": 0,
+    "errors_past_end": 566,
+    "excess": 0,
+    "lost": {
+     "error_pages": 0,
+     "missing_pages": 0,
+     "pages_not_walked": 0,
+     "short_pages": 0
+    },
+    "not_judged": 0,
+    "over_pages": [],
+    "pages_with_entries": 33,
+    "served": 3205,
+    "short_pages": [],
+    "total": 3205,
+    "unexplained": 0
+   },
+   "ccdi-iusccc-pst": {
+    "error_pages": [],
+    "errors_not_judged": 0,
+    "errors_past_end": 0,
+    "excess": 0,
+    "lost": {
+     "error_pages": 0,
+     "missing_pages": 0,
+     "pages_not_walked": 0,
+     "short_pages": 0
+    },
+    "not_judged": 0,
+    "over_pages": [],
+    "pages_with_entries": 6,
+    "served": 504,
+    "short_pages": [],
+    "total": 504,
+    "unexplained": 0
+   }
+  },
+  "tool": "linkcheck paging 0.2.0",
+  "whole_page_failures": []
+ },
+ "tool": "linkcheck paging 0.2.0"
+}

@@ -1,0 +1,64 @@
+{
+ "contract": "mv2-compete-result-v1",
+ "name": "linkcheck-repro-v1",
+ "id": "8f7d74a15dce",
+ "field": "medicine",
+ "run": "20261023T143355Z-medicine",
+ "kind": "compete",
+ "status": "ok",
+ "reason": "",
+ "host": "dell",
+ "image": "python:3.12",
+ "started_at": "2026-10-23T15:59:32.649686+00:00",
+ "finished_at": "2026-10-23T19:04:05.834573+00:00",
+ "duration_seconds": 11073,
+ "limits": {
+  "cpu": 1.0,
+  "memory_gb": 2.0,
+  "timeout_minutes": 360.0
+ },
+ "peak_memory_gb": 0.06,
+ "network": {
+  "setup": true,
+  "run": true
+ },
+ "steps": [
+  {
+   "step": "setup-01-python",
+   "cmd": "python get_code.py",
+   "exit": 0,
+   "seconds": 1
+  },
+  {
+   "step": "setup-02-python",
+   "cmd": "python -m unittest -v test_repro",
+   "exit": 0,
+   "seconds": 0
+  },
+  {
+   "step": "setup-03-python",
+   "cmd": "python ensure_snapshot.py /data/ccdi-raw-snapshot2",
+   "exit": 0,
+   "seconds": 10979
+  },
+  {
+   "step": "run-01-python",
+   "cmd": "python repro.py --raw /data/ccdi-raw-snapshot2 --fallback-raw raw --out /out",
+   "exit": 0,
+   "seconds": 17
+  }
+ ],
+ "out_files": [
+  "repro.json"
+ ],
+ "out_files_total": 1,
+ "out_skipped": [],
+ "upload_skipped": [],
+ "summary_tail": "[run-01-python stdout] {\n \"grades\": {\n  \"P1\": {\n   \"grade\": \"fail\",\n   \"observed\": {\n    \"census_subjects\": 153580,\n    \"linkcheck_records\": 153493,\n    \"repeated_records\": 87\n   }\n  },\n  \"P2\": {\n   \"grade\": \"fail\",\n   \"observed\": {\n    \"census_only\": 0,\n    \"census_pairs\": 5738,\n    \"linkcheck_only\": 0,\n    \"linkcheck_pairs\": 5695\n   }\n  },\n  \"P3\": {\n   \"grade\": \"fail\",\n   \"observed\": {\n    \"census\": {\n     \"linked_persons\": 5101,\n     \"naive_overcount\": 5437,\n     \"persons\": 148143,\n     \"records_in_links\": 10538\n    },\n    \"linkcheck\": {\n     \"linked_persons\": 5101,\n     \"naive_overcount\": 5399,\n     \"persons\": 148094,\n     \"records_in_links\": 10500\n    }\n   }\n  },\n  \"P4\": {\n   \"grade\": \"fail\",\n   \"observed\": {\n    \"all_equal\": false,\n    \"source_pairs\": 11,\n    \"source_pairs_differing\": [\n     \"CCDI-DCC | KidsFirst\",\n     \"CCDI-DCC | PCDC\",\n     \"CCDI-DCC | StJude\",\n     \"CCDI-DCC | Treehouse\"\n    ]\n   }\n  },\n  \"P5\": {\n   \"grade\": \"not graded\",\n   \"why\": \"fresh snapshot: the stage-2 numbers belong to snapshot 2\"\n  },\n  \"P6\": {\n   \"grade\": \"not graded\",\n   \"why\": \"fresh snapshot: the stage-2 numbers belong to snapshot 2\"\n  }\n },\n \"snapshot\": \"fresh snapshot taken by this job\"\n}\n",
+ "paths": {
+  "workdir": "/work (copy of E:\\MV2-Pursuit\\work\\20261023T143355Z-medicine\\compete\\linkcheck-repro)",
+  "out": "/out -> out/",
+  "data": "/data (docker volume mv2c-data-ccdi-raw, kept for later jobs)"
+ },
+ "note": ""
+}
