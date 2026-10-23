@@ -1,0 +1,28 @@
+===== setup-01-python: python get_code.py
+
+===== setup-02-python: python -m unittest -v test_diag2
+test_link_label (test_diag2.Labels.test_link_label) ... ok
+test_loose_links (test_diag2.Snapshot.test_loose_links) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpnqb_60dx/raw/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_main (test_diag2.Snapshot.test_main) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpi3pefulh/raw/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_metadata (test_diag2.Snapshot.test_metadata) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpatk4nc5c/raw/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_missing_snapshot (test_diag2.Snapshot.test_missing_snapshot) ... ok
+test_probe (test_diag2.Snapshot.test_probe) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpr2d6az67/raw/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.037s
+
+OK
+
+===== run-01-python: python diag2.py --raw /data/ccdi-raw-snapshot2 --out /out --probe

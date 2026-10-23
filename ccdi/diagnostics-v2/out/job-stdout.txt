@@ -1,0 +1,182 @@
+===== setup-01-python: python get_code.py
+v0.5.5/ccdi/concordance-v1/analyze.py 20808 bytes sha256 aa22639f75436c099c339191d5b92ee2b3e2f3a79a8ed6273b6693044ba4fca6
+v0.5.5/ccdi/concordance-v1/fetch_ccdi.py 7364 bytes sha256 479b79aecbeaa9481e1fb16bed26b8fde47edcde671ecdd0dca8bdc075ec8214
+v0.5.6/ccdi/diagnostics-v1/diag.py 10898 bytes sha256 fa24af6b59bc22453d39212b128cf4584c8e26bccff8963d9e0eedadf94de3b9
+
+===== setup-02-python: python -m unittest -v test_diag2
+{
+ "outcomes": {
+  "PCDC": {
+   "after_last_underscore: new pair": 1
+  },
+  "Treehouse": {
+   "alt_identifier: new pair": 1
+  },
+  "ccdi-ecDNA": {
+   "name_in_other_source: another record of the linking source": 1,
+   "name_in_other_source: the linking record itself": 1
+  }
+ },
+ "page35_probe": null,
+ "snapshot_check": {
+  "entry_unresolved": 0,
+  "mapping_entries": 1,
+  "pairs": 1,
+  "subjects": 6
+ }
+}
+
+===== run-01-python: python diag2.py --raw /data/ccdi-raw-snapshot2 --out /out --probe
+{
+ "outcomes": {
+  "KidsFirst": {
+   "none": 1364
+  },
+  "PCDC": {
+   "after_last_underscore: pair already linked": 3728,
+   "none": 6
+  },
+  "Treehouse": {
+   "alt_identifier: another record of the linking source": 3,
+   "alt_identifier: new pair": 1094,
+   "none": 109
+  },
+  "ccdi-ecDNA": {
+   "name_in_other_source: the linking record itself": 148
+  }
+ },
+ "page35_probe": [
+  {
+   "not_in_snapshot": 0,
+   "page": 34,
+   "per_page": 100,
+   "records": 100,
+   "status": 200
+  },
+  {
+   "error": "{\"source\": \"PCDC\", \"errors\": [{\"kind\": \"NotFound\", \"method\": \"GET\", \"route\": \"/api\", \"message\": \"Server Error.\"}]}",
+   "page": 35,
+   "per_page": 100,
+   "records": null,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 50,
+   "page": 69,
+   "per_page": 50,
+   "records": 50,
+   "status": 200
+  },
+  {
+   "error": "{\"source\": \"PCDC\", \"errors\": [{\"kind\": \"NotFound\", \"method\": \"GET\", \"route\": \"/api\", \"message\": \"Server Error.\"}]}",
+   "page": 70,
+   "per_page": 50,
+   "records": null,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 25,
+   "page": 137,
+   "per_page": 25,
+   "records": 25,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 25,
+   "page": 138,
+   "per_page": 25,
+   "records": 25,
+   "status": 200
+  },
+  {
+   "error": "{\"source\": \"PCDC\", \"errors\": [{\"kind\": \"NotFound\", \"method\": \"GET\", \"route\": \"/api\", \"message\": \"Server Error.\"}]}",
+   "page": 139,
+   "per_page": 25,
+   "records": null,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 25,
+   "page": 140,
+   "per_page": 25,
+   "records": 25,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 10,
+   "page": 341,
+   "per_page": 10,
+   "records": 10,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 10,
+   "page": 342,
+   "per_page": 10,
+   "records": 10,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 10,
+   "page": 343,
+   "per_page": 10,
+   "records": 10,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 10,
+   "page": 344,
+   "per_page": 10,
+   "records": 10,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 10,
+   "page": 345,
+   "per_page": 10,
+   "records": 10,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 10,
+   "page": 346,
+   "per_page": 10,
+   "records": 10,
+   "status": 200
+  },
+  {
+   "error": "{\"source\": \"PCDC\", \"errors\": [{\"kind\": \"NotFound\", \"method\": \"GET\", \"route\": \"/api\", \"message\": \"Server Error.\"}]}",
+   "page": 347,
+   "per_page": 10,
+   "records": null,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 10,
+   "page": 348,
+   "per_page": 10,
+   "records": 10,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 10,
+   "page": 349,
+   "per_page": 10,
+   "records": 10,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 10,
+   "page": 350,
+   "per_page": 10,
+   "records": 10,
+   "status": 200
+  }
+ ],
+ "snapshot_check": {
+  "entry_unresolved": 100,
+  "mapping_entries": 153680,
+  "pairs": 20496,
+  "subjects": 153580
+ }
+}
