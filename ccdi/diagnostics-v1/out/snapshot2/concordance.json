@@ -1,0 +1,1163 @@
+{
+ "A_internal_consistency": {
+  "CCDI-DCC": {
+   "fields": {
+    "ethnicity": {
+     "consistent": true,
+     "endpoint_missing": 0,
+     "endpoint_sum": 59795,
+     "endpoint_total": 59795,
+     "endpoint_values": {
+      "Hispanic or Latino": 4090,
+      "Not reported": 55705
+     },
+     "endpoint_vs_served": {},
+     "served": {
+      "Hispanic or Latino": 4090,
+      "Not reported": 55705
+     }
+    },
+    "race": {
+     "endpoint_missing": 24,
+     "endpoint_sum": 60226,
+     "endpoint_total": 59795,
+     "endpoint_values": {
+      "American Indian or Alaska Native": 342,
+      "Asian": 1537,
+      "Black or African American": 4481,
+      "Native Hawaiian or other Pacific Islander": 143,
+      "Not Reported": 5830,
+      "Not allowed to collect": 471,
+      "Unknown": 4115,
+      "White": 43283
+     },
+     "served": {
+      "American Indian or Alaska Native": 342,
+      "Asian": 1537,
+      "Black or African American": 4481,
+      "Native Hawaiian or other Pacific Islander": 143,
+      "Not Reported": 5830,
+      "Not allowed to collect": 471,
+      "Unknown": 4115,
+      "White": 43283,
+      "White, Hispanic or Latino": 24
+     }
+    },
+    "sex": {
+     "consistent": true,
+     "endpoint_missing": 0,
+     "endpoint_sum": 59795,
+     "endpoint_total": 59795,
+     "endpoint_values": {
+      "F": 27510,
+      "M": 31853,
+      "U": 432
+     },
+     "endpoint_vs_served": {},
+     "served": {
+      "F": 27510,
+      "M": 31853,
+      "U": 432
+     }
+    },
+    "vital_status": {
+     "consistent": true,
+     "endpoint_missing": 14232,
+     "endpoint_sum": 59795,
+     "endpoint_total": 59795,
+     "endpoint_values": {
+      "Alive": 9641,
+      "Dead": 3678,
+      "Not reported": 1695,
+      "Unknown": 30548,
+      "Unspecified": 1
+     },
+     "endpoint_vs_served": {},
+     "served": {
+      "<missing>": 14232,
+      "Alive": 9641,
+      "Dead": 3678,
+      "Not reported": 1695,
+      "Unknown": 30548,
+      "Unspecified": 1
+     }
+    }
+   },
+   "page_all": 59795,
+   "page_errors": 0,
+   "records_served": 59795,
+   "repeated_records": 0,
+   "summary_total": 59795,
+   "unique_served": 59795
+  },
+  "KidsFirst": {
+   "fields": {
+    "ethnicity": {
+     "consistent": false,
+     "endpoint_missing": 0,
+     "endpoint_sum": 36444,
+     "endpoint_total": 36444,
+     "endpoint_values": {
+      "Hispanic or Latino": 4824,
+      "Not Hispanic or Latino": 23336,
+      "Unknown": 8284
+     },
+     "endpoint_vs_served": {
+      "Unknown": [
+       8284,
+       10280
+      ]
+     },
+     "served": {
+      "Hispanic or Latino": 4824,
+      "Not Hispanic or Latino": 23336,
+      "Unknown": 10280
+     }
+    },
+    "race": {
+     "endpoint_missing": 0,
+     "endpoint_sum": 35781,
+     "endpoint_total": 35781,
+     "endpoint_values": {
+      "American Indian or Alaska Native": 123,
+      "Asian": 3234,
+      "Black or African American": 2243,
+      "Native Hawaiian or other Pacific Islander": 58,
+      "Unknown": 8607,
+      "White": 21516
+     },
+     "served": {
+      "American Indian or Alaska Native": 123,
+      "Asian": 3234,
+      "Black or African American": 2243,
+      "Native Hawaiian or other Pacific Islander": 58,
+      "Unknown": 11266,
+      "White": 21516
+     }
+    },
+    "sex": {
+     "consistent": false,
+     "endpoint_missing": 0,
+     "endpoint_sum": 38439,
+     "endpoint_total": 38439,
+     "endpoint_values": {
+      "F": 18122,
+      "M": 19827,
+      "U": 490
+     },
+     "endpoint_vs_served": {
+      "<missing>": [
+       0,
+       1
+      ]
+     },
+     "served": {
+      "<missing>": 1,
+      "F": 18122,
+      "M": 19827,
+      "U": 490
+     }
+    },
+    "vital_status": {
+     "consistent": false,
+     "endpoint_missing": 0,
+     "endpoint_sum": 2576,
+     "endpoint_total": 2576,
+     "endpoint_values": {
+      "Alive": 2238,
+      "Dead": 335,
+      "Not reported": 3
+     },
+     "endpoint_vs_served": {
+      "<missing>": [
+       0,
+       35864
+      ]
+     },
+     "served": {
+      "<missing>": 35864,
+      "Alive": 2238,
+      "Dead": 335,
+      "Not reported": 3
+     }
+    }
+   },
+   "page_all": 38440,
+   "page_errors": 0,
+   "records_served": 38440,
+   "repeated_records": 0,
+   "summary_total": 38440,
+   "unique_served": 38440
+  },
+  "PCDC": {
+   "fields": {
+    "ethnicity": {
+     "consistent": false,
+     "endpoint_missing": 1,
+     "endpoint_sum": 24432,
+     "endpoint_total": 24432,
+     "endpoint_values": {
+      "Hispanic or Latino": 2916,
+      "Not Hispanic or Latino": 18038,
+      "Unknown": 3477
+     },
+     "endpoint_vs_served": {
+      "<missing>": [
+       1,
+       304
+      ],
+      "Hispanic or Latino": [
+       2916,
+       2813
+      ],
+      "Not Hispanic or Latino": [
+       18038,
+       17675
+      ],
+      "Unknown": [
+       3477,
+       3440
+      ]
+     },
+     "served": {
+      "<missing>": 304,
+      "Hispanic or Latino": 2813,
+      "Not Hispanic or Latino": 17675,
+      "Unknown": 3440
+     }
+    },
+    "race": {
+     "endpoint_missing": 0,
+     "endpoint_sum": 24432,
+     "endpoint_total": 24432,
+     "endpoint_values": {
+      "American Indian or Alaska Native": 119,
+      "Asian": 778,
+      "Black or African American": 2652,
+      "Native Hawaiian or other Pacific Islander": 72,
+      "Not Reported": 363,
+      "Unknown": 2796,
+      "White": 17652
+     },
+     "served": {
+      "<missing>": 304,
+      "American Indian or Alaska Native": 115,
+      "Asian": 744,
+      "Black or African American": 2602,
+      "Native Hawaiian or other Pacific Islander": 67,
+      "Not Reported": 339,
+      "Unknown": 2734,
+      "White": 17327
+     }
+    },
+    "sex": {
+     "consistent": false,
+     "endpoint_missing": 11,
+     "endpoint_sum": 24432,
+     "endpoint_total": 24432,
+     "endpoint_values": {
+      "F": 11327,
+      "M": 13094
+     },
+     "endpoint_vs_served": {
+      "<missing>": [
+       11,
+       315
+      ],
+      "F": [
+       11327,
+       11054
+      ],
+      "M": [
+       13094,
+       12863
+      ]
+     },
+     "served": {
+      "<missing>": 315,
+      "F": 11054,
+      "M": 12863
+     }
+    },
+    "vital_status": {
+     "consistent": false,
+     "endpoint_missing": 0,
+     "endpoint_sum": 24432,
+     "endpoint_total": 24432,
+     "endpoint_values": {
+      "Alive": 17134,
+      "Dead": 4952,
+      "Unknown": 2346
+     },
+     "endpoint_vs_served": {
+      "<missing>": [
+       0,
+       24232
+      ],
+      "Alive": [
+       17134,
+       0
+      ],
+      "Dead": [
+       4952,
+       0
+      ],
+      "Unknown": [
+       2346,
+       0
+      ]
+     },
+     "served": {
+      "<missing>": 24232
+     }
+    }
+   },
+   "page_all": 24432,
+   "page_errors": 356,
+   "records_served": 24232,
+   "repeated_records": 0,
+   "summary_total": 24432,
+   "unique_served": 24232
+  },
+  "StJude": {
+   "fields": {
+    "ethnicity": {
+     "consistent": true,
+     "endpoint_missing": 2,
+     "endpoint_sum": 14681,
+     "endpoint_total": 14681,
+     "endpoint_values": {
+      "Hispanic or Latino": 909,
+      "Not Hispanic or Latino": 10505,
+      "Not reported": 3234,
+      "Unknown": 31
+     },
+     "endpoint_vs_served": {},
+     "served": {
+      "<missing>": 2,
+      "Hispanic or Latino": 909,
+      "Not Hispanic or Latino": 10505,
+      "Not reported": 3234,
+      "Unknown": 31
+     }
+    },
+    "race": {
+     "endpoint_missing": 12,
+     "endpoint_sum": 14842,
+     "endpoint_total": 14842,
+     "endpoint_values": {
+      "American Indian or Alaska Native": 53,
+      "Asian": 130,
+      "Black or African American": 2257,
+      "Native Hawaiian or other Pacific Islander": 7,
+      "Not Reported": 3444,
+      "Unknown": 2,
+      "White": 8937
+     },
+     "served": {
+      "<missing>": 12,
+      "American Indian or Alaska Native": 53,
+      "Asian": 130,
+      "Black or African American": 2257,
+      "Native Hawaiian or other Pacific Islander": 7,
+      "Not Reported": 3444,
+      "Unknown": 2,
+      "White": 8937
+     }
+    },
+    "sex": {
+     "consistent": true,
+     "endpoint_missing": 1325,
+     "endpoint_sum": 14681,
+     "endpoint_total": 14681,
+     "endpoint_values": {
+      "F": 6408,
+      "M": 6948
+     },
+     "endpoint_vs_served": {},
+     "served": {
+      "<missing>": 1325,
+      "F": 6408,
+      "M": 6948
+     }
+    },
+    "vital_status": {
+     "consistent": true,
+     "endpoint_missing": 14681,
+     "endpoint_sum": 14681,
+     "endpoint_total": 14681,
+     "endpoint_values": {},
+     "endpoint_vs_served": {},
+     "served": {
+      "<missing>": 14681
+     }
+    }
+   },
+   "page_all": 14681,
+   "page_errors": 452,
+   "records_served": 14681,
+   "repeated_records": 0,
+   "summary_total": 14681,
+   "unique_served": 14681
+  },
+  "Treehouse": {
+   "fields": {
+    "ethnicity": {
+     "consistent": true,
+     "endpoint_missing": 785,
+     "endpoint_sum": 12723,
+     "endpoint_total": 12723,
+     "endpoint_values": {
+      "Hispanic or Latino": 553,
+      "Not Hispanic or Latino": 8323,
+      "Unknown": 3062
+     },
+     "endpoint_vs_served": {},
+     "served": {
+      "<missing>": 785,
+      "Hispanic or Latino": 553,
+      "Not Hispanic or Latino": 8323,
+      "Unknown": 3062
+     }
+    },
+    "race": {
+     "endpoint_missing": 1407,
+     "endpoint_sum": 12723,
+     "endpoint_total": 12723,
+     "endpoint_values": {
+      "Asian": 664,
+      "Black or African American": 976,
+      "Native Hawaiian or other Pacific Islander": 16,
+      "Not Reported": 5,
+      "Unknown": 1548,
+      "White": 8106,
+      "White,Asian": 1
+     },
+     "served": {
+      "<missing>": 1407,
+      "Asian": 665,
+      "Black or African American": 976,
+      "Native Hawaiian or other Pacific Islander": 16,
+      "Not Reported": 5,
+      "Unknown": 1548,
+      "White": 8107
+     }
+    },
+    "sex": {
+     "consistent": true,
+     "endpoint_missing": 0,
+     "endpoint_sum": 12723,
+     "endpoint_total": 12723,
+     "endpoint_values": {
+      "F": 5965,
+      "M": 6229,
+      "U": 529
+     },
+     "endpoint_vs_served": {},
+     "served": {
+      "F": 5965,
+      "M": 6229,
+      "U": 529
+     }
+    },
+    "vital_status": {
+     "consistent": true,
+     "endpoint_missing": 12723,
+     "endpoint_sum": 12723,
+     "endpoint_total": 12723,
+     "endpoint_values": {},
+     "endpoint_vs_served": {},
+     "served": {
+      "<missing>": 12723
+     }
+    }
+   },
+   "page_all": 12723,
+   "page_errors": 471,
+   "records_served": 12723,
+   "repeated_records": 0,
+   "summary_total": 12723,
+   "unique_served": 12723
+  },
+  "ccdi-ecDNA": {
+   "fields": {
+    "ethnicity": {
+     "consistent": true,
+     "endpoint_missing": 3205,
+     "endpoint_sum": 3205,
+     "endpoint_total": 3205,
+     "endpoint_values": {},
+     "endpoint_vs_served": {},
+     "served": {
+      "<missing>": 3205
+     }
+    },
+    "race": {
+     "endpoint_missing": 3205,
+     "endpoint_sum": 3205,
+     "endpoint_total": 3205,
+     "endpoint_values": {},
+     "served": {
+      "<missing>": 3205
+     }
+    },
+    "sex": {
+     "consistent": true,
+     "endpoint_missing": 0,
+     "endpoint_sum": 3205,
+     "endpoint_total": 3205,
+     "endpoint_values": {
+      "F": 1372,
+      "M": 1720,
+      "U": 113
+     },
+     "endpoint_vs_served": {},
+     "served": {
+      "F": 1372,
+      "M": 1720,
+      "U": 113
+     }
+    },
+    "vital_status": {
+     "consistent": true,
+     "endpoint_missing": 0,
+     "endpoint_sum": 3205,
+     "endpoint_total": 3205,
+     "endpoint_values": {
+      "Alive": 2057,
+      "Dead": 581,
+      "Unknown": 567
+     },
+     "endpoint_vs_served": {},
+     "served": {
+      "Alive": 2057,
+      "Dead": 581,
+      "Unknown": 567
+     }
+    }
+   },
+   "page_all": 3205,
+   "page_errors": 566,
+   "records_served": 3205,
+   "repeated_records": 0,
+   "summary_total": 3205,
+   "unique_served": 3205
+  },
+  "ccdi-iusccc-pst": {
+   "fields": {
+    "ethnicity": {
+     "consistent": true,
+     "endpoint_missing": 0,
+     "endpoint_sum": 504,
+     "endpoint_total": 504,
+     "endpoint_values": {
+      "Hispanic or Latino": 16,
+      "Not Hispanic or Latino": 85,
+      "Unknown": 403
+     },
+     "endpoint_vs_served": {},
+     "served": {
+      "Hispanic or Latino": 16,
+      "Not Hispanic or Latino": 85,
+      "Unknown": 403
+     }
+    },
+    "race": {
+     "endpoint_missing": 0,
+     "endpoint_sum": 504,
+     "endpoint_total": 504,
+     "endpoint_values": {
+      "Black or African American": 20,
+      "Unknown": 404,
+      "White": 80
+     },
+     "served": {
+      "Black or African American": 20,
+      "Unknown": 404,
+      "White": 80
+     }
+    },
+    "sex": {
+     "consistent": true,
+     "endpoint_missing": 0,
+     "endpoint_sum": 504,
+     "endpoint_total": 504,
+     "endpoint_values": {
+      "F": 226,
+      "M": 276,
+      "U": 2
+     },
+     "endpoint_vs_served": {},
+     "served": {
+      "F": 226,
+      "M": 276,
+      "U": 2
+     }
+    },
+    "vital_status": {
+     "consistent": true,
+     "endpoint_missing": 0,
+     "endpoint_sum": 504,
+     "endpoint_total": 504,
+     "endpoint_values": {
+      "Dead": 54,
+      "Unknown": 339,
+      "Unspecified": 111
+     },
+     "endpoint_vs_served": {},
+     "served": {
+      "Dead": 54,
+      "Unknown": 339,
+      "Unspecified": 111
+     }
+    }
+   },
+   "page_all": 504,
+   "page_errors": 0,
+   "records_served": 504,
+   "repeated_records": 0,
+   "summary_total": 504,
+   "unique_served": 504
+  }
+ },
+ "B_gdc_target": {
+  "age_ratio_fed_over_gdc": {
+   "median": 1.0,
+   "n": 5974
+  },
+  "cases": 6543,
+  "cases_by_project": {
+   "TARGET-ALL-P1": 24,
+   "TARGET-ALL-P2": 1587,
+   "TARGET-ALL-P3": 191,
+   "TARGET-AML": 2492,
+   "TARGET-CCSK": 13,
+   "TARGET-NBL": 1132,
+   "TARGET-OS": 383,
+   "TARGET-RT": 69,
+   "TARGET-WT": 652
+  },
+  "cases_with_usi": 5998,
+  "distinct_usis": 5876,
+  "gdc_internal": {
+   "age_at_diagnosis": {
+    "agree": 69,
+    "uninformative": 53
+   },
+   "death_age": {
+    "within_1_day": 20
+   },
+   "ethnicity": {
+    "agree": 104,
+    "uninformative": 18
+   },
+   "pairs": 122,
+   "race": {
+    "agree": 93,
+    "uninformative": 29
+   },
+   "sex": {
+    "agree": 116,
+    "uninformative": 6
+   },
+   "vital": {
+    "both_alive": 49,
+    "both_dead": 20,
+    "uninformative": 53
+   }
+  },
+  "gdc_vs_federation": {
+   "CCDI-DCC": {
+    "death_age": {
+     "over_30_days": 3,
+     "within_1_day": 1497,
+     "within_30_days": 5
+    },
+    "ethnicity": {
+     "agree": 1041,
+     "uninformative": 5020
+    },
+    "pairs": 6061,
+    "race": {
+     "agree": 5326,
+     "uninformative": 735
+    },
+    "sex": {
+     "agree": 5709,
+     "uninformative": 352
+    },
+    "vital": {
+     "alive_then_dead": 4,
+     "both_alive": 3773,
+     "both_dead": 1637,
+     "uninformative": 647
+    }
+   },
+   "KidsFirst": {
+    "death_age": {
+     "within_1_day": 41,
+     "within_30_days": 5
+    },
+    "ethnicity": {
+     "agree": 389,
+     "uninformative": 55
+    },
+    "pairs": 444,
+    "race": {
+     "agree": 382,
+     "uninformative": 62
+    },
+    "sex": {
+     "agree": 418,
+     "disagree": 2,
+     "uninformative": 24
+    },
+    "vital": {
+     "alive_then_dead": 2,
+     "both_alive": 326,
+     "both_dead": 47,
+     "uninformative": 69
+    }
+   },
+   "PCDC": {
+    "death_age": {},
+    "ethnicity": {
+     "agree": 1854,
+     "uninformative": 199
+    },
+    "pairs": 2053,
+    "race": {
+     "agree": 1780,
+     "disagree": 2,
+     "uninformative": 271
+    },
+    "sex": {
+     "agree": 1989,
+     "uninformative": 64
+    },
+    "vital": {
+     "uninformative": 2053
+    }
+   },
+   "StJude": {
+    "death_age": {},
+    "ethnicity": {
+     "uninformative": 305
+    },
+    "pairs": 305,
+    "race": {
+     "uninformative": 305
+    },
+    "sex": {
+     "agree": 299,
+     "uninformative": 6
+    },
+    "vital": {
+     "uninformative": 305
+    }
+   },
+   "Treehouse": {
+    "death_age": {},
+    "ethnicity": {
+     "agree": 987,
+     "uninformative": 85
+    },
+    "pairs": 1072,
+    "race": {
+     "agree": 952,
+     "uninformative": 120
+    },
+    "sex": {
+     "agree": 1064,
+     "disagree": 1,
+     "uninformative": 7
+    },
+    "vital": {
+     "uninformative": 1072
+    }
+   }
+  },
+  "gdc_vs_federation_all": {
+   "death_age": {
+    "over_30_days": 3,
+    "within_1_day": 1538,
+    "within_30_days": 10
+   },
+   "ethnicity": {
+    "agree": 4271,
+    "uninformative": 5664
+   },
+   "pairs": 9935,
+   "race": {
+    "agree": 8440,
+    "disagree": 2,
+    "uninformative": 1493
+   },
+   "sex": {
+    "agree": 9479,
+    "disagree": 3,
+    "uninformative": 453
+   },
+   "vital": {
+    "alive_then_dead": 6,
+    "both_alive": 4099,
+    "both_dead": 1684,
+    "uninformative": 4146
+   }
+  },
+  "usis_in_2plus_cases": 101,
+  "usis_linked_to_federation": 5731,
+  "vital_disagreement_direction": {
+   "gdc_Alive_fed_Dead": 4,
+   "gdc_Dead_fed_Alive": 2
+  }
+ },
+ "C_cpi_links": {
+  "all": {
+   "death_age": {
+    "over_30_days": 16,
+    "within_1_day": 191,
+    "within_30_days": 4
+   },
+   "ethnicity": {
+    "agree": 2570,
+    "disagree": 2,
+    "uninformative": 17924
+   },
+   "pairs": 20496,
+   "race": {
+    "agree": 11014,
+    "disagree": 5,
+    "uninformative": 9477
+   },
+   "sex": {
+    "agree": 19695,
+    "disagree": 7,
+    "uninformative": 794
+   },
+   "vital": {
+    "alive_after_death": 106,
+    "alive_then_dead": 43,
+    "both_alive": 1055,
+    "both_dead": 211,
+    "uninformative": 19081
+   }
+  },
+  "by_source_pair": {
+   "CCDI-DCC | KidsFirst": {
+    "death_age": {
+     "over_30_days": 1,
+     "within_1_day": 190,
+     "within_30_days": 4
+    },
+    "ethnicity": {
+     "agree": 921,
+     "disagree": 1,
+     "uninformative": 9305
+    },
+    "pairs": 10227,
+    "race": {
+     "agree": 6396,
+     "disagree": 1,
+     "uninformative": 3830
+    },
+    "sex": {
+     "agree": 9935,
+     "disagree": 2,
+     "uninformative": 290
+    },
+    "vital": {
+     "alive_then_dead": 4,
+     "both_alive": 112,
+     "both_dead": 195,
+     "uninformative": 9916
+    }
+   },
+   "CCDI-DCC | PCDC": {
+    "death_age": {},
+    "ethnicity": {
+     "agree": 373,
+     "disagree": 1,
+     "uninformative": 2485
+    },
+    "pairs": 2859,
+    "race": {
+     "agree": 2362,
+     "disagree": 3,
+     "uninformative": 494
+    },
+    "sex": {
+     "agree": 2858,
+     "uninformative": 1
+    },
+    "vital": {
+     "uninformative": 2859
+    }
+   },
+   "CCDI-DCC | StJude": {
+    "death_age": {},
+    "ethnicity": {
+     "uninformative": 362
+    },
+    "pairs": 362,
+    "race": {
+     "agree": 1,
+     "uninformative": 361
+    },
+    "sex": {
+     "agree": 296,
+     "uninformative": 66
+    },
+    "vital": {
+     "uninformative": 362
+    }
+   },
+   "CCDI-DCC | Treehouse": {
+    "death_age": {},
+    "ethnicity": {
+     "agree": 226,
+     "uninformative": 1145
+    },
+    "pairs": 1371,
+    "race": {
+     "agree": 1215,
+     "uninformative": 156
+    },
+    "sex": {
+     "agree": 1121,
+     "disagree": 1,
+     "uninformative": 249
+    },
+    "vital": {
+     "uninformative": 1371
+    }
+   },
+   "CCDI-DCC | ccdi-ecDNA": {
+    "death_age": {
+     "over_30_days": 10
+    },
+    "ethnicity": {
+     "uninformative": 1694
+    },
+    "pairs": 1694,
+    "race": {
+     "uninformative": 1694
+    },
+    "sex": {
+     "agree": 1612,
+     "uninformative": 82
+    },
+    "vital": {
+     "alive_after_death": 106,
+     "alive_then_dead": 39,
+     "both_alive": 934,
+     "both_dead": 10,
+     "uninformative": 605
+    }
+   },
+   "KidsFirst | PCDC": {
+    "death_age": {},
+    "ethnicity": {
+     "agree": 462,
+     "uninformative": 43
+    },
+    "pairs": 505,
+    "race": {
+     "agree": 471,
+     "disagree": 1,
+     "uninformative": 33
+    },
+    "sex": {
+     "agree": 505
+    },
+    "vital": {
+     "uninformative": 505
+    }
+   },
+   "KidsFirst | StJude": {
+    "death_age": {},
+    "ethnicity": {
+     "uninformative": 43
+    },
+    "pairs": 43,
+    "race": {
+     "agree": 1,
+     "uninformative": 42
+    },
+    "sex": {
+     "agree": 39,
+     "disagree": 4
+    },
+    "vital": {
+     "uninformative": 43
+    }
+   },
+   "KidsFirst | Treehouse": {
+    "death_age": {},
+    "ethnicity": {
+     "agree": 238,
+     "uninformative": 20
+    },
+    "pairs": 258,
+    "race": {
+     "agree": 235,
+     "uninformative": 23
+    },
+    "sex": {
+     "agree": 258
+    },
+    "vital": {
+     "uninformative": 258
+    }
+   },
+   "KidsFirst | ccdi-ecDNA": {
+    "death_age": {
+     "over_30_days": 5,
+     "within_1_day": 1
+    },
+    "ethnicity": {
+     "uninformative": 1710
+    },
+    "pairs": 1710,
+    "race": {
+     "uninformative": 1710
+    },
+    "sex": {
+     "agree": 1628,
+     "uninformative": 82
+    },
+    "vital": {
+     "both_alive": 9,
+     "both_dead": 6,
+     "uninformative": 1695
+    }
+   },
+   "PCDC | Treehouse": {
+    "death_age": {},
+    "ethnicity": {
+     "agree": 350,
+     "uninformative": 19
+    },
+    "pairs": 369,
+    "race": {
+     "agree": 333,
+     "uninformative": 36
+    },
+    "sex": {
+     "agree": 368,
+     "uninformative": 1
+    },
+    "vital": {
+     "uninformative": 369
+    }
+   },
+   "StJude | Treehouse": {
+    "death_age": {},
+    "ethnicity": {
+     "uninformative": 14
+    },
+    "pairs": 14,
+    "race": {
+     "uninformative": 14
+    },
+    "sex": {
+     "agree": 14
+    },
+    "vital": {
+     "uninformative": 14
+    }
+   },
+   "StJude | ccdi-ecDNA": {
+    "death_age": {},
+    "ethnicity": {
+     "uninformative": 1084
+    },
+    "pairs": 1084,
+    "race": {
+     "uninformative": 1084
+    },
+    "sex": {
+     "agree": 1061,
+     "uninformative": 23
+    },
+    "vital": {
+     "uninformative": 1084
+    }
+   }
+  },
+  "link_resolution": {
+   "entry_unresolved": 100,
+   "org_link_resolved: KidsFirst": 12238,
+   "org_link_resolved: StJude": 1503,
+   "org_link_resolved: Treehouse": 1643,
+   "org_link_resolved: ccdi-ecDNA": 4488,
+   "org_link_unresolved: CCCells": 74,
+   "org_link_unresolved: CCDI_cBioPortal": 16763,
+   "org_link_unresolved: GDC": 11462,
+   "org_link_unresolved: GENIE": 1142,
+   "org_link_unresolved: INRG": 2391,
+   "org_link_unresolved: INSTRuCT": 223,
+   "org_link_unresolved: INTERACT": 1119,
+   "org_link_unresolved: KidsFirst": 1364,
+   "org_link_unresolved: MaGIC": 1,
+   "org_link_unresolved: PCDC": 3734,
+   "org_link_unresolved: PDC": 354,
+   "org_link_unresolved: ScPCA": 291,
+   "org_link_unresolved: Treehouse": 1206,
+   "org_link_unresolved: VUMC": 1,
+   "org_link_unresolved: ccdi-ecDNA": 148,
+   "org_link_unresolved: dbgap_subject_id": 74120
+  },
+  "pairs": 20496
+ },
+ "D_overcount": {
+  "deduplicated_total": 135849,
+  "linked_persons": 14847,
+  "naive_overcount": 17731,
+  "subjects_in_cross_source_links": 32578,
+  "subjects_served": 153580
+ },
+ "grades": {
+  "H1": {
+   "result": "pass",
+   "summary_total": 38440,
+   "unique_served": 38440,
+   "vital_missing_served": 35864
+  },
+  "H2": {
+   "endpoint_missing": 0,
+   "result": "pass",
+   "served_missing_share": 1.0
+  },
+  "H3": {
+   "result": "pass",
+   "usis_linked": 5731
+  },
+  "H4": {
+   "n": 9482,
+   "rate": 0.0003,
+   "result": "pass"
+  },
+  "H5": {
+   "alive_after_death_rate": 0.0,
+   "alive_then_dead_rate": 0.001,
+   "n_aged": 5789,
+   "n_informative": 5789,
+   "result": "fail"
+  },
+  "H6": {
+   "result": "pass",
+   "sex_disagree": 0,
+   "usis_in_2plus_cases": 101
+  },
+  "H7": {
+   "n": 19702,
+   "pairs": 20496,
+   "result": "pass",
+   "sex_rate": 0.0004
+  }
+ },
+ "mapping_entries": 153680,
+ "per_page": 100,
+ "subject_pages_read": 599
+}

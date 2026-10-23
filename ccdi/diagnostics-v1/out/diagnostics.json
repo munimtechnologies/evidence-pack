@@ -1,0 +1,912 @@
+{
+ "failed_pages": [
+  {
+   "keys": [
+    "errors",
+    "source"
+   ],
+   "message": "{\"source\": \"PCDC\", \"errors\": [{\"kind\": \"ServerConnection\", \"method\": \"GET\", \"route\": \"/api/v1/subject?page=12&per_page=<id>\", \"message\": \"We are having issue connecting to the main server please reach",
+   "page": 12,
+   "retry": {
+    "records": 100,
+    "status": 200
+   },
+   "source": "PCDC"
+  },
+  {
+   "keys": [
+    "errors",
+    "source"
+   ],
+   "message": "{\"source\": \"PCDC\", \"errors\": [{\"kind\": \"NotFound\", \"method\": \"GET\", \"route\": \"/api\", \"message\": \"Server Error.\"}]}",
+   "page": 35,
+   "retry": {
+    "records": null,
+    "status": 200
+   },
+   "source": "PCDC"
+  }
+ ],
+ "label": "POST HOC: written after ccdi-concord-v1 results were seen",
+ "missing_by_namespace": {
+  "CCDI-DCC": {
+   "namespaces": 40,
+   "top_by_sex_null": [
+    {
+     "ns": "phs001327",
+     "records": 30717,
+     "sex_null": 0,
+     "vital_null": 0
+    },
+    {
+     "ns": "phs002790",
+     "records": 7023,
+     "sex_null": 0,
+     "vital_null": 5382
+    },
+    {
+     "ns": "phs002517",
+     "records": 4033,
+     "sex_null": 0,
+     "vital_null": 2417
+    },
+    {
+     "ns": "phs000465",
+     "records": 2146,
+     "sex_null": 0,
+     "vital_null": 0
+    },
+    {
+     "ns": "phs001846",
+     "records": 1777,
+     "sex_null": 0,
+     "vital_null": 842
+    },
+    {
+     "ns": "phs000464",
+     "records": 1701,
+     "sex_null": 0,
+     "vital_null": 0
+    },
+    {
+     "ns": "phs002276",
+     "records": 1358,
+     "sex_null": 0,
+     "vital_null": 1216
+    },
+    {
+     "ns": "phs001228",
+     "records": 1287,
+     "sex_null": 0,
+     "vital_null": 1287
+    },
+    {
+     "ns": "phs002883",
+     "records": 1239,
+     "sex_null": 0,
+     "vital_null": 0
+    },
+    {
+     "ns": "phs000467",
+     "records": 1119,
+     "sex_null": 0,
+     "vital_null": 0
+    },
+    {
+     "ns": "phs002518",
+     "records": 1039,
+     "sex_null": 0,
+     "vital_null": 0
+    },
+    {
+     "ns": "phs002677",
+     "records": 835,
+     "sex_null": 0,
+     "vital_null": 835
+    },
+    {
+     "ns": "phs001878",
+     "records": 718,
+     "sex_null": 0,
+     "vital_null": 718
+    },
+    {
+     "ns": "phs000471",
+     "records": 652,
+     "sex_null": 0,
+     "vital_null": 0
+    },
+    {
+     "ns": "phs002431",
+     "records": 611,
+     "sex_null": 0,
+     "vital_null": 76
+    },
+    {
+     "ns": "phs000720",
+     "records": 403,
+     "sex_null": 0,
+     "vital_null": 0
+    },
+    {
+     "ns": "phs002322",
+     "records": 356,
+     "sex_null": 0,
+     "vital_null": 356
+    },
+    {
+     "ns": "phs000468",
+     "records": 282,
+     "sex_null": 0,
+     "vital_null": 0
+    },
+    {
+     "ns": "phs001437",
+     "records": 267,
+     "sex_null": 0,
+     "vital_null": 181
+    },
+    {
+     "ns": "phs000463",
+     "records": 233,
+     "sex_null": 0,
+     "vital_null": 0
+    }
+   ]
+  },
+  "KidsFirst": {
+   "namespaces": 42,
+   "top_by_sex_null": [
+    {
+     "ns": "sd-me0wme0w",
+     "records": 22,
+     "sex_null": 1,
+     "vital_null": 10
+    },
+    {
+     "ns": "sd-bhjxbdqk",
+     "records": 7706,
+     "sex_null": 0,
+     "vital_null": 7633
+    },
+    {
+     "ns": "sd-46sk55a3",
+     "records": 3959,
+     "sex_null": 0,
+     "vital_null": 3959
+    },
+    {
+     "ns": "sd-preasa7s",
+     "records": 2330,
+     "sex_null": 0,
+     "vital_null": 2330
+    },
+    {
+     "ns": "sd-jws3v24d",
+     "records": 1777,
+     "sex_null": 0,
+     "vital_null": 1777
+    },
+    {
+     "ns": "sd-dypmehhf",
+     "records": 1681,
+     "sex_null": 0,
+     "vital_null": 1133
+    },
+    {
+     "ns": "sd-nmvv8a1y",
+     "records": 1543,
+     "sex_null": 0,
+     "vital_null": 1543
+    },
+    {
+     "ns": "sd-9pyzahhe",
+     "records": 1414,
+     "sex_null": 0,
+     "vital_null": 1414
+    },
+    {
+     "ns": "sd-aq9kvn5p",
+     "records": 1339,
+     "sex_null": 0,
+     "vital_null": 0
+    },
+    {
+     "ns": "sd-65064p2z",
+     "records": 1327,
+     "sex_null": 0,
+     "vital_null": 1327
+    },
+    {
+     "ns": "sd-ygva0e1c",
+     "records": 1287,
+     "sex_null": 0,
+     "vital_null": 1210
+    },
+    {
+     "ns": "sd-r0eprsgs",
+     "records": 1060,
+     "sex_null": 0,
+     "vital_null": 1060
+    },
+    {
+     "ns": "sd-w6fwtd8a",
+     "records": 1057,
+     "sex_null": 0,
+     "vital_null": 1057
+    },
+    {
+     "ns": "sd-cp7yk94e",
+     "records": 828,
+     "sex_null": 0,
+     "vital_null": 828
+    },
+    {
+     "ns": "sd-dztb5hrr",
+     "records": 801,
+     "sex_null": 0,
+     "vital_null": 801
+    },
+    {
+     "ns": "sd-q2f7xa29",
+     "records": 774,
+     "sex_null": 0,
+     "vital_null": 774
+    },
+    {
+     "ns": "sd-p445achv",
+     "records": 766,
+     "sex_null": 0,
+     "vital_null": 766
+    },
+    {
+     "ns": "sd-dk0krwk8",
+     "records": 759,
+     "sex_null": 0,
+     "vital_null": 759
+    },
+    {
+     "ns": "sd-jk4z4t6v",
+     "records": 739,
+     "sex_null": 0,
+     "vital_null": 737
+    },
+    {
+     "ns": "sd-zfgdg5ys",
+     "records": 718,
+     "sex_null": 0,
+     "vital_null": 718
+    }
+   ]
+  },
+  "PCDC": {
+   "namespaces": 1,
+   "top_by_sex_null": [
+    {
+     "ns": "COG",
+     "records": 24232,
+     "sex_null": 315,
+     "vital_null": 24232
+    }
+   ]
+  },
+  "StJude": {
+   "namespaces": 7,
+   "top_by_sex_null": [
+    {
+     "ns": "SJLIFE",
+     "records": 4675,
+     "sex_null": 500,
+     "vital_null": 4675
+    },
+    {
+     "ns": "PCGP",
+     "records": 1901,
+     "sex_null": 421,
+     "vital_null": 1901
+    },
+    {
+     "ns": "ClinicalGenomics",
+     "records": 3576,
+     "sex_null": 404,
+     "vital_null": 3576
+    },
+    {
+     "ns": "CCSS",
+     "records": 2910,
+     "sex_null": 0,
+     "vital_null": 2910
+    },
+    {
+     "ns": "SGP",
+     "records": 807,
+     "sex_null": 0,
+     "vital_null": 807
+    },
+    {
+     "ns": "PanALL",
+     "records": 624,
+     "sex_null": 0,
+     "vital_null": 624
+    },
+    {
+     "ns": "UnrestrictedData",
+     "records": 188,
+     "sex_null": 0,
+     "vital_null": 188
+    }
+   ]
+  },
+  "Treehouse": {
+   "namespaces": 1,
+   "top_by_sex_null": [
+    {
+     "ns": "treehouse",
+     "records": 12723,
+     "sex_null": 0,
+     "vital_null": 12723
+    }
+   ]
+  },
+  "ccdi-ecDNA": {
+   "namespaces": 1,
+   "top_by_sex_null": [
+    {
+     "ns": "sbp-c3ecdna",
+     "records": 3205,
+     "sex_null": 0,
+     "vital_null": 0
+    }
+   ]
+  },
+  "ccdi-iusccc-pst": {
+   "namespaces": 1,
+   "top_by_sex_null": [
+    {
+     "ns": "PST001",
+     "records": 504,
+     "sex_null": 0,
+     "vital_null": 0
+    }
+   ]
+  }
+ },
+ "pairs": {
+  "age_difference_days_second_minus_first": {
+   "CCDI-DCC | KidsFirst": {
+    "Alive/Alive": {
+     "first_older": 83,
+     "max": 2351,
+     "median": -728,
+     "min": -4199,
+     "n": 112,
+     "p10": -1070,
+     "p25": -805,
+     "p75": 0,
+     "p90": 409,
+     "second_older": 14,
+     "within_1_day": 15
+    },
+    "Alive/none": {
+     "first_older": 0,
+     "max": 558,
+     "median": 3,
+     "min": 0,
+     "n": 4,
+     "p10": 0,
+     "p25": 1,
+     "p75": 3,
+     "p90": 558,
+     "second_older": 2,
+     "within_1_day": 2
+    },
+    "Dead/Alive": {
+     "first_older": 4,
+     "max": -7,
+     "median": -172,
+     "min": -2153,
+     "n": 4,
+     "p10": -2153,
+     "p25": -673,
+     "p75": -172,
+     "p90": -7,
+     "second_older": 0,
+     "within_1_day": 0
+    },
+    "Dead/Dead": {
+     "first_older": 2,
+     "max": 11,
+     "median": 0,
+     "min": -1902,
+     "n": 195,
+     "p10": 0,
+     "p25": 0,
+     "p75": 0,
+     "p90": 0,
+     "second_older": 3,
+     "within_1_day": 190
+    },
+    "all": {
+     "first_older": 89,
+     "max": 2351,
+     "median": 0,
+     "min": -4199,
+     "n": 544,
+     "p10": -734,
+     "p25": 0,
+     "p75": 933,
+     "p90": 1229,
+     "second_older": 224,
+     "within_1_day": 231
+    },
+    "none/Alive": {
+     "first_older": 0,
+     "max": 2196,
+     "median": 1044,
+     "min": 0,
+     "n": 217,
+     "p10": 2,
+     "p25": 586,
+     "p75": 1216,
+     "p90": 1315,
+     "second_older": 201,
+     "within_1_day": 16
+    },
+    "none/Dead": {
+     "first_older": 0,
+     "max": 160,
+     "median": 1,
+     "min": 0,
+     "n": 12,
+     "p10": 0,
+     "p25": 1,
+     "p75": 2,
+     "p90": 5,
+     "second_older": 4,
+     "within_1_day": 8
+    }
+   },
+   "CCDI-DCC | ccdi-ecDNA": {
+    "Alive/Alive": {
+     "first_older": 920,
+     "max": 1135,
+     "median": -1048,
+     "min": -7751,
+     "n": 934,
+     "p10": -2373,
+     "p25": -1715,
+     "p75": -525,
+     "p90": -222,
+     "second_older": 14,
+     "within_1_day": 0
+    },
+    "Alive/Dead": {
+     "first_older": 106,
+     "max": 2383,
+     "median": -160,
+     "min": -1922,
+     "n": 145,
+     "p10": -708,
+     "p25": -347,
+     "p75": 5,
+     "p90": 231,
+     "second_older": 38,
+     "within_1_day": 1
+    },
+    "Alive/none": {
+     "first_older": 23,
+     "max": 988,
+     "median": -512,
+     "min": -3390,
+     "n": 28,
+     "p10": -1707,
+     "p25": -1358,
+     "p75": -170,
+     "p90": 152,
+     "second_older": 5,
+     "within_1_day": 0
+    },
+    "Dead/Dead": {
+     "first_older": 10,
+     "max": -37,
+     "median": -334,
+     "min": -770,
+     "n": 10,
+     "p10": -697,
+     "p25": -693,
+     "p75": -117,
+     "p90": -71,
+     "second_older": 0,
+     "within_1_day": 0
+    },
+    "all": {
+     "first_older": 1059,
+     "max": 2383,
+     "median": -780,
+     "min": -7751,
+     "n": 1117,
+     "p10": -2128,
+     "p25": -1584,
+     "p75": -367,
+     "p90": -135,
+     "second_older": 57,
+     "within_1_day": 1
+    }
+   },
+   "KidsFirst | ccdi-ecDNA": {
+    "Alive/Alive": {
+     "first_older": 9,
+     "max": -68,
+     "median": -1610,
+     "min": -2749,
+     "n": 9,
+     "p10": -2747,
+     "p25": -2191,
+     "p75": -489,
+     "p90": -390,
+     "second_older": 0,
+     "within_1_day": 0
+    },
+    "Dead/Dead": {
+     "first_older": 5,
+     "max": 0,
+     "median": -216,
+     "min": -814,
+     "n": 6,
+     "p10": -411,
+     "p25": -411,
+     "p75": -75,
+     "p90": 0,
+     "second_older": 0,
+     "within_1_day": 1
+    },
+    "all": {
+     "first_older": 14,
+     "max": 0,
+     "median": -489,
+     "min": -2749,
+     "n": 15,
+     "p10": -2747,
+     "p25": -1610,
+     "p75": -216,
+     "p90": -68,
+     "second_older": 0,
+     "within_1_day": 1
+    }
+   }
+  },
+  "sex_disagreements": {
+   "CCDI-DCC [phs000464] F vs KidsFirst [sd-fycr78w0] M": 1,
+   "CCDI-DCC [phs000464] M vs KidsFirst [sd-fycr78w0] F": 1,
+   "CCDI-DCC [phs000471] M vs Treehouse [treehouse] F": 1,
+   "KidsFirst [sd-fycr78w0] F vs StJude [PanALL] M": 1,
+   "KidsFirst [sd-fycr78w0] M vs StJude [PanALL] F": 3
+  },
+  "vital_disagreement_direction": {
+   "CCDI-DCC | KidsFirst": {
+    "CCDI-DCC=Dead, KidsFirst=Alive": 4
+   },
+   "CCDI-DCC | ccdi-ecDNA": {
+    "CCDI-DCC=Alive, ccdi-ecDNA=Dead": 145
+   }
+  }
+ },
+ "unresolved_links": {
+  "KidsFirst": {
+   "served_name_shapes": [
+    [
+     "a{2}-a{8}",
+     1946
+    ],
+    [
+     "a{2}-a{4}9a{3}",
+     916
+    ],
+    [
+     "a{2}-a{6}9a",
+     907
+    ],
+    [
+     "a{2}-a{2}9a{5}",
+     906
+    ],
+    [
+     "a{2}-a{3}9a{4}",
+     901
+    ],
+    [
+     "a{2}-a9a{6}",
+     868
+    ],
+    [
+     "a{2}-a{7}9",
+     855
+    ],
+    [
+     "a{2}-a{5}9a{2}",
+     841
+    ],
+    [
+     "a{2}-9a{7}",
+     837
+    ],
+    [
+     "a{2}-a9a{2}9a{3}",
+     425
+    ],
+    [
+     "a{2}-a{4}9a9a",
+     424
+    ],
+    [
+     "a{2}-9a{5}9a",
+     415
+    ],
+    [
+     "a{2}-a{5}9a9",
+     411
+    ],
+    [
+     "a{2}-a{2}9a{2}9a{2}",
+     410
+    ],
+    [
+     "a{2}-a9a{3}9a{2}",
+     409
+    ]
+   ],
+   "unresolved_links": 1364,
+   "unresolved_shapes": [
+    [
+     "a{2}-a{8}",
+     68
+    ],
+    [
+     "a{2}-a{5}9a{2}",
+     38
+    ],
+    [
+     "a{2}-a{6}9a",
+     36
+    ],
+    [
+     "a{2}-a9a{6}",
+     35
+    ],
+    [
+     "a{2}-a{4}9a{3}",
+     35
+    ],
+    [
+     "a{2}-a{3}9a{4}",
+     34
+    ],
+    [
+     "a{2}-a{7}9",
+     30
+    ],
+    [
+     "a{2}-9a{7}",
+     29
+    ],
+    [
+     "a{2}-a{2}9a{5}",
+     25
+    ],
+    [
+     "a{2}-a{4}9{2}a{2}",
+     21
+    ],
+    [
+     "a{2}-a{6}9{2}",
+     21
+    ],
+    [
+     "a{2}-9a{3}9a{3}",
+     20
+    ],
+    [
+     "a{2}-a9a{3}9a{2}",
+     17
+    ],
+    [
+     "a{2}-a9a{5}9",
+     15
+    ],
+    [
+     "a{2}-a{5}9a9",
+     15
+    ]
+   ],
+   "would_resolve_by": {
+    "alnum_only_name": 0,
+    "alt_identifier_in_source": 0,
+    "case_insensitive_name": 0,
+    "name_in_any_source": 0
+   }
+  },
+  "PCDC": {
+   "served_name_shapes": [
+    [
+     "A{6}",
+     24232
+    ]
+   ],
+   "unresolved_links": 3734,
+   "unresolved_shapes": [
+    [
+     "A{3}_A{6}",
+     2614
+    ],
+    [
+     "A{3}_A{4}9{4}_A{6}",
+     960
+    ],
+    [
+     "A{3}_A{4}9{2}A9_A{6}",
+     160
+    ]
+   ],
+   "would_resolve_by": {
+    "alnum_only_name": 0,
+    "alt_identifier_in_source": 0,
+    "case_insensitive_name": 0,
+    "name_in_any_source": 0
+   }
+  },
+  "Treehouse": {
+   "served_name_shapes": [
+    [
+     "A{4}-A{2}-A9A{2}",
+     1996
+    ],
+    [
+     "A{4}-A{2}-9{4}",
+     1714
+    ],
+    [
+     "A{4}-9{2}-9{4}",
+     1344
+    ],
+    [
+     "A{6}-9{2}-A{6}",
+     1080
+    ],
+    [
+     "9{4}",
+     1039
+    ],
+    [
+     "9{3}",
+     798
+    ],
+    [
+     "A{4}-A{2}-A9{2}A",
+     768
+    ],
+    [
+     "A{4}-A9-A9A{2}",
+     766
+    ],
+    [
+     "A{4}-A{2}-A9A9",
+     731
+    ],
+    [
+     "A{4}-A9-9{4}",
+     475
+    ],
+    [
+     "A{4}-A9-A9A9",
+     301
+    ],
+    [
+     "A{4}-A9-A9{2}A",
+     299
+    ],
+    [
+     "A{4}-A{2}-A9{3}",
+     263
+    ],
+    [
+     "A{4}-A{2}-A{4}",
+     148
+    ],
+    [
+     "A{4}-A9-A9{3}",
+     146
+    ]
+   ],
+   "unresolved_links": 1206,
+   "unresolved_shapes": [
+    [
+     "A{3}9{2}_9{4}",
+     1206
+    ]
+   ],
+   "would_resolve_by": {
+    "alnum_only_name": 0,
+    "alt_identifier_in_source": 1097,
+    "case_insensitive_name": 0,
+    "name_in_any_source": 0
+   }
+  },
+  "ccdi-ecDNA": {
+   "served_name_shapes": [
+    [
+     "A{2}9{6}",
+     1094
+    ],
+    [
+     "A{3}-A{2}-9{4}",
+     112
+    ],
+    [
+     "A{2}_A{8}",
+     101
+    ],
+    [
+     "A{4}_A{2}9{3}",
+     54
+    ],
+    [
+     "A{4}_A{2}9{2}",
+     53
+    ],
+    [
+     "A{2}_A{4}9A{3}",
+     50
+    ],
+    [
+     "A{2}_A{5}9A{2}",
+     48
+    ],
+    [
+     "A{2}_9A{7}",
+     46
+    ],
+    [
+     "A{2}_A{7}9",
+     45
+    ],
+    [
+     "A{2}_A{2}9A{5}",
+     44
+    ],
+    [
+     "A{2}_A9A{6}",
+     41
+    ],
+    [
+     "A{2}_A{6}9A",
+     41
+    ],
+    [
+     "A{2}_A{3}9A{4}",
+     40
+    ],
+    [
+     "A{2}_A9A{3}9A{2}",
+     29
+    ],
+    [
+     "A{2}_A{2}9A9A{3}",
+     26
+    ]
+   ],
+   "unresolved_links": 148,
+   "unresolved_shapes": [
+    [
+     "A{2}9{6}",
+     148
+    ]
+   ],
+   "would_resolve_by": {
+    "alnum_only_name": 0,
+    "alt_identifier_in_source": 0,
+    "case_insensitive_name": 0,
+    "name_in_any_source": 148
+   }
+  }
+ }
+}
