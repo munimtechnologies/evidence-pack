@@ -1,0 +1,1233 @@
+{
+ "adapter_counts": {
+  "link_rows": 150161,
+  "org_association": 134265,
+  "other_category_skipped": 87988,
+  "usi_association": 21567,
+  "usi_served_by_no_subject": 6589
+ },
+ "census_link_counts": {
+  "entry_unresolved": 100,
+  "org_link_resolved: KidsFirst": 12238,
+  "org_link_resolved: StJude": 1503,
+  "org_link_resolved: Treehouse": 1643,
+  "org_link_resolved: ccdi-ecDNA": 4488,
+  "org_link_unresolved: CCCells": 74,
+  "org_link_unresolved: CCDI_cBioPortal": 16763,
+  "org_link_unresolved: GDC": 11462,
+  "org_link_unresolved: GENIE": 1142,
+  "org_link_unresolved: INRG": 2391,
+  "org_link_unresolved: INSTRuCT": 223,
+  "org_link_unresolved: INTERACT": 1119,
+  "org_link_unresolved: KidsFirst": 1364,
+  "org_link_unresolved: MaGIC": 1,
+  "org_link_unresolved: PCDC": 3734,
+  "org_link_unresolved: PDC": 354,
+  "org_link_unresolved: ScPCA": 291,
+  "org_link_unresolved: Treehouse": 1206,
+  "org_link_unresolved: VUMC": 1,
+  "org_link_unresolved: ccdi-ecDNA": 148,
+  "org_link_unresolved: dbgap_subject_id": 74120
+ },
+ "grades": {
+  "F1": {
+   "grade": "not graded",
+   "why": "kept second snapshot: taken by the census's own fetcher"
+  },
+  "P1": {
+   "grade": "pass",
+   "observed": {
+    "census_subjects": 153580,
+    "linkcheck_records": 153580,
+    "repeated_records": 0
+   }
+  },
+  "P2": {
+   "grade": "pass",
+   "observed": {
+    "census_only": 0,
+    "census_pairs": 20496,
+    "linkcheck_only": 0,
+    "linkcheck_pairs": 20496
+   }
+  },
+  "P3": {
+   "grade": "pass",
+   "observed": {
+    "census": {
+     "linked_persons": 14847,
+     "naive_overcount": 17731,
+     "persons": 135849,
+     "records_in_links": 32578
+    },
+    "linkcheck": {
+     "linked_persons": 14847,
+     "naive_overcount": 17731,
+     "persons": 135849,
+     "records_in_links": 32578
+    }
+   }
+  },
+  "P4": {
+   "grade": "pass",
+   "observed": {
+    "all_equal": true,
+    "source_pairs": 12,
+    "source_pairs_differing": []
+   }
+  },
+  "P5": {
+   "grade": "pass",
+   "observed": {
+    "extra_disagree": {
+     "ethnicity": 2,
+     "race": 0,
+     "sex": 3
+    },
+    "overcount_with_rules": {
+     "linked_persons": 15403,
+     "naive_overcount": 18536,
+     "persons": 135044,
+     "records_in_links": 33939
+    },
+    "pairs_added_by_rule": {
+     "alt_id": 1094
+    },
+    "pairs_with_rules": 21590
+   }
+  },
+  "P6": {
+   "grade": "pass",
+   "observed": {
+    "linked_persons": 14847,
+    "naive_overcount": 17731,
+    "pairs_exact": 20496,
+    "persons": 135849,
+    "records": 153580,
+    "records_in_links": 32578
+   }
+  },
+  "S1": {
+   "grade": "pass",
+   "observed": {
+    "extra_records": {
+     "CCDI-DCC": 87
+    },
+    "groups": 87
+   }
+  }
+ },
+ "input": {
+  "fetch_retries": null,
+  "mapping_entries": 153680,
+  "snapshot": "kept second snapshot",
+  "source_page_errors": {
+   "CCDI-DCC": 0,
+   "KidsFirst": 0,
+   "PCDC": 356,
+   "StJude": 452,
+   "Treehouse": 471,
+   "ccdi-ecDNA": 566,
+   "ccdi-iusccc-pst": 0
+  },
+  "subject_pages": 599,
+  "subjects": 153580
+ },
+ "label": "PRE-REGISTERED: predictions P1-P6, S1 and F1 in README.md, published at evidence-pack tag v0.8.0 before this job ran",
+ "linkcheck": "linkcheck 0.3.0",
+ "linkcheck_report": {
+  "cohort_summary": {
+   "ethnicity_conflict": 4,
+   "persons": 135044,
+   "race_conflict": 5,
+   "sex_conflict": 10,
+   "vital_conflict": 151,
+   "vital_consensus": {
+    "Alive": 12713,
+    "Dead": 4266,
+    "conflict": 151,
+    "missing": 117914
+   },
+   "vital_latest": {
+    "Alive": 12713,
+    "Dead": 4311,
+    "conflict": 106,
+    "missing": 117914
+   },
+   "vital_priority": {
+    "Alive": 12859,
+    "Dead": 4271,
+    "missing": 117914
+   }
+  },
+  "completeness": {
+   "CCDI-DCC": {
+    "informative": {
+     "age_at_vital_status": 44271,
+     "ethnicity": 4090,
+     "race": 49743,
+     "sex": 59363,
+     "vital_status": 13319
+    },
+    "records": 59795,
+    "repeated_records": 0
+   },
+   "KidsFirst": {
+    "informative": {
+     "age_at_vital_status": 2633,
+     "ethnicity": 28160,
+     "race": 27174,
+     "sex": 37949,
+     "vital_status": 2573
+    },
+    "records": 38440,
+    "repeated_records": 0
+   },
+   "PCDC": {
+    "informative": {
+     "age_at_vital_status": 0,
+     "ethnicity": 20488,
+     "race": 20855,
+     "sex": 23917,
+     "vital_status": 0
+    },
+    "records": 24232,
+    "repeated_records": 0
+   },
+   "StJude": {
+    "informative": {
+     "age_at_vital_status": 0,
+     "ethnicity": 11414,
+     "race": 11240,
+     "sex": 13356,
+     "vital_status": 0
+    },
+    "records": 14681,
+    "repeated_records": 0
+   },
+   "Treehouse": {
+    "informative": {
+     "age_at_vital_status": 0,
+     "ethnicity": 8876,
+     "race": 9763,
+     "sex": 12194,
+     "vital_status": 0
+    },
+    "records": 12723,
+    "repeated_records": 0
+   },
+   "ccdi-ecDNA": {
+    "informative": {
+     "age_at_vital_status": 3103,
+     "ethnicity": 0,
+     "race": 0,
+     "sex": 3092,
+     "vital_status": 2638
+    },
+    "records": 3205,
+    "repeated_records": 0
+   },
+   "ccdi-iusccc-pst": {
+    "informative": {
+     "age_at_vital_status": 165,
+     "ethnicity": 101,
+     "race": 100,
+     "sex": 502,
+     "vital_status": 54
+    },
+    "records": 504,
+    "repeated_records": 0
+   }
+  },
+  "conflicts": {
+   "exact": {
+    "all": {
+     "age_at_death": {
+      "over_30_days": 16,
+      "within_1_day": 191,
+      "within_30_days": 4
+     },
+     "ethnicity": {
+      "agree": 2570,
+      "disagree": 2,
+      "uninformative": 17924
+     },
+     "pairs": 20496,
+     "race": {
+      "agree": 11014,
+      "disagree": 5,
+      "uninformative": 9477
+     },
+     "sex": {
+      "agree": 19695,
+      "disagree": 7,
+      "uninformative": 794
+     },
+     "vital_status": {
+      "alive_after_death": 106,
+      "alive_then_dead": 43,
+      "both_alive": 1055,
+      "both_dead": 211,
+      "uninformative": 19081
+     }
+    },
+    "by_source_pair": {
+     "CCDI-DCC | KidsFirst": {
+      "age_at_death": {
+       "over_30_days": 1,
+       "within_1_day": 190,
+       "within_30_days": 4
+      },
+      "ethnicity": {
+       "agree": 921,
+       "disagree": 1,
+       "uninformative": 9305
+      },
+      "pairs": 10227,
+      "race": {
+       "agree": 6396,
+       "disagree": 1,
+       "uninformative": 3830
+      },
+      "sex": {
+       "agree": 9935,
+       "disagree": 2,
+       "uninformative": 290
+      },
+      "vital_status": {
+       "alive_then_dead": 4,
+       "both_alive": 112,
+       "both_dead": 195,
+       "uninformative": 9916
+      }
+     },
+     "CCDI-DCC | PCDC": {
+      "age_at_death": {},
+      "ethnicity": {
+       "agree": 373,
+       "disagree": 1,
+       "uninformative": 2485
+      },
+      "pairs": 2859,
+      "race": {
+       "agree": 2362,
+       "disagree": 3,
+       "uninformative": 494
+      },
+      "sex": {
+       "agree": 2858,
+       "uninformative": 1
+      },
+      "vital_status": {
+       "uninformative": 2859
+      }
+     },
+     "CCDI-DCC | StJude": {
+      "age_at_death": {},
+      "ethnicity": {
+       "uninformative": 362
+      },
+      "pairs": 362,
+      "race": {
+       "agree": 1,
+       "uninformative": 361
+      },
+      "sex": {
+       "agree": 296,
+       "uninformative": 66
+      },
+      "vital_status": {
+       "uninformative": 362
+      }
+     },
+     "CCDI-DCC | Treehouse": {
+      "age_at_death": {},
+      "ethnicity": {
+       "agree": 226,
+       "uninformative": 1145
+      },
+      "pairs": 1371,
+      "race": {
+       "agree": 1215,
+       "uninformative": 156
+      },
+      "sex": {
+       "agree": 1121,
+       "disagree": 1,
+       "uninformative": 249
+      },
+      "vital_status": {
+       "uninformative": 1371
+      }
+     },
+     "CCDI-DCC | ccdi-ecDNA": {
+      "age_at_death": {
+       "over_30_days": 10
+      },
+      "ethnicity": {
+       "uninformative": 1694
+      },
+      "pairs": 1694,
+      "race": {
+       "uninformative": 1694
+      },
+      "sex": {
+       "agree": 1612,
+       "uninformative": 82
+      },
+      "vital_status": {
+       "alive_after_death": 106,
+       "alive_then_dead": 39,
+       "both_alive": 934,
+       "both_dead": 10,
+       "uninformative": 605
+      }
+     },
+     "KidsFirst | PCDC": {
+      "age_at_death": {},
+      "ethnicity": {
+       "agree": 462,
+       "uninformative": 43
+      },
+      "pairs": 505,
+      "race": {
+       "agree": 471,
+       "disagree": 1,
+       "uninformative": 33
+      },
+      "sex": {
+       "agree": 505
+      },
+      "vital_status": {
+       "uninformative": 505
+      }
+     },
+     "KidsFirst | StJude": {
+      "age_at_death": {},
+      "ethnicity": {
+       "uninformative": 43
+      },
+      "pairs": 43,
+      "race": {
+       "agree": 1,
+       "uninformative": 42
+      },
+      "sex": {
+       "agree": 39,
+       "disagree": 4
+      },
+      "vital_status": {
+       "uninformative": 43
+      }
+     },
+     "KidsFirst | Treehouse": {
+      "age_at_death": {},
+      "ethnicity": {
+       "agree": 238,
+       "uninformative": 20
+      },
+      "pairs": 258,
+      "race": {
+       "agree": 235,
+       "uninformative": 23
+      },
+      "sex": {
+       "agree": 258
+      },
+      "vital_status": {
+       "uninformative": 258
+      }
+     },
+     "KidsFirst | ccdi-ecDNA": {
+      "age_at_death": {
+       "over_30_days": 5,
+       "within_1_day": 1
+      },
+      "ethnicity": {
+       "uninformative": 1710
+      },
+      "pairs": 1710,
+      "race": {
+       "uninformative": 1710
+      },
+      "sex": {
+       "agree": 1628,
+       "uninformative": 82
+      },
+      "vital_status": {
+       "both_alive": 9,
+       "both_dead": 6,
+       "uninformative": 1695
+      }
+     },
+     "PCDC | Treehouse": {
+      "age_at_death": {},
+      "ethnicity": {
+       "agree": 350,
+       "uninformative": 19
+      },
+      "pairs": 369,
+      "race": {
+       "agree": 333,
+       "uninformative": 36
+      },
+      "sex": {
+       "agree": 368,
+       "uninformative": 1
+      },
+      "vital_status": {
+       "uninformative": 369
+      }
+     },
+     "StJude | Treehouse": {
+      "age_at_death": {},
+      "ethnicity": {
+       "uninformative": 14
+      },
+      "pairs": 14,
+      "race": {
+       "uninformative": 14
+      },
+      "sex": {
+       "agree": 14
+      },
+      "vital_status": {
+       "uninformative": 14
+      }
+     },
+     "StJude | ccdi-ecDNA": {
+      "age_at_death": {},
+      "ethnicity": {
+       "uninformative": 1084
+      },
+      "pairs": 1084,
+      "race": {
+       "uninformative": 1084
+      },
+      "sex": {
+       "agree": 1061,
+       "uninformative": 23
+      },
+      "vital_status": {
+       "uninformative": 1084
+      }
+     }
+    }
+   },
+   "with_rules": {
+    "all": {
+     "age_at_death": {
+      "over_30_days": 16,
+      "within_1_day": 191,
+      "within_30_days": 4
+     },
+     "ethnicity": {
+      "agree": 2843,
+      "disagree": 4,
+      "uninformative": 18743
+     },
+     "pairs": 21590,
+     "race": {
+      "agree": 11179,
+      "disagree": 5,
+      "uninformative": 10406
+     },
+     "sex": {
+      "agree": 20433,
+      "disagree": 10,
+      "uninformative": 1147
+     },
+     "vital_status": {
+      "alive_after_death": 106,
+      "alive_then_dead": 43,
+      "both_alive": 1055,
+      "both_dead": 211,
+      "uninformative": 20175
+     }
+    },
+    "by_source_pair": {
+     "CCDI-DCC | KidsFirst": {
+      "age_at_death": {
+       "over_30_days": 1,
+       "within_1_day": 190,
+       "within_30_days": 4
+      },
+      "ethnicity": {
+       "agree": 921,
+       "disagree": 1,
+       "uninformative": 9305
+      },
+      "pairs": 10227,
+      "race": {
+       "agree": 6396,
+       "disagree": 1,
+       "uninformative": 3830
+      },
+      "sex": {
+       "agree": 9935,
+       "disagree": 2,
+       "uninformative": 290
+      },
+      "vital_status": {
+       "alive_then_dead": 4,
+       "both_alive": 112,
+       "both_dead": 195,
+       "uninformative": 9916
+      }
+     },
+     "CCDI-DCC | PCDC": {
+      "age_at_death": {},
+      "ethnicity": {
+       "agree": 373,
+       "disagree": 1,
+       "uninformative": 2485
+      },
+      "pairs": 2859,
+      "race": {
+       "agree": 2362,
+       "disagree": 3,
+       "uninformative": 494
+      },
+      "sex": {
+       "agree": 2858,
+       "uninformative": 1
+      },
+      "vital_status": {
+       "uninformative": 2859
+      }
+     },
+     "CCDI-DCC | StJude": {
+      "age_at_death": {},
+      "ethnicity": {
+       "uninformative": 362
+      },
+      "pairs": 362,
+      "race": {
+       "agree": 1,
+       "uninformative": 361
+      },
+      "sex": {
+       "agree": 296,
+       "uninformative": 66
+      },
+      "vital_status": {
+       "uninformative": 362
+      }
+     },
+     "CCDI-DCC | Treehouse": {
+      "age_at_death": {},
+      "ethnicity": {
+       "agree": 233,
+       "uninformative": 1260
+      },
+      "pairs": 1493,
+      "race": {
+       "agree": 1250,
+       "uninformative": 243
+      },
+      "sex": {
+       "agree": 1231,
+       "disagree": 1,
+       "uninformative": 261
+      },
+      "vital_status": {
+       "uninformative": 1493
+      }
+     },
+     "CCDI-DCC | ccdi-ecDNA": {
+      "age_at_death": {
+       "over_30_days": 10
+      },
+      "ethnicity": {
+       "uninformative": 1694
+      },
+      "pairs": 1694,
+      "race": {
+       "uninformative": 1694
+      },
+      "sex": {
+       "agree": 1612,
+       "uninformative": 82
+      },
+      "vital_status": {
+       "alive_after_death": 106,
+       "alive_then_dead": 39,
+       "both_alive": 934,
+       "both_dead": 10,
+       "uninformative": 605
+      }
+     },
+     "KidsFirst | PCDC": {
+      "age_at_death": {},
+      "ethnicity": {
+       "agree": 462,
+       "uninformative": 43
+      },
+      "pairs": 505,
+      "race": {
+       "agree": 471,
+       "disagree": 1,
+       "uninformative": 33
+      },
+      "sex": {
+       "agree": 505
+      },
+      "vital_status": {
+       "uninformative": 505
+      }
+     },
+     "KidsFirst | StJude": {
+      "age_at_death": {},
+      "ethnicity": {
+       "uninformative": 43
+      },
+      "pairs": 43,
+      "race": {
+       "agree": 1,
+       "uninformative": 42
+      },
+      "sex": {
+       "agree": 39,
+       "disagree": 4
+      },
+      "vital_status": {
+       "uninformative": 43
+      }
+     },
+     "KidsFirst | Treehouse": {
+      "age_at_death": {},
+      "ethnicity": {
+       "agree": 277,
+       "uninformative": 58
+      },
+      "pairs": 335,
+      "race": {
+       "agree": 271,
+       "uninformative": 64
+      },
+      "sex": {
+       "agree": 332,
+       "uninformative": 3
+      },
+      "vital_status": {
+       "uninformative": 335
+      }
+     },
+     "KidsFirst | ccdi-ecDNA": {
+      "age_at_death": {
+       "over_30_days": 5,
+       "within_1_day": 1
+      },
+      "ethnicity": {
+       "uninformative": 1710
+      },
+      "pairs": 1710,
+      "race": {
+       "uninformative": 1710
+      },
+      "sex": {
+       "agree": 1628,
+       "uninformative": 82
+      },
+      "vital_status": {
+       "both_alive": 9,
+       "both_dead": 6,
+       "uninformative": 1695
+      }
+     },
+     "PCDC | Treehouse": {
+      "age_at_death": {},
+      "ethnicity": {
+       "agree": 350,
+       "uninformative": 19
+      },
+      "pairs": 369,
+      "race": {
+       "agree": 333,
+       "uninformative": 36
+      },
+      "sex": {
+       "agree": 368,
+       "uninformative": 1
+      },
+      "vital_status": {
+       "uninformative": 369
+      }
+     },
+     "StJude | Treehouse": {
+      "age_at_death": {},
+      "ethnicity": {
+       "agree": 227,
+       "disagree": 2,
+       "uninformative": 513
+      },
+      "pairs": 742,
+      "race": {
+       "agree": 94,
+       "uninformative": 648
+      },
+      "sex": {
+       "agree": 407,
+       "disagree": 3,
+       "uninformative": 332
+      },
+      "vital_status": {
+       "uninformative": 742
+      }
+     },
+     "StJude | ccdi-ecDNA": {
+      "age_at_death": {},
+      "ethnicity": {
+       "uninformative": 1084
+      },
+      "pairs": 1084,
+      "race": {
+       "uninformative": 1084
+      },
+      "sex": {
+       "agree": 1061,
+       "uninformative": 23
+      },
+      "vital_status": {
+       "uninformative": 1084
+      }
+     },
+     "Treehouse | ccdi-ecDNA": {
+      "age_at_death": {},
+      "ethnicity": {
+       "uninformative": 167
+      },
+      "pairs": 167,
+      "race": {
+       "uninformative": 167
+      },
+      "sex": {
+       "agree": 161,
+       "uninformative": 6
+      },
+      "vital_status": {
+       "uninformative": 167
+      }
+     }
+    }
+   }
+  },
+  "links": {
+   "pairs_added_by_rule": {
+    "alt_id": 1094
+   },
+   "pairs_exact": 20496,
+   "pairs_with_rules": 21590,
+   "resolution": {
+    "alt_id: new_pair": 1094,
+    "alt_id: same_source": 3,
+    "exact: already_linked": 4826,
+    "exact: new_pair": 20496,
+    "exact: same_source": 384,
+    "exact: self_reference": 10062,
+    "suffix: already_linked": 3728,
+    "unresolved: unresolved": 109568
+   },
+   "rows": 150161
+  },
+  "overcount": {
+   "exact": {
+    "largest_person": 5,
+    "linked_persons": 14847,
+    "naive_overcount": 17731,
+    "persons": 135849,
+    "persons_with_2plus_records_in_one_source": 404,
+    "records": 153580,
+    "records_in_links": 32578
+   },
+   "with_rules": {
+    "largest_person": 5,
+    "linked_persons": 15403,
+    "naive_overcount": 18536,
+    "persons": 135044,
+    "persons_with_2plus_records_in_one_source": 410,
+    "records": 153580,
+    "records_in_links": 33939
+   }
+  },
+  "priority": [
+   "CCDI-DCC",
+   "KidsFirst"
+  ],
+  "rules": [
+   "exact",
+   "alt_id",
+   "suffix"
+  ],
+  "shared_ids": {
+   "CCDI-DCC": {
+    "ids": 87,
+    "records": 174
+   }
+  },
+  "tool": "linkcheck 0.3.0"
+ },
+ "paging": {
+  "mapping": {
+   "flag_counts": {
+    "short": 1
+   },
+   "flags": [
+    {
+     "entries": 0,
+     "expected": 100,
+     "kind": "short",
+     "page": 35,
+     "source": "PCDC"
+    }
+   ],
+   "last_page": 599,
+   "missing_pages": [],
+   "pages": 599,
+   "per_page": 100,
+   "sources": {
+    "CCDI-DCC": {
+     "error_pages": [],
+     "errors_not_judged": 0,
+     "errors_past_end": 0,
+     "excess": 0,
+     "lost": {
+      "error_pages": 0,
+      "missing_pages": 0,
+      "pages_not_walked": 0,
+      "short_pages": 0
+     },
+     "not_judged": 0,
+     "over_pages": [],
+     "pages_with_entries": 598,
+     "served": 59795,
+     "short_pages": [],
+     "total": 59795,
+     "unexplained": 0
+    },
+    "KidsFirst": {
+     "error_pages": [],
+     "errors_not_judged": 0,
+     "errors_past_end": 0,
+     "excess": 0,
+     "lost": {
+      "error_pages": 0,
+      "missing_pages": 0,
+      "pages_not_walked": 0,
+      "short_pages": 0
+     },
+     "not_judged": 0,
+     "over_pages": [],
+     "pages_with_entries": 385,
+     "served": 38440,
+     "short_pages": [],
+     "total": 38440,
+     "unexplained": 0
+    },
+    "PCDC": {
+     "error_pages": [],
+     "errors_not_judged": 0,
+     "errors_past_end": 0,
+     "excess": 0,
+     "lost": {
+      "error_pages": 0,
+      "missing_pages": 0,
+      "pages_not_walked": 0,
+      "short_pages": 100
+     },
+     "not_judged": 0,
+     "over_pages": [],
+     "pages_with_entries": 244,
+     "served": 24332,
+     "short_pages": [
+      [
+       35,
+       100
+      ]
+     ],
+     "total": 24432,
+     "unexplained": 0
+    },
+    "StJude": {
+     "error_pages": [],
+     "errors_not_judged": 0,
+     "errors_past_end": 0,
+     "excess": 0,
+     "lost": {
+      "error_pages": 0,
+      "missing_pages": 0,
+      "pages_not_walked": 0,
+      "short_pages": 0
+     },
+     "not_judged": 0,
+     "over_pages": [],
+     "pages_with_entries": 147,
+     "served": 14681,
+     "short_pages": [],
+     "total": 14681,
+     "unexplained": 0
+    },
+    "Treehouse": {
+     "error_pages": [],
+     "errors_not_judged": 0,
+     "errors_past_end": 0,
+     "excess": 0,
+     "lost": {
+      "error_pages": 0,
+      "missing_pages": 0,
+      "pages_not_walked": 0,
+      "short_pages": 0
+     },
+     "not_judged": 0,
+     "over_pages": [],
+     "pages_with_entries": 128,
+     "served": 12723,
+     "short_pages": [],
+     "total": 12723,
+     "unexplained": 0
+    },
+    "ccdi-ecDNA": {
+     "error_pages": [],
+     "errors_not_judged": 0,
+     "errors_past_end": 0,
+     "excess": 0,
+     "lost": {
+      "error_pages": 0,
+      "missing_pages": 0,
+      "pages_not_walked": 0,
+      "short_pages": 0
+     },
+     "not_judged": 0,
+     "over_pages": [],
+     "pages_with_entries": 33,
+     "served": 3205,
+     "short_pages": [],
+     "total": 3205,
+     "unexplained": 0
+    },
+    "ccdi-iusccc-pst": {
+     "error_pages": [],
+     "errors_not_judged": 0,
+     "errors_past_end": 0,
+     "excess": 0,
+     "lost": {
+      "error_pages": 0,
+      "missing_pages": 0,
+      "pages_not_walked": 0,
+      "short_pages": 0
+     },
+     "not_judged": 0,
+     "over_pages": [],
+     "pages_with_entries": 6,
+     "served": 504,
+     "short_pages": [],
+     "total": 504,
+     "unexplained": 0
+    }
+   },
+   "tool": "linkcheck paging 0.3.0",
+   "whole_page_failures": []
+  },
+  "subject": {
+   "flag_counts": {
+    "error": 2
+   },
+   "flags": [
+    {
+     "entries": null,
+     "expected": 100,
+     "kind": "error",
+     "page": 12,
+     "source": "PCDC"
+    },
+    {
+     "entries": null,
+     "expected": 100,
+     "kind": "error",
+     "page": 35,
+     "source": "PCDC"
+    }
+   ],
+   "last_page": 599,
+   "missing_pages": [],
+   "pages": 599,
+   "per_page": 100,
+   "sources": {
+    "CCDI-DCC": {
+     "error_pages": [],
+     "errors_not_judged": 0,
+     "errors_past_end": 0,
+     "excess": 0,
+     "lost": {
+      "error_pages": 0,
+      "missing_pages": 0,
+      "pages_not_walked": 0,
+      "short_pages": 0
+     },
+     "not_judged": 0,
+     "over_pages": [],
+     "pages_with_entries": 598,
+     "served": 59795,
+     "short_pages": [],
+     "total": 59795,
+     "unexplained": 0
+    },
+    "KidsFirst": {
+     "error_pages": [],
+     "errors_not_judged": 0,
+     "errors_past_end": 0,
+     "excess": 0,
+     "lost": {
+      "error_pages": 0,
+      "missing_pages": 0,
+      "pages_not_walked": 0,
+      "short_pages": 0
+     },
+     "not_judged": 0,
+     "over_pages": [],
+     "pages_with_entries": 385,
+     "served": 38440,
+     "short_pages": [],
+     "total": 38440,
+     "unexplained": 0
+    },
+    "PCDC": {
+     "error_pages": [
+      12,
+      35
+     ],
+     "errors_not_judged": 0,
+     "errors_past_end": 354,
+     "excess": 0,
+     "lost": {
+      "error_pages": 200,
+      "missing_pages": 0,
+      "pages_not_walked": 0,
+      "short_pages": 0
+     },
+     "not_judged": 0,
+     "over_pages": [],
+     "pages_with_entries": 243,
+     "served": 24232,
+     "short_pages": [],
+     "total": 24432,
+     "unexplained": 0
+    },
+    "StJude": {
+     "error_pages": [],
+     "errors_not_judged": 0,
+     "errors_past_end": 452,
+     "excess": 0,
+     "lost": {
+      "error_pages": 0,
+      "missing_pages": 0,
+      "pages_not_walked": 0,
+      "short_pages": 0
+     },
+     "not_judged": 0,
+     "over_pages": [],
+     "pages_with_entries": 147,
+     "served": 14681,
+     "short_pages": [],
+     "total": 14681,
+     "unexplained": 0
+    },
+    "Treehouse": {
+     "error_pages": [],
+     "errors_not_judged": 0,
+     "errors_past_end": 471,
+     "excess": 0,
+     "lost": {
+      "error_pages": 0,
+      "missing_pages": 0,
+      "pages_not_walked": 0,
+      "short_pages": 0
+     },
+     "not_judged": 0,
+     "over_pages": [],
+     "pages_with_entries": 128,
+     "served": 12723,
+     "short_pages": [],
+     "total": 12723,
+     "unexplained": 0
+    },
+    "ccdi-ecDNA": {
+     "error_pages": [],
+     "errors_not_judged": 0,
+     "errors_past_end": 566,
+     "excess": 0,
+     "lost": {
+      "error_pages": 0,
+      "missing_pages": 0,
+      "pages_not_walked": 0,
+      "short_pages": 0
+     },
+     "not_judged": 0,
+     "over_pages": [],
+     "pages_with_entries": 33,
+     "served": 3205,
+     "short_pages": [],
+     "total": 3205,
+     "unexplained": 0
+    },
+    "ccdi-iusccc-pst": {
+     "error_pages": [],
+     "errors_not_judged": 0,
+     "errors_past_end": 0,
+     "excess": 0,
+     "lost": {
+      "error_pages": 0,
+      "missing_pages": 0,
+      "pages_not_walked": 0,
+      "short_pages": 0
+     },
+     "not_judged": 0,
+     "over_pages": [],
+     "pages_with_entries": 6,
+     "served": 504,
+     "short_pages": [],
+     "total": 504,
+     "unexplained": 0
+    }
+   },
+   "tool": "linkcheck paging 0.3.0",
+   "whole_page_failures": []
+  },
+  "unmapped_mapping_entries": 0
+ },
+ "shared_names": {
+  "agreement": {
+   "death_age": {
+    "within_1_day": 24
+   },
+   "ethnicity": {
+    "agree": 20,
+    "uninformative": 67
+   },
+   "pairs": 87,
+   "race": {
+    "agree": 55,
+    "uninformative": 32
+   },
+   "sex": {
+    "agree": 87
+   },
+   "vital": {
+    "both_alive": 7,
+    "both_dead": 24,
+    "uninformative": 56
+   }
+  },
+  "extra_records": {
+   "CCDI-DCC": 87
+  },
+  "group_sizes": {
+   "2": 87
+  },
+  "groups": 87,
+  "name_is_usi": 41,
+  "namespaces_involved": 8,
+  "records": 174,
+  "same_namespace_name": 0
+ }
+}

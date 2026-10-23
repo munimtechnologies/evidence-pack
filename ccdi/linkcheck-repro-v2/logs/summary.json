@@ -1,0 +1,64 @@
+{
+ "contract": "mv2-compete-result-v1",
+ "name": "linkcheck-repro-v2",
+ "id": "25fd875669b7",
+ "field": "medicine",
+ "run": "20261023T200518Z-medicine",
+ "kind": "compete",
+ "status": "ok",
+ "reason": "",
+ "host": "blade",
+ "image": "python:3.12",
+ "started_at": "2026-10-23T20:23:41.387644+00:00",
+ "finished_at": "2026-10-23T20:35:56.762840+00:00",
+ "duration_seconds": 735,
+ "limits": {
+  "cpu": 1.0,
+  "memory_gb": 2.0,
+  "timeout_minutes": 360.0
+ },
+ "peak_memory_gb": 0.01,
+ "network": {
+  "setup": true,
+  "run": true
+ },
+ "steps": [
+  {
+   "step": "setup-01-python",
+   "cmd": "python get_code.py",
+   "exit": 0,
+   "seconds": 603
+  },
+  {
+   "step": "setup-02-python",
+   "cmd": "python -m unittest -v test_linkcheck test_paging test_namespaces test_repro2",
+   "exit": 0,
+   "seconds": 0
+  },
+  {
+   "step": "setup-03-python",
+   "cmd": "python ensure_snapshot2.py /data/ccdi-raw-snapshot2 /data",
+   "exit": 0,
+   "seconds": 1
+  },
+  {
+   "step": "run-01-python",
+   "cmd": "python repro2.py --kept /data/ccdi-raw-snapshot2 --fresh-root /data --out /out",
+   "exit": 0,
+   "seconds": 23
+  }
+ ],
+ "out_files": [
+  "repro2.json"
+ ],
+ "out_files_total": 1,
+ "out_skipped": [],
+ "upload_skipped": [],
+ "summary_tail": "[run-01-python stdout] e\": 0,\n     \"sex\": 3\n    },\n    \"overcount_with_rules\": {\n     \"linked_persons\": 15403,\n     \"naive_overcount\": 18536,\n     \"persons\": 135044,\n     \"records_in_links\": 33939\n    },\n    \"pairs_added_by_rule\": {\n     \"alt_id\": 1094\n    },\n    \"pairs_with_rules\": 21590\n   }\n  },\n  \"P6\": {\n   \"grade\": \"pass\",\n   \"observed\": {\n    \"linked_persons\": 14847,\n    \"naive_overcount\": 17731,\n    \"pairs_exact\": 20496,\n    \"persons\": 135849,\n    \"records\": 153580,\n    \"records_in_links\": 32578\n   }\n  },\n  \"S1\": {\n   \"grade\": \"pass\",\n   \"observed\": {\n    \"extra_records\": {\n     \"CCDI-DCC\": 87\n    },\n    \"groups\": 87\n   }\n  }\n },\n \"shared_names\": {\n  \"agreement\": {\n   \"death_age\": {\n    \"within_1_day\": 24\n   },\n   \"ethnicity\": {\n    \"agree\": 20,\n    \"uninformative\": 67\n   },\n   \"pairs\": 87,\n   \"race\": {\n    \"agree\": 55,\n    \"uninformative\": 32\n   },\n   \"sex\": {\n    \"agree\": 87\n   },\n   \"vital\": {\n    \"both_alive\": 7,\n    \"both_dead\": 24,\n    \"uninformative\": 56\n   }\n  },\n  \"extra_records\": {\n   \"CCDI-DCC\": 87\n  },\n  \"group_sizes\": {\n   \"2\": 87\n  },\n  \"groups\": 87,\n  \"name_is_usi\": 41,\n  \"namespaces_involved\": 8,\n  \"records\": 174,\n  \"same_namespace_name\": 0\n },\n \"snapshot\": \"kept second snapshot\"\n}\n",
+ "paths": {
+  "workdir": "/work (copy of E:\\MV2-Pursuit\\work\\20261023T200518Z-medicine\\compete\\linkcheck-repro-v2)",
+  "out": "/out -> out/",
+  "data": "/data (docker volume mv2c-data-ccdi-raw, kept for later jobs)"
+ },
+ "note": ""
+}

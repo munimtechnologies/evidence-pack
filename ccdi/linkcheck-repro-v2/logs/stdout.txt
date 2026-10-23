@@ -1,0 +1,400 @@
+===== setup-01-python: python get_code.py
+v0.5.5/ccdi/concordance-v1/analyze.py 20808 bytes sha256 aa22639f75436c099c339191d5b92ee2b3e2f3a79a8ed6273b6693044ba4fca6
+v0.5.5/ccdi/concordance-v1/fetch_ccdi.py 7364 bytes sha256 479b79aecbeaa9481e1fb16bed26b8fde47edcde671ecdd0dca8bdc075ec8214
+v0.7.0/ccdi/paging-audit-v1/ccdi_pages.py 10378 bytes sha256 e13785c24d22dcaf8d6ac7f946b713850a4922fc8adb8add32f79ef7a65499ed
+not public yet (404), try 1 of 24: https://raw.githubusercontent.com/munimtechnologies/evidence-pack/v0.8.0/linkcheck/linkcheck/__init__.py
+not public yet (404), try 2 of 24: https://raw.githubusercontent.com/munimtechnologies/evidence-pack/v0.8.0/linkcheck/linkcheck/__init__.py
+v0.8.0/linkcheck/linkcheck/__init__.py 327 bytes sha256 7f05d67603cdd1dfeef8d75fbe5db95813f573c8e097241c1857aebff45c3941
+v0.8.0/linkcheck/linkcheck/core.py 18037 bytes sha256 3a4b8a4930bb053afda8f24d7b07b962a0523fba75290055819186c4a91db879
+v0.8.0/linkcheck/linkcheck/__main__.py 2017 bytes sha256 709e0513dc5de1788aa67b68d0ca8f3d2ac391c1c689fac15ddca4eff31f9498
+v0.8.0/linkcheck/linkcheck/paging.py 8190 bytes sha256 2a5ebca59c3bce95faa320257c7d085e3de59516708b419c0943137811cd692b
+v0.8.0/linkcheck/test_linkcheck.py 7747 bytes sha256 6d37a04355edcdab41a4f9331b9609594387c6be8781110a436222b177e8c0a4
+v0.8.0/linkcheck/test_paging.py 6131 bytes sha256 5bd21b202e79be7a797c799991f3a27426f96595f2a3227fb2fd35429078f124
+v0.8.0/linkcheck/test_namespaces.py 3557 bytes sha256 df35164228f3108f55b286607545c0cbdc8ab25cab427f285001bf21ea40e696
+v0.8.0/linkcheck/examples/records.jsonl 975 bytes sha256 b4071fc0526b1af1e4a03ca9d92a80d7314280f1f5f6b87f5de0e86e2617d3ff
+v0.8.0/linkcheck/examples/links.jsonl 607 bytes sha256 55faed2e36ffaa9b34b9e48f08a0b340449b2a59de7ad1d4f115b8a058f5abbf
+v0.8.0/ccdi/linkcheck-repro-v2/repro2.py 15658 bytes sha256 d0538fef89e11e4a462fbe85e63869cb0aa835e5546c383a3694ca9d03147c76
+v0.8.0/ccdi/linkcheck-repro-v2/test_repro2.py 13324 bytes sha256 c4642152471ee32901e23c877d3eed15bd3886bdd33709fc99ed4467e1e5b170
+v0.8.0/ccdi/linkcheck-repro-v2/ensure_snapshot2.py 2002 bytes sha256 edd42a221d2915d236dbfd70499b6d1a2fb5e29efa2f1a9bfceb1ae0f5db1a2d
+v0.8.0/ccdi/linkcheck-repro-v2/fetch_robust.py 4962 bytes sha256 f89c0716c006cdcf982e012eb8e37807788ff699a6491397361917d815250143
+
+===== setup-02-python: python -m unittest -v test_linkcheck test_paging test_namespaces test_repro2
+{
+ "exact": {
+  "largest_person": 3,
+  "linked_persons": 2,
+  "naive_overcount": 3,
+  "persons": 7,
+  "persons_with_2plus_records_in_one_source": 0,
+  "records": 10,
+  "records_in_links": 5
+ },
+ "with_rules": {
+  "largest_person": 3,
+  "linked_persons": 3,
+  "naive_overcount": 4,
+  "persons": 6,
+  "persons_with_2plus_records_in_one_source": 0,
+  "records": 10,
+  "records_in_links": 7
+ }
+}
+{
+ "flag_counts": {
+  "short": 2
+ },
+ "unexplained": {
+  "P": 0,
+  "Q": 0
+ }
+}
+{
+ "grades": {
+  "F1": {
+   "grade": "pass",
+   "observed": {
+    "last_page": {
+     "mapping": 1,
+     "subject": 1
+    },
+    "problems": {}
+   }
+  },
+  "P1": {
+   "grade": "pass",
+   "observed": {
+    "census_subjects": 8,
+    "linkcheck_records": 8,
+    "repeated_records": 0
+   }
+  },
+  "P2": {
+   "grade": "pass",
+   "observed": {
+    "census_only": 0,
+    "census_pairs": 2,
+    "linkcheck_only": 0,
+    "linkcheck_pairs": 2
+   }
+  },
+  "P3": {
+   "grade": "pass",
+   "observed": {
+    "census": {
+     "linked_persons": 2,
+     "naive_overcount": 2,
+     "persons": 6,
+     "records_in_links": 4
+    },
+    "linkcheck": {
+     "linked_persons": 2,
+     "naive_overcount": 2,
+     "persons": 6,
+     "records_in_links": 4
+    }
+   }
+  },
+  "P4": {
+   "grade": "pass",
+   "observed": {
+    "all_equal": true,
+    "source_pairs": 2,
+    "source_pairs_differing": []
+   }
+  },
+  "P5": {
+   "grade": "not graded",
+   "why": "fresh snapshot: the predicted numbers belong to snapshot 2"
+  },
+  "P6": {
+   "grade": "not graded",
+   "why": "fresh snapshot: the predicted numbers belong to snapshot 2"
+  },
+  "S1": {
+   "grade": "not graded",
+   "why": "fresh snapshot: the predicted numbers belong to snapshot 2"
+  }
+ },
+ "shared_names": {
+  "agreement": {
+   "death_age": {},
+   "ethnicity": {
+    "uninformative": 1
+   },
+   "pairs": 1,
+   "race": {
+    "agree": 1
+   },
+   "sex": {
+    "agree": 1
+   },
+   "vital": {
+    "uninformative": 1
+   }
+  },
+  "extra_records": {
+   "CCDI-DCC": 1
+  },
+  "group_sizes": {
+   "2": 1
+  },
+  "groups": 1,
+  "name_is_usi": 1,
+  "namespaces_involved": 2,
+  "records": 2,
+  "same_namespace_name": 0
+ },
+ "snapshot": "kept fresh snapshot ccdi-raw-fresh-20261024T000000Z"
+}
+{
+ "grades": {
+  "F1": {
+   "grade": "not graded",
+   "why": "kept second snapshot: taken by the census's own fetcher"
+  },
+  "P1": {
+   "grade": "pass",
+   "observed": {
+    "census_subjects": 8,
+    "linkcheck_records": 8,
+    "repeated_records": 0
+   }
+  },
+  "P2": {
+   "grade": "pass",
+   "observed": {
+    "census_only": 0,
+    "census_pairs": 2,
+    "linkcheck_only": 0,
+    "linkcheck_pairs": 2
+   }
+  },
+  "P3": {
+   "grade": "pass",
+   "observed": {
+    "census": {
+     "linked_persons": 2,
+     "naive_overcount": 2,
+     "persons": 6,
+     "records_in_links": 4
+    },
+    "linkcheck": {
+     "linked_persons": 2,
+     "naive_overcount": 2,
+     "persons": 6,
+     "records_in_links": 4
+    }
+   }
+  },
+  "P4": {
+   "grade": "pass",
+   "observed": {
+    "all_equal": true,
+    "source_pairs": 2,
+    "source_pairs_differing": []
+   }
+  },
+  "P5": {
+   "grade": "fail",
+   "observed": {
+    "extra_disagree": {
+     "ethnicity": 0,
+     "race": 0,
+     "sex": 2
+    },
+    "overcount_with_rules": {
+     "linked_persons": 2,
+     "naive_overcount": 4,
+     "persons": 4,
+     "records_in_links": 6
+    },
+    "pairs_added_by_rule": {
+     "alt_id": 1,
+     "suffix": 1
+    },
+    "pairs_with_rules": 4
+   }
+  },
+  "P6": {
+   "grade": "fail",
+   "observed": {
+    "linked_persons": 2,
+    "naive_overcount": 2,
+    "pairs_exact": 2,
+    "persons": 6,
+    "records": 8,
+    "records_in_links": 4
+   }
+  },
+  "S1": {
+   "grade": "fail",
+   "observed": {
+    "extra_records": {
+     "CCDI-DCC": 1
+    },
+    "groups": 1
+   }
+  }
+ },
+ "shared_names": {
+  "agreement": {
+   "death_age": {},
+   "ethnicity": {
+    "uninformative": 1
+   },
+   "pairs": 1,
+   "race": {
+    "agree": 1
+   },
+   "sex": {
+    "agree": 1
+   },
+   "vital": {
+    "uninformative": 1
+   }
+  },
+  "extra_records": {
+   "CCDI-DCC": 1
+  },
+  "group_sizes": {
+   "2": 1
+  },
+  "groups": 1,
+  "name_is_usi": 1,
+  "namespaces_involved": 2,
+  "records": 2,
+  "same_namespace_name": 0
+ },
+ "snapshot": "kept second snapshot"
+}
+
+===== setup-03-python: python ensure_snapshot2.py /data/ccdi-raw-snapshot2 /data
+kept second snapshot found under /data/ccdi-raw-snapshot2; nothing to fetch
+
+===== run-01-python: python repro2.py --kept /data/ccdi-raw-snapshot2 --fresh-root /data --out /out
+{
+ "grades": {
+  "F1": {
+   "grade": "not graded",
+   "why": "kept second snapshot: taken by the census's own fetcher"
+  },
+  "P1": {
+   "grade": "pass",
+   "observed": {
+    "census_subjects": 153580,
+    "linkcheck_records": 153580,
+    "repeated_records": 0
+   }
+  },
+  "P2": {
+   "grade": "pass",
+   "observed": {
+    "census_only": 0,
+    "census_pairs": 20496,
+    "linkcheck_only": 0,
+    "linkcheck_pairs": 20496
+   }
+  },
+  "P3": {
+   "grade": "pass",
+   "observed": {
+    "census": {
+     "linked_persons": 14847,
+     "naive_overcount": 17731,
+     "persons": 135849,
+     "records_in_links": 32578
+    },
+    "linkcheck": {
+     "linked_persons": 14847,
+     "naive_overcount": 17731,
+     "persons": 135849,
+     "records_in_links": 32578
+    }
+   }
+  },
+  "P4": {
+   "grade": "pass",
+   "observed": {
+    "all_equal": true,
+    "source_pairs": 12,
+    "source_pairs_differing": []
+   }
+  },
+  "P5": {
+   "grade": "pass",
+   "observed": {
+    "extra_disagree": {
+     "ethnicity": 2,
+     "race": 0,
+     "sex": 3
+    },
+    "overcount_with_rules": {
+     "linked_persons": 15403,
+     "naive_overcount": 18536,
+     "persons": 135044,
+     "records_in_links": 33939
+    },
+    "pairs_added_by_rule": {
+     "alt_id": 1094
+    },
+    "pairs_with_rules": 21590
+   }
+  },
+  "P6": {
+   "grade": "pass",
+   "observed": {
+    "linked_persons": 14847,
+    "naive_overcount": 17731,
+    "pairs_exact": 20496,
+    "persons": 135849,
+    "records": 153580,
+    "records_in_links": 32578
+   }
+  },
+  "S1": {
+   "grade": "pass",
+   "observed": {
+    "extra_records": {
+     "CCDI-DCC": 87
+    },
+    "groups": 87
+   }
+  }
+ },
+ "shared_names": {
+  "agreement": {
+   "death_age": {
+    "within_1_day": 24
+   },
+   "ethnicity": {
+    "agree": 20,
+    "uninformative": 67
+   },
+   "pairs": 87,
+   "race": {
+    "agree": 55,
+    "uninformative": 32
+   },
+   "sex": {
+    "agree": 87
+   },
+   "vital": {
+    "both_alive": 7,
+    "both_dead": 24,
+    "uninformative": 56
+   }
+  },
+  "extra_records": {
+   "CCDI-DCC": 87
+  },
+  "group_sizes": {
+   "2": 87
+  },
+  "groups": 87,
+  "name_is_usi": 41,
+  "namespaces_involved": 8,
+  "records": 174,
+  "same_namespace_name": 0
+ },
+ "snapshot": "kept second snapshot"
+}
