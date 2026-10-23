@@ -1,0 +1,11 @@
+{"source": "A", "id": "QA01", "sex": "Male", "race": ["White"], "ethnicity": "Not Hispanic or Latino", "vital_status": "Alive", "age_at_vital_status": 1000}
+{"source": "B", "id": "QB01", "alt_ids": ["XB01"], "sex": "M", "race": ["White"], "ethnicity": "Not Hispanic or Latino", "vital_status": "Dead", "age_at_vital_status": 900}
+{"source": "A", "id": "QA02", "sex": "Female", "vital_status": "Dead", "age_at_vital_status": 500}
+{"source": "B", "id": "QB02", "sex": "Male", "vital_status": "Dead", "age_at_vital_status": 500}
+{"source": "C", "id": "QC02", "sex": "Female", "vital_status": "Alive", "age_at_vital_status": 400}
+{"source": "A", "id": "QA03", "sex": "Female", "race": ["Asian"]}
+{"source": "B", "id": "QB03", "alt_ids": ["XB03"], "sex": "Female", "race": ["Asian", "White"]}
+{"source": "C", "id": "QC04", "sex": "Unknown"}
+{"source": "A", "id": "QA01", "sex": "Male"}
+{"source": "B", "id": "QB05", "sex": "Female"}
+{"source": "B", "id": "QB06", "sex": "Female"}

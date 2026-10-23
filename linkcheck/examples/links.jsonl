@@ -1,0 +1,9 @@
+{"a_source": "A", "a_id": "QA01", "b_source": "B", "b_id": "QB01"}
+{"a_source": "A", "a_id": "QA02", "b_source": "B", "b_id": "QB02"}
+{"a_source": "B", "a_id": "QB02", "b_source": "C", "b_id": "QC02"}
+{"a_source": "A", "a_id": "QA03", "b_source": "B", "b_id": "XB03"}
+{"a_source": "A", "a_id": "COG_QA01", "b_source": "B", "b_id": "QB01"}
+{"a_source": "A", "a_id": "QA01", "b_source": "A", "b_id": "QA01"}
+{"a_source": "B", "a_id": "QB05", "b_source": "B", "b_id": "QB06"}
+{"a_source": "A", "a_id": "QZZZ", "b_source": "B", "b_id": "QB01"}
+{"a_source": "B", "a_id": "QB01", "b_source": "A", "b_id": "QA01"}

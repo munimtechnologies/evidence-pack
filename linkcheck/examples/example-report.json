@@ -1,0 +1,240 @@
+{
+ "cohort_summary": {
+  "ethnicity_conflict": 0,
+  "persons": 6,
+  "race_conflict": 1,
+  "sex_conflict": 1,
+  "vital_conflict": 2,
+  "vital_consensus": {
+   "conflict": 2,
+   "missing": 4
+  },
+  "vital_latest": {
+   "Dead": 1,
+   "conflict": 1,
+   "missing": 4
+  },
+  "vital_priority": {
+   "Dead": 2,
+   "missing": 4
+  }
+ },
+ "completeness": {
+  "A": {
+   "informative": {
+    "age_at_vital_status": 2,
+    "ethnicity": 1,
+    "race": 2,
+    "sex": 3,
+    "vital_status": 2
+   },
+   "records": 3,
+   "repeated_records": 1
+  },
+  "B": {
+   "informative": {
+    "age_at_vital_status": 2,
+    "ethnicity": 1,
+    "race": 2,
+    "sex": 5,
+    "vital_status": 2
+   },
+   "records": 5,
+   "repeated_records": 0
+  },
+  "C": {
+   "informative": {
+    "age_at_vital_status": 1,
+    "ethnicity": 0,
+    "race": 0,
+    "sex": 1,
+    "vital_status": 1
+   },
+   "records": 2,
+   "repeated_records": 0
+  }
+ },
+ "conflicts": {
+  "exact": {
+   "all": {
+    "age_at_death": {
+     "within_1_day": 1
+    },
+    "ethnicity": {
+     "agree": 1,
+     "uninformative": 2
+    },
+    "pairs": 3,
+    "race": {
+     "agree": 1,
+     "uninformative": 2
+    },
+    "sex": {
+     "agree": 1,
+     "disagree": 2
+    },
+    "vital_status": {
+     "alive_after_death": 1,
+     "alive_then_dead": 1,
+     "both_dead": 1
+    }
+   },
+   "by_source_pair": {
+    "A | B": {
+     "age_at_death": {
+      "within_1_day": 1
+     },
+     "ethnicity": {
+      "agree": 1,
+      "uninformative": 1
+     },
+     "pairs": 2,
+     "race": {
+      "agree": 1,
+      "uninformative": 1
+     },
+     "sex": {
+      "agree": 1,
+      "disagree": 1
+     },
+     "vital_status": {
+      "alive_after_death": 1,
+      "both_dead": 1
+     }
+    },
+    "B | C": {
+     "age_at_death": {},
+     "ethnicity": {
+      "uninformative": 1
+     },
+     "pairs": 1,
+     "race": {
+      "uninformative": 1
+     },
+     "sex": {
+      "disagree": 1
+     },
+     "vital_status": {
+      "alive_then_dead": 1
+     }
+    }
+   }
+  },
+  "with_rules": {
+   "all": {
+    "age_at_death": {
+     "within_1_day": 1
+    },
+    "ethnicity": {
+     "agree": 1,
+     "uninformative": 3
+    },
+    "pairs": 4,
+    "race": {
+     "agree": 1,
+     "overlap": 1,
+     "uninformative": 2
+    },
+    "sex": {
+     "agree": 2,
+     "disagree": 2
+    },
+    "vital_status": {
+     "alive_after_death": 1,
+     "alive_then_dead": 1,
+     "both_dead": 1,
+     "uninformative": 1
+    }
+   },
+   "by_source_pair": {
+    "A | B": {
+     "age_at_death": {
+      "within_1_day": 1
+     },
+     "ethnicity": {
+      "agree": 1,
+      "uninformative": 2
+     },
+     "pairs": 3,
+     "race": {
+      "agree": 1,
+      "overlap": 1,
+      "uninformative": 1
+     },
+     "sex": {
+      "agree": 2,
+      "disagree": 1
+     },
+     "vital_status": {
+      "alive_after_death": 1,
+      "both_dead": 1,
+      "uninformative": 1
+     }
+    },
+    "B | C": {
+     "age_at_death": {},
+     "ethnicity": {
+      "uninformative": 1
+     },
+     "pairs": 1,
+     "race": {
+      "uninformative": 1
+     },
+     "sex": {
+      "disagree": 1
+     },
+     "vital_status": {
+      "alive_then_dead": 1
+     }
+    }
+   }
+  }
+ },
+ "links": {
+  "pairs_added_by_rule": {
+   "alt_id": 1
+  },
+  "pairs_exact": 3,
+  "pairs_with_rules": 4,
+  "resolution": {
+   "alt_id: new_pair": 1,
+   "exact: already_linked": 1,
+   "exact: new_pair": 3,
+   "exact: same_source": 1,
+   "exact: self_reference": 1,
+   "suffix: already_linked": 1,
+   "unresolved: unresolved": 1
+  },
+  "rows": 9
+ },
+ "overcount": {
+  "exact": {
+   "largest_person": 3,
+   "linked_persons": 2,
+   "naive_overcount": 3,
+   "persons": 7,
+   "persons_with_2plus_records_in_one_source": 0,
+   "records": 10,
+   "records_in_links": 5
+  },
+  "with_rules": {
+   "largest_person": 3,
+   "linked_persons": 3,
+   "naive_overcount": 4,
+   "persons": 6,
+   "persons_with_2plus_records_in_one_source": 0,
+   "records": 10,
+   "records_in_links": 7
+  }
+ },
+ "priority": [
+  "B",
+  "A"
+ ],
+ "rules": [
+  "exact",
+  "alt_id",
+  "suffix"
+ ],
+ "tool": "linkcheck 0.1.0"
+}
