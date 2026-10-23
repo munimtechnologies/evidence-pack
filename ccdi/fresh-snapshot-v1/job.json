@@ -1,0 +1,17 @@
+{
+ "name": "ccdi-fresh-v1",
+ "kind": "compete",
+ "workdir": "E:/MV2-Pursuit/work/20261023T213642Z-medicine/compete/ccdi-fresh-v1",
+ "image": "python:3.12",
+ "setup": ["python get_code.py",
+           "python -m unittest -v test_linkcheck test_paging test_namespaces test_repro2 test_fresh1",
+           "python ensure_snapshot2.py /data/no-kept-snapshot /data/ccdi-fresh-v1"],
+ "run": ["python repro2.py --kept /data/no-kept-snapshot --fresh-root /data/ccdi-fresh-v1 --out /out",
+         "python fresh1.py --fresh-root /data/ccdi-fresh-v1 --kept /data/ccdi-raw-snapshot2 --out /out"],
+ "network": true,
+ "data_urls": [],
+ "data_key": "ccdi-raw",
+ "cpu": 1,
+ "memory_gb": 2,
+ "timeout_minutes": 360
+}
