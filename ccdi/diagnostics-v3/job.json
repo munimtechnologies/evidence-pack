@@ -1,10 +1,10 @@
 {
- "name": "ccdi-diag3-v1",
+ "name": "ccdi-diag3-v2",
  "kind": "compete",
- "workdir": "E:/MV2-Pursuit/work/20261023T093232Z-medicine/compete/ccdi-diag3",
+ "workdir": "E:/MV2-Pursuit/work/20261023T113735Z-medicine/compete/ccdi-diag3",
  "image": "python:3.12",
  "setup": ["python get_code.py", "python -m unittest -v test_diag3"],
- "run": ["python diag3.py --raw /data/ccdi-raw-snapshot2 --out /out"],
+ "run": ["python diag3.py --raw /data/ccdi-raw-snapshot2 --out /out --allow-missing-snapshot"],
  "network": true,
  "data_urls": [],
  "data_key": "ccdi-raw",

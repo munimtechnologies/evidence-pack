@@ -11,6 +11,11 @@ while the other 90 records of the old page 35 came back at smaller page sizes. T
      records 3,456-3,475 at 1): how many entries come back per source, how many are not in
      the kept snapshot's mapping, and does any page carry an error?
 
+v2 (2026-10-23): ccdi-diag3-v1 ran on a machine whose data volume did not hold the kept
+snapshot and stopped before any request. With --allow-missing-snapshot the probes run
+anyway: the snapshot comparisons are then reported as null, and source names are taken
+from the live /subject responses instead of the snapshot. The questions are unchanged.
+
 Aggregates only: positions and counts, never participant IDs. Error text is scrubbed of
 anything identifier-like.
 
@@ -41,9 +46,12 @@ def fetch(path, page, per_page, get, pause):
         return status, None
 
 
-def subject_probe(subjects, get=None, pause=fetch_ccdi.PAUSE):
+def subject_probe(subjects, get=None, pause=fetch_ccdi.PAUSE, seen=None):
+    """subjects=None means no kept snapshot: not_in_snapshot is reported as null.
+    Source names in every response are added to the set `seen`, if given."""
     get = get or fetch_ccdi.get
-    names = {s["name"] for s in subjects.values() if s["source"] == "PCDC"}
+    names = None if subjects is None else {s["name"] for s in subjects.values()
+                                           if s["source"] == "PCDC"}
     rows = []
     for page, per_page in SUBJECT_PROBES:
         status, parsed = fetch("/subject", page, per_page, get, pause)
@@ -52,13 +60,16 @@ def subject_probe(subjects, get=None, pause=fetch_ccdi.PAUSE):
             row["error"] = "response is not a JSON list"
             rows.append(row)
             continue
+        if seen is not None:
+            seen.update(str(x["source"]) for x in parsed if isinstance(x, dict) and x.get("source"))
         item = next((x for x in parsed if isinstance(x, dict) and x.get("source") == "PCDC"),
                     None)
         data = item.get("data") if item else None
         if isinstance(data, list):
             got = [analyze.fed_subject(r, "PCDC")["name"] for r in data if isinstance(r, dict)]
             row["records"] = len(got)
-            row["not_in_snapshot"] = sum(1 for n in got if n not in names)
+            row["not_in_snapshot"] = (None if names is None
+                                      else sum(1 for n in got if n not in names))
         else:
             row["error"] = diag.scrub(json.dumps({k: v for k, v in (item or {}).items()
                                                   if k not in ("data", "summary")}))
@@ -66,10 +77,11 @@ def subject_probe(subjects, get=None, pause=fetch_ccdi.PAUSE):
     return rows
 
 
-def mapping_probe(entries, subjects, get=None, pause=fetch_ccdi.PAUSE):
+def mapping_probe(entries, sources, get=None, pause=fetch_ccdi.PAUSE):
+    """entries=None means no kept snapshot: not_in_snapshot is reported as null."""
     get = get or fetch_ccdi.get
-    known = {(str(e.get("domain_name")).lower(), str(e.get("participant_id"))) for e in entries}
-    sources = {s["source"] for s in subjects.values()}
+    known = None if entries is None else {(str(e.get("domain_name")).lower(),
+                                           str(e.get("participant_id"))) for e in entries}
     rows = []
     for page, per_page in MAPPING_PROBES:
         status, parsed = fetch("/subject-mapping", page, per_page, get, pause)
@@ -85,10 +97,10 @@ def mapping_probe(entries, subjects, get=None, pause=fetch_ccdi.PAUSE):
             dom = str(e.get("domain_name"))
             label = dom if dom in sources else "other"
             by_dom[label] += 1
-            if (dom.lower(), str(e.get("participant_id"))) not in known:
+            if known is not None and (dom.lower(), str(e.get("participant_id"))) not in known:
                 new[label] += 1
         row["entries"] = dict(sorted(by_dom.items()))
-        row["not_in_snapshot"] = dict(sorted(new.items()))
+        row["not_in_snapshot"] = None if known is None else dict(sorted(new.items()))
         other = {k: v for k, v in parsed.items() if k != "participant_ids"}
         if other:
             row["other_keys"] = diag.scrub(json.dumps(other, sort_keys=True), 300)
@@ -100,18 +112,30 @@ def main(argv=None, get=None, pause=fetch_ccdi.PAUSE):
     ap = argparse.ArgumentParser()
     ap.add_argument("--raw", required=True, help="raw/ folder kept by ccdi-diag-v1")
     ap.add_argument("--out", required=True)
+    ap.add_argument("--allow-missing-snapshot", action="store_true",
+                    help="run the probes without the kept snapshot (comparisons become null)")
     args = ap.parse_args(argv)
-    if not os.path.exists(os.path.join(args.raw, "subject", "chosen.json")):
+    found = os.path.exists(os.path.join(args.raw, "subject", "chosen.json"))
+    if not found and not args.allow_missing_snapshot:
         raise SystemExit("kept snapshot not found under " + args.raw)
-    _, _, subjects, _ = analyze.read_subjects(args.raw)
-    entries = analyze.read_mappings(args.raw)
-    subject_rows = subject_probe(subjects, get=get, pause=pause)
+    subjects = entries = None
+    snapshot_check = {"found": found}
+    if found:
+        _, _, subjects, _ = analyze.read_subjects(args.raw)
+        entries = analyze.read_mappings(args.raw)
+        snapshot_check.update({"subjects": len(subjects), "mapping_entries": len(entries)})
+    else:
+        print("kept snapshot not found under " + args.raw + "; probing without it", flush=True)
+    seen = set()
+    subject_rows = subject_probe(subjects, get=get, pause=pause, seen=seen)
+    sources = {s["source"] for s in subjects.values()} if found else seen
     result = {"label": "POST HOC: written after ccdi-diag2-v1 results were seen",
-              "snapshot_check": {"subjects": len(subjects), "mapping_entries": len(entries)},
+              "snapshot_check": snapshot_check,
+              "sources": sorted(sources),
               "subject_probe": subject_rows,
               "failing_positions_at_per_page_1": [r["page"] for r in subject_rows
                                                   if r["per_page"] == 1 and r["records"] is None],
-              "mapping_probe": mapping_probe(entries, subjects, get=get, pause=pause)}
+              "mapping_probe": mapping_probe(entries, sources, get=get, pause=pause)}
     os.makedirs(args.out, exist_ok=True)
     with open(os.path.join(args.out, "diagnostics3.json"), "w", encoding="utf-8") as fh:
         json.dump(result, fh, indent=1, sort_keys=True)

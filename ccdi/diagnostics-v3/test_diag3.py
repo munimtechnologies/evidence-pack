@@ -76,6 +76,11 @@ class Snapshot(unittest.TestCase):
     def tearDown(self):
         shutil.rmtree(self.tmp)
 
+    def read_out(self):
+        with open(os.path.join(self.out, "diagnostics3.json"), encoding="utf-8") as fh:
+            text = fh.read()
+        return text, json.loads(text)
+
     def test_subject_probe(self):
         _, _, subjects, _ = analyze.read_subjects(self.raw)
         rows = diag3.subject_probe(subjects, get=fake_get, pause=0)
@@ -89,10 +94,19 @@ class Snapshot(unittest.TestCase):
         self.assertEqual((rows[5]["page"], rows[5]["not_in_snapshot"]), (3460, 0))
         self.assertIsNone(rows[8]["records"])
 
+    def test_subject_probe_without_snapshot(self):
+        seen = set()
+        rows = diag3.subject_probe(None, get=fake_get, pause=0, seen=seen)
+        self.assertEqual(rows[1], {"page": 3456, "per_page": 1, "status": 200, "records": 1,
+                                   "not_in_snapshot": None})
+        self.assertIsNone(rows[8]["records"])
+        self.assertEqual(seen, {"CCDI-DCC", "PCDC"})
+
     def test_mapping_probe(self):
         _, _, subjects, _ = analyze.read_subjects(self.raw)
         entries = analyze.read_mappings(self.raw)
-        rows = diag3.mapping_probe(entries, subjects, get=fake_get, pause=0)
+        sources = {s["source"] for s in subjects.values()}
+        rows = diag3.mapping_probe(entries, sources, get=fake_get, pause=0)
         self.assertEqual(len(rows), 34)
         self.assertEqual(rows[0]["entries"], {"CCDI-DCC": 1, "PCDC": 1, "other": 1})
         self.assertEqual(rows[0]["not_in_snapshot"], {"PCDC": 1, "other": 1})
@@ -101,13 +115,18 @@ class Snapshot(unittest.TestCase):
         self.assertNotIn("PAAAAA", rows[1]["other_keys"])
         self.assertEqual((rows[-1]["page"], rows[-1]["per_page"]), (3475, 1))
 
+    def test_mapping_probe_without_snapshot(self):
+        rows = diag3.mapping_probe(None, {"CCDI-DCC", "PCDC"}, get=fake_get, pause=0)
+        self.assertEqual(rows[0]["entries"], {"CCDI-DCC": 1, "PCDC": 1, "other": 1})
+        self.assertIsNone(rows[0]["not_in_snapshot"])
+        self.assertIn("NotFound", rows[1]["other_keys"])
+
     def test_main(self):
         diag3.main(["--raw", self.raw, "--out", self.out], get=fake_get, pause=0)
-        with open(os.path.join(self.out, "diagnostics3.json"), encoding="utf-8") as fh:
-            text = fh.read()
-        r = json.loads(text)
+        text, r = self.read_out()
         self.assertTrue(r["label"].startswith("POST HOC"))
-        self.assertEqual(r["snapshot_check"], {"subjects": 2, "mapping_entries": 2})
+        self.assertEqual(r["snapshot_check"], {"found": True, "subjects": 2, "mapping_entries": 2})
+        self.assertEqual(r["sources"], ["CCDI-DCC", "PCDC"])
         self.assertEqual(r["failing_positions_at_per_page_1"], [3463])
         for ident in ("PXXXXA", "PCCCCC", "PNEWAA", "PODDAA", "PAAAAA", "odd-node"):
             self.assertNotIn(ident, text)
@@ -116,6 +135,18 @@ class Snapshot(unittest.TestCase):
         with self.assertRaises(SystemExit):
             diag3.main(["--raw", os.path.join(self.tmp, "nope"), "--out", self.out],
                        get=fake_get, pause=0)
+
+    def test_main_allow_missing_snapshot(self):
+        diag3.main(["--raw", os.path.join(self.tmp, "nope"), "--out", self.out,
+                    "--allow-missing-snapshot"], get=fake_get, pause=0)
+        text, r = self.read_out()
+        self.assertEqual(r["snapshot_check"], {"found": False})
+        self.assertEqual(r["sources"], ["CCDI-DCC", "PCDC"])
+        self.assertEqual(r["failing_positions_at_per_page_1"], [3463])
+        self.assertIsNone(r["mapping_probe"][0]["not_in_snapshot"])
+        self.assertEqual(r["mapping_probe"][0]["entries"], {"CCDI-DCC": 1, "PCDC": 1, "other": 1})
+        for ident in ("PXXXXA", "PCCCCC", "PNEWAA", "PODDAA", "PAAAAA", "odd-node"):
+            self.assertNotIn(ident, text)
 
 
 if __name__ == "__main__":
