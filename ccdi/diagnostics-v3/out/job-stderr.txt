@@ -1,0 +1,26 @@
+===== setup-01-python: python get_code.py
+
+===== setup-02-python: python -m unittest -v test_diag3
+test_main (test_diag3.Snapshot.test_main) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmppsvjekh2/raw/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_main_allow_missing_snapshot (test_diag3.Snapshot.test_main_allow_missing_snapshot) ... ok
+test_mapping_probe (test_diag3.Snapshot.test_mapping_probe) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpam46rrk1/raw/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_mapping_probe_without_snapshot (test_diag3.Snapshot.test_mapping_probe_without_snapshot) ... ok
+test_missing_snapshot (test_diag3.Snapshot.test_missing_snapshot) ... ok
+test_subject_probe (test_diag3.Snapshot.test_subject_probe) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpfpjgfonu/raw/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_subject_probe_without_snapshot (test_diag3.Snapshot.test_subject_probe_without_snapshot) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.103s
+
+OK
+
+===== run-01-python: python diag3.py --raw /data/ccdi-raw-snapshot2 --out /out --allow-missing-snapshot

@@ -1,0 +1,701 @@
+{
+ "failing_positions_at_per_page_1": [
+  3462
+ ],
+ "label": "POST HOC: written after ccdi-diag2-v1 results were seen",
+ "mapping_probe": [
+  {
+   "entries": {
+    "KidsFirst": 100,
+    "PCDC": 100,
+    "StJude": 100,
+    "Treehouse": 100,
+    "other": 100
+   },
+   "not_in_snapshot": {},
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 34,
+   "per_page": 100,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 100,
+    "StJude": 100,
+    "Treehouse": 100,
+    "other": 100
+   },
+   "not_in_snapshot": {},
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 35,
+   "per_page": 100,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 50,
+    "PCDC": 50,
+    "StJude": 50,
+    "Treehouse": 50,
+    "other": 50
+   },
+   "not_in_snapshot": {
+    "PCDC": 50
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 69,
+   "per_page": 50,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 50,
+    "StJude": 50,
+    "Treehouse": 50,
+    "other": 50
+   },
+   "not_in_snapshot": {},
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 70,
+   "per_page": 50,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 10,
+    "PCDC": 10,
+    "StJude": 10,
+    "Treehouse": 10,
+    "other": 10
+   },
+   "not_in_snapshot": {
+    "PCDC": 10
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 341,
+   "per_page": 10,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 10,
+    "PCDC": 10,
+    "StJude": 10,
+    "Treehouse": 10,
+    "other": 10
+   },
+   "not_in_snapshot": {
+    "PCDC": 10
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 342,
+   "per_page": 10,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 10,
+    "PCDC": 10,
+    "StJude": 10,
+    "Treehouse": 10,
+    "other": 10
+   },
+   "not_in_snapshot": {
+    "PCDC": 10
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 343,
+   "per_page": 10,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 10,
+    "PCDC": 10,
+    "StJude": 10,
+    "Treehouse": 10,
+    "other": 10
+   },
+   "not_in_snapshot": {
+    "PCDC": 10
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 344,
+   "per_page": 10,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 10,
+    "PCDC": 10,
+    "StJude": 10,
+    "Treehouse": 10,
+    "other": 10
+   },
+   "not_in_snapshot": {
+    "PCDC": 10
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 345,
+   "per_page": 10,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 10,
+    "PCDC": 10,
+    "StJude": 10,
+    "Treehouse": 10,
+    "other": 10
+   },
+   "not_in_snapshot": {
+    "PCDC": 10
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 346,
+   "per_page": 10,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 10,
+    "StJude": 10,
+    "Treehouse": 10,
+    "other": 10
+   },
+   "not_in_snapshot": {},
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 347,
+   "per_page": 10,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 10,
+    "PCDC": 10,
+    "StJude": 10,
+    "Treehouse": 10,
+    "other": 10
+   },
+   "not_in_snapshot": {
+    "PCDC": 10
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 348,
+   "per_page": 10,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 10,
+    "PCDC": 10,
+    "StJude": 10,
+    "Treehouse": 10,
+    "other": 10
+   },
+   "not_in_snapshot": {
+    "PCDC": 10
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 349,
+   "per_page": 10,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 10,
+    "PCDC": 10,
+    "StJude": 10,
+    "Treehouse": 10,
+    "other": 10
+   },
+   "not_in_snapshot": {
+    "PCDC": 10
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 350,
+   "per_page": 10,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 1,
+    "PCDC": 1,
+    "StJude": 1,
+    "Treehouse": 1,
+    "other": 1
+   },
+   "not_in_snapshot": {
+    "PCDC": 1
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 3456,
+   "per_page": 1,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 1,
+    "PCDC": 1,
+    "StJude": 1,
+    "Treehouse": 1,
+    "other": 1
+   },
+   "not_in_snapshot": {
+    "PCDC": 1
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 3457,
+   "per_page": 1,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 1,
+    "PCDC": 1,
+    "StJude": 1,
+    "Treehouse": 1,
+    "other": 1
+   },
+   "not_in_snapshot": {
+    "PCDC": 1
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 3458,
+   "per_page": 1,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 1,
+    "PCDC": 1,
+    "StJude": 1,
+    "Treehouse": 1,
+    "other": 1
+   },
+   "not_in_snapshot": {
+    "PCDC": 1
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 3459,
+   "per_page": 1,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 1,
+    "PCDC": 1,
+    "StJude": 1,
+    "Treehouse": 1,
+    "other": 1
+   },
+   "not_in_snapshot": {
+    "PCDC": 1
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 3460,
+   "per_page": 1,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 1,
+    "PCDC": 1,
+    "StJude": 1,
+    "Treehouse": 1,
+    "other": 1
+   },
+   "not_in_snapshot": {
+    "PCDC": 1
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 3461,
+   "per_page": 1,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 1,
+    "StJude": 1,
+    "Treehouse": 1,
+    "other": 1
+   },
+   "not_in_snapshot": {},
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 3462,
+   "per_page": 1,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 1,
+    "PCDC": 1,
+    "StJude": 1,
+    "Treehouse": 1,
+    "other": 1
+   },
+   "not_in_snapshot": {
+    "PCDC": 1
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 3463,
+   "per_page": 1,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 1,
+    "PCDC": 1,
+    "StJude": 1,
+    "Treehouse": 1,
+    "other": 1
+   },
+   "not_in_snapshot": {
+    "PCDC": 1
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 3464,
+   "per_page": 1,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 1,
+    "PCDC": 1,
+    "StJude": 1,
+    "Treehouse": 1,
+    "other": 1
+   },
+   "not_in_snapshot": {
+    "PCDC": 1
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 3465,
+   "per_page": 1,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 1,
+    "PCDC": 1,
+    "StJude": 1,
+    "Treehouse": 1,
+    "other": 1
+   },
+   "not_in_snapshot": {
+    "PCDC": 1
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 3466,
+   "per_page": 1,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 1,
+    "PCDC": 1,
+    "StJude": 1,
+    "Treehouse": 1,
+    "other": 1
+   },
+   "not_in_snapshot": {
+    "PCDC": 1
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 3467,
+   "per_page": 1,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 1,
+    "PCDC": 1,
+    "StJude": 1,
+    "Treehouse": 1,
+    "other": 1
+   },
+   "not_in_snapshot": {
+    "PCDC": 1
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 3468,
+   "per_page": 1,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 1,
+    "PCDC": 1,
+    "StJude": 1,
+    "Treehouse": 1,
+    "other": 1
+   },
+   "not_in_snapshot": {
+    "PCDC": 1
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 3469,
+   "per_page": 1,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 1,
+    "PCDC": 1,
+    "StJude": 1,
+    "Treehouse": 1,
+    "other": 1
+   },
+   "not_in_snapshot": {
+    "PCDC": 1
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 3470,
+   "per_page": 1,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 1,
+    "PCDC": 1,
+    "StJude": 1,
+    "Treehouse": 1,
+    "other": 1
+   },
+   "not_in_snapshot": {
+    "PCDC": 1
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 3471,
+   "per_page": 1,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 1,
+    "PCDC": 1,
+    "StJude": 1,
+    "Treehouse": 1,
+    "other": 1
+   },
+   "not_in_snapshot": {
+    "PCDC": 1
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 3472,
+   "per_page": 1,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 1,
+    "PCDC": 1,
+    "StJude": 1,
+    "Treehouse": 1,
+    "other": 1
+   },
+   "not_in_snapshot": {
+    "PCDC": 1
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 3473,
+   "per_page": 1,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 1,
+    "PCDC": 1,
+    "StJude": 1,
+    "Treehouse": 1,
+    "other": 1
+   },
+   "not_in_snapshot": {
+    "PCDC": 1
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 3474,
+   "per_page": 1,
+   "status": 200
+  },
+  {
+   "entries": {
+    "KidsFirst": 1,
+    "PCDC": 1,
+    "StJude": 1,
+    "Treehouse": 1,
+    "other": 1
+   },
+   "not_in_snapshot": {
+    "PCDC": 1
+   },
+   "other_keys": "{\"supplementary_domains\": []}",
+   "page": 3475,
+   "per_page": 1,
+   "status": 200
+  }
+ ],
+ "snapshot_check": {
+  "found": true,
+  "mapping_entries": 153680,
+  "subjects": 153580
+ },
+ "sources": [
+  "CCDI-DCC",
+  "KidsFirst",
+  "PCDC",
+  "StJude",
+  "Treehouse",
+  "ccdi-ecDNA",
+  "ccdi-iusccc-pst"
+ ],
+ "subject_probe": [
+  {
+   "error": "{\"source\": \"PCDC\", \"errors\": [{\"kind\": \"NotFound\", \"method\": \"GET\", \"route\": \"/api\", \"message\": \"Server Error.\"}]}",
+   "page": 347,
+   "per_page": 10,
+   "records": null,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 1,
+   "page": 3456,
+   "per_page": 1,
+   "records": 1,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 1,
+   "page": 3457,
+   "per_page": 1,
+   "records": 1,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 1,
+   "page": 3458,
+   "per_page": 1,
+   "records": 1,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 1,
+   "page": 3459,
+   "per_page": 1,
+   "records": 1,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 1,
+   "page": 3460,
+   "per_page": 1,
+   "records": 1,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 1,
+   "page": 3461,
+   "per_page": 1,
+   "records": 1,
+   "status": 200
+  },
+  {
+   "error": "{\"source\": \"PCDC\", \"errors\": [{\"kind\": \"NotFound\", \"method\": \"GET\", \"route\": \"/api\", \"message\": \"Server Error.\"}]}",
+   "page": 3462,
+   "per_page": 1,
+   "records": null,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 1,
+   "page": 3463,
+   "per_page": 1,
+   "records": 1,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 1,
+   "page": 3464,
+   "per_page": 1,
+   "records": 1,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 1,
+   "page": 3465,
+   "per_page": 1,
+   "records": 1,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 1,
+   "page": 3466,
+   "per_page": 1,
+   "records": 1,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 1,
+   "page": 3467,
+   "per_page": 1,
+   "records": 1,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 1,
+   "page": 3468,
+   "per_page": 1,
+   "records": 1,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 1,
+   "page": 3469,
+   "per_page": 1,
+   "records": 1,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 1,
+   "page": 3470,
+   "per_page": 1,
+   "records": 1,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 1,
+   "page": 3471,
+   "per_page": 1,
+   "records": 1,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 1,
+   "page": 3472,
+   "per_page": 1,
+   "records": 1,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 1,
+   "page": 3473,
+   "per_page": 1,
+   "records": 1,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 1,
+   "page": 3474,
+   "per_page": 1,
+   "records": 1,
+   "status": 200
+  },
+  {
+   "not_in_snapshot": 1,
+   "page": 3475,
+   "per_page": 1,
+   "records": 1,
+   "status": 200
+  }
+ ]
+}
