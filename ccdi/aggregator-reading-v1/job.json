@@ -1,0 +1,15 @@
+{
+ "name": "ccdi-aggr-probe-v1",
+ "kind": "compete",
+ "workdir": "E:/MV2-Pursuit/work/20261023T231347Z-medicine/compete/ccdi-aggr-probe-v1",
+ "image": "python:3.12",
+ "setup": ["python get_code.py",
+           "python -m unittest -v test_probe1"],
+ "run": ["python probe1.py --out /out"],
+ "network": true,
+ "data_urls": [],
+ "data_key": "ccdi-raw",
+ "cpu": 1,
+ "memory_gb": 1,
+ "timeout_minutes": 180
+}
