@@ -1,0 +1,16 @@
+{
+ "name": "ccdi-paging-v1",
+ "kind": "compete",
+ "workdir": "E:/MV2-Pursuit/work/20261023T181203Z-medicine/compete/paging-audit",
+ "image": "python:3.12",
+ "setup": ["python get_code.py",
+           "python -m unittest -v test_linkcheck test_paging test_ccdi_pages",
+           "python ensure_snapshot.py /data/ccdi-raw-snapshot2"],
+ "run": ["python ccdi_pages.py --raw /data/ccdi-raw-snapshot2 --fallback-raw raw --out /out"],
+ "network": true,
+ "data_urls": [],
+ "data_key": "ccdi-raw",
+ "cpu": 1,
+ "memory_gb": 2,
+ "timeout_minutes": 360
+}

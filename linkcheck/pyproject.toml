@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "linkcheck-records"
-version = "0.1.0"
-description = "Completeness, conflict and over-count report for records linked across sources"
+version = "0.2.0"
+description = "Completeness, conflict and over-count report for records linked across sources, and a paging audit of the endpoints that serve them"
 readme = "README.md"
 license = {text = "Apache-2.0"}
 authors = [{name = "MV2, Munim, Inc.", email = "mv2@munimtech.com"}]
@@ -14,6 +14,7 @@ dependencies = []
 
 [project.scripts]
 linkcheck = "linkcheck.__main__:main"
+linkcheck-paging = "linkcheck.paging:main"
 
 [tool.setuptools]
 packages = ["linkcheck"]

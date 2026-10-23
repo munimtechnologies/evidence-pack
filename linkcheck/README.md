@@ -1,10 +1,10 @@
-# LinkCheck 0.1.0
+# LinkCheck 0.2.0
 
 MV2 of Munim, Inc. Code Apache-2.0; text CC BY 4.0. Written by AI agents (Claude) working in MV2's name; no human has reviewed it yet. Research and data-quality software only: it is not medical advice and makes no clinical decisions.
 
-When one person has records in several sources and a linkage index says which records belong together, pooling them is safe only if each person is counted once, the fields are present, and the linked records agree. LinkCheck measures those three things and builds a cohort table that keeps every conflict visible instead of silently picking a value.
+When one person has records in several sources and a linkage index says which records belong together, pooling them is safe only if each person is counted once, the fields are present, and the linked records agree. LinkCheck measures those three things and builds a cohort table that keeps every conflict visible instead of silently picking a value. Since 0.2.0 it can also audit the paged endpoints the records come from, so that records lost in transit are found before the analysis starts.
 
-It grew out of MV2's pre-registered census of NCI's Childhood Cancer Data Initiative federation ([ccdi/concordance-v1](../ccdi/concordance-v1/), tag v0.5.5) and its post-hoc link diagnostics ([ccdi/diagnostics-v2](../ccdi/diagnostics-v2/), tag v0.5.10). It uses the same comparison rules, but works on any sources.
+It grew out of MV2's pre-registered census of NCI's Childhood Cancer Data Initiative federation ([ccdi/concordance-v1](../ccdi/concordance-v1/), tag v0.5.5) and its post-hoc diagnostics ([ccdi/diagnostics-v2](../ccdi/diagnostics-v2/), tag v0.5.10; [ccdi/diagnostics-v3](../ccdi/diagnostics-v3/), tag v0.5.12). It uses the same comparison rules, but works on any sources.
 
 ## What it reports
 
@@ -23,8 +23,13 @@ It grew out of MV2's pre-registered census of NCI's Childhood Cancer Data Initia
    - `vital_priority`: the first informative value in a source order you state.
 
    An analysis can then report its estimate under each rule, or exclude conflicted persons, and show how much the choice moves the result. Ethnicity is shown as `H` / `NH`.
+6. **Paging audit** (new in 0.2.0, `linkcheck/paging.py`). Some endpoints serve several sources side by side: page p of the response holds page p of every source. A source can then lose entries in two ways: its part of a page is an error object, or the page is just shorter than it should be, with no error. The CCDI diagnostics found both on one federation; a client that checks only for errors misses the second. The audit counts entries per source on every page, and compares each page with what the source's total says it should hold: min(per_page, max(0, T - (p - 1) x per_page)) on page p for a source with total T. Without a total, every page before the source's last page with entries should be full. It reports:
+   - **loss flags**: error pages, short pages and over-full pages where entries were expected;
+   - **errors past a source's end**, counted apart (some servers answer an exhausted source with an error object; nothing is lost there);
+   - page numbers missing from the walk, and pages that failed as a whole;
+   - per source: served, total, entries lost by kind (error pages, short pages, missing pages, pages not walked), excess, and what is left **unexplained**. A non-zero unexplained count means the losses are somewhere the flags do not show.
 
-The report holds counts only, never record ids. `--min-cell N` shows every count from 1 to N-1 as `<N`. The cohort table lists record ids, so keep it as private as the input data.
+The reports hold counts only, never record ids. `--min-cell N` shows every count in the linkage report from 1 to N-1 as `<N`. The cohort table lists record ids, so keep it as private as the input data.
 
 ## Use
 
@@ -41,22 +46,40 @@ python -m linkcheck --records examples/records.jsonl --links examples/links.json
 
 Source names and ids are matched exactly (case-sensitive), so normalise them first. Values are normalised case-insensitively: Male/M, Female/F; Alive/Living, Dead/Deceased; Hispanic or Latino / Not Hispanic or Latino; the five OMB 1997 race categories. Anything else, including "Unknown" and "Not reported", counts as no value.
 
-`examples/example-report.json` is the report for the made-up example above (`--priority B,A --min-cell 0`).
+The paging audit:
+
+```
+python -m linkcheck.paging --pages pages.jsonl --per-page 100 --totals totals.json --out paging.json
+```
+
+- `--pages`: JSON Lines, one line per page walked: `{"page": 35, "counts": {"A": 100, "B": 0, "C": null}}`. A count is the number of entries the source had on that page; `null` means the source's part of the page was an error object; a source left out has 0 entries; `"counts": null` means the whole page failed.
+- `--totals` (optional): a JSON object `{"A": 24432, ...}`, for example from a summary endpoint.
+- `--per-page`: the page size the walk asked for.
+
+From Python: `from linkcheck import paging; paging.audit({1: {"A": 100}, 2: {"A": None}}, 100, {"A": 150})`.
 
 ## Tests
 
 ```
-python -m unittest -v test_linkcheck
+python -m unittest -v test_linkcheck test_paging
 ```
 
-The tests use only the made-up records in `examples/`. Every expected number was worked out by hand before the first run. **All 14 passed** in the sealed job `linkcheck-test-v1` (Python 3.12, no network, 2026-10-23 12:12 UTC), which also produced `examples/example-report.json`.
+The tests use only made-up data: the records in `examples/` and the page counts in `test_paging.py`. Every expected number was worked out by hand before the first run. The 14 tests of `test_linkcheck` passed in a sealed job for 0.1.0 (`linkcheck-test-v1`); `test_paging` first runs in the sealed job `ccdi-paging-v1`.
+
+## Checks on real data
+
+- [ccdi/linkcheck-repro-v1](../ccdi/linkcheck-repro-v1/) (pre-registered at tag v0.6.0): does LinkCheck 0.1.0 reproduce the CCDI census on the same snapshot? Pending.
+- [ccdi/paging-audit-v1](../ccdi/paging-audit-v1/) (pre-registered at tag v0.7.0): a paging audit of every saved page of both CCDI endpoints, with six predictions. Pending.
 
 ## Related tools
 
 Record-linkage libraries such as [Splink](https://moj-analytical-services.github.io/splink/index.html), [dedupe](https://github.com/dedupeio/dedupe) and the [Python Record Linkage Toolkit](https://github.com/jpweytjens/recordlinkage) *make* links. Data-fusion frameworks such as PyDI ([arXiv 2603.10547](https://arxiv.org/pdf/2603.10547)) and ODCS-FusionTool ([arXiv 1410.7990](https://arxiv.org/pdf/1410.7990)) resolve conflicting values with chosen functions. LinkCheck does neither. It *audits* links that already exist: what each resolution rule adds, how complete each source is, how often linked records disagree (with unknown values kept apart from conflicts, and vital status compared by age), and how much pooling over-counts. Its cohort table carries conflicts forward instead of resolving them away. A 2026-10-23 web search found no tool that reports these things for an existing linkage index, but the search was short, and generic data-fusion tools overlap with the cohort table.
 
+For paging, generic checkers such as [pagination-integrity-check](https://github.com/chenhz01/pagination-integrity-check) reconcile saved page responses for missing or duplicate pages, overlapping ids and broken cursor chains. LinkCheck's paging audit is narrower. It works per source, for endpoints where one response carries every source's page. It works out what each page should hold from each source's total, and it keeps three cases apart: error objects, silent short pages, and errors past a source's end.
+
 ## Limits
 
-- Version 0.1.0 is a first prototype and has so far run only on made-up records. Its first real-data check is pre-registered in [ccdi/linkcheck-repro-v1](../ccdi/linkcheck-repro-v1/) (published with this version, before the check ran): on the CCDI federation snapshot it must reproduce the census code's pairs, over-count and agreement tables exactly, and its looser rules must reproduce the stage-2 Treehouse finding (20,496 exact pairs; naive over-count 17,731, rising to 18,536 with Treehouse alternate ids). Until those results are published, treat the tool as untested on real data.
+- Version 0.2.0 is a prototype. The linkage report has not yet been checked on real CCDI data, and the paging audit has run only on made-up pages (see "Checks on real data").
 - The race comparison uses the 1997 OMB categories, as the census did. OMB's 2024 combined race/ethnicity standard is not yet supported.
 - Alive-versus-dead logic assumes ages at vital status are measured from the same reference point in every source. The CCDI diagnostics found one source where they are not, so check that before trusting `alive_after_death`.
+- The paging audit counts entries; it does not compare them. A page that holds the right number of entries but the wrong ones (for example, records repeated from another page because the order changed during the walk) is not flagged. It also assumes each source's pages are filled in order, so only a source's last page can be partly full.
