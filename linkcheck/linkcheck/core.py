@@ -13,6 +13,12 @@ links that say two records belong to the same person, LinkCheck:
   5  builds a de-duplicated, conflict-aware cohort table: one row per person, each field
      resolved by a stated rule, conflicts carried as flags instead of hidden.
 
+A record may name its namespace (for example the study it was submitted under). Records
+are then keyed by (source, id, namespace), so two namespaces of one source may serve the
+same id. A link end that names a namespace resolves to that record only; one that does not
+resolves only if exactly one record of the source has the id, and is otherwise counted as
+ambiguous, never guessed (0.3.0; 0.1.0-0.2.0 kept the first record).
+
 The rules and comparisons are those of MV2's pre-registered CCDI census (evidence-pack
 tag v0.5.5, ccdi/concordance-v1/analyze.py) and its post-hoc link diagnostics (tag
 v0.5.10, ccdi/diagnostics-v2). Standard library only; the same input gives the same output.
@@ -24,7 +30,7 @@ import collections
 import csv
 import json
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 
 RULES = ("exact", "alt_id", "suffix")
 RACES = {"white": "White", "black or african american": "Black or African American",
@@ -69,10 +75,20 @@ def informative(v):
     return bool(v) if isinstance(v, frozenset) else v is not None
 
 
+def text(v):
+    return "" if v in (None, "") else str(v)
+
+
+def key_of(source, ident, namespace=""):
+    """A record's key: (source, id), or (source, id, namespace) when it names one."""
+    return (source, ident, namespace) if namespace else (source, ident)
+
+
 def make_record(raw):
     if not isinstance(raw, dict) or raw.get("source") in (None, "") or raw.get("id") in (None, ""):
         raise ValueError("every record needs a source and an id")
     return {"source": str(raw["source"]), "id": str(raw["id"]),
+            "namespace": text(raw.get("namespace")),
             "alt_ids": sorted({str(a) for a in raw.get("alt_ids") or [] if a not in (None, "")}),
             "sex": norm_sex(raw.get("sex")), "race": norm_race(raw.get("race")),
             "ethnicity": norm_eth(raw.get("ethnicity")),
@@ -83,46 +99,70 @@ def make_record(raw):
 # ---------- resolving links ----------
 
 class Index:
-    """Records by (source, id), first copy kept; ids served as alternates by (source, alt)."""
+    """Records by key, first copy kept; the records serving each (source, id); ids served as
+    alternates by (source, alt)."""
 
     def __init__(self, records):
         self.records, self.repeats = {}, collections.Counter()
         for raw in records:
             r = make_record(raw)
-            key = (r["source"], r["id"])
+            key = key_of(r["source"], r["id"], r["namespace"])
             if key in self.records:
                 self.repeats[r["source"]] += 1
             else:
                 self.records[key] = r
-        self.alt = collections.defaultdict(list)
+        self.by_id, self.alt = collections.defaultdict(list), collections.defaultdict(list)
         for key, r in self.records.items():
+            self.by_id[(r["source"], r["id"])].append(key)
             for a in r["alt_ids"]:
                 if a != r["id"]:
                     self.alt[(r["source"], a)].append(key)
 
-    def resolve(self, source, ident, rules):
+    def find(self, source, ident, namespace=""):
+        """(record key, None) or (None, why not), by the exact id."""
+        if namespace:
+            key = (source, ident, namespace)
+            return (key, None) if key in self.records else (None, "unresolved")
+        hits = self.by_id.get((source, ident), [])
+        if len(hits) == 1:
+            return hits[0], None
+        return None, ("ambiguous_id" if hits else "unresolved")
+
+    def resolve(self, source, ident, rules, namespace=""):
         """(record key, rule) or (None, why not)."""
-        key = (str(source), str(ident))
-        if key in self.records:
+        source, ident = str(source), str(ident)
+        key, why = self.find(source, ident, text(namespace))
+        if key is not None:
             return key, "exact"
+        if why == "ambiguous_id":
+            return None, why
         if "alt_id" in rules:
-            hits = self.alt.get(key, [])
+            hits = self.alt.get((source, ident), [])
             if len(hits) == 1:
                 return hits[0], "alt_id"
             if len(hits) > 1:
                 return None, "ambiguous_alt_id"
-        if "suffix" in rules and "_" in key[1]:
-            short = (key[0], key[1].rsplit("_", 1)[1])
-            if short in self.records:
+        if "suffix" in rules and "_" in ident:
+            short, _ = self.find(source, ident.rsplit("_", 1)[1])
+            if short is not None:
                 return short, "suffix"
         return None, "unresolved"
+
+    def shared_ids(self):
+        """Per source: ids that two or more namespaces serve, and the records serving them."""
+        out = collections.defaultdict(lambda: {"ids": 0, "records": 0})
+        for (src, _), keys in self.by_id.items():
+            if len(keys) > 1:
+                out[src]["ids"] += 1
+                out[src]["records"] += len(keys)
+        return dict(sorted(out.items()))
 
 
 def link_ends(raw):
     try:
-        return ((str(raw["a_source"]), str(raw["a_id"])),
-                (str(raw["b_source"]), str(raw["b_id"])))
-    except (KeyError, TypeError):
+        return ((str(raw["a_source"]), str(raw["a_id"]), text(raw.get("a_namespace"))),
+                (str(raw["b_source"]), str(raw["b_id"]), text(raw.get("b_namespace"))))
+    except (KeyError, TypeError, AttributeError):
         raise ValueError("every link needs a_source, a_id, b_source and b_id")
 
 
@@ -145,15 +185,15 @@ def resolve_links(index, links, rules=RULES):
     pairs, counts, retry = {}, collections.Counter(), []
     for raw in links:
         a, b = link_ends(raw)
-        ka, _ = index.resolve(*a, rules=("exact",))
-        kb, _ = index.resolve(*b, rules=("exact",))
+        ka, _ = index.resolve(a[0], a[1], ("exact",), a[2])
+        kb, _ = index.resolve(b[0], b[1], ("exact",), b[2])
         if ka is None or kb is None:
             retry.append((a, b))
             continue
         counts["exact: " + place(pairs, ka, kb, "exact")] += 1
     for a, b in retry:
-        ka, ra = index.resolve(*a, rules=rules)
-        kb, rb = index.resolve(*b, rules=rules)
+        ka, ra = index.resolve(a[0], a[1], rules, a[2])
+        kb, rb = index.resolve(b[0], b[1], rules, b[2])
         if ka is None or kb is None:
             counts["unresolved: " + (ra if ka is None else rb)] += 1
             continue
@@ -298,7 +338,8 @@ def vital_priority(recs, priority):
     """The first informative value in the stated source order; unlisted sources come
     after the listed ones, in name order."""
     rank = {s: i for i, s in enumerate(priority)}
-    for r in sorted(recs, key=lambda r: (rank.get(r["source"], len(rank)), r["source"], r["id"])):
+    for r in sorted(recs, key=lambda r: (rank.get(r["source"], len(rank)), r["source"],
+                                         r["id"], r["namespace"])):
         if r["vital"]:
             return r["vital"]
     return None
@@ -318,7 +359,7 @@ def cohort(index, groups, priority=()):
         recs = [index.records[k] for k in g]
         row = {"person": "P%06d" % n, "n_records": len(recs),
                "sources": ";".join(sorted({r["source"] for r in recs})),
-               "records": ";".join("%s:%s" % k for k in g)}
+               "records": ";".join(":".join(k) for k in g)}
         for name, key in (("sex", "sex"), ("race", "race"), ("ethnicity", "ethnicity")):
             value, conflict = consensus(r[key] for r in recs)
             row[name] = shown(value, conflict)
@@ -358,6 +399,7 @@ def check(records, links, rules=RULES, priority=()):
     report = {"tool": "linkcheck " + __version__, "rules": list(rules),
               "priority": list(priority),
               "completeness": completeness(index),
+              "shared_ids": index.shared_ids(),
               "links": {"rows": len(links), "resolution": link_counts,
                         "pairs_exact": len(exact), "pairs_with_rules": len(every),
                         "pairs_added_by_rule": dict(sorted(collections.Counter(
