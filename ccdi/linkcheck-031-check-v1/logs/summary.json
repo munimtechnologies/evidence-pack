@@ -1,0 +1,58 @@
+{
+ "contract": "mv2-compete-result-v1",
+ "name": "linkcheck-031-v1",
+ "id": "ea3061543d81",
+ "field": "medicine",
+ "run": "20261024T003743Z-medicine",
+ "kind": "compete",
+ "status": "ok",
+ "reason": "",
+ "host": "dell",
+ "image": "python:3.12",
+ "started_at": "2026-10-24T00:52:41.930100+00:00",
+ "finished_at": "2026-10-24T00:55:17.783931+00:00",
+ "duration_seconds": 155,
+ "limits": {
+  "cpu": 1.0,
+  "memory_gb": 2.0,
+  "timeout_minutes": 180.0
+ },
+ "peak_memory_gb": null,
+ "network": {
+  "setup": true,
+  "run": true
+ },
+ "steps": [
+  {
+   "step": "setup-01-python",
+   "cmd": "python get_code.py",
+   "exit": 0,
+   "seconds": 3
+  },
+  {
+   "step": "setup-02-python",
+   "cmd": "python -m unittest -v test_linkcheck test_paging test_namespaces test_paging_body test_ccdi_pages test_check031",
+   "exit": 0,
+   "seconds": 0
+  },
+  {
+   "step": "run-01-python",
+   "cmd": "python check031.py --raw /data/ccdi-raw-snapshot2 --out /out",
+   "exit": 0,
+   "seconds": 0
+  }
+ ],
+ "out_files": [
+  "check031.json"
+ ],
+ "out_files_total": 1,
+ "out_skipped": [],
+ "upload_skipped": [],
+ "summary_tail": "[run-01-python stdout] {\n \"grades\": {\n  \"R1\": {\n   \"grade\": \"not graded\",\n   \"why\": \"no kept second snapshot on this machine\"\n  },\n  \"R2\": {\n   \"grade\": \"not graded\",\n   \"why\": \"no kept second snapshot on this machine\"\n  },\n  \"R3\": {\n   \"grade\": \"not graded\",\n   \"why\": \"no kept second snapshot on this machine\"\n  },\n  \"R4\": {\n   \"grade\": \"not graded\",\n   \"why\": \"no kept second snapshot on this machine\"\n  }\n },\n \"snapshot\": null\n}\n",
+ "paths": {
+  "workdir": "/work (copy of E:\\MV2-Pursuit\\work\\20261024T003743Z-medicine\\compete\\linkcheck-031-v1)",
+  "out": "/out -> out/",
+  "data": "/data (docker volume mv2c-data-ccdi-raw, kept for later jobs)"
+ },
+ "note": ""
+}

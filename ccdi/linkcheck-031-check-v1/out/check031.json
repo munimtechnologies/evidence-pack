@@ -1,0 +1,24 @@
+{
+ "grades": {
+  "R1": {
+   "grade": "not graded",
+   "why": "no kept second snapshot on this machine"
+  },
+  "R2": {
+   "grade": "not graded",
+   "why": "no kept second snapshot on this machine"
+  },
+  "R3": {
+   "grade": "not graded",
+   "why": "no kept second snapshot on this machine"
+  },
+  "R4": {
+   "grade": "not graded",
+   "why": "no kept second snapshot on this machine"
+  }
+ },
+ "input": {
+  "snapshot": null
+ },
+ "label": "PRE-REGISTERED: predictions R1-R4 in README.md, published at evidence-pack tag v0.8.5 before this job ran"
+}
