@@ -1,0 +1,1444 @@
+{
+ "grades": {
+  "S1": "pass",
+  "S2": "pass",
+  "S3": "pass",
+  "S4": "pass",
+  "S5": "pass",
+  "S6": "fail"
+ },
+ "label": "PRE-REGISTERED: predictions S1-S6 in ccdi/linkcheck-050-check-v1/README.md (tag v0.9.1); grader corrected as ccdi/linkcheck-050-check-v2 (tag v0.9.2) before any snapshot was read",
+ "linkcheck": "linkcheck 0.5.0",
+ "per_snapshot": [
+  {
+   "descriptive": {
+    "declared": {
+     "by_source": {
+      "CCDI-DCC": {
+       "convention": {
+        "1997": 4066,
+        "both": 24,
+        "declared_2024": 47062,
+        "no_value": 8643
+       },
+       "hispanic": {
+        "H": 4090,
+        "NH_implied": 47062,
+        "unknown": 8643
+       },
+       "hispanic_in_race_list": 24,
+       "records": 59795,
+       "values_2024_only": {
+        "Hispanic or Latino": 24
+       }
+      },
+      "KidsFirst": {
+       "convention": {
+        "1997": 28160,
+        "no_value": 8021,
+        "undetermined": 2259
+       },
+       "hispanic": {
+        "H": 4824,
+        "NH": 23336,
+        "unknown": 10280
+       },
+       "hispanic_in_race_list": 0,
+       "records": 38440,
+       "values_2024_only": {}
+      },
+      "PCDC": {
+       "convention": {
+        "1997": 20488,
+        "no_value": 1523,
+        "undetermined": 2221
+       },
+       "hispanic": {
+        "H": 2813,
+        "NH": 17675,
+        "unknown": 3744
+       },
+       "hispanic_in_race_list": 0,
+       "records": 24232,
+       "values_2024_only": {}
+      },
+      "StJude": {
+       "convention": {
+        "1997": 11414,
+        "no_value": 2959,
+        "undetermined": 308
+       },
+       "hispanic": {
+        "H": 909,
+        "NH": 10505,
+        "unknown": 3267
+       },
+       "hispanic_in_race_list": 0,
+       "records": 14681,
+       "values_2024_only": {}
+      },
+      "Treehouse": {
+       "convention": {
+        "1997": 8876,
+        "no_value": 2606,
+        "undetermined": 1241
+       },
+       "hispanic": {
+        "H": 553,
+        "NH": 8323,
+        "unknown": 3847
+       },
+       "hispanic_in_race_list": 0,
+       "records": 12723,
+       "values_2024_only": {}
+      },
+      "ccdi-ecDNA": {
+       "convention": {
+        "no_value": 3205
+       },
+       "hispanic": {
+        "unknown": 3205
+       },
+       "hispanic_in_race_list": 0,
+       "records": 3205,
+       "values_2024_only": {}
+      },
+      "ccdi-iusccc-pst": {
+       "convention": {
+        "1997": 101,
+        "no_value": 400,
+        "undetermined": 3
+       },
+       "hispanic": {
+        "H": 16,
+        "NH": 85,
+        "unknown": 403
+       },
+       "hispanic_in_race_list": 0,
+       "records": 504,
+       "values_2024_only": {}
+      }
+     },
+     "declared": {
+      "CCDI-DCC": "2024"
+     },
+     "pairs_exact_all": {
+      "conventions": {
+       "1997 | 1997": 2548,
+       "1997 | both": 24,
+       "1997 | declared_2024": 7389,
+       "1997 | no_value": 3410,
+       "1997 | undetermined": 22,
+       "declared_2024 | no_value": 1525,
+       "declared_2024 | undetermined": 1705,
+       "no_value | no_value": 3752,
+       "no_value | undetermined": 93,
+       "undetermined | undetermined": 28
+      },
+      "hispanic": {
+       "agree": 9955,
+       "disagree": 6,
+       "uninformative": 10535
+      },
+      "implied_nh_vs_stated": {
+       "H": 4,
+       "NH": 7385
+      },
+      "pairs": 20496,
+      "race_2024": {
+       "agree": 11038,
+       "disagree": 5,
+       "uninformative": 9453
+      }
+     },
+     "pairs_exact_by_source_pair": {
+      "CCDI-DCC | KidsFirst": {
+       "conventions": {
+        "1997 | 1997": 898,
+        "1997 | both": 24,
+        "1997 | declared_2024": 4387,
+        "1997 | no_value": 313,
+        "1997 | undetermined": 4,
+        "declared_2024 | no_value": 20,
+        "declared_2024 | undetermined": 1535,
+        "no_value | no_value": 3046
+       },
+       "hispanic": {
+        "agree": 5306,
+        "disagree": 3,
+        "uninformative": 4918
+       },
+       "implied_nh_vs_stated": {
+        "H": 2,
+        "NH": 4385
+       },
+       "pairs": 10227,
+       "race_2024": {
+        "agree": 6420,
+        "disagree": 1,
+        "uninformative": 3806
+       }
+      },
+      "CCDI-DCC | PCDC": {
+       "conventions": {
+        "1997 | 1997": 374,
+        "1997 | declared_2024": 2020,
+        "1997 | no_value": 248,
+        "declared_2024 | no_value": 4,
+        "declared_2024 | undetermined": 101,
+        "no_value | no_value": 102,
+        "no_value | undetermined": 10
+       },
+       "hispanic": {
+        "agree": 2391,
+        "disagree": 3,
+        "uninformative": 465
+       },
+       "implied_nh_vs_stated": {
+        "H": 2,
+        "NH": 2018
+       },
+       "pairs": 2859,
+       "race_2024": {
+        "agree": 2362,
+        "disagree": 3,
+        "uninformative": 494
+       }
+      },
+      "CCDI-DCC | StJude": {
+       "conventions": {
+        "1997 | no_value": 85,
+        "declared_2024 | no_value": 260,
+        "declared_2024 | undetermined": 1,
+        "no_value | no_value": 16
+       },
+       "hispanic": {
+        "uninformative": 362
+       },
+       "implied_nh_vs_stated": {},
+       "pairs": 362,
+       "race_2024": {
+        "agree": 1,
+        "uninformative": 361
+       }
+      },
+      "CCDI-DCC | Treehouse": {
+       "conventions": {
+        "1997 | 1997": 226,
+        "1997 | declared_2024": 982,
+        "1997 | no_value": 40,
+        "declared_2024 | undetermined": 68,
+        "no_value | no_value": 55
+       },
+       "hispanic": {
+        "agree": 1208,
+        "uninformative": 163
+       },
+       "implied_nh_vs_stated": {
+        "NH": 982
+       },
+       "pairs": 1371,
+       "race_2024": {
+        "agree": 1215,
+        "uninformative": 156
+       }
+      },
+      "CCDI-DCC | ccdi-ecDNA": {
+       "conventions": {
+        "1997 | no_value": 193,
+        "declared_2024 | no_value": 1241,
+        "no_value | no_value": 260
+       },
+       "hispanic": {
+        "uninformative": 1694
+       },
+       "implied_nh_vs_stated": {},
+       "pairs": 1694,
+       "race_2024": {
+        "uninformative": 1694
+       }
+      },
+      "KidsFirst | PCDC": {
+       "conventions": {
+        "1997 | 1997": 462,
+        "1997 | no_value": 8,
+        "1997 | undetermined": 17,
+        "no_value | no_value": 11,
+        "undetermined | undetermined": 7
+       },
+       "hispanic": {
+        "agree": 462,
+        "uninformative": 43
+       },
+       "implied_nh_vs_stated": {},
+       "pairs": 505,
+       "race_2024": {
+        "agree": 471,
+        "disagree": 1,
+        "uninformative": 33
+       }
+      },
+      "KidsFirst | StJude": {
+       "conventions": {
+        "1997 | no_value": 42,
+        "1997 | undetermined": 1
+       },
+       "hispanic": {
+        "uninformative": 43
+       },
+       "implied_nh_vs_stated": {},
+       "pairs": 43,
+       "race_2024": {
+        "agree": 1,
+        "uninformative": 42
+       }
+      },
+      "KidsFirst | Treehouse": {
+       "conventions": {
+        "1997 | 1997": 238,
+        "no_value | no_value": 9,
+        "undetermined | undetermined": 11
+       },
+       "hispanic": {
+        "agree": 238,
+        "uninformative": 20
+       },
+       "implied_nh_vs_stated": {},
+       "pairs": 258,
+       "race_2024": {
+        "agree": 235,
+        "uninformative": 23
+       }
+      },
+      "KidsFirst | ccdi-ecDNA": {
+       "conventions": {
+        "1997 | no_value": 1537,
+        "no_value | no_value": 149,
+        "no_value | undetermined": 24
+       },
+       "hispanic": {
+        "uninformative": 1710
+       },
+       "implied_nh_vs_stated": {},
+       "pairs": 1710,
+       "race_2024": {
+        "uninformative": 1710
+       }
+      },
+      "PCDC | Treehouse": {
+       "conventions": {
+        "1997 | 1997": 350,
+        "no_value | no_value": 9,
+        "undetermined | undetermined": 10
+       },
+       "hispanic": {
+        "agree": 350,
+        "uninformative": 19
+       },
+       "implied_nh_vs_stated": {},
+       "pairs": 369,
+       "race_2024": {
+        "agree": 333,
+        "uninformative": 36
+       }
+      },
+      "StJude | Treehouse": {
+       "conventions": {
+        "1997 | no_value": 13,
+        "no_value | no_value": 1
+       },
+       "hispanic": {
+        "uninformative": 14
+       },
+       "implied_nh_vs_stated": {},
+       "pairs": 14,
+       "race_2024": {
+        "uninformative": 14
+       }
+      },
+      "StJude | ccdi-ecDNA": {
+       "conventions": {
+        "1997 | no_value": 931,
+        "no_value | no_value": 94,
+        "no_value | undetermined": 59
+       },
+       "hispanic": {
+        "uninformative": 1084
+       },
+       "implied_nh_vs_stated": {},
+       "pairs": 1084,
+       "race_2024": {
+        "uninformative": 1084
+       }
+      }
+     },
+     "persons_hispanic_conflict": {
+      "exact": 6,
+      "with_rules": 8
+     }
+    },
+    "pairs_exact": 20496,
+    "plain": {
+     "by_source": {
+      "CCDI-DCC": {
+       "convention": {
+        "1997": 4066,
+        "both": 24,
+        "no_value": 8643,
+        "undetermined": 47062
+       },
+       "hispanic": {
+        "H": 4090,
+        "unknown": 55705
+       },
+       "hispanic_in_race_list": 24,
+       "records": 59795,
+       "values_2024_only": {
+        "Hispanic or Latino": 24
+       }
+      },
+      "KidsFirst": {
+       "convention": {
+        "1997": 28160,
+        "no_value": 8021,
+        "undetermined": 2259
+       },
+       "hispanic": {
+        "H": 4824,
+        "NH": 23336,
+        "unknown": 10280
+       },
+       "hispanic_in_race_list": 0,
+       "records": 38440,
+       "values_2024_only": {}
+      },
+      "PCDC": {
+       "convention": {
+        "1997": 20488,
+        "no_value": 1523,
+        "undetermined": 2221
+       },
+       "hispanic": {
+        "H": 2813,
+        "NH": 17675,
+        "unknown": 3744
+       },
+       "hispanic_in_race_list": 0,
+       "records": 24232,
+       "values_2024_only": {}
+      },
+      "StJude": {
+       "convention": {
+        "1997": 11414,
+        "no_value": 2959,
+        "undetermined": 308
+       },
+       "hispanic": {
+        "H": 909,
+        "NH": 10505,
+        "unknown": 3267
+       },
+       "hispanic_in_race_list": 0,
+       "records": 14681,
+       "values_2024_only": {}
+      },
+      "Treehouse": {
+       "convention": {
+        "1997": 8876,
+        "no_value": 2606,
+        "undetermined": 1241
+       },
+       "hispanic": {
+        "H": 553,
+        "NH": 8323,
+        "unknown": 3847
+       },
+       "hispanic_in_race_list": 0,
+       "records": 12723,
+       "values_2024_only": {}
+      },
+      "ccdi-ecDNA": {
+       "convention": {
+        "no_value": 3205
+       },
+       "hispanic": {
+        "unknown": 3205
+       },
+       "hispanic_in_race_list": 0,
+       "records": 3205,
+       "values_2024_only": {}
+      },
+      "ccdi-iusccc-pst": {
+       "convention": {
+        "1997": 101,
+        "no_value": 400,
+        "undetermined": 3
+       },
+       "hispanic": {
+        "H": 16,
+        "NH": 85,
+        "unknown": 403
+       },
+       "hispanic_in_race_list": 0,
+       "records": 504,
+       "values_2024_only": {}
+      }
+     },
+     "ethnicity_conflicts_exact_all": {
+      "agree": 2570,
+      "disagree": 2,
+      "uninformative": 17924
+     },
+     "pairs_exact_all": {
+      "conventions": {
+       "1997 | 1997": 2548,
+       "1997 | both": 24,
+       "1997 | no_value": 3410,
+       "1997 | undetermined": 7411,
+       "no_value | no_value": 3752,
+       "no_value | undetermined": 1618,
+       "undetermined | undetermined": 1733
+      },
+      "hispanic": {
+       "agree": 2570,
+       "disagree": 2,
+       "uninformative": 17924
+      },
+      "implied_nh_vs_stated": {},
+      "pairs": 20496,
+      "race_2024": {
+       "agree": 11038,
+       "disagree": 5,
+       "uninformative": 9453
+      }
+     },
+     "persons_hispanic_conflict": {
+      "exact": 2,
+      "with_rules": 4
+     }
+    },
+    "records": 153580
+   },
+   "grades": {
+    "S1": {
+     "grade": "pass",
+     "observed": {
+      "cohort_columns_added": [
+       "hispanic",
+       "hispanic_conflict",
+       "race_standard"
+      ],
+      "cohort_old_columns_identical": true,
+      "cohort_rows": [
+       135044,
+       135044
+      ],
+      "differing_keys": [],
+      "new_tool": "linkcheck ccdi 0.5.0",
+      "old_tool": "linkcheck ccdi 0.4.0",
+      "stamps_skipped": {
+       "new": {
+        "linkcheck.tool": "linkcheck 0.5.0",
+        "paging.mapping.tool": "linkcheck paging 0.5.0",
+        "paging.subject.tool": "linkcheck paging 0.5.0",
+        "tool": "linkcheck ccdi 0.5.0"
+       },
+       "old": {
+        "linkcheck.tool": "linkcheck 0.4.0",
+        "paging.mapping.tool": "linkcheck paging 0.4.0",
+        "paging.subject.tool": "linkcheck paging 0.4.0",
+        "tool": "linkcheck ccdi 0.4.0"
+       }
+      }
+     }
+    },
+    "S2": {
+     "grade": "pass",
+     "observed": {
+      "conventions_2024": {
+       "CCDI-DCC": {
+        "2024": 0,
+        "both": 24,
+        "contradictory": 0
+       },
+       "KidsFirst": {
+        "2024": 0,
+        "both": 0,
+        "contradictory": 0
+       },
+       "PCDC": {
+        "2024": 0,
+        "both": 0,
+        "contradictory": 0
+       },
+       "StJude": {
+        "2024": 0,
+        "both": 0,
+        "contradictory": 0
+       },
+       "Treehouse": {
+        "2024": 0,
+        "both": 0,
+        "contradictory": 0
+       },
+       "ccdi-ecDNA": {
+        "2024": 0,
+        "both": 0,
+        "contradictory": 0
+       },
+       "ccdi-iusccc-pst": {
+        "2024": 0,
+        "both": 0,
+        "contradictory": 0
+       }
+      },
+      "hispanic_in_race_list": {
+       "CCDI-DCC": 24,
+       "KidsFirst": 0,
+       "PCDC": 0,
+       "StJude": 0,
+       "Treehouse": 0,
+       "ccdi-ecDNA": 0,
+       "ccdi-iusccc-pst": 0
+      },
+      "values_2024_only": {
+       "CCDI-DCC": {
+        "Hispanic or Latino": 24
+       },
+       "KidsFirst": {},
+       "PCDC": {},
+       "StJude": {},
+       "Treehouse": {},
+       "ccdi-ecDNA": {},
+       "ccdi-iusccc-pst": {}
+      }
+     }
+    },
+    "S3": {
+     "grade": "pass",
+     "observed": {
+      "read_with_ethnicity_vs_completeness": {
+       "CCDI-DCC": [
+        4090,
+        4090
+       ],
+       "KidsFirst": [
+        28160,
+        28160
+       ],
+       "PCDC": [
+        20488,
+        20488
+       ],
+       "StJude": [
+        11414,
+        11414
+       ],
+       "Treehouse": [
+        8876,
+        8876
+       ],
+       "ccdi-ecDNA": [
+        0,
+        0
+       ],
+       "ccdi-iusccc-pst": [
+        101,
+        101
+       ]
+      }
+     }
+    },
+    "S4": {
+     "grade": "pass",
+     "observed": {
+      "ccdi_dcc_hispanic": {
+       "H": 4090,
+       "unknown": 55705
+      },
+      "nh_implied": {
+       "CCDI-DCC": 0,
+       "KidsFirst": 0,
+       "PCDC": 0,
+       "StJude": 0,
+       "Treehouse": 0,
+       "ccdi-ecDNA": 0,
+       "ccdi-iusccc-pst": 0
+      }
+     }
+    },
+    "S5": {
+     "grade": "pass",
+     "observed": {
+      "ccdi_dcc_convention": {
+       "1997": 4066,
+       "both": 24,
+       "declared_2024": 47062,
+       "no_value": 8643
+      },
+      "ccdi_dcc_hispanic": {
+       "H": 4090,
+       "NH_implied": 47062,
+       "unknown": 8643
+      },
+      "ccdi_dcc_nh_implied": 47062,
+      "range": [
+       46650,
+       47101
+      ]
+     }
+    },
+    "S6": {
+     "grade": "fail",
+     "observed": {
+      "baseline_1997_ethnicity_disagreement": [
+       2,
+       2572
+      ],
+      "by_source_pair": {
+       "CCDI-DCC | KidsFirst": {
+        "H": 2,
+        "NH": 4385
+       },
+       "CCDI-DCC | PCDC": {
+        "H": 2,
+        "NH": 2018
+       },
+       "CCDI-DCC | Treehouse": {
+        "NH": 982
+       }
+      },
+      "implied_nh_vs_stated": {
+       "H": 4,
+       "NH": 7385
+      },
+      "min_pairs": 100,
+      "pairs": 7389,
+      "reading": "supports the 2024 reading",
+      "share_stated_hispanic": 0.0005,
+      "supports_below": 0.02,
+      "threshold": 0.05
+     }
+    }
+   },
+   "snapshot": "kept second snapshot"
+  },
+  {
+   "descriptive": {
+    "declared": {
+     "by_source": {
+      "CCDI-DCC": {
+       "convention": {
+        "1997": 4066,
+        "both": 24,
+        "declared_2024": 47062,
+        "no_value": 8643
+       },
+       "hispanic": {
+        "H": 4090,
+        "NH_implied": 47062,
+        "unknown": 8643
+       },
+       "hispanic_in_race_list": 24,
+       "records": 59795,
+       "values_2024_only": {
+        "Hispanic or Latino": 24
+       }
+      },
+      "KidsFirst": {
+       "convention": {
+        "1997": 28160,
+        "no_value": 8021,
+        "undetermined": 2259
+       },
+       "hispanic": {
+        "H": 4824,
+        "NH": 23336,
+        "unknown": 10280
+       },
+       "hispanic_in_race_list": 0,
+       "records": 38440,
+       "values_2024_only": {}
+      },
+      "PCDC": {
+       "convention": {
+        "1997": 20577,
+        "no_value": 1533,
+        "undetermined": 2222
+       },
+       "hispanic": {
+        "H": 2830,
+        "NH": 17747,
+        "unknown": 3755
+       },
+       "hispanic_in_race_list": 0,
+       "records": 24332,
+       "values_2024_only": {}
+      },
+      "StJude": {
+       "convention": {
+        "1997": 11414,
+        "no_value": 2959,
+        "undetermined": 308
+       },
+       "hispanic": {
+        "H": 909,
+        "NH": 10505,
+        "unknown": 3267
+       },
+       "hispanic_in_race_list": 0,
+       "records": 14681,
+       "values_2024_only": {}
+      },
+      "Treehouse": {
+       "convention": {
+        "1997": 8876,
+        "no_value": 2606,
+        "undetermined": 1241
+       },
+       "hispanic": {
+        "H": 553,
+        "NH": 8323,
+        "unknown": 3847
+       },
+       "hispanic_in_race_list": 0,
+       "records": 12723,
+       "values_2024_only": {}
+      },
+      "ccdi-ecDNA": {
+       "convention": {
+        "no_value": 3205
+       },
+       "hispanic": {
+        "unknown": 3205
+       },
+       "hispanic_in_race_list": 0,
+       "records": 3205,
+       "values_2024_only": {}
+      },
+      "ccdi-iusccc-pst": {
+       "convention": {
+        "1997": 101,
+        "no_value": 400,
+        "undetermined": 3
+       },
+       "hispanic": {
+        "H": 16,
+        "NH": 85,
+        "unknown": 403
+       },
+       "hispanic_in_race_list": 0,
+       "records": 504,
+       "values_2024_only": {}
+      }
+     },
+     "declared": {
+      "CCDI-DCC": "2024"
+     },
+     "pairs_exact_all": {
+      "conventions": {
+       "1997 | 1997": 2548,
+       "1997 | both": 24,
+       "1997 | declared_2024": 7389,
+       "1997 | no_value": 3410,
+       "1997 | undetermined": 22,
+       "declared_2024 | no_value": 1525,
+       "declared_2024 | undetermined": 1705,
+       "no_value | no_value": 3752,
+       "no_value | undetermined": 93,
+       "undetermined | undetermined": 28
+      },
+      "hispanic": {
+       "agree": 9955,
+       "disagree": 6,
+       "uninformative": 10535
+      },
+      "implied_nh_vs_stated": {
+       "H": 4,
+       "NH": 7385
+      },
+      "pairs": 20496,
+      "race_2024": {
+       "agree": 11038,
+       "disagree": 5,
+       "uninformative": 9453
+      }
+     },
+     "pairs_exact_by_source_pair": {
+      "CCDI-DCC | KidsFirst": {
+       "conventions": {
+        "1997 | 1997": 898,
+        "1997 | both": 24,
+        "1997 | declared_2024": 4387,
+        "1997 | no_value": 313,
+        "1997 | undetermined": 4,
+        "declared_2024 | no_value": 20,
+        "declared_2024 | undetermined": 1535,
+        "no_value | no_value": 3046
+       },
+       "hispanic": {
+        "agree": 5306,
+        "disagree": 3,
+        "uninformative": 4918
+       },
+       "implied_nh_vs_stated": {
+        "H": 2,
+        "NH": 4385
+       },
+       "pairs": 10227,
+       "race_2024": {
+        "agree": 6420,
+        "disagree": 1,
+        "uninformative": 3806
+       }
+      },
+      "CCDI-DCC | PCDC": {
+       "conventions": {
+        "1997 | 1997": 374,
+        "1997 | declared_2024": 2020,
+        "1997 | no_value": 248,
+        "declared_2024 | no_value": 4,
+        "declared_2024 | undetermined": 101,
+        "no_value | no_value": 102,
+        "no_value | undetermined": 10
+       },
+       "hispanic": {
+        "agree": 2391,
+        "disagree": 3,
+        "uninformative": 465
+       },
+       "implied_nh_vs_stated": {
+        "H": 2,
+        "NH": 2018
+       },
+       "pairs": 2859,
+       "race_2024": {
+        "agree": 2362,
+        "disagree": 3,
+        "uninformative": 494
+       }
+      },
+      "CCDI-DCC | StJude": {
+       "conventions": {
+        "1997 | no_value": 85,
+        "declared_2024 | no_value": 260,
+        "declared_2024 | undetermined": 1,
+        "no_value | no_value": 16
+       },
+       "hispanic": {
+        "uninformative": 362
+       },
+       "implied_nh_vs_stated": {},
+       "pairs": 362,
+       "race_2024": {
+        "agree": 1,
+        "uninformative": 361
+       }
+      },
+      "CCDI-DCC | Treehouse": {
+       "conventions": {
+        "1997 | 1997": 226,
+        "1997 | declared_2024": 982,
+        "1997 | no_value": 40,
+        "declared_2024 | undetermined": 68,
+        "no_value | no_value": 55
+       },
+       "hispanic": {
+        "agree": 1208,
+        "uninformative": 163
+       },
+       "implied_nh_vs_stated": {
+        "NH": 982
+       },
+       "pairs": 1371,
+       "race_2024": {
+        "agree": 1215,
+        "uninformative": 156
+       }
+      },
+      "CCDI-DCC | ccdi-ecDNA": {
+       "conventions": {
+        "1997 | no_value": 193,
+        "declared_2024 | no_value": 1241,
+        "no_value | no_value": 260
+       },
+       "hispanic": {
+        "uninformative": 1694
+       },
+       "implied_nh_vs_stated": {},
+       "pairs": 1694,
+       "race_2024": {
+        "uninformative": 1694
+       }
+      },
+      "KidsFirst | PCDC": {
+       "conventions": {
+        "1997 | 1997": 462,
+        "1997 | no_value": 8,
+        "1997 | undetermined": 17,
+        "no_value | no_value": 11,
+        "undetermined | undetermined": 7
+       },
+       "hispanic": {
+        "agree": 462,
+        "uninformative": 43
+       },
+       "implied_nh_vs_stated": {},
+       "pairs": 505,
+       "race_2024": {
+        "agree": 471,
+        "disagree": 1,
+        "uninformative": 33
+       }
+      },
+      "KidsFirst | StJude": {
+       "conventions": {
+        "1997 | no_value": 42,
+        "1997 | undetermined": 1
+       },
+       "hispanic": {
+        "uninformative": 43
+       },
+       "implied_nh_vs_stated": {},
+       "pairs": 43,
+       "race_2024": {
+        "agree": 1,
+        "uninformative": 42
+       }
+      },
+      "KidsFirst | Treehouse": {
+       "conventions": {
+        "1997 | 1997": 238,
+        "no_value | no_value": 9,
+        "undetermined | undetermined": 11
+       },
+       "hispanic": {
+        "agree": 238,
+        "uninformative": 20
+       },
+       "implied_nh_vs_stated": {},
+       "pairs": 258,
+       "race_2024": {
+        "agree": 235,
+        "uninformative": 23
+       }
+      },
+      "KidsFirst | ccdi-ecDNA": {
+       "conventions": {
+        "1997 | no_value": 1537,
+        "no_value | no_value": 149,
+        "no_value | undetermined": 24
+       },
+       "hispanic": {
+        "uninformative": 1710
+       },
+       "implied_nh_vs_stated": {},
+       "pairs": 1710,
+       "race_2024": {
+        "uninformative": 1710
+       }
+      },
+      "PCDC | Treehouse": {
+       "conventions": {
+        "1997 | 1997": 350,
+        "no_value | no_value": 9,
+        "undetermined | undetermined": 10
+       },
+       "hispanic": {
+        "agree": 350,
+        "uninformative": 19
+       },
+       "implied_nh_vs_stated": {},
+       "pairs": 369,
+       "race_2024": {
+        "agree": 333,
+        "uninformative": 36
+       }
+      },
+      "StJude | Treehouse": {
+       "conventions": {
+        "1997 | no_value": 13,
+        "no_value | no_value": 1
+       },
+       "hispanic": {
+        "uninformative": 14
+       },
+       "implied_nh_vs_stated": {},
+       "pairs": 14,
+       "race_2024": {
+        "uninformative": 14
+       }
+      },
+      "StJude | ccdi-ecDNA": {
+       "conventions": {
+        "1997 | no_value": 931,
+        "no_value | no_value": 94,
+        "no_value | undetermined": 59
+       },
+       "hispanic": {
+        "uninformative": 1084
+       },
+       "implied_nh_vs_stated": {},
+       "pairs": 1084,
+       "race_2024": {
+        "uninformative": 1084
+       }
+      }
+     },
+     "persons_hispanic_conflict": {
+      "exact": 6,
+      "with_rules": 8
+     }
+    },
+    "pairs_exact": 20496,
+    "plain": {
+     "by_source": {
+      "CCDI-DCC": {
+       "convention": {
+        "1997": 4066,
+        "both": 24,
+        "no_value": 8643,
+        "undetermined": 47062
+       },
+       "hispanic": {
+        "H": 4090,
+        "unknown": 55705
+       },
+       "hispanic_in_race_list": 24,
+       "records": 59795,
+       "values_2024_only": {
+        "Hispanic or Latino": 24
+       }
+      },
+      "KidsFirst": {
+       "convention": {
+        "1997": 28160,
+        "no_value": 8021,
+        "undetermined": 2259
+       },
+       "hispanic": {
+        "H": 4824,
+        "NH": 23336,
+        "unknown": 10280
+       },
+       "hispanic_in_race_list": 0,
+       "records": 38440,
+       "values_2024_only": {}
+      },
+      "PCDC": {
+       "convention": {
+        "1997": 20577,
+        "no_value": 1533,
+        "undetermined": 2222
+       },
+       "hispanic": {
+        "H": 2830,
+        "NH": 17747,
+        "unknown": 3755
+       },
+       "hispanic_in_race_list": 0,
+       "records": 24332,
+       "values_2024_only": {}
+      },
+      "StJude": {
+       "convention": {
+        "1997": 11414,
+        "no_value": 2959,
+        "undetermined": 308
+       },
+       "hispanic": {
+        "H": 909,
+        "NH": 10505,
+        "unknown": 3267
+       },
+       "hispanic_in_race_list": 0,
+       "records": 14681,
+       "values_2024_only": {}
+      },
+      "Treehouse": {
+       "convention": {
+        "1997": 8876,
+        "no_value": 2606,
+        "undetermined": 1241
+       },
+       "hispanic": {
+        "H": 553,
+        "NH": 8323,
+        "unknown": 3847
+       },
+       "hispanic_in_race_list": 0,
+       "records": 12723,
+       "values_2024_only": {}
+      },
+      "ccdi-ecDNA": {
+       "convention": {
+        "no_value": 3205
+       },
+       "hispanic": {
+        "unknown": 3205
+       },
+       "hispanic_in_race_list": 0,
+       "records": 3205,
+       "values_2024_only": {}
+      },
+      "ccdi-iusccc-pst": {
+       "convention": {
+        "1997": 101,
+        "no_value": 400,
+        "undetermined": 3
+       },
+       "hispanic": {
+        "H": 16,
+        "NH": 85,
+        "unknown": 403
+       },
+       "hispanic_in_race_list": 0,
+       "records": 504,
+       "values_2024_only": {}
+      }
+     },
+     "ethnicity_conflicts_exact_all": {
+      "agree": 2570,
+      "disagree": 2,
+      "uninformative": 17924
+     },
+     "pairs_exact_all": {
+      "conventions": {
+       "1997 | 1997": 2548,
+       "1997 | both": 24,
+       "1997 | no_value": 3410,
+       "1997 | undetermined": 7411,
+       "no_value | no_value": 3752,
+       "no_value | undetermined": 1618,
+       "undetermined | undetermined": 1733
+      },
+      "hispanic": {
+       "agree": 2570,
+       "disagree": 2,
+       "uninformative": 17924
+      },
+      "implied_nh_vs_stated": {},
+      "pairs": 20496,
+      "race_2024": {
+       "agree": 11038,
+       "disagree": 5,
+       "uninformative": 9453
+      }
+     },
+     "persons_hispanic_conflict": {
+      "exact": 2,
+      "with_rules": 4
+     }
+    },
+    "records": 153680
+   },
+   "grades": {
+    "S1": {
+     "grade": "pass",
+     "observed": {
+      "cohort_columns_added": [
+       "hispanic",
+       "hispanic_conflict",
+       "race_standard"
+      ],
+      "cohort_old_columns_identical": true,
+      "cohort_rows": [
+       135144,
+       135144
+      ],
+      "differing_keys": [],
+      "new_tool": "linkcheck ccdi 0.5.0",
+      "old_tool": "linkcheck ccdi 0.4.0",
+      "stamps_skipped": {
+       "new": {
+        "linkcheck.tool": "linkcheck 0.5.0",
+        "paging.mapping.tool": "linkcheck paging 0.5.0",
+        "paging.subject.tool": "linkcheck paging 0.5.0",
+        "tool": "linkcheck ccdi 0.5.0"
+       },
+       "old": {
+        "linkcheck.tool": "linkcheck 0.4.0",
+        "paging.mapping.tool": "linkcheck paging 0.4.0",
+        "paging.subject.tool": "linkcheck paging 0.4.0",
+        "tool": "linkcheck ccdi 0.4.0"
+       }
+      }
+     }
+    },
+    "S2": {
+     "grade": "pass",
+     "observed": {
+      "conventions_2024": {
+       "CCDI-DCC": {
+        "2024": 0,
+        "both": 24,
+        "contradictory": 0
+       },
+       "KidsFirst": {
+        "2024": 0,
+        "both": 0,
+        "contradictory": 0
+       },
+       "PCDC": {
+        "2024": 0,
+        "both": 0,
+        "contradictory": 0
+       },
+       "StJude": {
+        "2024": 0,
+        "both": 0,
+        "contradictory": 0
+       },
+       "Treehouse": {
+        "2024": 0,
+        "both": 0,
+        "contradictory": 0
+       },
+       "ccdi-ecDNA": {
+        "2024": 0,
+        "both": 0,
+        "contradictory": 0
+       },
+       "ccdi-iusccc-pst": {
+        "2024": 0,
+        "both": 0,
+        "contradictory": 0
+       }
+      },
+      "hispanic_in_race_list": {
+       "CCDI-DCC": 24,
+       "KidsFirst": 0,
+       "PCDC": 0,
+       "StJude": 0,
+       "Treehouse": 0,
+       "ccdi-ecDNA": 0,
+       "ccdi-iusccc-pst": 0
+      },
+      "values_2024_only": {
+       "CCDI-DCC": {
+        "Hispanic or Latino": 24
+       },
+       "KidsFirst": {},
+       "PCDC": {},
+       "StJude": {},
+       "Treehouse": {},
+       "ccdi-ecDNA": {},
+       "ccdi-iusccc-pst": {}
+      }
+     }
+    },
+    "S3": {
+     "grade": "pass",
+     "observed": {
+      "read_with_ethnicity_vs_completeness": {
+       "CCDI-DCC": [
+        4090,
+        4090
+       ],
+       "KidsFirst": [
+        28160,
+        28160
+       ],
+       "PCDC": [
+        20577,
+        20577
+       ],
+       "StJude": [
+        11414,
+        11414
+       ],
+       "Treehouse": [
+        8876,
+        8876
+       ],
+       "ccdi-ecDNA": [
+        0,
+        0
+       ],
+       "ccdi-iusccc-pst": [
+        101,
+        101
+       ]
+      }
+     }
+    },
+    "S4": {
+     "grade": "pass",
+     "observed": {
+      "ccdi_dcc_hispanic": {
+       "H": 4090,
+       "unknown": 55705
+      },
+      "nh_implied": {
+       "CCDI-DCC": 0,
+       "KidsFirst": 0,
+       "PCDC": 0,
+       "StJude": 0,
+       "Treehouse": 0,
+       "ccdi-ecDNA": 0,
+       "ccdi-iusccc-pst": 0
+      }
+     }
+    },
+    "S5": {
+     "grade": "pass",
+     "observed": {
+      "ccdi_dcc_convention": {
+       "1997": 4066,
+       "both": 24,
+       "declared_2024": 47062,
+       "no_value": 8643
+      },
+      "ccdi_dcc_hispanic": {
+       "H": 4090,
+       "NH_implied": 47062,
+       "unknown": 8643
+      },
+      "ccdi_dcc_nh_implied": 47062,
+      "range": [
+       46650,
+       47101
+      ]
+     }
+    },
+    "S6": {
+     "grade": "fail",
+     "observed": {
+      "baseline_1997_ethnicity_disagreement": [
+       2,
+       2572
+      ],
+      "by_source_pair": {
+       "CCDI-DCC | KidsFirst": {
+        "H": 2,
+        "NH": 4385
+       },
+       "CCDI-DCC | PCDC": {
+        "H": 2,
+        "NH": 2018
+       },
+       "CCDI-DCC | Treehouse": {
+        "NH": 982
+       }
+      },
+      "implied_nh_vs_stated": {
+       "H": 4,
+       "NH": 7385
+      },
+      "min_pairs": 100,
+      "pairs": 7389,
+      "reading": "supports the 2024 reading",
+      "share_stated_hispanic": 0.0005,
+      "supports_below": 0.02,
+      "threshold": 0.05
+     }
+    }
+   },
+   "snapshot": "fresh snapshot ccdi-raw-fresh-20261023T214658Z"
+  }
+ ],
+ "snapshots": [
+  "kept second snapshot",
+  "fresh snapshot ccdi-raw-fresh-20261023T214658Z"
+ ]
+}

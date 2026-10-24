@@ -1,0 +1,58 @@
+{
+ "contract": "mv2-compete-result-v1",
+ "name": "linkcheck-050-v2",
+ "id": "7eca3f3223cc",
+ "field": "medicine",
+ "run": "20261024T194653Z-medicine",
+ "kind": "compete",
+ "status": "ok",
+ "reason": "",
+ "host": "blade",
+ "image": "python:3.12",
+ "started_at": "2026-10-24T20:14:58.316673+00:00",
+ "finished_at": "2026-10-24T20:18:50.519407+00:00",
+ "duration_seconds": 232,
+ "limits": {
+  "cpu": 1.0,
+  "memory_gb": 3.0,
+  "timeout_minutes": 240.0
+ },
+ "peak_memory_gb": 0.54,
+ "network": {
+  "setup": true,
+  "run": true
+ },
+ "steps": [
+  {
+   "step": "setup-01-python",
+   "cmd": "python get_code.py",
+   "exit": 0,
+   "seconds": 3
+  },
+  {
+   "step": "setup-02-python",
+   "cmd": "python -m unittest -v test_linkcheck test_paging test_namespaces test_paging_body test_ccdi test_standards test_check050",
+   "exit": 0,
+   "seconds": 1
+  },
+  {
+   "step": "run-01-python",
+   "cmd": "python check050.py --kept /data/ccdi-raw-snapshot2 --fresh-root /data/ccdi-fresh-v1 --out /out",
+   "exit": 0,
+   "seconds": 119
+  }
+ ],
+ "out_files": [
+  "check050.json"
+ ],
+ "out_files_total": 1,
+ "out_skipped": [],
+ "upload_skipped": [],
+ "summary_tail": "[run-01-python stdout] {\n \"grades\": {\n  \"S1\": \"pass\",\n  \"S2\": \"pass\",\n  \"S3\": \"pass\",\n  \"S4\": \"pass\",\n  \"S5\": \"pass\",\n  \"S6\": \"fail\"\n },\n \"per_snapshot\": {\n  \"fresh snapshot ccdi-raw-fresh-20261023T214658Z\": {\n   \"S1\": \"pass\",\n   \"S2\": \"pass\",\n   \"S3\": \"pass\",\n   \"S4\": \"pass\",\n   \"S5\": \"pass\",\n   \"S6\": \"fail\"\n  },\n  \"kept second snapshot\": {\n   \"S1\": \"pass\",\n   \"S2\": \"pass\",\n   \"S3\": \"pass\",\n   \"S4\": \"pass\",\n   \"S5\": \"pass\",\n   \"S6\": \"fail\"\n  }\n },\n \"snapshots\": [\n  \"kept second snapshot\",\n  \"fresh snapshot ccdi-raw-fresh-20261023T214658Z\"\n ]\n}\n",
+ "paths": {
+  "workdir": "/work (copy of E:\\MV2-Pursuit\\work\\20261024T194653Z-medicine\\ship\\linkcheck-050-check-v2)",
+  "out": "/out -> out/",
+  "data": "/data (docker volume mv2c-data-ccdi-raw, kept for later jobs)"
+ },
+ "note": ""
+}
