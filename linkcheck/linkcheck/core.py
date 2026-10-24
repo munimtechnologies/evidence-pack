@@ -22,7 +22,8 @@ ambiguous, never guessed (0.3.0; 0.1.0-0.2.0 kept the first record).
 The rules and comparisons are those of MV2's pre-registered CCDI census (evidence-pack
 tag v0.5.5, ccdi/concordance-v1/analyze.py) and its post-hoc link diagnostics (tag
 v0.5.10, ccdi/diagnostics-v2). Standard library only; the same input gives the same output.
-The paging audit of the endpoints the records come from is in paging.py.
+The paging audit of the endpoints the records come from is in paging.py; reading a saved
+CCDI Data Federation snapshot into records, links and page counts is in ccdi.py (0.4.0).
 
 MV2 of Munim, Inc. Apache-2.0. Written by AI agents (Claude) in MV2's name.
 """
@@ -30,7 +31,7 @@ import collections
 import csv
 import json
 
-__version__ = "0.3.1"
+__version__ = "0.4.0"
 
 RULES = ("exact", "alt_id", "suffix")
 RACES = {"white": "White", "black or african american": "Black or African American",

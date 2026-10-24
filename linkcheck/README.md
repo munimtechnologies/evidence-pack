@@ -1,4 +1,4 @@
-# LinkCheck 0.3.1
+# LinkCheck 0.4.0
 
 MV2 of Munim, Inc. Code Apache-2.0; text CC BY 4.0. Written by AI agents (Claude) working in MV2's name; no human has reviewed it yet. Research and data-quality software only: it is not medical advice and makes no clinical decisions.
 
@@ -6,17 +6,35 @@ When one person has records in several sources and a linkage index says which re
 
 It grew out of MV2's pre-registered census of NCI's Childhood Cancer Data Initiative federation ([ccdi/concordance-v1](../ccdi/concordance-v1/), tag v0.5.5) and its post-hoc diagnostics ([ccdi/diagnostics-v2](../ccdi/diagnostics-v2/), tag v0.5.10; [ccdi/diagnostics-v3](../ccdi/diagnostics-v3/), tag v0.5.12). It uses the same comparison rules, but works on any sources.
 
+## New in 0.4.0: one command for a CCDI snapshot
+
+Until now, every check of LinkCheck on real CCDI data needed job code of its own to turn a saved snapshot into LinkCheck input. `linkcheck/ccdi.py` moves that reading into the package:
+
+```
+python -m linkcheck.ccdi --raw <snapshot folder> --out result.json
+```
+
+- The snapshot folder is what the census's fetcher (tag v0.5.5) or the robust fetcher (tag v0.8.0) saves: `subject/` (page 1 is the probe named in `chosen.json`), `mapping/` and `fed/subject-summary.json.gz`, each response gzipped as it came.
+- `result.json` holds the LinkCheck report (completeness, shared ids, links, conflicts, over-count, cohort summary) and the paging audits of both endpoints (`/subject` and the Participant Index, `/subject-mapping`), with the pages to fetch again. Counts only: no participant ids.
+- `--records`, `--links` and `--cohort` also write the records, the link rows and the cohort table. These hold participant ids: keep them as private as the snapshot.
+- `--rules`, `--priority` and `--min-cell` work as in `python -m linkcheck`.
+
+How it reads a snapshot:
+- **Records:** one per served subject, keyed by source, organization, namespace (study) and name; the first copy is kept. Alternate ids are the names of the subject's other identifiers.
+- **Links:** one row per Participant Index association, by the census's rules. A USI association (domain `usi`, a six-letter USI) links the entry to every served subject with that USI as its name or an alternate id. Any other association counts only if its category is `organizational_identifier`. A domain name that is a namespace name becomes that source and namespace; one that is a source name becomes that source. Nothing is resolved in the reader: LinkCheck's own rules do that, and ambiguous ends are counted, never guessed.
+- **Page counts:** per source and page, as the paging audit reads them; Participant Index entries are given to the source of the subject they name.
+
+This is the same reading MV2's pre-registered checks used (`adapt()` in [ccdi/linkcheck-repro-v2](../ccdi/linkcheck-repro-v2/), tag v0.8.0, on the census's reader; `ccdi_pages.py` in [ccdi/paging-audit-v1](../ccdi/paging-audit-v1/), tag v0.7.0). A pre-registered check, [ccdi/linkcheck-040-check-v1](../ccdi/linkcheck-040-check-v1/) (tag v0.8.9), tests that the package reader gives exactly the same records, links, page counts and reports as that job code on the snapshots kept for MV2's checks.
+
 ## New in 0.3.1: no entries is not the end
 
-Reading the CCDI aggregation code and probing the live endpoint ([ccdi/aggregator-reading-v1](../ccdi/aggregator-reading-v1/), tag v0.8.4) showed that a failed upstream call there comes back as HTTP 200 with a small error object and no entries, and that no `link` header tells a client where the last page is. A client that stops at the first page without entries stops early whenever that happens. 0.3.1 adds to `linkcheck/paging.py`:
+Reading the CCDI aggregation code and probing the live endpoint ([ccdi/aggregator-reading-v1](../ccdi/aggregator-reading-v1/), tag v0.8.4) showed that a failed upstream call there comes back as HTTP 200 with a small error object and no entries, and that no `link` header tells a client where the last page is. A client that stops at the first page without entries stops early whenever that happens. 0.3.1 added to `linkcheck/paging.py`:
 
 - `last_page(totals, per_page)`: the last page a walk must reach, from the largest source total.
 - `refetch_pages(pages, per_page, totals)`: the pages up to that page that were never walked, failed as a whole, or hold no entries from any source. Fetch them again instead of stopping.
-- With totals, the audit report now also gives `required_last_page` and `refetch_pages`, and the command line prints `refetch_pages`.
+- With totals, the audit report also gives `required_last_page` and `refetch_pages`, and the command line prints `refetch_pages`.
 - `body_counts(body)`: the per-source counts of one page, from its parsed JSON body (a list of `{"source": ..., "data": [...]}` items; an item without a `data` list counts as an error; an object with an `errors` list is a page that failed as a whole). Other shapes are rejected, never guessed. The key names can be changed.
 - `error_messages(body)`: every error the body carries, as `kind: message`.
-
-Nothing else changed. The 0.3.0 report keys and every earlier test are kept unchanged. The new tests (`test_paging_body.py`, 12 tests) and a pre-registered check on the saved CCDI pages ([ccdi/linkcheck-031-check-v1](../ccdi/linkcheck-031-check-v1/), tag v0.8.5) run for the first time in the sealed job `linkcheck-031-v1`.
 
 ## New in 0.3.0: namespaces
 
@@ -24,8 +42,7 @@ The first check on real data failed ([ccdi/linkcheck-repro-v1](../ccdi/linkcheck
 
 - A record may name its `namespace`. It is then keyed by (source, id, namespace), so two namespaces of one source can serve the same id.
 - A link end may name its namespace (`a_namespace`, `b_namespace`) and then resolves to that record only. A link end without one resolves only if exactly one record of the source has that id. Otherwise it is counted as `unresolved: ambiguous_id` and never guessed.
-- The report has a new `shared_ids` section: per source, the ids that two or more namespaces serve, and how many records serve them.
-- Input without namespaces gives the same report as 0.2.0, apart from the version and the new (empty) `shared_ids` section.
+- The report has a `shared_ids` section: per source, the ids that two or more namespaces serve, and how many records serve them.
 
 ## What it reports
 
@@ -95,7 +112,8 @@ python -m linkcheck.paging --pages pages.jsonl --per-page 100 --totals totals.js
 From Python:
 
 ```
-from linkcheck import paging
+from linkcheck import ccdi, paging
+result, rows = ccdi.check("snapshot")        # a saved CCDI snapshot, in one step
 pages = {n: paging.body_counts(body) for n, body in parsed_bodies.items()}
 report = paging.audit(pages, 100, {"A": 150})
 report["refetch_pages"]  # fetch these again before trusting the walk
@@ -104,21 +122,25 @@ report["refetch_pages"]  # fetch these again before trusting the walk
 ## Tests
 
 ```
-python -m unittest -v test_linkcheck test_paging test_namespaces test_paging_body
+python -m unittest -v test_linkcheck test_paging test_namespaces test_paging_body test_ccdi
 ```
 
-The tests use only made-up data: the records in `examples/`, the page counts and bodies in `test_paging.py` and `test_paging_body.py`, and the records in `test_namespaces.py`. Every expected number was worked out by hand before the first run. So far:
-- `test_linkcheck` (14 tests) passed in the sealed jobs `linkcheck-test-v1`, `ccdi-paging-v1` and `linkcheck-repro-v2`;
-- `test_paging` (11 tests) passed in `ccdi-paging-v1` and `linkcheck-repro-v2`;
-- `test_namespaces` passed in `linkcheck-repro-v2`;
-- `test_paging_body` (12 tests) first runs in `linkcheck-031-v1`.
+The tests use only made-up data: the records in `examples/`, the page counts and bodies in `test_paging.py` and `test_paging_body.py`, the records in `test_namespaces.py`, and the small snapshot `test_ccdi.py` writes to a temporary folder. Every expected number was worked out by hand before the first run. So far:
+- `test_linkcheck` (14 tests) passed in the sealed jobs `linkcheck-test-v1`, `ccdi-paging-v1`, `linkcheck-repro-v2` and `linkcheck-031-v2`;
+- `test_paging` (11 tests) passed in `ccdi-paging-v1`, `linkcheck-repro-v2` and `linkcheck-031-v2`;
+- `test_namespaces` passed in `linkcheck-repro-v2` and `linkcheck-031-v2`;
+- `test_paging_body` (12 tests) passed in `linkcheck-031-v1` and `linkcheck-031-v2`;
+- `test_ccdi` (6 tests) first runs in the sealed job `linkcheck-040-v1`.
 
 ## Checks on real data
 
 - [ccdi/linkcheck-repro-v1](../ccdi/linkcheck-repro-v1/results.md) (pre-registered at tag v0.6.0): did LinkCheck 0.1.0 reproduce the CCDI census on the same snapshot? **No: P1-P4 failed**, all because of the (source, id) key that 0.3.0 replaces. The job also found that its fresh snapshot had been cut short.
 - [ccdi/paging-audit-v1](../ccdi/paging-audit-v1/results.md) (pre-registered at tag v0.7.0): a paging audit of every saved page of both CCDI endpoints. **All six predictions held.** The audit explained every lost entry, and 1,843 of the 1,845 page errors the census counted lose nothing.
-- [ccdi/linkcheck-repro-v2](../ccdi/linkcheck-repro-v2/results.md) (pre-registered at tag v0.8.0; results at tag v0.8.1): **all seven gradable predictions held.** LinkCheck 0.3.0 reproduced the census exactly on the kept snapshot. The test of the robust fresh fetcher (F1) could not be graded there and was re-filed as [ccdi/fresh-snapshot-v1](../ccdi/fresh-snapshot-v1/) (tag v0.8.2; pending).
-- [ccdi/linkcheck-031-check-v1](../ccdi/linkcheck-031-check-v1/) (pre-registered at tag v0.8.5): does 0.3.1 read the saved CCDI pages exactly, and does its refetch rule find nothing to refetch on a complete walk? Pending.
+- [ccdi/linkcheck-repro-v2](../ccdi/linkcheck-repro-v2/results.md) (pre-registered at tag v0.8.0; results at tag v0.8.1): **all seven gradable predictions held.** LinkCheck 0.3.0 reproduced the census exactly on the kept snapshot.
+- [ccdi/fresh-snapshot-v1](../ccdi/fresh-snapshot-v1/results.md) (pre-registered at tags v0.8.0 and v0.8.2; results at tag v0.8.6): **8 of 8 held.** A fresh snapshot taken by the robust fetcher reached the end of both endpoints, and LinkCheck 0.3.0 reproduced the census on it exactly.
+- [ccdi/linkcheck-031-check-v1](../ccdi/linkcheck-031-check-v1/results.md) (pre-registered at tag v0.8.5): not graded; the job ran on a machine without the kept snapshot.
+- [ccdi/linkcheck-031-check-v2](../ccdi/linkcheck-031-check-v2/results.md) (pre-registered at tag v0.8.7; results at tag v0.8.8): **4 of 4 held** on a new snapshot. 0.3.1's page reader matched the audit's reader on all 599 pages, and nothing needed refetching.
+- [ccdi/linkcheck-040-check-v1](../ccdi/linkcheck-040-check-v1/) (pre-registered at tag v0.8.9): does 0.4.0's CCDI reader give exactly what the job code gave? Pending.
 
 ## Related tools
 
@@ -136,7 +158,8 @@ For paging, generic checkers such as [pagination-integrity-check](https://github
 
 ## Limits
 
-- Version 0.3.1 is a prototype. Its namespace handling and its new paging functions have been tested only on made-up data so far.
+- Version 0.4.0 is a prototype. Its CCDI reader has been tested only on made-up data until its pre-registered check runs.
+- The CCDI reader knows one snapshot layout (the census's fetchers). Other ways of saving the federation's pages need their own reader.
 - A record's key has no organization. Two records of one source with the same id and the same namespace name, but different organizations, count as a repeat; put the organization into `namespace` if that matters.
 - The race comparison uses the 1997 OMB categories, as the census did. OMB's 2024 combined race/ethnicity standard is not yet supported.
 - The alive-versus-dead logic assumes ages at vital status are measured from the same reference point in every source. The CCDI diagnostics found one source where they are not, so check that before trusting `alive_after_death`.
