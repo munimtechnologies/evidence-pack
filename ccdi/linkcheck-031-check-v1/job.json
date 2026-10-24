@@ -1,0 +1,15 @@
+{
+ "name": "linkcheck-031-v1",
+ "kind": "compete",
+ "workdir": "E:/MV2-Pursuit/work/20261024T003743Z-medicine/compete/linkcheck-031-v1",
+ "image": "python:3.12",
+ "setup": ["python get_code.py",
+           "python -m unittest -v test_linkcheck test_paging test_namespaces test_paging_body test_ccdi_pages test_check031"],
+ "run": ["python check031.py --raw /data/ccdi-raw-snapshot2 --out /out"],
+ "network": true,
+ "data_urls": [],
+ "data_key": "ccdi-raw",
+ "cpu": 1,
+ "memory_gb": 2,
+ "timeout_minutes": 180
+}

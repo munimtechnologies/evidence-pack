@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "linkcheck-records"
-version = "0.3.0"
+version = "0.3.1"
 description = "Completeness, conflict and over-count report for records linked across sources, and a paging audit of the endpoints that serve them"
 readme = "README.md"
 license = {text = "Apache-2.0"}

@@ -14,7 +14,17 @@ source's last page with entries should be full, and later pages cannot be judged
   2  error pages past a source's end (some servers answer an exhausted source with an error
      object; nothing is lost there);
   3  page numbers missing from the walk, and pages that failed as a whole;
-  4  per source: served, total, entries lost by kind, excess, and what is left unexplained.
+  4  per source: served, total, entries lost by kind, excess, and what is left unexplained;
+  5  with totals, the last page the walk had to reach, and the pages a walker should have
+     fetched again instead of stopping (0.3.1).
+
+No entries is not the end (0.3.1). The CCDI aggregation layer answers every paging request
+with HTTP 200, sends no link header, and serves a failed upstream call as a small error
+object with no entries (evidence-pack tag v0.8.4, ccdi/aggregator-reading-v1). A client that
+stops at the first page without entries stops early whenever that happens. With totals, a
+walk is over only after the last page the largest total needs; before it, a page that failed
+as a whole or holds no entries must be fetched again. body_counts() turns a parsed page body
+into the counts the audit reads, and error_messages() says which error a page carried.
 
 Counts in, counts out: no record ids. Standard library only.
 
@@ -57,6 +67,78 @@ def clean(pages):
     return out
 
 
+def clean_totals(totals):
+    """{source: total} with sources as strings; null totals are left out."""
+    totals = {str(s): t for s, t in (totals or {}).items() if t is not None}
+    for s, t in totals.items():
+        if not is_count(t):
+            raise ValueError("the total of %s must be a count" % s)
+    return totals
+
+
+# ---------- page bodies ----------
+
+def body_counts(body, source_key="source", data_key="data"):
+    """Counts for one page of a side-by-side endpoint, from its parsed JSON body.
+
+    A body that is a list holds one item per source, {source_key: name, data_key: [...]}; the
+    source's count is the length of its list, or None when the item has no list (an error
+    object). A body that is an object with an "errors" list is a page that failed as a whole:
+    None. Anything else is rejected, never guessed."""
+    if isinstance(body, dict) and isinstance(body.get("errors"), list):
+        return None
+    if not isinstance(body, list):
+        raise ValueError("a page body must be a list of source items or an error object")
+    counts = {}
+    for item in body:
+        if not isinstance(item, dict) or source_key not in item:
+            raise ValueError("every item of a page body must name its source")
+        src = str(item[source_key])
+        if src in counts:
+            raise ValueError("source %s appears twice on one page" % src)
+        data = item.get(data_key)
+        counts[src] = len(data) if isinstance(data, list) else None
+    return counts
+
+
+def error_messages(body):
+    """Every error a parsed page body carries, as "kind: message", in body order: from a
+    whole-page error object, or from the source items of a list body. [] if there is none."""
+    items = [body] if isinstance(body, dict) else body if isinstance(body, list) else []
+    out = []
+    for item in items:
+        errs = item.get("errors") if isinstance(item, dict) else None
+        for e in errs if isinstance(errs, list) else []:
+            if isinstance(e, dict):
+                out.append("%s: %s" % (e.get("kind", ""), e.get("message", "")))
+            else:
+                out.append(str(e))
+    return out
+
+
+# ---------- where a walk ends ----------
+
+def last_page(totals, per_page):
+    """The last page a walk must reach: the page holding the last entry of the source with
+    the largest total (0 if there are no entries at all)."""
+    if not is_count(per_page) or per_page == 0:
+        raise ValueError("per_page must be a positive integer")
+    return max(((t + per_page - 1) // per_page for t in clean_totals(totals).values()),
+               default=0)
+
+
+def refetch_pages(pages, per_page, totals):
+    """Pages up to last_page(totals) that were not walked, failed as a whole, or hold no
+    entries from any source. A walk that stops at an empty page stops early at each of
+    these; fetch them again instead."""
+    pages = clean(pages)
+    end = last_page(totals, per_page)
+    return [n for n in range(1, end + 1)
+            if n not in pages or pages[n] is None or not any(pages[n].values())]
+
+
+# ---------- the audit ----------
+
 def audit(pages, per_page, totals=None):
     """pages: {page number: {source: entries on that page, or None if the source's part of
     the page was an error}}. A page whose value is None failed as a whole: every source
@@ -65,10 +147,7 @@ def audit(pages, per_page, totals=None):
     if not is_count(per_page) or per_page == 0:
         raise ValueError("per_page must be a positive integer")
     pages = clean(pages)
-    totals = {str(s): t for s, t in (totals or {}).items() if t is not None}
-    for s, t in totals.items():
-        if not is_count(t):
-            raise ValueError("the total of %s must be a count" % s)
+    totals = clean_totals(totals)
     numbers = sorted(pages)
     last = numbers[-1] if numbers else 0
     missing = [n for n in range(1, last + 1) if n not in pages]
@@ -129,6 +208,8 @@ def audit(pages, per_page, totals=None):
     return {"tool": "linkcheck paging " + core.__version__, "per_page": per_page,
             "pages": len(numbers), "last_page": last, "missing_pages": missing,
             "whole_page_failures": [n for n in numbers if pages[n] is None],
+            "required_last_page": last_page(totals, per_page) if totals else None,
+            "refetch_pages": refetch_pages(pages, per_page, totals) if totals else [],
             "flags": flags,
             "flag_counts": dict(sorted(collections.Counter(f["kind"] for f in flags).items())),
             "sources": out}
@@ -173,6 +254,7 @@ def main(argv=None):
     with open(args.out, "w", encoding="utf-8") as fh:
         json.dump(report, fh, indent=1, sort_keys=True)
     print(json.dumps({"flag_counts": report["flag_counts"],
+                      "refetch_pages": report["refetch_pages"],
                       "unexplained": {s: r["unexplained"] for s, r in report["sources"].items()}},
                      indent=1, sort_keys=True))
     return 0

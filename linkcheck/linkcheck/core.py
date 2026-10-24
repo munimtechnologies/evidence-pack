@@ -30,7 +30,7 @@ import collections
 import csv
 import json
 
-__version__ = "0.3.0"
+__version__ = "0.3.1"
 
 RULES = ("exact", "alt_id", "suffix")
 RACES = {"white": "White", "black or african american": "Black or African American",
