@@ -1,0 +1,20 @@
+===== setup-01-python: python get_code.py
+
+===== setup-02-python: python -m unittest -v test_probe1
+test_all_hold (test_probe1.Probe1Test.test_all_hold) ... ok
+test_error_object_sizes (test_probe1.Probe1Test.test_error_object_sizes) ... ok
+test_fixed_error (test_probe1.Probe1Test.test_fixed_error) ... ok
+test_link_header_fails_a1 (test_probe1.Probe1Test.test_link_header_fails_a1) ... ok
+test_link_rels (test_probe1.Probe1Test.test_link_rels) ... ok
+test_no_participant_names_written (test_probe1.Probe1Test.test_no_participant_names_written) ... ok
+test_non_200_fails_a2_and_a6 (test_probe1.Probe1Test.test_non_200_fails_a2_and_a6) ... ok
+test_pcdc_served_fails_a4_and_a5 (test_probe1.Probe1Test.test_pcdc_served_fails_a4_and_a5) ... ok
+test_server_error_past_end_fails_a3 (test_probe1.Probe1Test.test_server_error_past_end_fails_a3) ... ok
+test_url_of (test_probe1.Probe1Test.test_url_of) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.021s
+
+OK
+
+===== run-01-python: python probe1.py --out /out

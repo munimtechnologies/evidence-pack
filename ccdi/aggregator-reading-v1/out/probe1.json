@@ -1,0 +1,390 @@
+{
+ "expected_error_bytes": {
+  "not_found": 118,
+  "server_error": 100
+ },
+ "finished_at": "2026-10-23T23:35:31Z",
+ "grades": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass"
+ },
+ "probe": "ccdi/aggregator-reading-v1",
+ "requests": [
+  {
+   "bytes": 4381,
+   "content_length": "4381",
+   "content_type": "application/json; charset=utf-8",
+   "fixed_error": null,
+   "header_names": [
+    "access-control-allow-origin",
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "set-cookie",
+    "x-content-type-options",
+    "x-frame-options"
+   ],
+   "info_versions": [
+    [
+     "/PCDC/server/version",
+     "1.3.1"
+    ],
+    [
+     "/PCDC/api/api_version",
+     "1.3.1"
+    ],
+    [
+     "/PCDC/data/version/version",
+     "pcdc_20261013_1"
+    ],
+    [
+     "/Treehouse/api/api_version",
+     "v1.2.0"
+    ],
+    [
+     "/Treehouse/data/version/version",
+     "1"
+    ],
+    [
+     "/StJude/server/version",
+     "v1.2"
+    ],
+    [
+     "/StJude/api/api_version",
+     "v1.2.1"
+    ],
+    [
+     "/StJude/data/version/version",
+     "3"
+    ],
+    [
+     "/KidsFirst/server/version",
+     "v1.2.0"
+    ],
+    [
+     "/KidsFirst/api/api_version",
+     "v1.2.0"
+    ],
+    [
+     "/KidsFirst/data/version/version",
+     "1"
+    ],
+    [
+     "/ccdi-ecDNA/server/version",
+     "v1.0.0"
+    ],
+    [
+     "/ccdi-ecDNA/api/api_version",
+     "v1.0.0"
+    ],
+    [
+     "/ccdi-ecDNA/data/version/version",
+     "1"
+    ],
+    [
+     "/ccdi-iusccc-pst/server/version",
+     "v1.2.0"
+    ],
+    [
+     "/ccdi-iusccc-pst/api/api_version",
+     "v1.2.0"
+    ],
+    [
+     "/ccdi-iusccc-pst/data/version/version",
+     "1"
+    ],
+    [
+     "/CCDI-DCC/server/version",
+     "v1.1.0"
+    ],
+    [
+     "/CCDI-DCC/api/api_version",
+     "v1.3.0"
+    ],
+    [
+     "/CCDI-DCC/data/version/version",
+     "3.1.0"
+    ]
+   ],
+   "link": [],
+   "link_rels": {},
+   "name": "info",
+   "page": null,
+   "path": "/info",
+   "per_page": null,
+   "seconds": 6.8,
+   "sha256": "cbca3eefa912c0b472c14ca7fc1f99bd08d39ea5ef952ed3dc3594360af80d95",
+   "status": 200
+  },
+  {
+   "bytes": 760472,
+   "content_length": "760472",
+   "content_type": "application/json; charset=utf-8",
+   "entries": 700,
+   "fixed_error": null,
+   "header_names": [
+    "access-control-allow-origin",
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "set-cookie",
+    "x-content-type-options",
+    "x-frame-options"
+   ],
+   "link": [],
+   "link_rels": {},
+   "name": "subject-1",
+   "page": 1,
+   "path": "/subject",
+   "per_page": 100,
+   "seconds": 8.0,
+   "sha256": "5f56c0305992144522c557cfce3c04f146b4bb1f402983a0ce1c76e81085582c",
+   "sources": {
+    "CCDI-DCC": {
+     "entries": 100,
+     "error": false
+    },
+    "KidsFirst": {
+     "entries": 100,
+     "error": false
+    },
+    "PCDC": {
+     "entries": 100,
+     "error": false
+    },
+    "StJude": {
+     "entries": 100,
+     "error": false
+    },
+    "Treehouse": {
+     "entries": 100,
+     "error": false
+    },
+    "ccdi-ecDNA": {
+     "entries": 100,
+     "error": false
+    },
+    "ccdi-iusccc-pst": {
+     "entries": 100,
+     "error": false
+    }
+   },
+   "status": 200
+  },
+  {
+   "bytes": 98303,
+   "content_length": "98303",
+   "content_type": "application/json; charset=utf-8",
+   "domains": {
+    "KidsFirst": 100,
+    "PCDC": 100,
+    "StJude": 100,
+    "Treehouse": 100,
+    "ccdi-ecDNA": 100,
+    "ccdi-iusccc-pst": 100,
+    "phs002430": 9,
+    "phs002431": 61,
+    "phs002790": 1,
+    "phs003519": 29
+   },
+   "entries": 700,
+   "fixed_error": null,
+   "header_names": [
+    "access-control-allow-origin",
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "set-cookie",
+    "x-content-type-options",
+    "x-frame-options"
+   ],
+   "link": [],
+   "link_rels": {},
+   "name": "mapping-1",
+   "page": 1,
+   "path": "/subject-mapping",
+   "per_page": 100,
+   "seconds": 14.1,
+   "sha256": "77e663d06c06788efff7b091c9c74b89db1fd299cab59747e39005ecf8b9595b",
+   "status": 200
+  },
+  {
+   "bytes": 473425,
+   "content_length": "473425",
+   "content_type": "application/json; charset=utf-8",
+   "entries": 400,
+   "fixed_error": null,
+   "header_names": [
+    "access-control-allow-origin",
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "set-cookie",
+    "x-content-type-options",
+    "x-frame-options"
+   ],
+   "link": [],
+   "link_rels": {},
+   "name": "subject-35",
+   "page": 35,
+   "path": "/subject",
+   "per_page": 100,
+   "seconds": 13.5,
+   "sha256": "2c32015b944a5dbf09661a8f79f922577beac1d10415ba44bb8e1e0170a395cd",
+   "sources": {
+    "CCDI-DCC": {
+     "entries": 100,
+     "error": false
+    },
+    "KidsFirst": {
+     "entries": 100,
+     "error": false
+    },
+    "PCDC": {
+     "entries": null,
+     "error": true
+    },
+    "StJude": {
+     "entries": 100,
+     "error": false
+    },
+    "Treehouse": {
+     "entries": 100,
+     "error": false
+    },
+    "ccdi-ecDNA": {
+     "entries": null,
+     "error": true
+    },
+    "ccdi-iusccc-pst": {
+     "entries": 0,
+     "error": false
+    }
+   },
+   "status": 200
+  },
+  {
+   "bytes": 70522,
+   "content_length": "70522",
+   "content_type": "application/json; charset=utf-8",
+   "domains": {
+    "KidsFirst": 100,
+    "StJude": 100,
+    "Treehouse": 100,
+    "phs001327": 100
+   },
+   "entries": 400,
+   "fixed_error": null,
+   "header_names": [
+    "access-control-allow-origin",
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "set-cookie",
+    "x-content-type-options",
+    "x-frame-options"
+   ],
+   "link": [],
+   "link_rels": {},
+   "name": "mapping-35",
+   "page": 35,
+   "path": "/subject-mapping",
+   "per_page": 100,
+   "seconds": 14.5,
+   "sha256": "1463e258863937d661e5b89f659970732c3061e5501a518055bbf3395c9425ca",
+   "status": 200
+  },
+  {
+   "bytes": 1095,
+   "content_length": "1095",
+   "content_type": "application/json; charset=utf-8",
+   "entries": 0,
+   "fixed_error": null,
+   "header_names": [
+    "access-control-allow-origin",
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "set-cookie",
+    "x-content-type-options",
+    "x-frame-options"
+   ],
+   "link": [],
+   "link_rels": {},
+   "name": "subject-600",
+   "page": 600,
+   "path": "/subject",
+   "per_page": 100,
+   "seconds": 13.3,
+   "sha256": "ce852a20511d85a6171aae131128146fbfce4bda109d951436b7f1ea43e11908",
+   "sources": {
+    "CCDI-DCC": {
+     "entries": 0,
+     "error": false
+    },
+    "KidsFirst": {
+     "entries": 0,
+     "error": false
+    },
+    "PCDC": {
+     "entries": null,
+     "error": true
+    },
+    "StJude": {
+     "entries": null,
+     "error": true
+    },
+    "Treehouse": {
+     "entries": null,
+     "error": true
+    },
+    "ccdi-ecDNA": {
+     "entries": null,
+     "error": true
+    },
+    "ccdi-iusccc-pst": {
+     "entries": 0,
+     "error": false
+    }
+   },
+   "status": 200
+  },
+  {
+   "bytes": 118,
+   "content_length": "118",
+   "content_type": "application/json; charset=utf-8",
+   "domains": {},
+   "entries": 0,
+   "fixed_error": "not_found",
+   "header_names": [
+    "access-control-allow-origin",
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "set-cookie",
+    "x-content-type-options",
+    "x-frame-options"
+   ],
+   "link": [],
+   "link_rels": {},
+   "name": "mapping-600",
+   "page": 600,
+   "path": "/subject-mapping",
+   "per_page": 100,
+   "seconds": 14.1,
+   "sha256": "f3f8d7c40d95b13ed00153e9338221943b37edcf678fab9c398e346de09116c5",
+   "status": 200
+  }
+ ]
+}

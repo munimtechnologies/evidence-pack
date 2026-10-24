@@ -1,0 +1,58 @@
+{
+ "contract": "mv2-compete-result-v1",
+ "name": "ccdi-aggr-probe-v1",
+ "id": "a891860723d2",
+ "field": "medicine",
+ "run": "20261023T231347Z-medicine",
+ "kind": "compete",
+ "status": "ok",
+ "reason": "",
+ "host": "blade",
+ "image": "python:3.12",
+ "started_at": "2026-10-23T23:32:32.999862+00:00",
+ "finished_at": "2026-10-23T23:36:21.402384+00:00",
+ "duration_seconds": 228,
+ "limits": {
+  "cpu": 1.0,
+  "memory_gb": 1.0,
+  "timeout_minutes": 180.0
+ },
+ "peak_memory_gb": 0.02,
+ "network": {
+  "setup": true,
+  "run": true
+ },
+ "steps": [
+  {
+   "step": "setup-01-python",
+   "cmd": "python get_code.py",
+   "exit": 0,
+   "seconds": 1
+  },
+  {
+   "step": "setup-02-python",
+   "cmd": "python -m unittest -v test_probe1",
+   "exit": 0,
+   "seconds": 0
+  },
+  {
+   "step": "run-01-python",
+   "cmd": "python probe1.py --out /out",
+   "exit": 0,
+   "seconds": 97
+  }
+ ],
+ "out_files": [
+  "probe1.json"
+ ],
+ "out_files_total": 1,
+ "out_skipped": [],
+ "upload_skipped": [],
+ "summary_tail": "[run-01-python stdout] info 200 4381 bytes 6.8 s\nsubject-1 200 760472 bytes 8.0 s\nmapping-1 200 98303 bytes 14.1 s\nsubject-35 200 473425 bytes 13.5 s\nmapping-35 200 70522 bytes 14.5 s\nsubject-600 200 1095 bytes 13.3 s\nmapping-600 200 118 bytes 14.1 s\n{\"A1\": \"pass\", \"A2\": \"pass\", \"A3\": \"pass\", \"A4\": \"pass\", \"A5\": \"pass\", \"A6\": \"pass\"}\n",
+ "paths": {
+  "workdir": "/work (copy of E:\\MV2-Pursuit\\work\\20261023T231347Z-medicine\\compete\\ccdi-aggr-probe-v1)",
+  "out": "/out -> out/",
+  "data": "/data (docker volume mv2c-data-ccdi-raw, kept for later jobs)"
+ },
+ "note": ""
+}

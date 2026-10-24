@@ -1,0 +1,64 @@
+===== setup-01-python: python get_code.py
+v0.8.3/ccdi/aggregator-reading-v1/README.md 8107 bytes sha256 34911663d2ac99c0e1f961ce1ad91411a69e62c24f7ebcc10e137391d9674201
+v0.8.3/ccdi/aggregator-reading-v1/probe1.py 8571 bytes sha256 cd91a68f436e25d167d46d7f8ad59737c55a87a3122ba7aa78cb967aa3558d91
+v0.8.3/ccdi/aggregator-reading-v1/test_probe1.py 5826 bytes sha256 3659c705f0c34f3d80c4b6693510f2b251303aea4d074081bd84d0841925b136
+
+===== setup-02-python: python -m unittest -v test_probe1
+info 200 45 bytes 0.1 s
+subject-1 200 7042 bytes 0.1 s
+mapping-1 200 12201 bytes 0.1 s
+subject-35 200 3576 bytes 0.1 s
+mapping-35 200 6211 bytes 0.1 s
+subject-600 200 88 bytes 0.1 s
+mapping-600 200 118 bytes 0.1 s
+{"A1": "pass", "A2": "pass", "A3": "pass", "A4": "pass", "A5": "pass", "A6": "pass"}
+info 200 45 bytes 0.1 s
+subject-1 200 3520 bytes 0.1 s
+mapping-1 200 12201 bytes 0.1 s
+subject-35 200 3576 bytes 0.1 s
+mapping-35 200 6211 bytes 0.1 s
+subject-600 200 88 bytes 0.1 s
+mapping-600 200 118 bytes 0.1 s
+{"A1": "fail", "A2": "pass", "A3": "pass", "A4": "pass", "A5": "pass", "A6": "pass"}
+info 200 45 bytes 0.1 s
+subject-1 200 7042 bytes 0.1 s
+mapping-1 200 12201 bytes 0.1 s
+subject-35 200 3576 bytes 0.1 s
+mapping-35 200 6211 bytes 0.1 s
+subject-600 200 88 bytes 0.1 s
+mapping-600 200 118 bytes 0.1 s
+{"A1": "pass", "A2": "pass", "A3": "pass", "A4": "pass", "A5": "pass", "A6": "pass"}
+info 200 45 bytes 0.1 s
+subject-1 200 7042 bytes 0.1 s
+mapping-1 200 12201 bytes 0.1 s
+subject-35 200 3576 bytes 0.1 s
+mapping-35 200 6211 bytes 0.1 s
+subject-600 404 14 bytes 0.1 s
+mapping-600 200 118 bytes 0.1 s
+{"A1": "pass", "A2": "fail", "A3": "pass", "A4": "pass", "A5": "pass", "A6": "fail"}
+info 200 45 bytes 0.1 s
+subject-1 200 7042 bytes 0.1 s
+mapping-1 200 12201 bytes 0.1 s
+subject-35 200 7042 bytes 0.1 s
+mapping-35 200 6211 bytes 0.1 s
+subject-600 200 88 bytes 0.1 s
+mapping-600 200 118 bytes 0.1 s
+{"A1": "pass", "A2": "pass", "A3": "pass", "A4": "fail", "A5": "fail", "A6": "pass"}
+info 200 45 bytes 0.1 s
+subject-1 200 7042 bytes 0.1 s
+mapping-1 200 12201 bytes 0.1 s
+subject-35 200 3576 bytes 0.1 s
+mapping-35 200 6211 bytes 0.1 s
+subject-600 200 88 bytes 0.1 s
+mapping-600 200 100 bytes 0.1 s
+{"A1": "pass", "A2": "pass", "A3": "fail", "A4": "pass", "A5": "pass", "A6": "pass"}
+
+===== run-01-python: python probe1.py --out /out
+info 200 4381 bytes 6.8 s
+subject-1 200 760472 bytes 8.0 s
+mapping-1 200 98303 bytes 14.1 s
+subject-35 200 473425 bytes 13.5 s
+mapping-35 200 70522 bytes 14.5 s
+subject-600 200 1095 bytes 13.3 s
+mapping-600 200 118 bytes 14.1 s
+{"A1": "pass", "A2": "pass", "A3": "pass", "A4": "pass", "A5": "pass", "A6": "pass"}
