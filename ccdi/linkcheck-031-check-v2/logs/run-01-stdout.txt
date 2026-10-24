@@ -1,0 +1,59 @@
+{
+ "grades": {
+  "R1": {
+   "grade": "not graded",
+   "why": "no kept second snapshot on this machine"
+  },
+  "R2": {
+   "grade": "not graded",
+   "why": "no kept second snapshot on this machine"
+  },
+  "R3": {
+   "grade": "not graded",
+   "why": "no kept second snapshot on this machine"
+  },
+  "R4": {
+   "grade": "not graded",
+   "why": "no kept second snapshot on this machine"
+  },
+  "T1": {
+   "grade": "pass",
+   "observed": {
+    "differing_pages": [],
+    "pages": 599,
+    "rejected": []
+   }
+  },
+  "T2": {
+   "grade": "pass",
+   "observed": {
+    "flags": [
+     [
+      35,
+      "PCDC",
+      "error",
+      null,
+      100
+     ]
+    ],
+    "refetch_pages": [],
+    "required_last_page": 598
+   }
+  },
+  "T3": {
+   "grade": "pass",
+   "observed": {
+    "refetch_pages": [],
+    "required_last_page": 598
+   }
+  },
+  "T4": {
+   "grade": "pass",
+   "observed": {
+    "mapping_first_empty": 599,
+    "subject_first_empty": 599
+   }
+  }
+ },
+ "snapshot": "fresh snapshot ccdi-raw-fresh-20261024T020144Z"
+}

@@ -1,0 +1,64 @@
+{
+ "contract": "mv2-compete-result-v1",
+ "name": "linkcheck-031-v2",
+ "id": "672314a1702e",
+ "field": "medicine",
+ "run": "20261024T014947Z-medicine",
+ "kind": "compete",
+ "status": "ok",
+ "reason": "",
+ "host": "dell",
+ "image": "python:3.12",
+ "started_at": "2026-10-24T02:01:40.944181+00:00",
+ "finished_at": "2026-10-24T05:55:39.720131+00:00",
+ "duration_seconds": 14038,
+ "limits": {
+  "cpu": 1.0,
+  "memory_gb": 2.0,
+  "timeout_minutes": 360.0
+ },
+ "peak_memory_gb": 0.05,
+ "network": {
+  "setup": true,
+  "run": true
+ },
+ "steps": [
+  {
+   "step": "setup-01-python",
+   "cmd": "python get_code.py",
+   "exit": 0,
+   "seconds": 3
+  },
+  {
+   "step": "setup-02-python",
+   "cmd": "python -m unittest -v test_linkcheck test_paging test_namespaces test_paging_body test_ccdi_pages test_check031 test_check031b",
+   "exit": 0,
+   "seconds": 1
+  },
+  {
+   "step": "setup-03-python",
+   "cmd": "python ensure_snapshot2.py /data/ccdi-raw-snapshot2 /data/ccdi-fresh-v1",
+   "exit": 0,
+   "seconds": 13932
+  },
+  {
+   "step": "run-01-python",
+   "cmd": "python check031b.py --kept /data/ccdi-raw-snapshot2 --fresh-root /data/ccdi-fresh-v1 --out /out",
+   "exit": 0,
+   "seconds": 8
+  }
+ ],
+ "out_files": [
+  "check031b.json"
+ ],
+ "out_files_total": 1,
+ "out_skipped": [],
+ "upload_skipped": [],
+ "summary_tail": "[run-01-python stdout] {\n \"grades\": {\n  \"R1\": {\n   \"grade\": \"not graded\",\n   \"why\": \"no kept second snapshot on this machine\"\n  },\n  \"R2\": {\n   \"grade\": \"not graded\",\n   \"why\": \"no kept second snapshot on this machine\"\n  },\n  \"R3\": {\n   \"grade\": \"not graded\",\n   \"why\": \"no kept second snapshot on this machine\"\n  },\n  \"R4\": {\n   \"grade\": \"not graded\",\n   \"why\": \"no kept second snapshot on this machine\"\n  },\n  \"T1\": {\n   \"grade\": \"pass\",\n   \"observed\": {\n    \"differing_pages\": [],\n    \"pages\": 599,\n    \"rejected\": []\n   }\n  },\n  \"T2\": {\n   \"grade\": \"pass\",\n   \"observed\": {\n    \"flags\": [\n     [\n      35,\n      \"PCDC\",\n      \"error\",\n      null,\n      100\n     ]\n    ],\n    \"refetch_pages\": [],\n    \"required_last_page\": 598\n   }\n  },\n  \"T3\": {\n   \"grade\": \"pass\",\n   \"observed\": {\n    \"refetch_pages\": [],\n    \"required_last_page\": 598\n   }\n  },\n  \"T4\": {\n   \"grade\": \"pass\",\n   \"observed\": {\n    \"mapping_first_empty\": 599,\n    \"subject_first_empty\": 599\n   }\n  }\n },\n \"snapshot\": \"fresh snapshot ccdi-raw-fresh-20261024T020144Z\"\n}\n",
+ "paths": {
+  "workdir": "/work (copy of E:\\MV2-Pursuit\\work\\20261024T014947Z-medicine\\compete\\linkcheck-031-v2)",
+  "out": "/out -> out/",
+  "data": "/data (docker volume mv2c-data-ccdi-raw, kept for later jobs)"
+ },
+ "note": ""
+}

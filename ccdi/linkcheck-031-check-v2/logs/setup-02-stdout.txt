@@ -1,0 +1,175 @@
+{
+ "exact": {
+  "largest_person": 3,
+  "linked_persons": 2,
+  "naive_overcount": 3,
+  "persons": 7,
+  "persons_with_2plus_records_in_one_source": 0,
+  "records": 10,
+  "records_in_links": 5
+ },
+ "with_rules": {
+  "largest_person": 3,
+  "linked_persons": 3,
+  "naive_overcount": 4,
+  "persons": 6,
+  "persons_with_2plus_records_in_one_source": 0,
+  "records": 10,
+  "records_in_links": 7
+ }
+}
+{
+ "flag_counts": {
+  "short": 2
+ },
+ "refetch_pages": [],
+ "unexplained": {
+  "P": 0,
+  "Q": 0
+ }
+}
+{
+ "grades": {
+  "Q1": {
+   "grade": "not graded",
+   "why": "fresh snapshot: the predicted numbers belong to snapshot 2"
+  },
+  "Q2": {
+   "grade": "not graded",
+   "why": "fresh snapshot: the predicted numbers belong to snapshot 2"
+  },
+  "Q3": {
+   "grade": "not graded",
+   "why": "fresh snapshot: the predicted numbers belong to snapshot 2"
+  },
+  "Q4": {
+   "grade": "not graded",
+   "why": "fresh snapshot: the predicted numbers belong to snapshot 2"
+  },
+  "Q5": {
+   "grade": "pass",
+   "observed": {
+    "mapping_flags": 1,
+    "not_flagged_on_subject": [],
+    "vacuous": false
+   }
+  },
+  "Q6": {
+   "grade": "pass",
+   "observed": {
+    "unexplained_not_zero": {
+     "mapping": {},
+     "subject": {}
+    }
+   }
+  }
+ },
+ "snapshot": "fresh snapshot taken by this job"
+}
+{
+ "grades": {
+  "R1": {
+   "grade": "fail",
+   "observed": {
+    "differing_pages": [],
+    "pages": 3,
+    "rejected": []
+   }
+  },
+  "R2": {
+   "grade": "fail",
+   "observed": {
+    "flags": [],
+    "refetch_pages": [],
+    "required_last_page": 2
+   }
+  },
+  "R3": {
+   "grade": "fail",
+   "observed": {
+    "refetch_pages": [],
+    "required_last_page": 2
+   }
+  },
+  "R4": {
+   "grade": "fail",
+   "observed": {
+    "mapping_first_empty": 3,
+    "subject_first_empty": 3
+   }
+  }
+ },
+ "snapshot": "kept second snapshot"
+}
+{
+ "grades": {
+  "R1": {
+   "grade": "not graded",
+   "why": "no kept second snapshot on this machine"
+  },
+  "R2": {
+   "grade": "not graded",
+   "why": "no kept second snapshot on this machine"
+  },
+  "R3": {
+   "grade": "not graded",
+   "why": "no kept second snapshot on this machine"
+  },
+  "R4": {
+   "grade": "not graded",
+   "why": "no kept second snapshot on this machine"
+  }
+ },
+ "snapshot": null
+}
+{
+ "grades": {
+  "R1": {
+   "grade": "not graded",
+   "why": "no kept second snapshot on this machine"
+  },
+  "R2": {
+   "grade": "not graded",
+   "why": "no kept second snapshot on this machine"
+  },
+  "R3": {
+   "grade": "not graded",
+   "why": "no kept second snapshot on this machine"
+  },
+  "R4": {
+   "grade": "not graded",
+   "why": "no kept second snapshot on this machine"
+  },
+  "T1": {
+   "grade": "fail",
+   "observed": {
+    "differing_pages": [],
+    "pages": 3,
+    "rejected": []
+   }
+  },
+  "T2": {
+   "grade": "fail",
+   "observed": {
+    "flags": [],
+    "refetch_pages": [],
+    "required_last_page": 2
+   }
+  },
+  "T3": {
+   "grade": "fail",
+   "observed": {
+    "refetch_pages": [],
+    "required_last_page": 2
+   }
+  },
+  "T4": {
+   "grade": "fail",
+   "observed": {
+    "mapping_first_empty": 3,
+    "subject_first_empty": 3
+   }
+  }
+ },
+ "snapshot": "fresh snapshot ccdi-raw-fresh-20261024T000000Z"
+}
