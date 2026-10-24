@@ -1,0 +1,110 @@
+===== setup-01-python: python get_code.py
+
+===== setup-02-python: python -m unittest -v test_linkcheck test_paging test_namespaces test_repro2 test_fresh1
+test_main (test_linkcheck.CommandLine.test_main) ... ok
+test_ambiguous_alt_id (test_linkcheck.Links.test_ambiguous_alt_id) ... ok
+test_bad_input (test_linkcheck.Links.test_bad_input) ... ok
+test_exact_only (test_linkcheck.Links.test_exact_only) ... ok
+test_link_order_does_not_matter (test_linkcheck.Links.test_link_order_does_not_matter) ... ok
+test_resolution (test_linkcheck.Links.test_resolution) ... ok
+test_cohort (test_linkcheck.Report.test_cohort) ... ok
+test_cohort_summary (test_linkcheck.Report.test_cohort_summary) ... ok
+test_completeness (test_linkcheck.Report.test_completeness) ... ok
+test_conflicts (test_linkcheck.Report.test_conflicts) ... ok
+test_overcount (test_linkcheck.Report.test_overcount) ... ok
+test_priority_order (test_linkcheck.Report.test_priority_order) ... ok
+test_report_has_no_record_ids (test_linkcheck.Report.test_report_has_no_record_ids) ... ok
+test_suppress (test_linkcheck.Report.test_suppress) ... ok
+test_duplicate_page (test_paging.CommandLine.test_duplicate_page) ... ok
+test_main (test_paging.CommandLine.test_main) ... ok
+test_expected (test_paging.Expected.test_expected) ... ok
+test_bad_input (test_paging.Gaps.test_bad_input) ... ok
+test_over_whole_failure_missing_and_unwalked (test_paging.Gaps.test_over_whole_failure_missing_and_unwalked) ... ok
+test_error_page_is_explained (test_paging.Mixed.test_error_page_is_explained) ... ok
+test_errors_past_end_lose_nothing (test_paging.Mixed.test_errors_past_end_lose_nothing) ... ok
+test_flags (test_paging.Mixed.test_flags) ... ok
+test_no_total (test_paging.Mixed.test_no_total) ... ok
+test_short_page_found_without_totals (test_paging.Silent.test_short_page_found_without_totals) ... ok
+test_short_pages_with_totals (test_paging.Silent.test_short_pages_with_totals) ... ok
+test_check (test_namespaces.Namespaces.test_check) ... ok
+test_keys_and_repeats (test_namespaces.Namespaces.test_keys_and_repeats) ... ok
+test_records_without_a_namespace_keep_their_key (test_namespaces.Namespaces.test_records_without_a_namespace_keep_their_key) ... ok
+test_resolve (test_namespaces.Namespaces.test_resolve) ... ok
+test_complete (test_repro2.Main.test_complete) ... ok
+test_main_kept_fresh_snapshot (test_repro2.Main.test_main_kept_fresh_snapshot) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp27nglvt9/ccdi-raw-fresh-20261024T000000Z/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_main_kept_snapshot (test_repro2.Main.test_main_kept_snapshot) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpuwvmzlmf/raw/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_main_no_complete_snapshot (test_repro2.Main.test_main_no_complete_snapshot) ... ok
+test_adapt (test_repro2.Repro.test_adapt) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpihxcdq66/raw/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_ambiguous_id_is_not_guessed (test_repro2.Repro.test_ambiguous_id_is_not_guessed) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp25cyhqgk/raw-ambiguous/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_census (test_repro2.Repro.test_census) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmplvbf6myz/raw/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_fetch_check (test_repro2.Repro.test_fetch_check) ... ok
+test_run_all_pass (test_repro2.Repro.test_run_all_pass) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpgsx3tcym/raw/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_shared_names (test_repro2.Repro.test_shared_names) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpu4mhy3yf/raw/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_an_empty_page_is_fetched_again (test_repro2.Walk.test_an_empty_page_is_fetched_again) ... ok
+test_empty_subject_page (test_repro2.Walk.test_empty_subject_page) ... ok
+test_the_walk_goes_on_past_a_page_that_stays_empty (test_repro2.Walk.test_the_walk_goes_on_past_a_page_that_stays_empty) ... ok
+test_one_record_linked (test_fresh1.Describe.test_one_record_linked) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpzyupyn50/raw/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_persons_matches_section_d (test_fresh1.Describe.test_persons_matches_section_d) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp_s2x7pv_/raw/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_two_records_in_different_persons (test_fresh1.Describe.test_two_records_in_different_persons) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpi7176h7m/raw/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_all_pass (test_fresh1.Grade.test_all_pass) ... ok
+test_misses (test_fresh1.Grade.test_misses) ... ok
+test_one_shape_only_fails_g3 (test_fresh1.Grade.test_one_shape_only_fails_g3) ... ok
+test_main (test_fresh1.Main.test_main) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmptja7w4gr/fresh/ccdi-raw-fresh-20261024T000000Z/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/work/fresh1.py:158: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmptja7w4gr/fresh/ccdi-raw-fresh-20261024T000000Z/complete.json' mode='r' encoding='utf-8'>
+  "complete": json.load(open(os.path.join(found[-1], "complete.json"),
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_main_describes_kept_snapshot (test_fresh1.Main.test_main_describes_kept_snapshot) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpz_45346b/fresh/ccdi-raw-fresh-20261024T000000Z/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/work/fresh1.py:158: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpz_45346b/fresh/ccdi-raw-fresh-20261024T000000Z/complete.json' mode='r' encoding='utf-8'>
+  "complete": json.load(open(os.path.join(found[-1], "complete.json"),
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpz_45346b/kept/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_no_fresh_snapshot (test_fresh1.Main.test_no_fresh_snapshot) ... ok
+
+----------------------------------------------------------------------
+Ran 51 tests in 0.106s
+
+OK
+
+===== setup-03-python: python ensure_snapshot2.py /data/no-kept-snapshot /data/ccdi-fresh-v1
+
+===== run-01-python: python repro2.py --kept /data/no-kept-snapshot --fresh-root /data/ccdi-fresh-v1 --out /out
+
+===== run-02-python: python fresh1.py --fresh-root /data/ccdi-fresh-v1 --kept /data/ccdi-raw-snapshot2 --out /out

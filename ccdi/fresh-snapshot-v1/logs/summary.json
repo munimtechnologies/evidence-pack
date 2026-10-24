@@ -1,0 +1,71 @@
+{
+ "contract": "mv2-compete-result-v1",
+ "name": "ccdi-fresh-v1",
+ "id": "856e9dfcc38d",
+ "field": "medicine",
+ "run": "20261023T213642Z-medicine",
+ "kind": "compete",
+ "status": "ok",
+ "reason": "",
+ "host": "blade",
+ "image": "python:3.12",
+ "started_at": "2026-10-23T21:41:54.397207+00:00",
+ "finished_at": "2026-10-24T01:25:02.742465+00:00",
+ "duration_seconds": 13388,
+ "limits": {
+  "cpu": 1.0,
+  "memory_gb": 2.0,
+  "timeout_minutes": 360.0
+ },
+ "peak_memory_gb": 0.06,
+ "network": {
+  "setup": true,
+  "run": true
+ },
+ "steps": [
+  {
+   "step": "setup-01-python",
+   "cmd": "python get_code.py",
+   "exit": 0,
+   "seconds": 303
+  },
+  {
+   "step": "setup-02-python",
+   "cmd": "python -m unittest -v test_linkcheck test_paging test_namespaces test_repro2 test_fresh1",
+   "exit": 0,
+   "seconds": 1
+  },
+  {
+   "step": "setup-03-python",
+   "cmd": "python ensure_snapshot2.py /data/no-kept-snapshot /data/ccdi-fresh-v1",
+   "exit": 0,
+   "seconds": 12930
+  },
+  {
+   "step": "run-01-python",
+   "cmd": "python repro2.py --kept /data/no-kept-snapshot --fresh-root /data/ccdi-fresh-v1 --out /out",
+   "exit": 0,
+   "seconds": 20
+  },
+  {
+   "step": "run-02-python",
+   "cmd": "python fresh1.py --fresh-root /data/ccdi-fresh-v1 --kept /data/ccdi-raw-snapshot2 --out /out",
+   "exit": 0,
+   "seconds": 14
+  }
+ ],
+ "out_files": [
+  "fresh1.json",
+  "repro2.json"
+ ],
+ "out_files_total": 2,
+ "out_skipped": [],
+ "upload_skipped": [],
+ "summary_tail": "[run-02-python stdout]  \"agree\": 41\n     },\n     \"vital\": {\n      \"both_dead\": 14,\n      \"uninformative\": 27\n     }\n    }\n   },\n   \"census_persons\": 135849,\n   \"conflicts_by_name_shape\": {\n    \"other\": {\n     \"death_age\": 0,\n     \"ethnicity\": 0,\n     \"race\": 0,\n     \"sex\": 0,\n     \"vital\": 0\n    },\n    \"usi\": {\n     \"death_age\": 0,\n     \"ethnicity\": 0,\n     \"race\": 0,\n     \"sex\": 0,\n     \"vital\": 0\n    }\n   },\n   \"extra_records\": {\n    \"CCDI-DCC\": 87\n   },\n   \"group_sizes\": {\n    \"2\": 87\n   },\n   \"groups\": 87,\n   \"groups_by_name_shape\": {\n    \"other\": 46,\n    \"usi\": 41\n   },\n   \"linkage\": {\n    \"none_in_links\": 36,\n    \"one_person_by_links\": 51\n   },\n   \"namespace_pairs\": {\n    \"phs000463 | phs000464\": 18,\n    \"phs000720 | phs002883\": 2,\n    \"phs002276 | phs003432\": 39,\n    \"phs002620 | phs003111\": 28\n   },\n   \"persons_if_shared_names_are_one_person\": 135813,\n   \"same_namespace_name\": 0\n  },\n  \"subjects\": 153580,\n  \"totals\": {\n   \"CCDI-DCC\": 59795,\n   \"KidsFirst\": 38440,\n   \"PCDC\": 24432,\n   \"StJude\": 14681,\n   \"Treehouse\": 12723,\n   \"ccdi-ecDNA\": 3205,\n   \"ccdi-iusccc-pst\": 504\n  }\n },\n \"label\": \"PRE-REGISTERED: predictions G1-G3 in README.md, published at evidence-pack tag v0.8.2 before this job ran\"\n}\n",
+ "paths": {
+  "workdir": "/work (copy of E:\\MV2-Pursuit\\work\\20261023T213642Z-medicine\\compete\\ccdi-fresh-v1)",
+  "out": "/out -> out/",
+  "data": "/data (docker volume mv2c-data-ccdi-raw, kept for later jobs)"
+ },
+ "note": ""
+}

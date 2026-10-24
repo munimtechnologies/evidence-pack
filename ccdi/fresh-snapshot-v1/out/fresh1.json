@@ -1,0 +1,249 @@
+{
+ "complete": {
+  "finished_at": "2026-10-24T01:22:28Z",
+  "requests": 1211,
+  "started_at": "2026-10-23T21:46:58Z"
+ },
+ "fresh": {
+  "mapping_entries": 153680,
+  "shared_names": {
+   "agreement_by_name_shape": {
+    "other": {
+     "death_age": {
+      "within_1_day": 10
+     },
+     "ethnicity": {
+      "agree": 13,
+      "uninformative": 33
+     },
+     "pairs": 46,
+     "race": {
+      "agree": 16,
+      "uninformative": 30
+     },
+     "sex": {
+      "agree": 46
+     },
+     "vital": {
+      "both_alive": 7,
+      "both_dead": 10,
+      "uninformative": 29
+     }
+    },
+    "usi": {
+     "death_age": {
+      "within_1_day": 14
+     },
+     "ethnicity": {
+      "agree": 7,
+      "uninformative": 34
+     },
+     "pairs": 41,
+     "race": {
+      "agree": 39,
+      "uninformative": 2
+     },
+     "sex": {
+      "agree": 41
+     },
+     "vital": {
+      "both_dead": 14,
+      "uninformative": 27
+     }
+    }
+   },
+   "census_persons": 135949,
+   "conflicts_by_name_shape": {
+    "other": {
+     "death_age": 0,
+     "ethnicity": 0,
+     "race": 0,
+     "sex": 0,
+     "vital": 0
+    },
+    "usi": {
+     "death_age": 0,
+     "ethnicity": 0,
+     "race": 0,
+     "sex": 0,
+     "vital": 0
+    }
+   },
+   "extra_records": {
+    "CCDI-DCC": 87
+   },
+   "group_sizes": {
+    "2": 87
+   },
+   "groups": 87,
+   "groups_by_name_shape": {
+    "other": 46,
+    "usi": 41
+   },
+   "linkage": {
+    "none_in_links": 36,
+    "one_person_by_links": 51
+   },
+   "namespace_pairs": {
+    "phs000463 | phs000464": 18,
+    "phs000720 | phs002883": 2,
+    "phs002276 | phs003432": 39,
+    "phs002620 | phs003111": 28
+   },
+   "persons_if_shared_names_are_one_person": 135913,
+   "same_namespace_name": 0
+  },
+  "subjects": 153680,
+  "totals": {
+   "CCDI-DCC": 59795,
+   "KidsFirst": 38440,
+   "PCDC": 24432,
+   "StJude": 14681,
+   "Treehouse": 12723,
+   "ccdi-ecDNA": 3205,
+   "ccdi-iusccc-pst": 504
+  }
+ },
+ "fresh_snapshot": "ccdi-raw-fresh-20261023T214658Z",
+ "grades": {
+  "G1": {
+   "grade": "pass",
+   "observed": {
+    "differing": [],
+    "totals": {
+     "CCDI-DCC": 59795,
+     "KidsFirst": 38440,
+     "PCDC": 24432,
+     "StJude": 14681,
+     "Treehouse": 12723,
+     "ccdi-ecDNA": 3205,
+     "ccdi-iusccc-pst": 504
+    }
+   }
+  },
+  "G2": {
+   "grade": "pass",
+   "observed": {
+    "extra_records": {
+     "CCDI-DCC": 87
+    },
+    "group_sizes": {
+     "2": 87
+    },
+    "groups": 87,
+    "same_namespace_name": 0
+   }
+  },
+  "G3": {
+   "grade": "pass",
+   "observed": {
+    "conflicts": {},
+    "groups_by_name_shape": {
+     "other": 46,
+     "usi": 41
+    }
+   }
+  }
+ },
+ "kept_second_snapshot": {
+  "mapping_entries": 153680,
+  "shared_names": {
+   "agreement_by_name_shape": {
+    "other": {
+     "death_age": {
+      "within_1_day": 10
+     },
+     "ethnicity": {
+      "agree": 13,
+      "uninformative": 33
+     },
+     "pairs": 46,
+     "race": {
+      "agree": 16,
+      "uninformative": 30
+     },
+     "sex": {
+      "agree": 46
+     },
+     "vital": {
+      "both_alive": 7,
+      "both_dead": 10,
+      "uninformative": 29
+     }
+    },
+    "usi": {
+     "death_age": {
+      "within_1_day": 14
+     },
+     "ethnicity": {
+      "agree": 7,
+      "uninformative": 34
+     },
+     "pairs": 41,
+     "race": {
+      "agree": 39,
+      "uninformative": 2
+     },
+     "sex": {
+      "agree": 41
+     },
+     "vital": {
+      "both_dead": 14,
+      "uninformative": 27
+     }
+    }
+   },
+   "census_persons": 135849,
+   "conflicts_by_name_shape": {
+    "other": {
+     "death_age": 0,
+     "ethnicity": 0,
+     "race": 0,
+     "sex": 0,
+     "vital": 0
+    },
+    "usi": {
+     "death_age": 0,
+     "ethnicity": 0,
+     "race": 0,
+     "sex": 0,
+     "vital": 0
+    }
+   },
+   "extra_records": {
+    "CCDI-DCC": 87
+   },
+   "group_sizes": {
+    "2": 87
+   },
+   "groups": 87,
+   "groups_by_name_shape": {
+    "other": 46,
+    "usi": 41
+   },
+   "linkage": {
+    "none_in_links": 36,
+    "one_person_by_links": 51
+   },
+   "namespace_pairs": {
+    "phs000463 | phs000464": 18,
+    "phs000720 | phs002883": 2,
+    "phs002276 | phs003432": 39,
+    "phs002620 | phs003111": 28
+   },
+   "persons_if_shared_names_are_one_person": 135813,
+   "same_namespace_name": 0
+  },
+  "subjects": 153580,
+  "totals": {
+   "CCDI-DCC": 59795,
+   "KidsFirst": 38440,
+   "PCDC": 24432,
+   "StJude": 14681,
+   "Treehouse": 12723,
+   "ccdi-ecDNA": 3205,
+   "ccdi-iusccc-pst": 504
+  }
+ },
+ "label": "PRE-REGISTERED: predictions G1-G3 in README.md, published at evidence-pack tag v0.8.2 before this job ran"
+}
