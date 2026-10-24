@@ -1,6 +1,6 @@
 """Tests for LinkCheck 0.4.0's CCDI snapshot reader (linkcheck/ccdi.py), on a made-up snapshot
 written to a temporary folder. No network. Every expected value was worked out by hand
-before the first run.
+before the first run. (0.5.0: only the version in test_check changed.)
 
 MV2 of Munim, Inc. Apache-2.0. Written by AI agents (Claude) in MV2's name.
 """
@@ -135,7 +135,7 @@ class Snapshot(unittest.TestCase):
         self.assertEqual(map_audit["whole_page_failures"], [3])
         self.assertEqual(map_audit["refetch_pages"], [2])
         self.assertEqual(result["input"]["unmapped_mapping_entries"], 1)
-        self.assertTrue(result["tool"].startswith("linkcheck ccdi 0.4.0"))
+        self.assertTrue(result["tool"].startswith("linkcheck ccdi 0.5.0"))
 
     def test_main(self):
         out = os.path.join(self.tmp, "result.json")

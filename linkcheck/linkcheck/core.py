@@ -11,7 +11,12 @@ links that say two records belong to the same person, LinkCheck:
   4  joins linked records into persons and counts how much a naive union over-counts,
      with exact links only and with every chosen rule;
   5  builds a de-duplicated, conflict-aware cohort table: one row per person, each field
-     resolved by a stated rule, conflicts carried as flags instead of hidden.
+     resolved by a stated rule, conflicts carried as flags instead of hidden;
+  6  (0.5.0) says which OMB race/ethnicity convention each record follows: 1997 (race and
+     a separate Hispanic-or-Latino question) or 2024 (one combined list that includes
+     "Hispanic or Latino" and "Middle Eastern or North African"), and reads Hispanic or
+     Latino origin under both, so linked records written under different conventions
+     can be compared. Sections 1-5 are unchanged: the 1997 reading stays as it was.
 
 A record may name its namespace (for example the study it was submitted under). Records
 are then keyed by (source, id, namespace), so two namespaces of one source may serve the
@@ -31,7 +36,7 @@ import collections
 import csv
 import json
 
-__version__ = "0.4.0"
+__version__ = "0.5.0"
 
 RULES = ("exact", "alt_id", "suffix")
 RACES = {"white": "White", "black or african american": "Black or African American",
@@ -41,7 +46,21 @@ FIELDS = (("sex", "sex"), ("race", "race"), ("ethnicity", "ethnicity"),
           ("vital_status", "vital"), ("age_at_vital_status", "age"))
 COHORT_FIELDS = ("person", "n_records", "sources", "records", "sex", "sex_conflict", "race",
                  "race_conflict", "ethnicity", "ethnicity_conflict", "vital_consensus",
-                 "vital_latest", "vital_priority", "vital_conflict")
+                 "vital_latest", "vital_priority", "vital_conflict",
+                 "hispanic", "hispanic_conflict", "race_standard")
+
+# OMB SPD 15 as revised in 2024: seven minimum categories in one combined question. The 2024
+# text drops "Other" from the Pacific Islander category; both spellings are read.
+HISPANIC = "Hispanic or Latino"
+MENA = "Middle Eastern or North African"
+ONLY_2024 = frozenset({HISPANIC, MENA})
+RACES_2024 = dict(RACES, **{"native hawaiian or pacific islander":
+                            "Native Hawaiian or other Pacific Islander",
+                            "hispanic or latino": HISPANIC,
+                            "middle eastern or north african": MENA})
+CONVENTIONS = ("1997", "2024")
+STANDARDS = ("1997", "2024", "both", "contradictory", "declared_1997", "declared_2024",
+             "undetermined", "no_value")
 
 
 # ---------- normalising ----------
@@ -50,12 +69,33 @@ def norm_sex(v):
     return {"m": "M", "male": "M", "f": "F", "female": "F"}.get(str(v or "").strip().lower())
 
 
-def norm_race(values):
+def norm_race(values, table=RACES):
     if values is None:
         return frozenset()
     if not isinstance(values, (list, tuple)):
         values = [values]
-    return frozenset(r for r in (RACES.get(str(v or "").strip().lower()) for v in values) if r)
+    return frozenset(r for r in (table.get(str(v or "").strip().lower()) for v in values) if r)
+
+
+def norm_race_2024(values):
+    """The race values a 2024-style combined list can hold, including Hispanic or Latino and
+    Middle Eastern or North African. A value that is several categories joined by commas
+    ("White, Hispanic or Latino") is read as those categories if every part is one; no
+    category name contains a comma. The 1997 reading (norm_race) does not split."""
+    if values is None:
+        return frozenset()
+    if not isinstance(values, (list, tuple)):
+        values = [values]
+    out = set()
+    for v in values:
+        s = str(v or "").strip().lower()
+        if s in RACES_2024:
+            out.add(RACES_2024[s])
+            continue
+        parts = [p.strip() for p in s.split(",")]
+        if len(parts) > 1 and all(p in RACES_2024 for p in parts):
+            out.update(RACES_2024[p] for p in parts)
+    return frozenset(out)
 
 
 def norm_eth(v):
@@ -94,7 +134,76 @@ def make_record(raw):
             "sex": norm_sex(raw.get("sex")), "race": norm_race(raw.get("race")),
             "ethnicity": norm_eth(raw.get("ethnicity")),
             "vital": norm_vital(raw.get("vital_status")),
-            "age": num(raw.get("age_at_vital_status"))}
+            "age": num(raw.get("age_at_vital_status")),
+            "race_2024": norm_race_2024(raw.get("race"))}
+
+
+def parse_declared(spec):
+    """'A=2024,B=1997' -> {'A': '2024', 'B': '1997'}; '' -> {}."""
+    out = {}
+    for part in (p.strip() for p in str(spec or "").split(",")):
+        if not part:
+            continue
+        source, sep, conv = part.rpartition("=")
+        if not sep or not source or conv not in CONVENTIONS:
+            raise ValueError("--declare takes SOURCE=1997 or SOURCE=2024, comma-separated")
+        out[source] = conv
+    return out
+
+
+# ---------- OMB conventions ----------
+
+def race_standard(r, declared=None):
+    """Which OMB convention one record follows, from its own values:
+    '2024'           its race list holds a 2024-only category (Hispanic or Latino, or
+                     Middle Eastern or North African) and it gives no separate ethnicity;
+    '1997'           it answers the separate ethnicity question and holds no 2024-only category;
+    'both'           both of the above, and they do not contradict each other;
+    'contradictory'  its race list says Hispanic or Latino and its ethnicity says Not Hispanic;
+    'undetermined'   only categories both standards share, and no ethnicity answer;
+    'no_value'       neither race nor ethnicity.
+    A convention declared for the record's source ('1997' or '2024') replaces 'undetermined'
+    only, as 'declared_1997' or 'declared_2024'; the record's own values always come first."""
+    race, eth = r["race_2024"], r["ethnicity"]
+    if HISPANIC in race and eth == "NH":
+        return "contradictory"
+    if race & ONLY_2024:
+        return "both" if eth else "2024"
+    if eth:
+        return "1997"
+    if race:
+        return "declared_" + declared if declared in CONVENTIONS else "undetermined"
+    return "no_value"
+
+
+def hispanic(r, standard):
+    """Hispanic or Latino origin under the record's convention: 'H', 'NH', 'NH_implied' (a
+    2024-style combined list with categories but without Hispanic or Latino, which under
+    that standard means not Hispanic or Latino) or None (unknown, or contradictory)."""
+    if standard == "contradictory":
+        return None
+    if r["ethnicity"] == "H" or HISPANIC in r["race_2024"]:
+        return "H"
+    if r["ethnicity"] == "NH":
+        return "NH"
+    if standard in ("2024", "declared_2024"):
+        return "NH_implied"
+    return None
+
+
+def origin(h):
+    """'NH_implied' compares as 'NH'."""
+    return "NH" if h == "NH_implied" else h
+
+
+def readings(index, declared=None):
+    """{record key: (standard, hispanic)} for every record."""
+    declared = declared or {}
+    out = {}
+    for k, r in index.records.items():
+        s = race_standard(r, declared.get(r["source"]))
+        out[k] = (s, hispanic(r, s))
+    return out
 
 
 # ---------- resolving links ----------
@@ -310,6 +419,72 @@ def overcount(index, groups):
             "largest_person": max((len(g) for g in groups), default=0)}
 
 
+def standards_by_source(index, read):
+    out = collections.defaultdict(lambda: {"records": 0, "convention": collections.Counter(),
+                                           "hispanic": collections.Counter(),
+                                           "hispanic_in_race_list": 0,
+                                           "values_2024_only": collections.Counter()})
+    for k, r in index.records.items():
+        s, h = read[k]
+        row = out[r["source"]]
+        row["records"] += 1
+        row["convention"][s] += 1
+        row["hispanic"][h or "unknown"] += 1
+        row["hispanic_in_race_list"] += int(HISPANIC in r["race_2024"])
+        for v in sorted(r["race_2024"] & ONLY_2024):
+            row["values_2024_only"][v] += 1
+    return {src: {k: (dict(sorted(v.items())) if isinstance(v, collections.Counter) else v)
+                  for k, v in row.items()} for src, row in sorted(out.items())}
+
+
+def standards_tally(index, read, pairs):
+    """Linked pairs read under both conventions: Hispanic or Latino origin compared with
+    'NH_implied' as 'NH'; race compared on the 2024 categories other than Hispanic or Latino;
+    the pair of conventions; and, where exactly one record's 'not Hispanic' is only implied
+    by a 2024 reading, what the other record says when it answers the question itself."""
+    out = {"pairs": 0, "hispanic": collections.Counter(), "race_2024": collections.Counter(),
+           "conventions": collections.Counter(), "implied_nh_vs_stated": collections.Counter()}
+    for ka, kb in pairs:
+        (sa, ha), (sb, hb) = read[ka], read[kb]
+        ra = index.records[ka]["race_2024"] - {HISPANIC}
+        rb = index.records[kb]["race_2024"] - {HISPANIC}
+        out["pairs"] += 1
+        out["hispanic"][cmp_scalar(origin(ha), origin(hb))] += 1
+        out["race_2024"][cmp_race(ra, rb)] += 1
+        out["conventions"][" | ".join(sorted([sa, sb]))] += 1
+        for mine, other in ((ha, hb), (hb, ha)):
+            if mine == "NH_implied" and other in ("H", "NH"):
+                out["implied_nh_vs_stated"][other] += 1
+    return {k: (dict(sorted(v.items())) if isinstance(v, collections.Counter) else v)
+            for k, v in out.items()}
+
+
+def standards_pairs(index, read, pair_keys):
+    by_pair = collections.defaultdict(list)
+    for ka, kb in pair_keys:
+        by_pair[" | ".join(sorted([ka[0], kb[0]]))].append((ka, kb))
+    return {"by_source_pair": {k: standards_tally(index, read, v)
+                               for k, v in sorted(by_pair.items())},
+            "all": standards_tally(index, read, [p for k in sorted(by_pair)
+                                                 for p in by_pair[k]])}
+
+
+def hispanic_conflicts(read, groups):
+    """Persons whose records say both Hispanic or Latino and not ('NH_implied' as 'NH')."""
+    return sum(1 for g in groups if len(g) > 1
+               and {"H", "NH"} <= {origin(read[k][1]) for k in g})
+
+
+def standards(index, declared, exact, every, groups_exact, groups_all):
+    read = readings(index, declared)
+    return {"declared": dict(sorted((declared or {}).items())),
+            "by_source": standards_by_source(index, read),
+            "pairs": {"exact": standards_pairs(index, read, exact),
+                      "with_rules": standards_pairs(index, read, every)},
+            "persons_hispanic_conflict": {"exact": hispanic_conflicts(read, groups_exact),
+                                          "with_rules": hispanic_conflicts(read, groups_all)}}
+
+
 # ---------- cohort ----------
 
 def consensus(values):
@@ -354,7 +529,8 @@ def shown(value, conflict):
     return value or ""
 
 
-def cohort(index, groups, priority=()):
+def cohort(index, groups, priority=(), declared=None):
+    read = readings(index, declared)
     rows = []
     for n, g in enumerate(groups, 1):
         recs = [index.records[k] for k in g]
@@ -369,6 +545,10 @@ def cohort(index, groups, priority=()):
         row["vital_latest"] = shown(*vital_latest(recs))
         row["vital_priority"] = vital_priority(recs, priority) or ""
         row["vital_conflict"] = int({"Alive", "Dead"} <= {r["vital"] for r in recs})
+        value, conflict = consensus(origin(read[k][1]) for k in g)
+        row["hispanic"] = shown(value, conflict)
+        row["hispanic_conflict"] = int(conflict)
+        row["race_standard"] = ";".join(sorted({read[k][0] for k in g}))
         rows.append(row)
     return rows
 
@@ -384,11 +564,17 @@ def cohort_summary(rows):
 
 # ---------- the whole check ----------
 
-def check(records, links, rules=RULES, priority=()):
-    """(aggregate report, person-level cohort rows). Only the report is aggregate."""
+def check(records, links, rules=RULES, priority=(), declared=None):
+    """(aggregate report, person-level cohort rows). Only the report is aggregate.
+    declared: {source: '1997' or '2024'}, the OMB convention a source is known to follow,
+    used only for records whose own values cannot tell (see race_standard)."""
     unknown = sorted(set(rules) - set(RULES))
     if unknown:
         raise ValueError("unknown rule(s): " + ", ".join(unknown))
+    declared = dict(declared or {})
+    bad = sorted(s for s, c in declared.items() if c not in CONVENTIONS)
+    if bad:
+        raise ValueError("declared convention must be 1997 or 2024 for: " + ", ".join(bad))
     rules = tuple(r for r in RULES if r in rules or r == "exact")
     index = Index(records)
     links = list(links)
@@ -396,7 +582,7 @@ def check(records, links, rules=RULES, priority=()):
     exact = sorted(p for p, r in pairs.items() if r == "exact")
     every = sorted(pairs)
     groups_exact, groups_all = persons(index, exact), persons(index, every)
-    rows = cohort(index, groups_all, priority)
+    rows = cohort(index, groups_all, priority, declared)
     report = {"tool": "linkcheck " + __version__, "rules": list(rules),
               "priority": list(priority),
               "completeness": completeness(index),
@@ -409,7 +595,8 @@ def check(records, links, rules=RULES, priority=()):
                             "with_rules": conflicts(index, every)},
               "overcount": {"exact": overcount(index, groups_exact),
                             "with_rules": overcount(index, groups_all)},
-              "cohort_summary": cohort_summary(rows)}
+              "cohort_summary": cohort_summary(rows),
+              "standards": standards(index, declared, exact, every, groups_exact, groups_all)}
     return report, rows
 
 

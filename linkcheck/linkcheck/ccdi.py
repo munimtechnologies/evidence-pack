@@ -23,7 +23,9 @@ read_snapshot() turns it into:
            as it is. Nothing is resolved here: core.check() does that;
   pages    the per-source entry counts of every saved page of both endpoints, and each
            source's total from /subject/summary, for paging.audit().
-check() runs the LinkCheck report and both paging audits on it in one step.
+check() runs the LinkCheck report and both paging audits on it in one step. Since 0.5.0 it
+also takes declared OMB conventions per source (see core.race_standard), and the report
+has a "standards" section; the reading of the snapshot itself is unchanged.
 
 This is the reading MV2's pre-registered checks used (adapt() in ccdi/linkcheck-repro-v2,
 tag v0.8.0, on the census's reader, tag v0.5.5; ccdi_pages.py, tag v0.7.0), moved into the
@@ -265,11 +267,12 @@ def read_snapshot(raw):
             "facts": facts, "mapping_entries": len(entries)}
 
 
-def check(raw, rules=core.RULES, priority=()):
+def check(raw, rules=core.RULES, priority=(), declared=None):
     """(aggregate result, cohort rows) for a snapshot: the LinkCheck report and the paging
-    audits of both endpoints. Only the result is aggregate."""
+    audits of both endpoints. Only the result is aggregate. declared: {source: '1997' or
+    '2024'} (0.5.0; see core.check)."""
     snap = read_snapshot(raw)
-    report, rows = core.check(snap["records"], snap["links"], rules, priority)
+    report, rows = core.check(snap["records"], snap["links"], rules, priority, declared)
     per_page, totals = snap["per_page"], snap["totals"]
     result = {"tool": "linkcheck ccdi " + core.__version__,
               "input": {"per_page": per_page, "subject_pages": len(snap["subject_pages"]),
@@ -302,6 +305,9 @@ def main(argv=None):
     ap.add_argument("--rules", default=",".join(core.RULES),
                     help="link rules, comma-separated (default: exact,alt_id,suffix)")
     ap.add_argument("--priority", default="", help="source order for vital_priority")
+    ap.add_argument("--declare", default="",
+                    help="OMB race/ethnicity convention a source follows, e.g. "
+                         "CCDI-DCC=2024; used only where a record's own values cannot tell")
     ap.add_argument("--min-cell", type=int, default=0,
                     help="show every count of the LinkCheck report from 1 to N-1 as <N")
     ap.add_argument("--records", help="also write the records (JSON Lines; holds ids)")
@@ -310,13 +316,14 @@ def main(argv=None):
     args = ap.parse_args(argv)
     rules = tuple(r for r in args.rules.split(",") if r)
     priority = tuple(s for s in args.priority.split(",") if s)
+    declared = core.parse_declared(args.declare)
     if args.records or args.links:
         snap = read_snapshot(args.raw)
         if args.records:
             write_jsonl(snap["records"], args.records)
         if args.links:
             write_jsonl(snap["links"], args.links)
-    result, rows = check(args.raw, rules, priority)
+    result, rows = check(args.raw, rules, priority, declared)
     result["linkcheck"] = core.suppress(result["linkcheck"], args.min_cell)
     with open(args.out, "w", encoding="utf-8") as fh:
         json.dump(result, fh, indent=1, sort_keys=True)

@@ -23,6 +23,9 @@ def main(argv=None):
                     help="link rules to use, from: " + ", ".join(core.RULES))
     ap.add_argument("--priority", default="",
                     help="source order for the vital_priority column, e.g. B,A")
+    ap.add_argument("--declare", default="",
+                    help="OMB race/ethnicity convention a source follows, e.g. A=2024,B=1997; "
+                         "used only where a record's own values cannot tell (0.5.0)")
     ap.add_argument("--cohort",
                     help="also write the person-level cohort table (CSV). It lists record "
                          "ids, so keep it as private as the input")
@@ -32,7 +35,7 @@ def main(argv=None):
     rules = [r for r in args.rules.split(",") if r]
     priority = [p for p in args.priority.split(",") if p]
     report, rows = core.check(core.read_jsonl(args.records), core.read_jsonl(args.links),
-                              rules, priority)
+                              rules, priority, core.parse_declared(args.declare))
     report = core.suppress(report, args.min_cell)
     with open(args.out, "w", encoding="utf-8") as fh:
         json.dump(report, fh, indent=1, sort_keys=True)
