@@ -24,7 +24,7 @@ How it reads a snapshot:
 - **Links:** one row per Participant Index association, by the census's rules. A USI association (domain `usi`, a six-letter USI) links the entry to every served subject with that USI as its name or an alternate id. Any other association counts only if its category is `organizational_identifier`. A domain name that is a namespace name becomes that source and namespace; one that is a source name becomes that source. Nothing is resolved in the reader: LinkCheck's own rules do that, and ambiguous ends are counted, never guessed.
 - **Page counts:** per source and page, as the paging audit reads them; Participant Index entries are given to the source of the subject they name.
 
-This is the same reading MV2's pre-registered checks used (`adapt()` in [ccdi/linkcheck-repro-v2](../ccdi/linkcheck-repro-v2/), tag v0.8.0, on the census's reader; `ccdi_pages.py` in [ccdi/paging-audit-v1](../ccdi/paging-audit-v1/), tag v0.7.0). A pre-registered check, [ccdi/linkcheck-040-check-v1](../ccdi/linkcheck-040-check-v1/) (tag v0.8.9), tests that the package reader gives exactly the same records, links, page counts and reports as that job code on the snapshots kept for MV2's checks.
+This is the same reading MV2's pre-registered checks used (`adapt()` in [ccdi/linkcheck-repro-v2](../ccdi/linkcheck-repro-v2/), tag v0.8.0, on the census's reader; `ccdi_pages.py` in [ccdi/paging-audit-v1](../ccdi/paging-audit-v1/), tag v0.7.0). A pre-registered check, [ccdi/linkcheck-040-check-v1](../ccdi/linkcheck-040-check-v1/results.md) (tag v0.8.9; results at v0.9.0), found that on a real snapshot the package reader gives exactly the same records, links, page counts, pairs and over-count as that job code (5 of 5 held).
 
 ## New in 0.3.1: no entries is not the end
 
@@ -126,11 +126,11 @@ python -m unittest -v test_linkcheck test_paging test_namespaces test_paging_bod
 ```
 
 The tests use only made-up data: the records in `examples/`, the page counts and bodies in `test_paging.py` and `test_paging_body.py`, the records in `test_namespaces.py`, and the small snapshot `test_ccdi.py` writes to a temporary folder. Every expected number was worked out by hand before the first run. So far:
-- `test_linkcheck` (14 tests) passed in the sealed jobs `linkcheck-test-v1`, `ccdi-paging-v1`, `linkcheck-repro-v2` and `linkcheck-031-v2`;
-- `test_paging` (11 tests) passed in `ccdi-paging-v1`, `linkcheck-repro-v2` and `linkcheck-031-v2`;
-- `test_namespaces` passed in `linkcheck-repro-v2` and `linkcheck-031-v2`;
-- `test_paging_body` (12 tests) passed in `linkcheck-031-v1` and `linkcheck-031-v2`;
-- `test_ccdi` (6 tests) first runs in the sealed job `linkcheck-040-v1`.
+- `test_linkcheck` (14 tests) passed in the sealed jobs `linkcheck-test-v1`, `ccdi-paging-v1`, `linkcheck-repro-v2`, `linkcheck-031-v2` and `linkcheck-040-v1`;
+- `test_paging` (11 tests) passed in `ccdi-paging-v1`, `linkcheck-repro-v2`, `linkcheck-031-v2` and `linkcheck-040-v1`;
+- `test_namespaces` (4 tests) passed in `linkcheck-repro-v2`, `linkcheck-031-v2` and `linkcheck-040-v1`;
+- `test_paging_body` (12 tests) passed in `linkcheck-031-v1`, `linkcheck-031-v2` and `linkcheck-040-v1`;
+- `test_ccdi` (6 tests) passed on its first run, in `linkcheck-040-v1`.
 
 ## Checks on real data
 
@@ -140,7 +140,7 @@ The tests use only made-up data: the records in `examples/`, the page counts and
 - [ccdi/fresh-snapshot-v1](../ccdi/fresh-snapshot-v1/results.md) (pre-registered at tags v0.8.0 and v0.8.2; results at tag v0.8.6): **8 of 8 held.** A fresh snapshot taken by the robust fetcher reached the end of both endpoints, and LinkCheck 0.3.0 reproduced the census on it exactly.
 - [ccdi/linkcheck-031-check-v1](../ccdi/linkcheck-031-check-v1/results.md) (pre-registered at tag v0.8.5): not graded; the job ran on a machine without the kept snapshot.
 - [ccdi/linkcheck-031-check-v2](../ccdi/linkcheck-031-check-v2/results.md) (pre-registered at tag v0.8.7; results at tag v0.8.8): **4 of 4 held** on a new snapshot. 0.3.1's page reader matched the audit's reader on all 599 pages, and nothing needed refetching.
-- [ccdi/linkcheck-040-check-v1](../ccdi/linkcheck-040-check-v1/) (pre-registered at tag v0.8.9): does 0.4.0's CCDI reader give exactly what the job code gave? Pending.
+- [ccdi/linkcheck-040-check-v1](../ccdi/linkcheck-040-check-v1/results.md) (pre-registered at tag v0.8.9; results at tag v0.9.0): **5 of 5 held** on one snapshot (2026-10-24 02:01-05:53 UTC). 0.4.0's CCDI reader gave exactly the job code's records, link rows, page counts, pairs and over-count, and its absolute numbers (153,680 records, 20,496 exact pairs, 135,949 persons), which nobody had counted on that snapshot before, matched the prediction. The kept second snapshot was not graded.
 
 ## Related tools
 
@@ -158,7 +158,7 @@ For paging, generic checkers such as [pagination-integrity-check](https://github
 
 ## Limits
 
-- Version 0.4.0 is a prototype. Its CCDI reader has been tested only on made-up data until its pre-registered check runs.
+- Version 0.4.0 is a prototype. Its CCDI reader has been checked against the job code on one real snapshot (pre-registered, 5 of 5) and on made-up data.
 - The CCDI reader knows one snapshot layout (the census's fetchers). Other ways of saving the federation's pages need their own reader.
 - A record's key has no organization. Two records of one source with the same id and the same namespace name, but different organizations, count as a repeat; put the organization into `namespace` if that matters.
 - The race comparison uses the 1997 OMB categories, as the census did. OMB's 2024 combined race/ethnicity standard is not yet supported.

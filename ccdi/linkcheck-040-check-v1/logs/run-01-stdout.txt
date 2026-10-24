@@ -1,0 +1,21 @@
+{
+ "grades": {
+  "C1": "pass",
+  "C2": "pass",
+  "C3": "pass",
+  "C4": "pass",
+  "C5": "pass"
+ },
+ "per_snapshot": {
+  "fresh snapshot ccdi-raw-fresh-20261024T020144Z": {
+   "C1": "pass",
+   "C2": "pass",
+   "C3": "pass",
+   "C4": "pass",
+   "C5": "pass"
+  }
+ },
+ "snapshots": [
+  "fresh snapshot ccdi-raw-fresh-20261024T020144Z"
+ ]
+}

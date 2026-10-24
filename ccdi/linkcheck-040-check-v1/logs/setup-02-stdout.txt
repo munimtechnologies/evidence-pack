@@ -1,0 +1,78 @@
+{
+ "exact": {
+  "largest_person": 3,
+  "linked_persons": 2,
+  "naive_overcount": 3,
+  "persons": 7,
+  "persons_with_2plus_records_in_one_source": 0,
+  "records": 10,
+  "records_in_links": 5
+ },
+ "with_rules": {
+  "largest_person": 3,
+  "linked_persons": 3,
+  "naive_overcount": 4,
+  "persons": 6,
+  "persons_with_2plus_records_in_one_source": 0,
+  "records": 10,
+  "records_in_links": 7
+ }
+}
+{
+ "flag_counts": {
+  "short": 2
+ },
+ "refetch_pages": [],
+ "unexplained": {
+  "P": 0,
+  "Q": 0
+ }
+}
+{
+ "mapping_refetch_pages": [
+  2
+ ],
+ "pairs_exact": 2,
+ "records": 3,
+ "subject_refetch_pages": []
+}
+{
+ "grades": {
+  "C1": "not graded",
+  "C2": "not graded",
+  "C3": "not graded",
+  "C4": "not graded",
+  "C5": "not graded"
+ },
+ "per_snapshot": {},
+ "snapshots": []
+}
+{
+ "grades": {
+  "C1": "pass",
+  "C2": "pass",
+  "C3": "pass",
+  "C4": "pass",
+  "C5": "fail"
+ },
+ "per_snapshot": {
+  "fresh snapshot ccdi-raw-fresh-20261024T000000Z": {
+   "C1": "pass",
+   "C2": "pass",
+   "C3": "pass",
+   "C4": "pass",
+   "C5": "fail"
+  },
+  "kept second snapshot": {
+   "C1": "pass",
+   "C2": "pass",
+   "C3": "pass",
+   "C4": "pass",
+   "C5": "fail"
+  }
+ },
+ "snapshots": [
+  "kept second snapshot",
+  "fresh snapshot ccdi-raw-fresh-20261024T000000Z"
+ ]
+}

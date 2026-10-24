@@ -1,0 +1,69 @@
+test_main (test_linkcheck.CommandLine.test_main) ... ok
+test_ambiguous_alt_id (test_linkcheck.Links.test_ambiguous_alt_id) ... ok
+test_bad_input (test_linkcheck.Links.test_bad_input) ... ok
+test_exact_only (test_linkcheck.Links.test_exact_only) ... ok
+test_link_order_does_not_matter (test_linkcheck.Links.test_link_order_does_not_matter) ... ok
+test_resolution (test_linkcheck.Links.test_resolution) ... ok
+test_cohort (test_linkcheck.Report.test_cohort) ... ok
+test_cohort_summary (test_linkcheck.Report.test_cohort_summary) ... ok
+test_completeness (test_linkcheck.Report.test_completeness) ... ok
+test_conflicts (test_linkcheck.Report.test_conflicts) ... ok
+test_overcount (test_linkcheck.Report.test_overcount) ... ok
+test_priority_order (test_linkcheck.Report.test_priority_order) ... ok
+test_report_has_no_record_ids (test_linkcheck.Report.test_report_has_no_record_ids) ... ok
+test_suppress (test_linkcheck.Report.test_suppress) ... ok
+test_duplicate_page (test_paging.CommandLine.test_duplicate_page) ... ok
+test_main (test_paging.CommandLine.test_main) ... ok
+test_expected (test_paging.Expected.test_expected) ... ok
+test_bad_input (test_paging.Gaps.test_bad_input) ... ok
+test_over_whole_failure_missing_and_unwalked (test_paging.Gaps.test_over_whole_failure_missing_and_unwalked) ... ok
+test_error_page_is_explained (test_paging.Mixed.test_error_page_is_explained) ... ok
+test_errors_past_end_lose_nothing (test_paging.Mixed.test_errors_past_end_lose_nothing) ... ok
+test_flags (test_paging.Mixed.test_flags) ... ok
+test_no_total (test_paging.Mixed.test_no_total) ... ok
+test_short_page_found_without_totals (test_paging.Silent.test_short_page_found_without_totals) ... ok
+test_short_pages_with_totals (test_paging.Silent.test_short_pages_with_totals) ... ok
+test_check (test_namespaces.Namespaces.test_check) ... ok
+test_keys_and_repeats (test_namespaces.Namespaces.test_keys_and_repeats) ... ok
+test_records_without_a_namespace_keep_their_key (test_namespaces.Namespaces.test_records_without_a_namespace_keep_their_key) ... ok
+test_resolve (test_namespaces.Namespaces.test_resolve) ... ok
+test_bad_bodies (test_paging_body.BodyCounts.test_bad_bodies) ... ok
+test_list_body (test_paging_body.BodyCounts.test_list_body) ... ok
+test_other_keys (test_paging_body.BodyCounts.test_other_keys) ... ok
+test_whole_page_error (test_paging_body.BodyCounts.test_whole_page_error) ... ok
+test_messages (test_paging_body.ErrorMessages.test_messages) ... ok
+test_bodies_to_audit (test_paging_body.FromBodies.test_bodies_to_audit) ... ok
+test_bad_input (test_paging_body.LastPage.test_bad_input) ... ok
+test_last_page (test_paging_body.LastPage.test_last_page) ... ok
+test_empty_page_is_not_the_end (test_paging_body.Refetch.test_empty_page_is_not_the_end) ... ok
+test_failed_and_all_error_pages (test_paging_body.Refetch.test_failed_and_all_error_pages) ... ok
+test_gaps (test_paging_body.Refetch.test_gaps) ... ok
+test_without_totals (test_paging_body.Refetch.test_without_totals) ... ok
+test_domain_name_of_several_namespaces (test_ccdi.SeveralNamespaces.test_domain_name_of_several_namespaces) ... ok
+test_check (test_ccdi.Snapshot.test_check) ... ok
+test_links (test_ccdi.Snapshot.test_links) ... ok
+test_main (test_ccdi.Snapshot.test_main) ... ok
+test_pages_and_totals (test_ccdi.Snapshot.test_pages_and_totals) ... ok
+test_records (test_ccdi.Snapshot.test_records) ... ok
+test_a_lost_record_is_caught (test_check040.GradeOne.test_a_lost_record_is_caught) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp8psx9g9b/raw/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_all_pass (test_check040.GradeOne.test_all_pass) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpvmdesaag/raw/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_has_ids (test_check040.Main.test_has_ids) ... ok
+test_no_snapshot (test_check040.Main.test_no_snapshot) ... ok
+test_two_snapshots (test_check040.Main.test_two_snapshots) ... /work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpefoj0hln/kept/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/work/analyze.py:182: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpefoj0hln/fresh-root/ccdi-raw-fresh-20261024T000000Z/subject/chosen.json' mode='r' encoding='utf-8'>
+  chosen = json.load(open(os.path.join(raw, "subject", "chosen.json"), encoding="utf-8"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+
+----------------------------------------------------------------------
+Ran 52 tests in 0.173s
+
+OK

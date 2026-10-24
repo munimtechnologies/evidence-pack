@@ -1,0 +1,58 @@
+{
+ "contract": "mv2-compete-result-v1",
+ "name": "linkcheck-040-v1",
+ "id": "4ba85d46bb83",
+ "field": "medicine",
+ "run": "20261024T091158Z-medicine",
+ "kind": "compete",
+ "status": "ok",
+ "reason": "",
+ "host": "dell",
+ "image": "python:3.12",
+ "started_at": "2026-10-24T11:39:58.873926+00:00",
+ "finished_at": "2026-10-24T11:42:42.203014+00:00",
+ "duration_seconds": 163,
+ "limits": {
+  "cpu": 1.0,
+  "memory_gb": 3.0,
+  "timeout_minutes": 240.0
+ },
+ "peak_memory_gb": null,
+ "network": {
+  "setup": true,
+  "run": true
+ },
+ "steps": [
+  {
+   "step": "setup-01-python",
+   "cmd": "python get_code.py",
+   "exit": 0,
+   "seconds": 3
+  },
+  {
+   "step": "setup-02-python",
+   "cmd": "python -m unittest -v test_linkcheck test_paging test_namespaces test_paging_body test_ccdi test_check040",
+   "exit": 0,
+   "seconds": 1
+  },
+  {
+   "step": "run-01-python",
+   "cmd": "python check040.py --kept /data/ccdi-raw-snapshot2 --fresh-root /data/ccdi-fresh-v1 --out /out",
+   "exit": 0,
+   "seconds": 37
+  }
+ ],
+ "out_files": [
+  "check040.json"
+ ],
+ "out_files_total": 1,
+ "out_skipped": [],
+ "upload_skipped": [],
+ "summary_tail": "[run-01-python stdout] {\n \"grades\": {\n  \"C1\": \"pass\",\n  \"C2\": \"pass\",\n  \"C3\": \"pass\",\n  \"C4\": \"pass\",\n  \"C5\": \"pass\"\n },\n \"per_snapshot\": {\n  \"fresh snapshot ccdi-raw-fresh-20261024T020144Z\": {\n   \"C1\": \"pass\",\n   \"C2\": \"pass\",\n   \"C3\": \"pass\",\n   \"C4\": \"pass\",\n   \"C5\": \"pass\"\n  }\n },\n \"snapshots\": [\n  \"fresh snapshot ccdi-raw-fresh-20261024T020144Z\"\n ]\n}\n",
+ "paths": {
+  "workdir": "/work (copy of E:\\MV2-Pursuit\\work\\20261024T091158Z-medicine\\compete\\linkcheck-040-v1)",
+  "out": "/out -> out/",
+  "data": "/data (docker volume mv2c-data-ccdi-raw, kept for later jobs)"
+ },
+ "note": ""
+}
