@@ -1,0 +1,15 @@
+{
+ "name": "ccdi-reach-v1",
+ "kind": "compete",
+ "workdir": "E:/MV2-Pursuit/work/20261025T100520Z-medicine/compete/ccdi-reach",
+ "image": "python:3.12",
+ "setup": ["python get_code.py",
+           "python -m unittest -v test_reachprobe"],
+ "run": ["python reachprobe.py --out /out --data-dir /data"],
+ "network": true,
+ "data_urls": [],
+ "data_key": "ccdi-raw",
+ "cpu": 1,
+ "memory_gb": 1,
+ "timeout_minutes": 180
+}
