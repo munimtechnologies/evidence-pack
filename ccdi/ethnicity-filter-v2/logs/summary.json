@@ -1,0 +1,58 @@
+{
+ "contract": "mv2-compete-result-v1",
+ "name": "ccdi-eth-walk-v1",
+ "id": "41f5d9db01ae",
+ "field": "medicine",
+ "run": "20261025T031402Z-medicine",
+ "kind": "compete",
+ "status": "ok",
+ "reason": "",
+ "host": "dell",
+ "image": "python:3.12",
+ "started_at": "2026-10-25T03:46:41.190001+00:00",
+ "finished_at": "2026-10-25T03:58:07.743547+00:00",
+ "duration_seconds": 686,
+ "limits": {
+  "cpu": 1.0,
+  "memory_gb": 1.0,
+  "timeout_minutes": 180.0
+ },
+ "peak_memory_gb": 0.02,
+ "network": {
+  "setup": true,
+  "run": true
+ },
+ "steps": [
+  {
+   "step": "setup-01-python",
+   "cmd": "python get_code.py",
+   "exit": 0,
+   "seconds": 0
+  },
+  {
+   "step": "setup-02-python",
+   "cmd": "python -m unittest -v test_walkprobe",
+   "exit": 0,
+   "seconds": 2
+  },
+  {
+   "step": "run-01-python",
+   "cmd": "python walkprobe.py --out /out --data-dir /data",
+   "exit": 0,
+   "seconds": 534
+  }
+ ],
+ "out_files": [
+  "walkprobe.json"
+ ],
+ "out_files_total": 1,
+ "out_skipped": [],
+ "upload_skipped": [],
+ "summary_tail": "[run-01-python stdout] n 62 200 90357 bytes 2.1 s\nunknown 63 200 90429 bytes 2.3 s\nunknown 64 200 90410 bytes 2.4 s\nunknown 65 200 90266 bytes 3.4 s\nunknown 66 200 90774 bytes 1.6 s\nunknown 67 200 90408 bytes 2.4 s\nunknown 68 200 90483 bytes 2.6 s\nunknown 69 200 90452 bytes 2.7 s\nunknown 70 200 90647 bytes 2.4 s\nunknown 71 200 90598 bytes 2.5 s\nunknown 72 200 90334 bytes 1.1 s\nunknown 73 200 90428 bytes 2.4 s\nunknown 74 200 90373 bytes 2.3 s\nunknown 75 200 90658 bytes 1.9 s\nunknown 76 200 90831 bytes 2.0 s\nunknown 77 200 90500 bytes 2.2 s\nunknown 78 200 90430 bytes 2.0 s\nunknown 79 200 90414 bytes 2.5 s\nunknown 80 200 90249 bytes 2.0 s\nunknown 81 200 90827 bytes 3.1 s\nunknown 82 200 90491 bytes 2.8 s\nunknown 83 200 76217 bytes 1.4 s\nhispanic 1 200 655147 bytes 3.0 s\nhispanic 2 200 645162 bytes 2.6 s\nhispanic 3 200 652556 bytes 3.0 s\nhispanic 4 200 651272 bytes 2.5 s\nhispanic 5 200 663641 bytes 1.3 s\nhispanic 6 200 614220 bytes 2.9 s\nhispanic 7 200 554777 bytes 2.7 s\nhispanic 8 200 552440 bytes 3.0 s\nhispanic 9 200 551593 bytes 3.1 s\nhispanic 10 200 359748 bytes 1.6 s\n{\"F1\": \"fail\", \"F2\": \"fail\", \"F3\": \"pass\", \"F4\": \"pass\", \"F5\": \"pass\", \"F6\": \"pass\"} {\"kidsfirst\": \"unreached\", \"stjude\": \"served_in_full\"}\n",
+ "paths": {
+  "workdir": "/work (copy of E:\\MV2-Pursuit\\work\\20261025T031402Z-medicine\\compete\\ccdi-eth-walk)",
+  "out": "/out -> out/",
+  "data": "/data (docker volume mv2c-data-ccdi-raw, kept for later jobs)"
+ },
+ "note": ""
+}

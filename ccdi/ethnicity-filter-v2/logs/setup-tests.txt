@@ -1,0 +1,19 @@
+test_all_hold (test_walkprobe.WalkProbeTest.test_all_hold) ... ok
+test_filter_reaching_every_unknown_fails_f5 (test_walkprobe.WalkProbeTest.test_filter_reaching_every_unknown_fails_f5) ... ok
+test_find_snapshot_prefers_newest_stamp (test_walkprobe.WalkProbeTest.test_find_snapshot_prefers_newest_stamp) ... ok
+test_kidsfirst_reached_in_snapshot_fails_f5 (test_walkprobe.WalkProbeTest.test_kidsfirst_reached_in_snapshot_fails_f5) ... ok
+test_main_writes_no_identifiers (test_walkprobe.WalkProbeTest.test_main_writes_no_identifiers) ... ok
+test_no_snapshot_fails_f5_f6 (test_walkprobe.WalkProbeTest.test_no_snapshot_fails_f5_f6) ... ok
+test_non_200_fails (test_walkprobe.WalkProbeTest.test_non_200_fails) ... ok
+test_pages_planned (test_walkprobe.WalkProbeTest.test_pages_planned) ... ok
+test_partial (test_walkprobe.WalkProbeTest.test_partial) ... ok
+test_snapshot_values (test_walkprobe.WalkProbeTest.test_snapshot_values) ... ok
+test_source_name_any_case (test_walkprobe.WalkProbeTest.test_source_name_any_case) ... ok
+test_stjude_served_fails_f1_f2 (test_walkprobe.WalkProbeTest.test_stjude_served_fails_f1_f2) ... ok
+test_url_of (test_walkprobe.WalkProbeTest.test_url_of) ... ok
+test_wrong_value_fails_control (test_walkprobe.WalkProbeTest.test_wrong_value_fails_control) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 1.217s
+
+OK

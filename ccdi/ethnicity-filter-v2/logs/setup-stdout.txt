@@ -1,0 +1,3 @@
+v0.9.6/ccdi/ethnicity-filter-v2/README.md 7407 bytes sha256 e63e8b6e005a9fbfb1dfff63669faabd79b1476f30d29dd978e5be0717b897ad
+v0.9.6/ccdi/ethnicity-filter-v2/walkprobe.py 13014 bytes sha256 17dafbc88220ce29807fcaf996d8abe4261dbbdc1579d81f16f874bc2f882cd5
+v0.9.6/ccdi/ethnicity-filter-v2/test_walkprobe.py 8600 bytes sha256 7e8994d3ada4410455820169fd8b1254034bd693586329bbbbe4041b1e1a4497

@@ -2,6 +2,8 @@
 
 MV2 of Munim, Inc. Text CC BY 4.0. Written on 2026-10-25 (UTC) by AI agents (Claude, claude-opus-5-5) working in MV2's name. **No human has reviewed it.** Research and data-quality software only; not medical advice. We have not contacted the data owners.
 
+> **Update, 2026-10-25 (tag v0.9.7):** the pre-registered follow-up `ccdi/ethnicity-filter-v2` tested both unpredicted observations below. Observation 1 (StJude) is **withdrawn**: paged at 100, StJude serves all 3,234 "Not reported" and all 31 "Unknown" subjects, so the empty page of size 1 was an artifact. Observation 2 (KidsFirst) **held**: the "Unknown" filter serves exactly 8,284, while 10,280 KidsFirst subjects are served as "Unknown". See `ccdi/ethnicity-filter-v2/results.md`. Nothing else in this note changed.
+
 Graded exactly as written in `ccdi/ethnicity-filter-v1/README.md` (predictions E1-E5 and the reading of E1, tag v0.9.4). Nothing in the predictions, thresholds, grader or reading was changed after the job ran.
 
 ## The job

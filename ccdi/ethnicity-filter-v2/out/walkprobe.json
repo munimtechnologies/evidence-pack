@@ -1,0 +1,8922 @@
+{
+ "finished_at": "2026-10-25T03:57:00Z",
+ "grades": {
+  "F1": "fail",
+  "F2": "fail",
+  "F3": "pass",
+  "F4": "pass",
+  "F5": "pass",
+  "F6": "pass"
+ },
+ "probe": "ccdi/ethnicity-filter-v2",
+ "reading": {
+  "kidsfirst": "unreached",
+  "stjude": "served_in_full"
+ },
+ "snapshot": {
+  "pages_read": 599,
+  "pages_unreadable": 0,
+  "path": "/data/ccdi-fresh-v1/ccdi-raw-fresh-20261024T020144Z",
+  "subjects": {
+   "CCDI-DCC": 59795,
+   "KidsFirst": 38440,
+   "PCDC": 24332,
+   "StJude": 14681,
+   "Treehouse": 12723,
+   "ccdi-ecDNA": 3205,
+   "ccdi-iusccc-pst": 504
+  },
+  "values": {
+   "CCDI-DCC": {
+    "Hispanic or Latino": 4090,
+    "Not reported": 55705
+   },
+   "KidsFirst": {
+    "Hispanic or Latino": 4824,
+    "Not Hispanic or Latino": 23336,
+    "Unknown": 10280
+   },
+   "PCDC": {
+    "<missing>": 304,
+    "Hispanic or Latino": 2830,
+    "Not Hispanic or Latino": 17747,
+    "Unknown": 3451
+   },
+   "StJude": {
+    "<missing>": 2,
+    "Hispanic or Latino": 909,
+    "Not Hispanic or Latino": 10505,
+    "Not reported": 3234,
+    "Unknown": 31
+   },
+   "Treehouse": {
+    "<missing>": 785,
+    "Hispanic or Latino": 553,
+    "Not Hispanic or Latino": 8323,
+    "Unknown": 3062
+   },
+   "ccdi-ecDNA": {
+    "<missing>": 3205
+   },
+   "ccdi-iusccc-pst": {
+    "Hispanic or Latino": 16,
+    "Not Hispanic or Latino": 85,
+    "Unknown": 403
+   }
+  }
+ },
+ "walks": [
+  {
+   "by_source": {
+    "CCDI-DCC": {
+     "entries": 3300,
+     "error_kinds": [],
+     "error_pages": 0,
+     "first_total": 55705,
+     "pages": 33,
+     "totals": [
+      55705
+     ],
+     "values": {
+      "Not reported": 3300
+     }
+    },
+    "KidsFirst": {
+     "entries": 0,
+     "error_kinds": [],
+     "error_pages": 0,
+     "first_total": 0,
+     "pages": 33,
+     "totals": [
+      0
+     ],
+     "values": {}
+    },
+    "PCDC": {
+     "entries": 0,
+     "error_kinds": [
+      "NotFound"
+     ],
+     "error_pages": 33,
+     "first_total": null,
+     "pages": 33,
+     "totals": [
+      null
+     ],
+     "values": {}
+    },
+    "StJude": {
+     "entries": 3234,
+     "error_kinds": [],
+     "error_pages": 0,
+     "first_total": 3234,
+     "pages": 33,
+     "totals": [
+      3234
+     ],
+     "values": {
+      "Not reported": 3234
+     }
+    },
+    "Treehouse": {
+     "entries": 0,
+     "error_kinds": [],
+     "error_pages": 0,
+     "first_total": 0,
+     "pages": 33,
+     "totals": [
+      0
+     ],
+     "values": {}
+    },
+    "ccdi-ecDNA": {
+     "entries": 0,
+     "error_kinds": [
+      "NotFound"
+     ],
+     "error_pages": 32,
+     "first_total": 0,
+     "pages": 33,
+     "totals": [
+      0,
+      null
+     ],
+     "values": {}
+    },
+    "ccdi-iusccc-pst": {
+     "entries": 0,
+     "error_kinds": [],
+     "error_pages": 0,
+     "first_total": 0,
+     "pages": 33,
+     "totals": [
+      0
+     ],
+     "values": {}
+    }
+   },
+   "ethnicity": "Not reported",
+   "name": "not-reported",
+   "pages": [
+    {
+     "bytes": 297282,
+     "page": 1,
+     "seconds": 4.1,
+     "sha256": "a59fc2855c991498debf20f1f0b03a457a2d6afdc92a3ada0d8b15f2e63e51d3",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 304997,
+     "page": 2,
+     "seconds": 2.0,
+     "sha256": "45966dd3b0311a373dc2ea2853976d512aa8e6447df3caf1f94cfea4a8cb8277",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 297661,
+     "page": 3,
+     "seconds": 1.6,
+     "sha256": "fa15f021001ce078875f800d5af9ee76c2c1f482ebdebbecd3a61ab2d4e75295",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 292926,
+     "page": 4,
+     "seconds": 1.7,
+     "sha256": "3146b3655e9313ff938a8e43159fe813c44b0f9361df48922a7ff44b97b0d8ef",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 289038,
+     "page": 5,
+     "seconds": 1.9,
+     "sha256": "78541f14103d658c49525bfe97953e67eb6ca55d5b4f713ddc075c1de96b644f",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 286720,
+     "page": 6,
+     "seconds": 1.5,
+     "sha256": "34c36482e737a04fbb903c54826836189a2a528c427c764e34679a7fde7d3051",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 299511,
+     "page": 7,
+     "seconds": 1.4,
+     "sha256": "88947a12d8d12e5d3d32f46965078fce00dbebb34699072ebee80b005997b0ae",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 302233,
+     "page": 8,
+     "seconds": 1.8,
+     "sha256": "12dd9ffb2212c064c7c005d61d086415167c9c3629bb0fee61e0cb6f3cc50c61",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 324633,
+     "page": 9,
+     "seconds": 1.4,
+     "sha256": "5741c81e225f13b431a7d74d812054f7689cbe2bddb93650748d514067e5bc21",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 318920,
+     "page": 10,
+     "seconds": 1.2,
+     "sha256": "6fa13820f8cb7c844e6cbaf70e2fab9d5b1379ae4f21e4a05e5d0323d0690a8d",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 325293,
+     "page": 11,
+     "seconds": 1.4,
+     "sha256": "46608c567af7b2360ff4b06527ce7a606228307dcccb7560d528c95f2d6a31ce",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 310361,
+     "page": 12,
+     "seconds": 1.4,
+     "sha256": "8c5e2f1bc7c73ddaa3eb4a3dd280bdae47f0c095a812df11ef76d541a1940c9b",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 317632,
+     "page": 13,
+     "seconds": 1.7,
+     "sha256": "b418a61013900e54177ac0a3c1ee0992cf26bd11c69e866fb8fe7d7b5db92fa1",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 317937,
+     "page": 14,
+     "seconds": 1.5,
+     "sha256": "ae34843bdaebdd032270bfca0384764c423e80b6c7b3db9778e33cd4ee35aed3",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 325459,
+     "page": 15,
+     "seconds": 1.3,
+     "sha256": "675d53158890a74560ea7e5796077b5b48db422e5766439b3b3021f4203abd9b",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 318721,
+     "page": 16,
+     "seconds": 1.7,
+     "sha256": "5b32e045a44b74c061d76c945f3d5e9d4f83478e7508d01722d13d0fceed6510",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 319170,
+     "page": 17,
+     "seconds": 1.3,
+     "sha256": "578674a37767121eb7f58fe789560387b7151f1b2665f3943af704ba4758a197",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 308767,
+     "page": 18,
+     "seconds": 1.3,
+     "sha256": "bd62a5945e3dba3fd1512f43e78e057b6d75a41fc0058351fd09ea651d4c1849",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 295166,
+     "page": 19,
+     "seconds": 1.3,
+     "sha256": "2e7c77a3fad02d3f16a2c65fc8b9a125059cb108d71c62012a7dc26a478431c3",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 313367,
+     "page": 20,
+     "seconds": 1.7,
+     "sha256": "8c78081c03a666d3b95e4246c6aba4724dab21274a078d1e9335ce2a21297137",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 324492,
+     "page": 21,
+     "seconds": 1.4,
+     "sha256": "b7dc74737c1284267ed235f559806993e079c567ce0d44da75954ab55364f4a5",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 325141,
+     "page": 22,
+     "seconds": 1.3,
+     "sha256": "4bffa24454298024892431b67ca4149c5e5a67c197984921d943990e2c0e2be4",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 307653,
+     "page": 23,
+     "seconds": 1.4,
+     "sha256": "cea89788645ac7b14be361b07752edffb44ceb38809483087593e6a275efade0",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 297313,
+     "page": 24,
+     "seconds": 1.4,
+     "sha256": "a67b838a818bf78d2a2f084eb274b673d0288f17444e6c5ea8d44053cc1e4d4a",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 292158,
+     "page": 25,
+     "seconds": 1.3,
+     "sha256": "4cf98a2410c3a209607123d5b9f6d0ef69c97517937d2510efa0713f2fc3aaac",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 287279,
+     "page": 26,
+     "seconds": 1.4,
+     "sha256": "af0e14b51b755efcedac65dc2333123b95ae57ce338f0d0611e7c1fa7e4cf1a5",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 287511,
+     "page": 27,
+     "seconds": 1.3,
+     "sha256": "c57b8e24ee9e05c7f92184c73aa0952359cda0a32d7a0a98a20f046456cdcdb9",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 295591,
+     "page": 28,
+     "seconds": 1.6,
+     "sha256": "35229315557dbb2fd2a282587e4fd96758ac9ac00a8dbd672a89feeb3e252d5f",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 322789,
+     "page": 29,
+     "seconds": 1.3,
+     "sha256": "a82899c6c6603d36c36a1cf645bf43d0666aeb301a0bbc9cd23a78552f157a6e",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 303951,
+     "page": 30,
+     "seconds": 1.5,
+     "sha256": "2c72b83549aef56ab14fdb390ed5496fa933351a095de0f4e15d24ad3d1c6b96",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 306660,
+     "page": 31,
+     "seconds": 1.4,
+     "sha256": "6027d948c9e3ea25f4e67d1b7794bb90f2e6b6800f4ddf2f6c92f1f3128b754e",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 314037,
+     "page": 32,
+     "seconds": 2.3,
+     "sha256": "4c00a30c27b1cd42f2cfa70d8995cb691cabe64c30f231e412a280e335109b30",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 164380,
+     "page": 33,
+     "seconds": 2.1,
+     "sha256": "d15062b8d9bb36d2531a4e71e682191ac3030d8d90f0be9b680197fed60d8bc0",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 55705,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": 3234,
+       "entries": 34,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Not reported": 34
+       }
+      },
+      "Treehouse": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    }
+   ],
+   "pages_planned": 33,
+   "statuses": [
+    200
+   ],
+   "target": "stjude"
+  },
+  {
+   "by_source": {
+    "CCDI-DCC": {
+     "entries": 0,
+     "error_kinds": [],
+     "error_pages": 0,
+     "first_total": 0,
+     "pages": 83,
+     "totals": [
+      0
+     ],
+     "values": {}
+    },
+    "KidsFirst": {
+     "entries": 8284,
+     "error_kinds": [],
+     "error_pages": 0,
+     "first_total": 8284,
+     "pages": 83,
+     "totals": [
+      8284
+     ],
+     "values": {
+      "Unknown": 8284
+     }
+    },
+    "PCDC": {
+     "entries": 3477,
+     "error_kinds": [
+      "InvalidParameters"
+     ],
+     "error_pages": 48,
+     "first_total": 3477,
+     "pages": 83,
+     "totals": [
+      3477,
+      null
+     ],
+     "values": {
+      "<missing>": 10,
+      "Unknown": 3467
+     }
+    },
+    "StJude": {
+     "entries": 31,
+     "error_kinds": [
+      "InvalidParameters"
+     ],
+     "error_pages": 82,
+     "first_total": 31,
+     "pages": 83,
+     "totals": [
+      31,
+      null
+     ],
+     "values": {
+      "Unknown": 31
+     }
+    },
+    "Treehouse": {
+     "entries": 3062,
+     "error_kinds": [
+      "InvalidParameters"
+     ],
+     "error_pages": 52,
+     "first_total": 3062,
+     "pages": 83,
+     "totals": [
+      3062,
+      null
+     ],
+     "values": {
+      "Unknown": 3062
+     }
+    },
+    "ccdi-ecDNA": {
+     "entries": 0,
+     "error_kinds": [
+      "NotFound"
+     ],
+     "error_pages": 82,
+     "first_total": 0,
+     "pages": 83,
+     "totals": [
+      0,
+      null
+     ],
+     "values": {}
+    },
+    "ccdi-iusccc-pst": {
+     "entries": 403,
+     "error_kinds": [],
+     "error_pages": 0,
+     "first_total": 403,
+     "pages": 83,
+     "totals": [
+      403
+     ],
+     "values": {
+      "Unknown": 403
+     }
+    }
+   },
+   "ethnicity": "Unknown",
+   "name": "unknown",
+   "pages": [
+    {
+     "bytes": 495336,
+     "page": 1,
+     "seconds": 1.9,
+     "sha256": "d85ed2bcc1d42a4b83064142701c296357ac98bd9da23e76a48d22fa9ddd6948",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": 31,
+       "entries": 31,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 31
+       }
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 424828,
+     "page": 2,
+     "seconds": 2.7,
+     "sha256": "07e0b16ad47ff8697020862a426d7097b9572d8e0ee21a7de6458f9c5ea2d644",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 425941,
+     "page": 3,
+     "seconds": 3.1,
+     "sha256": "974b5a4734b3f5d9379466352173a80cd43df37107c356f421ffc2280e872c9e",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 425447,
+     "page": 4,
+     "seconds": 2.1,
+     "sha256": "f3084a4d0da672c5c5581d51814c0216b550bbdcec3c60229cc69ef8817341e4",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 343291,
+     "page": 5,
+     "seconds": 2.3,
+     "sha256": "10292606883150256aa5e8168704739bd15a71854e05438ca553960159e93a7f",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 3,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 3
+       }
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 348233,
+     "page": 6,
+     "seconds": 2.5,
+     "sha256": "07084780e80eaf927858abfd30bad5df2617485f68f36c77df042c753aca47dc",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 353721,
+     "page": 7,
+     "seconds": 2.7,
+     "sha256": "b677eccfc6da7ce6f5d386f9b2ee0d474e6fe6f06807b9410213c4fc5ca7d01f",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 346768,
+     "page": 8,
+     "seconds": 3.8,
+     "sha256": "ad40ed893787f7936a3d5bdd3fd94608c78fc077ef8b8d4906a7b86ae8265ab9",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "<missing>": 4,
+        "Unknown": 96
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 349067,
+     "page": 9,
+     "seconds": 1.4,
+     "sha256": "78cad48cc06e47a0111282bee510d0ba617c43d33f1667964f7991023f644fb8",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "<missing>": 3,
+        "Unknown": 97
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 350456,
+     "page": 10,
+     "seconds": 2.3,
+     "sha256": "4d5f2813ae4709b08e185dcebe2f7291c1074b85be34df4c2c0aee0b2efb02a4",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "<missing>": 1,
+        "Unknown": 99
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 348327,
+     "page": 11,
+     "seconds": 2.6,
+     "sha256": "90759fd2c21d4fa8711c79e6a31533b3eaf6a4539c9d600c6c4ea45e32979e0e",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "<missing>": 2,
+        "Unknown": 98
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 340702,
+     "page": 12,
+     "seconds": 2.3,
+     "sha256": "a47558394b947e47c0fc9aefc68f40fd804b6927fb957f851e49c719c89c34c9",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 339068,
+     "page": 13,
+     "seconds": 3.0,
+     "sha256": "31ca41a7a37fbca5d7d459cbff448432d856c029684c4f4c7f2115ba828cdf69",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 342633,
+     "page": 14,
+     "seconds": 2.7,
+     "sha256": "70fc2d8f539dac4968123e5e9a769f71423ae7497d07410b19bcacee250c59f8",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 350693,
+     "page": 15,
+     "seconds": 3.2,
+     "sha256": "b38a76252944c9b560be34910f8ed61c8646f25aed6e206883cfc2947f8dc259",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 345440,
+     "page": 16,
+     "seconds": 2.6,
+     "sha256": "0128873be6822c93207bf2bb10ab6a889ed25fdbe7174938be3b8f0a9a4944b8",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 349742,
+     "page": 17,
+     "seconds": 2.2,
+     "sha256": "cfad2b6cb77048fb8c04ad41137a55acbb62eefc86fb7f36a7acbe414b4f2877",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 346503,
+     "page": 18,
+     "seconds": 3.6,
+     "sha256": "8c3b9d329601323380089391a2e4e8a3663a3e19397f95e6f80d5eba5f075f0d",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 349690,
+     "page": 19,
+     "seconds": 2.3,
+     "sha256": "8bcb9c392fc09878f5887901f194c3dc3909f7f9f1336ee203326f2534b3c7f3",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 346057,
+     "page": 20,
+     "seconds": 2.2,
+     "sha256": "7408b0c1c22451f36835a51b8ffc0b3508a4bbc41141ef0c1fede56c9e227498",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 342210,
+     "page": 21,
+     "seconds": 3.0,
+     "sha256": "21f8f0494f8d8d11e9de750976bfc4dec9bbf0a700a96ff0a1f4b9850cb2609e",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 342688,
+     "page": 22,
+     "seconds": 1.6,
+     "sha256": "c5c4d0d35c222b61471599d5e192d20fe2cf79f107772c50a12cac8121e38dc0",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 342038,
+     "page": 23,
+     "seconds": 2.2,
+     "sha256": "291111cbe637ce28d988a8c745d196bc602d8128a2c328da802096b00ddd24d8",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 342507,
+     "page": 24,
+     "seconds": 2.8,
+     "sha256": "00771c074653384ad46dd48122758ca2250f261d6b30f79b8427c9202aa7625f",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 343097,
+     "page": 25,
+     "seconds": 3.1,
+     "sha256": "646086bce3fa44bad8ce919d0bd0222f358023225cea373bb836fc0abfeea696",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 341647,
+     "page": 26,
+     "seconds": 3.2,
+     "sha256": "537f008cc4686f0af74b89ce966a94265606eaeaebe475745ecb2bc27e1c54e2",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 341311,
+     "page": 27,
+     "seconds": 2.4,
+     "sha256": "d3f9627fefa51c9ae2850c206645f485ea251f7c5bfb19bf4971d431f17f2190",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 339351,
+     "page": 28,
+     "seconds": 2.2,
+     "sha256": "ebebb858b775488457cb6a47d2a5fcc09036210c836d157d197475178f1424e5",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 338998,
+     "page": 29,
+     "seconds": 1.9,
+     "sha256": "37807a26c9dd2aa458e8b3b44af553dafd8e253ae6c7dffa4c71d596ef241c7d",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 338708,
+     "page": 30,
+     "seconds": 3.1,
+     "sha256": "c1b0f48f91bdc2f9aed64bbe0277301fbae72ceecdac81c93dbb0dd9d0831846",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 305104,
+     "page": 31,
+     "seconds": 2.6,
+     "sha256": "b88c4833a9c29c83a42b4ef94e010d449a23e22a8d2305ac9add03a24475bc07",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": 3062,
+       "entries": 62,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 62
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 250741,
+     "page": 32,
+     "seconds": 1.9,
+     "sha256": "2b9e7691f94501a4177f6ccee117dee96b29b1498629c55827c375cba92adcd5",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 250887,
+     "page": 33,
+     "seconds": 2.2,
+     "sha256": "460a8b9f573683cdf09f4e45bdd760942481998ad11696816622e978cfd8d608",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 250946,
+     "page": 34,
+     "seconds": 2.3,
+     "sha256": "bae3d0da58371290ae9f8a72459fc699354b32a1da83de14c2d590a8a70a4ad8",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 215208,
+     "page": 35,
+     "seconds": 2.9,
+     "sha256": "a48e5686e861bb1cbe0d8eaf784c0fab6557db51b484c06c6cb031a7dd765566",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": 3477,
+       "entries": 77,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 77
+       }
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90383,
+     "page": 36,
+     "seconds": 2.3,
+     "sha256": "5f5b2dcf7d920f98418b2d5f24214ec5014dad30460990bdf892eccaceb35a93",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90541,
+     "page": 37,
+     "seconds": 2.4,
+     "sha256": "18537ca4c569442eb5b065bf214f4d22c240ae0b0b87d4a5bdc2bd06baf4418d",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90607,
+     "page": 38,
+     "seconds": 2.2,
+     "sha256": "8bd7107ad3662034580988999724d3c255c2402e01a0063b99408b34e9775df1",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90622,
+     "page": 39,
+     "seconds": 2.4,
+     "sha256": "eddbfaff0bb10d92ce175ce7341cf3268ee72b8967e27da22a6729192c8df7fe",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90350,
+     "page": 40,
+     "seconds": 2.2,
+     "sha256": "e5676f203f4a1559eed11de82d6303ca18a8630b18455da895ccc7d9d1f89b80",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90275,
+     "page": 41,
+     "seconds": 1.9,
+     "sha256": "dc5df7c4293a79da04e23755ef9cde62de63c020d59011db9a6e6f6e6641f7c8",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90358,
+     "page": 42,
+     "seconds": 2.8,
+     "sha256": "eaad2cb18f6805638c246665e5eb8199b19b2e7de10d73d394b0072449d81ac6",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90361,
+     "page": 43,
+     "seconds": 2.5,
+     "sha256": "72daf7e5a487785bb329c02095d907ece4e712bb03791241b6df8bcb5d6c5fa9",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90541,
+     "page": 44,
+     "seconds": 1.8,
+     "sha256": "76d11b798d60184bedb014f36d520f348c3570a6d8d6c18dc5f1ec2e51d272e4",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90496,
+     "page": 45,
+     "seconds": 3.5,
+     "sha256": "2431a14f0db8c314d8daa5bec8a1a918068e2ad8bdf7bc27a3a11819d3574987",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90669,
+     "page": 46,
+     "seconds": 2.8,
+     "sha256": "af7ed52b2adb68a9a5d5d777a9ba68968005bdfc04f477669dc585e0ac9b67fe",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90684,
+     "page": 47,
+     "seconds": 2.1,
+     "sha256": "56caa35e941c7754e1617b8add8dd3c0a465376af8141f346941754d35b40a33",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90530,
+     "page": 48,
+     "seconds": 1.8,
+     "sha256": "2b7b3f41c4c61f1b8ee4998f24ad3069deb8887efef3fb50a7ff89c3e0f5f07e",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90469,
+     "page": 49,
+     "seconds": 2.2,
+     "sha256": "a465f210f721026c2092f32526e414f8f57facbb2f1bf98e42d4dcf5ce3fc482",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90469,
+     "page": 50,
+     "seconds": 1.8,
+     "sha256": "016d05326e4f4c3ee17fa49a5b87028306229bc23df9a96c2d8fc0bba3d067bb",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90436,
+     "page": 51,
+     "seconds": 2.1,
+     "sha256": "c207f074e59dd27e6d43a771441728a34141fefc4a647f728149fa514a35e197",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90583,
+     "page": 52,
+     "seconds": 2.9,
+     "sha256": "5b4805b90b502aa1d0481ec1931a3a90149c6bc02b4281c0eaf46f56a8470af9",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90362,
+     "page": 53,
+     "seconds": 1.7,
+     "sha256": "4f025173c2ca1cbbdcc448d11ceaed99e47467265810b9b7d7ed7eedbf7a73eb",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90438,
+     "page": 54,
+     "seconds": 2.6,
+     "sha256": "9c68f45d2536771572c14def7f3c48a8a33c864362acbbadcfc6336af63476da",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90414,
+     "page": 55,
+     "seconds": 1.8,
+     "sha256": "674cbe7795453d3da46546c4e6d65d00d84fd47a93c30407e7c42989e50209cc",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90460,
+     "page": 56,
+     "seconds": 2.4,
+     "sha256": "70b62915792c87b2de2d575428e697d3c513de155be31f03eab2ac7943dd37e9",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90589,
+     "page": 57,
+     "seconds": 2.2,
+     "sha256": "41b74acd19c4fec248150749a580866ddd48d501907cdde6e3d22d1c317970c5",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90464,
+     "page": 58,
+     "seconds": 2.0,
+     "sha256": "c9868b08211a92b89651a57a428af265b05764268b1d68cc07200c81a59446ed",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90458,
+     "page": 59,
+     "seconds": 2.6,
+     "sha256": "686e589ef450d5eca71975cefb918dfbcc2c9c9ced25718bdd1cb7e96a42cea0",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90492,
+     "page": 60,
+     "seconds": 2.1,
+     "sha256": "922ce4ccef172cf4914591c2e8dcce0de8777b6641e85338a0d8a29c9f794672",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90289,
+     "page": 61,
+     "seconds": 1.9,
+     "sha256": "d823b3bb4ebcdad284dbffa3f05cd27c79707435a1159aa704c5a848525fbe77",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90357,
+     "page": 62,
+     "seconds": 2.1,
+     "sha256": "523cd187613932df978fb052a8b04a9ec3c9b3c146626c9826c2f39f1c60dbfd",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90429,
+     "page": 63,
+     "seconds": 2.3,
+     "sha256": "2013768db8919e0bfa7b8a7700d40b282f675011c5d61e5cc173fcebe0dd3bc1",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90410,
+     "page": 64,
+     "seconds": 2.4,
+     "sha256": "fdfa4c9fb49456bb2b716ec8dc72ebc5c5b8ab8b7bff8310c47ec9f2bb7762e3",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90266,
+     "page": 65,
+     "seconds": 3.4,
+     "sha256": "e1bf51af3430aa4366884e0db4b329823e6e1fcd1d488e88bfcea49e810e3791",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90774,
+     "page": 66,
+     "seconds": 1.6,
+     "sha256": "b3c41e4410c51cc3435a3a6f674e3588ea263194d7e49c72c7b1f2895e99a411",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90408,
+     "page": 67,
+     "seconds": 2.4,
+     "sha256": "2dd074a7fa5934e47480a1606cea97c5b57653b507f51ab00ce3827ceed01161",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90483,
+     "page": 68,
+     "seconds": 2.6,
+     "sha256": "f2ca28819bf009f2d7e1ed7067365a825bb05ea81ed281b603b7b22c05ecac9f",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90452,
+     "page": 69,
+     "seconds": 2.7,
+     "sha256": "94f6d292dd31e3744fc00b4bdc0bce37741cb210931071a4cc6ab445db244c84",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90647,
+     "page": 70,
+     "seconds": 2.4,
+     "sha256": "329792865e56ea66f9f0c3cee01f11d01ebe09120060c9d3227c5fc0b7b2819f",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90598,
+     "page": 71,
+     "seconds": 2.5,
+     "sha256": "ecb257436cf3405905e3a5711f800a31e2313bcad7ffbfd04789d8aa8a3aa865",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90334,
+     "page": 72,
+     "seconds": 1.1,
+     "sha256": "77b47b02f9fc71b38450a1b6b5619e29ea860aeeda3884d5217b07bcef9d7813",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90428,
+     "page": 73,
+     "seconds": 2.4,
+     "sha256": "1a92087a386cd7d9faf49bce20a50d0bdf21008d689d44a0ada058705ace24f1",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90373,
+     "page": 74,
+     "seconds": 2.3,
+     "sha256": "31b086799f557048eb831243d4474006ecfff8dbd61d1a358f41c54da75838cd",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90658,
+     "page": 75,
+     "seconds": 1.9,
+     "sha256": "8cd1532a9abda7a6c424787eee91a3dac14c51be010667dd775a290c87dd5486",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90831,
+     "page": 76,
+     "seconds": 2.0,
+     "sha256": "f2992e0921b16770d6e08fce6d81b8e6d31bdfbdb365cea837383e7f227735eb",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90500,
+     "page": 77,
+     "seconds": 2.2,
+     "sha256": "83e2258b1ed276cf3cabb302740ba05999a529f049f1d6d21e9c479c40591d21",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90430,
+     "page": 78,
+     "seconds": 2.0,
+     "sha256": "90f828fa42d7644d17c829f191d0410ce19502bc8a5118acea2f694da5ba7732",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90414,
+     "page": 79,
+     "seconds": 2.5,
+     "sha256": "848c84d8dfb2255ac889c16675b33283b73e1bdccff1409f95102716b5a6e295",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90249,
+     "page": 80,
+     "seconds": 2.0,
+     "sha256": "5cdfa0b4203a91ff9ab839adc85a059fb61db76f886c485100fa615737372cd7",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90827,
+     "page": 81,
+     "seconds": 3.1,
+     "sha256": "c0f561784f52e4f273266b75b511c6f73cc279732f395b70b6fb18a1a7f2a508",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 90491,
+     "page": 82,
+     "seconds": 2.8,
+     "sha256": "34edbf9be355a85d1b7716e79d3c41ac580f275fc4de3f0792855fef2df205da",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 100
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 76217,
+     "page": 83,
+     "seconds": 1.4,
+     "sha256": "68b836c32ca02b57c33299d8da3c9b9a39ec03ed093731de4567b3cea2a72d9c",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "KidsFirst": {
+       "all": 8284,
+       "entries": 84,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Unknown": 84
+       }
+      },
+      "PCDC": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "StJude": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 403,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    }
+   ],
+   "pages_planned": 83,
+   "statuses": [
+    200
+   ],
+   "target": "kidsfirst"
+  },
+  {
+   "by_source": {
+    "CCDI-DCC": {
+     "entries": 1000,
+     "error_kinds": [],
+     "error_pages": 0,
+     "first_total": 4090,
+     "pages": 10,
+     "totals": [
+      4090
+     ],
+     "values": {
+      "Hispanic or Latino": 1000
+     }
+    },
+    "KidsFirst": {
+     "entries": 1000,
+     "error_kinds": [],
+     "error_pages": 0,
+     "first_total": 4824,
+     "pages": 10,
+     "totals": [
+      4824
+     ],
+     "values": {
+      "Hispanic or Latino": 1000
+     }
+    },
+    "PCDC": {
+     "entries": 1000,
+     "error_kinds": [],
+     "error_pages": 0,
+     "first_total": 2916,
+     "pages": 10,
+     "totals": [
+      2916
+     ],
+     "values": {
+      "Hispanic or Latino": 1000
+     }
+    },
+    "StJude": {
+     "entries": 909,
+     "error_kinds": [],
+     "error_pages": 0,
+     "first_total": 909,
+     "pages": 10,
+     "totals": [
+      909
+     ],
+     "values": {
+      "Hispanic or Latino": 909
+     }
+    },
+    "Treehouse": {
+     "entries": 553,
+     "error_kinds": [
+      "InvalidParameters"
+     ],
+     "error_pages": 4,
+     "first_total": 553,
+     "pages": 10,
+     "totals": [
+      553,
+      null
+     ],
+     "values": {
+      "Hispanic or Latino": 553
+     }
+    },
+    "ccdi-ecDNA": {
+     "entries": 0,
+     "error_kinds": [
+      "NotFound"
+     ],
+     "error_pages": 9,
+     "first_total": 0,
+     "pages": 10,
+     "totals": [
+      0,
+      null
+     ],
+     "values": {}
+    },
+    "ccdi-iusccc-pst": {
+     "entries": 16,
+     "error_kinds": [],
+     "error_pages": 0,
+     "first_total": 16,
+     "pages": 10,
+     "totals": [
+      16
+     ],
+     "values": {
+      "Hispanic or Latino": 16
+     }
+    }
+   },
+   "ethnicity": "Hispanic or Latino",
+   "name": "hispanic",
+   "pages": [
+    {
+     "bytes": 655147,
+     "page": 1,
+     "seconds": 3.0,
+     "sha256": "763cf15e6d77723d8b397e08387e29464f4c1b32b0f4b8949e3a975743487e2b",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 4090,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 4824,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "PCDC": {
+       "all": 2916,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "StJude": {
+       "all": 909,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "Treehouse": {
+       "all": 553,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": 0,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 16,
+       "entries": 16,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 16
+       }
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 645162,
+     "page": 2,
+     "seconds": 2.6,
+     "sha256": "ed1c9a3715f8358750fc33947c089f61cfd54f1f444ef1022b284aa1924f7cdc",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 4090,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 4824,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "PCDC": {
+       "all": 2916,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "StJude": {
+       "all": 909,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "Treehouse": {
+       "all": 553,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 16,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 652556,
+     "page": 3,
+     "seconds": 3.0,
+     "sha256": "d20c67e6ac4f6584471946a507d85817e119b4d298367a84caac5810f7c89ff6",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 4090,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 4824,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "PCDC": {
+       "all": 2916,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "StJude": {
+       "all": 909,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "Treehouse": {
+       "all": 553,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 16,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 651272,
+     "page": 4,
+     "seconds": 2.5,
+     "sha256": "a7b6dc826aa86467514aff061f061f75a01a028e80381806963b3b042bc09178",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 4090,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 4824,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "PCDC": {
+       "all": 2916,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "StJude": {
+       "all": 909,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "Treehouse": {
+       "all": 553,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 16,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 663641,
+     "page": 5,
+     "seconds": 1.3,
+     "sha256": "31d25dc42b45dd6d0d61ea96a0a22bb59bbd23e863c9942678f2f240dbedca9d",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 4090,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 4824,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "PCDC": {
+       "all": 2916,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "StJude": {
+       "all": 909,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "Treehouse": {
+       "all": 553,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 16,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 614220,
+     "page": 6,
+     "seconds": 2.9,
+     "sha256": "fb356aaf7c5a929f17855e130da2412a28a0489301b9303877a5851c1d70ed7d",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 4090,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 4824,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "PCDC": {
+       "all": 2916,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "StJude": {
+       "all": 909,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "Treehouse": {
+       "all": 553,
+       "entries": 53,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 53
+       }
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 16,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 554777,
+     "page": 7,
+     "seconds": 2.7,
+     "sha256": "133a95d70bb1686175eef58b59b1aeb103d9fd66b32308f7da6e0b12e4549cea",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 4090,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 4824,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "PCDC": {
+       "all": 2916,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "StJude": {
+       "all": 909,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 16,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 552440,
+     "page": 8,
+     "seconds": 3.0,
+     "sha256": "648c6cd08b6c48e97cfa25d05f797a5843777efe7d777cad6c214c93eef72d89",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 4090,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 4824,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "PCDC": {
+       "all": 2916,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "StJude": {
+       "all": 909,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 16,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 551593,
+     "page": 9,
+     "seconds": 3.1,
+     "sha256": "42583f37197864cd76f25b01f1f58ef02dc49e92d292d43e4a6ded53c2a2b298",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 4090,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 4824,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "PCDC": {
+       "all": 2916,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "StJude": {
+       "all": 909,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 16,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    },
+    {
+     "bytes": 359748,
+     "page": 10,
+     "seconds": 1.6,
+     "sha256": "06984c7eed1c34b6bbc83438dcdea63155c3729160843f562cad9dad519ace70",
+     "sources": {
+      "CCDI-DCC": {
+       "all": 4090,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "KidsFirst": {
+       "all": 4824,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "PCDC": {
+       "all": 2916,
+       "entries": 100,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 100
+       }
+      },
+      "StJude": {
+       "all": 909,
+       "entries": 9,
+       "error": false,
+       "error_kinds": [],
+       "values": {
+        "Hispanic or Latino": 9
+       }
+      },
+      "Treehouse": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "InvalidParameters"
+       ],
+       "values": {}
+      },
+      "ccdi-ecDNA": {
+       "all": null,
+       "entries": null,
+       "error": true,
+       "error_kinds": [
+        "NotFound"
+       ],
+       "values": {}
+      },
+      "ccdi-iusccc-pst": {
+       "all": 16,
+       "entries": 0,
+       "error": false,
+       "error_kinds": [],
+       "values": {}
+      }
+     },
+     "status": 200
+    }
+   ],
+   "pages_planned": 10,
+   "statuses": [
+    200
+   ],
+   "target": "stjude"
+  }
+ ]
+}
