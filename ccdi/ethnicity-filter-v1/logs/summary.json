@@ -1,0 +1,58 @@
+{
+ "contract": "mv2-compete-result-v1",
+ "name": "ccdi-eth-probe-v1",
+ "id": "5244a7614246",
+ "field": "medicine",
+ "run": "20261024T233344Z-medicine",
+ "kind": "compete",
+ "status": "ok",
+ "reason": "",
+ "host": "dell",
+ "image": "python:3.12",
+ "started_at": "2026-10-24T23:45:51.626899+00:00",
+ "finished_at": "2026-10-24T23:52:35.203883+00:00",
+ "duration_seconds": 403,
+ "limits": {
+  "cpu": 1.0,
+  "memory_gb": 1.0,
+  "timeout_minutes": 180.0
+ },
+ "peak_memory_gb": 0.02,
+ "network": {
+  "setup": true,
+  "run": true
+ },
+ "steps": [
+  {
+   "step": "setup-01-python",
+   "cmd": "python get_code.py",
+   "exit": 0,
+   "seconds": 301
+  },
+  {
+   "step": "setup-02-python",
+   "cmd": "python -m unittest -v test_ethprobe",
+   "exit": 0,
+   "seconds": 1
+  },
+  {
+   "step": "run-01-python",
+   "cmd": "python ethprobe.py --out /out",
+   "exit": 0,
+   "seconds": 53
+  }
+ ],
+ "out_files": [
+  "ethprobe.json"
+ ],
+ "out_files_total": 1,
+ "out_skipped": [],
+ "upload_skipped": [],
+ "summary_tail": "[run-01-python stdout] info 200 4381 bytes 1.1 s\ncount 200 1193 bytes 2.6 s\nall 200 9608 bytes 8.8 s\nhispanic 200 8980 bytes 5.2 s\nnot-reported 200 1538 bytes 2.7 s\nnot-hispanic 200 8214 bytes 14.0 s\nunknown 200 5438 bytes 2.7 s\nnot-allowed 200 708 bytes 0.8 s\n{\"E1\": \"pass\", \"E2\": \"pass\", \"E3\": \"pass\", \"E4\": \"pass\", \"E5\": \"pass\"} silent_zero\n",
+ "paths": {
+  "workdir": "/work (copy of E:\\MV2-Pursuit\\work\\20261024T233344Z-medicine\\compete\\ccdi-eth-probe)",
+  "out": "/out -> out/",
+  "data": "/data (docker volume mv2c-data-ccdi-raw, kept for later jobs)"
+ },
+ "note": ""
+}

@@ -1,0 +1,144 @@
+===== setup-01-python: python get_code.py
+not public yet (404), try 1 of 24: https://raw.githubusercontent.com/munimtechnologies/evidence-pack/v0.9.4/ccdi/ethnicity-filter-v1/README.md
+v0.9.4/ccdi/ethnicity-filter-v1/README.md 9781 bytes sha256 1dc977dca7d42150768292cb0d94e8536b991fb6a4f2ee961bd516bf2fac52a1
+v0.9.4/ccdi/ethnicity-filter-v1/ethprobe.py 9251 bytes sha256 b7c7266407567fa74c63dc9204c98d324ec63847e1e17ff4a1320d1892d69667
+v0.9.4/ccdi/ethnicity-filter-v1/test_ethprobe.py 9379 bytes sha256 97db265fde1d12b1db5d26d4ec04b5c77d5447beda4a6a6f9696221a9eab9d85
+
+===== setup-02-python: python -m unittest -v test_ethprobe
+info 200 49 bytes 0.1 s
+count 200 325 bytes 0.1 s
+all 200 691 bytes 0.1 s
+hispanic 200 684 bytes 0.1 s
+not-reported 200 686 bytes 0.1 s
+not-hispanic 200 636 bytes 0.1 s
+unknown 200 630 bytes 0.1 s
+not-allowed 200 421 bytes 0.1 s
+{"E1": "pass", "E2": "pass", "E3": "pass", "E4": "pass", "E5": "pass"} silent_zero
+info 200 49 bytes 0.1 s
+count 200 325 bytes 0.1 s
+all 200 691 bytes 0.1 s
+hispanic 200 277 bytes 0.1 s
+not-reported 200 686 bytes 0.1 s
+not-hispanic 200 636 bytes 0.1 s
+unknown 200 630 bytes 0.1 s
+not-allowed 200 421 bytes 0.1 s
+{"E1": "pass", "E2": "pass", "E3": "pass", "E4": "fail", "E5": "pass"} silent_zero
+info 200 49 bytes 0.1 s
+count 200 325 bytes 0.1 s
+all 200 691 bytes 0.1 s
+hispanic 200 138 bytes 0.1 s
+not-reported 200 139 bytes 0.1 s
+not-hispanic 200 636 bytes 0.1 s
+unknown 200 630 bytes 0.1 s
+not-allowed 200 421 bytes 0.1 s
+{"E1": "pass", "E2": "pass", "E3": "pass", "E4": "fail", "E5": "pass"} silent_zero
+info 200 49 bytes 0.1 s
+count 200 209 bytes 0.1 s
+all 200 691 bytes 0.1 s
+hispanic 200 684 bytes 0.1 s
+not-reported 200 686 bytes 0.1 s
+not-hispanic 200 636 bytes 0.1 s
+unknown 200 630 bytes 0.1 s
+not-allowed 200 421 bytes 0.1 s
+{"E1": "pass", "E2": "pass", "E3": "pass", "E4": "pass", "E5": "fail"} silent_zero
+info 200 49 bytes 0.1 s
+count 200 97 bytes 0.1 s
+all 200 691 bytes 0.1 s
+hispanic 200 684 bytes 0.1 s
+not-reported 200 686 bytes 0.1 s
+not-hispanic 200 636 bytes 0.1 s
+unknown 200 630 bytes 0.1 s
+not-allowed 200 421 bytes 0.1 s
+{"E1": "pass", "E2": "pass", "E3": "pass", "E4": "pass", "E5": "fail"} silent_zero
+info 200 49 bytes 0.1 s
+count 200 325 bytes 0.1 s
+all 200 691 bytes 0.1 s
+hispanic 200 684 bytes 0.1 s
+not-reported 200 686 bytes 0.1 s
+not-hispanic 200 640 bytes 0.1 s
+unknown 200 630 bytes 0.1 s
+not-allowed 200 421 bytes 0.1 s
+{"E1": "fail", "E2": "pass", "E3": "pass", "E4": "pass", "E5": "pass"} error
+info 200 49 bytes 0.1 s
+count 200 325 bytes 0.1 s
+all 200 691 bytes 0.1 s
+hispanic 200 684 bytes 0.1 s
+not-reported 200 686 bytes 0.1 s
+not-hispanic 200 690 bytes 0.1 s
+unknown 200 630 bytes 0.1 s
+not-allowed 200 421 bytes 0.1 s
+{"E1": "fail", "E2": "pass", "E3": "pass", "E4": "pass", "E5": "pass"} matches_not_reported
+info 200 49 bytes 0.1 s
+count 200 325 bytes 0.1 s
+all 200 691 bytes 0.1 s
+hispanic 200 684 bytes 0.1 s
+not-reported 200 686 bytes 0.1 s
+not-hispanic 200 551 bytes 0.1 s
+unknown 200 630 bytes 0.1 s
+not-allowed 200 421 bytes 0.1 s
+{"E1": "fail", "E2": "pass", "E3": "pass", "E4": "pass", "E5": "pass"} missing
+info 200 49 bytes 0.1 s
+count 200 325 bytes 0.1 s
+all 200 691 bytes 0.1 s
+hispanic 200 684 bytes 0.1 s
+not-reported 200 686 bytes 0.1 s
+not-hispanic 200 636 bytes 0.1 s
+unknown 200 630 bytes 0.1 s
+not-allowed 200 421 bytes 0.1 s
+{"E1": "pass", "E2": "pass", "E3": "pass", "E4": "pass", "E5": "pass"} silent_zero
+info 200 49 bytes 0.1 s
+count 200 325 bytes 0.1 s
+all 200 691 bytes 0.1 s
+hispanic 200 684 bytes 0.1 s
+not-reported 200 686 bytes 0.1 s
+not-hispanic 502 24 bytes 0.1 s
+unknown 200 630 bytes 0.1 s
+not-allowed 200 421 bytes 0.1 s
+{"E1": "fail", "E2": "fail", "E3": "pass", "E4": "pass", "E5": "pass"} missing
+info 200 49 bytes 0.1 s
+count 200 325 bytes 0.1 s
+all 200 691 bytes 0.1 s
+hispanic 200 684 bytes 0.1 s
+not-reported 200 686 bytes 0.1 s
+not-hispanic 200 586 bytes 0.1 s
+unknown 200 630 bytes 0.1 s
+not-allowed 200 421 bytes 0.1 s
+{"E1": "pass", "E2": "fail", "E3": "pass", "E4": "pass", "E5": "pass"} silent_zero
+info 200 49 bytes 0.1 s
+count 200 325 bytes 0.1 s
+all 200 691 bytes 0.1 s
+hispanic 200 684 bytes 0.1 s
+not-reported 200 686 bytes 0.1 s
+not-hispanic 200 634 bytes 0.1 s
+unknown 200 630 bytes 0.1 s
+not-allowed 200 421 bytes 0.1 s
+{"E1": "pass", "E2": "fail", "E3": "pass", "E4": "pass", "E5": "pass"} silent_zero
+info 200 49 bytes 0.1 s
+count 200 325 bytes 0.1 s
+all 200 691 bytes 0.1 s
+hispanic 200 684 bytes 0.1 s
+not-reported 200 686 bytes 0.1 s
+not-hispanic 200 636 bytes 0.1 s
+unknown 200 630 bytes 0.1 s
+not-allowed 200 421 bytes 0.1 s
+{"E1": "pass", "E2": "pass", "E3": "pass", "E4": "pass", "E5": "pass"} silent_zero
+info 200 49 bytes 0.1 s
+count 200 325 bytes 0.1 s
+all 200 691 bytes 0.1 s
+hispanic 200 684 bytes 0.1 s
+not-reported 200 686 bytes 0.1 s
+not-hispanic 200 636 bytes 0.1 s
+unknown 200 278 bytes 0.1 s
+not-allowed 200 421 bytes 0.1 s
+{"E1": "pass", "E2": "pass", "E3": "fail", "E4": "pass", "E5": "pass"} silent_zero
+
+===== run-01-python: python ethprobe.py --out /out
+info 200 4381 bytes 1.1 s
+count 200 1193 bytes 2.6 s
+all 200 9608 bytes 8.8 s
+hispanic 200 8980 bytes 5.2 s
+not-reported 200 1538 bytes 2.7 s
+not-hispanic 200 8214 bytes 14.0 s
+unknown 200 5438 bytes 2.7 s
+not-allowed 200 708 bytes 0.8 s
+{"E1": "pass", "E2": "pass", "E3": "pass", "E4": "pass", "E5": "pass"} silent_zero

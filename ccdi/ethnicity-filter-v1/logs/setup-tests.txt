@@ -1,0 +1,18 @@
+test_all_hold (test_ethprobe.EthProbeTest.test_all_hold) ... ok
+test_closure_off_by_one_fails_e4 (test_ethprobe.EthProbeTest.test_closure_off_by_one_fails_e4) ... ok
+test_count_with_standard_value_fails_e5 (test_ethprobe.EthProbeTest.test_count_with_standard_value_fails_e5) ... ok
+test_eight_requests_five_values (test_ethprobe.EthProbeTest.test_eight_requests_five_values) ... ok
+test_error_item_fails_e1 (test_ethprobe.EthProbeTest.test_error_item_fails_e1) ... ok
+test_mapped_value_fails_e1 (test_ethprobe.EthProbeTest.test_mapped_value_fails_e1) ... ok
+test_missing_source_fails_e1 (test_ethprobe.EthProbeTest.test_missing_source_fails_e1) ... ok
+test_no_participant_names_written (test_ethprobe.EthProbeTest.test_no_participant_names_written) ... ok
+test_non_200_fails_e1_and_e2 (test_ethprobe.EthProbeTest.test_non_200_fails_e1_and_e2) ... ok
+test_other_source_error_or_small_fails_e2 (test_ethprobe.EthProbeTest.test_other_source_error_or_small_fails_e2) ... ok
+test_source_name_any_case (test_ethprobe.EthProbeTest.test_source_name_any_case) ... ok
+test_unknown_served_fails_e3 (test_ethprobe.EthProbeTest.test_unknown_served_fails_e3) ... ok
+test_url_of (test_ethprobe.EthProbeTest.test_url_of) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.056s
+
+OK

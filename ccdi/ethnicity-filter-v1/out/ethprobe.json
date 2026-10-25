@@ -1,0 +1,540 @@
+{
+ "finished_at": "2026-10-24T23:51:58Z",
+ "grades": {
+  "E1": "pass",
+  "E2": "pass",
+  "E3": "pass",
+  "E4": "pass",
+  "E5": "pass"
+ },
+ "probe": "ccdi/ethnicity-filter-v1",
+ "reading": "silent_zero",
+ "requests": [
+  {
+   "bytes": 4381,
+   "ethnicity": null,
+   "info_versions": [
+    [
+     "/PCDC/server/version",
+     "1.3.1"
+    ],
+    [
+     "/PCDC/api/api_version",
+     "1.3.1"
+    ],
+    [
+     "/PCDC/data/version/version",
+     "pcdc_20261013_1"
+    ],
+    [
+     "/Treehouse/api/api_version",
+     "v1.2.0"
+    ],
+    [
+     "/Treehouse/data/version/version",
+     "1"
+    ],
+    [
+     "/StJude/server/version",
+     "v1.2"
+    ],
+    [
+     "/StJude/api/api_version",
+     "v1.2.1"
+    ],
+    [
+     "/StJude/data/version/version",
+     "3"
+    ],
+    [
+     "/KidsFirst/server/version",
+     "v1.2.0"
+    ],
+    [
+     "/KidsFirst/api/api_version",
+     "v1.2.0"
+    ],
+    [
+     "/KidsFirst/data/version/version",
+     "1"
+    ],
+    [
+     "/ccdi-ecDNA/server/version",
+     "v1.0.0"
+    ],
+    [
+     "/ccdi-ecDNA/api/api_version",
+     "v1.0.0"
+    ],
+    [
+     "/ccdi-ecDNA/data/version/version",
+     "1"
+    ],
+    [
+     "/ccdi-iusccc-pst/server/version",
+     "v1.2.0"
+    ],
+    [
+     "/ccdi-iusccc-pst/api/api_version",
+     "v1.2.0"
+    ],
+    [
+     "/ccdi-iusccc-pst/data/version/version",
+     "1"
+    ],
+    [
+     "/CCDI-DCC/server/version",
+     "v1.1.0"
+    ],
+    [
+     "/CCDI-DCC/api/api_version",
+     "v1.3.0"
+    ],
+    [
+     "/CCDI-DCC/data/version/version",
+     "3.1.0"
+    ]
+   ],
+   "name": "info",
+   "path": "/info",
+   "seconds": 1.1,
+   "sha256": "798aa386d0d168f2b85618a07683a26ee184a31da28a15c593ff79eef397fc4d",
+   "status": 200
+  },
+  {
+   "bytes": 1193,
+   "count": {
+    "CCDI-DCC": {
+     "error": false,
+     "missing": 0,
+     "total": 59795,
+     "values": {
+      "Hispanic or Latino": 4090,
+      "Not reported": 55705
+     }
+    },
+    "KidsFirst": {
+     "error": false,
+     "missing": 0,
+     "total": 36444,
+     "values": {
+      "Hispanic or Latino": 4824,
+      "Not Hispanic or Latino": 23336,
+      "Unknown": 8284
+     }
+    },
+    "PCDC": {
+     "error": false,
+     "missing": 1,
+     "total": 24432,
+     "values": {
+      "Hispanic or Latino": 2916,
+      "Not Hispanic or Latino": 18038,
+      "Unknown": 3477
+     }
+    },
+    "StJude": {
+     "error": false,
+     "missing": 2,
+     "total": 14681,
+     "values": {
+      "Hispanic or Latino": 909,
+      "Not Hispanic or Latino": 10505,
+      "Not reported": 3234,
+      "Unknown": 31
+     }
+    },
+    "Treehouse": {
+     "error": false,
+     "missing": 785,
+     "total": 12723,
+     "values": {
+      "Hispanic or Latino": 553,
+      "Not Hispanic or Latino": 8323,
+      "Unknown": 3062
+     }
+    },
+    "ccdi-ecDNA": {
+     "error": false,
+     "missing": 3205,
+     "total": 3205,
+     "values": {}
+    },
+    "ccdi-iusccc-pst": {
+     "error": false,
+     "missing": 0,
+     "total": 504,
+     "values": {
+      "Hispanic or Latino": 16,
+      "Not Hispanic or Latino": 85,
+      "Unknown": 403
+     }
+    }
+   },
+   "ethnicity": null,
+   "name": "count",
+   "path": "/subject/by/ethnicity/count",
+   "seconds": 2.6,
+   "sha256": "58cd9af734934c9bdf3c64ba6e076c7e3a0a947d773224825b89180ee3c38c8a",
+   "status": 200
+  },
+  {
+   "bytes": 9608,
+   "ethnicity": null,
+   "name": "all",
+   "path": "/subject",
+   "seconds": 8.8,
+   "sha256": "24190eca648be438921522fc132c5f5b8c1ab03a982f66ef6228480c4ea62527",
+   "sources": {
+    "CCDI-DCC": {
+     "all": 59795,
+     "entries": 1,
+     "error": false,
+     "error_kinds": []
+    },
+    "KidsFirst": {
+     "all": 38440,
+     "entries": 1,
+     "error": false,
+     "error_kinds": []
+    },
+    "PCDC": {
+     "all": 24432,
+     "entries": 1,
+     "error": false,
+     "error_kinds": []
+    },
+    "StJude": {
+     "all": 14681,
+     "entries": 1,
+     "error": false,
+     "error_kinds": []
+    },
+    "Treehouse": {
+     "all": 12723,
+     "entries": 1,
+     "error": false,
+     "error_kinds": []
+    },
+    "ccdi-ecDNA": {
+     "all": 3205,
+     "entries": 1,
+     "error": false,
+     "error_kinds": []
+    },
+    "ccdi-iusccc-pst": {
+     "all": 504,
+     "entries": 1,
+     "error": false,
+     "error_kinds": []
+    }
+   },
+   "status": 200
+  },
+  {
+   "bytes": 8980,
+   "ethnicity": "Hispanic or Latino",
+   "name": "hispanic",
+   "path": "/subject",
+   "seconds": 5.2,
+   "sha256": "4c551b9077f2ec162f21ca11aaabc89c3bd612c119cb940ee6b971cf3147c3ed",
+   "sources": {
+    "CCDI-DCC": {
+     "all": 4090,
+     "entries": 1,
+     "error": false,
+     "error_kinds": []
+    },
+    "KidsFirst": {
+     "all": 4824,
+     "entries": 1,
+     "error": false,
+     "error_kinds": []
+    },
+    "PCDC": {
+     "all": 2916,
+     "entries": 1,
+     "error": false,
+     "error_kinds": []
+    },
+    "StJude": {
+     "all": 909,
+     "entries": 1,
+     "error": false,
+     "error_kinds": []
+    },
+    "Treehouse": {
+     "all": 553,
+     "entries": 1,
+     "error": false,
+     "error_kinds": []
+    },
+    "ccdi-ecDNA": {
+     "all": 0,
+     "entries": 0,
+     "error": false,
+     "error_kinds": []
+    },
+    "ccdi-iusccc-pst": {
+     "all": 16,
+     "entries": 1,
+     "error": false,
+     "error_kinds": []
+    }
+   },
+   "status": 200
+  },
+  {
+   "bytes": 1538,
+   "ethnicity": "Not reported",
+   "name": "not-reported",
+   "path": "/subject",
+   "seconds": 2.7,
+   "sha256": "1dd8e9d5aefba6e09758b00d8c02731b3f3ed8fb082a2792fc7bd8f2b64d90e5",
+   "sources": {
+    "CCDI-DCC": {
+     "all": 55705,
+     "entries": 1,
+     "error": false,
+     "error_kinds": []
+    },
+    "KidsFirst": {
+     "all": 0,
+     "entries": 0,
+     "error": false,
+     "error_kinds": []
+    },
+    "PCDC": {
+     "all": null,
+     "entries": null,
+     "error": true,
+     "error_kinds": [
+      "NotFound"
+     ]
+    },
+    "StJude": {
+     "all": 3234,
+     "entries": 0,
+     "error": false,
+     "error_kinds": []
+    },
+    "Treehouse": {
+     "all": 0,
+     "entries": 0,
+     "error": false,
+     "error_kinds": []
+    },
+    "ccdi-ecDNA": {
+     "all": 0,
+     "entries": 0,
+     "error": false,
+     "error_kinds": []
+    },
+    "ccdi-iusccc-pst": {
+     "all": 0,
+     "entries": 0,
+     "error": false,
+     "error_kinds": []
+    }
+   },
+   "status": 200
+  },
+  {
+   "bytes": 8214,
+   "ethnicity": "Not Hispanic or Latino",
+   "name": "not-hispanic",
+   "path": "/subject",
+   "seconds": 14.0,
+   "sha256": "da45da3f0475c3cb48f17f069977b589f10c267b64153bfcc9b6c10167427b59",
+   "sources": {
+    "CCDI-DCC": {
+     "all": 0,
+     "entries": 0,
+     "error": false,
+     "error_kinds": []
+    },
+    "KidsFirst": {
+     "all": 23336,
+     "entries": 1,
+     "error": false,
+     "error_kinds": []
+    },
+    "PCDC": {
+     "all": 18038,
+     "entries": 1,
+     "error": false,
+     "error_kinds": []
+    },
+    "StJude": {
+     "all": 10505,
+     "entries": 1,
+     "error": false,
+     "error_kinds": []
+    },
+    "Treehouse": {
+     "all": 8323,
+     "entries": 1,
+     "error": false,
+     "error_kinds": []
+    },
+    "ccdi-ecDNA": {
+     "all": 0,
+     "entries": 0,
+     "error": false,
+     "error_kinds": []
+    },
+    "ccdi-iusccc-pst": {
+     "all": 85,
+     "entries": 1,
+     "error": false,
+     "error_kinds": []
+    }
+   },
+   "status": 200
+  },
+  {
+   "bytes": 5438,
+   "ethnicity": "Unknown",
+   "name": "unknown",
+   "path": "/subject",
+   "seconds": 2.7,
+   "sha256": "c86b951c57e2c5b0abf54191f1ce74a919c703491659a730da4899cd6925ccdc",
+   "sources": {
+    "CCDI-DCC": {
+     "all": 0,
+     "entries": 0,
+     "error": false,
+     "error_kinds": []
+    },
+    "KidsFirst": {
+     "all": 8284,
+     "entries": 1,
+     "error": false,
+     "error_kinds": []
+    },
+    "PCDC": {
+     "all": 3477,
+     "entries": 1,
+     "error": false,
+     "error_kinds": []
+    },
+    "StJude": {
+     "all": 31,
+     "entries": 0,
+     "error": false,
+     "error_kinds": []
+    },
+    "Treehouse": {
+     "all": 3062,
+     "entries": 1,
+     "error": false,
+     "error_kinds": []
+    },
+    "ccdi-ecDNA": {
+     "all": 0,
+     "entries": 0,
+     "error": false,
+     "error_kinds": []
+    },
+    "ccdi-iusccc-pst": {
+     "all": 403,
+     "entries": 1,
+     "error": false,
+     "error_kinds": []
+    }
+   },
+   "status": 200
+  },
+  {
+   "bytes": 708,
+   "ethnicity": "Not allowed to collect",
+   "name": "not-allowed",
+   "path": "/subject",
+   "seconds": 0.8,
+   "sha256": "7b41a0c9c3d650ba283ab56c41094b568737001b55666a16543ec331f44a28fd",
+   "sources": {
+    "CCDI-DCC": {
+     "all": 0,
+     "entries": 0,
+     "error": false,
+     "error_kinds": []
+    },
+    "KidsFirst": {
+     "all": 0,
+     "entries": 0,
+     "error": false,
+     "error_kinds": []
+    },
+    "PCDC": {
+     "all": null,
+     "entries": null,
+     "error": true,
+     "error_kinds": [
+      "InvalidParameters"
+     ]
+    },
+    "StJude": {
+     "all": 0,
+     "entries": 0,
+     "error": false,
+     "error_kinds": []
+    },
+    "Treehouse": {
+     "all": 0,
+     "entries": 0,
+     "error": false,
+     "error_kinds": []
+    },
+    "ccdi-ecDNA": {
+     "all": 0,
+     "entries": 0,
+     "error": false,
+     "error_kinds": []
+    },
+    "ccdi-iusccc-pst": {
+     "all": 0,
+     "entries": 0,
+     "error": false,
+     "error_kinds": []
+    }
+   },
+   "status": 200
+  }
+ ],
+ "totals": {
+  "all": {
+   "sources": 7,
+   "sources_with_error": [],
+   "sum_all": 153780
+  },
+  "hispanic": {
+   "sources": 7,
+   "sources_with_error": [],
+   "sum_all": 13308
+  },
+  "not-allowed": {
+   "sources": 7,
+   "sources_with_error": [
+    "PCDC"
+   ],
+   "sum_all": 0
+  },
+  "not-hispanic": {
+   "sources": 7,
+   "sources_with_error": [],
+   "sum_all": 60287
+  },
+  "not-reported": {
+   "sources": 7,
+   "sources_with_error": [
+    "PCDC"
+   ],
+   "sum_all": 58939
+  },
+  "unknown": {
+   "sources": 7,
+   "sources_with_error": [],
+   "sum_all": 15257
+  }
+ }
+}

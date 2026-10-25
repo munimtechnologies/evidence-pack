@@ -1,0 +1,9 @@
+info 200 4381 bytes 1.1 s
+count 200 1193 bytes 2.6 s
+all 200 9608 bytes 8.8 s
+hispanic 200 8980 bytes 5.2 s
+not-reported 200 1538 bytes 2.7 s
+not-hispanic 200 8214 bytes 14.0 s
+unknown 200 5438 bytes 2.7 s
+not-allowed 200 708 bytes 0.8 s
+{"E1": "pass", "E2": "pass", "E3": "pass", "E4": "pass", "E5": "pass"} silent_zero
