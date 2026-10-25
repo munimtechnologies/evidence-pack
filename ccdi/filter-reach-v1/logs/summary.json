@@ -1,0 +1,58 @@
+{
+ "contract": "mv2-compete-result-v1",
+ "name": "ccdi-reach-v1",
+ "id": "032326089506",
+ "field": "medicine",
+ "run": "20261025T100520Z-medicine",
+ "kind": "compete",
+ "status": "ok",
+ "reason": "",
+ "host": "dell",
+ "image": "python:3.12",
+ "started_at": "2026-10-25T14:45:35.651662+00:00",
+ "finished_at": "2026-10-25T15:03:49.672978+00:00",
+ "duration_seconds": 1094,
+ "limits": {
+  "cpu": 1.0,
+  "memory_gb": 1.0,
+  "timeout_minutes": 180.0
+ },
+ "peak_memory_gb": 0.03,
+ "network": {
+  "setup": true,
+  "run": true
+ },
+ "steps": [
+  {
+   "step": "setup-01-python",
+   "cmd": "python get_code.py",
+   "exit": 0,
+   "seconds": 1
+  },
+  {
+   "step": "setup-02-python",
+   "cmd": "python -m unittest -v test_reachprobe",
+   "exit": 0,
+   "seconds": 1
+  },
+  {
+   "step": "run-01-python",
+   "cmd": "python reachprobe.py --out /out --data-dir /data",
+   "exit": 0,
+   "seconds": 931
+  }
+ ],
+ "out_files": [
+  "reachprobe.json"
+ ],
+ "out_files_total": 1,
+ "out_skipped": [],
+ "upload_skipped": [],
+ "summary_tail": "[run-01-python stdout] =Unknown page 67 200 91155 bytes 1.3 s\nwalk race=Unknown page 68 200 90956 bytes 1.8 s\nwalk race=Unknown page 69 200 90919 bytes 2.7 s\nwalk race=Unknown page 70 200 91322 bytes 3.0 s\nwalk race=Unknown page 71 200 91080 bytes 1.6 s\nwalk race=Unknown page 72 200 91132 bytes 1.5 s\nwalk race=Unknown page 73 200 91368 bytes 1.9 s\nwalk race=Unknown page 74 200 91472 bytes 2.3 s\nwalk race=Unknown page 75 200 91105 bytes 3.0 s\nwalk race=Unknown page 76 200 90942 bytes 2.0 s\nwalk race=Unknown page 77 200 91169 bytes 1.3 s\nwalk race=Unknown page 78 200 91092 bytes 2.1 s\nwalk race=Unknown page 79 200 91311 bytes 1.8 s\nwalk race=Unknown page 80 200 91200 bytes 2.5 s\nwalk race=Unknown page 81 200 91078 bytes 2.6 s\nwalk race=Unknown page 82 200 90966 bytes 2.2 s\nwalk race=Unknown page 83 200 90785 bytes 2.2 s\nwalk race=Unknown page 84 200 91090 bytes 2.5 s\nwalk race=Unknown page 85 200 91284 bytes 1.9 s\nwalk race=Unknown page 86 200 91471 bytes 3.0 s\nwalk race=Unknown page 87 200 7336 bytes 2.0 s\n{\"K1\": \"pass\", \"K2\": \"pass\", \"K3\": \"pass\", \"R1\": \"fail\", \"R2\": \"fail\", \"R3\": \"fail\"} {\"count_and_filter\": \"disagree\", \"kidsfirst_overlap\": \"shared\", \"pcdc_vital_status\": \"other\", \"under_reach\": \"other\"}\n",
+ "paths": {
+  "workdir": "/work (copy of E:\\MV2-Pursuit\\work\\20261025T100520Z-medicine\\compete\\ccdi-reach)",
+  "out": "/out -> out/",
+  "data": "/data (docker volume mv2c-data-ccdi-raw, kept for later jobs)"
+ },
+ "note": ""
+}

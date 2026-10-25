@@ -1,0 +1,5353 @@
+{
+ "cells": [
+  {
+   "count": 27510,
+   "field": "sex",
+   "filter": 27510,
+   "filter_error_kinds": [],
+   "served": 27510,
+   "source": "CCDI-DCC",
+   "value": "F"
+  },
+  {
+   "count": 18122,
+   "field": "sex",
+   "filter": 18122,
+   "filter_error_kinds": [],
+   "served": 18122,
+   "source": "KidsFirst",
+   "value": "F"
+  },
+  {
+   "count": 11327,
+   "field": "sex",
+   "filter": 11327,
+   "filter_error_kinds": [],
+   "served": 11104,
+   "source": "PCDC",
+   "value": "F"
+  },
+  {
+   "count": 6408,
+   "field": "sex",
+   "filter": 6408,
+   "filter_error_kinds": [],
+   "served": 6408,
+   "source": "StJude",
+   "value": "F"
+  },
+  {
+   "count": 5965,
+   "field": "sex",
+   "filter": 5965,
+   "filter_error_kinds": [],
+   "served": 5965,
+   "source": "Treehouse",
+   "value": "F"
+  },
+  {
+   "count": 1372,
+   "field": "sex",
+   "filter": 1372,
+   "filter_error_kinds": [],
+   "served": 1372,
+   "source": "ccdi-ecDNA",
+   "value": "F"
+  },
+  {
+   "count": 226,
+   "field": "sex",
+   "filter": 226,
+   "filter_error_kinds": [],
+   "served": 226,
+   "source": "ccdi-iusccc-pst",
+   "value": "F"
+  },
+  {
+   "count": 31853,
+   "field": "sex",
+   "filter": 31853,
+   "filter_error_kinds": [],
+   "served": 31853,
+   "source": "CCDI-DCC",
+   "value": "M"
+  },
+  {
+   "count": 19827,
+   "field": "sex",
+   "filter": 19827,
+   "filter_error_kinds": [],
+   "served": 19827,
+   "source": "KidsFirst",
+   "value": "M"
+  },
+  {
+   "count": 13094,
+   "field": "sex",
+   "filter": 13094,
+   "filter_error_kinds": [],
+   "served": 12913,
+   "source": "PCDC",
+   "value": "M"
+  },
+  {
+   "count": 6948,
+   "field": "sex",
+   "filter": 6948,
+   "filter_error_kinds": [],
+   "served": 6948,
+   "source": "StJude",
+   "value": "M"
+  },
+  {
+   "count": 6229,
+   "field": "sex",
+   "filter": 6229,
+   "filter_error_kinds": [],
+   "served": 6229,
+   "source": "Treehouse",
+   "value": "M"
+  },
+  {
+   "count": 1720,
+   "field": "sex",
+   "filter": 1720,
+   "filter_error_kinds": [],
+   "served": 1720,
+   "source": "ccdi-ecDNA",
+   "value": "M"
+  },
+  {
+   "count": 276,
+   "field": "sex",
+   "filter": 276,
+   "filter_error_kinds": [],
+   "served": 276,
+   "source": "ccdi-iusccc-pst",
+   "value": "M"
+  },
+  {
+   "count": 432,
+   "field": "sex",
+   "filter": 396,
+   "filter_error_kinds": [],
+   "served": 432,
+   "source": "CCDI-DCC",
+   "value": "U"
+  },
+  {
+   "count": 490,
+   "field": "sex",
+   "filter": 490,
+   "filter_error_kinds": [],
+   "served": 490,
+   "source": "KidsFirst",
+   "value": "U"
+  },
+  {
+   "count": 0,
+   "field": "sex",
+   "filter": null,
+   "filter_error_kinds": [
+    "NotFound"
+   ],
+   "served": 0,
+   "source": "PCDC",
+   "value": "U"
+  },
+  {
+   "count": 0,
+   "field": "sex",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "StJude",
+   "value": "U"
+  },
+  {
+   "count": 529,
+   "field": "sex",
+   "filter": 529,
+   "filter_error_kinds": [],
+   "served": 529,
+   "source": "Treehouse",
+   "value": "U"
+  },
+  {
+   "count": 113,
+   "field": "sex",
+   "filter": 113,
+   "filter_error_kinds": [],
+   "served": 113,
+   "source": "ccdi-ecDNA",
+   "value": "U"
+  },
+  {
+   "count": 2,
+   "field": "sex",
+   "filter": 2,
+   "filter_error_kinds": [],
+   "served": 2,
+   "source": "ccdi-iusccc-pst",
+   "value": "U"
+  },
+  {
+   "count": 342,
+   "field": "race",
+   "filter": 342,
+   "filter_error_kinds": [],
+   "served": 342,
+   "source": "CCDI-DCC",
+   "value": "American Indian or Alaska Native"
+  },
+  {
+   "count": 123,
+   "field": "race",
+   "filter": 123,
+   "filter_error_kinds": [],
+   "served": 123,
+   "source": "KidsFirst",
+   "value": "American Indian or Alaska Native"
+  },
+  {
+   "count": 119,
+   "field": "race",
+   "filter": 119,
+   "filter_error_kinds": [],
+   "served": 116,
+   "source": "PCDC",
+   "value": "American Indian or Alaska Native"
+  },
+  {
+   "count": 53,
+   "field": "race",
+   "filter": 53,
+   "filter_error_kinds": [],
+   "served": 53,
+   "source": "StJude",
+   "value": "American Indian or Alaska Native"
+  },
+  {
+   "count": 0,
+   "field": "race",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "Treehouse",
+   "value": "American Indian or Alaska Native"
+  },
+  {
+   "count": 0,
+   "field": "race",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "ccdi-ecDNA",
+   "value": "American Indian or Alaska Native"
+  },
+  {
+   "count": 0,
+   "field": "race",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "ccdi-iusccc-pst",
+   "value": "American Indian or Alaska Native"
+  },
+  {
+   "count": 1537,
+   "field": "race",
+   "filter": 1537,
+   "filter_error_kinds": [],
+   "served": 1537,
+   "source": "CCDI-DCC",
+   "value": "Asian"
+  },
+  {
+   "count": 3234,
+   "field": "race",
+   "filter": 3234,
+   "filter_error_kinds": [],
+   "served": 3234,
+   "source": "KidsFirst",
+   "value": "Asian"
+  },
+  {
+   "count": 778,
+   "field": "race",
+   "filter": 778,
+   "filter_error_kinds": [],
+   "served": 748,
+   "source": "PCDC",
+   "value": "Asian"
+  },
+  {
+   "count": 130,
+   "field": "race",
+   "filter": 130,
+   "filter_error_kinds": [],
+   "served": 130,
+   "source": "StJude",
+   "value": "Asian"
+  },
+  {
+   "count": 664,
+   "field": "race",
+   "filter": 665,
+   "filter_error_kinds": [],
+   "served": 665,
+   "source": "Treehouse",
+   "value": "Asian"
+  },
+  {
+   "count": 0,
+   "field": "race",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "ccdi-ecDNA",
+   "value": "Asian"
+  },
+  {
+   "count": 0,
+   "field": "race",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "ccdi-iusccc-pst",
+   "value": "Asian"
+  },
+  {
+   "count": 4481,
+   "field": "race",
+   "filter": 4481,
+   "filter_error_kinds": [],
+   "served": 4481,
+   "source": "CCDI-DCC",
+   "value": "Black or African American"
+  },
+  {
+   "count": 2243,
+   "field": "race",
+   "filter": 2243,
+   "filter_error_kinds": [],
+   "served": 2243,
+   "source": "KidsFirst",
+   "value": "Black or African American"
+  },
+  {
+   "count": 2652,
+   "field": "race",
+   "filter": null,
+   "filter_error_kinds": [
+    "ServerConnection"
+   ],
+   "served": 2613,
+   "source": "PCDC",
+   "value": "Black or African American"
+  },
+  {
+   "count": 2257,
+   "field": "race",
+   "filter": 2257,
+   "filter_error_kinds": [],
+   "served": 2257,
+   "source": "StJude",
+   "value": "Black or African American"
+  },
+  {
+   "count": 976,
+   "field": "race",
+   "filter": 976,
+   "filter_error_kinds": [],
+   "served": 976,
+   "source": "Treehouse",
+   "value": "Black or African American"
+  },
+  {
+   "count": 0,
+   "field": "race",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "ccdi-ecDNA",
+   "value": "Black or African American"
+  },
+  {
+   "count": 20,
+   "field": "race",
+   "filter": 20,
+   "filter_error_kinds": [],
+   "served": 20,
+   "source": "ccdi-iusccc-pst",
+   "value": "Black or African American"
+  },
+  {
+   "count": 143,
+   "field": "race",
+   "filter": 143,
+   "filter_error_kinds": [],
+   "served": 143,
+   "source": "CCDI-DCC",
+   "value": "Native Hawaiian or other Pacific Islander"
+  },
+  {
+   "count": 58,
+   "field": "race",
+   "filter": 58,
+   "filter_error_kinds": [],
+   "served": 58,
+   "source": "KidsFirst",
+   "value": "Native Hawaiian or other Pacific Islander"
+  },
+  {
+   "count": 72,
+   "field": "race",
+   "filter": null,
+   "filter_error_kinds": [
+    "ServerConnection"
+   ],
+   "served": 68,
+   "source": "PCDC",
+   "value": "Native Hawaiian or other Pacific Islander"
+  },
+  {
+   "count": 7,
+   "field": "race",
+   "filter": 7,
+   "filter_error_kinds": [],
+   "served": 7,
+   "source": "StJude",
+   "value": "Native Hawaiian or other Pacific Islander"
+  },
+  {
+   "count": 16,
+   "field": "race",
+   "filter": 16,
+   "filter_error_kinds": [],
+   "served": 16,
+   "source": "Treehouse",
+   "value": "Native Hawaiian or other Pacific Islander"
+  },
+  {
+   "count": 0,
+   "field": "race",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "ccdi-ecDNA",
+   "value": "Native Hawaiian or other Pacific Islander"
+  },
+  {
+   "count": 0,
+   "field": "race",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "ccdi-iusccc-pst",
+   "value": "Native Hawaiian or other Pacific Islander"
+  },
+  {
+   "count": 43283,
+   "field": "race",
+   "filter": 43283,
+   "filter_error_kinds": [],
+   "served": 43283,
+   "source": "CCDI-DCC",
+   "value": "White"
+  },
+  {
+   "count": 21516,
+   "field": "race",
+   "filter": 21516,
+   "filter_error_kinds": [],
+   "served": 21516,
+   "source": "KidsFirst",
+   "value": "White"
+  },
+  {
+   "count": 17652,
+   "field": "race",
+   "filter": 17652,
+   "filter_error_kinds": [],
+   "served": 17386,
+   "source": "PCDC",
+   "value": "White"
+  },
+  {
+   "count": 8937,
+   "field": "race",
+   "filter": 8937,
+   "filter_error_kinds": [],
+   "served": 8937,
+   "source": "StJude",
+   "value": "White"
+  },
+  {
+   "count": 8106,
+   "field": "race",
+   "filter": 8107,
+   "filter_error_kinds": [],
+   "served": 8107,
+   "source": "Treehouse",
+   "value": "White"
+  },
+  {
+   "count": 0,
+   "field": "race",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "ccdi-ecDNA",
+   "value": "White"
+  },
+  {
+   "count": 80,
+   "field": "race",
+   "filter": 80,
+   "filter_error_kinds": [],
+   "served": 80,
+   "source": "ccdi-iusccc-pst",
+   "value": "White"
+  },
+  {
+   "count": 4115,
+   "field": "race",
+   "filter": 4115,
+   "filter_error_kinds": [],
+   "served": 4115,
+   "source": "CCDI-DCC",
+   "value": "Unknown"
+  },
+  {
+   "count": 8607,
+   "field": "race",
+   "filter": 8607,
+   "filter_error_kinds": [],
+   "served": 11266,
+   "source": "KidsFirst",
+   "value": "Unknown"
+  },
+  {
+   "count": 2796,
+   "field": "race",
+   "filter": 2796,
+   "filter_error_kinds": [],
+   "served": 2742,
+   "source": "PCDC",
+   "value": "Unknown"
+  },
+  {
+   "count": 2,
+   "field": "race",
+   "filter": 2,
+   "filter_error_kinds": [],
+   "served": 2,
+   "source": "StJude",
+   "value": "Unknown"
+  },
+  {
+   "count": 1548,
+   "field": "race",
+   "filter": 1548,
+   "filter_error_kinds": [],
+   "served": 1548,
+   "source": "Treehouse",
+   "value": "Unknown"
+  },
+  {
+   "count": 0,
+   "field": "race",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "ccdi-ecDNA",
+   "value": "Unknown"
+  },
+  {
+   "count": 404,
+   "field": "race",
+   "filter": 404,
+   "filter_error_kinds": [],
+   "served": 404,
+   "source": "ccdi-iusccc-pst",
+   "value": "Unknown"
+  },
+  {
+   "count": 5830,
+   "field": "race",
+   "filter": 5830,
+   "filter_error_kinds": [],
+   "served": 5830,
+   "source": "CCDI-DCC",
+   "value": "Not Reported"
+  },
+  {
+   "count": 0,
+   "field": "race",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "KidsFirst",
+   "value": "Not Reported"
+  },
+  {
+   "count": 363,
+   "field": "race",
+   "filter": 363,
+   "filter_error_kinds": [],
+   "served": 355,
+   "source": "PCDC",
+   "value": "Not Reported"
+  },
+  {
+   "count": 3444,
+   "field": "race",
+   "filter": 3444,
+   "filter_error_kinds": [],
+   "served": 3444,
+   "source": "StJude",
+   "value": "Not Reported"
+  },
+  {
+   "count": 5,
+   "field": "race",
+   "filter": 5,
+   "filter_error_kinds": [],
+   "served": 5,
+   "source": "Treehouse",
+   "value": "Not Reported"
+  },
+  {
+   "count": 0,
+   "field": "race",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "ccdi-ecDNA",
+   "value": "Not Reported"
+  },
+  {
+   "count": 0,
+   "field": "race",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "ccdi-iusccc-pst",
+   "value": "Not Reported"
+  },
+  {
+   "count": 471,
+   "field": "race",
+   "filter": 471,
+   "filter_error_kinds": [],
+   "served": 471,
+   "source": "CCDI-DCC",
+   "value": "Not allowed to collect"
+  },
+  {
+   "count": 0,
+   "field": "race",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "KidsFirst",
+   "value": "Not allowed to collect"
+  },
+  {
+   "count": 0,
+   "field": "race",
+   "filter": null,
+   "filter_error_kinds": [
+    "InvalidParameters"
+   ],
+   "served": 0,
+   "source": "PCDC",
+   "value": "Not allowed to collect"
+  },
+  {
+   "count": 0,
+   "field": "race",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "StJude",
+   "value": "Not allowed to collect"
+  },
+  {
+   "count": 0,
+   "field": "race",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "Treehouse",
+   "value": "Not allowed to collect"
+  },
+  {
+   "count": 0,
+   "field": "race",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "ccdi-ecDNA",
+   "value": "Not allowed to collect"
+  },
+  {
+   "count": 0,
+   "field": "race",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "ccdi-iusccc-pst",
+   "value": "Not allowed to collect"
+  },
+  {
+   "count": 4090,
+   "field": "ethnicity",
+   "filter": 4090,
+   "filter_error_kinds": [],
+   "served": 4090,
+   "source": "CCDI-DCC",
+   "value": "Hispanic or Latino"
+  },
+  {
+   "count": 4824,
+   "field": "ethnicity",
+   "filter": 4824,
+   "filter_error_kinds": [],
+   "served": 4824,
+   "source": "KidsFirst",
+   "value": "Hispanic or Latino"
+  },
+  {
+   "count": 2916,
+   "field": "ethnicity",
+   "filter": 2916,
+   "filter_error_kinds": [],
+   "served": 2830,
+   "source": "PCDC",
+   "value": "Hispanic or Latino"
+  },
+  {
+   "count": 909,
+   "field": "ethnicity",
+   "filter": 909,
+   "filter_error_kinds": [],
+   "served": 909,
+   "source": "StJude",
+   "value": "Hispanic or Latino"
+  },
+  {
+   "count": 553,
+   "field": "ethnicity",
+   "filter": 553,
+   "filter_error_kinds": [],
+   "served": 553,
+   "source": "Treehouse",
+   "value": "Hispanic or Latino"
+  },
+  {
+   "count": 0,
+   "field": "ethnicity",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "ccdi-ecDNA",
+   "value": "Hispanic or Latino"
+  },
+  {
+   "count": 16,
+   "field": "ethnicity",
+   "filter": 16,
+   "filter_error_kinds": [],
+   "served": 16,
+   "source": "ccdi-iusccc-pst",
+   "value": "Hispanic or Latino"
+  },
+  {
+   "count": 0,
+   "field": "ethnicity",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "CCDI-DCC",
+   "value": "Not Hispanic or Latino"
+  },
+  {
+   "count": 23336,
+   "field": "ethnicity",
+   "filter": 23336,
+   "filter_error_kinds": [],
+   "served": 23336,
+   "source": "KidsFirst",
+   "value": "Not Hispanic or Latino"
+  },
+  {
+   "count": 18038,
+   "field": "ethnicity",
+   "filter": 18038,
+   "filter_error_kinds": [],
+   "served": 17747,
+   "source": "PCDC",
+   "value": "Not Hispanic or Latino"
+  },
+  {
+   "count": 10505,
+   "field": "ethnicity",
+   "filter": 10505,
+   "filter_error_kinds": [],
+   "served": 10505,
+   "source": "StJude",
+   "value": "Not Hispanic or Latino"
+  },
+  {
+   "count": 8323,
+   "field": "ethnicity",
+   "filter": 8323,
+   "filter_error_kinds": [],
+   "served": 8323,
+   "source": "Treehouse",
+   "value": "Not Hispanic or Latino"
+  },
+  {
+   "count": 0,
+   "field": "ethnicity",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "ccdi-ecDNA",
+   "value": "Not Hispanic or Latino"
+  },
+  {
+   "count": 85,
+   "field": "ethnicity",
+   "filter": 85,
+   "filter_error_kinds": [],
+   "served": 85,
+   "source": "ccdi-iusccc-pst",
+   "value": "Not Hispanic or Latino"
+  },
+  {
+   "count": 0,
+   "field": "ethnicity",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "CCDI-DCC",
+   "value": "Unknown"
+  },
+  {
+   "count": 8284,
+   "field": "ethnicity",
+   "filter": 8284,
+   "filter_error_kinds": [],
+   "served": 10280,
+   "source": "KidsFirst",
+   "value": "Unknown"
+  },
+  {
+   "count": 3477,
+   "field": "ethnicity",
+   "filter": 3477,
+   "filter_error_kinds": [],
+   "served": 3451,
+   "source": "PCDC",
+   "value": "Unknown"
+  },
+  {
+   "count": 31,
+   "field": "ethnicity",
+   "filter": 31,
+   "filter_error_kinds": [],
+   "served": 31,
+   "source": "StJude",
+   "value": "Unknown"
+  },
+  {
+   "count": 3062,
+   "field": "ethnicity",
+   "filter": 3062,
+   "filter_error_kinds": [],
+   "served": 3062,
+   "source": "Treehouse",
+   "value": "Unknown"
+  },
+  {
+   "count": 0,
+   "field": "ethnicity",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "ccdi-ecDNA",
+   "value": "Unknown"
+  },
+  {
+   "count": 403,
+   "field": "ethnicity",
+   "filter": 403,
+   "filter_error_kinds": [],
+   "served": 403,
+   "source": "ccdi-iusccc-pst",
+   "value": "Unknown"
+  },
+  {
+   "count": 55705,
+   "field": "ethnicity",
+   "filter": 55705,
+   "filter_error_kinds": [],
+   "served": 55705,
+   "source": "CCDI-DCC",
+   "value": "Not reported"
+  },
+  {
+   "count": 0,
+   "field": "ethnicity",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "KidsFirst",
+   "value": "Not reported"
+  },
+  {
+   "count": 0,
+   "field": "ethnicity",
+   "filter": null,
+   "filter_error_kinds": [
+    "NotFound"
+   ],
+   "served": 0,
+   "source": "PCDC",
+   "value": "Not reported"
+  },
+  {
+   "count": 3234,
+   "field": "ethnicity",
+   "filter": 3234,
+   "filter_error_kinds": [],
+   "served": 3234,
+   "source": "StJude",
+   "value": "Not reported"
+  },
+  {
+   "count": 0,
+   "field": "ethnicity",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "Treehouse",
+   "value": "Not reported"
+  },
+  {
+   "count": 0,
+   "field": "ethnicity",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "ccdi-ecDNA",
+   "value": "Not reported"
+  },
+  {
+   "count": 0,
+   "field": "ethnicity",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "ccdi-iusccc-pst",
+   "value": "Not reported"
+  },
+  {
+   "count": 9641,
+   "field": "vital_status",
+   "filter": 9641,
+   "filter_error_kinds": [],
+   "served": 9641,
+   "source": "CCDI-DCC",
+   "value": "Alive"
+  },
+  {
+   "count": 2238,
+   "field": "vital_status",
+   "filter": 2238,
+   "filter_error_kinds": [],
+   "served": 2238,
+   "source": "KidsFirst",
+   "value": "Alive"
+  },
+  {
+   "count": null,
+   "field": "vital_status",
+   "filter": null,
+   "filter_error_kinds": [
+    "InvalidParameters"
+   ],
+   "served": 0,
+   "source": "PCDC",
+   "value": "Alive"
+  },
+  {
+   "count": 0,
+   "field": "vital_status",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "StJude",
+   "value": "Alive"
+  },
+  {
+   "count": 0,
+   "field": "vital_status",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "Treehouse",
+   "value": "Alive"
+  },
+  {
+   "count": 2057,
+   "field": "vital_status",
+   "filter": 2057,
+   "filter_error_kinds": [],
+   "served": 2057,
+   "source": "ccdi-ecDNA",
+   "value": "Alive"
+  },
+  {
+   "count": 0,
+   "field": "vital_status",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "ccdi-iusccc-pst",
+   "value": "Alive"
+  },
+  {
+   "count": 3678,
+   "field": "vital_status",
+   "filter": 3678,
+   "filter_error_kinds": [],
+   "served": 3678,
+   "source": "CCDI-DCC",
+   "value": "Dead"
+  },
+  {
+   "count": 335,
+   "field": "vital_status",
+   "filter": 335,
+   "filter_error_kinds": [],
+   "served": 335,
+   "source": "KidsFirst",
+   "value": "Dead"
+  },
+  {
+   "count": null,
+   "field": "vital_status",
+   "filter": null,
+   "filter_error_kinds": [
+    "InvalidParameters"
+   ],
+   "served": 0,
+   "source": "PCDC",
+   "value": "Dead"
+  },
+  {
+   "count": 0,
+   "field": "vital_status",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "StJude",
+   "value": "Dead"
+  },
+  {
+   "count": 0,
+   "field": "vital_status",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "Treehouse",
+   "value": "Dead"
+  },
+  {
+   "count": 581,
+   "field": "vital_status",
+   "filter": 581,
+   "filter_error_kinds": [],
+   "served": 581,
+   "source": "ccdi-ecDNA",
+   "value": "Dead"
+  },
+  {
+   "count": 54,
+   "field": "vital_status",
+   "filter": 54,
+   "filter_error_kinds": [],
+   "served": 54,
+   "source": "ccdi-iusccc-pst",
+   "value": "Dead"
+  },
+  {
+   "count": 30548,
+   "field": "vital_status",
+   "filter": 30548,
+   "filter_error_kinds": [],
+   "served": 30548,
+   "source": "CCDI-DCC",
+   "value": "Unknown"
+  },
+  {
+   "count": 0,
+   "field": "vital_status",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "KidsFirst",
+   "value": "Unknown"
+  },
+  {
+   "count": null,
+   "field": "vital_status",
+   "filter": null,
+   "filter_error_kinds": [
+    "InvalidParameters"
+   ],
+   "served": 0,
+   "source": "PCDC",
+   "value": "Unknown"
+  },
+  {
+   "count": 0,
+   "field": "vital_status",
+   "filter": 31,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "StJude",
+   "value": "Unknown"
+  },
+  {
+   "count": 0,
+   "field": "vital_status",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "Treehouse",
+   "value": "Unknown"
+  },
+  {
+   "count": 567,
+   "field": "vital_status",
+   "filter": 567,
+   "filter_error_kinds": [],
+   "served": 567,
+   "source": "ccdi-ecDNA",
+   "value": "Unknown"
+  },
+  {
+   "count": 339,
+   "field": "vital_status",
+   "filter": 339,
+   "filter_error_kinds": [],
+   "served": 339,
+   "source": "ccdi-iusccc-pst",
+   "value": "Unknown"
+  },
+  {
+   "count": 1695,
+   "field": "vital_status",
+   "filter": 1695,
+   "filter_error_kinds": [],
+   "served": 1695,
+   "source": "CCDI-DCC",
+   "value": "Not reported"
+  },
+  {
+   "count": 3,
+   "field": "vital_status",
+   "filter": 3,
+   "filter_error_kinds": [],
+   "served": 3,
+   "source": "KidsFirst",
+   "value": "Not reported"
+  },
+  {
+   "count": null,
+   "field": "vital_status",
+   "filter": null,
+   "filter_error_kinds": [
+    "InvalidParameters"
+   ],
+   "served": 0,
+   "source": "PCDC",
+   "value": "Not reported"
+  },
+  {
+   "count": 0,
+   "field": "vital_status",
+   "filter": 3234,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "StJude",
+   "value": "Not reported"
+  },
+  {
+   "count": 0,
+   "field": "vital_status",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "Treehouse",
+   "value": "Not reported"
+  },
+  {
+   "count": 0,
+   "field": "vital_status",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "ccdi-ecDNA",
+   "value": "Not reported"
+  },
+  {
+   "count": 0,
+   "field": "vital_status",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "ccdi-iusccc-pst",
+   "value": "Not reported"
+  },
+  {
+   "count": 1,
+   "field": "vital_status",
+   "filter": 1,
+   "filter_error_kinds": [],
+   "served": 1,
+   "source": "CCDI-DCC",
+   "value": "Unspecified"
+  },
+  {
+   "count": 0,
+   "field": "vital_status",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "KidsFirst",
+   "value": "Unspecified"
+  },
+  {
+   "count": null,
+   "field": "vital_status",
+   "filter": null,
+   "filter_error_kinds": [
+    "InvalidParameters"
+   ],
+   "served": 0,
+   "source": "PCDC",
+   "value": "Unspecified"
+  },
+  {
+   "count": 0,
+   "field": "vital_status",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "StJude",
+   "value": "Unspecified"
+  },
+  {
+   "count": 0,
+   "field": "vital_status",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "Treehouse",
+   "value": "Unspecified"
+  },
+  {
+   "count": 0,
+   "field": "vital_status",
+   "filter": 0,
+   "filter_error_kinds": [],
+   "served": 0,
+   "source": "ccdi-ecDNA",
+   "value": "Unspecified"
+  },
+  {
+   "count": 111,
+   "field": "vital_status",
+   "filter": 111,
+   "filter_error_kinds": [],
+   "served": 111,
+   "source": "ccdi-iusccc-pst",
+   "value": "Unspecified"
+  }
+ ],
+ "counts": {
+  "ethnicity": {
+   "sources": {
+    "CCDI-DCC": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 0,
+     "total": 59795,
+     "values": {
+      "Hispanic or Latino": 4090,
+      "Not reported": 55705
+     }
+    },
+    "KidsFirst": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 0,
+     "total": 36444,
+     "values": {
+      "Hispanic or Latino": 4824,
+      "Not Hispanic or Latino": 23336,
+      "Unknown": 8284
+     }
+    },
+    "PCDC": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 1,
+     "total": 24432,
+     "values": {
+      "Hispanic or Latino": 2916,
+      "Not Hispanic or Latino": 18038,
+      "Unknown": 3477
+     }
+    },
+    "StJude": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 2,
+     "total": 14681,
+     "values": {
+      "Hispanic or Latino": 909,
+      "Not Hispanic or Latino": 10505,
+      "Not reported": 3234,
+      "Unknown": 31
+     }
+    },
+    "Treehouse": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 785,
+     "total": 12723,
+     "values": {
+      "Hispanic or Latino": 553,
+      "Not Hispanic or Latino": 8323,
+      "Unknown": 3062
+     }
+    },
+    "ccdi-ecDNA": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 3205,
+     "total": 3205,
+     "values": {}
+    },
+    "ccdi-iusccc-pst": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 0,
+     "total": 504,
+     "values": {
+      "Hispanic or Latino": 16,
+      "Not Hispanic or Latino": 85,
+      "Unknown": 403
+     }
+    }
+   },
+   "status": 200
+  },
+  "race": {
+   "sources": {
+    "CCDI-DCC": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 24,
+     "total": 59795,
+     "values": {
+      "American Indian or Alaska Native": 342,
+      "Asian": 1537,
+      "Black or African American": 4481,
+      "Native Hawaiian or other Pacific Islander": 143,
+      "Not Reported": 5830,
+      "Not allowed to collect": 471,
+      "Unknown": 4115,
+      "White": 43283
+     }
+    },
+    "KidsFirst": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 0,
+     "total": 35781,
+     "values": {
+      "American Indian or Alaska Native": 123,
+      "Asian": 3234,
+      "Black or African American": 2243,
+      "Native Hawaiian or other Pacific Islander": 58,
+      "Unknown": 8607,
+      "White": 21516
+     }
+    },
+    "PCDC": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 0,
+     "total": 24432,
+     "values": {
+      "American Indian or Alaska Native": 119,
+      "Asian": 778,
+      "Black or African American": 2652,
+      "Native Hawaiian or other Pacific Islander": 72,
+      "Not Reported": 363,
+      "Unknown": 2796,
+      "White": 17652
+     }
+    },
+    "StJude": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 12,
+     "total": 14842,
+     "values": {
+      "American Indian or Alaska Native": 53,
+      "Asian": 130,
+      "Black or African American": 2257,
+      "Native Hawaiian or other Pacific Islander": 7,
+      "Not Reported": 3444,
+      "Unknown": 2,
+      "White": 8937
+     }
+    },
+    "Treehouse": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 1407,
+     "total": 12723,
+     "values": {
+      "Asian": 664,
+      "Black or African American": 976,
+      "Native Hawaiian or other Pacific Islander": 16,
+      "Not Reported": 5,
+      "Unknown": 1548,
+      "White": 8106,
+      "White,Asian": 1
+     }
+    },
+    "ccdi-ecDNA": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 3205,
+     "total": 3205,
+     "values": {}
+    },
+    "ccdi-iusccc-pst": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 0,
+     "total": 504,
+     "values": {
+      "Black or African American": 20,
+      "Unknown": 404,
+      "White": 80
+     }
+    }
+   },
+   "status": 200
+  },
+  "sex": {
+   "sources": {
+    "CCDI-DCC": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 0,
+     "total": 59795,
+     "values": {
+      "F": 27510,
+      "M": 31853,
+      "U": 432
+     }
+    },
+    "KidsFirst": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 0,
+     "total": 38439,
+     "values": {
+      "F": 18122,
+      "M": 19827,
+      "U": 490
+     }
+    },
+    "PCDC": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 11,
+     "total": 24432,
+     "values": {
+      "F": 11327,
+      "M": 13094
+     }
+    },
+    "StJude": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 1325,
+     "total": 14681,
+     "values": {
+      "F": 6408,
+      "M": 6948
+     }
+    },
+    "Treehouse": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 0,
+     "total": 12723,
+     "values": {
+      "F": 5965,
+      "M": 6229,
+      "U": 529
+     }
+    },
+    "ccdi-ecDNA": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 0,
+     "total": 3205,
+     "values": {
+      "F": 1372,
+      "M": 1720,
+      "U": 113
+     }
+    },
+    "ccdi-iusccc-pst": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 0,
+     "total": 504,
+     "values": {
+      "F": 226,
+      "M": 276,
+      "U": 2
+     }
+    }
+   },
+   "status": 200
+  },
+  "vital_status": {
+   "sources": {
+    "CCDI-DCC": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 14232,
+     "total": 59795,
+     "values": {
+      "Alive": 9641,
+      "Dead": 3678,
+      "Not reported": 1695,
+      "Unknown": 30548,
+      "Unspecified": 1
+     }
+    },
+    "KidsFirst": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 0,
+     "total": 2576,
+     "values": {
+      "Alive": 2238,
+      "Dead": 335,
+      "Not reported": 3
+     }
+    },
+    "PCDC": {
+     "error": true,
+     "error_kinds": [
+      "ServerConnection"
+     ],
+     "missing": null,
+     "total": null,
+     "values": {}
+    },
+    "StJude": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 14681,
+     "total": 14681,
+     "values": {}
+    },
+    "Treehouse": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 12723,
+     "total": 12723,
+     "values": {}
+    },
+    "ccdi-ecDNA": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 0,
+     "total": 3205,
+     "values": {
+      "Alive": 2057,
+      "Dead": 581,
+      "Unknown": 567
+     }
+    },
+    "ccdi-iusccc-pst": {
+     "error": false,
+     "error_kinds": [],
+     "missing": 0,
+     "total": 504,
+     "values": {
+      "Dead": 54,
+      "Unknown": 339,
+      "Unspecified": 111
+     }
+    }
+   },
+   "status": 200
+  }
+ },
+ "filters": {
+  "ethnicity": {
+   "Hispanic or Latino": {
+    "sources": {
+     "CCDI-DCC": {
+      "all": 4090,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Hispanic or Latino": 1
+      },
+      "with_value": 1
+     },
+     "KidsFirst": {
+      "all": 4824,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Hispanic or Latino": 1
+      },
+      "with_value": 1
+     },
+     "PCDC": {
+      "all": 2916,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Hispanic or Latino": 1
+      },
+      "with_value": 1
+     },
+     "StJude": {
+      "all": 909,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Hispanic or Latino": 1
+      },
+      "with_value": 1
+     },
+     "Treehouse": {
+      "all": 553,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Hispanic or Latino": 1
+      },
+      "with_value": 1
+     },
+     "ccdi-ecDNA": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "ccdi-iusccc-pst": {
+      "all": 16,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Hispanic or Latino": 1
+      },
+      "with_value": 1
+     }
+    },
+    "status": 200
+   },
+   "Not Hispanic or Latino": {
+    "sources": {
+     "CCDI-DCC": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "KidsFirst": {
+      "all": 23336,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Not Hispanic or Latino": 1
+      },
+      "with_value": 1
+     },
+     "PCDC": {
+      "all": 18038,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Not Hispanic or Latino": 1
+      },
+      "with_value": 1
+     },
+     "StJude": {
+      "all": 10505,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Not Hispanic or Latino": 1
+      },
+      "with_value": 1
+     },
+     "Treehouse": {
+      "all": 8323,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Not Hispanic or Latino": 1
+      },
+      "with_value": 1
+     },
+     "ccdi-ecDNA": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "ccdi-iusccc-pst": {
+      "all": 85,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Not Hispanic or Latino": 1
+      },
+      "with_value": 1
+     }
+    },
+    "status": 200
+   },
+   "Not reported": {
+    "sources": {
+     "CCDI-DCC": {
+      "all": 55705,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Not reported": 1
+      },
+      "with_value": 1
+     },
+     "KidsFirst": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "PCDC": {
+      "all": null,
+      "entries": null,
+      "error": true,
+      "error_kinds": [
+       "NotFound"
+      ],
+      "values": {},
+      "with_value": 0
+     },
+     "StJude": {
+      "all": 3234,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "Treehouse": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "ccdi-ecDNA": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "ccdi-iusccc-pst": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     }
+    },
+    "status": 200
+   },
+   "Unknown": {
+    "sources": {
+     "CCDI-DCC": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "KidsFirst": {
+      "all": 8284,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Unknown": 1
+      },
+      "with_value": 1
+     },
+     "PCDC": {
+      "all": 3477,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Unknown": 1
+      },
+      "with_value": 1
+     },
+     "StJude": {
+      "all": 31,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "Treehouse": {
+      "all": 3062,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Unknown": 1
+      },
+      "with_value": 1
+     },
+     "ccdi-ecDNA": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "ccdi-iusccc-pst": {
+      "all": 403,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Unknown": 1
+      },
+      "with_value": 1
+     }
+    },
+    "status": 200
+   }
+  },
+  "race": {
+   "American Indian or Alaska Native": {
+    "sources": {
+     "CCDI-DCC": {
+      "all": 342,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "American Indian or Alaska Native": 1
+      },
+      "with_value": 1
+     },
+     "KidsFirst": {
+      "all": 123,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "American Indian or Alaska Native": 1
+      },
+      "with_value": 1
+     },
+     "PCDC": {
+      "all": 119,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "American Indian or Alaska Native": 1
+      },
+      "with_value": 1
+     },
+     "StJude": {
+      "all": 53,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "American Indian or Alaska Native": 1,
+       "White": 1
+      },
+      "with_value": 1
+     },
+     "Treehouse": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "ccdi-ecDNA": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "ccdi-iusccc-pst": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     }
+    },
+    "status": 200
+   },
+   "Asian": {
+    "sources": {
+     "CCDI-DCC": {
+      "all": 1537,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Asian": 1
+      },
+      "with_value": 1
+     },
+     "KidsFirst": {
+      "all": 3234,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Asian": 1
+      },
+      "with_value": 1
+     },
+     "PCDC": {
+      "all": 778,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Asian": 1
+      },
+      "with_value": 1
+     },
+     "StJude": {
+      "all": 130,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Asian": 1
+      },
+      "with_value": 1
+     },
+     "Treehouse": {
+      "all": 665,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Asian": 1
+      },
+      "with_value": 1
+     },
+     "ccdi-ecDNA": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "ccdi-iusccc-pst": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     }
+    },
+    "status": 200
+   },
+   "Black or African American": {
+    "sources": {
+     "CCDI-DCC": {
+      "all": 4481,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Black or African American": 1
+      },
+      "with_value": 1
+     },
+     "KidsFirst": {
+      "all": 2243,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Black or African American": 1
+      },
+      "with_value": 1
+     },
+     "PCDC": {
+      "all": null,
+      "entries": null,
+      "error": true,
+      "error_kinds": [
+       "ServerConnection"
+      ],
+      "values": {},
+      "with_value": 0
+     },
+     "StJude": {
+      "all": 2257,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Black or African American": 1
+      },
+      "with_value": 1
+     },
+     "Treehouse": {
+      "all": 976,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Black or African American": 1
+      },
+      "with_value": 1
+     },
+     "ccdi-ecDNA": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "ccdi-iusccc-pst": {
+      "all": 20,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Black or African American": 1
+      },
+      "with_value": 1
+     }
+    },
+    "status": 200
+   },
+   "Native Hawaiian or other Pacific Islander": {
+    "sources": {
+     "CCDI-DCC": {
+      "all": 143,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Native Hawaiian or other Pacific Islander": 1
+      },
+      "with_value": 1
+     },
+     "KidsFirst": {
+      "all": 58,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Native Hawaiian or other Pacific Islander": 1
+      },
+      "with_value": 1
+     },
+     "PCDC": {
+      "all": null,
+      "entries": null,
+      "error": true,
+      "error_kinds": [
+       "ServerConnection"
+      ],
+      "values": {},
+      "with_value": 0
+     },
+     "StJude": {
+      "all": 7,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Native Hawaiian or other Pacific Islander": 1
+      },
+      "with_value": 1
+     },
+     "Treehouse": {
+      "all": 16,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Native Hawaiian or other Pacific Islander": 1
+      },
+      "with_value": 1
+     },
+     "ccdi-ecDNA": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "ccdi-iusccc-pst": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     }
+    },
+    "status": 200
+   },
+   "Not Reported": {
+    "sources": {
+     "CCDI-DCC": {
+      "all": 5830,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Not Reported": 1
+      },
+      "with_value": 1
+     },
+     "KidsFirst": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "PCDC": {
+      "all": 363,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Not Reported": 1
+      },
+      "with_value": 1
+     },
+     "StJude": {
+      "all": 3444,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Not Reported": 1
+      },
+      "with_value": 1
+     },
+     "Treehouse": {
+      "all": 5,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Not Reported": 1
+      },
+      "with_value": 1
+     },
+     "ccdi-ecDNA": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "ccdi-iusccc-pst": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     }
+    },
+    "status": 200
+   },
+   "Not allowed to collect": {
+    "sources": {
+     "CCDI-DCC": {
+      "all": 471,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Not allowed to collect": 1
+      },
+      "with_value": 1
+     },
+     "KidsFirst": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "PCDC": {
+      "all": null,
+      "entries": null,
+      "error": true,
+      "error_kinds": [
+       "InvalidParameters"
+      ],
+      "values": {},
+      "with_value": 0
+     },
+     "StJude": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "Treehouse": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "ccdi-ecDNA": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "ccdi-iusccc-pst": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     }
+    },
+    "status": 200
+   },
+   "Unknown": {
+    "sources": {
+     "CCDI-DCC": {
+      "all": 4115,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Unknown": 1
+      },
+      "with_value": 1
+     },
+     "KidsFirst": {
+      "all": 8607,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Unknown": 1
+      },
+      "with_value": 1
+     },
+     "PCDC": {
+      "all": 2796,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Unknown": 1
+      },
+      "with_value": 1
+     },
+     "StJude": {
+      "all": 2,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Unknown": 1
+      },
+      "with_value": 1
+     },
+     "Treehouse": {
+      "all": 1548,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Unknown": 1
+      },
+      "with_value": 1
+     },
+     "ccdi-ecDNA": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "ccdi-iusccc-pst": {
+      "all": 404,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Unknown": 1
+      },
+      "with_value": 1
+     }
+    },
+    "status": 200
+   },
+   "White": {
+    "sources": {
+     "CCDI-DCC": {
+      "all": 43283,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "White": 1
+      },
+      "with_value": 1
+     },
+     "KidsFirst": {
+      "all": 21516,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "White": 1
+      },
+      "with_value": 1
+     },
+     "PCDC": {
+      "all": 17652,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "White": 1
+      },
+      "with_value": 1
+     },
+     "StJude": {
+      "all": 8937,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "White": 1
+      },
+      "with_value": 1
+     },
+     "Treehouse": {
+      "all": 8107,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "White": 1
+      },
+      "with_value": 1
+     },
+     "ccdi-ecDNA": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "ccdi-iusccc-pst": {
+      "all": 80,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "White": 1
+      },
+      "with_value": 1
+     }
+    },
+    "status": 200
+   }
+  },
+  "sex": {
+   "F": {
+    "sources": {
+     "CCDI-DCC": {
+      "all": 27510,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "F": 1
+      },
+      "with_value": 1
+     },
+     "KidsFirst": {
+      "all": 18122,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "F": 1
+      },
+      "with_value": 1
+     },
+     "PCDC": {
+      "all": 11327,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "F": 1
+      },
+      "with_value": 1
+     },
+     "StJude": {
+      "all": 6408,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "F": 1
+      },
+      "with_value": 1
+     },
+     "Treehouse": {
+      "all": 5965,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "F": 1
+      },
+      "with_value": 1
+     },
+     "ccdi-ecDNA": {
+      "all": 1372,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "F": 1
+      },
+      "with_value": 1
+     },
+     "ccdi-iusccc-pst": {
+      "all": 226,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "F": 1
+      },
+      "with_value": 1
+     }
+    },
+    "status": 200
+   },
+   "M": {
+    "sources": {
+     "CCDI-DCC": {
+      "all": 31853,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "M": 1
+      },
+      "with_value": 1
+     },
+     "KidsFirst": {
+      "all": 19827,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "M": 1
+      },
+      "with_value": 1
+     },
+     "PCDC": {
+      "all": 13094,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "M": 1
+      },
+      "with_value": 1
+     },
+     "StJude": {
+      "all": 6948,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "M": 1
+      },
+      "with_value": 1
+     },
+     "Treehouse": {
+      "all": 6229,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "M": 1
+      },
+      "with_value": 1
+     },
+     "ccdi-ecDNA": {
+      "all": 1720,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "M": 1
+      },
+      "with_value": 1
+     },
+     "ccdi-iusccc-pst": {
+      "all": 276,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "M": 1
+      },
+      "with_value": 1
+     }
+    },
+    "status": 200
+   },
+   "U": {
+    "sources": {
+     "CCDI-DCC": {
+      "all": 396,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "U": 1
+      },
+      "with_value": 1
+     },
+     "KidsFirst": {
+      "all": 490,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "U": 1
+      },
+      "with_value": 1
+     },
+     "PCDC": {
+      "all": null,
+      "entries": null,
+      "error": true,
+      "error_kinds": [
+       "NotFound"
+      ],
+      "values": {},
+      "with_value": 0
+     },
+     "StJude": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "Treehouse": {
+      "all": 529,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "U": 1
+      },
+      "with_value": 1
+     },
+     "ccdi-ecDNA": {
+      "all": 113,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "U": 1
+      },
+      "with_value": 1
+     },
+     "ccdi-iusccc-pst": {
+      "all": 2,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "U": 1
+      },
+      "with_value": 1
+     }
+    },
+    "status": 200
+   }
+  },
+  "vital_status": {
+   "Alive": {
+    "sources": {
+     "CCDI-DCC": {
+      "all": 9641,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Alive": 1
+      },
+      "with_value": 1
+     },
+     "KidsFirst": {
+      "all": 2238,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Alive": 1
+      },
+      "with_value": 1
+     },
+     "PCDC": {
+      "all": null,
+      "entries": null,
+      "error": true,
+      "error_kinds": [
+       "InvalidParameters"
+      ],
+      "values": {},
+      "with_value": 0
+     },
+     "StJude": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "Treehouse": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "ccdi-ecDNA": {
+      "all": 2057,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Alive": 1
+      },
+      "with_value": 1
+     },
+     "ccdi-iusccc-pst": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     }
+    },
+    "status": 200
+   },
+   "Dead": {
+    "sources": {
+     "CCDI-DCC": {
+      "all": 3678,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Dead": 1
+      },
+      "with_value": 1
+     },
+     "KidsFirst": {
+      "all": 335,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Dead": 1
+      },
+      "with_value": 1
+     },
+     "PCDC": {
+      "all": null,
+      "entries": null,
+      "error": true,
+      "error_kinds": [
+       "InvalidParameters"
+      ],
+      "values": {},
+      "with_value": 0
+     },
+     "StJude": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "Treehouse": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "ccdi-ecDNA": {
+      "all": 581,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Dead": 1
+      },
+      "with_value": 1
+     },
+     "ccdi-iusccc-pst": {
+      "all": 54,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Dead": 1
+      },
+      "with_value": 1
+     }
+    },
+    "status": 200
+   },
+   "Not reported": {
+    "sources": {
+     "CCDI-DCC": {
+      "all": 1695,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Not reported": 1
+      },
+      "with_value": 1
+     },
+     "KidsFirst": {
+      "all": 3,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Not reported": 1
+      },
+      "with_value": 1
+     },
+     "PCDC": {
+      "all": null,
+      "entries": null,
+      "error": true,
+      "error_kinds": [
+       "InvalidParameters"
+      ],
+      "values": {},
+      "with_value": 0
+     },
+     "StJude": {
+      "all": 3234,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "Treehouse": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "ccdi-ecDNA": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "ccdi-iusccc-pst": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     }
+    },
+    "status": 200
+   },
+   "Unknown": {
+    "sources": {
+     "CCDI-DCC": {
+      "all": 30548,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Unknown": 1
+      },
+      "with_value": 1
+     },
+     "KidsFirst": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "PCDC": {
+      "all": null,
+      "entries": null,
+      "error": true,
+      "error_kinds": [
+       "InvalidParameters"
+      ],
+      "values": {},
+      "with_value": 0
+     },
+     "StJude": {
+      "all": 31,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "Treehouse": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "ccdi-ecDNA": {
+      "all": 567,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Unknown": 1
+      },
+      "with_value": 1
+     },
+     "ccdi-iusccc-pst": {
+      "all": 339,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Unknown": 1
+      },
+      "with_value": 1
+     }
+    },
+    "status": 200
+   },
+   "Unspecified": {
+    "sources": {
+     "CCDI-DCC": {
+      "all": 1,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Unspecified": 1
+      },
+      "with_value": 1
+     },
+     "KidsFirst": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "PCDC": {
+      "all": null,
+      "entries": null,
+      "error": true,
+      "error_kinds": [
+       "InvalidParameters"
+      ],
+      "values": {},
+      "with_value": 0
+     },
+     "StJude": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "Treehouse": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "ccdi-ecDNA": {
+      "all": 0,
+      "entries": 0,
+      "error": false,
+      "error_kinds": [],
+      "values": {},
+      "with_value": 0
+     },
+     "ccdi-iusccc-pst": {
+      "all": 111,
+      "entries": 1,
+      "error": false,
+      "error_kinds": [],
+      "values": {
+       "Unspecified": 1
+      },
+      "with_value": 1
+     }
+    },
+    "status": 200
+   }
+  }
+ },
+ "finished_at": "2026-10-25T15:02:38Z",
+ "gaps_over_10": [
+  {
+   "count": 432,
+   "field": "sex",
+   "filter": 396,
+   "filter_error_kinds": [],
+   "served": 432,
+   "source": "CCDI-DCC",
+   "value": "U"
+  },
+  {
+   "count": 8607,
+   "field": "race",
+   "filter": 8607,
+   "filter_error_kinds": [],
+   "served": 11266,
+   "source": "KidsFirst",
+   "value": "Unknown"
+  },
+  {
+   "count": 8284,
+   "field": "ethnicity",
+   "filter": 8284,
+   "filter_error_kinds": [],
+   "served": 10280,
+   "source": "KidsFirst",
+   "value": "Unknown"
+  }
+ ],
+ "grades": {
+  "K1": "pass",
+  "K2": "pass",
+  "K3": "pass",
+  "R1": "fail",
+  "R2": "fail",
+  "R3": "fail"
+ },
+ "kidsfirst": {
+  "both_unreached": 1632,
+  "by_namespace": {
+   "sd-0tyvy1tw": {
+    "both_unreached": 3,
+    "eth_unknown": 226,
+    "eth_unreached": 3,
+    "race_unknown": 234,
+    "race_unreached": 5,
+    "subjects": 334
+   },
+   "sd-15a2mqq9": {
+    "both_unreached": 0,
+    "eth_unknown": 69,
+    "eth_unreached": 0,
+    "race_unknown": 69,
+    "race_unreached": 0,
+    "subjects": 345
+   },
+   "sd-1nns3k8v": {
+    "both_unreached": 0,
+    "eth_unknown": 0,
+    "eth_unreached": 0,
+    "race_unknown": 0,
+    "race_unreached": 0,
+    "subjects": 149
+   },
+   "sd-2cekq05v": {
+    "both_unreached": 0,
+    "eth_unknown": 389,
+    "eth_unreached": 0,
+    "race_unknown": 223,
+    "race_unreached": 0,
+    "subjects": 430
+   },
+   "sd-46sk55a3": {
+    "both_unreached": 79,
+    "eth_unknown": 640,
+    "eth_unreached": 79,
+    "race_unknown": 779,
+    "race_unreached": 455,
+    "subjects": 3959
+   },
+   "sd-54g4wg4r": {
+    "both_unreached": 0,
+    "eth_unknown": 251,
+    "eth_unreached": 1,
+    "race_unknown": 266,
+    "race_unreached": 0,
+    "subjects": 517
+   },
+   "sd-65064p2z": {
+    "both_unreached": 1,
+    "eth_unknown": 28,
+    "eth_unreached": 1,
+    "race_unknown": 124,
+    "race_unreached": 7,
+    "subjects": 1327
+   },
+   "sd-6fpyjqbr": {
+    "both_unreached": 0,
+    "eth_unknown": 183,
+    "eth_unreached": 0,
+    "race_unknown": 183,
+    "race_unreached": 0,
+    "subjects": 183
+   },
+   "sd-7nq9151j": {
+    "both_unreached": 0,
+    "eth_unknown": 123,
+    "eth_unreached": 0,
+    "race_unknown": 114,
+    "race_unreached": 0,
+    "subjects": 211
+   },
+   "sd-7ydc1w4h": {
+    "both_unreached": 0,
+    "eth_unknown": 24,
+    "eth_unreached": 2,
+    "race_unknown": 56,
+    "race_unreached": 0,
+    "subjects": 535
+   },
+   "sd-9pyzahhe": {
+    "both_unreached": 47,
+    "eth_unknown": 244,
+    "eth_unreached": 244,
+    "race_unknown": 51,
+    "race_unreached": 47,
+    "subjects": 1414
+   },
+   "sd-aq9kvn5p": {
+    "both_unreached": 34,
+    "eth_unknown": 51,
+    "eth_unreached": 51,
+    "race_unknown": 131,
+    "race_unreached": 131,
+    "subjects": 1339
+   },
+   "sd-b8x3c1mx": {
+    "both_unreached": 64,
+    "eth_unknown": 64,
+    "eth_unreached": 64,
+    "race_unknown": 122,
+    "race_unreached": 75,
+    "subjects": 245
+   },
+   "sd-bhjxbdqk": {
+    "both_unreached": 0,
+    "eth_unknown": 3192,
+    "eth_unreached": 0,
+    "race_unknown": 3797,
+    "race_unreached": 0,
+    "subjects": 7706
+   },
+   "sd-cp7yk94e": {
+    "both_unreached": 0,
+    "eth_unknown": 0,
+    "eth_unreached": 0,
+    "race_unknown": 0,
+    "race_unreached": 0,
+    "subjects": 828
+   },
+   "sd-dk0krwk8": {
+    "both_unreached": 0,
+    "eth_unknown": 0,
+    "eth_unreached": 0,
+    "race_unknown": 0,
+    "race_unreached": 0,
+    "subjects": 759
+   },
+   "sd-dypmehhf": {
+    "both_unreached": 1090,
+    "eth_unknown": 1120,
+    "eth_unreached": 1120,
+    "race_unknown": 1109,
+    "race_unreached": 1109,
+    "subjects": 1681
+   },
+   "sd-dz4gpqx6": {
+    "both_unreached": 0,
+    "eth_unknown": 4,
+    "eth_unreached": 0,
+    "race_unknown": 318,
+    "race_unreached": 0,
+    "subjects": 334
+   },
+   "sd-dztb5hrr": {
+    "both_unreached": 34,
+    "eth_unknown": 34,
+    "eth_unreached": 34,
+    "race_unknown": 77,
+    "race_unreached": 43,
+    "subjects": 801
+   },
+   "sd-fycr78w0": {
+    "both_unreached": 6,
+    "eth_unknown": 15,
+    "eth_unreached": 11,
+    "race_unknown": 51,
+    "race_unreached": 42,
+    "subjects": 530
+   },
+   "sd-gpzg67fz": {
+    "both_unreached": 0,
+    "eth_unknown": 0,
+    "eth_unreached": 0,
+    "race_unknown": 0,
+    "race_unreached": 0,
+    "subjects": 50
+   },
+   "sd-j1e7e7ye": {
+    "both_unreached": 0,
+    "eth_unknown": 1,
+    "eth_unreached": 0,
+    "race_unknown": 26,
+    "race_unreached": 0,
+    "subjects": 393
+   },
+   "sd-jk4z4t6v": {
+    "both_unreached": 0,
+    "eth_unknown": 121,
+    "eth_unreached": 0,
+    "race_unknown": 23,
+    "race_unreached": 0,
+    "subjects": 739
+   },
+   "sd-jws3v24d": {
+    "both_unreached": 0,
+    "eth_unknown": 1777,
+    "eth_unreached": 0,
+    "race_unknown": 376,
+    "race_unreached": 324,
+    "subjects": 1777
+   },
+   "sd-me0wme0w": {
+    "both_unreached": 0,
+    "eth_unknown": 2,
+    "eth_unreached": 1,
+    "race_unknown": 6,
+    "race_unreached": 0,
+    "subjects": 22
+   },
+   "sd-nmvv8a1y": {
+    "both_unreached": 36,
+    "eth_unknown": 45,
+    "eth_unreached": 44,
+    "race_unknown": 63,
+    "race_unreached": 46,
+    "subjects": 1543
+   },
+   "sd-p445achv": {
+    "both_unreached": 0,
+    "eth_unknown": 43,
+    "eth_unreached": 0,
+    "race_unknown": 52,
+    "race_unreached": 0,
+    "subjects": 766
+   },
+   "sd-pet7q6f2": {
+    "both_unreached": 0,
+    "eth_unknown": 22,
+    "eth_unreached": 0,
+    "race_unknown": 26,
+    "race_unreached": 4,
+    "subjects": 60
+   },
+   "sd-preasa7s": {
+    "both_unreached": 1,
+    "eth_unknown": 222,
+    "eth_unreached": 1,
+    "race_unknown": 357,
+    "race_unreached": 37,
+    "subjects": 2330
+   },
+   "sd-q2f7xa29": {
+    "both_unreached": 0,
+    "eth_unknown": 0,
+    "eth_unreached": 0,
+    "race_unknown": 181,
+    "race_unreached": 0,
+    "subjects": 774
+   },
+   "sd-qbg7p5p7": {
+    "both_unreached": 0,
+    "eth_unknown": 3,
+    "eth_unreached": 0,
+    "race_unknown": 27,
+    "race_unreached": 0,
+    "subjects": 356
+   },
+   "sd-r0eprsgs": {
+    "both_unreached": 0,
+    "eth_unknown": 2,
+    "eth_unreached": 0,
+    "race_unknown": 816,
+    "race_unreached": 0,
+    "subjects": 1060
+   },
+   "sd-rm8afw0r": {
+    "both_unreached": 0,
+    "eth_unknown": 0,
+    "eth_unreached": 0,
+    "race_unknown": 73,
+    "race_unreached": 0,
+    "subjects": 599
+   },
+   "sd-t8vsyrsg": {
+    "both_unreached": 0,
+    "eth_unknown": 0,
+    "eth_unreached": 0,
+    "race_unknown": 5,
+    "race_unreached": 0,
+    "subjects": 41
+   },
+   "sd-vttshwv4": {
+    "both_unreached": 11,
+    "eth_unknown": 44,
+    "eth_unreached": 44,
+    "race_unknown": 21,
+    "race_unreached": 17,
+    "subjects": 237
+   },
+   "sd-w0v965xz": {
+    "both_unreached": 104,
+    "eth_unknown": 104,
+    "eth_unreached": 104,
+    "race_unknown": 104,
+    "race_unreached": 104,
+    "subjects": 185
+   },
+   "sd-w6fwtd8a": {
+    "both_unreached": 0,
+    "eth_unknown": 0,
+    "eth_unreached": 0,
+    "race_unknown": 0,
+    "race_unreached": 0,
+    "subjects": 1057
+   },
+   "sd-y6vrg6md": {
+    "both_unreached": 1,
+    "eth_unknown": 29,
+    "eth_unreached": 1,
+    "race_unknown": 78,
+    "race_unreached": 2,
+    "subjects": 382
+   },
+   "sd-ygva0e1c": {
+    "both_unreached": 7,
+    "eth_unknown": 1025,
+    "eth_unreached": 14,
+    "race_unknown": 1044,
+    "race_unreached": 32,
+    "subjects": 1287
+   },
+   "sd-z0d9n23x": {
+    "both_unreached": 0,
+    "eth_unknown": 1,
+    "eth_unreached": 1,
+    "race_unknown": 14,
+    "race_unreached": 1,
+    "subjects": 353
+   },
+   "sd-zfgdg5ys": {
+    "both_unreached": 114,
+    "eth_unknown": 135,
+    "eth_unreached": 129,
+    "race_unknown": 242,
+    "race_unreached": 178,
+    "subjects": 718
+   },
+   "sd-zxjffmef": {
+    "both_unreached": 0,
+    "eth_unknown": 47,
+    "eth_unreached": 47,
+    "race_unknown": 28,
+    "race_unreached": 0,
+    "subjects": 84
+   }
+  },
+  "either_unreached": 3023,
+  "ethnicity": {
+   "served_unknown": 10280,
+   "unreached": 1996,
+   "walked_distinct": 8284,
+   "walked_entries": 8284,
+   "walked_not_in_snapshot": 0,
+   "walked_without_value_in_snapshot": 0
+  },
+  "race": {
+   "served_unknown": 11266,
+   "unreached": 2659,
+   "walked_distinct": 8607,
+   "walked_entries": 8607,
+   "walked_not_in_snapshot": 0,
+   "walked_without_value_in_snapshot": 0
+  },
+  "values_of_unreached": {
+   "ethnicity_unreached": {
+    "ethnicity": {
+     "Unknown": 1996
+    },
+    "race": {
+     "American Indian or Alaska Native": 2,
+     "Asian": 5,
+     "Black or African American": 12,
+     "Native Hawaiian or other Pacific Islander": 1,
+     "Unknown": 1666,
+     "White": 310
+    },
+    "sex": {
+     "F": 983,
+     "M": 1012,
+     "U": 1
+    },
+    "vital_status": {
+     "<missing>": 1888,
+     "Alive": 93,
+     "Dead": 14,
+     "Not reported": 1
+    }
+   },
+   "race_unreached": {
+    "ethnicity": {
+     "Hispanic or Latino": 222,
+     "Not Hispanic or Latino": 124,
+     "Unknown": 2313
+    },
+    "race": {
+     "Unknown": 2659
+    },
+    "sex": {
+     "F": 1296,
+     "M": 1356,
+     "U": 7
+    },
+    "vital_status": {
+     "<missing>": 2446,
+     "Alive": 182,
+     "Dead": 31
+    }
+   }
+  }
+ },
+ "over_page": {
+  "field": "vital_status",
+  "per_page": 100,
+  "sources": {
+   "CCDI-DCC": {
+    "all": 9641,
+    "entries": 100,
+    "error": false,
+    "error_kinds": [],
+    "values": {
+     "Alive": 100
+    },
+    "with_value": 100
+   },
+   "KidsFirst": {
+    "all": 2238,
+    "entries": 100,
+    "error": false,
+    "error_kinds": [],
+    "values": {
+     "Alive": 100
+    },
+    "with_value": 100
+   },
+   "PCDC": {
+    "all": null,
+    "entries": null,
+    "error": true,
+    "error_kinds": [
+     "InvalidParameters"
+    ],
+    "values": {},
+    "with_value": 0
+   },
+   "StJude": {
+    "all": 0,
+    "entries": 0,
+    "error": false,
+    "error_kinds": [],
+    "values": {},
+    "with_value": 0
+   },
+   "Treehouse": {
+    "all": 0,
+    "entries": 0,
+    "error": false,
+    "error_kinds": [],
+    "values": {},
+    "with_value": 0
+   },
+   "ccdi-ecDNA": {
+    "all": 2057,
+    "entries": 100,
+    "error": false,
+    "error_kinds": [],
+    "values": {
+     "Alive": 100
+    },
+    "with_value": 100
+   },
+   "ccdi-iusccc-pst": {
+    "all": 0,
+    "entries": 0,
+    "error": false,
+    "error_kinds": [],
+    "values": {},
+    "with_value": 0
+   }
+  },
+  "status": 200,
+  "value": "Alive"
+ },
+ "overlap": 0.8176352705410822,
+ "probe": "ccdi/filter-reach-v1",
+ "reading": {
+  "count_and_filter": "disagree",
+  "kidsfirst_overlap": "shared",
+  "pcdc_vital_status": "other",
+  "under_reach": "other"
+ },
+ "requests": [
+  {
+   "bytes": 961,
+   "label": "count sex",
+   "seconds": 4.7,
+   "sha256": "573538a2e0769466a2e0bd9fbbf9534c48a3432b7a4c7e5f95759fbe91396063",
+   "status": 200
+  },
+  {
+   "bytes": 2089,
+   "label": "count race",
+   "seconds": 3.2,
+   "sha256": "7bf74bdca99bb5525a2f63755c110729f552ff3c6cb163e3a0f48dea600def39",
+   "status": 200
+  },
+  {
+   "bytes": 1193,
+   "label": "count ethnicity",
+   "seconds": 2.5,
+   "sha256": "58cd9af734934c9bdf3c64ba6e076c7e3a0a947d773224825b89180ee3c38c8a",
+   "status": 200
+  },
+  {
+   "bytes": 1075,
+   "label": "count vital_status",
+   "seconds": 12.9,
+   "sha256": "cc6a728c8da226a8416f4baf01c1b23a22f29cbbb3f223b67c4ff4543a9c1f1d",
+   "status": 200
+  },
+  {
+   "bytes": 9579,
+   "label": "filter sex=F",
+   "seconds": 9.3,
+   "sha256": "75e691c59a7b979421535c92fb2934b0e195a85fb1750eb1be89dfefdf6f4afd",
+   "status": 200
+  },
+  {
+   "bytes": 9319,
+   "label": "filter sex=M",
+   "seconds": 13.4,
+   "sha256": "9700580a11994aab1f88cd3d9c2d8ad5b46e5ac2480acf7994dc17f48b3c5e94",
+   "status": 200
+  },
+  {
+   "bytes": 4637,
+   "label": "filter sex=U",
+   "seconds": 2.6,
+   "sha256": "cfdd07e0899112d565f26e5bf3e8a1fc07d6ad864caf2cb232ddea6f03d7528f",
+   "status": 200
+  },
+  {
+   "bytes": 7591,
+   "label": "filter race=American Indian or Alaska Native",
+   "seconds": 3.0,
+   "sha256": "2295cf140d20a285195f0b097e630df93d974d4b5a9ba245439621a24cdd176e",
+   "status": 200
+  },
+  {
+   "bytes": 8103,
+   "label": "filter race=Asian",
+   "seconds": 2.7,
+   "sha256": "07c5b57b970420ad3615988ac013af4511a98231a887d716074a98c3bc1de261",
+   "status": 200
+  },
+  {
+   "bytes": 7230,
+   "label": "filter race=Black or African American",
+   "seconds": 10.2,
+   "sha256": "1f67f1ff3a768fead7b37fa59444f2e5369f6365e3febbba77869879dfb64a69",
+   "status": 200
+  },
+  {
+   "bytes": 6335,
+   "label": "filter race=Native Hawaiian or other Pacific Islander",
+   "seconds": 10.3,
+   "sha256": "929dc843b9b77558b50421c975bb6dbd6e81b95604442504a7ee58b564307b14",
+   "status": 200
+  },
+  {
+   "bytes": 8952,
+   "label": "filter race=White",
+   "seconds": 12.7,
+   "sha256": "17b5c024601cd555e9bbc7e8f9dfaf2ed3eceb4ae27b6f95e6655cb500b9b697",
+   "status": 200
+  },
+  {
+   "bytes": 8883,
+   "label": "filter race=Unknown",
+   "seconds": 5.1,
+   "sha256": "674e2f7cbb6fbb8e64de0add32e9570f4fe1ce933b3f1d2edeb876e9d6c8f002",
+   "status": 200
+  },
+  {
+   "bytes": 7655,
+   "label": "filter race=Not Reported",
+   "seconds": 1.9,
+   "sha256": "02f89d8863f469b133288005b612f8817b35d6295c0703fe1ab12221f4321ca4",
+   "status": 200
+  },
+  {
+   "bytes": 1433,
+   "label": "filter race=Not allowed to collect",
+   "seconds": 0.9,
+   "sha256": "f16407ecdc1ae63b118b3fdfb2c8b970aad579d72a341fdf426324a424419925",
+   "status": 200
+  },
+  {
+   "bytes": 8980,
+   "label": "filter ethnicity=Hispanic or Latino",
+   "seconds": 3.8,
+   "sha256": "50d9ed67b57c4acca18986a2b0bbf487e34983e06290edfe28174a2e66f1719e",
+   "status": 200
+  },
+  {
+   "bytes": 8214,
+   "label": "filter ethnicity=Not Hispanic or Latino",
+   "seconds": 12.8,
+   "sha256": "d378316f024af8cb15ee85fc9425b5f23cca7fdec0daaed0339aab9ab68e533a",
+   "status": 200
+  },
+  {
+   "bytes": 5438,
+   "label": "filter ethnicity=Unknown",
+   "seconds": 3.6,
+   "sha256": "aa148d79f462856a85abe1ba45690a291a5bad0ca4543c5457788f6509e04a87",
+   "status": 200
+  },
+  {
+   "bytes": 1538,
+   "label": "filter ethnicity=Not reported",
+   "seconds": 2.1,
+   "sha256": "1dd8e9d5aefba6e09758b00d8c02731b3f3ed8fb082a2792fc7bd8f2b64d90e5",
+   "status": 200
+  },
+  {
+   "bytes": 2942,
+   "label": "filter vital_status=Alive",
+   "seconds": 2.2,
+   "sha256": "f4d6bec93966abeae9f15250925189969a86f1083c4f49f3225314061614ff1e",
+   "status": 200
+  },
+  {
+   "bytes": 3777,
+   "label": "filter vital_status=Dead",
+   "seconds": 2.1,
+   "sha256": "712a48fc3b74e92d38027e3fe28e1e3cb6cb275640ab9c0cc114510ab6928b3d",
+   "status": 200
+  },
+  {
+   "bytes": 2662,
+   "label": "filter vital_status=Unknown",
+   "seconds": 2.3,
+   "sha256": "7a98acbdda72cd830e34b260c663bfa9a2f0c5bc62f4c2107b71c0c10e37f761",
+   "status": 200
+  },
+  {
+   "bytes": 2354,
+   "label": "filter vital_status=Not reported",
+   "seconds": 2.1,
+   "sha256": "68b513c018ad70e31848ff7d96164a9579e7d7a22f2db7b3f301a9cc1951af7a",
+   "status": 200
+  },
+  {
+   "bytes": 2348,
+   "label": "filter vital_status=Unspecified",
+   "seconds": 2.2,
+   "sha256": "d8248747a4c5b13692646704ddec5e5970076668922de9985d85ebfa9d64b210",
+   "status": 200
+  },
+  {
+   "bytes": 222448,
+   "label": "page vital_status=Alive",
+   "seconds": 2.5,
+   "sha256": "71aadfcf3372661abebb6a836b73b3ed558b60e1c127a99e4cba39d2794e45f4",
+   "status": 200
+  },
+  {
+   "bytes": 495336,
+   "label": "walk ethnicity=Unknown page 1",
+   "seconds": 3.2,
+   "sha256": "3e0b427c2ef78c8eb7ad8d5d5b5e1a47b6482860cee4114531a369df63f8818a",
+   "status": 200
+  },
+  {
+   "bytes": 424828,
+   "label": "walk ethnicity=Unknown page 2",
+   "seconds": 3.0,
+   "sha256": "e976acc97f284acb9089261acda8a34d2e9c560de14885e79ee77cd3370ecb42",
+   "status": 200
+  },
+  {
+   "bytes": 425941,
+   "label": "walk ethnicity=Unknown page 3",
+   "seconds": 3.1,
+   "sha256": "3ac17152316c4fcece58ba0fff0d97ec5a8f960fee66769f666659423d835f80",
+   "status": 200
+  },
+  {
+   "bytes": 425447,
+   "label": "walk ethnicity=Unknown page 4",
+   "seconds": 2.5,
+   "sha256": "22ddda56b0e61fb84ecffcf8188650c8e8e15fbd3dd289c026982940fd39307a",
+   "status": 200
+  },
+  {
+   "bytes": 343291,
+   "label": "walk ethnicity=Unknown page 5",
+   "seconds": 2.1,
+   "sha256": "444aba6ac742da63d71b03c9c9f2cc438167a8e139324e43f9d6f83f6e86a40f",
+   "status": 200
+  },
+  {
+   "bytes": 348233,
+   "label": "walk ethnicity=Unknown page 6",
+   "seconds": 2.8,
+   "sha256": "72e5f07019315a8766e4c3408dfb6429fc957ef3058f2961fe185f79b792c4f8",
+   "status": 200
+  },
+  {
+   "bytes": 353721,
+   "label": "walk ethnicity=Unknown page 7",
+   "seconds": 2.9,
+   "sha256": "b0ae2321917f544cbc2c955da0621335981b3d39ff5853f229736c88cd6cf69b",
+   "status": 200
+  },
+  {
+   "bytes": 346768,
+   "label": "walk ethnicity=Unknown page 8",
+   "seconds": 2.6,
+   "sha256": "b1c760cf05bb6f8071fd3c9e369f044c644d2f43880954574d90617c7c8480a4",
+   "status": 200
+  },
+  {
+   "bytes": 349067,
+   "label": "walk ethnicity=Unknown page 9",
+   "seconds": 2.6,
+   "sha256": "2a100163ad9f81fd9496b5048a400c4c9671684a6237aab3dd320eb4b88e9f3a",
+   "status": 200
+  },
+  {
+   "bytes": 350456,
+   "label": "walk ethnicity=Unknown page 10",
+   "seconds": 2.6,
+   "sha256": "0fde2fad8dc5c54b9e4a6dab26e9757a60b93c7da0724dd8a178edaaa173f3dc",
+   "status": 200
+  },
+  {
+   "bytes": 348327,
+   "label": "walk ethnicity=Unknown page 11",
+   "seconds": 2.7,
+   "sha256": "4e2d53c3bfbe228fe0aed098a89b3951904689f893d6f199b0cd579189ed44d4",
+   "status": 200
+  },
+  {
+   "bytes": 340702,
+   "label": "walk ethnicity=Unknown page 12",
+   "seconds": 2.8,
+   "sha256": "ceac6cf73102cebe9c7d9b1a69137663a96378b40c94d9438eb6d3f06eb6858a",
+   "status": 200
+  },
+  {
+   "bytes": 339068,
+   "label": "walk ethnicity=Unknown page 13",
+   "seconds": 3.0,
+   "sha256": "3f8fd21ff846707d11ef3c9095eb9c84e945a3cc2d50ad5adedd103abf320fa3",
+   "status": 200
+  },
+  {
+   "bytes": 342633,
+   "label": "walk ethnicity=Unknown page 14",
+   "seconds": 3.4,
+   "sha256": "7adaa4976bf52a2de6908627c2df134b1a8bf43e962b196da0b2f1472b85b59e",
+   "status": 200
+  },
+  {
+   "bytes": 350693,
+   "label": "walk ethnicity=Unknown page 15",
+   "seconds": 2.4,
+   "sha256": "f43fe36504ce3be241279857ae5549f45b5f58449f13b45f203714122a9805ef",
+   "status": 200
+  },
+  {
+   "bytes": 345440,
+   "label": "walk ethnicity=Unknown page 16",
+   "seconds": 2.6,
+   "sha256": "5c06ac63fbdeb106ec27f8ef5372830896b01649df48b843338a6660c58a88df",
+   "status": 200
+  },
+  {
+   "bytes": 349742,
+   "label": "walk ethnicity=Unknown page 17",
+   "seconds": 3.3,
+   "sha256": "06583acc07a29e1ed3c073e510826bef2e6c144dd9a2bad63e5be259b7856526",
+   "status": 200
+  },
+  {
+   "bytes": 346503,
+   "label": "walk ethnicity=Unknown page 18",
+   "seconds": 2.5,
+   "sha256": "60b0861bd80c3292662feac1068f01b76202d636ca1eebf9a7309a138b2e0c97",
+   "status": 200
+  },
+  {
+   "bytes": 349690,
+   "label": "walk ethnicity=Unknown page 19",
+   "seconds": 2.5,
+   "sha256": "b8a3f7c9da7ab80544044bd198273329d2d3594128549cd8fed7423f5e4457fa",
+   "status": 200
+  },
+  {
+   "bytes": 346057,
+   "label": "walk ethnicity=Unknown page 20",
+   "seconds": 2.3,
+   "sha256": "34114941f133f42d88102ddfcd15942c8df9c9b07b35ab005bd0a06ca5b8cda4",
+   "status": 200
+  },
+  {
+   "bytes": 342210,
+   "label": "walk ethnicity=Unknown page 21",
+   "seconds": 3.0,
+   "sha256": "808546589fd1ba4640a3328d794374309db0737a95d6bc81486c3fdfeae77fae",
+   "status": 200
+  },
+  {
+   "bytes": 342688,
+   "label": "walk ethnicity=Unknown page 22",
+   "seconds": 2.6,
+   "sha256": "05a2937b0eb1c6f7052f64b6f71d72442470f12debf8fd48840495a93277985e",
+   "status": 200
+  },
+  {
+   "bytes": 342038,
+   "label": "walk ethnicity=Unknown page 23",
+   "seconds": 2.6,
+   "sha256": "8950df06d3809204f83bcfa80f7132de63d141b2eff3f159f3f7a9568a86975b",
+   "status": 200
+  },
+  {
+   "bytes": 342507,
+   "label": "walk ethnicity=Unknown page 24",
+   "seconds": 2.6,
+   "sha256": "f8be6346eb3803d6358d5526633ed8c88cd7f6a1365d813958a7aed4797d628b",
+   "status": 200
+  },
+  {
+   "bytes": 343097,
+   "label": "walk ethnicity=Unknown page 25",
+   "seconds": 2.3,
+   "sha256": "42a8738dd4c08c8b35732f34dd4c0c637cd813c65144aebfe73eeec28bc8bce1",
+   "status": 200
+  },
+  {
+   "bytes": 341647,
+   "label": "walk ethnicity=Unknown page 26",
+   "seconds": 2.5,
+   "sha256": "d3271ccaf709b111a87d813f7e1595488656f8fb991ac575447664b01d6b9a94",
+   "status": 200
+  },
+  {
+   "bytes": 341311,
+   "label": "walk ethnicity=Unknown page 27",
+   "seconds": 2.9,
+   "sha256": "9224a6d139621a86eb90999d7f9cf00a319fcd5ef53b11627ea105c9088a24f6",
+   "status": 200
+  },
+  {
+   "bytes": 339351,
+   "label": "walk ethnicity=Unknown page 28",
+   "seconds": 2.4,
+   "sha256": "708ce8531ecd0183dbceb0788db678ba5c76b6719679f17c463f4cd9cffe573d",
+   "status": 200
+  },
+  {
+   "bytes": 338998,
+   "label": "walk ethnicity=Unknown page 29",
+   "seconds": 2.1,
+   "sha256": "30dd0e9a16a88176aaf42c086fd2dad216fc2ba89a2cff672468e24d4ebdd0d5",
+   "status": 200
+  },
+  {
+   "bytes": 338708,
+   "label": "walk ethnicity=Unknown page 30",
+   "seconds": 2.7,
+   "sha256": "c88a88585edfe5d45ee32d6c670f5a573dfdfba65f86075ac64a559a009531ab",
+   "status": 200
+  },
+  {
+   "bytes": 305104,
+   "label": "walk ethnicity=Unknown page 31",
+   "seconds": 2.3,
+   "sha256": "533a8567e5e63c9f2933b03a4928155323481daf4daa8c18d3b3f0ce57bc07f7",
+   "status": 200
+  },
+  {
+   "bytes": 250741,
+   "label": "walk ethnicity=Unknown page 32",
+   "seconds": 2.9,
+   "sha256": "d1cf1593d2a347dddf4275a66b3f03bb75f5af080a578d3defc6161b051a29b1",
+   "status": 200
+  },
+  {
+   "bytes": 250887,
+   "label": "walk ethnicity=Unknown page 33",
+   "seconds": 2.4,
+   "sha256": "b3136d8919a073387eee5f6ed8fede07cbb48ca05ea97586eef06c0c0abf02f6",
+   "status": 200
+  },
+  {
+   "bytes": 250946,
+   "label": "walk ethnicity=Unknown page 34",
+   "seconds": 2.1,
+   "sha256": "ffe0ca8b789c94a4429da73ea729dcdd2733772598a89d96ea2b0c4d96964c06",
+   "status": 200
+  },
+  {
+   "bytes": 215208,
+   "label": "walk ethnicity=Unknown page 35",
+   "seconds": 2.6,
+   "sha256": "d97dc26781dbe7c871e2bbbee5255d9ba29bb8514a914e5cd2231268bfbdecb0",
+   "status": 200
+  },
+  {
+   "bytes": 90383,
+   "label": "walk ethnicity=Unknown page 36",
+   "seconds": 2.6,
+   "sha256": "5f5b2dcf7d920f98418b2d5f24214ec5014dad30460990bdf892eccaceb35a93",
+   "status": 200
+  },
+  {
+   "bytes": 90541,
+   "label": "walk ethnicity=Unknown page 37",
+   "seconds": 1.3,
+   "sha256": "18537ca4c569442eb5b065bf214f4d22c240ae0b0b87d4a5bdc2bd06baf4418d",
+   "status": 200
+  },
+  {
+   "bytes": 90607,
+   "label": "walk ethnicity=Unknown page 38",
+   "seconds": 3.4,
+   "sha256": "8bd7107ad3662034580988999724d3c255c2402e01a0063b99408b34e9775df1",
+   "status": 200
+  },
+  {
+   "bytes": 90622,
+   "label": "walk ethnicity=Unknown page 39",
+   "seconds": 1.8,
+   "sha256": "eddbfaff0bb10d92ce175ce7341cf3268ee72b8967e27da22a6729192c8df7fe",
+   "status": 200
+  },
+  {
+   "bytes": 90350,
+   "label": "walk ethnicity=Unknown page 40",
+   "seconds": 2.4,
+   "sha256": "e5676f203f4a1559eed11de82d6303ca18a8630b18455da895ccc7d9d1f89b80",
+   "status": 200
+  },
+  {
+   "bytes": 90275,
+   "label": "walk ethnicity=Unknown page 41",
+   "seconds": 1.6,
+   "sha256": "dc5df7c4293a79da04e23755ef9cde62de63c020d59011db9a6e6f6e6641f7c8",
+   "status": 200
+  },
+  {
+   "bytes": 90358,
+   "label": "walk ethnicity=Unknown page 42",
+   "seconds": 2.4,
+   "sha256": "eaad2cb18f6805638c246665e5eb8199b19b2e7de10d73d394b0072449d81ac6",
+   "status": 200
+  },
+  {
+   "bytes": 90361,
+   "label": "walk ethnicity=Unknown page 43",
+   "seconds": 3.2,
+   "sha256": "72daf7e5a487785bb329c02095d907ece4e712bb03791241b6df8bcb5d6c5fa9",
+   "status": 200
+  },
+  {
+   "bytes": 90541,
+   "label": "walk ethnicity=Unknown page 44",
+   "seconds": 1.3,
+   "sha256": "76d11b798d60184bedb014f36d520f348c3570a6d8d6c18dc5f1ec2e51d272e4",
+   "status": 200
+  },
+  {
+   "bytes": 90496,
+   "label": "walk ethnicity=Unknown page 45",
+   "seconds": 2.7,
+   "sha256": "2431a14f0db8c314d8daa5bec8a1a918068e2ad8bdf7bc27a3a11819d3574987",
+   "status": 200
+  },
+  {
+   "bytes": 90669,
+   "label": "walk ethnicity=Unknown page 46",
+   "seconds": 1.4,
+   "sha256": "af7ed52b2adb68a9a5d5d777a9ba68968005bdfc04f477669dc585e0ac9b67fe",
+   "status": 200
+  },
+  {
+   "bytes": 90684,
+   "label": "walk ethnicity=Unknown page 47",
+   "seconds": 2.7,
+   "sha256": "56caa35e941c7754e1617b8add8dd3c0a465376af8141f346941754d35b40a33",
+   "status": 200
+  },
+  {
+   "bytes": 90530,
+   "label": "walk ethnicity=Unknown page 48",
+   "seconds": 2.2,
+   "sha256": "2b7b3f41c4c61f1b8ee4998f24ad3069deb8887efef3fb50a7ff89c3e0f5f07e",
+   "status": 200
+  },
+  {
+   "bytes": 90469,
+   "label": "walk ethnicity=Unknown page 49",
+   "seconds": 2.3,
+   "sha256": "a465f210f721026c2092f32526e414f8f57facbb2f1bf98e42d4dcf5ce3fc482",
+   "status": 200
+  },
+  {
+   "bytes": 90469,
+   "label": "walk ethnicity=Unknown page 50",
+   "seconds": 2.9,
+   "sha256": "016d05326e4f4c3ee17fa49a5b87028306229bc23df9a96c2d8fc0bba3d067bb",
+   "status": 200
+  },
+  {
+   "bytes": 90436,
+   "label": "walk ethnicity=Unknown page 51",
+   "seconds": 1.8,
+   "sha256": "c207f074e59dd27e6d43a771441728a34141fefc4a647f728149fa514a35e197",
+   "status": 200
+  },
+  {
+   "bytes": 90583,
+   "label": "walk ethnicity=Unknown page 52",
+   "seconds": 3.9,
+   "sha256": "5b4805b90b502aa1d0481ec1931a3a90149c6bc02b4281c0eaf46f56a8470af9",
+   "status": 200
+  },
+  {
+   "bytes": 90362,
+   "label": "walk ethnicity=Unknown page 53",
+   "seconds": 1.7,
+   "sha256": "4f025173c2ca1cbbdcc448d11ceaed99e47467265810b9b7d7ed7eedbf7a73eb",
+   "status": 200
+  },
+  {
+   "bytes": 90438,
+   "label": "walk ethnicity=Unknown page 54",
+   "seconds": 3.0,
+   "sha256": "9c68f45d2536771572c14def7f3c48a8a33c864362acbbadcfc6336af63476da",
+   "status": 200
+  },
+  {
+   "bytes": 90414,
+   "label": "walk ethnicity=Unknown page 55",
+   "seconds": 1.9,
+   "sha256": "674cbe7795453d3da46546c4e6d65d00d84fd47a93c30407e7c42989e50209cc",
+   "status": 200
+  },
+  {
+   "bytes": 90460,
+   "label": "walk ethnicity=Unknown page 56",
+   "seconds": 2.6,
+   "sha256": "70b62915792c87b2de2d575428e697d3c513de155be31f03eab2ac7943dd37e9",
+   "status": 200
+  },
+  {
+   "bytes": 90589,
+   "label": "walk ethnicity=Unknown page 57",
+   "seconds": 2.9,
+   "sha256": "41b74acd19c4fec248150749a580866ddd48d501907cdde6e3d22d1c317970c5",
+   "status": 200
+  },
+  {
+   "bytes": 90464,
+   "label": "walk ethnicity=Unknown page 58",
+   "seconds": 2.0,
+   "sha256": "c9868b08211a92b89651a57a428af265b05764268b1d68cc07200c81a59446ed",
+   "status": 200
+  },
+  {
+   "bytes": 90458,
+   "label": "walk ethnicity=Unknown page 59",
+   "seconds": 2.5,
+   "sha256": "686e589ef450d5eca71975cefb918dfbcc2c9c9ced25718bdd1cb7e96a42cea0",
+   "status": 200
+  },
+  {
+   "bytes": 90492,
+   "label": "walk ethnicity=Unknown page 60",
+   "seconds": 2.2,
+   "sha256": "922ce4ccef172cf4914591c2e8dcce0de8777b6641e85338a0d8a29c9f794672",
+   "status": 200
+  },
+  {
+   "bytes": 90289,
+   "label": "walk ethnicity=Unknown page 61",
+   "seconds": 3.3,
+   "sha256": "d823b3bb4ebcdad284dbffa3f05cd27c79707435a1159aa704c5a848525fbe77",
+   "status": 200
+  },
+  {
+   "bytes": 90357,
+   "label": "walk ethnicity=Unknown page 62",
+   "seconds": 1.9,
+   "sha256": "523cd187613932df978fb052a8b04a9ec3c9b3c146626c9826c2f39f1c60dbfd",
+   "status": 200
+  },
+  {
+   "bytes": 90429,
+   "label": "walk ethnicity=Unknown page 63",
+   "seconds": 2.0,
+   "sha256": "2013768db8919e0bfa7b8a7700d40b282f675011c5d61e5cc173fcebe0dd3bc1",
+   "status": 200
+  },
+  {
+   "bytes": 90410,
+   "label": "walk ethnicity=Unknown page 64",
+   "seconds": 2.7,
+   "sha256": "fdfa4c9fb49456bb2b716ec8dc72ebc5c5b8ab8b7bff8310c47ec9f2bb7762e3",
+   "status": 200
+  },
+  {
+   "bytes": 90266,
+   "label": "walk ethnicity=Unknown page 65",
+   "seconds": 2.4,
+   "sha256": "e1bf51af3430aa4366884e0db4b329823e6e1fcd1d488e88bfcea49e810e3791",
+   "status": 200
+  },
+  {
+   "bytes": 90774,
+   "label": "walk ethnicity=Unknown page 66",
+   "seconds": 2.6,
+   "sha256": "b3c41e4410c51cc3435a3a6f674e3588ea263194d7e49c72c7b1f2895e99a411",
+   "status": 200
+  },
+  {
+   "bytes": 90408,
+   "label": "walk ethnicity=Unknown page 67",
+   "seconds": 1.7,
+   "sha256": "2dd074a7fa5934e47480a1606cea97c5b57653b507f51ab00ce3827ceed01161",
+   "status": 200
+  },
+  {
+   "bytes": 90483,
+   "label": "walk ethnicity=Unknown page 68",
+   "seconds": 2.7,
+   "sha256": "f2ca28819bf009f2d7e1ed7067365a825bb05ea81ed281b603b7b22c05ecac9f",
+   "status": 200
+  },
+  {
+   "bytes": 90452,
+   "label": "walk ethnicity=Unknown page 69",
+   "seconds": 1.7,
+   "sha256": "94f6d292dd31e3744fc00b4bdc0bce37741cb210931071a4cc6ab445db244c84",
+   "status": 200
+  },
+  {
+   "bytes": 90647,
+   "label": "walk ethnicity=Unknown page 70",
+   "seconds": 3.0,
+   "sha256": "329792865e56ea66f9f0c3cee01f11d01ebe09120060c9d3227c5fc0b7b2819f",
+   "status": 200
+  },
+  {
+   "bytes": 90598,
+   "label": "walk ethnicity=Unknown page 71",
+   "seconds": 1.8,
+   "sha256": "ecb257436cf3405905e3a5711f800a31e2313bcad7ffbfd04789d8aa8a3aa865",
+   "status": 200
+  },
+  {
+   "bytes": 90334,
+   "label": "walk ethnicity=Unknown page 72",
+   "seconds": 3.0,
+   "sha256": "77b47b02f9fc71b38450a1b6b5619e29ea860aeeda3884d5217b07bcef9d7813",
+   "status": 200
+  },
+  {
+   "bytes": 90428,
+   "label": "walk ethnicity=Unknown page 73",
+   "seconds": 1.9,
+   "sha256": "1a92087a386cd7d9faf49bce20a50d0bdf21008d689d44a0ada058705ace24f1",
+   "status": 200
+  },
+  {
+   "bytes": 90373,
+   "label": "walk ethnicity=Unknown page 74",
+   "seconds": 2.3,
+   "sha256": "31b086799f557048eb831243d4474006ecfff8dbd61d1a358f41c54da75838cd",
+   "status": 200
+  },
+  {
+   "bytes": 90658,
+   "label": "walk ethnicity=Unknown page 75",
+   "seconds": 3.0,
+   "sha256": "8cd1532a9abda7a6c424787eee91a3dac14c51be010667dd775a290c87dd5486",
+   "status": 200
+  },
+  {
+   "bytes": 90831,
+   "label": "walk ethnicity=Unknown page 76",
+   "seconds": 1.4,
+   "sha256": "f2992e0921b16770d6e08fce6d81b8e6d31bdfbdb365cea837383e7f227735eb",
+   "status": 200
+  },
+  {
+   "bytes": 90500,
+   "label": "walk ethnicity=Unknown page 77",
+   "seconds": 2.2,
+   "sha256": "83e2258b1ed276cf3cabb302740ba05999a529f049f1d6d21e9c479c40591d21",
+   "status": 200
+  },
+  {
+   "bytes": 90430,
+   "label": "walk ethnicity=Unknown page 78",
+   "seconds": 1.8,
+   "sha256": "90f828fa42d7644d17c829f191d0410ce19502bc8a5118acea2f694da5ba7732",
+   "status": 200
+  },
+  {
+   "bytes": 90414,
+   "label": "walk ethnicity=Unknown page 79",
+   "seconds": 3.6,
+   "sha256": "848c84d8dfb2255ac889c16675b33283b73e1bdccff1409f95102716b5a6e295",
+   "status": 200
+  },
+  {
+   "bytes": 90249,
+   "label": "walk ethnicity=Unknown page 80",
+   "seconds": 1.9,
+   "sha256": "5cdfa0b4203a91ff9ab839adc85a059fb61db76f886c485100fa615737372cd7",
+   "status": 200
+  },
+  {
+   "bytes": 90827,
+   "label": "walk ethnicity=Unknown page 81",
+   "seconds": 2.8,
+   "sha256": "c0f561784f52e4f273266b75b511c6f73cc279732f395b70b6fb18a1a7f2a508",
+   "status": 200
+  },
+  {
+   "bytes": 90491,
+   "label": "walk ethnicity=Unknown page 82",
+   "seconds": 2.6,
+   "sha256": "34edbf9be355a85d1b7716e79d3c41ac580f275fc4de3f0792855fef2df205da",
+   "status": 200
+  },
+  {
+   "bytes": 76217,
+   "label": "walk ethnicity=Unknown page 83",
+   "seconds": 2.7,
+   "sha256": "68b836c32ca02b57c33299d8da3c9b9a39ec03ed093731de4567b3cea2a72d9c",
+   "status": 200
+  },
+  {
+   "bytes": 512612,
+   "label": "walk race=Unknown page 1",
+   "seconds": 4.8,
+   "sha256": "af7ff8fd0955f21f8efb5af6da9c65b4a9925d7bfcd99ac3f425cf767e0c7892",
+   "status": 200
+  },
+  {
+   "bytes": 514316,
+   "label": "walk race=Unknown page 2",
+   "seconds": 2.6,
+   "sha256": "d99b2f2ed643fb97542893536e3ebc8206c807b0ee2b7e4f3106a2b89410dfd7",
+   "status": 200
+  },
+  {
+   "bytes": 503392,
+   "label": "walk race=Unknown page 3",
+   "seconds": 1.8,
+   "sha256": "7e84a5275d4326c29fe617a53753df791b77afae33bd4d31d43e7a83f433ef65",
+   "status": 200
+  },
+  {
+   "bytes": 501464,
+   "label": "walk race=Unknown page 4",
+   "seconds": 2.6,
+   "sha256": "d4856e4abf3c299099674fe2db3139f56ffa5f5b8b87b854cf9d4750c79c114b",
+   "status": 200
+  },
+  {
+   "bytes": 430942,
+   "label": "walk race=Unknown page 5",
+   "seconds": 2.6,
+   "sha256": "a501fa5b8940961f9b1f151e13f832cc9534a3c86c9732fc5cb1f08a9941a35d",
+   "status": 200
+  },
+  {
+   "bytes": 426741,
+   "label": "walk race=Unknown page 6",
+   "seconds": 2.3,
+   "sha256": "c6eeb2831353c5849aa84876dc1020b63e18f7786e170092c2756f0805e583fa",
+   "status": 200
+  },
+  {
+   "bytes": 426510,
+   "label": "walk race=Unknown page 7",
+   "seconds": 1.9,
+   "sha256": "1959f65dfe288fa203635359c6590438c68de17c9705169d7d8b89c10a5789b9",
+   "status": 200
+  },
+  {
+   "bytes": 422748,
+   "label": "walk race=Unknown page 8",
+   "seconds": 2.3,
+   "sha256": "0fe47aa7e82c6c77d0f6bbdbc0154b121ccbbed73b0e596f8e67e372b92a4fc5",
+   "status": 200
+  },
+  {
+   "bytes": 421917,
+   "label": "walk race=Unknown page 9",
+   "seconds": 2.1,
+   "sha256": "9a7742179a4d2b7ef50fdce8533d6a265c18f680e71db58b4f25be0c3b26df7e",
+   "status": 200
+  },
+  {
+   "bytes": 420115,
+   "label": "walk race=Unknown page 10",
+   "seconds": 3.1,
+   "sha256": "264dad4ff221521e740e0ea0f14d45ffd44fca9f672afdeea757f9034d6af861",
+   "status": 200
+  },
+  {
+   "bytes": 422111,
+   "label": "walk race=Unknown page 11",
+   "seconds": 2.2,
+   "sha256": "b6077235c7f99bddc28d24ac284996e143ce9d387209ee7c7eab1cba39e29d97",
+   "status": 200
+  },
+  {
+   "bytes": 424361,
+   "label": "walk race=Unknown page 12",
+   "seconds": 2.7,
+   "sha256": "340cb3c6825a402a0616a093b11d0b05644dddba42cf342078b6898c4edbb3e5",
+   "status": 200
+  },
+  {
+   "bytes": 423057,
+   "label": "walk race=Unknown page 13",
+   "seconds": 2.2,
+   "sha256": "ed2a9f88faed4bb0265629b22f80400d5b401077f0927339c4e7f0e5051fc017",
+   "status": 200
+  },
+  {
+   "bytes": 429537,
+   "label": "walk race=Unknown page 14",
+   "seconds": 2.5,
+   "sha256": "85854a7c137a730af6fe63abcb596da68a5f7724ef92632b23d2640337d0cf46",
+   "status": 200
+  },
+  {
+   "bytes": 426887,
+   "label": "walk race=Unknown page 15",
+   "seconds": 2.3,
+   "sha256": "4590e34498600eae469a131519d61d85aec0303d14d7a7af125fe1f4cdf10dd1",
+   "status": 200
+  },
+  {
+   "bytes": 388069,
+   "label": "walk race=Unknown page 16",
+   "seconds": 1.7,
+   "sha256": "3242e63464d8858c7bdd9babbff3671a489e1ad9ad7b56124652a85bfb082437",
+   "status": 200
+  },
+  {
+   "bytes": 339419,
+   "label": "walk race=Unknown page 17",
+   "seconds": 2.5,
+   "sha256": "a9239bdbfda8b0a54250ea6c281643fb3ad00a0bbf53c71536556d8b039c2c62",
+   "status": 200
+  },
+  {
+   "bytes": 341019,
+   "label": "walk race=Unknown page 18",
+   "seconds": 2.6,
+   "sha256": "f0720f6365639312abbfe8cb6755230abe5dc2dbb38aa1d151f04c5b0c1faf89",
+   "status": 200
+  },
+  {
+   "bytes": 335735,
+   "label": "walk race=Unknown page 19",
+   "seconds": 2.5,
+   "sha256": "5e9d5df1f69b29ba940bc0095aa8b2228f803155c69ff7e4c9bd70ac40d13596",
+   "status": 200
+  },
+  {
+   "bytes": 323447,
+   "label": "walk race=Unknown page 20",
+   "seconds": 2.7,
+   "sha256": "42159c87107eedfeb2b8af816e406b9ad22e80ce7d2293b959425dc4f5ee7796",
+   "status": 200
+  },
+  {
+   "bytes": 317247,
+   "label": "walk race=Unknown page 21",
+   "seconds": 2.7,
+   "sha256": "12079e3204b5d1d61f26cca1172dfcf071b559e018286e31eef98af42354f2a3",
+   "status": 200
+  },
+  {
+   "bytes": 309862,
+   "label": "walk race=Unknown page 22",
+   "seconds": 2.0,
+   "sha256": "ac40ad245dff280a1cf098992d64dbb207dbb8d496c9cfbf43acb96dea1c0098",
+   "status": 200
+  },
+  {
+   "bytes": 322194,
+   "label": "walk race=Unknown page 23",
+   "seconds": 3.4,
+   "sha256": "d6d62693a4e6a87989a00637a49035638b383b539a100f80e510b7afb3cbe129",
+   "status": 200
+  },
+  {
+   "bytes": 316130,
+   "label": "walk race=Unknown page 24",
+   "seconds": 2.4,
+   "sha256": "8e447c4b30ed06f95d0fbd541a262aa0baa8362dec9203456a3bfd826e27982d",
+   "status": 200
+  },
+  {
+   "bytes": 312284,
+   "label": "walk race=Unknown page 25",
+   "seconds": 1.8,
+   "sha256": "dbf3749d1cbb96a7b48281cf66bda2c0a323847d3260445faadb6321a9b4fef7",
+   "status": 200
+  },
+  {
+   "bytes": 318469,
+   "label": "walk race=Unknown page 26",
+   "seconds": 2.2,
+   "sha256": "161a3a688c89e39ec3c7b0e8f07090d4cd62cda0f52cc64eed12e41a43ed96cd",
+   "status": 200
+  },
+  {
+   "bytes": 323004,
+   "label": "walk race=Unknown page 27",
+   "seconds": 2.9,
+   "sha256": "07fd5c487c64cad6983d2b539fa9124a2c3d470530424bb8d90deb35d2aa427d",
+   "status": 200
+  },
+  {
+   "bytes": 308291,
+   "label": "walk race=Unknown page 28",
+   "seconds": 2.7,
+   "sha256": "f1df624c7ad9fca3e46257d68d6d9b8b0788e9efeb00dc7ef2d42b33c8672679",
+   "status": 200
+  },
+  {
+   "bytes": 150319,
+   "label": "walk race=Unknown page 29",
+   "seconds": 1.4,
+   "sha256": "0c97fbdfc29434c1589f1bd700576de7f390f67a89ce7df81ed8302580a641a0",
+   "status": 200
+  },
+  {
+   "bytes": 149962,
+   "label": "walk race=Unknown page 30",
+   "seconds": 2.5,
+   "sha256": "f1931ec41421e173a08692740d6587118a7de18ccfef99af0b6ce9fc7c77773f",
+   "status": 200
+  },
+  {
+   "bytes": 150003,
+   "label": "walk race=Unknown page 31",
+   "seconds": 2.2,
+   "sha256": "b0aa4d136c751ee9686ad632cf77dcb526733b6459c7548f12127a974c991789",
+   "status": 200
+  },
+  {
+   "bytes": 150022,
+   "label": "walk race=Unknown page 32",
+   "seconds": 2.0,
+   "sha256": "3e6efaf78af96bb04cc947fa70aa5ac8c8727e93fb00e7fc04edc2c5bb909ab3",
+   "status": 200
+  },
+  {
+   "bytes": 158695,
+   "label": "walk race=Unknown page 33",
+   "seconds": 2.1,
+   "sha256": "73e02f67700c99f107ac55f9df769355e5e6289047d041bb9a5d9b73427b9025",
+   "status": 200
+  },
+  {
+   "bytes": 160075,
+   "label": "walk race=Unknown page 34",
+   "seconds": 2.0,
+   "sha256": "88b6a070bea193d6efbb331a411971a826de07e4c9b363119e9de95971c183a2",
+   "status": 200
+  },
+  {
+   "bytes": 163330,
+   "label": "walk race=Unknown page 35",
+   "seconds": 2.7,
+   "sha256": "6900d80b8acce9d62a928b57bd1b969a9c016aea1dcd629dfd6e4586e85b614e",
+   "status": 200
+  },
+  {
+   "bytes": 165632,
+   "label": "walk race=Unknown page 36",
+   "seconds": 2.0,
+   "sha256": "517ce8ad9a0ae1cd30b89a9db9cd605055cd6a886c43cf434030b5001ca15ae8",
+   "status": 200
+  },
+  {
+   "bytes": 167404,
+   "label": "walk race=Unknown page 37",
+   "seconds": 2.9,
+   "sha256": "d74d6e6a549af86546d95dfe62a5e93297ab43c57ce7b1276aece99f63a43f80",
+   "status": 200
+  },
+  {
+   "bytes": 167892,
+   "label": "walk race=Unknown page 38",
+   "seconds": 2.4,
+   "sha256": "434bc55c7bf634c58533cc1150e6a183e26a38e026eb116986230300506e294e",
+   "status": 200
+  },
+  {
+   "bytes": 167613,
+   "label": "walk race=Unknown page 39",
+   "seconds": 1.1,
+   "sha256": "6c2bea010e9c8631304523816e57bf6b531ce0419bea14ef3b418744c11772e8",
+   "status": 200
+  },
+  {
+   "bytes": 166060,
+   "label": "walk race=Unknown page 40",
+   "seconds": 1.6,
+   "sha256": "6fe2206d54d3b16fe28b3ee0049054fda44bda7e322be9b2827e7dac547c895a",
+   "status": 200
+  },
+  {
+   "bytes": 164777,
+   "label": "walk race=Unknown page 41",
+   "seconds": 1.5,
+   "sha256": "ae767d98eb11d8b73052ad479c7e3d2001ee32e63b4a9507e9d453365f444542",
+   "status": 200
+  },
+  {
+   "bytes": 102522,
+   "label": "walk race=Unknown page 42",
+   "seconds": 2.1,
+   "sha256": "ca2c4bc61088e99aeb34473638eeecef2ba6019f6eba8401437bbd97a5b486f1",
+   "status": 200
+  },
+  {
+   "bytes": 90874,
+   "label": "walk race=Unknown page 43",
+   "seconds": 2.7,
+   "sha256": "21778e8ad8887233a11caef561db1e44ec4488fc1d62a90aa3877fa6ff78f26e",
+   "status": 200
+  },
+  {
+   "bytes": 91197,
+   "label": "walk race=Unknown page 44",
+   "seconds": 2.1,
+   "sha256": "6ee3f88b2009eaba4013515fb9270eb472d5d3476659ff54d1b6445893c27bfd",
+   "status": 200
+  },
+  {
+   "bytes": 90870,
+   "label": "walk race=Unknown page 45",
+   "seconds": 1.2,
+   "sha256": "19fd74db62e39c14ffa49a1c4fa9d635f6e9911b479b5d5dfe39a84d42aa6555",
+   "status": 200
+  },
+  {
+   "bytes": 91047,
+   "label": "walk race=Unknown page 46",
+   "seconds": 2.0,
+   "sha256": "692c4d34edfb7ec65a04f1ecc215021a643286611c62bff4d0d3812e07f111f9",
+   "status": 200
+  },
+  {
+   "bytes": 90941,
+   "label": "walk race=Unknown page 47",
+   "seconds": 2.0,
+   "sha256": "790fa0ca405de6bb8134e36ffc012372b8cf9a092bfe130eb54a76d909cb52a8",
+   "status": 200
+  },
+  {
+   "bytes": 91218,
+   "label": "walk race=Unknown page 48",
+   "seconds": 1.9,
+   "sha256": "c4030f7849a7077f874ba3e5e20a845c4bd970d6c7c222500c953fe156922461",
+   "status": 200
+  },
+  {
+   "bytes": 91346,
+   "label": "walk race=Unknown page 49",
+   "seconds": 2.1,
+   "sha256": "e5315e7887a7bdea1b8423169a8a1591c0105920e2be996d6f2303ae396da57f",
+   "status": 200
+  },
+  {
+   "bytes": 91179,
+   "label": "walk race=Unknown page 50",
+   "seconds": 2.2,
+   "sha256": "6c02603e3622ecd7618ba459942b1df10615d8b90e23839a7e88dbb4a591aeea",
+   "status": 200
+  },
+  {
+   "bytes": 91102,
+   "label": "walk race=Unknown page 51",
+   "seconds": 1.8,
+   "sha256": "4e04a13ce9b7ce69a48cfa28f0f765116fb90b22cf1513b17cafeb7d5408bedd",
+   "status": 200
+  },
+  {
+   "bytes": 91158,
+   "label": "walk race=Unknown page 52",
+   "seconds": 3.9,
+   "sha256": "ffaad03dea6df6b8da54e11ce22230f0f7dad4f0f4ad1e3bba51dbe3bac46ac3",
+   "status": 200
+  },
+  {
+   "bytes": 91060,
+   "label": "walk race=Unknown page 53",
+   "seconds": 2.4,
+   "sha256": "1885333511d333c6f56f37cdea15def46db470a2b875f2caa3d0fe27115629f6",
+   "status": 200
+  },
+  {
+   "bytes": 91043,
+   "label": "walk race=Unknown page 54",
+   "seconds": 2.1,
+   "sha256": "d54169285f1394df1f9b92868cff9e7c4fe62f54e6e67b3b8c27f8931dafa5c4",
+   "status": 200
+  },
+  {
+   "bytes": 90974,
+   "label": "walk race=Unknown page 55",
+   "seconds": 2.2,
+   "sha256": "4d80dffeddcc9b1b2f62d6f412beec4be8189d218682345b1ff0dc14f532c4e0",
+   "status": 200
+  },
+  {
+   "bytes": 91091,
+   "label": "walk race=Unknown page 56",
+   "seconds": 1.5,
+   "sha256": "a87edea0b0b2705ef44cae9d70275577d977e9c161a9b6f20b31bf01074971d9",
+   "status": 200
+  },
+  {
+   "bytes": 90752,
+   "label": "walk race=Unknown page 57",
+   "seconds": 2.4,
+   "sha256": "a110a63a79daadaea412c964e2931ab1ac5f6075c76dc4d4c0373b669033d173",
+   "status": 200
+  },
+  {
+   "bytes": 91023,
+   "label": "walk race=Unknown page 58",
+   "seconds": 2.5,
+   "sha256": "f297080773a99b21103955725f4f0994ba07e6e82706ff10e8492c5b292749a6",
+   "status": 200
+  },
+  {
+   "bytes": 91267,
+   "label": "walk race=Unknown page 59",
+   "seconds": 2.5,
+   "sha256": "b4a1fcff7892e67ef0672cbc2c999c6221bbf28557dd474d96d5d0113620faff",
+   "status": 200
+  },
+  {
+   "bytes": 91194,
+   "label": "walk race=Unknown page 60",
+   "seconds": 2.4,
+   "sha256": "ce74e8d8e0d94d144f285bf44881c5ce951331f7e359e3956096eca26a46fb03",
+   "status": 200
+  },
+  {
+   "bytes": 91111,
+   "label": "walk race=Unknown page 61",
+   "seconds": 1.8,
+   "sha256": "1b284cff0064ea653b47d81bebae513e96980463072e460896efb77ac5557ca4",
+   "status": 200
+  },
+  {
+   "bytes": 91058,
+   "label": "walk race=Unknown page 62",
+   "seconds": 1.9,
+   "sha256": "4e80c24f97f96d1c5d106fdf34f5fdd1c3be19131e44de75aa590b8ae77867ec",
+   "status": 200
+  },
+  {
+   "bytes": 90920,
+   "label": "walk race=Unknown page 63",
+   "seconds": 2.8,
+   "sha256": "3e7ef5a54c3b7635c5fe7df1880f04aeb81a2d52fa2d722c699f6788651c1e9c",
+   "status": 200
+  },
+  {
+   "bytes": 90957,
+   "label": "walk race=Unknown page 64",
+   "seconds": 1.9,
+   "sha256": "e03497591e2d2eda2396bc720cca6333637ac0f4b0e163d095a87fa5a51fc4b3",
+   "status": 200
+  },
+  {
+   "bytes": 91115,
+   "label": "walk race=Unknown page 65",
+   "seconds": 2.1,
+   "sha256": "7b1f5d07f0448386a52a8621ebeecb9cf39e57a959eef5997ab05e7a7cdbe7f7",
+   "status": 200
+  },
+  {
+   "bytes": 91087,
+   "label": "walk race=Unknown page 66",
+   "seconds": 3.6,
+   "sha256": "f2ef6f7ae25ab8994cc953a693ae908f5e1aa9c3c75114b2168cc76b51228978",
+   "status": 200
+  },
+  {
+   "bytes": 91155,
+   "label": "walk race=Unknown page 67",
+   "seconds": 1.3,
+   "sha256": "37f31908153e8be9fcf8ec56b7db5189b4bffc7d3d0053ce61a08b67b31b867a",
+   "status": 200
+  },
+  {
+   "bytes": 90956,
+   "label": "walk race=Unknown page 68",
+   "seconds": 1.8,
+   "sha256": "e8034739dffd388f9217b6e24a526c86384944b1931e992fb7b3d4a77a5b9bda",
+   "status": 200
+  },
+  {
+   "bytes": 90919,
+   "label": "walk race=Unknown page 69",
+   "seconds": 2.7,
+   "sha256": "ac5d69f467c48d7635c702174a730c0a88879e1f0837629956569d956f59c37c",
+   "status": 200
+  },
+  {
+   "bytes": 91322,
+   "label": "walk race=Unknown page 70",
+   "seconds": 3.0,
+   "sha256": "d53c2bbcb7594aa5f12137717d77ab83f049a419669239686779f89b38576295",
+   "status": 200
+  },
+  {
+   "bytes": 91080,
+   "label": "walk race=Unknown page 71",
+   "seconds": 1.6,
+   "sha256": "c3984be593989e3cb8ee2b7571fe6c15fdfc4f276a2598b613867be1ac800c34",
+   "status": 200
+  },
+  {
+   "bytes": 91132,
+   "label": "walk race=Unknown page 72",
+   "seconds": 1.5,
+   "sha256": "623284acf33242f331bfe4c59f90c8ffda9dcd23c0760807910e7f58c8cf8f96",
+   "status": 200
+  },
+  {
+   "bytes": 91368,
+   "label": "walk race=Unknown page 73",
+   "seconds": 1.9,
+   "sha256": "69730cfb920f204b82d00e0d96255eb71fabaf59626f8372ee9decd8f7d7e471",
+   "status": 200
+  },
+  {
+   "bytes": 91472,
+   "label": "walk race=Unknown page 74",
+   "seconds": 2.3,
+   "sha256": "01b0942a1d6afed52f771d5682bd937f71f51db4c1907ce57536d4a66fbb25ce",
+   "status": 200
+  },
+  {
+   "bytes": 91105,
+   "label": "walk race=Unknown page 75",
+   "seconds": 3.0,
+   "sha256": "13e4fce2bf5fc713a1869d38455fa18ccad853a7d55b9e33dee475a06bc0c3bc",
+   "status": 200
+  },
+  {
+   "bytes": 90942,
+   "label": "walk race=Unknown page 76",
+   "seconds": 2.0,
+   "sha256": "d7e343ab5446e8fb472296b3de0493f2e2b0b18170df4d9231dbfc65a5285853",
+   "status": 200
+  },
+  {
+   "bytes": 91169,
+   "label": "walk race=Unknown page 77",
+   "seconds": 1.3,
+   "sha256": "89113f382abb2902bcd1b426d24a3a02ed6502c37a0303b548c13ca11a87d1d4",
+   "status": 200
+  },
+  {
+   "bytes": 91092,
+   "label": "walk race=Unknown page 78",
+   "seconds": 2.1,
+   "sha256": "ec15eb22c9681fe33b64c001fe5e3a5d730a01ea77cb8abc4daf25e79c75d3e5",
+   "status": 200
+  },
+  {
+   "bytes": 91311,
+   "label": "walk race=Unknown page 79",
+   "seconds": 1.8,
+   "sha256": "864e1e875fd85b836ec16ab4991e102792d67563fa993e20cada7c3784eeb83a",
+   "status": 200
+  },
+  {
+   "bytes": 91200,
+   "label": "walk race=Unknown page 80",
+   "seconds": 2.5,
+   "sha256": "99eee5b660122e7fdf1a7c854acb7a388970b5c28ffc66eaee833b4943890db9",
+   "status": 200
+  },
+  {
+   "bytes": 91078,
+   "label": "walk race=Unknown page 81",
+   "seconds": 2.6,
+   "sha256": "33c1420286ed293749b572ad478fc44a0662eefe0c9844ad70fdd9a8b77b3712",
+   "status": 200
+  },
+  {
+   "bytes": 90966,
+   "label": "walk race=Unknown page 82",
+   "seconds": 2.2,
+   "sha256": "32039512567fbc696579d877549be01d506cdeaa4b19323976e1b5c6ced669e5",
+   "status": 200
+  },
+  {
+   "bytes": 90785,
+   "label": "walk race=Unknown page 83",
+   "seconds": 2.2,
+   "sha256": "f0d2ef26fa350b4eb0f391ccf9680a077ff1f9c4a20a00b707374d742c86fbe7",
+   "status": 200
+  },
+  {
+   "bytes": 91090,
+   "label": "walk race=Unknown page 84",
+   "seconds": 2.5,
+   "sha256": "0714c24ec58a4a69850c5b526eb248b0a0822c8cf0871bd97c5c23bdc958832b",
+   "status": 200
+  },
+  {
+   "bytes": 91284,
+   "label": "walk race=Unknown page 85",
+   "seconds": 1.9,
+   "sha256": "473e56e5348f88c3e5223923bbe43ae98e87e0e14419ae08cfe883d51da353ad",
+   "status": 200
+  },
+  {
+   "bytes": 91471,
+   "label": "walk race=Unknown page 86",
+   "seconds": 3.0,
+   "sha256": "1fc0f2cb1590db8626708579de9f095cefa88fe222357a0a29baad22cb4e7a9e",
+   "status": 200
+  },
+  {
+   "bytes": 7336,
+   "label": "walk race=Unknown page 87",
+   "seconds": 2.0,
+   "sha256": "782d802b23b55cfa04bba60595aa43d6ab88b06ad13d4ee7f533e290aab62386",
+   "status": 200
+  }
+ ],
+ "snapshot": {
+  "pages_read": 599,
+  "pages_unreadable": 0,
+  "path": "/data/ccdi-fresh-v1/ccdi-raw-fresh-20261024T020144Z",
+  "served": {
+   "ethnicity": {
+    "CCDI-DCC": {
+     "Hispanic or Latino": 4090,
+     "Not reported": 55705
+    },
+    "KidsFirst": {
+     "Hispanic or Latino": 4824,
+     "Not Hispanic or Latino": 23336,
+     "Unknown": 10280
+    },
+    "PCDC": {
+     "<missing>": 304,
+     "Hispanic or Latino": 2830,
+     "Not Hispanic or Latino": 17747,
+     "Unknown": 3451
+    },
+    "StJude": {
+     "<missing>": 2,
+     "Hispanic or Latino": 909,
+     "Not Hispanic or Latino": 10505,
+     "Not reported": 3234,
+     "Unknown": 31
+    },
+    "Treehouse": {
+     "<missing>": 785,
+     "Hispanic or Latino": 553,
+     "Not Hispanic or Latino": 8323,
+     "Unknown": 3062
+    },
+    "ccdi-ecDNA": {
+     "<missing>": 3205
+    },
+    "ccdi-iusccc-pst": {
+     "Hispanic or Latino": 16,
+     "Not Hispanic or Latino": 85,
+     "Unknown": 403
+    }
+   },
+   "race": {
+    "CCDI-DCC": {
+     "American Indian or Alaska Native": 342,
+     "Asian": 1537,
+     "Black or African American": 4481,
+     "Native Hawaiian or other Pacific Islander": 143,
+     "Not Reported": 5830,
+     "Not allowed to collect": 471,
+     "Unknown": 4115,
+     "White": 43283,
+     "White, Hispanic or Latino": 24
+    },
+    "KidsFirst": {
+     "American Indian or Alaska Native": 123,
+     "Asian": 3234,
+     "Black or African American": 2243,
+     "Native Hawaiian or other Pacific Islander": 58,
+     "Unknown": 11266,
+     "White": 21516
+    },
+    "PCDC": {
+     "<missing>": 304,
+     "American Indian or Alaska Native": 116,
+     "Asian": 748,
+     "Black or African American": 2613,
+     "Native Hawaiian or other Pacific Islander": 68,
+     "Not Reported": 355,
+     "Unknown": 2742,
+     "White": 17386
+    },
+    "StJude": {
+     "<missing>": 12,
+     "American Indian or Alaska Native": 53,
+     "Asian": 130,
+     "Black or African American": 2257,
+     "Native Hawaiian or other Pacific Islander": 7,
+     "Not Reported": 3444,
+     "Unknown": 2,
+     "White": 8937
+    },
+    "Treehouse": {
+     "<missing>": 1407,
+     "Asian": 665,
+     "Black or African American": 976,
+     "Native Hawaiian or other Pacific Islander": 16,
+     "Not Reported": 5,
+     "Unknown": 1548,
+     "White": 8107
+    },
+    "ccdi-ecDNA": {
+     "<missing>": 3205
+    },
+    "ccdi-iusccc-pst": {
+     "Black or African American": 20,
+     "Unknown": 404,
+     "White": 80
+    }
+   },
+   "sex": {
+    "CCDI-DCC": {
+     "F": 27510,
+     "M": 31853,
+     "U": 432
+    },
+    "KidsFirst": {
+     "<missing>": 1,
+     "F": 18122,
+     "M": 19827,
+     "U": 490
+    },
+    "PCDC": {
+     "<missing>": 315,
+     "F": 11104,
+     "M": 12913
+    },
+    "StJude": {
+     "<missing>": 1325,
+     "F": 6408,
+     "M": 6948
+    },
+    "Treehouse": {
+     "F": 5965,
+     "M": 6229,
+     "U": 529
+    },
+    "ccdi-ecDNA": {
+     "F": 1372,
+     "M": 1720,
+     "U": 113
+    },
+    "ccdi-iusccc-pst": {
+     "F": 226,
+     "M": 276,
+     "U": 2
+    }
+   },
+   "vital_status": {
+    "CCDI-DCC": {
+     "<missing>": 14232,
+     "Alive": 9641,
+     "Dead": 3678,
+     "Not reported": 1695,
+     "Unknown": 30548,
+     "Unspecified": 1
+    },
+    "KidsFirst": {
+     "<missing>": 35864,
+     "Alive": 2238,
+     "Dead": 335,
+     "Not reported": 3
+    },
+    "PCDC": {
+     "<missing>": 24332
+    },
+    "StJude": {
+     "<missing>": 14681
+    },
+    "Treehouse": {
+     "<missing>": 12723
+    },
+    "ccdi-ecDNA": {
+     "Alive": 2057,
+     "Dead": 581,
+     "Unknown": 567
+    },
+    "ccdi-iusccc-pst": {
+     "Dead": 54,
+     "Unknown": 339,
+     "Unspecified": 111
+    }
+   }
+  },
+  "subjects": {
+   "CCDI-DCC": 59795,
+   "KidsFirst": 38440,
+   "PCDC": 24332,
+   "StJude": 14681,
+   "Treehouse": 12723,
+   "ccdi-ecDNA": 3205,
+   "ccdi-iusccc-pst": 504
+  }
+ },
+ "walks": [
+  {
+   "by_source": {
+    "CCDI-DCC": {
+     "entries": 0,
+     "error_kinds": [],
+     "error_pages": 0,
+     "first_total": 0,
+     "pages": 83,
+     "totals": [
+      0
+     ],
+     "values": {},
+     "with_value": 0
+    },
+    "KidsFirst": {
+     "entries": 8284,
+     "error_kinds": [],
+     "error_pages": 0,
+     "first_total": 8284,
+     "pages": 83,
+     "totals": [
+      8284
+     ],
+     "values": {
+      "Unknown": 8284
+     },
+     "with_value": 8284
+    },
+    "PCDC": {
+     "entries": 3477,
+     "error_kinds": [
+      "InvalidParameters"
+     ],
+     "error_pages": 48,
+     "first_total": 3477,
+     "pages": 83,
+     "totals": [
+      3477,
+      null
+     ],
+     "values": {
+      "<missing>": 10,
+      "Unknown": 3467
+     },
+     "with_value": 3467
+    },
+    "StJude": {
+     "entries": 31,
+     "error_kinds": [
+      "InvalidParameters"
+     ],
+     "error_pages": 82,
+     "first_total": 31,
+     "pages": 83,
+     "totals": [
+      31,
+      null
+     ],
+     "values": {
+      "Unknown": 31
+     },
+     "with_value": 31
+    },
+    "Treehouse": {
+     "entries": 3062,
+     "error_kinds": [
+      "InvalidParameters"
+     ],
+     "error_pages": 52,
+     "first_total": 3062,
+     "pages": 83,
+     "totals": [
+      3062,
+      null
+     ],
+     "values": {
+      "Unknown": 3062
+     },
+     "with_value": 3062
+    },
+    "ccdi-ecDNA": {
+     "entries": 0,
+     "error_kinds": [
+      "NotFound"
+     ],
+     "error_pages": 82,
+     "first_total": 0,
+     "pages": 83,
+     "totals": [
+      0,
+      null
+     ],
+     "values": {},
+     "with_value": 0
+    },
+    "ccdi-iusccc-pst": {
+     "entries": 403,
+     "error_kinds": [],
+     "error_pages": 0,
+     "first_total": 403,
+     "pages": 83,
+     "totals": [
+      403
+     ],
+     "values": {
+      "Unknown": 403
+     },
+     "with_value": 403
+    }
+   },
+   "field": "ethnicity",
+   "pages_planned": 83,
+   "statuses": [
+    200
+   ],
+   "value": "Unknown"
+  },
+  {
+   "by_source": {
+    "CCDI-DCC": {
+     "entries": 4115,
+     "error_kinds": [],
+     "error_pages": 0,
+     "first_total": 4115,
+     "pages": 87,
+     "totals": [
+      4115
+     ],
+     "values": {
+      "American Indian or Alaska Native": 1,
+      "Asian": 9,
+      "Black or African American": 21,
+      "Native Hawaiian or other Pacific Islander": 3,
+      "Not Reported": 22,
+      "Unknown": 4115,
+      "White": 131
+     },
+     "with_value": 4115
+    },
+    "KidsFirst": {
+     "entries": 8607,
+     "error_kinds": [],
+     "error_pages": 0,
+     "first_total": 8607,
+     "pages": 87,
+     "totals": [
+      8607
+     ],
+     "values": {
+      "Unknown": 8607
+     },
+     "with_value": 8607
+    },
+    "PCDC": {
+     "entries": 2796,
+     "error_kinds": [
+      "InvalidParameters"
+     ],
+     "error_pages": 59,
+     "first_total": 2796,
+     "pages": 87,
+     "totals": [
+      2796,
+      null
+     ],
+     "values": {
+      "<missing>": 42,
+      "Unknown": 2754
+     },
+     "with_value": 2754
+    },
+    "StJude": {
+     "entries": 2,
+     "error_kinds": [
+      "InvalidParameters"
+     ],
+     "error_pages": 86,
+     "first_total": 2,
+     "pages": 87,
+     "totals": [
+      2,
+      null
+     ],
+     "values": {
+      "Unknown": 2
+     },
+     "with_value": 2
+    },
+    "Treehouse": {
+     "entries": 1548,
+     "error_kinds": [
+      "InvalidParameters"
+     ],
+     "error_pages": 71,
+     "first_total": 1548,
+     "pages": 87,
+     "totals": [
+      1548,
+      null
+     ],
+     "values": {
+      "Unknown": 1548
+     },
+     "with_value": 1548
+    },
+    "ccdi-ecDNA": {
+     "entries": 0,
+     "error_kinds": [
+      "NotFound"
+     ],
+     "error_pages": 86,
+     "first_total": 0,
+     "pages": 87,
+     "totals": [
+      0,
+      null
+     ],
+     "values": {},
+     "with_value": 0
+    },
+    "ccdi-iusccc-pst": {
+     "entries": 404,
+     "error_kinds": [],
+     "error_pages": 0,
+     "first_total": 404,
+     "pages": 87,
+     "totals": [
+      404
+     ],
+     "values": {
+      "Unknown": 404
+     },
+     "with_value": 404
+    }
+   },
+   "field": "race",
+   "pages_planned": 87,
+   "statuses": [
+    200
+   ],
+   "value": "Unknown"
+  }
+ ]
+}
