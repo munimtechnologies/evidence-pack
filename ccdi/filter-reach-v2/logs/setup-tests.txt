@@ -1,0 +1,13 @@
+test_all_hold_on_cross_wired_federation (test_crossprobe.CrossProbeTest.test_all_hold_on_cross_wired_federation) ... ok
+test_cross_wired_on_shared_values_only (test_crossprobe.CrossProbeTest.test_cross_wired_on_shared_values_only) ... ok
+test_not_cross_wired (test_crossprobe.CrossProbeTest.test_not_cross_wired) ... ok
+test_raw_values_rejected (test_crossprobe.CrossProbeTest.test_raw_values_rejected) ... ok
+test_real_thresholds_fail_on_toy_sizes (test_crossprobe.CrossProbeTest.test_real_thresholds_fail_on_toy_sizes) ... ok
+test_request_plan (test_crossprobe.CrossProbeTest.test_request_plan) ... ok
+test_served_in_full_rejects_short_walk (test_crossprobe.CrossProbeTest.test_served_in_full_rejects_short_walk) ... ok
+test_without_snapshot (test_crossprobe.CrossProbeTest.test_without_snapshot) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.164s
+
+OK

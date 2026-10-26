@@ -1,0 +1,58 @@
+{
+ "contract": "mv2-compete-result-v1",
+ "name": "ccdi-cross-v1",
+ "id": "080d4d3a090b",
+ "field": "medicine",
+ "run": "20261025T202046Z-medicine",
+ "kind": "compete",
+ "status": "ok",
+ "reason": "",
+ "host": "dell",
+ "image": "python:3.12",
+ "started_at": "2026-10-25T22:51:40.238983+00:00",
+ "finished_at": "2026-10-25T23:00:51.134548+00:00",
+ "duration_seconds": 550,
+ "limits": {
+  "cpu": 1.0,
+  "memory_gb": 1.0,
+  "timeout_minutes": 180.0
+ },
+ "peak_memory_gb": 0.02,
+ "network": {
+  "setup": true,
+  "run": true
+ },
+ "steps": [
+  {
+   "step": "setup-01-python",
+   "cmd": "python get_code.py",
+   "exit": 0,
+   "seconds": 1
+  },
+  {
+   "step": "setup-02-python",
+   "cmd": "python -m unittest -v test_crossprobe",
+   "exit": 0,
+   "seconds": 0
+  },
+  {
+   "step": "run-01-python",
+   "cmd": "python crossprobe.py --out /out --data-dir /data",
+   "exit": 0,
+   "seconds": 425
+  }
+ ],
+ "out_files": [
+  "crossprobe.json"
+ ],
+ "out_files_total": 1,
+ "out_skipped": [],
+ "upload_skipped": [],
+ "summary_tail": "[run-01-python stdout] t reported page 19 200 295166 bytes 1.8 s\nwalk ethnicity=Not reported page 20 200 313367 bytes 1.8 s\nwalk ethnicity=Not reported page 21 200 324492 bytes 1.0 s\nwalk ethnicity=Not reported page 22 200 325141 bytes 1.0 s\nwalk ethnicity=Not reported page 23 200 307653 bytes 1.4 s\nwalk ethnicity=Not reported page 24 200 297313 bytes 1.0 s\nwalk ethnicity=Not reported page 25 200 292158 bytes 1.1 s\nwalk ethnicity=Not reported page 26 200 287279 bytes 1.0 s\nwalk ethnicity=Not reported page 27 200 287511 bytes 1.3 s\nwalk ethnicity=Not reported page 28 200 295591 bytes 1.9 s\nwalk ethnicity=Not reported page 29 200 322789 bytes 1.2 s\nwalk ethnicity=Not reported page 30 200 303951 bytes 1.2 s\nwalk ethnicity=Not reported page 31 200 306660 bytes 1.2 s\nwalk ethnicity=Not reported page 32 200 314037 bytes 1.1 s\nwalk ethnicity=Not reported page 33 200 164380 bytes 1.0 s\nwalk sex=U page 1 200 290124 bytes 1.5 s\nwalk sex=U page 2 200 254238 bytes 1.0 s\nwalk sex=U page 3 200 248238 bytes 1.5 s\nwalk sex=U page 4 200 246277 bytes 3.1 s\n{\"D1\": \"pass\", \"D2\": \"pass\", \"D3\": \"fail\", \"S1\": \"pass\", \"S2\": \"pass\", \"S3\": \"fail\"} {\"dcc_sex_u\": \"other\", \"stjude_vital_filter\": \"matches_ethnicity_on_shared_values\"}\n",
+ "paths": {
+  "workdir": "/work (copy of E:\\MV2-Pursuit\\work\\20261025T202046Z-medicine\\compete\\ccdi-cross)",
+  "out": "/out -> out/",
+  "data": "/data (docker volume mv2c-data-ccdi-raw, kept for later jobs)"
+ },
+ "note": ""
+}
