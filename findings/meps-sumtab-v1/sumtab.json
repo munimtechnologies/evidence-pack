@@ -1,0 +1,1287 @@
+{
+ "version": "0.1.0",
+ "repo": "HHS-AHRQ/MEPS-summary-tables",
+ "app": "formatted_tables/hc_use",
+ "sha": "4fbd9b1617a8d73d29a6e016b803b865208a1366",
+ "code": {
+  "file": "functions_format.R",
+  "status": "ok",
+  "sha256": "43629aee221f287af6e1b4329e953b735b248fdc1d2728cbc75f997083e970ac",
+  "tested_line": "value %in% c(\"meanEXP\",\"medEXP\")",
+  "tested_line_found": true,
+  "n_lines": 19
+ },
+ "files": [
+  {
+   "file": "DY1996.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 17494689,
+   "sha256": "5532202602964fd81b02db1392a92610ca1f4691dfeb36e567efbad40e8832f6",
+   "rows": 55923,
+   "cells": 6265,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY1997.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 17541321,
+   "sha256": "8165a6e086b0a5636fdf44137a593cc5a7eb3622acb6a661b98e0c9d0613979c",
+   "rows": 55939,
+   "cells": 6269,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY1998.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 17517897,
+   "sha256": "941f06df8a453b79fae7fd0f3772909a208a15c25d4bab9ddb360b59dfaf75f7",
+   "rows": 55913,
+   "cells": 6267,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY1999.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 17512334,
+   "sha256": "48cf4caa94eb3c9ec0264bf3a6176c71bc1e8bf25df0f06522dde0d0df93445d",
+   "rows": 55967,
+   "cells": 6273,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY2000.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 17468461,
+   "sha256": "8c73e13ce7792b517cef15d592a8f7a5419d3a34ec84cfe89da74a55e033593c",
+   "rows": 55805,
+   "cells": 6255,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY2001.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 17520865,
+   "sha256": "826c4ebc461e7badc4c461884cb0e2fb3c7586cbfab93c2e758a5c81cac26b7d",
+   "rows": 55901,
+   "cells": 6267,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY2002.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 18460169,
+   "sha256": "fab819d9bba0bff34ea38c7cc575e421a1185224b0bdc0a7566c009690edd1cc",
+   "rows": 58757,
+   "cells": 6587,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY2003.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 18439929,
+   "sha256": "40bad91242d711ba96aad22f3b0275c2f404a5a7e3796c76b840276c14620a78",
+   "rows": 58735,
+   "cells": 6585,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY2004.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 18448560,
+   "sha256": "e23383eaef418c21c6ea21a93f683a60228477a79a2784ba4f152b1ff34e6e1b",
+   "rows": 58755,
+   "cells": 6585,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY2005.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 18454727,
+   "sha256": "a1a53cae215af6c6ad276398be6e65f0ed5d403e3bfe0ca3aca5f6e7588cba88",
+   "rows": 58773,
+   "cells": 6587,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY2006.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 18464080,
+   "sha256": "a84913d4886bd4d0140a03ef2faf56e7428b6a196aa5ca53183fbb899d45fc1d",
+   "rows": 58753,
+   "cells": 6581,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY2007.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 18467104,
+   "sha256": "b64bd963bf27a7081bb6e8683cc3f7c2cb815c0c10447e41e359d06bf90b7fb6",
+   "rows": 58779,
+   "cells": 6585,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY2008.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 18429340,
+   "sha256": "e933eab5ae6a0010d631db0613429eda72ccd3cfe061ce7fb699bcd3ce900ef3",
+   "rows": 58669,
+   "cells": 6575,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY2009.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 18452875,
+   "sha256": "793c8bf93e2d1e470cdaec36653f36a43d8256aa82b40760f0c31f654a7e0a2c",
+   "rows": 58715,
+   "cells": 6579,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY2010.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 18449639,
+   "sha256": "4bcdb9159f7629986f6bb7eb0f55b3b49cc1460c2e12856e08d2208af30abc50",
+   "rows": 58703,
+   "cells": 6575,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY2011.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 18453609,
+   "sha256": "770b74851a730839ed32228b0695048a65cb5363a8eda730328b0e6a2bd88986",
+   "rows": 58717,
+   "cells": 6579,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY2012.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 18459281,
+   "sha256": "b092b75cbb65100707088c83b1e83e56138b105aade033f2c55c52411b9135ad",
+   "rows": 58719,
+   "cells": 6585,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY2013.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 18466510,
+   "sha256": "dfcc5375caf78f102af63315d123004ac713f3e5c0aee9e2338f3a5c2e5ced1e",
+   "rows": 58735,
+   "cells": 6581,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY2014.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 18455778,
+   "sha256": "35932a11b8ee9b57c32c80ae057f7882089da526ca36687420b5074e253bd7ca",
+   "rows": 58727,
+   "cells": 6581,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY2015.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 18465458,
+   "sha256": "e6884dbe4ad594d423910b46f842f0ccc9b730668733d2d468928285e88ccb8b",
+   "rows": 58735,
+   "cells": 6581,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY2016.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 18459116,
+   "sha256": "315c9a114ad1800133e0d95689e605457768fada6e9df5348215ef0b04f20b0b",
+   "rows": 58711,
+   "cells": 6581,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY2017.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 18459377,
+   "sha256": "b41439a55c5bb8d7a773fbce1e25861bd2dca3df22d620c713fe04aab866b362",
+   "rows": 58733,
+   "cells": 6583,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY2018.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 18450646,
+   "sha256": "ee73328438bea0f59af7ad4b02b837cabeef14cbe1f6dd7f9bf7f6d57097259a",
+   "rows": 58715,
+   "cells": 6581,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY2019.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 19007614,
+   "sha256": "a4eecc66001d18804addaf12013a2879fbd8d24642d0d69d8a253f27478a8a8f",
+   "rows": 58815,
+   "cells": 6585,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY2020.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 18968498,
+   "sha256": "b19e38a86029ff56acbfc85840b52f4567ff98fcc56c5ba137e48ceb5a96f4d8",
+   "rows": 58689,
+   "cells": 6571,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY2021.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 19000533,
+   "sha256": "0739931f84ccaa95f2a1a213fee1f1ac0d93cc7e6a3a0024e333313f5bd74cda",
+   "rows": 58755,
+   "cells": 6581,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  },
+  {
+   "file": "DY2022.csv",
+   "status": "ok",
+   "lfs": false,
+   "bytes": 18981260,
+   "sha256": "4250ef87e8f75cd05efd9933543e83df4d60259a87810c12fd815c8f9d525bce",
+   "rows": 58771,
+   "cells": 6581,
+   "stat_vars": [
+    "avgEVT",
+    "meanEVT",
+    "meanEXP",
+    "meanEXP0",
+    "medEXP",
+    "pctEXP",
+    "totEVT",
+    "totEXP",
+    "totPOP"
+   ]
+  }
+ ],
+ "primary_year": 2022,
+ "per_year": {
+  "1996": {
+   "pct_scale": 1.0,
+   "control": {
+    "cells": 6261,
+    "equal": 6261,
+    "ambiguous": 4,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 5905,
+    "equal": 5905,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 5905,
+    "equal": 5905,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 972
+  },
+  "1997": {
+   "pct_scale": 1.0,
+   "control": {
+    "cells": 6247,
+    "equal": 6247,
+    "ambiguous": 22,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 6029,
+    "equal": 6029,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 6029,
+    "equal": 6029,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 748
+  },
+  "1998": {
+   "pct_scale": 1.0,
+   "control": {
+    "cells": 6247,
+    "equal": 6247,
+    "ambiguous": 20,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 5973,
+    "equal": 5973,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 5973,
+    "equal": 5973,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 932
+  },
+  "1999": {
+   "pct_scale": 1.0,
+   "control": {
+    "cells": 6245,
+    "equal": 6245,
+    "ambiguous": 28,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 5925,
+    "equal": 5925,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 5925,
+    "equal": 5925,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 954
+  },
+  "2000": {
+   "pct_scale": 1.0,
+   "control": {
+    "cells": 6229,
+    "equal": 6229,
+    "ambiguous": 26,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 5929,
+    "equal": 5929,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 5929,
+    "equal": 5929,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 922
+  },
+  "2001": {
+   "pct_scale": 1.0,
+   "control": {
+    "cells": 6243,
+    "equal": 6243,
+    "ambiguous": 24,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 5999,
+    "equal": 5999,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 5999,
+    "equal": 5999,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 776
+  },
+  "2002": {
+   "pct_scale": 1.0,
+   "control": {
+    "cells": 6561,
+    "equal": 6561,
+    "ambiguous": 26,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 6295,
+    "equal": 6295,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 6295,
+    "equal": 6295,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 772
+  },
+  "2003": {
+   "pct_scale": 1.0,
+   "control": {
+    "cells": 6559,
+    "equal": 6559,
+    "ambiguous": 26,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 6283,
+    "equal": 6283,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 6283,
+    "equal": 6283,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 802
+  },
+  "2004": {
+   "pct_scale": 1.0,
+   "control": {
+    "cells": 6559,
+    "equal": 6559,
+    "ambiguous": 26,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 6271,
+    "equal": 6271,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 6271,
+    "equal": 6271,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 778
+  },
+  "2005": {
+   "pct_scale": 1.0,
+   "control": {
+    "cells": 6561,
+    "equal": 6561,
+    "ambiguous": 26,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 6281,
+    "equal": 6281,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 6281,
+    "equal": 6281,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 778
+  },
+  "2006": {
+   "pct_scale": 1.0,
+   "control": {
+    "cells": 6565,
+    "equal": 6565,
+    "ambiguous": 16,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 6309,
+    "equal": 6309,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 6309,
+    "equal": 6309,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 816
+  },
+  "2007": {
+   "pct_scale": 1.0,
+   "control": {
+    "cells": 6565,
+    "equal": 6565,
+    "ambiguous": 20,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 6295,
+    "equal": 6295,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 6295,
+    "equal": 6295,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 860
+  },
+  "2008": {
+   "pct_scale": 1.0,
+   "control": {
+    "cells": 6551,
+    "equal": 6551,
+    "ambiguous": 24,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 6291,
+    "equal": 6291,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 6291,
+    "equal": 6291,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 828
+  },
+  "2009": {
+   "pct_scale": 1.0,
+   "control": {
+    "cells": 6557,
+    "equal": 6557,
+    "ambiguous": 22,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 6327,
+    "equal": 6327,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 6327,
+    "equal": 6327,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 828
+  },
+  "2010": {
+   "pct_scale": 1.0,
+   "control": {
+    "cells": 6567,
+    "equal": 6567,
+    "ambiguous": 8,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 6309,
+    "equal": 6309,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 6309,
+    "equal": 6309,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 814
+  },
+  "2011": {
+   "pct_scale": 1.0,
+   "control": {
+    "cells": 6557,
+    "equal": 6557,
+    "ambiguous": 22,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 6325,
+    "equal": 6325,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 6325,
+    "equal": 6325,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 824
+  },
+  "2012": {
+   "pct_scale": 1.0,
+   "control": {
+    "cells": 6559,
+    "equal": 6559,
+    "ambiguous": 26,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 6345,
+    "equal": 6345,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 6345,
+    "equal": 6345,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 782
+  },
+  "2013": {
+   "pct_scale": 1.0,
+   "control": {
+    "cells": 6559,
+    "equal": 6559,
+    "ambiguous": 22,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 6345,
+    "equal": 6345,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 6345,
+    "equal": 6345,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 766
+  },
+  "2014": {
+   "pct_scale": 1.0,
+   "control": {
+    "cells": 6559,
+    "equal": 6559,
+    "ambiguous": 22,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 6333,
+    "equal": 6333,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 6333,
+    "equal": 6333,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 742
+  },
+  "2015": {
+   "pct_scale": 1.0,
+   "control": {
+    "cells": 6559,
+    "equal": 6559,
+    "ambiguous": 22,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 6347,
+    "equal": 6347,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 6347,
+    "equal": 6347,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 752
+  },
+  "2016": {
+   "pct_scale": 1.0,
+   "control": {
+    "cells": 6559,
+    "equal": 6559,
+    "ambiguous": 22,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 6351,
+    "equal": 6351,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 6351,
+    "equal": 6351,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 760
+  },
+  "2017": {
+   "pct_scale": 1.0,
+   "control": {
+    "cells": 6561,
+    "equal": 6561,
+    "ambiguous": 22,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 6327,
+    "equal": 6327,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 6327,
+    "equal": 6327,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 766
+  },
+  "2018": {
+   "pct_scale": 1.0,
+   "control": {
+    "cells": 6581,
+    "equal": 6581,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 6317,
+    "equal": 6317,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 6317,
+    "equal": 6317,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 688
+  },
+  "2019": {
+   "pct_scale": 100.0,
+   "control": {
+    "cells": 6585,
+    "equal": 6585,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 6329,
+    "equal": 6329,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 6329,
+    "equal": 6329,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 744
+  },
+  "2020": {
+   "pct_scale": 100.0,
+   "control": {
+    "cells": 6571,
+    "equal": 6571,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 6313,
+    "equal": 6313,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 6313,
+    "equal": 6313,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 846
+  },
+  "2021": {
+   "pct_scale": 100.0,
+   "control": {
+    "cells": 6581,
+    "equal": 6581,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 6339,
+    "equal": 6339,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 6339,
+    "equal": 6339,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 752
+  },
+  "2022": {
+   "pct_scale": 100.0,
+   "control": {
+    "cells": 6581,
+    "equal": 6581,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "meanEXP": {
+    "cells": 6291,
+    "equal": 6291,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "medEXP": {
+    "cells": 6291,
+    "equal": 6291,
+    "less": 0,
+    "greater": 0,
+    "ambiguous": 0,
+    "share_equal": 1.0
+   },
+   "low_n_published": 886
+  }
+ },
+ "grades": {
+  "P1": {
+   "value": 1.0,
+   "cells": 6291,
+   "grade": "held"
+  },
+  "P2": {
+   "value": 1.0,
+   "cells": 6291,
+   "grade": "held"
+  },
+  "P3": {
+   "years": 27,
+   "years_below": [],
+   "grade": "held"
+  },
+  "P4": {
+   "value": 1.0,
+   "cells": 6581,
+   "grade": "held"
+  },
+  "P5": {
+   "value": 886,
+   "grade": "held"
+  }
+ }
+}

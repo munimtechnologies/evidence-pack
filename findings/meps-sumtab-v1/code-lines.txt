@@ -1,0 +1,19 @@
+11: #  - removed comma and '*' from coef/value column and added 'asterisk' column
+14: #  - adding 'Year', 'stat_group', 'col_group', 'row_group', 'asterisk', 'Percent', 'sample_size' to all tables -- although some will not be used
+15: #  - leaving suppressed values in the tables (most relevant for hc_pmed and hc_cond tables)
+83:     # Merge sample sizes for suppression rules --------------------------------
+121:       # Merge adjustment denominators and suppress where needed
+124:       mutate(sample_size = ifelse(value %in% c("meanEXP","medEXP"), n_exp, n)) %>%
+126:       mutate(RSE = se/value,
+128:              special_pct = (Percent & (value < 0.1) & (RSE < (0.1/value-1)/1.96)),
+129:              suppress = (RSE > 0.5),
+130:              suppress = ifelse(special_pct, FALSE, suppress),
+131:              suppress = ifelse(sample_size < 60 | se == 0, TRUE, suppress),
+132:              # suppress = (sample_size < 60 | RSE > 0.5) | (se == 0),
+133:              # suppress = replace(suppress, special_pct, FALSE),
+134:              asterisk = ifelse(RSE > 0.3 & !suppress, "*", "")) %>%
+137:         value = ifelse(suppress, NA, value/denom),
+138:         se    = ifelse(suppress, NA, se/denom))  %>%
+149:              asterisk, Percent, sample_size, adjText)
+264:         "asterisk",
+265:         "Percent", "sample_size", "caption")) %>%
