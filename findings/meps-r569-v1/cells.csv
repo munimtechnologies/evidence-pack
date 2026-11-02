@@ -1,0 +1,25 @@
+cid,figure,label,published,pct,se,n,diff,exact,close
+F1a,1,50+,21.5,21.455,0.805,3501,-0.045,True,True
+F1b,1,50-64,9.2,9.167,0.86,1505,-0.033,True,True
+F1c,1,65+,33.8,33.771,1.208,1996,-0.029,True,True
+F2a,2,50+,42.8,42.75,1.337,2608,-0.05,False,True
+F2b,2,50-64,24.8,24.799,1.54,1318,-0.001,True,True
+F2c,2,65+,67.6,67.57,1.927,1290,-0.03,True,True
+F3a,3,50-64 any private,27.9,27.879,1.772,930,-0.021,True,True
+F3b,3,50-64 public only,17.4,17.423,2.942,294,0.023,True,True
+F4a,4,65+ Medicare only,69.4,69.447,2.988,515,0.047,True,True
+F4b,4,65+ Medicare and private,72.4,72.469,2.742,569,0.069,False,True
+F4c,4,65+ Medicare and other public,45.8,45.849,5.087,191,0.049,True,True
+F5a,5,No USC,30.7,30.655,3.371,358,-0.045,True,True
+F5b,5,Yes USC,45.3,45.331,1.421,2208,0.031,True,True
+F6a,6,Hispanic,25.4,25.392,3.524,308,-0.008,True,True
+F6b,6,NH White,47.7,47.686,1.605,1719,-0.014,True,True
+F6c,6,NH Black,37.1,37.14,3.264,411,0.04,True,True
+F6d,6,NH Asian,30.4,30.417,5.035,110,0.017,True,True
+F7a,7,Northeast,44.1,44.034,3.824,438,-0.066,False,True
+F7b,7,Midwest,43.9,44.129,2.611,559,0.229,False,True
+F7c,7,South,42.1,41.978,2.217,1003,-0.122,False,True
+F7d,7,West,41.7,41.744,2.378,608,0.044,True,True
+F8a,8,Low income (<200% FPL),37.5,37.461,2.146,900,-0.039,True,True
+F8b,8,Middle income (200-<400% FPL),38.9,38.868,2.37,652,-0.032,True,True
+F8c,8,High income (>=400% FPL),47.6,47.6,2.234,1056,0.0,True,True

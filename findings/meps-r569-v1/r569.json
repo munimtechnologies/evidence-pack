@@ -1,0 +1,782 @@
+{
+ "version": "0.1.0",
+ "error": null,
+ "h243": {
+  "file": "h243dta.zip",
+  "bytes": 5789896,
+  "sha256": "7fc534de09eff5fd81facb74d61511d322ebe8bc45af7b75441204fcaf9fb454"
+ },
+ "persons": 22431,
+ "n_variables": 1420,
+ "missing_columns": [],
+ "msa_like_variables": [],
+ "msa_named_variables_present": [],
+ "saq_positive_weight": 11299,
+ "cells": [
+  {
+   "cid": "F1a",
+   "figure": 1,
+   "label": "50+",
+   "published": 21.5,
+   "pct": 21.455052454428596,
+   "se": 0.8045691591690397,
+   "n": 3501,
+   "diff": -0.04494754557140368,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F1b",
+   "figure": 1,
+   "label": "50-64",
+   "published": 9.2,
+   "pct": 9.166687885135124,
+   "se": 0.8602132501281725,
+   "n": 1505,
+   "diff": -0.0333121148648754,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F1c",
+   "figure": 1,
+   "label": "65+",
+   "published": 33.8,
+   "pct": 33.77101414451588,
+   "se": 1.2080297961981847,
+   "n": 1996,
+   "diff": -0.02898585548411603,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2a",
+   "figure": 2,
+   "label": "50+",
+   "published": 42.8,
+   "pct": 42.749836732986346,
+   "se": 1.3369198297636182,
+   "n": 2608,
+   "diff": -0.05016326701365159,
+   "exact": false,
+   "close": true
+  },
+  {
+   "cid": "F2b",
+   "figure": 2,
+   "label": "50-64",
+   "published": 24.8,
+   "pct": 24.79949606022211,
+   "se": 1.5395224252249529,
+   "n": 1318,
+   "diff": -0.0005039397778894283,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2c",
+   "figure": 2,
+   "label": "65+",
+   "published": 67.6,
+   "pct": 67.57001203998786,
+   "se": 1.92670043939668,
+   "n": 1290,
+   "diff": -0.029987960012135773,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F3a",
+   "figure": 3,
+   "label": "50-64 any private",
+   "published": 27.9,
+   "pct": 27.87857222535555,
+   "se": 1.7717104078707506,
+   "n": 930,
+   "diff": -0.02142777464444734,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F3b",
+   "figure": 3,
+   "label": "50-64 public only",
+   "published": 17.4,
+   "pct": 17.423121840038018,
+   "se": 2.9417392400723585,
+   "n": 294,
+   "diff": 0.023121840038019315,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F4a",
+   "figure": 4,
+   "label": "65+ Medicare only",
+   "published": 69.4,
+   "pct": 69.44660994590592,
+   "se": 2.987702000576059,
+   "n": 515,
+   "diff": 0.04660994590591372,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F4b",
+   "figure": 4,
+   "label": "65+ Medicare and private",
+   "published": 72.4,
+   "pct": 72.46937869222477,
+   "se": 2.741541087299817,
+   "n": 569,
+   "diff": 0.06937869222475967,
+   "exact": false,
+   "close": true
+  },
+  {
+   "cid": "F4c",
+   "figure": 4,
+   "label": "65+ Medicare and other public",
+   "published": 45.8,
+   "pct": 45.848824624308776,
+   "se": 5.08693686398574,
+   "n": 191,
+   "diff": 0.04882462430877865,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F5a",
+   "figure": 5,
+   "label": "No USC",
+   "published": 30.7,
+   "pct": 30.65451830452129,
+   "se": 3.3705005748958974,
+   "n": 358,
+   "diff": -0.04548169547870984,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F5b",
+   "figure": 5,
+   "label": "Yes USC",
+   "published": 45.3,
+   "pct": 45.33062246162796,
+   "se": 1.4211956686617273,
+   "n": 2208,
+   "diff": 0.03062246162796356,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F6a",
+   "figure": 6,
+   "label": "Hispanic",
+   "published": 25.4,
+   "pct": 25.391572699094983,
+   "se": 3.52350656340304,
+   "n": 308,
+   "diff": -0.008427300905015755,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F6b",
+   "figure": 6,
+   "label": "NH White",
+   "published": 47.7,
+   "pct": 47.68565298633957,
+   "se": 1.6051538560148033,
+   "n": 1719,
+   "diff": -0.01434701366043356,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F6c",
+   "figure": 6,
+   "label": "NH Black",
+   "published": 37.1,
+   "pct": 37.13992602572641,
+   "se": 3.264204557920699,
+   "n": 411,
+   "diff": 0.03992602572640891,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F6d",
+   "figure": 6,
+   "label": "NH Asian",
+   "published": 30.4,
+   "pct": 30.417405553834953,
+   "se": 5.034570876333283,
+   "n": 110,
+   "diff": 0.0174055538349549,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F7a",
+   "figure": 7,
+   "label": "Northeast",
+   "published": 44.1,
+   "pct": 44.034145591212166,
+   "se": 3.823963456761835,
+   "n": 438,
+   "diff": -0.06585440878783544,
+   "exact": false,
+   "close": true
+  },
+  {
+   "cid": "F7b",
+   "figure": 7,
+   "label": "Midwest",
+   "published": 43.9,
+   "pct": 44.129198911219206,
+   "se": 2.610511944701949,
+   "n": 559,
+   "diff": 0.229198911219207,
+   "exact": false,
+   "close": true
+  },
+  {
+   "cid": "F7c",
+   "figure": 7,
+   "label": "South",
+   "published": 42.1,
+   "pct": 41.9780268074005,
+   "se": 2.2170713139658904,
+   "n": 1003,
+   "diff": -0.1219731925995049,
+   "exact": false,
+   "close": true
+  },
+  {
+   "cid": "F7d",
+   "figure": 7,
+   "label": "West",
+   "published": 41.7,
+   "pct": 41.74429939543559,
+   "se": 2.378231714411163,
+   "n": 608,
+   "diff": 0.04429939543558703,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F8a",
+   "figure": 8,
+   "label": "Low income (<200% FPL)",
+   "published": 37.5,
+   "pct": 37.460559997141694,
+   "se": 2.1455826692842512,
+   "n": 900,
+   "diff": -0.0394400028583064,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F8b",
+   "figure": 8,
+   "label": "Middle income (200-<400% FPL)",
+   "published": 38.9,
+   "pct": 38.86773794975926,
+   "se": 2.369928380303284,
+   "n": 652,
+   "diff": -0.032262050240738915,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F8c",
+   "figure": 8,
+   "label": "High income (>=400% FPL)",
+   "published": 47.6,
+   "pct": 47.60032484910444,
+   "se": 2.2337737700301874,
+   "n": 1056,
+   "diff": 0.0003248491044374191,
+   "exact": true,
+   "close": true
+  }
+ ],
+ "msa_cells": [
+  {
+   "cid": "F7e",
+   "label": "Non-MSA",
+   "published": 43.3,
+   "status": "not computable from HC-243"
+  },
+  {
+   "cid": "F7f",
+   "label": "MSA",
+   "published": 42.7,
+   "status": "not computable from HC-243"
+  }
+ ],
+ "sensitivity": {
+  "B": [
+   {
+    "cid": "F1a",
+    "pct": 21.455052454428596,
+    "n": 3501,
+    "exact": true
+   },
+   {
+    "cid": "F1b",
+    "pct": 9.166687885135124,
+    "n": 1505,
+    "exact": true
+   },
+   {
+    "cid": "F1c",
+    "pct": 33.77101414451588,
+    "n": 1996,
+    "exact": true
+   },
+   {
+    "cid": "F2a",
+    "pct": 42.749836732986346,
+    "n": 2608,
+    "exact": false
+   },
+   {
+    "cid": "F2b",
+    "pct": 24.79949606022211,
+    "n": 1318,
+    "exact": true
+   },
+   {
+    "cid": "F2c",
+    "pct": 67.57001203998786,
+    "n": 1290,
+    "exact": true
+   },
+   {
+    "cid": "F3a",
+    "pct": 27.87857222535555,
+    "n": 930,
+    "exact": true
+   },
+   {
+    "cid": "F3b",
+    "pct": 17.423121840038018,
+    "n": 294,
+    "exact": true
+   },
+   {
+    "cid": "F4a",
+    "pct": 69.44660994590592,
+    "n": 515,
+    "exact": true
+   },
+   {
+    "cid": "F4b",
+    "pct": 72.46937869222477,
+    "n": 569,
+    "exact": false
+   },
+   {
+    "cid": "F4c",
+    "pct": 45.848824624308776,
+    "n": 191,
+    "exact": true
+   },
+   {
+    "cid": "F5a",
+    "pct": 30.65451830452129,
+    "n": 358,
+    "exact": true
+   },
+   {
+    "cid": "F5b",
+    "pct": 45.33062246162796,
+    "n": 2208,
+    "exact": true
+   },
+   {
+    "cid": "F6a",
+    "pct": 25.391572699094983,
+    "n": 308,
+    "exact": true
+   },
+   {
+    "cid": "F6b",
+    "pct": 47.68565298633957,
+    "n": 1719,
+    "exact": true
+   },
+   {
+    "cid": "F6c",
+    "pct": 37.13992602572641,
+    "n": 411,
+    "exact": true
+   },
+   {
+    "cid": "F6d",
+    "pct": 30.417405553834953,
+    "n": 110,
+    "exact": true
+   },
+   {
+    "cid": "F7a",
+    "pct": 44.034145591212166,
+    "n": 438,
+    "exact": false
+   },
+   {
+    "cid": "F7b",
+    "pct": 44.129198911219206,
+    "n": 559,
+    "exact": false
+   },
+   {
+    "cid": "F7c",
+    "pct": 41.9780268074005,
+    "n": 1003,
+    "exact": false
+   },
+   {
+    "cid": "F7d",
+    "pct": 41.74429939543559,
+    "n": 608,
+    "exact": true
+   },
+   {
+    "cid": "F8a",
+    "pct": 37.460559997141694,
+    "n": 900,
+    "exact": true
+   },
+   {
+    "cid": "F8b",
+    "pct": 38.86773794975926,
+    "n": 652,
+    "exact": true
+   },
+   {
+    "cid": "F8c",
+    "pct": 47.60032484910444,
+    "n": 1056,
+    "exact": true
+   }
+  ],
+  "C": [
+   {
+    "cid": "F1a",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   },
+   {
+    "cid": "F1b",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   },
+   {
+    "cid": "F1c",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   },
+   {
+    "cid": "F2a",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   },
+   {
+    "cid": "F2b",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   },
+   {
+    "cid": "F2c",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   },
+   {
+    "cid": "F3a",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   },
+   {
+    "cid": "F3b",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   },
+   {
+    "cid": "F4a",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   },
+   {
+    "cid": "F4b",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   },
+   {
+    "cid": "F4c",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   },
+   {
+    "cid": "F5a",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   },
+   {
+    "cid": "F5b",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   },
+   {
+    "cid": "F6a",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   },
+   {
+    "cid": "F6b",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   },
+   {
+    "cid": "F6c",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   },
+   {
+    "cid": "F6d",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   },
+   {
+    "cid": "F7a",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   },
+   {
+    "cid": "F7b",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   },
+   {
+    "cid": "F7c",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   },
+   {
+    "cid": "F7d",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   },
+   {
+    "cid": "F8a",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   },
+   {
+    "cid": "F8b",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   },
+   {
+    "cid": "F8c",
+    "pct": null,
+    "n": 0,
+    "exact": false
+   }
+  ],
+  "A_dexa_universe_B": [
+   {
+    "cid": "F1a",
+    "pct": 21.455052454428596,
+    "n": 3501,
+    "exact": true
+   },
+   {
+    "cid": "F1b",
+    "pct": 9.166687885135124,
+    "n": 1505,
+    "exact": true
+   },
+   {
+    "cid": "F1c",
+    "pct": 33.77101414451588,
+    "n": 1996,
+    "exact": true
+   },
+   {
+    "cid": "F2a",
+    "pct": 42.652702283110166,
+    "n": 2747,
+    "exact": false
+   },
+   {
+    "cid": "F2b",
+    "pct": 24.77984411809489,
+    "n": 1374,
+    "exact": true
+   },
+   {
+    "cid": "F2c",
+    "pct": 67.2379143980704,
+    "n": 1373,
+    "exact": false
+   },
+   {
+    "cid": "F3a",
+    "pct": 28.09712505314697,
+    "n": 966,
+    "exact": false
+   },
+   {
+    "cid": "F3b",
+    "pct": 17.26054665323023,
+    "n": 308,
+    "exact": false
+   },
+   {
+    "cid": "F4a",
+    "pct": 69.6552896540933,
+    "n": 548,
+    "exact": false
+   },
+   {
+    "cid": "F4b",
+    "pct": 71.61837105777707,
+    "n": 604,
+    "exact": false
+   },
+   {
+    "cid": "F4c",
+    "pct": 46.276586377403845,
+    "n": 204,
+    "exact": false
+   },
+   {
+    "cid": "F5a",
+    "pct": 30.60521580107689,
+    "n": 379,
+    "exact": false
+   },
+   {
+    "cid": "F5b",
+    "pct": 45.38427854415999,
+    "n": 2323,
+    "exact": false
+   },
+   {
+    "cid": "F6a",
+    "pct": 25.766967713248928,
+    "n": 330,
+    "exact": false
+   },
+   {
+    "cid": "F6b",
+    "pct": 47.49968281813109,
+    "n": 1806,
+    "exact": false
+   },
+   {
+    "cid": "F6c",
+    "pct": 37.594687240627465,
+    "n": 431,
+    "exact": false
+   },
+   {
+    "cid": "F6d",
+    "pct": 29.72652217160428,
+    "n": 117,
+    "exact": false
+   },
+   {
+    "cid": "F7a",
+    "pct": 44.69896345812151,
+    "n": 458,
+    "exact": false
+   },
+   {
+    "cid": "F7b",
+    "pct": 43.60470722780192,
+    "n": 588,
+    "exact": false
+   },
+   {
+    "cid": "F7c",
+    "pct": 41.88788417603839,
+    "n": 1055,
+    "exact": false
+   },
+   {
+    "cid": "F7d",
+    "pct": 41.449045916827934,
+    "n": 646,
+    "exact": false
+   },
+   {
+    "cid": "F8a",
+    "pct": 38.07692314437101,
+    "n": 945,
+    "exact": false
+   },
+   {
+    "cid": "F8b",
+    "pct": 38.58525392298652,
+    "n": 688,
+    "exact": false
+   },
+   {
+    "cid": "F8c",
+    "pct": 47.28646365537968,
+    "n": 1114,
+    "exact": false
+   }
+  ]
+ },
+ "grades": {
+  "cells": 24,
+  "close": 24,
+  "exact": 19,
+  "P1": {
+   "grade": "held",
+   "close": 24,
+   "of": 24
+  },
+  "P2": {
+   "grade": "failed",
+   "pct": 42.749836732986346
+  },
+  "P3": {
+   "grade": "held",
+   "msa_variables_in_file": []
+  },
+  "P4": {
+   "grade": "held",
+   "exact": 19,
+   "of": 24
+  }
+ }
+}
