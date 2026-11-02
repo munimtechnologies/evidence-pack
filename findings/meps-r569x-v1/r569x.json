@@ -1,0 +1,1508 @@
+{
+ "version": "0.1.0",
+ "error": null,
+ "h243": {
+  "file": "h243dta.zip",
+  "bytes": 5789896,
+  "sha256": "7fc534de09eff5fd81facb74d61511d322ebe8bc45af7b75441204fcaf9fb454"
+ },
+ "persons": 22431,
+ "missing_columns": [],
+ "gate": {
+  "passed": true,
+  "cells_off": [],
+  "exact": 19
+ },
+ "summary": {
+  "A": {
+   "exact": 19,
+   "rounds": 19,
+   "close": 24,
+   "fig7_exact": 1,
+   "misses_now_exact": [],
+   "v1_exact_now_not": []
+  },
+  "REG42": {
+   "exact": 22,
+   "rounds": 22,
+   "close": 24,
+   "fig7_exact": 4,
+   "misses_now_exact": [
+    "F7a",
+    "F7b",
+    "F7c"
+   ],
+   "v1_exact_now_not": []
+  },
+  "REG31": {
+   "exact": 20,
+   "rounds": 20,
+   "close": 24,
+   "fig7_exact": 2,
+   "misses_now_exact": [
+    "F7c"
+   ],
+   "v1_exact_now_not": []
+  },
+  "REG53": {
+   "exact": 19,
+   "rounds": 19,
+   "close": 24,
+   "fig7_exact": 1,
+   "misses_now_exact": [],
+   "v1_exact_now_not": []
+  },
+  "C2": {
+   "exact": 14,
+   "rounds": 14,
+   "close": 24,
+   "fig7_exact": 1,
+   "misses_now_exact": [
+    "F2a"
+   ],
+   "v1_exact_now_not": [
+    "F5b",
+    "F6a",
+    "F6b",
+    "F8a",
+    "F8b",
+    "F8c"
+   ]
+  },
+  "AGE22": {
+   "exact": 19,
+   "rounds": 19,
+   "close": 24,
+   "fig7_exact": 1,
+   "misses_now_exact": [],
+   "v1_exact_now_not": []
+  },
+  "U3": {
+   "exact": 4,
+   "rounds": 4,
+   "close": 20,
+   "fig7_exact": 0,
+   "misses_now_exact": [],
+   "v1_exact_now_not": [
+    "F2c",
+    "F3a",
+    "F3b",
+    "F4a",
+    "F4c",
+    "F5a",
+    "F5b",
+    "F6a",
+    "F6b",
+    "F6c",
+    "F6d",
+    "F7d",
+    "F8a",
+    "F8b",
+    "F8c"
+   ]
+  },
+  "PW": {
+   "exact": 0,
+   "rounds": 0,
+   "close": 0,
+   "fig7_exact": 0,
+   "misses_now_exact": [],
+   "v1_exact_now_not": [
+    "F1a",
+    "F1b",
+    "F1c",
+    "F2b",
+    "F2c",
+    "F3a",
+    "F3b",
+    "F4a",
+    "F4c",
+    "F5a",
+    "F5b",
+    "F6a",
+    "F6b",
+    "F6c",
+    "F6d",
+    "F7d",
+    "F8a",
+    "F8b",
+    "F8c"
+   ]
+  }
+ },
+ "readings": {
+  "region": [
+   "REG42"
+  ],
+  "X1_pw_control": {
+   "exact": 0,
+   "grade": "held"
+  },
+  "candidates": [
+   "REG42",
+   "REG31"
+  ]
+ },
+ "variants": {
+  "A": [
+   {
+    "cid": "F1a",
+    "pct": 21.455052454428596,
+    "n": 3501,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F1b",
+    "pct": 9.166687885135124,
+    "n": 1505,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F1c",
+    "pct": 33.77101414451588,
+    "n": 1996,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F2a",
+    "pct": 42.749836732986346,
+    "n": 2608,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F2b",
+    "pct": 24.799496060222115,
+    "n": 1318,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F2c",
+    "pct": 67.57001203998784,
+    "n": 1290,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F3a",
+    "pct": 27.87857222535555,
+    "n": 930,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F3b",
+    "pct": 17.423121840038018,
+    "n": 294,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F4a",
+    "pct": 69.44660994590592,
+    "n": 515,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F4b",
+    "pct": 72.46937869222477,
+    "n": 569,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F4c",
+    "pct": 45.848824624308776,
+    "n": 191,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F5a",
+    "pct": 30.654518304521293,
+    "n": 358,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F5b",
+    "pct": 45.33062246162796,
+    "n": 2208,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F6a",
+    "pct": 25.391572699094983,
+    "n": 308,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F6b",
+    "pct": 47.68565298633957,
+    "n": 1719,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F6c",
+    "pct": 37.13992602572641,
+    "n": 411,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F6d",
+    "pct": 30.41740555383495,
+    "n": 110,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F7a",
+    "pct": 44.03414559121216,
+    "n": 438,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F7b",
+    "pct": 44.12919891121921,
+    "n": 559,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F7c",
+    "pct": 41.9780268074005,
+    "n": 1003,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F7d",
+    "pct": 41.7442993954356,
+    "n": 608,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F8a",
+    "pct": 37.460559997141694,
+    "n": 900,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F8b",
+    "pct": 38.86773794975926,
+    "n": 652,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F8c",
+    "pct": 47.60032484910443,
+    "n": 1056,
+    "exact": true,
+    "rounds": true
+   }
+  ],
+  "REG42": [
+   {
+    "cid": "F1a",
+    "pct": 21.455052454428596,
+    "n": 3501,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F1b",
+    "pct": 9.166687885135124,
+    "n": 1505,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F1c",
+    "pct": 33.77101414451588,
+    "n": 1996,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F2a",
+    "pct": 42.749836732986346,
+    "n": 2608,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F2b",
+    "pct": 24.799496060222115,
+    "n": 1318,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F2c",
+    "pct": 67.57001203998784,
+    "n": 1290,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F3a",
+    "pct": 27.87857222535555,
+    "n": 930,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F3b",
+    "pct": 17.423121840038018,
+    "n": 294,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F4a",
+    "pct": 69.44660994590592,
+    "n": 515,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F4b",
+    "pct": 72.46937869222477,
+    "n": 569,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F4c",
+    "pct": 45.848824624308776,
+    "n": 191,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F5a",
+    "pct": 30.654518304521293,
+    "n": 358,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F5b",
+    "pct": 45.33062246162796,
+    "n": 2208,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F6a",
+    "pct": 25.391572699094983,
+    "n": 308,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F6b",
+    "pct": 47.68565298633957,
+    "n": 1719,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F6c",
+    "pct": 37.13992602572641,
+    "n": 411,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F6d",
+    "pct": 30.41740555383495,
+    "n": 110,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F7a",
+    "pct": 44.064433296086335,
+    "n": 440,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F7b",
+    "pct": 43.93499964481496,
+    "n": 560,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F7c",
+    "pct": 42.11482087765572,
+    "n": 998,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F7d",
+    "pct": 41.66940230456659,
+    "n": 610,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F8a",
+    "pct": 37.460559997141694,
+    "n": 900,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F8b",
+    "pct": 38.86773794975926,
+    "n": 652,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F8c",
+    "pct": 47.60032484910443,
+    "n": 1056,
+    "exact": true,
+    "rounds": true
+   }
+  ],
+  "REG31": [
+   {
+    "cid": "F1a",
+    "pct": 21.455052454428596,
+    "n": 3501,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F1b",
+    "pct": 9.166687885135124,
+    "n": 1505,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F1c",
+    "pct": 33.77101414451588,
+    "n": 1996,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F2a",
+    "pct": 42.749836732986346,
+    "n": 2608,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F2b",
+    "pct": 24.799496060222115,
+    "n": 1318,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F2c",
+    "pct": 67.57001203998784,
+    "n": 1290,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F3a",
+    "pct": 27.87857222535555,
+    "n": 930,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F3b",
+    "pct": 17.423121840038018,
+    "n": 294,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F4a",
+    "pct": 69.44660994590592,
+    "n": 515,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F4b",
+    "pct": 72.46937869222477,
+    "n": 569,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F4c",
+    "pct": 45.848824624308776,
+    "n": 191,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F5a",
+    "pct": 30.654518304521293,
+    "n": 358,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F5b",
+    "pct": 45.33062246162796,
+    "n": 2208,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F6a",
+    "pct": 25.391572699094983,
+    "n": 308,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F6b",
+    "pct": 47.68565298633957,
+    "n": 1719,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F6c",
+    "pct": 37.13992602572641,
+    "n": 411,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F6d",
+    "pct": 30.41740555383495,
+    "n": 110,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F7a",
+    "pct": 44.00038434416266,
+    "n": 441,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F7b",
+    "pct": 44.07401390255385,
+    "n": 557,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F7c",
+    "pct": 42.074793763646895,
+    "n": 996,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F7d",
+    "pct": 41.6684521154204,
+    "n": 614,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F8a",
+    "pct": 37.460559997141694,
+    "n": 900,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F8b",
+    "pct": 38.86773794975926,
+    "n": 652,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F8c",
+    "pct": 47.60032484910443,
+    "n": 1056,
+    "exact": true,
+    "rounds": true
+   }
+  ],
+  "REG53": [
+   {
+    "cid": "F1a",
+    "pct": 21.455052454428596,
+    "n": 3501,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F1b",
+    "pct": 9.166687885135124,
+    "n": 1505,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F1c",
+    "pct": 33.77101414451588,
+    "n": 1996,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F2a",
+    "pct": 42.749836732986346,
+    "n": 2608,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F2b",
+    "pct": 24.799496060222115,
+    "n": 1318,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F2c",
+    "pct": 67.57001203998784,
+    "n": 1290,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F3a",
+    "pct": 27.87857222535555,
+    "n": 930,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F3b",
+    "pct": 17.423121840038018,
+    "n": 294,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F4a",
+    "pct": 69.44660994590592,
+    "n": 515,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F4b",
+    "pct": 72.46937869222477,
+    "n": 569,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F4c",
+    "pct": 45.848824624308776,
+    "n": 191,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F5a",
+    "pct": 30.654518304521293,
+    "n": 358,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F5b",
+    "pct": 45.33062246162796,
+    "n": 2208,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F6a",
+    "pct": 25.391572699094983,
+    "n": 308,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F6b",
+    "pct": 47.68565298633957,
+    "n": 1719,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F6c",
+    "pct": 37.13992602572641,
+    "n": 411,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F6d",
+    "pct": 30.41740555383495,
+    "n": 110,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F7a",
+    "pct": 44.03414559121216,
+    "n": 438,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F7b",
+    "pct": 44.12919891121921,
+    "n": 559,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F7c",
+    "pct": 41.9780268074005,
+    "n": 1003,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F7d",
+    "pct": 41.7442993954356,
+    "n": 608,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F8a",
+    "pct": 37.460559997141694,
+    "n": 900,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F8b",
+    "pct": 38.86773794975926,
+    "n": 652,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F8c",
+    "pct": 47.60032484910443,
+    "n": 1056,
+    "exact": true,
+    "rounds": true
+   }
+  ],
+  "C2": [
+   {
+    "cid": "F1a",
+    "pct": 21.504856754852383,
+    "n": 3489,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F1b",
+    "pct": 9.166687885135124,
+    "n": 1505,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F1c",
+    "pct": 33.77101414451588,
+    "n": 1996,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F2a",
+    "pct": 42.780285508952346,
+    "n": 2598,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F2b",
+    "pct": 24.799496060222115,
+    "n": 1318,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F2c",
+    "pct": 67.57001203998784,
+    "n": 1290,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F3a",
+    "pct": 27.87857222535555,
+    "n": 930,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F3b",
+    "pct": 17.423121840038018,
+    "n": 294,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F4a",
+    "pct": 69.44660994590592,
+    "n": 515,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F4b",
+    "pct": 72.46937869222477,
+    "n": 569,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F4c",
+    "pct": 45.848824624308776,
+    "n": 191,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F5a",
+    "pct": 30.692552311647802,
+    "n": 356,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F5b",
+    "pct": 45.36699775325466,
+    "n": 2200,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F6a",
+    "pct": 25.061483698238117,
+    "n": 303,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F6b",
+    "pct": 47.75863312278864,
+    "n": 1714,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F6c",
+    "pct": 37.13992602572641,
+    "n": 411,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F6d",
+    "pct": 30.41740555383495,
+    "n": 110,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F7a",
+    "pct": 44.04436095271615,
+    "n": 435,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F7b",
+    "pct": 44.21789305852287,
+    "n": 557,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F7c",
+    "pct": 42.0136656835692,
+    "n": 1001,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F7d",
+    "pct": 41.73795976798259,
+    "n": 605,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F8a",
+    "pct": 37.609628545717804,
+    "n": 896,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F8b",
+    "pct": 38.99234915249894,
+    "n": 649,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F8c",
+    "pct": 47.512961721873495,
+    "n": 1053,
+    "exact": false,
+    "rounds": false
+   }
+  ],
+  "AGE22": [
+   {
+    "cid": "F1a",
+    "pct": 21.455052454428596,
+    "n": 3501,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F1b",
+    "pct": 9.166687885135124,
+    "n": 1505,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F1c",
+    "pct": 33.77101414451588,
+    "n": 1996,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F2a",
+    "pct": 42.749836732986346,
+    "n": 2608,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F2b",
+    "pct": 24.799496060222115,
+    "n": 1318,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F2c",
+    "pct": 67.57001203998784,
+    "n": 1290,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F3a",
+    "pct": 27.87857222535555,
+    "n": 930,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F3b",
+    "pct": 17.423121840038018,
+    "n": 294,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F4a",
+    "pct": 69.44660994590592,
+    "n": 515,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F4b",
+    "pct": 72.46937869222477,
+    "n": 569,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F4c",
+    "pct": 45.848824624308776,
+    "n": 191,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F5a",
+    "pct": 30.654518304521293,
+    "n": 358,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F5b",
+    "pct": 45.33062246162796,
+    "n": 2208,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F6a",
+    "pct": 25.391572699094983,
+    "n": 308,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F6b",
+    "pct": 47.68565298633957,
+    "n": 1719,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F6c",
+    "pct": 37.13992602572641,
+    "n": 411,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F6d",
+    "pct": 30.41740555383495,
+    "n": 110,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F7a",
+    "pct": 44.03414559121216,
+    "n": 438,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F7b",
+    "pct": 44.12919891121921,
+    "n": 559,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F7c",
+    "pct": 41.9780268074005,
+    "n": 1003,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F7d",
+    "pct": 41.7442993954356,
+    "n": 608,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F8a",
+    "pct": 37.460559997141694,
+    "n": 900,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F8b",
+    "pct": 38.86773794975926,
+    "n": 652,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F8c",
+    "pct": 47.60032484910443,
+    "n": 1056,
+    "exact": true,
+    "rounds": true
+   }
+  ],
+  "U3": [
+   {
+    "cid": "F1a",
+    "pct": 21.455052454428596,
+    "n": 3501,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F1b",
+    "pct": 9.166687885135124,
+    "n": 1505,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F1c",
+    "pct": 33.77101414451588,
+    "n": 1996,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F2a",
+    "pct": 42.65270228311017,
+    "n": 2747,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F2b",
+    "pct": 24.779844118094893,
+    "n": 1374,
+    "exact": true,
+    "rounds": true
+   },
+   {
+    "cid": "F2c",
+    "pct": 67.2379143980704,
+    "n": 1373,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F3a",
+    "pct": 28.097125053146975,
+    "n": 966,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F3b",
+    "pct": 17.260546653230225,
+    "n": 308,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F4a",
+    "pct": 69.65528965409331,
+    "n": 548,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F4b",
+    "pct": 71.61837105777708,
+    "n": 604,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F4c",
+    "pct": 46.276586377403845,
+    "n": 204,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F5a",
+    "pct": 30.60521580107689,
+    "n": 379,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F5b",
+    "pct": 45.38427854415998,
+    "n": 2323,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F6a",
+    "pct": 25.76696771324893,
+    "n": 330,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F6b",
+    "pct": 47.49968281813109,
+    "n": 1806,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F6c",
+    "pct": 37.594687240627465,
+    "n": 431,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F6d",
+    "pct": 29.72652217160428,
+    "n": 117,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F7a",
+    "pct": 44.69896345812151,
+    "n": 458,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F7b",
+    "pct": 43.60470722780191,
+    "n": 588,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F7c",
+    "pct": 41.88788417603839,
+    "n": 1055,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F7d",
+    "pct": 41.44904591682793,
+    "n": 646,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F8a",
+    "pct": 38.076923144371015,
+    "n": 945,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F8b",
+    "pct": 38.58525392298652,
+    "n": 688,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F8c",
+    "pct": 47.28646365537968,
+    "n": 1114,
+    "exact": false,
+    "rounds": false
+   }
+  ],
+  "PW": [
+   {
+    "cid": "F1a",
+    "pct": 22.341039780847524,
+    "n": 3501,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F1b",
+    "pct": 9.885388957272193,
+    "n": 1505,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F1c",
+    "pct": 33.10139967345622,
+    "n": 1996,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F2a",
+    "pct": 46.12432411570544,
+    "n": 2608,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F2b",
+    "pct": 26.273238470691105,
+    "n": 1318,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F2c",
+    "pct": 69.38260917176186,
+    "n": 1290,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F3a",
+    "pct": 29.06865920005576,
+    "n": 930,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F3b",
+    "pct": 20.113996800256455,
+    "n": 294,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F4a",
+    "pct": 70.6521174024534,
+    "n": 515,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F4b",
+    "pct": 73.98140092215893,
+    "n": 569,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F4c",
+    "pct": 47.57150411375305,
+    "n": 191,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F5a",
+    "pct": 32.13451262892878,
+    "n": 358,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F5b",
+    "pct": 48.888112960774734,
+    "n": 2208,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F6a",
+    "pct": 26.712234466932664,
+    "n": 308,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F6b",
+    "pct": 50.737999893645174,
+    "n": 1719,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F6c",
+    "pct": 39.29883830159602,
+    "n": 411,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F6d",
+    "pct": 34.11706388561679,
+    "n": 110,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F7a",
+    "pct": 47.418297191966055,
+    "n": 438,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F7b",
+    "pct": 47.62903229988766,
+    "n": 559,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F7c",
+    "pct": 45.04528416878266,
+    "n": 1003,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F7d",
+    "pct": 45.28021816973828,
+    "n": 608,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F8a",
+    "pct": 39.80865746498161,
+    "n": 900,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F8b",
+    "pct": 42.632480028451134,
+    "n": 652,
+    "exact": false,
+    "rounds": false
+   },
+   {
+    "cid": "F8c",
+    "pct": 51.32336292872628,
+    "n": 1056,
+    "exact": false,
+    "rounds": false
+   }
+  ]
+ }
+}

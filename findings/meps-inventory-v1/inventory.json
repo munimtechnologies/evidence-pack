@@ -1,0 +1,159 @@
+{
+ "version": "0.1.0",
+ "error": null,
+ "errors": {},
+ "n_by_file": {
+  "H147": 2052,
+  "H155": 1883,
+  "H163": 1790,
+  "H171": 1838,
+  "H181": 1831,
+  "H192": 1941,
+  "H201": 1564,
+  "H209": 1501,
+  "H216": 1447,
+  "H224": 1451,
+  "H233": 1488,
+  "H243": 1420,
+  "H251": 1374,
+  "H256": 1615
+ },
+ "controls": {
+  "H147": {
+   "PERWT11F": true,
+   "REGION11": true,
+   "VARSTR": true,
+   "VARPSU": true
+  },
+  "H155": {
+   "PERWT12F": true,
+   "REGION12": true,
+   "VARSTR": true,
+   "VARPSU": true
+  },
+  "H163": {
+   "PERWT13F": true,
+   "REGION13": true,
+   "VARSTR": true,
+   "VARPSU": true
+  },
+  "H171": {
+   "PERWT14F": true,
+   "REGION14": true,
+   "VARSTR": true,
+   "VARPSU": true
+  },
+  "H181": {
+   "PERWT15F": true,
+   "REGION15": true,
+   "VARSTR": true,
+   "VARPSU": true
+  },
+  "H192": {
+   "PERWT16F": true,
+   "REGION16": true,
+   "VARSTR": true,
+   "VARPSU": true
+  },
+  "H201": {
+   "PERWT17F": true,
+   "REGION17": true,
+   "VARSTR": true,
+   "VARPSU": true
+  },
+  "H209": {
+   "PERWT18F": true,
+   "REGION18": true,
+   "VARSTR": true,
+   "VARPSU": true
+  },
+  "H216": {
+   "PERWT19F": true,
+   "REGION19": true,
+   "VARSTR": true,
+   "VARPSU": true
+  },
+  "H224": {
+   "PERWT20F": true,
+   "REGION20": true,
+   "VARSTR": true,
+   "VARPSU": true
+  },
+  "H233": {
+   "PERWT21F": true,
+   "REGION21": true,
+   "VARSTR": true,
+   "VARPSU": true
+  },
+  "H243": {
+   "PERWT22F": true,
+   "REGION22": true,
+   "VARSTR": true,
+   "VARPSU": true
+  },
+  "H251": {
+   "PERWT23F": true,
+   "REGION23": true,
+   "VARSTR": true,
+   "VARPSU": true
+  },
+  "H256": {
+   "PERWT24F": true,
+   "REGION24": true,
+   "VARSTR": true,
+   "VARPSU": true
+  }
+ },
+ "gate": {
+  "passed": true,
+  "n": 1420,
+  "has": {
+   "SAQWT22F": true,
+   "ADOSTP42": true,
+   "REGION53": true,
+   "PERWT22F": true
+  },
+  "not": {
+   "PSAQWT22F": false,
+   "MSA22": false
+  }
+ },
+ "grades": {
+  "msa_by_file": {
+   "H147": [
+    "MSA11",
+    "MSA31",
+    "MSA42",
+    "MSA53"
+   ],
+   "H155": [
+    "MSA12",
+    "MSA31",
+    "MSA42",
+    "MSA53"
+   ],
+   "H163": [],
+   "H171": [],
+   "H181": [],
+   "H192": [],
+   "H201": [],
+   "H209": [],
+   "H216": [],
+   "H224": [],
+   "H233": [],
+   "H243": [],
+   "H251": [],
+   "H256": []
+  },
+  "P1": {
+   "grade": "held",
+   "files_2013_2024_read": 12,
+   "with_msa": []
+  },
+  "P2": {
+   "grade": "held",
+   "files_2011_2012_read": 2
+  }
+ },
+ "geo_candidates": 130
+}
