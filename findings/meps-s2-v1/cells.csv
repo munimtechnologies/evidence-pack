@@ -1,0 +1,19 @@
+cid,row_var,rowLevels,col_var,colLevels,published_n,variant,n,n_exp,pct_share,mean,published_mean,published_median,mean_ok,passed
+C01,sex,Male,insurance,"65+, No medicare",60,AA,60,47,0.828427309208569,11537.508781422504,11537.5087814225,5696.0,True,True
+C02,race,"Amer. Indian, AK Native, or mult. races",education,Less than high school,63,AA,63,46,0.6675672077818049,11426.160147143702,11426.1601471437,4402.0,True,True
+C03,insurance,"Uninsured, all ages",poverty,Near-poor,100,AA,100,40,0.305217620734487,1696.9608461280066,1696.96084612801,500.0,True,True
+C04,insurance,"<65, Uninsured",poverty,Near-poor,97,AA,97,39,0.30129058864794,1741.4483028292987,1741.4483028293,500.0,True,True
+C05,agegrps,Under 18,insurance,"Uninsured, all ages",105,AA,105,51,0.45953504209602697,3945.0921237109587,3945.09212371096,,True,True
+C06,agegrps,Under 18,insurance,"<65, Uninsured",105,AA,105,51,0.45953504209602697,3945.0921237109587,3945.09212371096,,True,True
+C07,agegrps,5-17,insurance,"Uninsured, all ages",90,AA,90,38,0.387191437606877,2980.253333581937,2980.25333358194,,True,True
+C08,agegrps,5-17,insurance,"<65, Uninsured",90,AA,90,38,0.387191437606877,2980.253333581937,2980.25333358194,,True,True
+C09,region,Northeast,insurance,"Uninsured, all ages",91,AA,91,49,0.512961691646485,2158.981319080301,2158.9813190803,,True,True
+C10,region,Northeast,insurance,"<65, Uninsured",91,AA,91,49,0.512961691646485,2158.981319080301,2158.9813190803,,True,True
+C11,married,Separated,insurance,"Uninsured, all ages",69,AA,69,35,0.526922287670609,1542.4668625847196,1542.46686258472,,True,True
+C12,married,Separated,insurance,"<65, Uninsured",68,AA,68,34,0.517989842677487,1585.5696739378939,1585.56967393789,,True,True
+C13,married,Inapplicable (age < 16),insurance,"Uninsured, all ages",79,AA,79,44,0.550058090125235,4249.763802772229,4249.76380277223,,True,True
+C14,married,Inapplicable (age < 16),insurance,"<65, Uninsured",79,AA,79,44,0.550058090125235,4249.763802772229,4249.76380277223,,True,True
+C15,employed,Inapplicable (age < 16),insurance,"Uninsured, all ages",80,AA,80,44,0.539566357684495,4249.763802772229,4249.76380277223,,True,True
+C16,employed,Inapplicable (age < 16),insurance,"<65, Uninsured",80,AA,80,44,0.539566357684495,4249.763802772229,4249.76380277223,,True,True
+C17,education,Inapplicable (age < 18),insurance,"Uninsured, all ages",105,AA,105,51,0.45953504209602697,3945.0921237109587,3945.09212371096,,True,True
+C18,education,Inapplicable (age < 18),insurance,"<65, Uninsured",105,AA,105,51,0.45953504209602697,3945.0921237109587,3945.09212371096,,True,True

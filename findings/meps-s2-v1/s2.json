@@ -1,0 +1,474 @@
+{
+ "version": "0.1.0",
+ "sha": "4fbd9b1617a8d73d29a6e016b803b865208a1366",
+ "error": null,
+ "h243": {
+  "file": "h243dta.zip",
+  "bytes": 5789896,
+  "sha256": "7fc534de09eff5fd81facb74d61511d322ebe8bc45af7b75441204fcaf9fb454"
+ },
+ "dy2022": {
+  "bytes": 18981260,
+  "sha256": "4250ef87e8f75cd05efd9933543e83df4d60259a87810c12fd815c8f9d525bce"
+ },
+ "persons": 22431,
+ "persons_positive_weight": 21747,
+ "missing_columns": [],
+ "cells": [
+  {
+   "cid": "C01",
+   "row_var": "sex",
+   "rowLevels": "Male",
+   "col_var": "insurance",
+   "colLevels": "65+, No medicare",
+   "expected_n": 60,
+   "published_n": 60,
+   "published_mean": 11537.5087814225,
+   "published_median": 5696.0,
+   "pct_share": 0.828427309208569,
+   "tried": [
+    {
+     "variant": "AA",
+     "n": 60
+    }
+   ],
+   "variant": "AA",
+   "n": 60,
+   "n_exp": 47,
+   "mean": 11537.508781422504,
+   "mean_ok": true,
+   "passed": true
+  },
+  {
+   "cid": "C02",
+   "row_var": "race",
+   "rowLevels": "Amer. Indian, AK Native, or mult. races",
+   "col_var": "education",
+   "colLevels": "Less than high school",
+   "expected_n": 63,
+   "published_n": 63,
+   "published_mean": 11426.1601471437,
+   "published_median": 4402.0,
+   "pct_share": 0.6675672077818049,
+   "tried": [
+    {
+     "variant": "AA",
+     "n": 63
+    }
+   ],
+   "variant": "AA",
+   "n": 63,
+   "n_exp": 46,
+   "mean": 11426.160147143702,
+   "mean_ok": true,
+   "passed": true
+  },
+  {
+   "cid": "C03",
+   "row_var": "insurance",
+   "rowLevels": "Uninsured, all ages",
+   "col_var": "poverty",
+   "colLevels": "Near-poor",
+   "expected_n": 100,
+   "published_n": 100,
+   "published_mean": 1696.96084612801,
+   "published_median": 500.0,
+   "pct_share": 0.305217620734487,
+   "tried": [
+    {
+     "variant": "AA",
+     "n": 100
+    }
+   ],
+   "variant": "AA",
+   "n": 100,
+   "n_exp": 40,
+   "mean": 1696.9608461280066,
+   "mean_ok": true,
+   "passed": true
+  },
+  {
+   "cid": "C04",
+   "row_var": "insurance",
+   "rowLevels": "<65, Uninsured",
+   "col_var": "poverty",
+   "colLevels": "Near-poor",
+   "expected_n": 97,
+   "published_n": 97,
+   "published_mean": 1741.4483028293,
+   "published_median": 500.0,
+   "pct_share": 0.30129058864794,
+   "tried": [
+    {
+     "variant": "AA",
+     "n": 97
+    }
+   ],
+   "variant": "AA",
+   "n": 97,
+   "n_exp": 39,
+   "mean": 1741.4483028292987,
+   "mean_ok": true,
+   "passed": true
+  },
+  {
+   "cid": "C05",
+   "row_var": "agegrps",
+   "rowLevels": "Under 18",
+   "col_var": "insurance",
+   "colLevels": "Uninsured, all ages",
+   "expected_n": 105,
+   "published_n": 105,
+   "published_mean": 3945.09212371096,
+   "published_median": null,
+   "pct_share": 0.45953504209602697,
+   "tried": [
+    {
+     "variant": "AA",
+     "n": 105
+    }
+   ],
+   "variant": "AA",
+   "n": 105,
+   "n_exp": 51,
+   "mean": 3945.0921237109587,
+   "mean_ok": true,
+   "passed": true
+  },
+  {
+   "cid": "C06",
+   "row_var": "agegrps",
+   "rowLevels": "Under 18",
+   "col_var": "insurance",
+   "colLevels": "<65, Uninsured",
+   "expected_n": 105,
+   "published_n": 105,
+   "published_mean": 3945.09212371096,
+   "published_median": null,
+   "pct_share": 0.45953504209602697,
+   "tried": [
+    {
+     "variant": "AA",
+     "n": 105
+    }
+   ],
+   "variant": "AA",
+   "n": 105,
+   "n_exp": 51,
+   "mean": 3945.0921237109587,
+   "mean_ok": true,
+   "passed": true
+  },
+  {
+   "cid": "C07",
+   "row_var": "agegrps",
+   "rowLevels": "5-17",
+   "col_var": "insurance",
+   "colLevels": "Uninsured, all ages",
+   "expected_n": 90,
+   "published_n": 90,
+   "published_mean": 2980.25333358194,
+   "published_median": null,
+   "pct_share": 0.387191437606877,
+   "tried": [
+    {
+     "variant": "AA",
+     "n": 90
+    }
+   ],
+   "variant": "AA",
+   "n": 90,
+   "n_exp": 38,
+   "mean": 2980.253333581937,
+   "mean_ok": true,
+   "passed": true
+  },
+  {
+   "cid": "C08",
+   "row_var": "agegrps",
+   "rowLevels": "5-17",
+   "col_var": "insurance",
+   "colLevels": "<65, Uninsured",
+   "expected_n": 90,
+   "published_n": 90,
+   "published_mean": 2980.25333358194,
+   "published_median": null,
+   "pct_share": 0.387191437606877,
+   "tried": [
+    {
+     "variant": "AA",
+     "n": 90
+    }
+   ],
+   "variant": "AA",
+   "n": 90,
+   "n_exp": 38,
+   "mean": 2980.253333581937,
+   "mean_ok": true,
+   "passed": true
+  },
+  {
+   "cid": "C09",
+   "row_var": "region",
+   "rowLevels": "Northeast",
+   "col_var": "insurance",
+   "colLevels": "Uninsured, all ages",
+   "expected_n": 91,
+   "published_n": 91,
+   "published_mean": 2158.9813190803,
+   "published_median": null,
+   "pct_share": 0.512961691646485,
+   "tried": [
+    {
+     "variant": "AA",
+     "n": 91
+    }
+   ],
+   "variant": "AA",
+   "n": 91,
+   "n_exp": 49,
+   "mean": 2158.981319080301,
+   "mean_ok": true,
+   "passed": true
+  },
+  {
+   "cid": "C10",
+   "row_var": "region",
+   "rowLevels": "Northeast",
+   "col_var": "insurance",
+   "colLevels": "<65, Uninsured",
+   "expected_n": 91,
+   "published_n": 91,
+   "published_mean": 2158.9813190803,
+   "published_median": null,
+   "pct_share": 0.512961691646485,
+   "tried": [
+    {
+     "variant": "AA",
+     "n": 91
+    }
+   ],
+   "variant": "AA",
+   "n": 91,
+   "n_exp": 49,
+   "mean": 2158.981319080301,
+   "mean_ok": true,
+   "passed": true
+  },
+  {
+   "cid": "C11",
+   "row_var": "married",
+   "rowLevels": "Separated",
+   "col_var": "insurance",
+   "colLevels": "Uninsured, all ages",
+   "expected_n": 69,
+   "published_n": 69,
+   "published_mean": 1542.46686258472,
+   "published_median": null,
+   "pct_share": 0.526922287670609,
+   "tried": [
+    {
+     "variant": "AA",
+     "n": 69
+    }
+   ],
+   "variant": "AA",
+   "n": 69,
+   "n_exp": 35,
+   "mean": 1542.4668625847196,
+   "mean_ok": true,
+   "passed": true
+  },
+  {
+   "cid": "C12",
+   "row_var": "married",
+   "rowLevels": "Separated",
+   "col_var": "insurance",
+   "colLevels": "<65, Uninsured",
+   "expected_n": 68,
+   "published_n": 68,
+   "published_mean": 1585.56967393789,
+   "published_median": null,
+   "pct_share": 0.517989842677487,
+   "tried": [
+    {
+     "variant": "AA",
+     "n": 68
+    }
+   ],
+   "variant": "AA",
+   "n": 68,
+   "n_exp": 34,
+   "mean": 1585.5696739378939,
+   "mean_ok": true,
+   "passed": true
+  },
+  {
+   "cid": "C13",
+   "row_var": "married",
+   "rowLevels": "Inapplicable (age < 16)",
+   "col_var": "insurance",
+   "colLevels": "Uninsured, all ages",
+   "expected_n": 79,
+   "published_n": 79,
+   "published_mean": 4249.76380277223,
+   "published_median": null,
+   "pct_share": 0.550058090125235,
+   "tried": [
+    {
+     "variant": "AA",
+     "n": 79
+    }
+   ],
+   "variant": "AA",
+   "n": 79,
+   "n_exp": 44,
+   "mean": 4249.763802772229,
+   "mean_ok": true,
+   "passed": true
+  },
+  {
+   "cid": "C14",
+   "row_var": "married",
+   "rowLevels": "Inapplicable (age < 16)",
+   "col_var": "insurance",
+   "colLevels": "<65, Uninsured",
+   "expected_n": 79,
+   "published_n": 79,
+   "published_mean": 4249.76380277223,
+   "published_median": null,
+   "pct_share": 0.550058090125235,
+   "tried": [
+    {
+     "variant": "AA",
+     "n": 79
+    }
+   ],
+   "variant": "AA",
+   "n": 79,
+   "n_exp": 44,
+   "mean": 4249.763802772229,
+   "mean_ok": true,
+   "passed": true
+  },
+  {
+   "cid": "C15",
+   "row_var": "employed",
+   "rowLevels": "Inapplicable (age < 16)",
+   "col_var": "insurance",
+   "colLevels": "Uninsured, all ages",
+   "expected_n": 80,
+   "published_n": 80,
+   "published_mean": 4249.76380277223,
+   "published_median": null,
+   "pct_share": 0.539566357684495,
+   "tried": [
+    {
+     "variant": "AA",
+     "n": 80
+    }
+   ],
+   "variant": "AA",
+   "n": 80,
+   "n_exp": 44,
+   "mean": 4249.763802772229,
+   "mean_ok": true,
+   "passed": true
+  },
+  {
+   "cid": "C16",
+   "row_var": "employed",
+   "rowLevels": "Inapplicable (age < 16)",
+   "col_var": "insurance",
+   "colLevels": "<65, Uninsured",
+   "expected_n": 80,
+   "published_n": 80,
+   "published_mean": 4249.76380277223,
+   "published_median": null,
+   "pct_share": 0.539566357684495,
+   "tried": [
+    {
+     "variant": "AA",
+     "n": 80
+    }
+   ],
+   "variant": "AA",
+   "n": 80,
+   "n_exp": 44,
+   "mean": 4249.763802772229,
+   "mean_ok": true,
+   "passed": true
+  },
+  {
+   "cid": "C17",
+   "row_var": "education",
+   "rowLevels": "Inapplicable (age < 18)",
+   "col_var": "insurance",
+   "colLevels": "Uninsured, all ages",
+   "expected_n": 105,
+   "published_n": 105,
+   "published_mean": 3945.09212371096,
+   "published_median": null,
+   "pct_share": 0.45953504209602697,
+   "tried": [
+    {
+     "variant": "AA",
+     "n": 105
+    }
+   ],
+   "variant": "AA",
+   "n": 105,
+   "n_exp": 51,
+   "mean": 3945.0921237109587,
+   "mean_ok": true,
+   "passed": true
+  },
+  {
+   "cid": "C18",
+   "row_var": "education",
+   "rowLevels": "Inapplicable (age < 18)",
+   "col_var": "insurance",
+   "colLevels": "<65, Uninsured",
+   "expected_n": 105,
+   "published_n": 105,
+   "published_mean": 3945.09212371096,
+   "published_median": null,
+   "pct_share": 0.45953504209602697,
+   "tried": [
+    {
+     "variant": "AA",
+     "n": 105
+    }
+   ],
+   "variant": "AA",
+   "n": 105,
+   "n_exp": 51,
+   "mean": 3945.0921237109587,
+   "mean_ok": true,
+   "passed": true
+  }
+ ],
+ "grades": {
+  "passed_cells": 18,
+  "P1": {
+   "grade": "held",
+   "below_60": 18,
+   "passed": 18,
+   "value": 1.0
+  },
+  "P2": {
+   "grade": "held",
+   "passed": 18
+  },
+  "P3": {
+   "grade": "held",
+   "n_exp": 47
+  },
+  "P4": {
+   "grade": "held",
+   "close": 17,
+   "value": 0.9444
+  },
+  "estimates_below_60": 22
+ }
+}
