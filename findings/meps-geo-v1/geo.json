@@ -1,0 +1,217 @@
+{
+ "version": "0.1.0",
+ "cutoff": 2013,
+ "error": null,
+ "briefs_csv": {
+  "url": "https://raw.githubusercontent.com/munimtechnologies/evidence-pack/v0.9.33/findings/meps-census-v1/briefs.csv",
+  "sha256": "9344182122bedc6fb47fdbde27392d6aa6c43dfa3df847b1e1f5283cf4d3b3c6"
+ },
+ "n_hc_briefs": 378,
+ "n_fetched": 378,
+ "n_boilerplate_lines": 62,
+ "boilerplate_msa_lines": [],
+ "codebook": {
+  "2011": {
+   "puf": "H147",
+   "var": "MSA11",
+   "fetch": "ok",
+   "status": "present"
+  },
+  "2012": {
+   "puf": "H155",
+   "var": "MSA12",
+   "fetch": "ok",
+   "status": "present"
+  },
+  "2013": {
+   "puf": "H163",
+   "var": "MSA13",
+   "fetch": "ok",
+   "status": "absent"
+  },
+  "2014": {
+   "puf": "H171",
+   "var": "MSA14",
+   "fetch": "ok",
+   "status": "absent"
+  },
+  "2015": {
+   "puf": "H181",
+   "var": "MSA15",
+   "fetch": "ok",
+   "status": "absent"
+  },
+  "2016": {
+   "puf": "H192",
+   "var": "MSA16",
+   "fetch": "ok",
+   "status": "absent"
+  },
+  "2017": {
+   "puf": "H201",
+   "var": "MSA17",
+   "fetch": "ok",
+   "status": "absent"
+  },
+  "2018": {
+   "puf": "H209",
+   "var": "MSA18",
+   "fetch": "ok",
+   "status": "absent"
+  },
+  "2019": {
+   "puf": "H216",
+   "var": "MSA19",
+   "fetch": "ok",
+   "status": "absent"
+  },
+  "2020": {
+   "puf": "H224",
+   "var": "MSA20",
+   "fetch": "ok",
+   "status": "absent"
+  },
+  "2021": {
+   "puf": "H233",
+   "var": "MSA21",
+   "fetch": "ok",
+   "status": "absent"
+  },
+  "2022": {
+   "puf": "H243",
+   "var": "MSA22",
+   "fetch": "ok",
+   "status": "absent"
+  },
+  "2023": {
+   "puf": "H251",
+   "var": "MSA23",
+   "fetch": "ok",
+   "status": "absent"
+  },
+  "2024": {
+   "puf": "H256",
+   "var": "MSA24",
+   "fetch": "ok",
+   "status": "absent"
+  }
+ },
+ "table": [
+  {
+   "cls": "NOID",
+   "anchor": "none",
+   "msa_hit": false,
+   "briefs": 33
+  },
+  {
+   "cls": "NOID",
+   "anchor": "none",
+   "msa_hit": true,
+   "briefs": 3
+  },
+  {
+   "cls": "NONPUBLIC",
+   "anchor": "none",
+   "msa_hit": false,
+   "briefs": 4
+  },
+  {
+   "cls": "NONPUBLIC",
+   "anchor": "post",
+   "msa_hit": false,
+   "briefs": 7
+  },
+  {
+   "cls": "NONPUBLIC",
+   "anchor": "post",
+   "msa_hit": true,
+   "briefs": 11
+  },
+  {
+   "cls": "NONPUBLIC",
+   "anchor": "pre",
+   "msa_hit": false,
+   "briefs": 6
+  },
+  {
+   "cls": "PUF",
+   "anchor": "none",
+   "msa_hit": false,
+   "briefs": 48
+  },
+  {
+   "cls": "PUF",
+   "anchor": "none",
+   "msa_hit": true,
+   "briefs": 3
+  },
+  {
+   "cls": "PUF",
+   "anchor": "post",
+   "msa_hit": false,
+   "briefs": 40
+  },
+  {
+   "cls": "PUF",
+   "anchor": "post",
+   "msa_hit": true,
+   "briefs": 3
+  },
+  {
+   "cls": "PUF",
+   "anchor": "pre",
+   "msa_hit": false,
+   "briefs": 215
+  },
+  {
+   "cls": "PUF",
+   "anchor": "pre",
+   "msa_hit": true,
+   "briefs": 5
+  }
+ ],
+ "grades": {
+  "P2": {
+   "grade": "held",
+   "controls": {
+    "569": true,
+    "549": true
+   }
+  },
+  "P3": {
+   "grade": "held",
+   "status": {
+    "2011": "present",
+    "2012": "present",
+    "2013": "absent",
+    "2014": "absent",
+    "2015": "absent",
+    "2016": "absent",
+    "2017": "absent",
+    "2018": "absent",
+    "2019": "absent",
+    "2020": "absent",
+    "2021": "absent",
+    "2022": "absent",
+    "2023": "absent"
+   }
+  },
+  "P4": {
+   "n_post": 43,
+   "n_pre": 220,
+   "share_post": 0.0698,
+   "share_pre": 0.0227,
+   "grade": "failed"
+  },
+  "P1_candidates": [
+   512,
+   554,
+   569
+  ],
+  "P1": {
+   "grade": "hand",
+   "candidates": 3,
+   "rule": "held if >= 3 candidates (including 569) are confirmed by hand to show an estimate for an MSA/non-MSA (metropolitan/nonmetropolitan) group for a data year >= 2013"
+  }
+ }
+}

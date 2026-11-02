@@ -1,0 +1,379 @@
+number,year,cls,file_ids,fyc_years,anchor,status,msa_hits,ur_hits,url
+32,2004,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st32/stat32.shtml
+34,2004,PUF,H34 H50,2000,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st34/stat34.shtml
+35,2004,PUF,H10A H12 H16A H20 H26A H28 H33A H38 H50 H51A,1996 1997 1998 1999 2000,pre,ok,0,2,https://meps.ahrq.gov/data_files/publications/st35/stat35.shtml
+39,2004,PUF,H53,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st39/stat39.shtml
+40,2004,PUF,H2001 H60,2001,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st40/stat40.shtml
+42,2004,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st42/stat42.shtml
+44,2004,PUF,H1 H13 H22 H34 H5 H53 H64 H9,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st44/stat44.shtml
+45,2004,PUF,H1 H12 H13 H20 H22 H28 H34 H38 H5 H50 H53 H60 H62 H64 H9,1996 1997 1998 1999 2000 2001,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st45/stat45.shtml
+52,2004,PUF,H38 H50 H58,1999 2000,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st52/stat52.shtml
+56,2004,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st56/stat56.shtml
+57,2004,PUF,H50 H60 H65,2000 2001,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st57/stat57.shtml
+59,2004,PUF,H62,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st59/stat59.shtml
+60,2004,PUF,H67A,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st60/stat60.shtml
+61,2004,PUF,H70,2002,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st61/stat61.shtml
+62,2004,NOID,,,none,ok,6,0,https://meps.ahrq.gov/data_files/publications/st62/stat62.shtml
+63,2005,PUF,H70,2002,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st63/stat63.shtml
+64,2005,PUF,H70,2002,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st64/stat64.shtml
+65,2005,PUF,H10A H16A H26A H33A H51A H59A H67A,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st65/stat65.shtml
+66,2005,PUF,H10A H16A H26A H33A H51A H59A H67A,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st66/stat66.shtml
+67,2005,PUF,H60 H70 H71,2001 2002,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st67/stat67.shtml
+68,2005,PUF,H70,2002,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st68/stat68.shtml
+70,2005,PUF,H70,2002,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st70/stat70.shtml
+71,2005,PUF,H64,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st71/stat71.shtml
+72,2005,PUF,H24 H66 H70,2002,pre,ok,0,1,https://meps.ahrq.gov/data_files/publications/st72/stat72.shtml
+73,2005,PUF,H70,2002,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st73/stat73.shtml
+78,2005,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st78/stat78.shtml
+80,2005,PUF,H20 H70,1997 2002,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st80/stat80.shtml
+81,2005,PUF,H12 H1996 H70,1996 2002,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st81/stat81.shtml
+82,2005,PUF,H70,2002,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st82/stat82.shtml
+83,2005,PUF,H75,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st83/stat83.shtml
+84,2005,PUF,H1 H12 H13 H20 H22 H28 H34 H38 H5 H50 H53 H60 H64 H70 H73 H75 H9,1996 1997 1998 1999 2000 2001 2002,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st84/stat84.shtml
+85,2005,PUF,H1 H13 H22 H34 H5 H53 H64 H75 H9,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st85/stat85.shtml
+86,2005,PUF,H20 H70,1997 2002,pre,ok,0,1,https://meps.ahrq.gov/data_files/publications/st86/stat86.shtml
+87,2005,PUF,H70,2002,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st87/stat87.shtml
+92,2005,PUF,H70,2002,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st92/stat92.shtml
+93,2005,PUF,H67A H67D H69 H70,2002,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st93/stat93.shtml
+94,2005,PUF,H28 H38 H70,1998 1999 2002,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st94/stat94.shtml
+95,2005,NOID,,,none,ok,2,0,https://meps.ahrq.gov/data_files/publications/st95/stat95.shtml
+96,2005,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st96/stat96.shtml
+97,2005,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st97/stat97.shtml
+99,2005,PUF,H1 H13 H22 H34 H5 H53 H9,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st99/stat99.shtml
+100,2005,NONPUBLIC,H1 H13 H22 H34 H5 H53 H9,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st100/stat100.shtml
+101,2005,PUF,H73,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st101/stat101.shtml
+103,2005,PUF,H79,2003,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st103/stat103.shtml
+104,2005,PUF,H70 H79 H80,2002 2003,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st104/stat104.shtml
+105,2005,PUF,H73,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st105/stat105.shtml
+111,2006,PUF,H77E H79,2003,pre,ok,8,1,https://meps.ahrq.gov/data_files/publications/st111/stat111.shtml
+113,2006,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st113/stat113.shtml
+114,2006,PUF,H73,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st114/stat114.shtml
+115,2006,PUF,H67A H67E H67F H67G H69 H70 H77A H77E H77F H77G H78 H79,2002 2003,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st115/stat115.shtml
+116,2006,PUF,H59A H59E H59F H59G H60 H61 H67A H67E H67F H67G H69 H70 H77A H77E H77F H77G H78 H79,2001 2002 2003,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st116/stat116.shtml
+117,2006,PUF,H77B,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st117/stat117.shtml
+118,2006,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st118/stat118.shtml
+119,2006,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st119/stat119.shtml
+120,2006,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st120/stat120.shtml
+121,2006,PUF,H76 H79,2003,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st121/stat121.shtml
+122,2006,PUF,H76 H79,2003,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st122/stat122.shtml
+123,2006,PUF,H70 H79 H80,2002 2003,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st123/stat123.shtml
+124,2006,PUF,H70 H79 H80,2002 2003,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st124/stat124.shtml
+130,2006,PUF,H1 H12 H13 H20 H22 H28 H34 H38 H5 H50 H53 H60 H64 H70 H75 H79 H82 H84 H9,1996 1997 1998 1999 2000 2001 2002 2003,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st130/stat130.shtml
+131,2006,PUF,H1 H13 H22 H34 H5 H53 H64 H75 H84 H9,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st131/stat131.shtml
+136,2006,PUF,H79 H82,2003,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st136/stat136.shtml
+137,2006,PUF,H70 H79 H82,2002 2003,pre,ok,8,0,https://meps.ahrq.gov/data_files/publications/st137/stat137.shtml
+139,2006,PUF,H1997,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st139/stat139.shtml
+140,2006,PUF,H79 H82,2003,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st140/stat140.shtml
+141,2006,PUF,H1 H13 H22 H34 H5 H53 H64 H75 H84 H9,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st141/stat141.shtml
+143,2006,PUF,H75,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st143/stat143.shtml
+146,2006,PUF,H10A H10D H10E H10F H10G H12 H77A H77D H77E H77F H77G H79,1996 2003,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st146/stat146.shtml
+147,2006,PUF,H82,,none,ok,7,1,https://meps.ahrq.gov/data_files/publications/st147/stat147.shtml
+149,2006,PUF,H89,2004,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st149/stat149.shtml
+152,2006,PUF,H2004 H89,2004,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st152/stat152.shtml
+159,2007,PUF,H89,2004,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st159/stat159.shtml
+161,2007,PUF,H79 H86,2003,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st161/stat161.shtml
+162,2007,PUF,H89,2004,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st162/stat162.shtml
+164,2007,PUF,H85D H89,2004,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st164/stat164.shtml
+165,2007,PUF,H89,2004,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st165/stat165.shtml
+166,2007,PUF,H85G H89,2004,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st166/stat166.shtml
+167,2007,PUF,H50 H52 H87 H89,2000 2004,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st167/stat167.shtml
+168,2007,PUF,H20 H89,1997 2004,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st168/stat168.shtml
+169,2007,PUF,H1 H12 H13 H20 H22 H28 H34 H38 H5 H50 H53 H60 H64 H70 H75 H79 H84 H89 H9 H90 H93,1996 1997 1998 1999 2000 2001 2002 2003 2004,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st169/stat169.shtml
+170,2007,PUF,H90,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st170/stat170.shtml
+172,2007,PUF,H1 H13 H22 H34 H5 H53 H64 H75 H84 H9 H93,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st172/stat172.shtml
+173,2007,PUF,H90,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st173/stat173.shtml
+179,2007,PUF,H90,,none,ok,7,0,https://meps.ahrq.gov/data_files/publications/st179/stat179.shtml
+183,2007,PUF,H89 H90 H98,2004,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st183/stat183.shtml
+187,2007,PUF,H90,,none,ok,7,0,https://meps.ahrq.gov/data_files/publications/st187/stat187.shtml
+188,2007,PUF,H90,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st188/stat188.shtml
+191,2007,PUF,H89 H97 H98,2004 2005,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st191/stat191.shtml
+193,2007,PUF,H97,2005,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st193/stat193.shtml
+194,2007,PUF,H77A H77E H77F H77G H78 H79 H85A H85E H85F H85G H87 H89 H94A H94E H94F H94G H96 H97,2003 2004 2005,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st194/stat194.shtml
+195,2008,PUF,H97,2005,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st195/stat195.shtml
+196,2008,PUF,H97,2005,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st196/stat196.shtml
+197,2008,PUF,H89,2004,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st197/stat197.shtml
+198,2008,PUF,H94A,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st198/stat198.shtml
+199,2008,PUF,H94A,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st199/stat199.shtml
+200,2008,PUF,H50 H51A H94A H97,2000 2005,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st200/stat200.shtml
+201,2008,PUF,H94F H94G H97,2005,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st201/stat201.shtml
+202,2008,PUF,H66 H95 H97,2005,pre,ok,0,1,https://meps.ahrq.gov/data_files/publications/st202/stat202.shtml
+203,2008,NONPUBLIC,H94A H94D H97,2005,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st203/stat203.shtml
+204,2008,PUF,H50 H51A H51D H51E H51F H51G H51H H52 H94A H94D H94E H94F H94G H96 H97,2000 2005,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st204/stat204.shtml
+205,2008,PUF,H51A H94A,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st205/stat205.shtml
+206,2008,PUF,H67A H70 H94A H97,2002 2005,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st206/stat206.shtml
+214,2008,PUF,H1 H101 H12 H13 H20 H22 H28 H34 H38 H5 H50 H53 H60 H64 H70 H75 H79 H84 H89 H9 H93 H97 H99,1996 1997 1998 1999 2000 2001 2002 2003 2004 2005,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st214/stat214.shtml
+216,2008,PUF,H1 H101 H13 H22 H34 H5 H53 H64 H75 H84 H9 H93,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st216/stat216.shtml
+220,2008,PUF,H106 H97 H99,2005,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st220/stat220.shtml
+221,2008,PUF,H12 H99,1996,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st221/stat221.shtml
+222,2008,PUF,H94A H94D H94E H94F H94G H96 H97,2005,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st222/stat222.shtml
+224,2008,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st224/stat224.shtml
+225,2008,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st225/stat225.shtml
+226,2008,PUF,H105,2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st226/stat226.shtml
+227,2008,PUF,H105,2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st227/stat227.shtml
+228,2008,PUF,H102A H102D H102E H102F H102G H102H H104 H105,2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st228/stat228.shtml
+229,2008,PUF,H105,2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st229/stat229.shtml
+232,2009,PUF,H102A H105,2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st232/stat232.shtml
+233,2009,PUF,H105,2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st233/stat233.shtml
+234,2009,PUF,H100 H105,2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st234/stat234.shtml
+235,2009,PUF,H102A H105,2006,pre,ok,0,2,https://meps.ahrq.gov/data_files/publications/st235/stat235.shtml
+236,2009,PUF,H105 H106 H97,2005 2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st236/stat236.shtml
+237,2009,PUF,H105,2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st237/stat237.shtml
+238,2009,PUF,H102A H105,2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st238/stat238.shtml
+239,2009,PUF,H100 H103 H105,2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st239/stat239.shtml
+240,2009,PUF,H102A H105 H94A H97,2005 2006,pre,ok,0,2,https://meps.ahrq.gov/data_files/publications/st240/stat240.shtml
+241,2009,PUF,H105,2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st241/stat241.shtml
+242,2009,PUF,H104 H105,2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st242/stat242.shtml
+243,2009,NONPUBLIC,H102A H102D H105 H94A H94D H97,2005 2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st243/stat243.shtml
+244,2009,PUF,H105,2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st244/stat244.shtml
+245,2009,PUF,H102A H105 H50,2000 2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st245/stat245.shtml
+246,2009,PUF,H105,2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st246/stat246.shtml
+247,2009,PUF,H105 H60,2001 2006,pre,ok,0,2,https://meps.ahrq.gov/data_files/publications/st247/stat247.shtml
+248,2009,PUF,H104 H105 H12 H6R,1996 2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st248/stat248.shtml
+252,2009,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st252/stat252.shtml
+253,2009,PUF,H102 H105,2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st253/stat253.shtml
+254,2009,PUF,H102A H105,2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st254/stat254.shtml
+255,2009,PUF,H102A H105,2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st255/stat255.shtml
+256,2009,PUF,H102A H105,2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st256/stat256.shtml
+257,2009,PUF,H105,2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st257/stat257.shtml
+258,2009,PUF,H105 H107 H114,2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st258/stat258.shtml
+259,2009,PUF,H1 H101 H105 H107 H109 H12 H13 H20 H22 H28 H34 H38 H5 H50 H53 H60 H64 H70 H75 H79 H84 H89 H9 H93 H97,1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st259/stat259.shtml
+260,2009,PUF,H107 H99,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st260/stat260.shtml
+262,2009,PUF,H105,2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st262/stat262.shtml
+263,2009,PUF,H105,2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st263/stat263.shtml
+264,2009,PUF,H105,2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st264/stat264.shtml
+265,2009,PUF,H105 H12 H20 H28 H38 H50 H60 H70 H79 H89 H97,1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st265/stat265.shtml
+267,2009,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st267/stat267.shtml
+268,2009,PUF,H110E H110F H110G,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st268/stat268.shtml
+269,2009,PUF,H107,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st269/stat269.shtml
+270,2009,PUF,H10A H110A H113 H12 H68,1996 2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st270/stat270.shtml
+271,2009,PUF,H10A H110A H113 H12 H68,1996 2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st271/stat271.shtml
+272,2009,PUF,H113,2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st272/stat272.shtml
+274,2009,PUF,H107,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st274/stat274.shtml
+275,2010,PUF,H110A H113 H16A H20 H68,1997 2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st275/stat275.shtml
+276,2009,PUF,H110A H110D H110E H110F H110G H110H H112 H113,2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st276/stat276.shtml
+277,2010,PUF,H110A H113 H16A H20 H68,1997 2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st277/stat277.shtml
+278,2010,PUF,H105 H113 H114,2006 2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st278/stat278.shtml
+279,2010,PUF,H110A H113,2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st279/stat279.shtml
+280,2010,PUF,H110A H113,2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st280/stat280.shtml
+281,2010,PUF,H113,2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st281/stat281.shtml
+282,2010,PUF,H113,2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st282/stat282.shtml
+284,2010,PUF,H107,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st284/stat284.shtml
+288,2010,PUF,H102A H105 H94A H97,2005 2006,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st288/stat288.shtml
+289,2010,PUF,H110A H110D H110E H110F H110G H110H H112 H113,2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st289/stat289.shtml
+290,2010,PUF,H1 H101 H105 H109 H113 H115 H117 H12 H13 H20 H22 H28 H34 H38 H5 H50 H53 H60 H64 H70 H75 H79 H84 H89 H9 H93 H97,1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st290/stat290.shtml
+292,2010,PUF,H112 H113 H18 H20,1997 2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st292/stat292.shtml
+293,2010,NOID,,,none,ok,0,1,https://meps.ahrq.gov/data_files/publications/st293/stat293.shtml
+294,2010,PUF,H113 H115 H122,2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st294/stat294.shtml
+295,2010,PUF,H113 H20,1997 2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st295/stat295.shtml
+296,2010,PUF,H108 H111 H113,2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st296/stat296.shtml
+297,2010,PUF,H113,2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st297/stat297.shtml
+298,2010,PUF,H113,2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st298/stat298.shtml
+299,2010,PUF,H113,2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st299/stat299.shtml
+300,2010,PUF,H113,2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st300/stat300.shtml
+301,2010,PUF,H121,2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st301/stat301.shtml
+303,2010,PUF,H110A H110D H110E H110F H110G H110H H112 H113,2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st303/stat303.shtml
+304,2010,PUF,H10A H10D H10E H10F H10G H10H H110A H110D H110E H110F H110G H110H H112 H113 H12 H6R,1996 2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st304/stat304.shtml
+305,2010,PUF,H1 H101 H105 H109 H113 H115 H12 H13 H20 H22 H28 H34 H38 H5 H50 H53 H60 H64 H70 H75 H79 H84 H89 H9 H93 H97,1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st305/stat305.shtml
+306,2010,PUF,H102A H102D H102E H102F H102G H102H H104 H105 H110A H110D H110E H110F H110G H110H H112 H113 H77A H77D H77E H77F H77G H77H H78 H79 H85A H85D H85E H85F H85G H85H H87 H89 H94A H94D H94E H94F H94G H94H H96 H97,2003 2004 2005 2006 2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st306/stat306.shtml
+307,2010,PUF,H121,2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st307/stat307.shtml
+308,2010,NONPUBLIC,H113,2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st308/stat308.shtml
+309,2010,PUF,H113 H121 H122,2007 2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st309/stat309.shtml
+310,2011,PUF,H112 H113,2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st310/stat310.shtml
+312,2011,PUF,H113,2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st312/stat312.shtml
+313,2011,PUF,H118A H121,2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st313/stat313.shtml
+314,2011,PUF,H118A H121,2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st314/stat314.shtml
+315,2011,PUF,H121,2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st315/stat315.shtml
+316,2011,PUF,H112 H113 H18 H20,1997 2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st316/stat316.shtml
+317,2011,PUF,H116 H121,2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st317/stat317.shtml
+318,2011,PUF,H118E H118F H118G H121,2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st318/stat318.shtml
+319,2011,PUF,H112 H113 H18 H20,1997 2007,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st319/stat319.shtml
+320,2011,NONPUBLIC,H110A H110D H113 H118A H118D H121,2007 2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st320/stat320.shtml
+324,2011,PUF,H12 H120 H121 H6R,1996 2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st324/stat324.shtml
+326,2011,PUF,H121,2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st326/stat326.shtml
+327,2011,PUF,H118A H118D H118E H118F H118G H118H H120 H121,2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st327/stat327.shtml
+331,2011,PUF,H118A H118D H118E H118F H118G H118H H120 H121,2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st331/stat331.shtml
+332,2011,NOID,,,none,ok,0,1,https://meps.ahrq.gov/data_files/publications/st332/stat332.shtml
+334,2011,PUF,H118A H118D H118E H118F H118G H118H H120 H121,2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st334/stat334.shtml
+335,2011,PUF,H121 H123 H130,2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st335/stat335.shtml
+336,2011,PUF,H1 H101 H105 H109 H113 H117 H12 H121 H123 H125 H13 H20 H22 H28 H34 H38 H5 H50 H53 H60 H64 H70 H75 H79 H84 H89 H9 H93 H97,1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st336/stat336.shtml
+337,2011,PUF,H118A H118D H118E H118F H118G H118H H120 H121,2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st337/stat337.shtml
+340,2011,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st340/stat340.shtml
+341,2011,NOID,,,none,ok,0,1,https://meps.ahrq.gov/data_files/publications/st341/stat341.shtml
+342,2011,PUF,H118A H118D H118E H118F H118G H118H H120 H121,2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st342/stat342.shtml
+343,2011,PUF,H121,2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st343/stat343.shtml
+345,2011,PUF,H102 H104 H105 H110 H112 H113 H118 H120 H121 H94 H96 H97,2005 2006 2007 2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st345/stat345.shtml
+347,2011,PUF,H102A H110A H118A H121 H59A H60 H67A H68 H77A H85A H94A,2001 2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st347/stat347.shtml
+348,2011,PUF,H118A H118D H118E H118F H118G H118H H120 H121,2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st348/stat348.shtml
+349,2011,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st349/stat349.shtml
+351,2011,PUF,H121,2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st351/stat351.shtml
+352,2011,PUF,H121,2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st352/stat352.shtml
+353,2011,PUF,H121,2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st353/stat353.shtml
+354,2012,PUF,H121 H129 H130,2008 2009,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st354/stat354.shtml
+355,2012,PUF,H129,2009,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st355/stat355.shtml
+356,2012,PUF,H118A H33A H38 H68,1999,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st356/stat356.shtml
+357,2012,PUF,H110A H110D H110E H110F H110G H110H H112 H113 H118A H118D H118E H118F H118G H118H H120 H121 H126A H126D H126E H126F H126G H126H H128 H129,2007 2008 2009,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st357/stat357.shtml
+358,2012,PUF,H110A H110D H110E H110F H110G H110H H112 H113 H118A H118D H118E H118F H118G H118H H120 H121 H126A H126D H126E H126F H126G H126H H128 H129,2007 2008 2009,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st358/stat358.shtml
+359,2012,PUF,H126A H126D H126E H126F H126G H126H H128 H129,2009,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st359/stat359.shtml
+362,2012,PUF,H126A H129,2009,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st362/stat362.shtml
+363,2012,PUF,H126A H129,2009,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st363/stat363.shtml
+364,2012,PUF,H129,2009,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st364/stat364.shtml
+367,2012,PUF,H129,2009,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st367/stat367.shtml
+368,2012,PUF,H123 H126B H33B H38,1999,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st368/stat368.shtml
+370,2012,PUF,H118A H118D H118E H118F H118G H118H H121,2008,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st370/stat370.shtml
+371,2012,PUF,H126A H126D H126E H126F H126G H126H H128 H129,2009,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st371/stat371.shtml
+372,2012,PUF,H126A H33A H38 H68,1999,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st372/stat372.shtml
+374,2012,NOID,,,none,ok,0,1,https://meps.ahrq.gov/data_files/publications/st374/stat374.shtml
+377,2012,PUF,H126A H126D H126E H126F H126G H126H H128 H129 H33A H33D H33E H33F H33G H33H H37 H38,1999 2009,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st377/stat377.shtml
+378,2012,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st378/stat378.shtml
+379,2012,PUF,H1 H101 H105 H109 H113 H117 H12 H121 H125 H129 H13 H132 H134 H20 H22 H28 H34 H38 H5 H50 H53 H60 H64 H70 H75 H79 H84 H89 H9 H93 H97,1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st379/stat379.shtml
+381,2012,PUF,H126G H129,2009,pre,ok,5,0,https://meps.ahrq.gov/data_files/publications/st381/stat381.shtml
+382,2012,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st382/stat382.shtml
+384,2012,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st384/stat384.shtml
+385,2012,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st385/stat385.shtml
+386,2012,PUF,H126A H129,2009,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st386/stat386.shtml
+387,2012,PUF,H126A H126D H126E H126F H126G H126H H128 H129,2009,pre,ok,6,0,https://meps.ahrq.gov/data_files/publications/st387/stat387.shtml
+392,2012,PUF,H129 H138 H139,2009 2010,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st392/stat392.shtml
+393,2012,PUF,H126A H126D H126E H126F H126G H126H H128 H129,2009,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st393/stat393.shtml
+395,2012,PUF,H129 H138,2009 2010,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st395/stat395.shtml
+396,2013,PUF,H138,2010,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st396/stat396.shtml
+397,2013,PUF,H126A H126D H126E H126F H126G H126H H128 H129,2009,pre,ok,6,0,https://meps.ahrq.gov/data_files/publications/st397/stat397.shtml
+399,2013,PUF,H129 H138 H139,2009 2010,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st399/stat399.shtml
+400,2013,PUF,H135A H51A H68,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st400/stat400.shtml
+401,2013,PUF,H135D H138,2010,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st401/stat401.shtml
+403,2013,PUF,H2009,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st403/stat403.shtml
+404,2013,PUF,H135A H135D H135E H135F H135G H135H H137 H138,2010,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st404/stat404.shtml
+406,2013,PUF,H138,2010,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st406/stat406.shtml
+407,2013,PUF,H135A H138 H50 H51A H68,2000 2010,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st407/stat407.shtml
+408,2013,PUF,H138,2010,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st408/stat408.shtml
+409,2013,PUF,H138,2010,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st409/stat409.shtml
+410,2013,PUF,H135A H138,2010,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st410/stat410.shtml
+411,2013,PUF,H2010,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st411/stat411.shtml
+413,2013,PUF,H138,2010,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st413/stat413.shtml
+414,2013,PUF,H138,2010,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st414/stat414.shtml
+415,2013,PUF,H138,2010,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st415/stat415.shtml
+419,2013,NONPUBLIC,H102F H102G H105 H110F H110G H113 H118F H118G H121 H126F H126G H129 H67F H67G H70 H77F H77G H79 H85F H85G H89 H94F H94G H97,2002 2003 2004 2005 2006 2007 2008 2009,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st419/stat419.shtml
+420,2013,PUF,H1 H101 H105 H109 H113 H117 H12 H121 H125 H129 H13 H134 H138 H141 H143 H20 H22 H28 H34 H38 H5 H50 H53 H60 H64 H70 H75 H79 H84 H89 H9 H93 H97,1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st420/stat420.shtml
+421,2013,PUF,H138,2010,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st421/stat421.shtml
+422,2013,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st422/stat422.shtml
+423,2013,PUF,H147,2011,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st423/stat423.shtml
+424,2013,PUF,H138 H147 H148,2010 2011,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st424/stat424.shtml
+425,2013,PUF,H147,2011,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st425/stat425.shtml
+426,2014,PUF,H138 H147,2010 2011,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st426/stat426.shtml
+428,2014,PUF,H102 H105 H144 H147 H59 H60,2001 2006 2011,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st428/stat428.shtml
+429,2014,PUF,H102 H105 H144 H147 H59 H60,2001 2006 2011,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st429/stat429.shtml
+430,2014,PUF,H135A H138 H50 H51A H68,2000 2010,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st430/stat430.shtml
+431,2014,PUF,H60,2001,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st431/stat431.shtml
+432,2014,PUF,H147,2011,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st432/stat432.shtml
+433,2014,PUF,H105 H138 H147 H60 H70,2001 2002 2006 2010 2011,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st433/stat433.shtml
+434,2014,PUF,H144A H144D H144E H144F H144G H144H H146 H147,2011,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st434/stat434.shtml
+437,2014,PUF,H149,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st437/stat437.shtml
+438,2014,PUF,H149,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st438/stat438.shtml
+439,2014,PUF,H117 H125 H143 H151,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st439/stat439.shtml
+440,2014,PUF,H126A H126D H126E H126F H126G H126H H128 H129 H135A H135D H135E H135F H135G H135H H137 H138 H144A H144D H144E H144F H144G H144H H146 H147,2009 2010 2011,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st440/stat440.shtml
+441,2014,PUF,H147,2011,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st441/stat441.shtml
+442,2014,NOID,,,none,ok,0,1,https://meps.ahrq.gov/data_files/publications/st442/stat442.shtml
+443,2014,PUF,H144A H144D H144E H144F H144G H146 H147 H59A H59D H59E H59F H59G H59H H60 H61,2001 2011,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st443/stat443.shtml
+447,2014,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st447/stat447.shtml
+448,2014,PUF,H155,2012,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st448/stat448.shtml
+449,2014,PUF,H129 H138 H139,2009 2010,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st449/stat449.shtml
+450,2014,PUF,H155,2012,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st450/stat450.shtml
+451,2014,PUF,H147,2011,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st451/stat451.shtml
+454,2014,PUF,H126A H126D H126G H129 H135A H135D H135G H138 H144A H144D H144G H147,2009 2010 2011,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st454/stat454.shtml
+455,2014,PUF,H152A H152D H152E H152F H152G H152H H152I H154 H155,2012,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st455/stat455.shtml
+456,2014,PUF,H155,2012,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st456/stat456.shtml
+457,2014,PUF,H155,2012,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st457/stat457.shtml
+458,2014,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st458/stat458.shtml
+459,2014,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st459/stat459.shtml
+461,2014,PUF,H155,2012,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st461/stat461.shtml
+462,2014,PUF,H147,2011,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st462/stat462.shtml
+463,2014,PUF,H147,2011,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st463/stat463.shtml
+464,2014,PUF,H147 H155 H156,2011 2012,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st464/stat464.shtml
+465,2015,PUF,H105 H113 H12 H121 H129 H138 H147 H155 H20 H28 H38 H50 H60 H70 H79 H89 H97,1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st465/stat465.shtml
+466,2015,PUF,H105 H113 H12 H121 H129 H138 H147 H155 H20 H28 H38 H50 H60 H70 H79 H89 H97,1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st466/stat466.shtml
+467,2015,NONPUBLIC,H143 H151,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st467/stat467.shtml
+468,2015,PUF,H2012,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st468/stat468.shtml
+469,2015,PUF,H2012,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st469/stat469.shtml
+470,2015,PUF,H152A H152D H152E H152F H152G H152H H154 H155 H67A H67D H67E H67F H67G H67H H69 H70,2002 2012,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st470/stat470.shtml
+471,2015,PUF,H152A H152D H152E H152F H152G H152H H154 H155,2012,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st471/stat471.shtml
+472,2015,PUF,H152A H152D H152E H152F H152G H152H H154 H155,2012,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st472/stat472.shtml
+473,2015,PUF,H152A H155,2012,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st473/stat473.shtml
+475,2015,PUF,H157,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st475/stat475.shtml
+476,2015,PUF,H157,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st476/stat476.shtml
+478,2015,PUF,H102A H110A H118A H126A H135A H144A H152A H67A H77A H85A H94A,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st478/stat478.shtml
+479,2015,NONPUBLIC,H129 H138 H147 H155,2009 2010 2011 2012,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st479/stat479.shtml
+480,2015,PUF,H155 H163,2012 2013,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st480/stat480.shtml
+481,2015,PUF,H155 H163,2012 2013,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st481/stat481.shtml
+482,2015,PUF,H152A H152D H152E H152F H152G H152H H154 H155,2012,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st482/stat482.shtml
+483,2015,PUF,H155,2012,pre,ok,0,0,https://meps.ahrq.gov/data_files/publications/st483/stat483.shtml
+484,2015,PUF,H160G,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st484/stat484.shtml
+485,2015,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st485/stat485.shtml
+487,2016,PUF,H160A H160D H160E H160F H160G H160H H162 H163,2013,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st487/stat487.shtml
+488,2016,PUF,H129 H138 H147 H155 H163 H165,2009 2010 2011 2012 2013,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st488/stat488.shtml
+489,2016,PUF,H129 H138 H147 H155 H163 H165,2009 2010 2011 2012 2013,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st489/stat489.shtml
+490,2016,PUF,H155 H163 H165,2012 2013,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st490/stat490.shtml
+491,2016,PUF,H163,2013,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st491/stat491.shtml
+493,2016,PUF,H171,2014,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st493/stat493.shtml
+494,2016,PUF,H147 H155 H163 H171,2011 2012 2013 2014,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st494/stat494.shtml
+496,2016,PUF,H171,2014,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st496/stat496.shtml
+497,2016,PUF,H171,2014,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st497/stat497.shtml
+498,2017,PUF,H168A H168B H168C H168D H168E H168F H168G H168H H170 H171,2014,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st498/stat498.shtml
+500,2017,PUF,H105 H113 H121 H129 H138 H147 H155 H163 H171 H50 H60 H70 H79 H89 H97,2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st500/stat500.shtml
+501,2017,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st501/stat501.shtml
+502,2017,PUF,H175,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st502/stat502.shtml
+504,2017,PUF,H2010,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st504/stat504.shtml
+505,2017,PUF,H174 H178A,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st505/stat505.shtml
+506,2017,PUF,H181,2015,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st506/stat506.shtml
+507,2018,PUF,H181,2015,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st507/stat507.shtml
+508,2018,NONPUBLIC,H171 H181,2014 2015,post,ok,6,1,https://meps.ahrq.gov/data_files/publications/st508/stat508.shtml
+509,2018,PUF,H182,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st509/stat509.shtml
+510,2018,PUF,H163 H171 H172 H181 H183,2013 2014 2015,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st510/stat510.shtml
+511,2018,PUF,H131 H181 H97,2005 2015,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st511/stat511.shtml
+512,2018,PUF,H171 H181,2014 2015,post,ok,4,17,https://meps.ahrq.gov/data_files/publications/st512/stat512.shtml
+514,2018,NONPUBLIC,H118I H120 H121 H126I H128 H129 H135I H137 H138 H144I H146 H147 H152I H154 H155 H160I H162 H163 H168I H170 H171 H178I H180 H181,2008 2009 2010 2011 2012 2013 2014 2015,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st514/stat514.shtml
+515,2018,NONPUBLIC,H178A H181 H188A H192,2015 2016,post,ok,9,0,https://meps.ahrq.gov/data_files/publications/st515/stat515.shtml
+516,2018,NONPUBLIC,H178A H181 H188A H192,2015 2016,post,ok,9,2,https://meps.ahrq.gov/data_files/publications/st516/stat516.shtml
+517,2018,PUF,H188G H192,2016,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st517/stat517.shtml
+518,2018,PUF,H181 H192,2015 2016,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st518/stat518.shtml
+520,2019,PUF,H187 H192,2016,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st520/stat520.shtml
+521,2019,PUF,H192,2016,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st521/stat521.shtml
+522,2019,PUF,H129 H138 H147 H155 H163 H171 H181 H192,2009 2010 2011 2012 2013 2014 2015 2016,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st522/stat522.shtml
+523,2019,PUF,H187 H192,2016,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st523/stat523.shtml
+526,2019,PUF,H188A H188D H188E H188F H188G H188H H188I H190 H192 H197A H197D H197E H197F H197G H197H H197I H199 H201,2016 2017,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st526/stat526.shtml
+528,2020,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st528/stat528.shtml
+529,2020,NONPUBLIC,H197A H201,2017,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st529/stat529.shtml
+531,2020,NONPUBLIC,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st531/stat531.shtml
+532,2020,NOID,,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st532/stat532.shtml
+533,2021,PUF,H209,2018,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st533/stat533.shtml
+534,2021,NONPUBLIC,H160A H206A,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st534/stat534.shtml
+535,2021,NONPUBLIC,H160A H163 H206A H209,2013 2018,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st535/stat535.shtml
+537,2021,PUF,H102B H102D H102E H102F H102G H102H H105 H126B H126D H126E H126F H126G H126H H129 H152B H152D H152E H152F H152G H152H H155 H178B H178D H178E H178F H178G H178H H181 H206B H206D H206E H206F H206G H206H H209 H77B H77D H77E H77F H77G H77H H79,2003 2006 2009 2012 2015 2018,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st537/stat537.shtml
+538,2021,NONPUBLIC,H160A H163 H206A H209,2013 2018,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st538/stat538.shtml
+539,2022,PUF,H213A H213D H213E H213F H213G H213H H213I H214 H216,2019,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st539/stat539.shtml
+540,2022,PUF,H216,2019,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st540/stat540.shtml
+541,2022,NONPUBLIC,H207A H209 H213A H216,2018 2019,post,ok,11,0,https://meps.ahrq.gov/data_files/publications/st541/stat541.shtml
+542,2022,NONPUBLIC,H207A H209 H213A H216,2018 2019,post,ok,12,3,https://meps.ahrq.gov/data_files/publications/st542/stat542.shtml
+545,2022,PUF,H13D H213A H213E H213F H213G H213H H213IF1 H214 H216,2019,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st545/stat545.shtml
+546,2023,PUF,H209 H216 H222 H224,2018 2019 2020,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st546/stat546.shtml
+547,2023,PUF,H120 H121 H128 H129 H137 H138 H146 H147 H154 H155 H162 H163 H170 H171 H180 H181 H190 H192 H199 H201 H207 H209 H214 H216,2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st547/stat547.shtml
+548,2023,PUF,H188A H188D H188E H188F H188G H188H H190 H197A H197D H197E H197F H197G H197H H199 H206A H206D H206E H206F H206G H206H H207 H213A H213D H213E H213F H213G H213H H214 H220A H220D H220E H220F H220G H220H H222,,none,ok,0,0,https://meps.ahrq.gov/data_files/publications/st548/stat548.shtml
+549,2023,NONPUBLIC,H220A H220D H220E H220F H220G H220H H220I H222 H224,2020,post,ok,15,2,https://meps.ahrq.gov/data_files/publications/st549/stat549.shtml
+550,2023,PUF,H213IF1 H220A H220D H220E H220F H220G H220H H222 H224,2020,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st550/stat550.shtml
+551,2023,NONPUBLIC,H220A H224 H229A H233,2020 2021,post,ok,11,1,https://meps.ahrq.gov/data_files/publications/st551/stat551.shtml
+552,2023,NONPUBLIC,H220A H224 H229A H233,2020 2021,post,ok,12,2,https://meps.ahrq.gov/data_files/publications/st552/stat552.shtml
+554,2024,PUF,H233,2021,post,ok,13,1,https://meps.ahrq.gov/data_files/publications/st554/stat554.shtml
+555,2024,PUF,H213B H216 H220B H224 H229B H233,2019 2020 2021,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st555/stat555.shtml
+556,2024,PUF,H209 H216 H224 H231 H233,2018 2019 2020 2021,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st556/stat556.shtml
+557,2024,NOID,,,none,ok,13,1,https://meps.ahrq.gov/data_files/publications/st557/stat557.shtml
+558,2024,PUF,H233,2021,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st558/stat558.shtml
+559,2025,NONPUBLIC,H233 H243,2021 2022,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st559/stat559.shtml
+560,2025,PUF,H209 H216 H224 H233 H241 H243,2018 2019 2020 2021 2022,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st560/stat560.shtml
+561,2025,PUF,H229A H229D H229E H229F H229G H229H H229IF1 H231 H233 H239A H239D H239E H239F H239G H239H H239IF1 H241 H243,2021 2022,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st561/stat561.shtml
+562,2025,PUF,H239A H239D H239E H239F H239G H239H H239IF1 H241 H243,2022,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st562/stat562.shtml
+563,2025,NONPUBLIC,H206A H206D H206E H206F H206G H206H H206IF1 H207 H209 H213A H213D H213E H213F H213G H213H H213IF1 H214 H216 H229A H229D H229E H229F H229G H229H H229IF1 H231 H233 H239A H239D H239E H239F H239G H239H H239IF1 H241 H243,2018 2019 2021 2022,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st563/stat563.shtml
+564,2025,NONPUBLIC,H233,2021,post,ok,17,53,https://meps.ahrq.gov/data_files/publications/st564/stat564.shtml
+565,2025,PUF,H206A H206D H206E H206F H206G H206H H206IF1 H207 H209 H213A H213D H213E H213F H213G H213H H213IF1 H214 H216 H220A H220D H220E H220F H220G H220H H220IF1 H222 H224 H229A H229D H229E H229F H229G H229H H229IF1 H231 H233 H239A H239D H239E H239F H239G H239H H239IF1 H241 H243,2018 2019 2020 2021 2022,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st565/stat565.shtml
+566,2025,NONPUBLIC,H206A H206D H206E H206F H206G H206H H206IF1 H207 H209 H213A H213D H213E H213F H213G H213H H213IF1 H214 H216 H229A H229D H229E H229F H229G H229H H229IF1 H231 H233 H239A H239D H239E H239F H239G H239H H239IF1 H241 H243,2018 2019 2021 2022,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st566/stat566.shtml
+567,2025,NONPUBLIC,H229A H233 H239A H243,2021 2022,post,ok,7,1,https://meps.ahrq.gov/data_files/publications/st567/stat567.shtml
+568,2025,PUF,H229A H229D H229E H229F H229G H229H H229IF1 H231 H233 H239A H239D H239E H239F H239G H239H H239IF1 H241 H243,2021 2022,post,ok,0,0,https://meps.ahrq.gov/data_files/publications/st568/stat568.shtml
+569,2025,PUF,H243,2022,post,ok,8,2,https://meps.ahrq.gov/data_files/publications/st569/stat569.shtml
+570,2025,NONPUBLIC,H229F H229G H233 H239F H239G H243 H248F H248G H251,2021 2022 2023,post,ok,28,10,https://meps.ahrq.gov/data_files/publications/st570/stat570.shtml
