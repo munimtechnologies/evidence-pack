@@ -1,0 +1,107 @@
+{
+ "version": "0.1.0",
+ "error": null,
+ "eligible": [
+  {
+   "number": 491,
+   "file": "H163",
+   "data_year": 2013
+  },
+  {
+   "number": 493,
+   "file": "H171",
+   "data_year": 2014
+  },
+  {
+   "number": 496,
+   "file": "H171",
+   "data_year": 2014
+  },
+  {
+   "number": 497,
+   "file": "H171",
+   "data_year": 2014
+  },
+  {
+   "number": 506,
+   "file": "H181",
+   "data_year": 2015
+  },
+  {
+   "number": 507,
+   "file": "H181",
+   "data_year": 2015
+  },
+  {
+   "number": 521,
+   "file": "H192",
+   "data_year": 2016
+  },
+  {
+   "number": 533,
+   "file": "H209",
+   "data_year": 2018
+  },
+  {
+   "number": 540,
+   "file": "H216",
+   "data_year": 2019
+  },
+  {
+   "number": 554,
+   "file": "H233",
+   "data_year": 2021
+  },
+  {
+   "number": 558,
+   "file": "H233",
+   "data_year": 2021
+  }
+ ],
+ "n_eligible": 11,
+ "pulse": {
+  "uri": "https://beacon.nist.gov/beacon/2.0/chain/2/pulse/2009978",
+  "chainIndex": 2,
+  "pulseIndex": 2009978,
+  "timeStamp": "2026-11-02T10:00:00.000Z",
+  "outputValue": "15F9E90C6AD2924DCA16CE7939C268FD39050920959482F1AE4FA0D0803A73DD29ECCAC06C8DF74214A85B0687693D9F6A41C278FC7075E65E141977952110D9"
+ },
+ "seed": 1583552983538504269,
+ "sample": [
+  {
+   "order": 1,
+   "number": 506,
+   "file": "H181",
+   "data_year": 2015,
+   "url": "https://meps.ahrq.gov/data_files/publications/st506/stat506.shtml"
+  },
+  {
+   "order": 2,
+   "number": 540,
+   "file": "H216",
+   "data_year": 2019,
+   "url": "https://meps.ahrq.gov/data_files/publications/st540/stat540.shtml"
+  },
+  {
+   "order": 3,
+   "number": 521,
+   "file": "H192",
+   "data_year": 2016,
+   "url": "https://meps.ahrq.gov/data_files/publications/st521/stat521.shtml"
+  },
+  {
+   "order": 4,
+   "number": 507,
+   "file": "H181",
+   "data_year": 2015,
+   "url": "https://meps.ahrq.gov/data_files/publications/st507/stat507.shtml"
+  },
+  {
+   "order": 5,
+   "number": 491,
+   "file": "H163",
+   "data_year": 2013,
+   "url": "https://meps.ahrq.gov/data_files/publications/st491/stat491.shtml"
+  }
+ ]
+}

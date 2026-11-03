@@ -1,0 +1,4653 @@
+{
+ "version": "0.1.0",
+ "error": null,
+ "n_briefs": 546,
+ "n_fetched": 546,
+ "errors": {},
+ "gate": {
+  "passed": true,
+  "G1_569": true,
+  "G1_values_read": 26,
+  "G2_491": true,
+  "G2_counts": [
+   15,
+   30,
+   15
+  ]
+ },
+ "grades": {
+  "P1": {
+   "n_2016_on": 84,
+   "with_table": 80,
+   "share": 0.9524,
+   "grade": "held"
+  },
+  "P2": {
+   "r2_without_table": [],
+   "grade": "held"
+  }
+ },
+ "per_brief": {
+  "10": {
+   "year": 2003,
+   "sha256": "c1b7efb736489730dcd2d89b12277b26a5959c268b5d0a8a400e5a28619e5b2e",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 26
+  },
+  "11": {
+   "year": 2003,
+   "sha256": "1da03940f3781fe6160138dcd5ea25c500c4e032f557bda89cb89d93850ab23a",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 27
+  },
+  "13": {
+   "year": 1997,
+   "sha256": "b8191ae873aadb33be4e6a9eeaee5bba86120d1c6c54d9b96fe4c419fafc7e0a",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 24
+  },
+  "15": {
+   "year": 2003,
+   "sha256": "23f304ec2fa33080d997fd8ca3cf9002cc205d740cedc2e26fafff249993eaef",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 36
+  },
+  "16": {
+   "year": 2003,
+   "sha256": "5994d17357327a1badd2d0e2b64c7230462a35f654cf99385ecc24ad99c37606",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 36
+  },
+  "17": {
+   "year": 2003,
+   "sha256": "6b5febf9c5fffc58148f452ac79dd6818abb746fd96afc3ea4df2bba773190c9",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 48
+  },
+  "18": {
+   "year": 2003,
+   "sha256": "506a4defed509992288e4c5849bc2a68e1a0abfb137d05ff1608bb424445758b",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 30
+  },
+  "20": {
+   "year": 2003,
+   "sha256": "6d4dfac57cead18be84fe0a05260cf19eb54e419492100762e571de96124d15b",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 110
+  },
+  "21": {
+   "year": 2003,
+   "sha256": "44caeab2c2b871b0ccccd7ab051aec805b91cebf441d7860e5150f358c090d03",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 48
+  },
+  "22": {
+   "year": 2003,
+   "sha256": "987ecbee93af881cc85d00b60124237c21c1def79f08c5619a21f8ca6b51c902",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 24
+  },
+  "23": {
+   "year": 2003,
+   "sha256": "ff77ae06d0c5df8295b3dd760bd82f3bc7d1a0e294fd8f818818118e15324629",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 45
+  },
+  "24": {
+   "year": 2003,
+   "sha256": "78cef9cb94f9e28b239a74731f830aecbb13236dc9bafa1aabb421897e3ab686",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 74
+  },
+  "25": {
+   "year": 2003,
+   "sha256": "0c24684f4aae3b7a9ff9d40d2c044caa204d91cf5ca167d786cfe6e294cced6b",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 45
+  },
+  "26": {
+   "year": 2003,
+   "sha256": "eff64e0750cab599ae91563ecb8a3a2e6c85b507c5a7b2fe91bb89242b575b9b",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 20
+  },
+  "27": {
+   "year": 2003,
+   "sha256": "1f7d10222ceb3be0a1ebdf3f1abe45eb81fda04708e1b888255ea7d6d1798211",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 61
+  },
+  "28": {
+   "year": 2003,
+   "sha256": "dffd3f24bef1ad5a0c7e73be4bf87bebf14312874af04c103f093c04e40fa5e2",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 140
+  },
+  "29": {
+   "year": 2003,
+   "sha256": "968712ce8c33428ac59c5725e0880509f6955ce810ef6256bf79e4650a936f4c",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 22
+  },
+  "30": {
+   "year": 2004,
+   "sha256": "e8951157db31b5de86c9d4c66b5625381303d927190a931594a8614e0aef80f2",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 40
+  },
+  "31": {
+   "year": 2003,
+   "sha256": "10174f220d1035610b1e726c906d8e14c02d0597b339da9381276b51d0b63d66",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 55
+  },
+  "32": {
+   "year": 2004,
+   "sha256": "680a8c2faa435918dbf010d2d192ad38c6bab491e5173ed46625f4ce0a5cb966",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 39
+  },
+  "33": {
+   "year": 2004,
+   "sha256": "3932e106974f722ad3d876a348a76789f06b24aea82ab846ad466b9c3a5fc0e5",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 18
+  },
+  "34": {
+   "year": 2004,
+   "sha256": "0264903f5e1fe0ef437f8a458311a0cd96dade0d9c50a587c4555b1cefafb131",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 23
+  },
+  "35": {
+   "year": 2004,
+   "sha256": "ed4fc7b25efdeeb1bea89f242d13cdf22e9a448629df242550064c1e349258c0",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 35
+  },
+  "36": {
+   "year": 2004,
+   "sha256": "a676f6e2bfc351823d20278eb7039c5ab9c8b85bb134ce12504178b4dd135510",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 165
+  },
+  "37": {
+   "year": 2004,
+   "sha256": "50c332a52db2ca07811537527b2f4598b61ebb4fa4e22f22293e7ba3137c2559",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 32
+  },
+  "38": {
+   "year": 2004,
+   "sha256": "7bb63835234b6b787996d8a84723507506c43fd06333d49e28ca3de46b705afe",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 44
+  },
+  "39": {
+   "year": 2004,
+   "sha256": "385039986f5611b19029c5dfa2a3c340e78280abe0fceba3917c446f18aa90f6",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 19
+  },
+  "40": {
+   "year": 2004,
+   "sha256": "7f7b7c1cd5f5526d18ecd078fd9d884e5f747b3f43f214b513abbeb252da3ea6",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 53
+  },
+  "42": {
+   "year": 2004,
+   "sha256": "d010be29433e9658169f1eb17788f72fdf3dec0f87d9ad169dbcd5b5e3c6fb47",
+   "tables": 1,
+   "labelled": 1,
+   "cells": 4
+  },
+  "43": {
+   "year": 2004,
+   "sha256": "17d16275a566561af9f672b5e3d146292669c3ca45d841397e6443f6b3953300",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 10
+  },
+  "44": {
+   "year": 2004,
+   "sha256": "95fa96e599bcd9f87ac1f24e290e67356754825d75f2313e6e4b3f7d93d5f706",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 144
+  },
+  "45": {
+   "year": 2004,
+   "sha256": "ad443958c1c60a0ec8e6f41da9fd497ed4096b88bd5306d5a8622e95b6024aa1",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 86
+  },
+  "46": {
+   "year": 2004,
+   "sha256": "c2fc4563559e39e8f37700f0cc352a17c5478be72afe7a57df4650209f3bb6b9",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 36
+  },
+  "47": {
+   "year": 2004,
+   "sha256": "a6174395af9db2ccdcc45f792e9dca0e70a1aea0faf7fbcabcdeb096b970b66b",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 36
+  },
+  "48": {
+   "year": 2004,
+   "sha256": "d36ff016a144d17b7db77bad044d0666a2e240bc608a4841e5fba1be0072cf82",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 30
+  },
+  "49": {
+   "year": 2004,
+   "sha256": "a25038a2bb0a35d5ab4e9aaf7e929f7904d70a2d67ad413f2e06f1bc58f4b70a",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 32
+  },
+  "50": {
+   "year": 2004,
+   "sha256": "0af1d764cec1353a2001d475ca9fb6551cf0d3c3a78b0bd5e6ba2ff337678efc",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 45
+  },
+  "51": {
+   "year": 2004,
+   "sha256": "308ea65a1dd9ed6a9d6fe2efc8f4c3128fbf73175e0ef9e2e6618fd1a6c60eb5",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 165
+  },
+  "52": {
+   "year": 2004,
+   "sha256": "61ff90eb9551df1d08cbf3a214f89b91245cf3f192ac6e2b8bfdd4d144da283a",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 64
+  },
+  "53": {
+   "year": 2004,
+   "sha256": "54e253eb4c75cb969b4bd55987431fab27f9bc1c0f29ca5126eb17c95b76b0c3",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 40
+  },
+  "54": {
+   "year": 2004,
+   "sha256": "b4776ed2bfbe054d0fc8408ed3bb0b2b8a6ff9bee9a1cac493dd6aca20d7007f",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 40
+  },
+  "55": {
+   "year": 2004,
+   "sha256": "b22b27195bb5c8f9f4ebb679f242d278fd95dfb3fc9eba5bce1a46a70e182d0d",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 42
+  },
+  "56": {
+   "year": 2004,
+   "sha256": "9739d9217de7afa5b90966e90a7c00250194ca74939e04773ba1ae94c488d51c",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 51
+  },
+  "57": {
+   "year": 2004,
+   "sha256": "ad03e69c0f907fa5f4b17ab3789c200bd22b9e4db9568fd99b0c3018a38917b5",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 64
+  },
+  "58": {
+   "year": 2004,
+   "sha256": "6f21751ea3224e1db1cdc3c70e4eca1030eec0378dc78330adefcf4a33233ee8",
+   "tables": 6,
+   "labelled": 5,
+   "cells": 24
+  },
+  "59": {
+   "year": 2004,
+   "sha256": "542fea0e9c3ee8a05eeaaca8af129770e18ed44255a062f8b9adc94d1ea5a914",
+   "tables": 10,
+   "labelled": 10,
+   "cells": 35
+  },
+  "60": {
+   "year": 2004,
+   "sha256": "54ebd1bc8b7584aaa1a0b4e30440d040dd92dc793f2e5c38efbdd3d09373f54b",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 29
+  },
+  "61": {
+   "year": 2004,
+   "sha256": "474ec1634d2ee557248cb9d4d496038462cd8af624faaa6236cdc1fd7a87b9d1",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 49
+  },
+  "62": {
+   "year": 2004,
+   "sha256": "df867ce41c9ecc0a1b6092cb9aa8a310c20ebc79e6d8effca12bc1aa8bc4a1e8",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 34
+  },
+  "63": {
+   "year": 2005,
+   "sha256": "93c19c982274dda1bdebf347394d8e989de914145a3e04cece878811f88dc070",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 39
+  },
+  "64": {
+   "year": 2005,
+   "sha256": "8f98f202ba8675569761b7163fea8315b536600619d092b2d913741376b9f5c0",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 39
+  },
+  "65": {
+   "year": 2005,
+   "sha256": "c060d01cc8c7e06dfae6978c305103684b3c361c10decfeeabb2190c3c4aedec",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 29
+  },
+  "66": {
+   "year": 2005,
+   "sha256": "577df4282013388fb1d03bbbe8198ec919d540f5a5e3e18ef04917dc59b6a522",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 29
+  },
+  "67": {
+   "year": 2005,
+   "sha256": "2b496259c8ee7ec4972a764153609bf6d5f272acc160718092878c7b1f62800b",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 64
+  },
+  "68": {
+   "year": 2005,
+   "sha256": "55d92f83b2c4a679027e12dc88ad17ebe01f9ca177617be188a30aa6e6072ebf",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 38
+  },
+  "69": {
+   "year": 2005,
+   "sha256": "01a79507070329875df4f6f65514bbfb89feac59885b9ba66cf2f26966c0ae0f",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 143
+  },
+  "70": {
+   "year": 2005,
+   "sha256": "b7a23f6e1e923cece236f253c256223ba476609fcee8555e5d929ea00e7897eb",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 21
+  },
+  "71": {
+   "year": 2005,
+   "sha256": "341e86ef5125f9869d9f0d8d0905d6cea35339e9d2bc3aa7a95481b67d7ab90f",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 27
+  },
+  "72": {
+   "year": 2005,
+   "sha256": "224d00e6b0b6e0d7e1d8e6436ffd8d3c1ec8e0ba95e675c1cf66a0acd33e5562",
+   "tables": 0,
+   "labelled": 0,
+   "cells": 0
+  },
+  "73": {
+   "year": 2005,
+   "sha256": "51daf20d3a8cb1ea3c7d0b4dfa92ca5931ae2c47538c4eb15176c5285fa45aa5",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 48
+  },
+  "76": {
+   "year": 2005,
+   "sha256": "6c5d8f0eac99ec5ae772a88348548fec972da537bd7c1f48e99daeb6a2ef1641",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 36
+  },
+  "77": {
+   "year": 2005,
+   "sha256": "4da2068634b4f2077195c5403e5af3323347d07e094b9cbc4c0bfcc22ed06ab2",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 20
+  },
+  "78": {
+   "year": 2005,
+   "sha256": "48a94252640f7ac0976f8ef695f81c1b2b95565ab6ad82c88425d93590bbf382",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 12
+  },
+  "79": {
+   "year": 2005,
+   "sha256": "9b9e4bbfb31e64f12b9dd17d7dea0a9770239d51c3acff6c1af730164221d283",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 55
+  },
+  "80": {
+   "year": 2005,
+   "sha256": "3a11a5b0a5dc4dbc8d43110174f620af7f087b6354b23c8e31aa3b2ff714a49a",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 40
+  },
+  "81": {
+   "year": 2005,
+   "sha256": "6f151ec02f0fecd87dd44c7f5952b15328dbdceac852a4dbd80e4f3239f33dca",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 42
+  },
+  "82": {
+   "year": 2005,
+   "sha256": "234b30372eac9088bfd8b632f2e7fa118b184aa4d02c01898df683d4e6bee7a8",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 54
+  },
+  "83": {
+   "year": 2005,
+   "sha256": "f95a64ec6824ca75517fcf6e44a1bc98c2a447798131dea7b2eba541f4e04a6d",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 34
+  },
+  "84": {
+   "year": 2005,
+   "sha256": "d232e9cd8055a952546cf0d510d6d6f0ae3d88c88f904a805a44fdf669d3aa4d",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 98
+  },
+  "85": {
+   "year": 2005,
+   "sha256": "b7626c10595d90e16881a0eb845fd44b98b3117901e9bf874bdeed57c8e4c4de",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 162
+  },
+  "86": {
+   "year": 2005,
+   "sha256": "ca773267d23050b0a901d4b853ff19436b837de2d2fe5b23d103d6710cf52960",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 27
+  },
+  "87": {
+   "year": 2005,
+   "sha256": "95aab53f39879ed03d05e3e6c3aea6280e055b99725aea492dbbb28ffaf08314",
+   "tables": 13,
+   "labelled": 13,
+   "cells": 48
+  },
+  "88": {
+   "year": 2005,
+   "sha256": "035d83e27813a0ff37ea9fef402f1320b8a8209bbb5820931c5312586989e33b",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 36
+  },
+  "89": {
+   "year": 2005,
+   "sha256": "a35b63f02a3f2e5de43a9d441f907d32878481eac0e75404478ee359e58f0399",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 36
+  },
+  "90": {
+   "year": 2005,
+   "sha256": "6512ef3263f0c308b08498b574ec97203fe34c814bdb352b3a26f170c90fee9b",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 45
+  },
+  "91": {
+   "year": 2005,
+   "sha256": "6d1e8d7def22f823a1e40958f277f09a132ed907f7dbae36c531be954df65245",
+   "tables": 9,
+   "labelled": 9,
+   "cells": 45
+  },
+  "92": {
+   "year": 2005,
+   "sha256": "6f49d065e41eb7e1a91acf035bea00255eab392b551a158492d2d29c143fc6a5",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 39
+  },
+  "93": {
+   "year": 2005,
+   "sha256": "abfd27f69717c3308bf36b4d4fda29565cedb35a52215592fda7e56a15d9ff08",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 39
+  },
+  "94": {
+   "year": 2005,
+   "sha256": "f5bfb72f1d3c2ceb198a6a33c69b0ee19abea03fa76d679582ffecca756ba5ab",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 57
+  },
+  "95": {
+   "year": 2005,
+   "sha256": "ad1cbc4c9be8cd52d6b524fa63c66fbe858e846ddf58527d2dfac6ef1a8c10d6",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 12
+  },
+  "96": {
+   "year": 2005,
+   "sha256": "a6f741d56b68552981bd4e612266f8b64a170ef036355a2a0e8c8eafc457096f",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 22
+  },
+  "97": {
+   "year": 2005,
+   "sha256": "233e64d5a97771ea39d07505bf1432e8af71cc713389cdf3a55d15e4fdd0518c",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 42
+  },
+  "98": {
+   "year": 2005,
+   "sha256": "f7fb0a66b09b1a9d298b735d17f3343aa59a70107b4160603f1db599763db350",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 72
+  },
+  "99": {
+   "year": 2005,
+   "sha256": "345f72bcc65ee499a2e967c27c6bed113f3393180c410ddedd58f67926fa29c7",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 68
+  },
+  "100": {
+   "year": 2005,
+   "sha256": "4aa7ca697dcf4e92e37380e7457304fcabc2f336ace263690a51086db8a4e747",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 40
+  },
+  "101": {
+   "year": 2005,
+   "sha256": "2a5b5f717dd519c93965e01e9bc8d6dae8098ce2e6570b964a09b5d4e8c66b45",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 28
+  },
+  "102": {
+   "year": 2005,
+   "sha256": "b2ab84eccaea31b45371b3b94fbd34c2faea3bb3a07909418fcf78a7a56f655b",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 24
+  },
+  "103": {
+   "year": 2005,
+   "sha256": "c67c5e54486b0a93400e4388c382b46b5df0c82c00cd6cbe849c4add6609f6d2",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 49
+  },
+  "104": {
+   "year": 2005,
+   "sha256": "19f24bf67e1524ccaa1868c00468dc1a06fd98f3d87517f75fb5fd5de3de6034",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 64
+  },
+  "105": {
+   "year": 2005,
+   "sha256": "9b97e9b17bfe5f58577ac15b5eb3fc87976c117cee5be7f6d44a53e38700d0ba",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 24
+  },
+  "106": {
+   "year": 2005,
+   "sha256": "7d035afd4e05152a8a7ff689efcedaa98f17015faf886942d11a982d4027c6fa",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 132
+  },
+  "107": {
+   "year": 2005,
+   "sha256": "c3486503e9add713206e26d522931625ce8f6c2ee77ecb3f22345d76eb96da0d",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 55
+  },
+  "108": {
+   "year": 2006,
+   "sha256": "90cddd8547bfe04b019804c57288aa57aff2345ee6e917029faf6a51b06ed61b",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 30
+  },
+  "109": {
+   "year": 2006,
+   "sha256": "dbb8e4f6759a76454aaad877596b8c09deabb9c87a59970bf74ea93c7fc01d54",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 20
+  },
+  "110": {
+   "year": 2006,
+   "sha256": "d5997fb4f3e313475ca6a15b3b9a11482e50122ec0867e68e92412830ae88c30",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 20
+  },
+  "111": {
+   "year": 2006,
+   "sha256": "dbf80ada1e4ed74edf00f402f97900da44bd182807fc438f9bd3bbd99acf11f3",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 27
+  },
+  "112": {
+   "year": 2006,
+   "sha256": "454c742567bfc1820e869af892ab061b9cfecec74b1559f0849bbfa24126ace3",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 44
+  },
+  "113": {
+   "year": 2006,
+   "sha256": "513e2896e61e9db04d7e0c52860873dd9375e8ec70ef7b03f68233844920155e",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 25
+  },
+  "114": {
+   "year": 2006,
+   "sha256": "0716463981d6fd7edca7ab7ec001ef80f5d00ae576930ae0e94c465973e27d76",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 29
+  },
+  "115": {
+   "year": 2006,
+   "sha256": "0a49b18952b5cf61874e7a889eb0061241dc50ee5f7db6496710430f3488cd60",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 33
+  },
+  "116": {
+   "year": 2006,
+   "sha256": "1ef9bd9a1bb0ce522ab06a80709c3a3ac2e44ff1fc90c856358eeea027b0c946",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 16
+  },
+  "117": {
+   "year": 2006,
+   "sha256": "ff2afca5ed4b210ce06a0f6b732ed70d6d44ce775a72dba92a9d395be97af8ee",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 166
+  },
+  "118": {
+   "year": 2006,
+   "sha256": "53e4e4d4cd61c500f0880df61fce1a493f6478872af5f731f32c5be5e2d515f5",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 32
+  },
+  "119": {
+   "year": 2006,
+   "sha256": "27a11227c052d7853ec63599c6c8be7285f0a12b82496983d7abe3f47a87c994",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 25
+  },
+  "120": {
+   "year": 2006,
+   "sha256": "716c895fa3bf8f6736df512abcb5f39890149b234b6c60314989ea699e1ed191",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 48
+  },
+  "121": {
+   "year": 2006,
+   "sha256": "116aa334fe6f272e83664b3f2beb4a2d0a610b63b7f4489fa6888bc7068a09be",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 51
+  },
+  "122": {
+   "year": 2006,
+   "sha256": "36ade4298614513d49b23f307d37fa123bf92aa576d5afb761834751184eaf0b",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 33
+  },
+  "123": {
+   "year": 2006,
+   "sha256": "f3f2db74cd164809b45d5b57a85b3efeb4a1285cbc774dc3de3e05402777e6df",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 88
+  },
+  "124": {
+   "year": 2006,
+   "sha256": "2a76a720acd98819032a280f65d474a21971ef8a35f69924f6bfd243d7b6c76b",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 79
+  },
+  "125": {
+   "year": 2006,
+   "sha256": "59832452d84a487affa066edc78488c9d6c6633afbaf818bdc97346ca4f560da",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 43
+  },
+  "126": {
+   "year": 2006,
+   "sha256": "bc0ddc33e72bb1e258a92bfd2e37d97dd68b3387e645bf5a74021e8f60da6526",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 95
+  },
+  "127": {
+   "year": 2006,
+   "sha256": "d45f40aa251fc1f7d52e88c112f7811f7fa08fc0d91b70b0e78187a95601486a",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 120
+  },
+  "128": {
+   "year": 2006,
+   "sha256": "78dadb8d0daf40f0b89ab153d41c31d8b6c81877b0c212e2b40480dcaf24a2d0",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 90
+  },
+  "130": {
+   "year": 2006,
+   "sha256": "bf459b0aa9b403d48b2841b7a51279702149e1a3c53d1010664a22414b78f6ff",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 110
+  },
+  "131": {
+   "year": 2006,
+   "sha256": "071677a9438db5db5a4bde1977fdea8d0a2f9f7991319072a2ab5c01dc4ea613",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 180
+  },
+  "132": {
+   "year": 2006,
+   "sha256": "008f2c9cf1510dc4c63418144f44d27fd7a09613fa47626997cd95b7390bdfd1",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 36
+  },
+  "133": {
+   "year": 2006,
+   "sha256": "180bccb9198cb3a91e791b7fb77a5da60619c86974e03fae046fecd0453c5c2a",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 36
+  },
+  "134": {
+   "year": 2006,
+   "sha256": "cac198016387df6fb14082746ddb0d89836d0dc9462a9d306f3b2319a729fb29",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 45
+  },
+  "135": {
+   "year": 2006,
+   "sha256": "7566d932ee78f4e940e8611588bd8cdbd262aff2ff093b9dc1a53cfe04eb5bb4",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 165
+  },
+  "136": {
+   "year": 2006,
+   "sha256": "1bfa84a138fb9b409ff8dd6a837c10f4ea6b67b78d67d4d91ac79f3f3d781789",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 88
+  },
+  "137": {
+   "year": 2006,
+   "sha256": "95bdb3edcd6a1c312413fee485090af737bad6159098b7992158c1918c3c5e35",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 51
+  },
+  "138": {
+   "year": 2006,
+   "sha256": "cb643cf7000b89e769a3357feb1550103d6bffe4269c25c3352b7b3fcb5ed4c7",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 84
+  },
+  "139": {
+   "year": 2006,
+   "sha256": "965dc654ec20cd678835f965e85a4bec2bba58b085b1310478172ecb42a9eabe",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 48
+  },
+  "140": {
+   "year": 2006,
+   "sha256": "52418c2154ecec833824fbf5b5e07781ed441613bd7177ff9b8431d1ef40a617",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 64
+  },
+  "141": {
+   "year": 2006,
+   "sha256": "3e92143aec97926c37f4a74e22273e00a93b61a57133b0d9a5759ba2272edc4e",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 90
+  },
+  "142": {
+   "year": 2006,
+   "sha256": "4173577aec95db11d9cc84cc5135bfa32cd86178d75d7d28f748e48f946496b5",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 36
+  },
+  "143": {
+   "year": 2006,
+   "sha256": "0780603e46787d73417f67bf6cb815c35d6530ffa09671302b794a960a566337",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 35
+  },
+  "144": {
+   "year": 2006,
+   "sha256": "949206aae70d057b6730e05fbade6061344ef986a4634ea86c556a322a4a61f0",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 16
+  },
+  "145": {
+   "year": 2006,
+   "sha256": "a9356883c3943d24988fa329e26d93ec714e0011d9b60c947d79a6002a5c4237",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 60
+  },
+  "146": {
+   "year": 2006,
+   "sha256": "57be4c5a9ce754a60eb3f5749bd678052ae23dfbc095e23cd480a498b44c6ff7",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 89
+  },
+  "147": {
+   "year": 2006,
+   "sha256": "eccdf79d2225266efbe7235dc730fd334f509e1d61d4ce907fe841b40859e2a9",
+   "tables": 9,
+   "labelled": 9,
+   "cells": 27
+  },
+  "148": {
+   "year": 2006,
+   "sha256": "12a104f49e93bbccc113bd7350402d31753a89f5ae282d2fc60b508a05e93a8c",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 70
+  },
+  "149": {
+   "year": 2006,
+   "sha256": "93a1492b9f901fb59a6d06deaab1a58ee111ec940be69639c0b1e732687c8589",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 89
+  },
+  "150": {
+   "year": 2006,
+   "sha256": "8338f5d2d6c8a2fd9576cbf950dd71c1a89d95c0e2c07591f57d85bc77c3ac13",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 66
+  },
+  "151": {
+   "year": 2006,
+   "sha256": "04c175fde2d15ba1d0ae8f7c91e165c195f6808cf8eb8b165e70f5d1d1665462",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 132
+  },
+  "152": {
+   "year": 2006,
+   "sha256": "df85084812436be934cf6f68f591e1dd4392ee66c09b31fe34bb9e063107978d",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 40
+  },
+  "153": {
+   "year": 2006,
+   "sha256": "482a526356068e6b79687979cebaff45f0d73886425de1d9849ac521b0fa72ed",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 20
+  },
+  "154": {
+   "year": 2006,
+   "sha256": "aca7dbd9af1fe41d889db82d152096f2efbf3195b4ae160f0381e3b0f565007c",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 20
+  },
+  "155": {
+   "year": 2007,
+   "sha256": "d582496d2ce687c4b1734290ca8ba8e0e9d4094d8f6d6684b4631efc91d3363c",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 30
+  },
+  "156": {
+   "year": 2007,
+   "sha256": "92191f00234ad2934f05ca71fb5054bfbfd64e0299a37949f258f5b62ccfa436",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 44
+  },
+  "157": {
+   "year": 2007,
+   "sha256": "2f2708598f9f2974843fc871b40cac3dcb8839c7e50a6f343e13a357def48f36",
+   "tables": 2,
+   "labelled": 2,
+   "cells": 60
+  },
+  "158": {
+   "year": 2007,
+   "sha256": "afe8c0113bf4a6c6b55d928a5f2bbb08add0cf8104eafe19d130e14c31ecc823",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 55
+  },
+  "159": {
+   "year": 2007,
+   "sha256": "5a4c7df0ea25dae9a810de71330c0f79ac88f8ab3d5881184e9a9ebc2deba8c1",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 51
+  },
+  "160": {
+   "year": 2007,
+   "sha256": "42a4d705a8cf59537150a75289ca2acb3c265a5663515ecead5fc2d444e7e876",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 60
+  },
+  "161": {
+   "year": 2007,
+   "sha256": "9572e5b79ddfc8f7a5fa852067acd6b8d73dd993edff1c8985920b081da9d5ba",
+   "tables": 16,
+   "labelled": 16,
+   "cells": 98
+  },
+  "162": {
+   "year": 2007,
+   "sha256": "455b3fdba111d5204f69c8f89d49de8e812d12bc9c1762468da684c5e80ab9b9",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 36
+  },
+  "163": {
+   "year": 2007,
+   "sha256": "fe7b8cc7e8a21133d755a2201c937c38e0fa3f10e994199e5422b3b34e1bfc19",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 40
+  },
+  "164": {
+   "year": 2007,
+   "sha256": "bc162b2809f389fda5989b707317ac9beea0d1373b06057925093a60cf933061",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 40
+  },
+  "165": {
+   "year": 2007,
+   "sha256": "3b659ac9591dba2b7a1b99854b492036677ade56edc07e54a37d6b32d5dd3055",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 51
+  },
+  "166": {
+   "year": 2007,
+   "sha256": "584c0359cd9ef4cc9d57e8fe840bea3079638fda2ce70df920bee9a9d7ef9611",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 58
+  },
+  "167": {
+   "year": 2007,
+   "sha256": "b00e653ffdbdc8ada4798f5df428f6eddfad21524ad0143de0b0e8000d1247a8",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 90
+  },
+  "168": {
+   "year": 2007,
+   "sha256": "671c499fce25be3db25e72a3073ccc3b7c8ad3d6b0526e127231f3268b387eae",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 24
+  },
+  "169": {
+   "year": 2007,
+   "sha256": "db94fa3f39cb75a76ab150a965b6ebf2ec4fbca3e4aaae6b5689e98dd797e573",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 122
+  },
+  "170": {
+   "year": 2007,
+   "sha256": "494c055f78ba9dc0a95337294ab28240c0382727b170b690474b01df268a63ae",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 42
+  },
+  "172": {
+   "year": 2007,
+   "sha256": "5a9c06961085e823c90248f23517a5aaec5fd2fb8c7ceb4a5b7bc8b4e52c4c2a",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 198
+  },
+  "173": {
+   "year": 2007,
+   "sha256": "45e6f46fc0e9a9dc8b856ef53ea84e6913de41304f6b5dd7dc437efe7803a91d",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 19
+  },
+  "174": {
+   "year": 2007,
+   "sha256": "20c492028a607d1fdf6105a741055effa2ee8ff14fb9e72e7e6b3ca2ef27057f",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 36
+  },
+  "175": {
+   "year": 2007,
+   "sha256": "585d2808beb83b8a22a6fb943c0e8be697e00cd8f752a99af6716d736f8f6d34",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 36
+  },
+  "176": {
+   "year": 2007,
+   "sha256": "de10290f6d33251ab0943716f9cf040333bb4bc5f736ee953a834f5d6534f380",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 45
+  },
+  "177": {
+   "year": 2007,
+   "sha256": "0b3f546a975b6902a1d9e24439f758f679a458314131ca41fadd7ccb4ec718c3",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 165
+  },
+  "178": {
+   "year": 2007,
+   "sha256": "c804714d36930a42f6a37af3729f1079df47682af56027fea098c6d4c1ba1288",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 66
+  },
+  "179": {
+   "year": 2007,
+   "sha256": "4cd3f5caa360f6332d388fc6a83e4a182bf426d4421292ed281b5a1777354fbc",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 57
+  },
+  "180": {
+   "year": 2007,
+   "sha256": "82c0da9e716c945aba0c1aa55e0023a8bc2170e8078208d5719e2dd9d941211c",
+   "tables": 3,
+   "labelled": 0,
+   "cells": 45
+  },
+  "181": {
+   "year": 2007,
+   "sha256": "6a24fe089bcd68b0b1f530402d6ec16de111025a1c0330715108c94593d7fdad",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 36
+  },
+  "182": {
+   "year": 2007,
+   "sha256": "326df6308c2d9217217d7d610c4495d19c6bf85d9087422ac3ab7ea90920f07e",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 60
+  },
+  "183": {
+   "year": 2007,
+   "sha256": "134412b06eae274eeb1a9903a60a91026fdf8d4fbb8d1e596a373cb2534d1ca0",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 88
+  },
+  "184": {
+   "year": 2007,
+   "sha256": "002ce3f5ddf6b48ed035e586b84b2cc75410261d7d0a19931aad1803afb8b7bf",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 50
+  },
+  "185": {
+   "year": 2007,
+   "sha256": "8566ec9d0fcdcc273b1a7ac91905691737928955deec3b7077a7f39a6d105c8c",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 60
+  },
+  "186": {
+   "year": 2007,
+   "sha256": "7298f547ea1cfa37fdbf310a4b1733dd8e5e5e167f5ffd6c5c50c2c935b6c501",
+   "tables": 3,
+   "labelled": 0,
+   "cells": 45
+  },
+  "187": {
+   "year": 2007,
+   "sha256": "30de57ff105b683d3bf4aba5e80d1d6ed222e32f2f2c532cb42296a1f4767377",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 23
+  },
+  "188": {
+   "year": 2007,
+   "sha256": "9f5bd97de5c43475bf1a001160e8cb813bd308adfcd6dda22dd164e09cc758c0",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 20
+  },
+  "189": {
+   "year": 2007,
+   "sha256": "680e3c4bfe3f60fb364f457cea72fd5bf370c0340ee8e0806200ae94905ce66f",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 36
+  },
+  "190": {
+   "year": 2007,
+   "sha256": "ee6ffc80db7a6e4fb896f89d8d0f8aafb16144e1c0ce90b173a03078f56ebd62",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 36
+  },
+  "191": {
+   "year": 2007,
+   "sha256": "c6e199114f240e212d43c9f715fa8e9070a48158bd4358d95bc8a1981922bc2f",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 103
+  },
+  "192": {
+   "year": 2007,
+   "sha256": "a7630b5395ac323b443aed869251c44f118341e9a80bc92d4e00c1f4d44a4f86",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 131
+  },
+  "193": {
+   "year": 2007,
+   "sha256": "012f59308ae3d38cdc4bfc754c53612cd339977eed70afd564dc353df2ee3d79",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 89
+  },
+  "194": {
+   "year": 2007,
+   "sha256": "a2a29f643ee70a36b55a423e6b7e278433ec22d4bdd23cb07e2e12533d7cf67b",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 19
+  },
+  "195": {
+   "year": 2008,
+   "sha256": "7d58fa170115497b0461d3ceb0c676a2f5f7b03b896ea7fa89f23e990add5288",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 44
+  },
+  "196": {
+   "year": 2008,
+   "sha256": "888e1ad9686422bfd567c05814a3c02b1ede244be38dea14ffd8c0adbda8adad",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 55
+  },
+  "197": {
+   "year": 2008,
+   "sha256": "b8d52a0f29100341c502977f7f6987d684ae8f30b8828ed34eb43b7653de029e",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 112
+  },
+  "198": {
+   "year": 2008,
+   "sha256": "330eaff15ff2fd1a8f828b049ef8f515d39a2679d652a95e0e809dd42a189d14",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 20
+  },
+  "199": {
+   "year": 2008,
+   "sha256": "684ca04a596a6f7ddf4daec7b7ec5d612235b1cdb696a39ce3432d334a710813",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 20
+  },
+  "200": {
+   "year": 2008,
+   "sha256": "241aa48cc1690eb52748ac32aea5e38d1c3254c7f8f79b2b67c940ab868b041f",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 80
+  },
+  "201": {
+   "year": 2008,
+   "sha256": "4cef7d4068b35bc92d2cec1a5f7dca492ebf8c80c20dcc5ad192b71aa63d2e19",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 28
+  },
+  "202": {
+   "year": 2008,
+   "sha256": "5f6c8154036a60e33978e263c9a4e0a2dac9fdfd1b1d1b4e87d44c9a78c5ff0a",
+   "tables": 0,
+   "labelled": 0,
+   "cells": 0
+  },
+  "203": {
+   "year": 2008,
+   "sha256": "c9212dcbb62ca848de7879e979f906520bf5132f85f5d27ac6b17fcc1c5c8f09",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 59
+  },
+  "204": {
+   "year": 2008,
+   "sha256": "dd16ace29e7261243b60a464222fc7845660ef2929a2e19c78b2ac6c9aae25c0",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 34
+  },
+  "205": {
+   "year": 2008,
+   "sha256": "f2344f262dae5b5b6879e5194bca8773e4110f0cc77b2f8ee0d03b80653b2263",
+   "tables": 2,
+   "labelled": 2,
+   "cells": 4
+  },
+  "206": {
+   "year": 2008,
+   "sha256": "f8db6fd3a1c5661b20ed6216faa1ced40e61af25a39dfbbfef6b0c34f54b2e9e",
+   "tables": 2,
+   "labelled": 2,
+   "cells": 10
+  },
+  "207": {
+   "year": 2008,
+   "sha256": "e53de861a48d28dc54b4f832f4165cd07df3f86a73931889135d89e6f0b11bb5",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 45
+  },
+  "208": {
+   "year": 2008,
+   "sha256": "adf456e5f0417090b5410438652482ef8200e5fcedaacfce3bf812ef560066c1",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 165
+  },
+  "209": {
+   "year": 2008,
+   "sha256": "59760f46aef15923d9068b3bec7f2930f7bbc9b7b8bda06524e2ecc4974dc21f",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 36
+  },
+  "210": {
+   "year": 2008,
+   "sha256": "49ec7d9e06c752ee2fb009212158dde8d82498fad660627920363395b47609a7",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 66
+  },
+  "211": {
+   "year": 2008,
+   "sha256": "4fff2f0a8b972dac1cbed94c76f22f528c21ce463dc3e160ca8fd3f9cdbd9887",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 54
+  },
+  "212": {
+   "year": 2008,
+   "sha256": "3b39b1968d35a4c7aee8f1fca39c3cb4b1730e6ea2b42ae1293837e08220309f",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 54
+  },
+  "213": {
+   "year": 2008,
+   "sha256": "6fcf4c7f201cb51ffa3e2f1ed206a5424d97fc6539caf91702a402bc6965c231",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 128
+  },
+  "214": {
+   "year": 2008,
+   "sha256": "14b2c556dc4b6d32b0dde619e3fa470d055bc6d8ac886a1678cb1b8b161ed29d",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 134
+  },
+  "216": {
+   "year": 2008,
+   "sha256": "c67419af81ebad9e82e0652b817ac1f76116943b3178bc5370f431edd5bf185b",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 216
+  },
+  "217": {
+   "year": 2008,
+   "sha256": "473d9863df3d247a9706989756b86e32f4f94688ff05cf0a8b3a352667c04279",
+   "tables": 10,
+   "labelled": 10,
+   "cells": 46
+  },
+  "218": {
+   "year": 2008,
+   "sha256": "aa1283cf2a48ebcc72a68fb9eef7ae23c020415c4b890b906ded7bc3c2d54907",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 60
+  },
+  "219": {
+   "year": 2008,
+   "sha256": "36ba7db9890b496ad48ea5e15315a178ad8076a7790958b0fb27d75954c733d9",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 60
+  },
+  "220": {
+   "year": 2008,
+   "sha256": "7e816ca1c31741628aa2ddae93d61d0a4021c9d8db7c5889360d1f2e2d77aab7",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 88
+  },
+  "221": {
+   "year": 2008,
+   "sha256": "a4e248fb85d741b758227fa24c6643d642a505267294e4761b75a875845fd243",
+   "tables": 10,
+   "labelled": 10,
+   "cells": 62
+  },
+  "222": {
+   "year": 2008,
+   "sha256": "af027b4c7fdc1160f0e4220d963df76804ea132a52579490f117fb2048bb9936",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 28
+  },
+  "223": {
+   "year": 2008,
+   "sha256": "9dba52372b9137d1e6d713b3348b521ceb2484ffaf5a88f3c6556d489c5bd2b7",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 50
+  },
+  "224": {
+   "year": 2008,
+   "sha256": "7fc278293fa94d5855cd4c9a855bbfc03d43ee25d76f5b0c5e8d330a8eb58bba",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 66
+  },
+  "225": {
+   "year": 2008,
+   "sha256": "1dfad82780cab07a56d37e7ad3da555313775a2433bedba39e13797892c6e0f0",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 70
+  },
+  "226": {
+   "year": 2008,
+   "sha256": "42253cf41e85db908d3e285963c64cd10fdb7e4ef3c70f89afedc98e2bc84587",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 28
+  },
+  "227": {
+   "year": 2008,
+   "sha256": "9dda655d58b7bc970763b1b7da0a67e56534c39a88f7ae7893425837b1381ea3",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 28
+  },
+  "228": {
+   "year": 2008,
+   "sha256": "478cfa3a6bf26d529a448a6de5364ae10913338f6359fb4bfa86b9437b0a19e8",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 21
+  },
+  "229": {
+   "year": 2008,
+   "sha256": "99b1771c7dce175ea38e4f8f848a585d0549126026aaacfa4257766fb11f7ef8",
+   "tables": 13,
+   "labelled": 13,
+   "cells": 89
+  },
+  "230": {
+   "year": 2009,
+   "sha256": "6d27cbddce9471444d1f8c5192a6166761b3e273549056ebb971fd5859a8d4c8",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 189
+  },
+  "231": {
+   "year": 2009,
+   "sha256": "199f0178edc04669fdd42adb85284dbe93b3a6f0f48ed139c20b6c35c49c9fc0",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 189
+  },
+  "232": {
+   "year": 2009,
+   "sha256": "1ef10f8ea371ff745fc12cabcff8406d1cf8104f1d3a5e480c3bd188a4b96eba",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 20
+  },
+  "233": {
+   "year": 2009,
+   "sha256": "21869ee4fe7b0438398f8fd5ea5ea102441ad4624a7c7bdff0067b81a0aabe46",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 51
+  },
+  "234": {
+   "year": 2009,
+   "sha256": "260447b9c7d0062937e8327bffd8510585f9cdf362c593e1b33f6af8d0b7d5f8",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 69
+  },
+  "235": {
+   "year": 2009,
+   "sha256": "bae25fe652eb88e1149cda874d32e76d99698c85f9455cdc95f3998d30f0d1cb",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 36
+  },
+  "236": {
+   "year": 2009,
+   "sha256": "bc7eb8b4b44ed7e5738814d3111add57e444833b4499dd75f95734a428a2604f",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 103
+  },
+  "237": {
+   "year": 2009,
+   "sha256": "823e1911f2a20f8d1bb092ed2f241075ef052bbb99c1c0f8dc42bc747686239c",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 21
+  },
+  "238": {
+   "year": 2009,
+   "sha256": "7c68851b9fc3762f647d5ab627b97f10eb4fe51aea812c48d1b67056a4946bbc",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 20
+  },
+  "239": {
+   "year": 2009,
+   "sha256": "621ea37ea9339b35880ff4b629b9ee4d009e7369952699f80fb1faa9b627ab26",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 38
+  },
+  "240": {
+   "year": 2009,
+   "sha256": "b8209bfac022086ef060ab2c40c4fbb45dfcf3e24a91b412b87b603b9c0d72ae",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 28
+  },
+  "241": {
+   "year": 2009,
+   "sha256": "5ae598f3135363c483f4b4b4529c78fc3daae96f400aa3b62f083cee2af6613e",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 92
+  },
+  "242": {
+   "year": 2009,
+   "sha256": "6aec81194d0c38546a4ded8f03e88e693ef4489309770458737213855f387d36",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 40
+  },
+  "243": {
+   "year": 2009,
+   "sha256": "d8498a1c92053ce2db4784caf762f3b749a2fb5e7ffbf4848d3e4eb734cf7315",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 52
+  },
+  "244": {
+   "year": 2009,
+   "sha256": "a71d572780140911d5715a9df71cef7ca4acfd71b483f6062d8d3b70352de560",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 59
+  },
+  "245": {
+   "year": 2009,
+   "sha256": "1356a2bdd916f2f9ad10a9191252f27f244743a613a3ca64a15e166b11417af1",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 48
+  },
+  "246": {
+   "year": 2009,
+   "sha256": "3888f5e23b9adc396df8e335cbd7f202d06659e595e0d40612e6e8e32d8810a5",
+   "tables": 9,
+   "labelled": 9,
+   "cells": 35
+  },
+  "247": {
+   "year": 2009,
+   "sha256": "19fac7b8e53eb1f4db003cdd8174265db028ff31fa5e2fd2444aa5f60a04abbf",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 52
+  },
+  "248": {
+   "year": 2009,
+   "sha256": "59f346e4162a94f866f39807c5c6ccb7ecd90ab26774dc41d3f697faa1039b58",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 80
+  },
+  "250": {
+   "year": 2009,
+   "sha256": "79a0ec33cb4b090494a9f561eca089b73159b42ee9d1563f044ab333f4d148af",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 165
+  },
+  "251": {
+   "year": 2009,
+   "sha256": "10c2f9eb294b95a14b1edc9891ead11e1eb78032755eea62d80796a1a28793ae",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 45
+  },
+  "252": {
+   "year": 2009,
+   "sha256": "73990b76585a300efed27836c2f17db253357956ea3c7ca66a3e837b5940cf8e",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 30
+  },
+  "253": {
+   "year": 2009,
+   "sha256": "7201a2a034105a6e4b20c5b3ccd0f28b2c04409d85e80937526bc68e5c1622af",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 55
+  },
+  "254": {
+   "year": 2009,
+   "sha256": "be73d4df0dc6c0aa8cb1f9b61fb3ba2daeb288bf1f2eee023b4a17ba1c1ebf2c",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 55
+  },
+  "255": {
+   "year": 2009,
+   "sha256": "6b8e2114c0041db86964997e566b24a36e0d48d5b20c30b58b2129be9506e6e2",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 57
+  },
+  "256": {
+   "year": 2009,
+   "sha256": "638395e08766e34153659de19d731b0f6841df6c2344102a1e1cadd28de39a08",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 65
+  },
+  "257": {
+   "year": 2009,
+   "sha256": "b75694591d6435fd838caa24533e45d115f7cb0b1d6c9cd1e603b814ca72a385",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 38
+  },
+  "258": {
+   "year": 2009,
+   "sha256": "88c04834e38d457cbceddab0dc3936fe5eb1cc212dabfd1abb546cc5ac479dc9",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 88
+  },
+  "259": {
+   "year": 2009,
+   "sha256": "241d271cc3770df921dcbeb4037b2912c1f1a5084bba2a99dcdbc5e4ab8490a6",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 146
+  },
+  "260": {
+   "year": 2009,
+   "sha256": "29968d1d758403916ac9d015771da50179687d28e3584262981d1910e6f960d8",
+   "tables": 16,
+   "labelled": 16,
+   "cells": 98
+  },
+  "261": {
+   "year": 2009,
+   "sha256": "c5c8fe5d7936d3ed4e76b7f003e70d806a452dbec5d49b02a778b8cd0bf1657b",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 66
+  },
+  "262": {
+   "year": 2009,
+   "sha256": "09cdefe9c0392185c88da411c20c02b09cb29dcfe148ce1527a41e02deec7389",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 55
+  },
+  "263": {
+   "year": 2009,
+   "sha256": "1e7ad883286635326eed84d4f01837eeb143cbfe41640437e1f4cf4cf30b614a",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 44
+  },
+  "264": {
+   "year": 2009,
+   "sha256": "64fb0ac3a7aedd886fc466de142178df498274f00d79c59febb14c3b7e4a343f",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 121
+  },
+  "265": {
+   "year": 2009,
+   "sha256": "c54fe53d6a6e2e70ff5426560823a3e2267cc293bc9e55934459912bb87530fe",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 154
+  },
+  "266": {
+   "year": 2009,
+   "sha256": "2e3a4fc77827d5e3abae2b129ab394049ebdc86a4fbd34b918a6ab670e1e4fe6",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 94
+  },
+  "267": {
+   "year": 2009,
+   "sha256": "2f13601fca00ec1d918447ceb2fbbe81c4abe1af0deccd5ee67f122c91b4115d",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 146
+  },
+  "268": {
+   "year": 2009,
+   "sha256": "fcddf1b952ae7a32af97235f792d549da9e32d032cc6a286851085e169cc5351",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 21
+  },
+  "269": {
+   "year": 2009,
+   "sha256": "5b4d6f4a8f8e85810cfab847da0146ca5dcc0d6780151718953458977a28b539",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 46
+  },
+  "270": {
+   "year": 2009,
+   "sha256": "07cfa40a866ae8bdf8d2629c32db42b4acd2a3cd554a6755793646f14a79c1dd",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 20
+  },
+  "271": {
+   "year": 2009,
+   "sha256": "75a265c0a2a4ba66a8cb35effa8aaa036f673f478c1fc79a5c2c518e3230fff3",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 20
+  },
+  "272": {
+   "year": 2009,
+   "sha256": "46aa1a4c627d1ff96eddeba7eb44de382f04e427337201786f22816503e576c0",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 89
+  },
+  "273": {
+   "year": 2009,
+   "sha256": "fcc37231425f613eb0acae48c2ae2ba58d364def18c68bc099c93c5226db4ab4",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 50
+  },
+  "274": {
+   "year": 2009,
+   "sha256": "8c3e5dcfa31c6bd054d71510ec33a8273ace5301aff74e90eed3a129cf341c8a",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 30
+  },
+  "275": {
+   "year": 2010,
+   "sha256": "af05fddd49391c96c709a65d36acaef751a762f0054b98ecf41c49a3605d17da",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 18
+  },
+  "276": {
+   "year": 2009,
+   "sha256": "380bfcf89d61e6a9a0f758e383e2a4af475eaf9dc9c162863f08f9724114d283",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 21
+  },
+  "277": {
+   "year": 2010,
+   "sha256": "cef74a6e4581a5f69c482aa6b0bd8c6e68d345ff128d614ab518e34847520dbb",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 34
+  },
+  "278": {
+   "year": 2010,
+   "sha256": "faa9bd2dc94be39acca1b555b04623417f6c7a7c901e4a1d225edb40690a5e3c",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 103
+  },
+  "279": {
+   "year": 2010,
+   "sha256": "a42aef1f498b3f2bd494f02eb18186b33a6004391d79c46d54b4a7437ddf564f",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 22
+  },
+  "280": {
+   "year": 2010,
+   "sha256": "30e7672908178a23c61273e653ba1ad718df14e9689dadc06a7e8c89eb33ef43",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 22
+  },
+  "281": {
+   "year": 2010,
+   "sha256": "828f9211df8ac1757cf18fb5bb97f1e06e05f8f97e840db50977b46d6ed40a9c",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 75
+  },
+  "282": {
+   "year": 2010,
+   "sha256": "a407a226dce4528c530f1980c885d14a29fac7af1536c5f2a97a8668af96686e",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 83
+  },
+  "283": {
+   "year": 2010,
+   "sha256": "1093615301ff617ddf0f3a6cf66cf6b5491a56da1f353986dac7193514082619",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 26
+  },
+  "284": {
+   "year": 2010,
+   "sha256": "e7e5de685f73da8a2890a9e5074646a38a8b81d90e13a42b4310013b68a63286",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 35
+  },
+  "285": {
+   "year": 2010,
+   "sha256": "bd4e0446296244195249f56f309deff5c4819e11336fbd826a19f16878906770",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 45
+  },
+  "286": {
+   "year": 2010,
+   "sha256": "91bc622946153cb49614912585eaf7e0c710826dbf5777b03083c8455357ebd2",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 165
+  },
+  "287": {
+   "year": 2010,
+   "sha256": "8ceb860e822fecbba00d787d3296e2f9107b00b9029a21e287753d4bbf7fcff5",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 66
+  },
+  "288": {
+   "year": 2010,
+   "sha256": "e7f58ba9ca75cb3d5719d226bcd1a72a618212367373355b8cf1702cd3efc91d",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 43
+  },
+  "289": {
+   "year": 2010,
+   "sha256": "b1aa40feaa54d0d2cd4d47f81e472d6b45f6ff1e12b1ee068021f5fbd84b77a0",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 21
+  },
+  "290": {
+   "year": 2010,
+   "sha256": "ef39921283a445824853b67b9b58d22c27f7f24c35848cb7e7bcec52f419788f",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 158
+  },
+  "292": {
+   "year": 2010,
+   "sha256": "575a1338db8911874ca0c0b331a5f4ca8a163f256fc840ae54fc6733501672de",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 40
+  },
+  "293": {
+   "year": 2010,
+   "sha256": "637866d164bb4511be307abd5144b02761b2823ef1367d16c575dc9bb166dbc5",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 41
+  },
+  "294": {
+   "year": 2010,
+   "sha256": "b7c2d2ea29f9dc43dbf7f92eae32ee3c5519abcaefa6557bfaa76b43d89d1b1a",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 88
+  },
+  "295": {
+   "year": 2010,
+   "sha256": "c45a4bf924b286dcfdf27265be39fd3b30995ccfad90ca542875cc4bd271195c",
+   "tables": 12,
+   "labelled": 12,
+   "cells": 74
+  },
+  "296": {
+   "year": 2010,
+   "sha256": "693a6b79f41744a662ad60638ce51f419cc409018ed3f33700d7e4d139a95cf4",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 10
+  },
+  "297": {
+   "year": 2010,
+   "sha256": "7b6122f5f28cd5f704bc9da65fd5880402446213f4ab1688cb224dc150c8b4c4",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 121
+  },
+  "298": {
+   "year": 2010,
+   "sha256": "0c3df20f92e2b52a9915c8ee962945f8d1cadc6c76ba3206fc6ae1ac96364721",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 40
+  },
+  "299": {
+   "year": 2010,
+   "sha256": "ad4d9176908a48e19c6a3ed3e1cd2ece33aea68503fc924f4be1c4b209c3ddac",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 40
+  },
+  "300": {
+   "year": 2010,
+   "sha256": "623cc5552c0e4aeb256b8162a18e10dd175fda8b95cc603a848743e8c3c294c8",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 50
+  },
+  "301": {
+   "year": 2010,
+   "sha256": "3e3a857dfe780b2b42baaf207b6fe9f6ecbf27bc9f618881febe8e3466dab7dd",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 89
+  },
+  "302": {
+   "year": 2010,
+   "sha256": "dbdc76d4e49f4d387e2931a91e36d114ab03ae1f91db1afa027b91c37d592fe5",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 50
+  },
+  "303": {
+   "year": 2010,
+   "sha256": "709859baadafdd9c6cd9552487a314d1861157a66a47654927e87bc56a6dddf0",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 24
+  },
+  "304": {
+   "year": 2010,
+   "sha256": "e51ebc18f6a35d3eed14cd453e8487e722448262cbc5728a9dfd7f6514458df8",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 40
+  },
+  "305": {
+   "year": 2010,
+   "sha256": "f740706be3a90f055c597661c00d68df685e10d8d3b98262f5ecb453724b5938",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 91
+  },
+  "306": {
+   "year": 2010,
+   "sha256": "1fcb7acd78ea4505e3eec721e31e88bb2647cee50230e65bc23903ab541b94a2",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 46
+  },
+  "307": {
+   "year": 2010,
+   "sha256": "a0c497d0663e60c9af78b454c373354565be741c6e09d8cb19d65512cec6cba5",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 66
+  },
+  "308": {
+   "year": 2010,
+   "sha256": "5f8923f13834ebc71f98751f5a1d6a00e724420dfcfd82789aae6dfe574e5619",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 98
+  },
+  "309": {
+   "year": 2010,
+   "sha256": "8c43702957a2df2963a813cc97b111dc3cbbf497de647b52caf29b711e31d6da",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 103
+  },
+  "310": {
+   "year": 2011,
+   "sha256": "22275237ec9bea0083612cc60acdfc679b939c69c40065562150661407df6bcf",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 27
+  },
+  "311": {
+   "year": 2011,
+   "sha256": "eeab677befe59b148beba9cf1808ff4ec8d8378da18d3ba660fc98179f42f9d2",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 51
+  },
+  "312": {
+   "year": 2011,
+   "sha256": "6d59f7d4b9a3640fb3deb761e315f2d8504d3c485c0a9e87b632acaa9442e62d",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 64
+  },
+  "313": {
+   "year": 2011,
+   "sha256": "d65bbd7cbf47bfda734a63071e192c8277b6f5c1474018009eb61cf0403580c9",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 22
+  },
+  "314": {
+   "year": 2011,
+   "sha256": "dbb6d1c7c03948198ead00038a813cdc57bef868bc845a3083ecb3153ea22768",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 22
+  },
+  "315": {
+   "year": 2011,
+   "sha256": "7e5289d5d111f34c1a980e26fda21c4dd77edc9d4e3ffc512580f4d3dfbc9fbd",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 31
+  },
+  "316": {
+   "year": 2011,
+   "sha256": "265bb7dc1e51e1c6c96259f6f6fecc879e82dea43c03d778ec5d3de5cb9d63dd",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 42
+  },
+  "317": {
+   "year": 2011,
+   "sha256": "642f10a44d852640115bcfeba252a2716c5b9fb0c39b506ca2fef2ebbdea7353",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 72
+  },
+  "318": {
+   "year": 2011,
+   "sha256": "9ede2593f8f461088eb5d3d7c2ae3a7607a8d4c3ab20ce94ff76ac0151e1b7a5",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 81
+  },
+  "319": {
+   "year": 2011,
+   "sha256": "4bccced291a531504cc29b4d11ac3417f8ddbee122b31d26c01ab91f5ff39c83",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 30
+  },
+  "320": {
+   "year": 2011,
+   "sha256": "fb991b78701f350041922ec8194353b33fc4c286d9ef9863c76152974feaa355",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 32
+  },
+  "321": {
+   "year": 2011,
+   "sha256": "7186ed24c6b794b6b4ca43b2b27f315118b45df67e50df5b8a03f84c725831e7",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 55
+  },
+  "322": {
+   "year": 2011,
+   "sha256": "7ddcde8c70c311f15bb7486027d46613eb7c2ef0e9088ff6da5f244b9d276702",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 55
+  },
+  "323": {
+   "year": 2011,
+   "sha256": "eb682612622804e5b040944afc8d28ffafed013f00ff3b90afe65afe5215e4c5",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 48
+  },
+  "324": {
+   "year": 2011,
+   "sha256": "76dc050c3095392ed7fee5195308f83218437af73564dab30f5ea01c468786f8",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 14
+  },
+  "325": {
+   "year": 2011,
+   "sha256": "98dabb3255c75096a9cfc52af0092ddfbd8a0a1771b9d92f25d86dc5c1b1c203",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 136
+  },
+  "326": {
+   "year": 2011,
+   "sha256": "92bb28e34b86b0f49ed2430e4f6dfcf2760928d3522413aa66af13e6a9af94c3",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 22
+  },
+  "327": {
+   "year": 2011,
+   "sha256": "4b57f908ec2cb267d5d645d001bb1ccd4836307b3ca49eafa773d8a7de098984",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 40
+  },
+  "328": {
+   "year": 2011,
+   "sha256": "784dfc1af1e8db515e55e276fe4cd878a4c153ee9aaa67dd905d4031cf4e4afd",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 45
+  },
+  "329": {
+   "year": 2011,
+   "sha256": "5069984d564ddb5590bcceb36cd08bbba71a13e542990688fdc6c6a26884ede2",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 165
+  },
+  "330": {
+   "year": 2011,
+   "sha256": "68ffab83f4df5bbd8bd9c4f6263e4f20097e22b67d7677505da9fe1b5f48c070",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 60
+  },
+  "331": {
+   "year": 2011,
+   "sha256": "976aec7dbbcede5b81237b172932b259097eb954137e4e802800358851aad254",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 90
+  },
+  "332": {
+   "year": 2011,
+   "sha256": "de885b21ebfa32833a04d193c574c56eea5b5a019cc1cb44021bf4dfc474dc08",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 44
+  },
+  "333": {
+   "year": 2011,
+   "sha256": "351145b17522d99c6a5ead06221a85649e0fe7365a8a490fa1d2b4ece119a36f",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 36
+  },
+  "334": {
+   "year": 2011,
+   "sha256": "0933f9b1aeb3af03d65819c46d9264d824c0c32f0a9c683d27c45b0066b67134",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 32
+  },
+  "335": {
+   "year": 2011,
+   "sha256": "e4674b7d222cbb3cfe50f27963a19571e4703cdbb3d4ec3e5ad97fc06462ef19",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 88
+  },
+  "336": {
+   "year": 2011,
+   "sha256": "959b9bdffd163cbf62ce3e47a3ec971ab0be4a63284099f982e88c811a29cfa7",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 170
+  },
+  "337": {
+   "year": 2011,
+   "sha256": "3cfb9ef7376076ba34ecc6595c7f900c9df2f5b632a0ab77bde50f87a6a7a361",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 52
+  },
+  "338": {
+   "year": 2011,
+   "sha256": "a06c338c1e4345103c54d290940e5aa2286ba2fc8a8d24b5a349f4527686ed9a",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 54
+  },
+  "339": {
+   "year": 2011,
+   "sha256": "e00bf628cb1493422a25a50ebad7643a3224cb16b6ba274d03f5ca033bb9d52d",
+   "tables": 2,
+   "labelled": 2,
+   "cells": 26
+  },
+  "340": {
+   "year": 2011,
+   "sha256": "a83f92e24b2ac830243a8f82b58df196458cf6e5ae9eda1dad831df4354e8177",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 40
+  },
+  "341": {
+   "year": 2011,
+   "sha256": "33560b5b264f70496d84d3c8b297aed726fbf5832574f9431511bf6fd2a8d6a7",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 46
+  },
+  "342": {
+   "year": 2011,
+   "sha256": "4251b33573868abc9d2a6a38722f3746b0a21d6582ff16139e732142fbac0a1b",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 37
+  },
+  "343": {
+   "year": 2011,
+   "sha256": "0e2deffee18f45dcc59fb93aad0ab983e54cf05a8e2a5e16c84d484c102f7b87",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 31
+  },
+  "344": {
+   "year": 2011,
+   "sha256": "7da8be14d1199e46cb12cfbc9d086ebd51ca9b1ba3bce2976b16b2286c25075e",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 40
+  },
+  "345": {
+   "year": 2011,
+   "sha256": "dca768b73ff482d01d50b1920618df9fbe2e829f7abdaa6684d197b173f00680",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 41
+  },
+  "346": {
+   "year": 2011,
+   "sha256": "e8f7fb7c8219f709e51fe5c27c6727c7b73ab3a9f5dadb8dd9f8d17246be5719",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 18
+  },
+  "347": {
+   "year": 2011,
+   "sha256": "65cbbedd843d1ff56260c58602cf2a4f31e2c39f49d6cb8285baf07eb3a5b08b",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 46
+  },
+  "348": {
+   "year": 2011,
+   "sha256": "66b3e3021179f60aa032db8708a2d9d99335dd200e3555e1ac714ee4b4e4e079",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 39
+  },
+  "349": {
+   "year": 2011,
+   "sha256": "302997b6e20caa5f0c7f5ef0a17688ba5a782d9ac0f511dcee5d706f7adfa700",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 57
+  },
+  "351": {
+   "year": 2011,
+   "sha256": "5673aaea4aa1fe6b68b32cb5ab3af0480229ecd76318fb7fc007270604b35381",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 40
+  },
+  "352": {
+   "year": 2011,
+   "sha256": "aeb1a51f40d30d7c2ea87304748a70018b2c410d23ddf97328f427ab4f3c1806",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 121
+  },
+  "353": {
+   "year": 2011,
+   "sha256": "1a723e23fcfd25ef2cf5f467b46ca48aa983fd5ef2d39df43bde44817581cfd0",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 40
+  },
+  "354": {
+   "year": 2012,
+   "sha256": "638ce56d8556ad64a05ff9519959cfb8c55143853ec7b9aa683144e3cda5bf95",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 103
+  },
+  "355": {
+   "year": 2012,
+   "sha256": "38f2cffa22a62c2f8945bf7fd6d338e5e17087b3ad87c3e2dc4a7eeb0a86f057",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 95
+  },
+  "356": {
+   "year": 2012,
+   "sha256": "1288835399cd4538ebbc4cd7686a79ca6fba65815cad0e24fc460faa7f498bda",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 37
+  },
+  "357": {
+   "year": 2012,
+   "sha256": "f9a85a508597a89a77ed2fea1d37cc3b445778868cd9c1e5c0185a3ddf40e90d",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 31
+  },
+  "358": {
+   "year": 2012,
+   "sha256": "05248177d88d29160e29c5412f8c300ebe773a2fa4b7837f97180cb5bdef4964",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 26
+  },
+  "359": {
+   "year": 2012,
+   "sha256": "4d55507732dc40f2ee65e8d9c16f909b7b79131d3180074258036f06df2e7c22",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 124
+  },
+  "360": {
+   "year": 2012,
+   "sha256": "bae833ef486397b6be1538e5d24be6e7eaa094b1e4da4f3e3a522c22e19a56b7",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 69
+  },
+  "361": {
+   "year": 2012,
+   "sha256": "fea2a4b78b06a3ad2beb0721df49df5825f385ae4eb78032c3ca8c69008d380c",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 50
+  },
+  "362": {
+   "year": 2012,
+   "sha256": "6602211ccc1a40f31cfdce2c2d7125cc1c0195fefebb861d1df5d1287f476ddf",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 22
+  },
+  "363": {
+   "year": 2012,
+   "sha256": "7cddd1e48da310be777307956d29510ce48f21e8643af1a4b6849509f9ce5b20",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 22
+  },
+  "364": {
+   "year": 2012,
+   "sha256": "d69cc64cdefca4c753c35df7e5ee26871082fba612ce43a0c2084c84b9e770b1",
+   "tables": 10,
+   "labelled": 10,
+   "cells": 170
+  },
+  "365": {
+   "year": 2012,
+   "sha256": "3f40e62ea76abbb1418ecf1730acd114146828745beda4ce7cf128440c2a7217",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 96
+  },
+  "366": {
+   "year": 2012,
+   "sha256": "62654774d2a2033f0582fecbe1f028b0c0d9748d39fa29eebd6f37891187dd0e",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 69
+  },
+  "367": {
+   "year": 2012,
+   "sha256": "dcce6e62cd9ce865c7bd1b84f7005186feadfb653b05da88aeffafb5f28f18dd",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 32
+  },
+  "368": {
+   "year": 2012,
+   "sha256": "9aaa5e7fdda55b331d66f619cd873bb85b4cd995505edd59ae838a7c5bff96c2",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 84
+  },
+  "369": {
+   "year": 2012,
+   "sha256": "17fda13413c2387842912c8a99901e0fc73271100dfb720db6d82e1605fe91a6",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 38
+  },
+  "370": {
+   "year": 2012,
+   "sha256": "e1f01f8917a6c4827bf1eba89e75b7d17744fb8b5386056b8157738def2727a0",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 70
+  },
+  "371": {
+   "year": 2012,
+   "sha256": "39e2de3d8ff87c995a88193f0825906738987492ff46081106d5ff4d88621218",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 48
+  },
+  "372": {
+   "year": 2012,
+   "sha256": "9eb771c6d555fd714972f1a3c5ab0faf8063d62922aae9b3f3cf236b0a9b7759",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 10
+  },
+  "373": {
+   "year": 2012,
+   "sha256": "984627adf0391855a843f0244c89aaa7064bc978537e2f3fb4d8094e358bc157",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 68
+  },
+  "374": {
+   "year": 2012,
+   "sha256": "d98afb8ed1d34f865764f088486f7343ee1bb2a0cb1a28dca127ed32598eb7ef",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 38
+  },
+  "375": {
+   "year": 2012,
+   "sha256": "888f0667ada30cf22ca24601b89df3e55db71c6ddd5a873c43ea2b01fe62fd51",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 165
+  },
+  "376": {
+   "year": 2012,
+   "sha256": "468665307d32b07b4c5239fbb97f26ef8e2d0c3918d773fda799dea5f28e420e",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 45
+  },
+  "377": {
+   "year": 2012,
+   "sha256": "c7e0d83c16220ec295be3f303d05abe2432189721c2dbfbd1829fbc1fdebd47d",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 42
+  },
+  "378": {
+   "year": 2012,
+   "sha256": "b64a2c144dc2d437839b727f4831656a0eff8d079901060ec43bc2a44079540b",
+   "tables": 10,
+   "labelled": 10,
+   "cells": 134
+  },
+  "379": {
+   "year": 2012,
+   "sha256": "fd09a1acd5d349c4b1cc349702b88bd61c646a449a03fe74d61b56892576a7e2",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 182
+  },
+  "381": {
+   "year": 2012,
+   "sha256": "dfac9b1567fa7690fc4ce5c8de89c8fff1958eb7c56b2a237ba7eb6ac60a7632",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 58
+  },
+  "382": {
+   "year": 2012,
+   "sha256": "f37f0bddf8486ec88b9003544b7c965e0dc0148331f399bb493136de35a26625",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 65
+  },
+  "384": {
+   "year": 2012,
+   "sha256": "8f4ef4be09135ec269ce3fc2643053c77ea216f37068735fa12cb0f2a371f090",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 30
+  },
+  "385": {
+   "year": 2012,
+   "sha256": "4f836c8844706d579578248c7b477e522da94fbd08e8d38debe7da12682b81bd",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 65
+  },
+  "386": {
+   "year": 2012,
+   "sha256": "d25c00a9b3a6cb4ebcc103d2754c00ce83c32c9e51000c89a67030d89ac0bd0b",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 39
+  },
+  "387": {
+   "year": 2012,
+   "sha256": "d9d4d16fdbe8770531014e7a90976169120cb17ac061393f381b624e972d60d7",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 23
+  },
+  "388": {
+   "year": 2012,
+   "sha256": "970e77a92499c62d5cfe4211a55d61f383d57eeeea880641b518d193727a73cc",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 186
+  },
+  "389": {
+   "year": 2012,
+   "sha256": "3fb2faa82137c4140f0e71846ce955202b1da26254931f503ef564045084e6b9",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 139
+  },
+  "390": {
+   "year": 2012,
+   "sha256": "d5be24c50e58085dd9b202651089c62e486b6d81b1ad97eb078b608edfadbc40",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 42
+  },
+  "391": {
+   "year": 2012,
+   "sha256": "055f49d48e51bce0a62613418c8e130d3b716a0ae44eea03778c56c80d8a4913",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 86
+  },
+  "392": {
+   "year": 2012,
+   "sha256": "c08ac598410f8b7df9e81299a51f4eb411ee19e7e01d26090d6eaa774fbd0b26",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 103
+  },
+  "393": {
+   "year": 2012,
+   "sha256": "41ae87c135e829af765b5c4ad4794318e282556f7b6a473759cbf13f30ce2950",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 36
+  },
+  "394": {
+   "year": 2012,
+   "sha256": "35a8b84f9657583b9b01f58ae3ce61c78f37e0cfbbf8d0a20ac971a05b5c756d",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 24
+  },
+  "395": {
+   "year": 2012,
+   "sha256": "156a0c26b0caf67d2c59f12e896b5c2583b7a922945bcea633690893d38b912b",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 94
+  },
+  "396": {
+   "year": 2013,
+   "sha256": "25717bc53348169fb3a3514491b49c25c1c2149c8d23b145dbbc06bff81b81d9",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 91
+  },
+  "397": {
+   "year": 2013,
+   "sha256": "bb662b422d5913e259ff9234be5f902e688d6e4ab5ba51738ca0b786a46f2d75",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 56
+  },
+  "398": {
+   "year": 2013,
+   "sha256": "d2b28acf8abe64ea9df8a1e6374cd30aa032a1828ba37439e727ae1b5674fccf",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 84
+  },
+  "399": {
+   "year": 2013,
+   "sha256": "bbb1c5fa77ade1d776125973248a3859131580e835e35c792a19469edc8cc88f",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 88
+  },
+  "400": {
+   "year": 2013,
+   "sha256": "f8920f1896ab8f67c731870c4bfa01464560e62ff87df81e47e7cf40f65cbb33",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 12
+  },
+  "401": {
+   "year": 2013,
+   "sha256": "29d3a6dd09ccd2d618eb74d413c1964825abc63ccf3ade202dbd929da403f92e",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 43
+  },
+  "402": {
+   "year": 2013,
+   "sha256": "64a413d611abbf8402e6d9e0d45ae6840e0f5b1755ec89ca51b87034365de47b",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 120
+  },
+  "403": {
+   "year": 2013,
+   "sha256": "adc9cf23522068c937209e0d2af841fd8110e996b5eb97e48b852bf652318f85",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 52
+  },
+  "404": {
+   "year": 2013,
+   "sha256": "d95fe1f6c2939972a2de9d298610e73a226ae705656fb2e05c9d118559d1cd95",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 49
+  },
+  "405": {
+   "year": 2013,
+   "sha256": "3f5b056937d27835c26eb5287bc8725beaca9c9518da09685a3da9fabf3b5a62",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 72
+  },
+  "406": {
+   "year": 2013,
+   "sha256": "08ce0be968db840a1c0cf2da6d6628670c25cf120c188d0877557c462b7bd6d6",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 83
+  },
+  "407": {
+   "year": 2013,
+   "sha256": "ba8ca66e031c9acc6bef86ab3ab2accbfb352086bd91a8b84ce7c10021172f6c",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 33
+  },
+  "408": {
+   "year": 2013,
+   "sha256": "8399785989f985f07261c5e3cf4f447f2a7095efabce92c335a3a2659fbe84a7",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 44
+  },
+  "409": {
+   "year": 2013,
+   "sha256": "bec17a3ccbdf8da1b4b327a00161fc30e05e6da23d46b4fbb883860549c249ca",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 41
+  },
+  "410": {
+   "year": 2013,
+   "sha256": "c24967e8542db08dc66cadd975172bae952e328f6304c270b6cc699ba424b7da",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 20
+  },
+  "411": {
+   "year": 2013,
+   "sha256": "453c52fa2a720e467b497dfb39c80c63a82b09bab281097f94fe8a4c4c02491d",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 20
+  },
+  "412": {
+   "year": 2013,
+   "sha256": "4b64b2a9ea39f1531851205745dd4b2fcf285f20088c6400cb9203dc25b652c2",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 204
+  },
+  "413": {
+   "year": 2013,
+   "sha256": "2744c73953213360781094a24aac5aa3558ea82a4b3db297de081e7e76c95a31",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 66
+  },
+  "414": {
+   "year": 2013,
+   "sha256": "4d5b41574305b28df451ee82c0a1c3eb2425574d85d8fd0640d75f4dfa509adb",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 121
+  },
+  "415": {
+   "year": 2013,
+   "sha256": "470ec059e176dbba8459af20d5ce3ba3bb15f533e42fc45acebbfaedfbdb68fe",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 44
+  },
+  "416": {
+   "year": 2013,
+   "sha256": "ee2ed4c118683c524c176e60a1fb0533d2ace6858e770b0ce36c0fb0ec27ab9a",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 45
+  },
+  "417": {
+   "year": 2013,
+   "sha256": "40d7e5479e89b1918142d32d69ddd4fbd83ad93308af1e36847cc1434089873b",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 80
+  },
+  "418": {
+   "year": 2013,
+   "sha256": "55ac17349dcca4bd0ca0f213f3330d18079a7c81185ecfbbfd17097f2706951b",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 165
+  },
+  "419": {
+   "year": 2013,
+   "sha256": "acf964d931694d7f52925cf09b5cf3e198bec703fed2a7b94825f04046da1be0",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 107
+  },
+  "420": {
+   "year": 2013,
+   "sha256": "16f6de59003fd0da07667e91c62cadfc33c5867a8cae7b476325d9fdb65b36c2",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 194
+  },
+  "421": {
+   "year": 2013,
+   "sha256": "de098bd253067dad448eecee9765e44050d60d712d674799ad4db7afa1d973dd",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 196
+  },
+  "422": {
+   "year": 2013,
+   "sha256": "c838bf579c9fc023989a2e0e3beb841bc688a93104913643087868ffd96235d0",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 46
+  },
+  "423": {
+   "year": 2013,
+   "sha256": "b88753b969ba0ccae9b6a99f160dfb8bebdd4256229cc221bea266b8f80773d7",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 193
+  },
+  "424": {
+   "year": 2013,
+   "sha256": "e89b32e688d4f6737ca2c0e3fd495ad500f80cdc9b68485fa996f6183b2d90d7",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 88
+  },
+  "425": {
+   "year": 2013,
+   "sha256": "9044ea995e27df4c518c5567d3de40a7dd87478dab11dfadb4dc12a23630ac52",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 95
+  },
+  "426": {
+   "year": 2014,
+   "sha256": "6ccb9f262998d4c03f4a55923d9a21a392dd2b28411c771bb3edfed1f01fb120",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 94
+  },
+  "427": {
+   "year": 2014,
+   "sha256": "92a4cdac5eda7fa8314be37988ddd65ef8b640bd96f6c9f8ef09fe54931eb1e2",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 42
+  },
+  "428": {
+   "year": 2014,
+   "sha256": "b1f3904dcd0df01b9a53a691f78f177532428d3bc44ca15a53b487796dc39c02",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 82
+  },
+  "429": {
+   "year": 2014,
+   "sha256": "ea09bd733be3ccf7fede5abf49da576cdfba9cb999b95e72b031eae974a3b615",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 85
+  },
+  "430": {
+   "year": 2014,
+   "sha256": "69f9eeeb9e34ab861778e44ad54746e9c3a69da733f04e0b8f574b45c3f91e19",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 70
+  },
+  "431": {
+   "year": 2014,
+   "sha256": "8ca2e079ec6af5311d5df4f7f691ce9097b58d70592a90f03d54f08fd59f7b21",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 24
+  },
+  "432": {
+   "year": 2014,
+   "sha256": "df83b83d783596a1238577c7af25100f0ce60c083f29e80a00d99f67ef2acf87",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 19
+  },
+  "433": {
+   "year": 2014,
+   "sha256": "b6e470e1dcade5906fdf50a66746be97ef9f4c17cae224f61429745aa3ae0caa",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 136
+  },
+  "434": {
+   "year": 2014,
+   "sha256": "9e34751906e17d548cb05621ba1a7d47a293f7e6876915da5b25d2d937915ddf",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 65
+  },
+  "435": {
+   "year": 2014,
+   "sha256": "4b1649f8efa14779ac571b3f5e05e7973aa0dd4fbaf6c42af94852c938b29b11",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 84
+  },
+  "436": {
+   "year": 2014,
+   "sha256": "b597c253a095146887384d06761c703dfa057445a0b82b2b6d0046c01bb30df4",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 28
+  },
+  "437": {
+   "year": 2014,
+   "sha256": "3e27e5fe6dd4f965f7b266978abb203cebe54d218818c8424be1667868f44acf",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 44
+  },
+  "438": {
+   "year": 2014,
+   "sha256": "e9dc206770b11dba2d74dfa7ca4c13c091101034150ba3a3819cfb85268e0d79",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 60
+  },
+  "439": {
+   "year": 2014,
+   "sha256": "5d781a90cd36de35f20395d2fe06d35de572519db94ad1ec426f5858d6246e4a",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 162
+  },
+  "440": {
+   "year": 2014,
+   "sha256": "c85480db9eb3ce19a61a43496c820c8aeb3bdf3bc0fb4a384db6fc4c5d2048dc",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 28
+  },
+  "441": {
+   "year": 2014,
+   "sha256": "99333c12e4d9a8a2af3b3ecc6bcc76ab46b4343ed7137e7f4c706c6ea02d4543",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 66
+  },
+  "442": {
+   "year": 2014,
+   "sha256": "27fe3ef4a5b50e57db49afef00c2dfe00dc518b3c7c8cde23e086ff636bc9f6b",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 60
+  },
+  "443": {
+   "year": 2014,
+   "sha256": "f7b073059e311cb9ca6403ef2a07ebd8d39c4135b131946ab6f1dcbea5dfe885",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 48
+  },
+  "444": {
+   "year": 2014,
+   "sha256": "02e2741d3f8f22e66d183affaf10cf22692e171c5ca32a4c9cce79934cc9368a",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 165
+  },
+  "445": {
+   "year": 2014,
+   "sha256": "d62f64ec93402c9d65d255415c76ac1f1b015430ac7659509e05af8b8cdb7276",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 40
+  },
+  "446": {
+   "year": 2014,
+   "sha256": "b2c665e9c0389b2acd8f3c47332c78d9b7cc45149cad9b72f524be61d467d6f6",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 88
+  },
+  "447": {
+   "year": 2014,
+   "sha256": "8e108a69eee8c6f04ad489d750a00a60530bcfd3cdca3e75ff7a43afa027358d",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 46
+  },
+  "448": {
+   "year": 2014,
+   "sha256": "c6b412ce14135c99c9a7d966d4f245a61c113a03aee0eb74e2290e274975e948",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 194
+  },
+  "449": {
+   "year": 2014,
+   "sha256": "a3e720c63a1d0236dbffaca643832c9c35dbbc5a8d372d636b0b47560e989f2b",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 103
+  },
+  "450": {
+   "year": 2014,
+   "sha256": "cc4a0887884103a1313060def7fba45a120ac61e6216cbce3e0200706b5071c9",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 173
+  },
+  "451": {
+   "year": 2014,
+   "sha256": "5a170312b3d912198705fff4239574bce3968a8dfab06e27c51350e3ce1fcaa8",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 120
+  },
+  "452": {
+   "year": 2014,
+   "sha256": "6916ee356e7ad03b3d2829089e32310d7be0e4cc257299778078b1ddffa2d83d",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 108
+  },
+  "453": {
+   "year": 2014,
+   "sha256": "cecdb855a892c83860f0388bdb8a8055e85db46487379a97b5ca090dee53ec22",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 37
+  },
+  "454": {
+   "year": 2014,
+   "sha256": "3c70d9711621973e2b45cbaceeae906848cb305b2e1c841d33838c2d51f093b5",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 29
+  },
+  "455": {
+   "year": 2014,
+   "sha256": "88fe03c15f18f5b21456c60c66dc38ed3e4eae338f737b9080b13b2df9dac94f",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 125
+  },
+  "456": {
+   "year": 2014,
+   "sha256": "7bf4eeb788600d0c4cadd7c260adc275cf8fd3bdc4c98bc01e59d28c3bf82a02",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 60
+  },
+  "457": {
+   "year": 2014,
+   "sha256": "be0f582871be42719a2d3575eaa0e6995290e92c20733fdb350c88aba72b3b35",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 70
+  },
+  "458": {
+   "year": 2014,
+   "sha256": "3c0e2878470c09dc1bc0f5cf9cf0bdde2a56ed25ace302d131bc8ad444630c45",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 71
+  },
+  "459": {
+   "year": 2014,
+   "sha256": "29e6e91f70f096e6161878891c72ea8468e8089aa7a6e7adce680e651c2fa39e",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 52
+  },
+  "460": {
+   "year": 2014,
+   "sha256": "500dc50861e15277a05c5bbf9fa3a8ce2d56317f90407fad3915b03c046816c7",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 45
+  },
+  "461": {
+   "year": 2014,
+   "sha256": "a43782fb69773f6a7dccfb325c8734dde2bb35c92353cc1b91ea95f717202a06",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 22
+  },
+  "462": {
+   "year": 2014,
+   "sha256": "6204cf3e085c6db7b5498244535ef89671fd2bdbedcb595ab9e20c366f4dbeb6",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 76
+  },
+  "463": {
+   "year": 2014,
+   "sha256": "4846e8f541340b1ce717f9480ffea18175297168ea0747f7df84b8eb3647968f",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 50
+  },
+  "464": {
+   "year": 2014,
+   "sha256": "e2c8e2ddba45ba562dc9ca949b698c03b1c7385a9cc7a4d51a239cea7fc6ee65",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 88
+  },
+  "465": {
+   "year": 2015,
+   "sha256": "6a59da52d1c9c6260b5e1f95d5a81e96c62c1ced6b99d1babb8ab3d0cf7d8e0f",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 306
+  },
+  "466": {
+   "year": 2015,
+   "sha256": "0d65a0304dda9c214d5f9ec648ea439f44508f5e857a9dfec689ca8b4273fb9b",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 204
+  },
+  "467": {
+   "year": 2015,
+   "sha256": "739482f41c886512706b98e06d3b23867e445bf4195a57d5fdca0d9080dfb7f3",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 75
+  },
+  "468": {
+   "year": 2015,
+   "sha256": "70f6d342265be4cefa7deb264386c428a3c056dc7945c0c079d3c643eb668b19",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 20
+  },
+  "469": {
+   "year": 2015,
+   "sha256": "2fb81b647a36d80df478a528f8bc5b4b62b2d2120c4bfa9912bad95cf1873491",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 20
+  },
+  "470": {
+   "year": 2015,
+   "sha256": "32ab1f7468c54d4f72c5f207353a7efefd2e6fe9072ed66221244d9df2d2dcfe",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 80
+  },
+  "471": {
+   "year": 2015,
+   "sha256": "08e1544218e508518b1f67df870fdd38cea60e32c105b1943292c93dd710821c",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 80
+  },
+  "472": {
+   "year": 2015,
+   "sha256": "b24c4823248001d6c0f54e8744d38808b9e28ca68a05ea7ee39ce4098db7d4d3",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 56
+  },
+  "473": {
+   "year": 2015,
+   "sha256": "65682b4391566c67cb584a1c8e934b3226a95d52a660522679b01b3dfa278f43",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 15
+  },
+  "474": {
+   "year": 2015,
+   "sha256": "a174fa59b5665593c7eae10ea010b833136c5030784c6f9e5c16de563217e6b3",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 104
+  },
+  "475": {
+   "year": 2015,
+   "sha256": "359813f339cfd6f39d3ec92c0278bcffd16da2a1186e35308a8f81612d248f25",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 44
+  },
+  "476": {
+   "year": 2015,
+   "sha256": "4eeae56b8be12281de14aaae4301a53c6af52c86998e3ed159a5f01ffe051a25",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 43
+  },
+  "477": {
+   "year": 2015,
+   "sha256": "b2c506ab710469a3ba1e643f240e3d92ecd3bb54b09c6a76903b9ad0b341919e",
+   "tables": 14,
+   "labelled": 14,
+   "cells": 294
+  },
+  "478": {
+   "year": 2015,
+   "sha256": "f048120ffc64f11f5c97f71d84846090ab4718c550d14899561fee2932b102ad",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 66
+  },
+  "479": {
+   "year": 2015,
+   "sha256": "51881a2e9f39be136599d481f4b5857017f4d5082e065cff85bd0919cfa040d5",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 38
+  },
+  "480": {
+   "year": 2015,
+   "sha256": "4b709b58d3977cb60ca1d37da4a4de7bc1bc7edab07182e39644dd1fbe2abe2c",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 154
+  },
+  "481": {
+   "year": 2015,
+   "sha256": "28cf39253da55d1c1f33a68ac3c70af4c1941278f79c7b59524983e1cb72649a",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 103
+  },
+  "482": {
+   "year": 2015,
+   "sha256": "ab69a0ad7d518129e40d029a346279b91a3d0ac0a73ab4b3c823c6d6c77d454c",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 36
+  },
+  "483": {
+   "year": 2015,
+   "sha256": "7e1e9f39c1bf0c1fa5cbec3c732bcacba02b1bd3286560033194096aeb5720f7",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 60
+  },
+  "484": {
+   "year": 2015,
+   "sha256": "96929bbf37ee1a8fd53e1495f8590fb0a06ce785f548b1453e5268e395a7f1d7",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 70
+  },
+  "485": {
+   "year": 2015,
+   "sha256": "4c37193ad77aaf7bf6d8ad3f1c444bcb163402b4ff655022dbfd90baba192cbd",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 89
+  },
+  "486": {
+   "year": 2016,
+   "sha256": "98f55fa8faf78e85912b9bdbf9a35833ab292f30efcca041a6f317a7a24d86b3",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 104
+  },
+  "487": {
+   "year": 2016,
+   "sha256": "6c2633d927b2485d75e32a6d95a96eca476ae68e451f663a423e3677cde92c8f",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 208
+  },
+  "488": {
+   "year": 2016,
+   "sha256": "f5fbb8815aacf27e7cac556f654e331c02d78f39360686bdd6b088f6a3c64ff0",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 114
+  },
+  "489": {
+   "year": 2016,
+   "sha256": "25c86e4af0cdbf0682b8267c0e6ac11ea5fcd75e5ad846817ecd590ae0c2144e",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 98
+  },
+  "490": {
+   "year": 2016,
+   "sha256": "3679b351846483af3596350385f0b0545538face484f03d016d0d739b28ae78b",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 60
+  },
+  "491": {
+   "year": 2016,
+   "sha256": "13707bed41fea3bfa67d938891ef9f9be3d5a8ac6dbced3e03af4607ec5c53cb",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 60
+  },
+  "492": {
+   "year": 2016,
+   "sha256": "d447aaddb24fc74d8e51e81033b8ddd2362a460e8484f56125f02ae46e6ccfad",
+   "tables": 13,
+   "labelled": 13,
+   "cells": 405
+  },
+  "493": {
+   "year": 2016,
+   "sha256": "b6dc60b9ae996cf2e04bb3d242a2bec63b7279ba58fdb7ff0f447c125539a8e5",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 70
+  },
+  "494": {
+   "year": 2016,
+   "sha256": "6f13d2a6f3a103fa3b9be0c0c87a0465538c0ac3a4527687f046c22ee91f2040",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 140
+  },
+  "495": {
+   "year": 2016,
+   "sha256": "db4e3c42329cf388f024c8d410679157ba9d35c8759c003be57cc90c54726390",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 98
+  },
+  "496": {
+   "year": 2016,
+   "sha256": "38f6dea815ccf781c889772ac0001e05bb2b8f3e665bf531e9a938407e336ce2",
+   "tables": 7,
+   "labelled": 6,
+   "cells": 86
+  },
+  "497": {
+   "year": 2016,
+   "sha256": "ec7f8bae3261988faa28985f10e8f303f15ea215fa1ef169516e0c66dbff8f7e",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 94
+  },
+  "498": {
+   "year": 2017,
+   "sha256": "ac89e7f154af6ca7edac684eb6cf7cff0e5de88436f66bb5b44d3bab73844845",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 62
+  },
+  "499": {
+   "year": 2017,
+   "sha256": "d62ab064af3d1d5f477b18dfbc941a1c28828ff2a7c6801ee9cd24195d1c1d27",
+   "tables": 12,
+   "labelled": 12,
+   "cells": 320
+  },
+  "500": {
+   "year": 2017,
+   "sha256": "ec66fc5725e7345758964ca9b8b789a418f51e0e9d633c38acf1c1f278e40628",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 270
+  },
+  "501": {
+   "year": 2017,
+   "sha256": "2b6949ef56136fec93b797776af3a602d7b31a10ea3bb157a4f38114d2bd4673",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 60
+  },
+  "502": {
+   "year": 2017,
+   "sha256": "a2fc514cf2c487951d411a0260654e1996384f98ae871c451470aa4036c4c8fd",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 15
+  },
+  "503": {
+   "year": 2017,
+   "sha256": "8c0b55068dc528bd4b8172aa8aee6a3163c3db78beb35ef01859e871e292c3cf",
+   "tables": 15,
+   "labelled": 15,
+   "cells": 528
+  },
+  "504": {
+   "year": 2017,
+   "sha256": "37cfaf513a6c3c11b4e5ef2228999c08a533eef0b0ea697f412163f96fc4d201",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 68
+  },
+  "505": {
+   "year": 2017,
+   "sha256": "8a9ccc47481a6c5713ee4aa5eec779e5981454fe6b447c04c52e9202be7c9992",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 62
+  },
+  "506": {
+   "year": 2017,
+   "sha256": "0e9be1050d3de449b6096d6d5af1b276f248f18fd869adaf63484cf6e365f654",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 74
+  },
+  "507": {
+   "year": 2018,
+   "sha256": "a865ca125a3fb3e2c7fd60eb0c3d313065cd2bcac746f8ae863513fae6ff6298",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 40
+  },
+  "508": {
+   "year": 2018,
+   "sha256": "bacff3a025e2d15cff381171b2d25eb3cf462dcfe6b1c209449bf48952d50e37",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 107
+  },
+  "509": {
+   "year": 2018,
+   "sha256": "ec60bf2bff03f63ad3dc1bfb408a1046b2ca47a10e58a30716beac31d4a41e39",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 45
+  },
+  "510": {
+   "year": 2018,
+   "sha256": "16bfbd5f4fa5e814e7dd0ff569ef26f55e70a6c71faf09115d678a30897f0dcb",
+   "tables": 0,
+   "labelled": 0,
+   "cells": 0
+  },
+  "511": {
+   "year": 2018,
+   "sha256": "30016498d00de41eafba8fb56ee0aaf29dfa6a64ac280f523956d163ef1e4f8d",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 46
+  },
+  "512": {
+   "year": 2018,
+   "sha256": "3442936e6c4a0e42d210a95c4ea20caf51ce29aabbda013810544d4ea52fb7c9",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 378
+  },
+  "513": {
+   "year": 2018,
+   "sha256": "254756fe38bae1347bdac853856416919307eb9502943977ec5c96abacea9702",
+   "tables": 15,
+   "labelled": 15,
+   "cells": 587
+  },
+  "514": {
+   "year": 2018,
+   "sha256": "5fba743a28506713bc137d3e6129d4659726328fdc10baa01f0deb1dedec9257",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 56
+  },
+  "515": {
+   "year": 2018,
+   "sha256": "b56c4cbfebf7602d562b7937a22068cd8b3235a5448500be849785b493b25629",
+   "tables": 0,
+   "labelled": 0,
+   "cells": 0
+  },
+  "516": {
+   "year": 2018,
+   "sha256": "7feadd5c4d1e3e438f3ac197453d540732da1b041ca4fe7d9a65bea783c4e922",
+   "tables": 0,
+   "labelled": 0,
+   "cells": 0
+  },
+  "517": {
+   "year": 2018,
+   "sha256": "6aecb80121981853ae948786d1684a661a06c3d980c47f3ea665368ea510772f",
+   "tables": 6,
+   "labelled": 5,
+   "cells": 92
+  },
+  "518": {
+   "year": 2018,
+   "sha256": "d501b07e6540431243634e4221543e46086fdf7d69e5031449b45f36ad5229c3",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 70
+  },
+  "519": {
+   "year": 2018,
+   "sha256": "aa62dbf3384c589373f8fa115786072cfef7696c80b065a7bbcec5d89559fce5",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 37
+  },
+  "520": {
+   "year": 2019,
+   "sha256": "6063eccd012fd8ffc856619c3dca880fac782c6832b7c14d82a0aa373678a0a7",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 28
+  },
+  "521": {
+   "year": 2019,
+   "sha256": "94971c4ae0d5cbd404360d681a0d1a52c8218966ed2c94c044f6c88f3d1fa3a4",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 123
+  },
+  "522": {
+   "year": 2019,
+   "sha256": "61d21788ee334af31a414e8a797c56b72924be1358fdee886365454f0a8f5fc9",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 112
+  },
+  "523": {
+   "year": 2019,
+   "sha256": "38985901cdf2c8301b340b5d18953bd1eb613f7f01b96470ea0ee237c5ed5cb0",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 85
+  },
+  "524": {
+   "year": 2019,
+   "sha256": "bb3738e3b19e7d11907d9816b512c1c48b2108cf089f539c71cc06c9bedc92ff",
+   "tables": 15,
+   "labelled": 15,
+   "cells": 646
+  },
+  "525": {
+   "year": 2019,
+   "sha256": "cf3374a12860420d2d3bfb20e9d80b2eeb0c779790ec39d12a7ffc517636a07f",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 72
+  },
+  "526": {
+   "year": 2019,
+   "sha256": "29d7f956cf03cc14bd131b5cea654289f5e7b78e68298e9d0a594955450e5255",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 28
+  },
+  "527": {
+   "year": 2019,
+   "sha256": "b23e031aadfe17906369e4a09839bd460ff523152ecaf26fa1a3a252790053bc",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 72
+  },
+  "528": {
+   "year": 2020,
+   "sha256": "2fe19ff67848a0c839eac37de46a7650beb7c98154b26870b7827856433b85d3",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 123
+  },
+  "529": {
+   "year": 2020,
+   "sha256": "249fbaf6e2fa06ae45f3d4244650e96e769f3c36dbbd71c68055cd725bc8c447",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 68
+  },
+  "530": {
+   "year": 2020,
+   "sha256": "51857f0da6b1ad017a64efa9ad030439d5ec32715f1a0171ccd19aed5697a132",
+   "tables": 15,
+   "labelled": 15,
+   "cells": 705
+  },
+  "531": {
+   "year": 2020,
+   "sha256": "513ead13ae2cfd96bf1e68bf66503ff56fae9851fb26c15e5c0b3b1ea0edbc6b",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 45
+  },
+  "532": {
+   "year": 2020,
+   "sha256": "0e5746fe927b5bf33270451c2a30d04c1a4684a8e8e9ad5cc202cd1e3dbc7b0b",
+   "tables": 3,
+   "labelled": 3,
+   "cells": 110
+  },
+  "533": {
+   "year": 2021,
+   "sha256": "e08b858fbd3fc912d64d3008043b86e61a297c4c2db23bc157af1cf6328be205",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 139
+  },
+  "534": {
+   "year": 2021,
+   "sha256": "53fae3af8bb7975525eaacd912cb1e02412aed4a38487c4077575034f0708951",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 24
+  },
+  "535": {
+   "year": 2021,
+   "sha256": "d184ec8e4aa3c4b514b7d36af1dc6487895add33598121caec14a24becb15cbc",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 44
+  },
+  "536": {
+   "year": 2021,
+   "sha256": "3d7563c10e9d461aec6aaba5304abf7baefe3d3d09333797cf4f6fd9e5efa21f",
+   "tables": 15,
+   "labelled": 15,
+   "cells": 764
+  },
+  "537": {
+   "year": 2021,
+   "sha256": "2fc1a39be8da81e44370de8f9ec4dbb843347f3a2072ad6497fb31d58bc897ca",
+   "tables": 2,
+   "labelled": 2,
+   "cells": 132
+  },
+  "538": {
+   "year": 2021,
+   "sha256": "a8d26acca994d063ae16b410c50d43ee71786d43bc550ddea36efdeac3fe9d8e",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 84
+  },
+  "539": {
+   "year": 2022,
+   "sha256": "9fbef46417b63490ab22a40c7b57689f1b29bfc3102a83015a18415190276dc7",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 35
+  },
+  "540": {
+   "year": 2022,
+   "sha256": "5fd90b09a33016da5d39bedf4663d13c8dc96219679501dbedccd631d1894438",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 139
+  },
+  "541": {
+   "year": 2022,
+   "sha256": "26222b85e536097802190c7c6341add2dd875608b171403021d423802cb6cfc5",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 50
+  },
+  "542": {
+   "year": 2022,
+   "sha256": "f575fb9ac1064d76137c65eef59b9f94e0a353c7c5d045d2ce9b11edf9f040e7",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 52
+  },
+  "543": {
+   "year": 2022,
+   "sha256": "4aee0e23f8171c7de6b70a77d5e1875b8293ff9368c6319705f8e8d6fb8952be",
+   "tables": 15,
+   "labelled": 15,
+   "cells": 823
+  },
+  "545": {
+   "year": 2022,
+   "sha256": "fb347355672f61553d026f3918efaa70d9fbbcc9ad09d56f5567dd5051877700",
+   "tables": 7,
+   "labelled": 6,
+   "cells": 149
+  },
+  "546": {
+   "year": 2023,
+   "sha256": "a46240102a94806b67a85223ad1ad7bfe0b202b5a9fda265db08b49c205845be",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 135
+  },
+  "547": {
+   "year": 2023,
+   "sha256": "60490bb0469033bcfef1982ada947ea0bc26f5494e4eb1dcacd73c89182acbb8",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 169
+  },
+  "548": {
+   "year": 2023,
+   "sha256": "6057b201c45f3e821258ad3733a275d697f59e348e3a380150f6030993bf5555",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 220
+  },
+  "549": {
+   "year": 2023,
+   "sha256": "29887aae65d4851a19c1ffe3c1ab564ba0e21aaaf56f8039dfa876d7d8fea87e",
+   "tables": 26,
+   "labelled": 26,
+   "cells": 252
+  },
+  "550": {
+   "year": 2023,
+   "sha256": "e615d0f46e955cdede0bde359508e337a030783e64cc8444d34bb5c61a36cb0f",
+   "tables": 0,
+   "labelled": 0,
+   "cells": 0
+  },
+  "551": {
+   "year": 2023,
+   "sha256": "77a3b8724e7c72bac565e072ed7c71e777de2e629622f02424d2a65e35434973",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 50
+  },
+  "552": {
+   "year": 2023,
+   "sha256": "a178941c69cc5431e6cf32ca3d674466b336c86ac36dfe2adc64ac49c63794ee",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 52
+  },
+  "553": {
+   "year": 2023,
+   "sha256": "e67f4dc4e51f6299ca262b844a0e2f777aaa43c72791353746032088a9477d37",
+   "tables": 15,
+   "labelled": 15,
+   "cells": 882
+  },
+  "554": {
+   "year": 2024,
+   "sha256": "9e2c8afeb63d9536a635e5378107b2b79ba22c2ce9e7402014bf718bc794d968",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 29
+  },
+  "555": {
+   "year": 2024,
+   "sha256": "0ff3046565fa6fb2235795c083ff2515a396c2828c5c6b100d971bc24c7bcb50",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 131
+  },
+  "556": {
+   "year": 2024,
+   "sha256": "892605ce0d98c2c417c1453ff7812abfe8f493e1467e9425ff8eda2f253ac38f",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 165
+  },
+  "557": {
+   "year": 2024,
+   "sha256": "1b6dc55823992a5f1d915d23174937c1019de45ae7157571ddd2448799975505",
+   "tables": 7,
+   "labelled": 7,
+   "cells": 25
+  },
+  "558": {
+   "year": 2024,
+   "sha256": "4cef7a6ef8d3c006bdcb9d176e58574a87a2ef80e27fc953db9af9c76cde9149",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 41
+  },
+  "559": {
+   "year": 2025,
+   "sha256": "08cfb70f9aba440759de3adccfd6ab1e837898cfb670a6c72754acbd26033c69",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 63
+  },
+  "560": {
+   "year": 2025,
+   "sha256": "f291e4cb8dbb471ddfd339819c739f3de21657ee9b43918e1ec556a67d8064e2",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 176
+  },
+  "561": {
+   "year": 2025,
+   "sha256": "12fb10a8956d8ad24421d998d922d265d64aa888bbe074fab1168044d9ffae40",
+   "tables": 4,
+   "labelled": 4,
+   "cells": 19
+  },
+  "562": {
+   "year": 2025,
+   "sha256": "49b1993d5a59b7439b78d2cb375a3643f86a3130aa68e28a3155be67e7123c24",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 50
+  },
+  "563": {
+   "year": 2025,
+   "sha256": "5a50e2a43b22bac64908a1efa9ab751df1e2ad7cd48f37dbc5991b39acc6d41b",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 76
+  },
+  "564": {
+   "year": 2025,
+   "sha256": "92d1b51968f8acad413c84f87b9b058df95ac091522997c7c64d65fba7149523",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 78
+  },
+  "565": {
+   "year": 2025,
+   "sha256": "cf927fcc3a99cdc18d57d6c84bf039d3ee2765966730a9a6b04bdc09b88b3dff",
+   "tables": 1,
+   "labelled": 1,
+   "cells": 21
+  },
+  "566": {
+   "year": 2025,
+   "sha256": "d033d6403b9d722bd32fe98259ee02711f1c0ef9c62e82df6f99844fca239796",
+   "tables": 5,
+   "labelled": 5,
+   "cells": 64
+  },
+  "567": {
+   "year": 2025,
+   "sha256": "6521a3025d67b06ea3b59df91ab316997745d034da08cc9cd14d62c316bfd5da",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 46
+  },
+  "568": {
+   "year": 2025,
+   "sha256": "dec035c6d51af87b3734e3fff48d50955fe064fa41a59405dceb8a288c5962aa",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 50
+  },
+  "569": {
+   "year": 2025,
+   "sha256": "2954c25efed8fdff234bf1c70ce5dabd981e679ccfecb169e4fc01a70ffac429",
+   "tables": 8,
+   "labelled": 8,
+   "cells": 26
+  },
+  "570": {
+   "year": 2025,
+   "sha256": "7e04e05ecfa2dea63937ccef32816892767161115527f3e94bc684d31fe36912",
+   "tables": 6,
+   "labelled": 6,
+   "cells": 50
+  }
+ },
+ "sum_check": {
+  "distribution_tables": 380,
+  "flagged": [
+   {
+    "cols_ok": 0,
+    "cols": 7,
+    "rows_ok": 0,
+    "rows": 15,
+    "passed": false,
+    "number": 94,
+    "index": 3,
+    "label": "Table 3",
+    "title": "Table 3. Distribution of home health care expenditures for the U.S. civilian noninstitutionalized population, by age group and payment source, 1998/99 and 2002"
+   },
+   {
+    "cols_ok": 1,
+    "cols": 4,
+    "rows_ok": 0,
+    "rows": 11,
+    "passed": false,
+    "number": 106,
+    "index": 3,
+    "label": "Table 3",
+    "title": "Table 3. Distribution of total health care expenses by source of payment: United States and 10 largest States, 2003"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 0,
+    "rows_ok": 0,
+    "rows": 1,
+    "passed": false,
+    "number": 111,
+    "index": 1,
+    "label": "Figure 1",
+    "title": "Figure 1. Distribution of payments for emergency department visits, 2003 Average 10th percentile 25th percentile 50th percentile (Median) 75th percentile 90th percentile"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 4,
+    "rows_ok": 0,
+    "rows": 11,
+    "passed": false,
+    "number": 151,
+    "index": 3,
+    "label": "Table 3",
+    "title": "Table 3. Distribution of total health care expenses by source of payment: United States and 10 largest States, 2004 Sources of payment Private insurance Medicare Medicaid Out of pocket"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 0,
+    "rows_ok": 0,
+    "rows": 1,
+    "passed": false,
+    "number": 164,
+    "index": 4,
+    "label": "Figure 3",
+    "title": "Figure 3. Distribution of inpatient expenses per stay, 2004 Average 10th percentile 25th percentile 50th percentile (Median) 75th percentile 90th percentile"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 4,
+    "rows_ok": 0,
+    "rows": 11,
+    "passed": false,
+    "number": 192,
+    "index": 3,
+    "label": "Table 3",
+    "title": "Table 3. Distribution percentage of total health care expenses by source of payment: United States and 10 largest states, 2005"
+   },
+   {
+    "cols_ok": 2,
+    "cols": 4,
+    "rows_ok": 0,
+    "rows": 4,
+    "passed": false,
+    "number": 197,
+    "index": 1,
+    "label": "Table 1",
+    "title": "Table 1. Distribution and medical expenditures of the non-elderly by insurance status, 2004 Insurance status Number of people (in millions) Percentage of total non-elderly Expenditures1 (billions of d"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 1,
+    "rows_ok": 0,
+    "rows": 0,
+    "passed": false,
+    "number": 225,
+    "index": 5,
+    "label": "Figure 5",
+    "title": "Figure 5. Percentage distribution by health status of adults uninsured 6 to 12 months, 2002-2005 Race/Ethnicity One or more chronic condition"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 3,
+    "rows_ok": 1,
+    "rows": 2,
+    "passed": false,
+    "number": 227,
+    "index": 4,
+    "label": "Figure 4",
+    "title": "Figure 4. Age Distribution of Individuals with Full Year and Part Year Individual Market Health Insurance Coverage, in 2006 Coverage < 18 19-25 26-35 36-45 46-55 56-60 61-64"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 6,
+    "rows_ok": 0,
+    "rows": 2,
+    "passed": false,
+    "number": 240,
+    "index": 4,
+    "label": "Figure 4",
+    "title": "Figure 4. Source of payment distributions for outpatient prescribed drug expenditures for the Medicare population, 2005 and 2006 Year Total expenditures (in billions of dollars) Medicare Medicaid Out "
+   },
+   {
+    "cols_ok": 0,
+    "cols": 3,
+    "rows_ok": 0,
+    "rows": 6,
+    "passed": false,
+    "number": 318,
+    "index": 2,
+    "label": "Figure 2",
+    "title": "Figure 2. Distribution of expenses for different settings, 2008 OB OP ER"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 3,
+    "rows_ok": 0,
+    "rows": 6,
+    "passed": false,
+    "number": 318,
+    "index": 4,
+    "label": "Figure 4",
+    "title": "Figure 4. Distribution of expenses for visits without surgery in different settings, 2008 OB OP ER"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 3,
+    "rows_ok": 0,
+    "rows": 8,
+    "passed": false,
+    "number": 348,
+    "index": 5,
+    "label": "Figure 5",
+    "title": "Figure 5. Distribution of expenditures on treatment of thyroid disease among adult women, by source of payment and type of service, 2008 Total Ambulatory Prescription medications"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 0,
+    "rows_ok": 0,
+    "rows": 1,
+    "passed": false,
+    "number": 357,
+    "index": 6,
+    "label": "Figure 6",
+    "title": "Figure 6. Percentage distribution of total expenditures for mental health disorders, by source of payment: Children, ages 5-17, 2007-2009 (average annual) Medicare Private insurance Medicaid Out of po"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 0,
+    "rows_ok": 0,
+    "rows": 1,
+    "passed": false,
+    "number": 358,
+    "index": 6,
+    "label": "Figure 6",
+    "title": "Figure 6. Percentage distribution of total expenditures for mental health disorders, by source of payment: Ages 18-26, 2007-2009 Medicare Private insurance Medicaid Out of pocket Other"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 5,
+    "rows_ok": 2,
+    "rows": 4,
+    "passed": false,
+    "number": 359,
+    "index": 7,
+    "label": "Figure 5",
+    "title": "Figure 5.2 Percentage distribution of total expenditures for most costly conditions, by source of payment, 2009 Out of Pocket Private Medicare Medicaid Other"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 0,
+    "rows_ok": 0,
+    "rows": 1,
+    "passed": false,
+    "number": 396,
+    "index": 1,
+    "label": "Figure 1",
+    "title": "Figure 1. Percentage distribution of health care spending, by type of service, 2010 Hospital inpatient Office-based visits Prescribed medicines Hospital outpatient Dental Emergency room Home health ca"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 0,
+    "rows_ok": 0,
+    "rows": 1,
+    "passed": false,
+    "number": 401,
+    "index": 4,
+    "label": "Figure 3",
+    "title": "Figure 3. Distribution of inpatient expenses per stay, 2010 Average 10th percentile 25th percentile 50th percentile (median) 75th percentile 90th percentile"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 5,
+    "rows_ok": 0,
+    "rows": 2,
+    "passed": false,
+    "number": 421,
+    "index": 1,
+    "label": "Figure 1",
+    "title": "Figure 1. Distribution of health expenditures for the U.S. population by magnitude of expenditure and mean expenditures, 2010"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 8,
+    "rows_ok": 0,
+    "rows": 8,
+    "passed": false,
+    "number": 421,
+    "index": 2,
+    "label": "Figure 2a",
+    "title": "Figure 2a. Distribution of health care expenditures for the U.S. population by age, 2010"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 8,
+    "rows_ok": 0,
+    "rows": 8,
+    "passed": false,
+    "number": 421,
+    "index": 3,
+    "label": "Figure 3a",
+    "title": "Figure 3a. Distribution of health care expenditures for the U.S. population by race/ethnicity, 2010"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 8,
+    "rows_ok": 0,
+    "rows": 4,
+    "passed": false,
+    "number": 421,
+    "index": 4,
+    "label": "Figure 4a",
+    "title": "Figure 4a. Distribution of health care expenditures for the U.S. population by sex, 2010"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 8,
+    "rows_ok": 0,
+    "rows": 6,
+    "passed": false,
+    "number": 421,
+    "index": 5,
+    "label": "Figure 5a",
+    "title": "Figure 5a. Distribution of health care expenditures for the U.S. population by insurance coverage status for those less than 65 years of age, 2010"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 8,
+    "rows_ok": 0,
+    "rows": 10,
+    "passed": false,
+    "number": 421,
+    "index": 6,
+    "label": "Figure 6a",
+    "title": "Figure 6a. Distribution of health care expenditures for the U.S. population by number of chronic conditions, 2010"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 8,
+    "rows_ok": 0,
+    "rows": 10,
+    "passed": false,
+    "number": 421,
+    "index": 7,
+    "label": "Figure 7a",
+    "title": "Figure 7a. Distribution of health care expenditures for the U.S. population by income, 2010"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 2,
+    "rows_ok": 0,
+    "rows": 5,
+    "passed": false,
+    "number": 423,
+    "index": 1,
+    "label": "Figure 1",
+    "title": "Figure 1. Distribution of out-of-pocket health expenditures for the U.S. population by magnitude of out-of-pocket expenditure and mean out-of-pocket expenditures, 2011"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 8,
+    "rows_ok": 0,
+    "rows": 8,
+    "passed": false,
+    "number": 423,
+    "index": 4,
+    "label": "Figure 5",
+    "title": "Figure 5. Distribution of out-of-pocket health care expenditures and mean out-of-pocket expenditures for the U.S. population by age, 2011"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 8,
+    "rows_ok": 0,
+    "rows": 8,
+    "passed": false,
+    "number": 423,
+    "index": 5,
+    "label": "Figure 6",
+    "title": "Figure 6. Distribution of out-of-pocket health care expenditures and mean out-of-pocket expenditures for the U.S. population by race/ethnicity, 2011"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 4,
+    "rows_ok": 0,
+    "rows": 4,
+    "passed": false,
+    "number": 423,
+    "index": 6,
+    "label": "Figure 7",
+    "title": "Figure 7. Distribution of out-of-pocket health care expenditures and mean out-of-pocket expenditures for the U.S. population by sex, 2011"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 6,
+    "rows_ok": 0,
+    "rows": 4,
+    "passed": false,
+    "number": 423,
+    "index": 7,
+    "label": "Figure 8",
+    "title": "Figure 8. Distribution of out-of-pocket health care expenditures and mean out-of-pocket expenditures of the U.S. population under age 65 by insurance status, 2011"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 10,
+    "rows_ok": 0,
+    "rows": 4,
+    "passed": false,
+    "number": 423,
+    "index": 8,
+    "label": "Figure 9",
+    "title": "Figure 9. Distribution of out-of-pocket health care expenditures and mean out-of-pocket expenditures for the U.S. population by income, 2011"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 5,
+    "rows_ok": 0,
+    "rows": 2,
+    "passed": false,
+    "number": 448,
+    "index": 1,
+    "label": "Figure 1",
+    "title": "Figure 1. Distribution of health expenditures for the U.S. population by magnitude of expenditure and mean expenditures, 2012"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 8,
+    "rows_ok": 0,
+    "rows": 8,
+    "passed": false,
+    "number": 448,
+    "index": 2,
+    "label": "Figure 2",
+    "title": "Figure 2. Distribution of health care expenditures and mean expenditures for the U.S. population by age, 2012"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 8,
+    "rows_ok": 0,
+    "rows": 8,
+    "passed": false,
+    "number": 448,
+    "index": 3,
+    "label": "Figure 3",
+    "title": "Figure 3. Distribution of health care expenditures and mean expenditures for the U.S. population by race/ethnicity, 2012"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 8,
+    "rows_ok": 0,
+    "rows": 4,
+    "passed": false,
+    "number": 448,
+    "index": 4,
+    "label": "Figure 4",
+    "title": "Figure 4. Distribution of health care expenditures and mean expenditures for the U.S. population by sex, 2012"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 8,
+    "rows_ok": 0,
+    "rows": 6,
+    "passed": false,
+    "number": 448,
+    "index": 5,
+    "label": "Figure 5",
+    "title": "Figure 5. Distribution of health care expenditures and mean expenditures for the U.S. population under age 65 by insurance coverage status, 2012"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 8,
+    "rows_ok": 0,
+    "rows": 10,
+    "passed": false,
+    "number": 448,
+    "index": 6,
+    "label": "Figure 6",
+    "title": "Figure 6. Distribution of health care expenditures and mean expenditures for the U.S. population by number of chronic conditions, 2012"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 8,
+    "rows_ok": 0,
+    "rows": 10,
+    "passed": false,
+    "number": 448,
+    "index": 7,
+    "label": "Figure 7",
+    "title": "Figure 7. Distribution of health care expenditures and mean expenditures for the U.S. population by income, 2012"
+   },
+   {
+    "cols_ok": 3,
+    "cols": 4,
+    "rows_ok": 0,
+    "rows": 5,
+    "passed": false,
+    "number": 449,
+    "index": 2,
+    "label": "Figure 2",
+    "title": "Figure 2. Distribution of population by persistence of health care expenditures and age, in the U.S. civilian noninstitutionalized population, 2011 to 2012"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 2,
+    "rows_ok": 0,
+    "rows": 5,
+    "passed": false,
+    "number": 450,
+    "index": 1,
+    "label": "Figure 1",
+    "title": "Figure 1. Distribution of out-of-pocket health expenditures for the U.S. population by magnitude of out-of-pocket expenditure and mean out-of-pocket expenditures, 2012"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 8,
+    "rows_ok": 0,
+    "rows": 8,
+    "passed": false,
+    "number": 450,
+    "index": 4,
+    "label": "Figure 5",
+    "title": "Figure 5. Distribution of out-of-pocket health care expenditures and mean out-of-pocket expenditures for the U.S. population by age, 2012"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 8,
+    "rows_ok": 0,
+    "rows": 8,
+    "passed": false,
+    "number": 450,
+    "index": 5,
+    "label": "Figure 6",
+    "title": "Figure 6. Distribution of out-of-pocket health care expenditures and mean out-of-pocket expenditures for the U.S. population by race/ethnicity, 2012"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 4,
+    "rows_ok": 0,
+    "rows": 8,
+    "passed": false,
+    "number": 450,
+    "index": 6,
+    "label": "Figure 7",
+    "title": "Figure 7. Distribution of out-of-pocket health care expenditures and mean out-of-pocket expenditures for the U.S. population by sex, 2012"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 6,
+    "rows_ok": 0,
+    "rows": 7,
+    "passed": false,
+    "number": 450,
+    "index": 7,
+    "label": "Figure 8",
+    "title": "Figure 8. Distribution of out-of-pocket health care expenditures and mean out-of-pocket expenditures for the U.S. population under age 65 by insurance status, 2012"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 10,
+    "rows_ok": 0,
+    "rows": 8,
+    "passed": false,
+    "number": 450,
+    "index": 8,
+    "label": "Figure 9",
+    "title": "Figure 9. Distribution of out-of-pocket health care expenditures and mean out-of-pocket expenditures for the U.S. population by income, 2012"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 5,
+    "rows_ok": 0,
+    "rows": 2,
+    "passed": false,
+    "number": 480,
+    "index": 1,
+    "label": "Figure 1",
+    "title": "Figure 1. Distribution of health expenditures for the U.S. population by magnitude of expenditure and mean expenditures, 2013"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 8,
+    "rows_ok": 0,
+    "rows": 8,
+    "passed": false,
+    "number": 480,
+    "index": 2,
+    "label": "Figure 2",
+    "title": "Figure 2. Distribution of health care expenditures and mean expenditures for the U.S. population by age, 2013"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 8,
+    "rows_ok": 0,
+    "rows": 8,
+    "passed": false,
+    "number": 480,
+    "index": 3,
+    "label": "Figure 3",
+    "title": "Figure 3. Distribution of health care expenditures and mean expenditures for the U.S. population by race/ethnicity, 2013"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 8,
+    "rows_ok": 0,
+    "rows": 4,
+    "passed": false,
+    "number": 480,
+    "index": 4,
+    "label": "Figure 4",
+    "title": "Figure 4. Distribution of health care expenditures and mean expenditures for the U.S. population by sex, 2013"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 8,
+    "rows_ok": 0,
+    "rows": 6,
+    "passed": false,
+    "number": 480,
+    "index": 5,
+    "label": "Figure 5",
+    "title": "Figure 5. Distribution of health care expenditures and mean expenditures for the U.S. population under age 65 by insurance coverage status, 2013"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 8,
+    "rows_ok": 0,
+    "rows": 10,
+    "passed": false,
+    "number": 480,
+    "index": 6,
+    "label": "Figure 6",
+    "title": "Figure 6. Distribution of health care expenditures and mean expenditures for the U.S. population by income, 2013"
+   },
+   {
+    "cols_ok": 2,
+    "cols": 4,
+    "rows_ok": 0,
+    "rows": 5,
+    "passed": false,
+    "number": 481,
+    "index": 5,
+    "label": "Figure 5",
+    "title": "Figure 5. Distribution of population by persistence of health care expenditures and health status, in the U.S. civilian noninstitutionalized population, 2012 to 2013"
+   },
+   {
+    "cols_ok": 3,
+    "cols": 4,
+    "rows_ok": 0,
+    "rows": 5,
+    "passed": false,
+    "number": 481,
+    "index": 7,
+    "label": "Figure 7",
+    "title": "Figure 7. Distribution of population by persistence of health care expenditures and poverty status, in the U.S. civilian noninstitutionalized population, 2012 to 2013"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 5,
+    "rows_ok": 1,
+    "rows": 16,
+    "passed": false,
+    "number": 494,
+    "index": 3,
+    "label": "Table 1",
+    "title": "Table 1: Distribution of ambulatory visits by coverage type among adults ages 19 to 64, in expansion and non-expansion states: Last 6 months of 2011\u201313 and 2014"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 2,
+    "rows_ok": 0,
+    "rows": 6,
+    "passed": false,
+    "number": 494,
+    "index": 4,
+    "label": "Table 2",
+    "title": "Table 2: Distribution of insurance coverage among adults ages 19 to 64 in expansion and non-expansion states: Last 6 months of 2011-13 and 2014"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 4,
+    "rows_ok": 0,
+    "rows": 5,
+    "passed": false,
+    "number": 495,
+    "index": 2,
+    "label": "Figure 2",
+    "title": "Figure 2. Distribution of people with health care expenses* by annual out-of-pocket payment amounts, and age, 2014"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 2,
+    "rows_ok": 0,
+    "rows": 4,
+    "passed": false,
+    "number": 497,
+    "index": 3,
+    "label": "Figure 3",
+    "title": "Figure 3. Distribution of population and expenditures by age group, 2014"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 0,
+    "rows_ok": 0,
+    "rows": 1,
+    "passed": false,
+    "number": 502,
+    "index": 2,
+    "label": "Figure 2",
+    "title": "Figure 2. Distribution of practice type visited among persons who saw their usual source of care, 2015"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 2,
+    "rows_ok": 0,
+    "rows": 10,
+    "passed": false,
+    "number": 504,
+    "index": 3,
+    "label": "Figure 3",
+    "title": "Figure 3. Percentage distributions of child visits to office-based physicians according to selected characteristics: Private versus Medicaid insurance, 2014-15 annual average"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 5,
+    "rows_ok": 3,
+    "rows": 4,
+    "passed": false,
+    "number": 529,
+    "index": 4,
+    "label": "Figure 4",
+    "title": "Figure 4. Distribution of spending by source of payment for top opioid products^, U.S. civilian noninstitutionalized adult population, 2017"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 10,
+    "rows_ok": 0,
+    "rows": 5,
+    "passed": false,
+    "number": 532,
+    "index": 1,
+    "label": "Figure 1",
+    "title": "Figure 1: Distribution of out-of-pocket expenditures on retail prescribed drugs, civilian noninstitutionalized population, 2009-2018"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 6,
+    "rows_ok": 0,
+    "rows": 5,
+    "passed": false,
+    "number": 532,
+    "index": 2,
+    "label": "Figure 2",
+    "title": "Figure 2: Distribution of out-of-pocket expenditures among the non-elderly on retail prescribed drugs, by insurance status, 2009 and 2018"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 6,
+    "rows_ok": 0,
+    "rows": 5,
+    "passed": false,
+    "number": 532,
+    "index": 3,
+    "label": "Figure 3",
+    "title": "Figure 3: Distribution of out-of-pocket expenditures among the elderly on retail prescribed drugs, by drug coverage, 2009 and 2018"
+   },
+   {
+    "cols_ok": 1,
+    "cols": 2,
+    "rows_ok": 0,
+    "rows": 3,
+    "passed": false,
+    "number": 539,
+    "index": 4,
+    "label": "Figure 4",
+    "title": "Figure 4. Percentage distribution of expenditures for treatment of mental disorders among adults ages 18 and older, by type of service, 2019"
+   },
+   {
+    "cols_ok": 1,
+    "cols": 2,
+    "rows_ok": 0,
+    "rows": 5,
+    "passed": false,
+    "number": 539,
+    "index": 5,
+    "label": "Figure 5",
+    "title": "Figure 5. Percentage distribution of expenditures for treatment of mental disorders among adults ages 18 and older, by source of payment, 2019"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 1,
+    "rows_ok": 0,
+    "rows": 0,
+    "passed": false,
+    "number": 545,
+    "index": 2,
+    "label": "Table 1",
+    "title": "Table 1: Percentage distribution of older adults according to the number of treated conditions ix , 2019"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 2,
+    "rows_ok": 0,
+    "rows": 4,
+    "passed": false,
+    "number": 547,
+    "index": 2,
+    "label": "Figure 2",
+    "title": "Figure 2. Distribution of insurance status of birth mothers at time of birth, Pre-ACA and Post-ACA"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 8,
+    "rows_ok": 0,
+    "rows": 4,
+    "passed": false,
+    "number": 547,
+    "index": 3,
+    "label": "Figure 3",
+    "title": "Figure 3. Distribution of insurance status of birth mothers at time of birth by age, Pre-ACA and Post-ACA"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 6,
+    "rows_ok": 0,
+    "rows": 4,
+    "passed": false,
+    "number": 547,
+    "index": 4,
+    "label": "Figure 4",
+    "title": "Figure 4. Distribution of insurance status of birth mothers at time of birth by race/ethnicity, Pre-ACA and Post-ACA"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 10,
+    "rows_ok": 0,
+    "rows": 4,
+    "passed": false,
+    "number": 547,
+    "index": 5,
+    "label": "Figure 5",
+    "title": "Figure 5. Distribution of Insurance Status of Birth Mothers at Time of Birth by Education, Pre-ACA and Post-ACA"
+   },
+   {
+    "cols_ok": 0,
+    "cols": 8,
+    "rows_ok": 0,
+    "rows": 4,
+    "passed": false,
+    "number": 547,
+    "index": 6,
+    "label": "Figure 6",
+    "title": "Figure 6. Distribution of insurance status of birth mothers at time of birth by percentage of the federal poverty level, Pre-ACA and Post-ACA"
+   }
+  ]
+ },
+ "totals": {
+  "tables": 2999,
+  "cells": 41342,
+  "briefs_with_table": 538
+ },
+ "cell_files": [
+  "st000-099.csv",
+  "st100-199.csv",
+  "st200-299.csv",
+  "st300-399.csv",
+  "st400-499.csv",
+  "st500-599.csv"
+ ]
+}
