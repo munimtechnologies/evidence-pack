@@ -1,0 +1,41 @@
+cid,figure,kind,published,value,gap,exact,close,status,underspecified
+F1-p10-cum,1,cumpct,0.0,0.0,0.0,True,True,computed,True
+F1-p10-total,1,total,0,0.0,0.0,True,True,computed,True
+F1-p20-cum,1,cumpct,0.1,0.0823,-0.0177,True,True,computed,True
+F1-p20-total,1,total,1.7,1.6839,-0.0161,True,True,computed,True
+F1-p30-cum,1,cumpct,0.5,0.4965,-0.0035,True,True,computed,True
+F1-p30-total,1,total,10.2,10.1623,-0.0377,True,True,computed,True
+F1-p40-cum,1,cumpct,1.4,1.3854,-0.0146,True,True,computed,True
+F1-p40-total,1,total,28.4,28.3565,-0.0435,True,True,computed,True
+F1-p50-cum,1,cumpct,3.0,2.9908,-0.0092,True,True,computed,True
+F1-p50-total,1,total,61.2,61.2141,0.0141,True,True,computed,True
+F1-p60-cum,1,cumpct,5.7,5.7401,0.0401,True,True,computed,True
+F1-p60-total,1,total,117.5,117.4855,-0.0145,True,True,computed,True
+F1-p70-cum,1,cumpct,10.4,10.4119,0.0119,True,True,computed,True
+F1-p70-total,1,total,213.1,213.1077,0.0077,True,True,computed,True
+F1-p80-cum,1,cumpct,18.6,18.5988,-0.0012,True,True,computed,True
+F1-p80-total,1,total,380.7,380.6734,-0.0266,True,True,computed,True
+F1-p90-cum,1,cumpct,35.0,35.0067,0.0067,True,True,computed,True
+F1-p90-total,1,total,716.5,716.5051,0.0051,True,True,computed,True
+F1-p95-cum,1,cumpct,51.2,51.2321,0.0321,True,True,computed,True
+F1-p95-total,1,total,"1,048.6",1048.6011,0.0011,True,True,computed,True
+F1-p99-cum,1,cumpct,79.3,79.2619,-0.0381,True,True,computed,True
+F1-p99-total,1,total,"1,622.3",1622.305,0.005,True,True,computed,True
+F1-p100-total,1,total,"2,046.8",2046.7651,-0.0349,True,True,computed,True
+F2-Overall,2,mean,"6,252",6251.6365,-0.3635,True,True,computed,False
+F2-Bottom50,2,mean,374,373.9244,-0.0756,True,True,computed,False
+F2-Top50,2,mean,"12,130",12129.9838,-0.0162,True,True,computed,False
+F2-Top30,2,mean,"18,669",18669.1028,0.1028,True,True,computed,False
+F2-Top10,2,mean,"40,638",40638.0219,0.0219,True,True,computed,False
+F2-Top5,2,mean,"61,007",61007.2839,0.2839,True,True,computed,False
+F2-Top1,2,mean,"130,087",130087.1964,0.1964,True,True,computed,False
+F3-c1-Overall,3,nc,7.6,,,,,not computable,False
+F3-c1-Top5,3,nc,26.2,,,,,not computable,False
+F3-c2-Overall,3,nc,11.7,,,,,not computable,False
+F3-c2-Top5,3,nc,28.4,,,,,not computable,False
+F3-c3-Overall,3,nc,6.7,,,,,not computable,False
+F3-c3-Top5,3,nc,28.8,,,,,not computable,False
+F3-c4-Overall,3,nc,13.5,,,,,not computable,False
+F3-c4-Top5,3,nc,35.1,,,,,not computable,False
+F3-c5-Overall,3,nc,15.7,,,,,not computable,False
+F3-c5-Top5,3,nc,36.3,,,,,not computable,False
