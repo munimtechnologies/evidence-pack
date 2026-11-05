@@ -1,0 +1,698 @@
+{
+ "version": "0.1.0",
+ "brief": 507,
+ "file": "H181",
+ "error": null,
+ "data": {
+  "file": "h181dat.zip",
+  "bytes": 9929884,
+  "sha256": "75e50de4bdbd2dcc08c61472c1926395d322d5add57f155b638b23033822e5ee"
+ },
+ "positions": {
+  "AGELAST": [
+   179,
+   180
+  ],
+  "CPSFAMID": [
+   29,
+   30
+  ],
+  "DUID": [
+   1,
+   5
+  ],
+  "FAMWT15C": [
+   5308,
+   5319
+  ],
+  "FCRP1231": [
+   33,
+   34
+  ],
+  "POVCAT15": [
+   1432,
+   1432
+  ],
+  "TOTEXP15": [
+   2563,
+   2568
+  ],
+  "TOTSLF15": [
+   2569,
+   2573
+  ]
+ },
+ "gate": {
+  "rows": 35427,
+  "rows_expected": 35427,
+  "positive_FAMWT15C": [
+   33850,
+   33850
+  ],
+  "zero_TOTSLF15": [
+   13409,
+   13409
+  ],
+  "zero_TOTEXP15": [
+   6936,
+   6936
+  ],
+  "counts_FCRP1231": {
+   "-1": [
+    411,
+    411
+   ],
+   "0": [
+    20135,
+    20135
+   ],
+   "1": [
+    14881,
+    14881
+   ]
+  },
+  "counts_POVCAT15": {
+   "1": [
+    7924,
+    7924
+   ],
+   "2": [
+    2260,
+    2260
+   ],
+   "3": [
+    5921,
+    5921
+   ],
+   "4": [
+    10111,
+    10111
+   ],
+   "5": [
+    9211,
+    9211
+   ]
+  },
+  "negative_money": 0,
+  "age_out_of_range": 0,
+  "passed": true,
+  "families": [
+   14522,
+   14522
+  ],
+  "keys_ref_not_1": 0
+ },
+ "family_diagnostics": {
+  "members_zero_famwt": 1166,
+  "keys_ref_not_1": 0,
+  "pov_mixed": 0,
+  "weight_mixed": 0,
+  "families": 14522,
+  "families_weighted": 141808361.835241
+ },
+ "diagnostics": {
+  "n": {
+   "inc:All": 10110,
+   "str:All": 10110,
+   "inc:Poor": 2890,
+   "inc:Low": 1594,
+   "inc:Middle": 2775,
+   "inc:High": 2851,
+   "str:1A0C": 3397,
+   "str:2A0C": 2243,
+   "str:1A1C": 1443,
+   "str:2A1C": 3026
+  },
+  "nonelderly_families_weighted": 105731080.227271,
+  "population_weighted": 97203560.07293,
+  "share_with_expense": 91.93470818986154,
+  "no_adult_families": 1,
+  "table1_crosstab_exploratory": {
+   "Poor|1A0C": {
+    "weighted": 9888909.327297,
+    "pct": 10.173402414353484
+   },
+   "Poor|2A0C": {
+    "weighted": 1623315.968615,
+    "pct": 1.6700169905269484
+   },
+   "Poor|1A1C": {
+    "weighted": 4235591.6355,
+    "pct": 4.3574449663388
+   },
+   "Poor|2A1C": {
+    "weighted": 3646230.967647,
+    "pct": 3.7511290377752644
+   },
+   "Low|1A0C": {
+    "weighted": 4939862.807017,
+    "pct": 5.081977247860793
+   },
+   "Low|2A0C": {
+    "weighted": 2014541.36255,
+    "pct": 2.0724975104188856
+   },
+   "Low|1A1C": {
+    "weighted": 1569118.582175,
+    "pct": 1.6142604046577307
+   },
+   "Low|2A1C": {
+    "weighted": 3635672.612276,
+    "pct": 3.7402669300879756
+   },
+   "Middle|1A0C": {
+    "weighted": 10352118.272759,
+    "pct": 10.649937373684669
+   },
+   "Middle|2A0C": {
+    "weighted": 5997501.656404,
+    "pct": 6.170043208195448
+   },
+   "Middle|1A1C": {
+    "weighted": 1780192.084159,
+    "pct": 1.831406260041665
+   },
+   "Middle|2A1C": {
+    "weighted": 9252391.565257,
+    "pct": 9.518572733668504
+   },
+   "High|1A0C": {
+    "weighted": 11682489.398639,
+    "pct": 12.018581819301524
+   },
+   "High|2A0C": {
+    "weighted": 15021667.641981,
+    "pct": 15.453824562300525
+   },
+   "High|1A1C": {
+    "weighted": 940308.676609,
+    "pct": 0.9673603270327796
+   },
+   "High|2A1C": {
+    "weighted": 10617041.890801,
+    "pct": 10.9224825539674
+   }
+  }
+ },
+ "cells": [
+  {
+   "cid": "F1-All",
+   "figure": 1,
+   "kind": "median",
+   "published": "451",
+   "underspecified": true,
+   "status": "computed",
+   "value": 450.78609326486577,
+   "gap": -0.21390673513423053,
+   "exact": true,
+   "close": true,
+   "alt_lower_median": 451.0
+  },
+  {
+   "cid": "F1-Poor",
+   "figure": 1,
+   "kind": "median",
+   "published": "86",
+   "underspecified": true,
+   "status": "computed",
+   "value": 86.32604605375877,
+   "gap": 0.32604605375877327,
+   "exact": true,
+   "close": true,
+   "alt_lower_median": 87.0
+  },
+  {
+   "cid": "F1-Low",
+   "figure": 1,
+   "kind": "median",
+   "published": "252",
+   "underspecified": true,
+   "status": "computed",
+   "value": 252.4614710603149,
+   "gap": 0.46147106031489216,
+   "exact": true,
+   "close": true,
+   "alt_lower_median": 254.0
+  },
+  {
+   "cid": "F1-Middle",
+   "figure": 1,
+   "kind": "median",
+   "published": "504",
+   "underspecified": true,
+   "status": "computed",
+   "value": 504.34328182873537,
+   "gap": 0.34328182873537116,
+   "exact": true,
+   "close": true,
+   "alt_lower_median": 505.0
+  },
+  {
+   "cid": "F1-High",
+   "figure": 1,
+   "kind": "median",
+   "published": "868",
+   "underspecified": true,
+   "status": "computed",
+   "value": 868.3091729015237,
+   "gap": 0.3091729015236524,
+   "exact": true,
+   "close": true,
+   "alt_lower_median": 869.0
+  },
+  {
+   "cid": "F2-lt100-All",
+   "figure": 2,
+   "kind": "dist",
+   "published": "25%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 24.50127546821765,
+   "gap": -0.49872453178235077,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-lt100-Poor",
+   "figure": 2,
+   "kind": "dist",
+   "published": "52%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 51.97902278626912,
+   "gap": -0.02097721373088035,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-lt100-Low",
+   "figure": 2,
+   "kind": "dist",
+   "published": "33%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 33.23408631849348,
+   "gap": 0.23408631849348183,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-lt100-Middle",
+   "figure": 2,
+   "kind": "dist",
+   "published": "20%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 20.272052576796543,
+   "gap": 0.2720525767965434,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-lt100-High",
+   "figure": 2,
+   "kind": "dist",
+   "published": "11%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 10.820038135204456,
+   "gap": -0.1799618647955441,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-100-2500-All",
+   "figure": 2,
+   "kind": "dist",
+   "published": "61%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 61.3924071139622,
+   "gap": 0.39240711396220007,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-100-2500-Poor",
+   "figure": 2,
+   "kind": "dist",
+   "published": "44%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 44.08899907129845,
+   "gap": 0.08899907129845275,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-100-2500-Low",
+   "figure": 2,
+   "kind": "dist",
+   "published": "57%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 57.06569039580017,
+   "gap": 0.06569039580016778,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-100-2500-Middle",
+   "figure": 2,
+   "kind": "dist",
+   "published": "67%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 66.72339694252298,
+   "gap": -0.2766030574770184,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-100-2500-High",
+   "figure": 2,
+   "kind": "dist",
+   "published": "68%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 67.7259936462347,
+   "gap": -0.27400635376530147,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-gt2500-All",
+   "figure": 2,
+   "kind": "dist",
+   "published": "14%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 14.106317417820154,
+   "gap": 0.10631741782015425,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-gt2500-Poor",
+   "figure": 2,
+   "kind": "dist",
+   "published": "4%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 3.931978142432423,
+   "gap": -0.06802185756757684,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-gt2500-Low",
+   "figure": 2,
+   "kind": "dist",
+   "published": "10%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 9.700223285706342,
+   "gap": -0.2997767142936585,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-gt2500-Middle",
+   "figure": 2,
+   "kind": "dist",
+   "published": "13%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 13.00455048068047,
+   "gap": 0.004550480680469704,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-gt2500-High",
+   "figure": 2,
+   "kind": "dist",
+   "published": "22%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 21.453968218560856,
+   "gap": -0.5460317814391438,
+   "exact": false,
+   "close": false
+  },
+  {
+   "cid": "F3-All",
+   "figure": 3,
+   "kind": "median",
+   "published": "451",
+   "underspecified": true,
+   "status": "computed",
+   "value": 450.78609326486577,
+   "gap": -0.21390673513423053,
+   "exact": true,
+   "close": true,
+   "alt_lower_median": 451.0
+  },
+  {
+   "cid": "F3-1A0C",
+   "figure": 3,
+   "kind": "median",
+   "published": "242",
+   "underspecified": true,
+   "status": "computed",
+   "value": 243.68968482000164,
+   "gap": 1.689684820001645,
+   "exact": false,
+   "close": true,
+   "alt_lower_median": 244.0
+  },
+  {
+   "cid": "F3-2A0C",
+   "figure": 3,
+   "kind": "median",
+   "published": "869",
+   "underspecified": true,
+   "status": "computed",
+   "value": 865.4637390731507,
+   "gap": -3.536260926849309,
+   "exact": false,
+   "close": true,
+   "alt_lower_median": 866.0
+  },
+  {
+   "cid": "F3-1A1C",
+   "figure": 3,
+   "kind": "median",
+   "published": "116",
+   "underspecified": true,
+   "status": "computed",
+   "value": 109.97018294893293,
+   "gap": -6.02981705106707,
+   "exact": false,
+   "close": false,
+   "alt_lower_median": 110.0
+  },
+  {
+   "cid": "F3-2A1C",
+   "figure": 3,
+   "kind": "median",
+   "published": "721",
+   "underspecified": true,
+   "status": "computed",
+   "value": 735.9181385126693,
+   "gap": 14.918138512669316,
+   "exact": false,
+   "close": false,
+   "alt_lower_median": 736.0
+  },
+  {
+   "cid": "F4-All-lt100",
+   "figure": 4,
+   "kind": "dist",
+   "published": "25%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 24.50127546821765,
+   "gap": -0.49872453178235077,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F4-All-100-2500",
+   "figure": 4,
+   "kind": "dist",
+   "published": "61%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 61.3924071139622,
+   "gap": 0.39240711396220007,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F4-All-gt2500",
+   "figure": 4,
+   "kind": "dist",
+   "published": "14%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 14.106317417820154,
+   "gap": 0.10631741782015425,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F4-1A0C-lt100",
+   "figure": 4,
+   "kind": "dist",
+   "published": "33%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 32.81373274323772,
+   "gap": -0.18626725676227807,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F4-1A0C-100-2500",
+   "figure": 4,
+   "kind": "dist",
+   "published": "60%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 59.67504169912375,
+   "gap": -0.3249583008762471,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F4-1A0C-gt2500",
+   "figure": 4,
+   "kind": "dist",
+   "published": "8%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 7.511225557638529,
+   "gap": -0.4887744423614713,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F4-2A0C-lt100",
+   "figure": 4,
+   "kind": "dist",
+   "published": "13%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 12.818840536725677,
+   "gap": -0.18115946327432297,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F4-2A0C-100-2500",
+   "figure": 4,
+   "kind": "dist",
+   "published": "66%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 65.94671415150174,
+   "gap": -0.05328584849826257,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F4-2A0C-gt2500",
+   "figure": 4,
+   "kind": "dist",
+   "published": "21%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 21.234445311772593,
+   "gap": 0.23444531177259265,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F4-1A1C-lt100",
+   "figure": 4,
+   "kind": "dist",
+   "published": "48%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 47.97279920950339,
+   "gap": -0.027200790496607397,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F4-1A1C-100-2500",
+   "figure": 4,
+   "kind": "dist",
+   "published": "47%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 46.30121169961837,
+   "gap": -0.6987883003816293,
+   "exact": false,
+   "close": false
+  },
+  {
+   "cid": "F4-1A1C-gt2500",
+   "figure": 4,
+   "kind": "dist",
+   "published": "6%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 5.725989090878237,
+   "gap": -0.2740109091217633,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F4-2A1C-lt100",
+   "figure": 4,
+   "kind": "dist",
+   "published": "17%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 16.460824059140187,
+   "gap": -0.5391759408598134,
+   "exact": false,
+   "close": false
+  },
+  {
+   "cid": "F4-2A1C-100-2500",
+   "figure": 4,
+   "kind": "dist",
+   "published": "65%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 64.34155777560885,
+   "gap": -0.6584422243911519,
+   "exact": false,
+   "close": false
+  },
+  {
+   "cid": "F4-2A1C-gt2500",
+   "figure": 4,
+   "kind": "dist",
+   "published": "19%",
+   "underspecified": false,
+   "status": "computed",
+   "value": 19.19761816525096,
+   "gap": 0.19761816525096165,
+   "exact": true,
+   "close": true
+  }
+ ],
+ "tally": {
+  "cells": 40,
+  "computable": 40,
+  "close": 34,
+  "exact": 32,
+  "not_computable": 0,
+  "unresolved": 0,
+  "share_close": 0.85
+ }
+}

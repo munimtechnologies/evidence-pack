@@ -1,0 +1,929 @@
+{
+ "version": "0.1.0",
+ "brief": 491,
+ "file": "H163",
+ "error": null,
+ "data": {
+  "file": "h163dat.zip",
+  "bytes": 9907897,
+  "sha256": "7a8eda850e14297b67553126b994e5316c1638ca44bfaf9af5dd3593517ae9d3"
+ },
+ "positions": {
+  "AGELAST": [
+   179,
+   180
+  ],
+  "DUPERSID": [
+   9,
+   16
+  ],
+  "DVTEXP13": [
+   4614,
+   4618
+  ],
+  "ERTEXP13": [
+   4031,
+   4035
+  ],
+  "HHAEXP13": [
+   4826,
+   4831
+  ],
+  "HHNEXP13": [
+   4902,
+   4906
+  ],
+  "INSURC13": [
+   2072,
+   2072
+  ],
+  "IPTEXP13": [
+   4352,
+   4357
+  ],
+  "OBVEXP13": [
+   2569,
+   2574
+  ],
+  "OPTEXP13": [
+   3162,
+   3167
+  ],
+  "OTHEXP13": [
+   5021,
+   5025
+  ],
+  "PERWT13F": [
+   5166,
+   5177
+  ],
+  "RXEXP13": [
+   5088,
+   5093
+  ],
+  "TOTEXP13": [
+   2474,
+   2479
+  ],
+  "TOTMCD13": [
+   2492,
+   2497
+  ],
+  "TOTMCR13": [
+   2486,
+   2491
+  ],
+  "TOTOFD13": [
+   2516,
+   2520
+  ],
+  "TOTOPR13": [
+   2532,
+   2536
+  ],
+  "TOTOPU13": [
+   2537,
+   2542
+  ],
+  "TOTOSR13": [
+   2543,
+   2547
+  ],
+  "TOTPRV13": [
+   2498,
+   2503
+  ],
+  "TOTSLF13": [
+   2480,
+   2485
+  ],
+  "TOTSTL13": [
+   2521,
+   2525
+  ],
+  "TOTTRI13": [
+   2510,
+   2515
+  ],
+  "TOTVA13": [
+   2504,
+   2509
+  ],
+  "TOTWCP13": [
+   2526,
+   2531
+  ],
+  "VISEXP13": [
+   4953,
+   4957
+  ]
+ },
+ "gate": {
+  "rows": 36940,
+  "rows_expected": 36940,
+  "positive_PERWT13F": [
+   35068,
+   35068
+  ],
+  "zero_TOTEXP13": [
+   7831,
+   7831
+  ],
+  "counts_INSURC13": {
+   "1": [
+    16238,
+    16238
+   ],
+   "2": [
+    10000,
+    10000
+   ],
+   "3": [
+    6585,
+    6585
+   ],
+   "4": [
+    1449,
+    1449
+   ],
+   "5": [
+    1798,
+    1798
+   ],
+   "6": [
+    769,
+    769
+   ],
+   "7": [
+    52,
+    52
+   ],
+   "8": [
+    49,
+    49
+   ]
+  },
+  "negative_money": 0,
+  "age_out_of_range": 0,
+  "passed": true
+ },
+ "diagnostics": {
+  "persons": 35068,
+  "svc_mismatch": 6,
+  "pay_mismatch": 4553,
+  "ins_age_conflict": 0,
+  "group_n": {
+   "Total": 35068,
+   "lt65": 31081,
+   "65plus": 3987,
+   "AnyPriv": 15580,
+   "PubOnly": 9478,
+   "Unins": 6023,
+   "McrOnly": 1389,
+   "McrPriv": 1763,
+   "McrOthPub": 744
+  }
+ },
+ "cells": [
+  {
+   "cid": "F1-IP-Total",
+   "figure": 1,
+   "kind": "share",
+   "published": "27.9",
+   "underspecified": false,
+   "status": "computed",
+   "value": 27.911022057740578,
+   "gap": 0.011022057740579072,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F1-IP-lt65",
+   "figure": 1,
+   "kind": "share",
+   "published": "25.8",
+   "underspecified": false,
+   "status": "computed",
+   "value": 25.795550963684637,
+   "gap": -0.0044490363153641965,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F1-IP-65plus",
+   "figure": 1,
+   "kind": "share",
+   "published": "32.4",
+   "underspecified": false,
+   "status": "computed",
+   "value": 32.383667080361484,
+   "gap": -0.01633291963851491,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F1-AMB-Total",
+   "figure": 1,
+   "kind": "share",
+   "published": "37.9",
+   "underspecified": false,
+   "status": "computed",
+   "value": 37.8822936221385,
+   "gap": -0.017706377861500755,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F1-AMB-lt65",
+   "figure": 1,
+   "kind": "share",
+   "published": "40.5",
+   "underspecified": false,
+   "status": "computed",
+   "value": 40.46473285236252,
+   "gap": -0.035267147637476626,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F1-AMB-65plus",
+   "figure": 1,
+   "kind": "share",
+   "published": "32.4",
+   "underspecified": false,
+   "status": "computed",
+   "value": 32.42235895239216,
+   "gap": 0.022358952392160347,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F1-RX-Total",
+   "figure": 1,
+   "kind": "share",
+   "published": "22.0",
+   "underspecified": false,
+   "status": "computed",
+   "value": 21.9771445588964,
+   "gap": -0.022855441103601493,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F1-RX-lt65",
+   "figure": 1,
+   "kind": "share",
+   "published": "21.5",
+   "underspecified": false,
+   "status": "computed",
+   "value": 21.54018235344741,
+   "gap": 0.040182353447409724,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F1-RX-65plus",
+   "figure": 1,
+   "kind": "share",
+   "published": "22.9",
+   "underspecified": false,
+   "status": "computed",
+   "value": 22.900994021442695,
+   "gap": 0.0009940214426968907,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F1-DENT-Total",
+   "figure": 1,
+   "kind": "share",
+   "published": "6.6",
+   "underspecified": false,
+   "status": "computed",
+   "value": 6.556863803916309,
+   "gap": -0.04313619608369024,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F1-DENT-lt65",
+   "figure": 1,
+   "kind": "share",
+   "published": "7.8",
+   "underspecified": false,
+   "status": "computed",
+   "value": 7.848380413698052,
+   "gap": 0.04838041369805257,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F1-DENT-65plus",
+   "figure": 1,
+   "kind": "share",
+   "published": "3.8",
+   "underspecified": false,
+   "status": "computed",
+   "value": 3.8262685466218325,
+   "gap": 0.026268546621832645,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F1-HHOTH-Total",
+   "figure": 1,
+   "kind": "share",
+   "published": "5.7",
+   "underspecified": false,
+   "status": "computed",
+   "value": 5.672677152304236,
+   "gap": -0.027322847695764096,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F1-HHOTH-lt65",
+   "figure": 1,
+   "kind": "share",
+   "published": "4.4",
+   "underspecified": false,
+   "status": "computed",
+   "value": 4.351155177012788,
+   "gap": -0.04884482298721249,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F1-HHOTH-65plus",
+   "figure": 1,
+   "kind": "share",
+   "published": "8.5",
+   "underspecified": false,
+   "status": "computed",
+   "value": 8.466711399181726,
+   "gap": -0.033288600818274006,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-IP-AnyPriv",
+   "figure": 2,
+   "kind": "share",
+   "published": "24.1",
+   "underspecified": false,
+   "status": "computed",
+   "value": 24.0779125788468,
+   "gap": -0.022087421153202058,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-IP-PubOnly",
+   "figure": 2,
+   "kind": "share",
+   "published": "31.3",
+   "underspecified": false,
+   "status": "computed",
+   "value": 31.259671641316487,
+   "gap": -0.0403283586835137,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-IP-Unins",
+   "figure": 2,
+   "kind": "share",
+   "published": "26.6",
+   "underspecified": false,
+   "status": "computed",
+   "value": 26.623365021152072,
+   "gap": 0.023365021152070398,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-IP-McrOnly",
+   "figure": 2,
+   "kind": "share",
+   "published": "38.6",
+   "underspecified": false,
+   "status": "computed",
+   "value": 38.582405079854915,
+   "gap": -0.017594920145086235,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-IP-McrPriv",
+   "figure": 2,
+   "kind": "share",
+   "published": "29.0",
+   "underspecified": false,
+   "status": "computed",
+   "value": 29.04188327443992,
+   "gap": 0.04188327443991824,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-IP-McrOthPub",
+   "figure": 2,
+   "kind": "share",
+   "published": "31.7",
+   "underspecified": false,
+   "status": "computed",
+   "value": 31.655870674504786,
+   "gap": -0.04412932549521287,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-AMB-AnyPriv",
+   "figure": 2,
+   "kind": "share",
+   "published": "43.1",
+   "underspecified": false,
+   "status": "computed",
+   "value": 43.10803104001183,
+   "gap": 0.008031040011829305,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-AMB-PubOnly",
+   "figure": 2,
+   "kind": "share",
+   "published": "31.0",
+   "underspecified": false,
+   "status": "computed",
+   "value": 31.01882971469926,
+   "gap": 0.018829714699261757,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-AMB-Unins",
+   "figure": 2,
+   "kind": "share",
+   "published": "43.2",
+   "underspecified": false,
+   "status": "computed",
+   "value": 43.236480020036744,
+   "gap": 0.03648002003674122,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-AMB-McrOnly",
+   "figure": 2,
+   "kind": "share",
+   "published": "28.1",
+   "underspecified": false,
+   "status": "computed",
+   "value": 28.14612202119256,
+   "gap": 0.04612202119255926,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-AMB-McrPriv",
+   "figure": 2,
+   "kind": "share",
+   "published": "37.1",
+   "underspecified": false,
+   "status": "computed",
+   "value": 37.10196867793382,
+   "gap": 0.0019686779338172755,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-AMB-McrOthPub",
+   "figure": 2,
+   "kind": "share",
+   "published": "23.0",
+   "underspecified": false,
+   "status": "computed",
+   "value": 23.00081223449164,
+   "gap": 0.0008122344916401403,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-RX-AnyPriv",
+   "figure": 2,
+   "kind": "share",
+   "published": "19.9",
+   "underspecified": false,
+   "status": "computed",
+   "value": 19.88992345681108,
+   "gap": -0.010076543188919374,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-RX-PubOnly",
+   "figure": 2,
+   "kind": "share",
+   "published": "26.9",
+   "underspecified": false,
+   "status": "computed",
+   "value": 26.93657703423756,
+   "gap": 0.03657703423755976,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-RX-Unins",
+   "figure": 2,
+   "kind": "share",
+   "published": "21.8",
+   "underspecified": false,
+   "status": "computed",
+   "value": 21.763557465070868,
+   "gap": -0.036442534929133075,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-RX-McrOnly",
+   "figure": 2,
+   "kind": "share",
+   "published": "22.5",
+   "underspecified": false,
+   "status": "computed",
+   "value": 22.54364525331092,
+   "gap": 0.043645253310920396,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-RX-McrPriv",
+   "figure": 2,
+   "kind": "share",
+   "published": "22.3",
+   "underspecified": false,
+   "status": "computed",
+   "value": 22.284228044785362,
+   "gap": -0.015771955214638922,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-RX-McrOthPub",
+   "figure": 2,
+   "kind": "share",
+   "published": "26.3",
+   "underspecified": false,
+   "status": "computed",
+   "value": 26.3190395185659,
+   "gap": 0.019039518565900693,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-DENT-AnyPriv",
+   "figure": 2,
+   "kind": "share",
+   "published": "9.4",
+   "underspecified": false,
+   "status": "computed",
+   "value": 9.366286940087702,
+   "gap": -0.033713059912297894,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-DENT-PubOnly",
+   "figure": 2,
+   "kind": "share",
+   "published": "3.3",
+   "underspecified": false,
+   "status": "computed",
+   "value": 3.259899319442472,
+   "gap": -0.04010068055752791,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-DENT-Unins",
+   "figure": 2,
+   "kind": "share",
+   "published": "6.2",
+   "underspecified": false,
+   "status": "computed",
+   "value": 6.179589058191703,
+   "gap": -0.020410941808297167,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-DENT-McrOnly",
+   "figure": 2,
+   "kind": "share",
+   "published": "3.2",
+   "underspecified": false,
+   "status": "computed",
+   "value": 3.233824268759711,
+   "gap": 0.03382426875971101,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-DENT-McrPriv",
+   "figure": 2,
+   "kind": "share",
+   "published": "4.8",
+   "underspecified": false,
+   "status": "computed",
+   "value": 4.82450539462237,
+   "gap": 0.02450539462236989,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-DENT-McrOthPub",
+   "figure": 2,
+   "kind": "share",
+   "published": "1.1",
+   "underspecified": false,
+   "status": "computed",
+   "value": 1.1241660610474975,
+   "gap": 0.02416606104749741,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-HHOTH-AnyPriv",
+   "figure": 2,
+   "kind": "share",
+   "published": "3.6",
+   "underspecified": false,
+   "status": "computed",
+   "value": 3.5578459842423,
+   "gap": -0.04215401575770006,
+   "exact": true,
+   "close": true
+  }
+ ],
+ "tally": {
+  "cells": 40,
+  "computable": 40,
+  "close": 40,
+  "exact": 40,
+  "not_computable": 0,
+  "unresolved": 0,
+  "share_close": 1.0
+ },
+ "extra_exploratory": [
+  {
+   "cid": "F2-HHOTH-PubOnly",
+   "figure": 2,
+   "kind": "share",
+   "published": "7.5",
+   "underspecified": false,
+   "status": "computed",
+   "value": 7.525030318728682,
+   "gap": 0.025030318728681777,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-HHOTH-Unins",
+   "figure": 2,
+   "kind": "share",
+   "published": "2.2",
+   "underspecified": false,
+   "status": "computed",
+   "value": 2.197008435548685,
+   "gap": -0.0029915644513152095,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-HHOTH-McrOnly",
+   "figure": 2,
+   "kind": "share",
+   "published": "7.5",
+   "underspecified": false,
+   "status": "computed",
+   "value": 7.494003376881918,
+   "gap": -0.005996623118082134,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-HHOTH-McrPriv",
+   "figure": 2,
+   "kind": "share",
+   "published": "6.7",
+   "underspecified": false,
+   "status": "computed",
+   "value": 6.747414608218533,
+   "gap": 0.04741460821853316,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F2-HHOTH-McrOthPub",
+   "figure": 2,
+   "kind": "share",
+   "published": "17.9",
+   "underspecified": false,
+   "status": "computed",
+   "value": 17.900111511390236,
+   "gap": 0.00011151139023724,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F3-PRIV-Total",
+   "figure": 3,
+   "kind": "share",
+   "published": "40.6",
+   "underspecified": false,
+   "status": "computed",
+   "value": 40.60437071970421,
+   "gap": 0.004370719704205328,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F3-PRIV-lt65",
+   "figure": 3,
+   "kind": "share",
+   "published": "53.6",
+   "underspecified": false,
+   "status": "computed",
+   "value": 53.56043673696006,
+   "gap": -0.03956326303994473,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F3-PRIV-65plus",
+   "figure": 3,
+   "kind": "share",
+   "published": "13.2",
+   "underspecified": false,
+   "status": "computed",
+   "value": 13.211945293684444,
+   "gap": 0.011945293684444636,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F3-MCR-Total",
+   "figure": 3,
+   "kind": "share",
+   "published": "25.3",
+   "underspecified": false,
+   "status": "computed",
+   "value": 25.307217508671055,
+   "gap": 0.007217508671054418,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F3-MCR-lt65",
+   "figure": 3,
+   "kind": "share",
+   "published": "7.2",
+   "underspecified": false,
+   "status": "computed",
+   "value": 7.208633309039869,
+   "gap": 0.00863330903986892,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F3-MCR-65plus",
+   "figure": 3,
+   "kind": "share",
+   "published": "63.6",
+   "underspecified": false,
+   "status": "computed",
+   "value": 63.572236947800405,
+   "gap": -0.02776305219959596,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F3-OOP-Total",
+   "figure": 3,
+   "kind": "share",
+   "published": "13.8",
+   "underspecified": false,
+   "status": "computed",
+   "value": 13.776174451208359,
+   "gap": -0.023825548791641893,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F3-OOP-lt65",
+   "figure": 3,
+   "kind": "share",
+   "published": "14.5",
+   "underspecified": false,
+   "status": "computed",
+   "value": 14.531037620128284,
+   "gap": 0.03103762012828426,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F3-OOP-65plus",
+   "figure": 3,
+   "kind": "share",
+   "published": "12.2",
+   "underspecified": false,
+   "status": "computed",
+   "value": 12.180201334527172,
+   "gap": -0.019798665472826826,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F3-MCD-Total",
+   "figure": 3,
+   "kind": "share",
+   "published": "12.4",
+   "underspecified": false,
+   "status": "computed",
+   "value": 12.43487172102224,
+   "gap": 0.03487172102224001,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F3-MCD-lt65",
+   "figure": 3,
+   "kind": "share",
+   "published": "16.5",
+   "underspecified": false,
+   "status": "computed",
+   "value": 16.539738375734373,
+   "gap": 0.03973837573437322,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F3-MCD-65plus",
+   "figure": 3,
+   "kind": "share",
+   "published": "3.8",
+   "underspecified": false,
+   "status": "computed",
+   "value": 3.756137483854848,
+   "gap": -0.0438625161451518,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F3-OTH-Total",
+   "figure": 3,
+   "kind": "share",
+   "published": "7.9",
+   "underspecified": false,
+   "status": "computed",
+   "value": 7.877690648873856,
+   "gap": -0.022309351126144072,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F3-OTH-lt65",
+   "figure": 3,
+   "kind": "share",
+   "published": "8.2",
+   "underspecified": false,
+   "status": "computed",
+   "value": 8.16049018123454,
+   "gap": -0.03950981876545967,
+   "exact": true,
+   "close": true
+  },
+  {
+   "cid": "F3-OTH-65plus",
+   "figure": 3,
+   "kind": "share",
+   "published": "7.3",
+   "underspecified": false,
+   "status": "computed",
+   "value": 7.279780365738118,
+   "gap": -0.020219634261882113,
+   "exact": true,
+   "close": true
+  }
+ ],
+ "extra_tally": {
+  "cells": 20,
+  "computable": 20,
+  "close": 20,
+  "exact": 20,
+  "not_computable": 0,
+  "unresolved": 0,
+  "share_close": 1.0
+ }
+}
