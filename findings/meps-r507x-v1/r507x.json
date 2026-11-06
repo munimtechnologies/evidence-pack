@@ -1,0 +1,3324 @@
+{
+ "version": "0.1.0",
+ "brief": 507,
+ "file": "H181",
+ "error": null,
+ "data": {
+  "file": "h181dat.zip",
+  "bytes": 9929884,
+  "sha256": "75e50de4bdbd2dcc08c61472c1926395d322d5add57f155b638b23033822e5ee"
+ },
+ "positions": {
+  "AGE15X": [
+   177,
+   178
+  ],
+  "AGE31X": [
+   171,
+   172
+  ],
+  "AGE42X": [
+   173,
+   174
+  ],
+  "AGE53X": [
+   175,
+   176
+  ],
+  "AGELAST": [
+   179,
+   180
+  ],
+  "CPSFAMID": [
+   29,
+   30
+  ],
+  "DAPID53X": [
+   286,
+   288
+  ],
+  "DUID": [
+   1,
+   5
+  ],
+  "FAMWT15C": [
+   5308,
+   5319
+  ],
+  "FCRP1231": [
+   33,
+   34
+  ],
+  "INSC1231": [
+   153,
+   153
+  ],
+  "MOPID53X": [
+   277,
+   279
+  ],
+  "PERWT15F": [
+   5284,
+   5295
+  ],
+  "PID": [
+   6,
+   8
+  ],
+  "POVCAT15": [
+   1432,
+   1432
+  ],
+  "REFRL15X": [
+   259,
+   260
+  ],
+  "TOTEXP15": [
+   2563,
+   2568
+  ],
+  "TOTSLF15": [
+   2569,
+   2573
+  ]
+ },
+ "gate": {
+  "rows": 35427,
+  "rows_expected": 35427,
+  "positive_FAMWT15C": [
+   33850,
+   33850
+  ],
+  "zero_TOTSLF15": [
+   13409,
+   13409
+  ],
+  "zero_TOTEXP15": [
+   6936,
+   6936
+  ],
+  "counts_FCRP1231": {
+   "-1": [
+    411,
+    411
+   ],
+   "0": [
+    20135,
+    20135
+   ],
+   "1": [
+    14881,
+    14881
+   ]
+  },
+  "counts_POVCAT15": {
+   "1": [
+    7924,
+    7924
+   ],
+   "2": [
+    2260,
+    2260
+   ],
+   "3": [
+    5921,
+    5921
+   ],
+   "4": [
+    10111,
+    10111
+   ],
+   "5": [
+    9211,
+    9211
+   ]
+  },
+  "negative_money": 0,
+  "age_out_of_range": 0,
+  "passed": true,
+  "families": [
+   14522,
+   14522
+  ],
+  "keys_ref_not_1": 0
+ },
+ "gate_extra": {
+  "positive_PERWT15F": [
+   33893,
+   33893
+  ],
+  "counts_INSC1231": {
+   "1": [
+    35067,
+    35067
+   ],
+   "2": [
+    360,
+    360
+   ]
+  },
+  "counts_REFRL15X": {
+   "1": [
+    14177,
+    14177
+   ],
+   "2": [
+    5578,
+    5578
+   ],
+   "3": [
+    977,
+    977
+   ],
+   "4": [
+    11736,
+    11736
+   ],
+   "5": [
+    154,
+    154
+   ],
+   "6": [
+    752,
+    752
+   ],
+   "7": [
+    897,
+    897
+   ],
+   "8": [
+    621,
+    621
+   ],
+   "9": [
+    37,
+    37
+   ],
+   "10": [
+    51,
+    51
+   ],
+   "11": [
+    193,
+    193
+   ],
+   "91": [
+    254,
+    254
+   ]
+  },
+  "neg1_MOPID53X": [
+   22791,
+   22791,
+   0
+  ],
+  "neg1_DAPID53X": [
+   26919,
+   26919,
+   0
+  ],
+  "bins_AGE15X": [
+   [
+    235,
+    9615,
+    21210,
+    4367
+   ],
+   [
+    235,
+    9615,
+    21210,
+    4367
+   ],
+   0
+  ],
+  "bins_AGE31X": [
+   [
+    997,
+    9541,
+    20735,
+    4154
+   ],
+   [
+    997,
+    9541,
+    20735,
+    4154
+   ],
+   0
+  ],
+  "bins_AGE42X": [
+   [
+    504,
+    9608,
+    21009,
+    4306
+   ],
+   [
+    504,
+    9608,
+    21009,
+    4306
+   ],
+   0
+  ],
+  "bins_AGE53X": [
+   [
+    235,
+    9563,
+    21232,
+    4397
+   ],
+   [
+    235,
+    9563,
+    21232,
+    4397
+   ],
+   0
+  ],
+  "passed": true
+ },
+ "summary": {
+  "population_families": 10110,
+  "reproducing_rules": [],
+  "best_rule": "R8",
+  "E1_some_rule_reproduces_all_16": false,
+  "E2_best_rule_is_round_age": false
+ },
+ "rules": [
+  {
+   "rule": "R0",
+   "description": "graded spec: AGELAST (adult 18+, child 0-17)",
+   "table1_exact": 0,
+   "table1_max_abs_gap": 377401.3580189813,
+   "table1_sum_abs_gap": 1751210.579162018,
+   "columns_exact": 0,
+   "families_with_adult_weighted": 97196954.449686,
+   "all_gap": 0.4496860057115555,
+   "no_adult_families": 1,
+   "no_adult_weighted": 6605.623244,
+   "struct_cells_exact": 9,
+   "struct_cells_close": 11,
+   "struct_cells_n": 16,
+   "table1": {
+    "Poor|1A0C": {
+     "ours": 9888909.327296983,
+     "published": 9999307,
+     "gap": -110397.67270301655,
+     "exact": false
+    },
+    "Poor|1A1C": {
+     "ours": 4235591.635500002,
+     "published": 4125194,
+     "gap": 110397.63550000172,
+     "exact": false
+    },
+    "Poor|2A0C": {
+     "ours": 1623315.968615,
+     "published": 1643690,
+     "gap": -20374.031385000097,
+     "exact": false
+    },
+    "Poor|2A1C": {
+     "ours": 3646230.967647,
+     "published": 3625857,
+     "gap": 20373.967647000216,
+     "exact": false
+    },
+    "Low|1A0C": {
+     "ours": 4939862.807017,
+     "published": 4966606,
+     "gap": -26743.192982999608,
+     "exact": false
+    },
+    "Low|1A1C": {
+     "ours": 1569118.5821750008,
+     "published": 1542376,
+     "gap": 26742.582175000804,
+     "exact": false
+    },
+    "Low|2A0C": {
+     "ours": 2014541.36255,
+     "published": 2099368,
+     "gap": -84826.63745000004,
+     "exact": false
+    },
+    "Low|2A1C": {
+     "ours": 3635672.6122760023,
+     "published": 3550845,
+     "gap": 84827.6122760023,
+     "exact": false
+    },
+    "Middle|1A0C": {
+     "ours": 10352118.272758994,
+     "published": 10376047,
+     "gap": -23928.72724100575,
+     "exact": false
+    },
+    "Middle|1A1C": {
+     "ours": 1780192.0841589996,
+     "published": 1756263,
+     "gap": 23929.084158999613,
+     "exact": false
+    },
+    "Middle|2A0C": {
+     "ours": 5997501.656404002,
+     "published": 6221641,
+     "gap": -224139.34359599836,
+     "exact": false
+    },
+    "Middle|2A1C": {
+     "ours": 9252391.56525701,
+     "published": 9028253,
+     "gap": 224138.56525700912,
+     "exact": false
+    },
+    "High|1A0C": {
+     "ours": 11682489.398638988,
+     "published": 11690284,
+     "gap": -7794.601361012086,
+     "exact": false
+    },
+    "High|1A1C": {
+     "ours": 940308.6766090002,
+     "published": 932514,
+     "gap": 7794.676609000191,
+     "exact": false
+    },
+    "High|2A0C": {
+     "ours": 15021667.641981019,
+     "published": 15399069,
+     "gap": -377401.3580189813,
+     "exact": false
+    },
+    "High|2A1C": {
+     "ours": 10617041.89080099,
+     "published": 10239641,
+     "gap": 377400.89080099016,
+     "exact": false
+    }
+   },
+   "columns": {
+    "1A0C": {
+     "ours": 36863379.80571195,
+     "published": 37032244,
+     "gap": -168864.19428805262,
+     "exact": false
+    },
+    "1A1C": {
+     "ours": 8525210.97844301,
+     "published": 8356347,
+     "gap": 168863.97844300978,
+     "exact": false
+    },
+    "2A0C": {
+     "ours": 24657026.629549995,
+     "published": 25363768,
+     "gap": -706741.3704500049,
+     "exact": false
+    },
+    "2A1C": {
+     "ours": 27151337.035981055,
+     "published": 26444596,
+     "gap": 706741.0359810553,
+     "exact": false
+    }
+   },
+   "struct_cells": [
+    {
+     "cid": "F3-1A0C",
+     "figure": 3,
+     "kind": "median",
+     "published": "242",
+     "underspecified": true,
+     "status": "computed",
+     "value": 243.68968482000164,
+     "gap": 1.689684820001645,
+     "exact": false,
+     "close": true,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-2A0C",
+     "figure": 3,
+     "kind": "median",
+     "published": "869",
+     "underspecified": true,
+     "status": "computed",
+     "value": 865.4637390731507,
+     "gap": -3.536260926849309,
+     "exact": false,
+     "close": true,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-1A1C",
+     "figure": 3,
+     "kind": "median",
+     "published": "116",
+     "underspecified": true,
+     "status": "computed",
+     "value": 109.97018294893293,
+     "gap": -6.02981705106707,
+     "exact": false,
+     "close": false,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-2A1C",
+     "figure": 3,
+     "kind": "median",
+     "published": "721",
+     "underspecified": true,
+     "status": "computed",
+     "value": 735.9181385126693,
+     "gap": 14.918138512669316,
+     "exact": false,
+     "close": false,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F4-1A0C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "33%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 32.81373274323772,
+     "gap": -0.18626725676227807,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A0C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "60%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 59.67504169912375,
+     "gap": -0.3249583008762471,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A0C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "8%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 7.511225557638529,
+     "gap": -0.4887744423614713,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "13%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 12.818840536725677,
+     "gap": -0.18115946327432297,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "66%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 65.94671415150174,
+     "gap": -0.05328584849826257,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "21%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 21.234445311772593,
+     "gap": 0.23444531177259265,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A1C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "48%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 47.97279920950339,
+     "gap": -0.027200790496607397,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A1C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "47%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 46.30121169961837,
+     "gap": -0.6987883003816293,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-1A1C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "6%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 5.725989090878237,
+     "gap": -0.2740109091217633,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A1C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "17%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 16.460824059140187,
+     "gap": -0.5391759408598134,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-2A1C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "65%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 64.34155777560885,
+     "gap": -0.6584422243911519,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-2A1C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "19%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 19.19761816525096,
+     "gap": 0.19761816525096165,
+     "exact": true,
+     "close": true
+    }
+   ]
+  },
+  {
+   "rule": "R1",
+   "description": "age as of 12/31/15, AGE15X (-1 = neither)",
+   "table1_exact": 0,
+   "table1_max_abs_gap": 377401.3580189813,
+   "table1_sum_abs_gap": 1751210.579162018,
+   "columns_exact": 0,
+   "families_with_adult_weighted": 97196954.449686,
+   "all_gap": 0.4496860057115555,
+   "no_adult_families": 1,
+   "no_adult_weighted": 6605.623244,
+   "struct_cells_exact": 9,
+   "struct_cells_close": 11,
+   "struct_cells_n": 16,
+   "table1": {
+    "Poor|1A0C": {
+     "ours": 9888909.327296983,
+     "published": 9999307,
+     "gap": -110397.67270301655,
+     "exact": false
+    },
+    "Poor|1A1C": {
+     "ours": 4235591.635500002,
+     "published": 4125194,
+     "gap": 110397.63550000172,
+     "exact": false
+    },
+    "Poor|2A0C": {
+     "ours": 1623315.968615,
+     "published": 1643690,
+     "gap": -20374.031385000097,
+     "exact": false
+    },
+    "Poor|2A1C": {
+     "ours": 3646230.967647,
+     "published": 3625857,
+     "gap": 20373.967647000216,
+     "exact": false
+    },
+    "Low|1A0C": {
+     "ours": 4939862.807017,
+     "published": 4966606,
+     "gap": -26743.192982999608,
+     "exact": false
+    },
+    "Low|1A1C": {
+     "ours": 1569118.5821750008,
+     "published": 1542376,
+     "gap": 26742.582175000804,
+     "exact": false
+    },
+    "Low|2A0C": {
+     "ours": 2014541.36255,
+     "published": 2099368,
+     "gap": -84826.63745000004,
+     "exact": false
+    },
+    "Low|2A1C": {
+     "ours": 3635672.6122760023,
+     "published": 3550845,
+     "gap": 84827.6122760023,
+     "exact": false
+    },
+    "Middle|1A0C": {
+     "ours": 10352118.272758994,
+     "published": 10376047,
+     "gap": -23928.72724100575,
+     "exact": false
+    },
+    "Middle|1A1C": {
+     "ours": 1780192.0841589996,
+     "published": 1756263,
+     "gap": 23929.084158999613,
+     "exact": false
+    },
+    "Middle|2A0C": {
+     "ours": 5997501.656404002,
+     "published": 6221641,
+     "gap": -224139.34359599836,
+     "exact": false
+    },
+    "Middle|2A1C": {
+     "ours": 9252391.56525701,
+     "published": 9028253,
+     "gap": 224138.56525700912,
+     "exact": false
+    },
+    "High|1A0C": {
+     "ours": 11682489.398638988,
+     "published": 11690284,
+     "gap": -7794.601361012086,
+     "exact": false
+    },
+    "High|1A1C": {
+     "ours": 940308.6766090002,
+     "published": 932514,
+     "gap": 7794.676609000191,
+     "exact": false
+    },
+    "High|2A0C": {
+     "ours": 15021667.641981019,
+     "published": 15399069,
+     "gap": -377401.3580189813,
+     "exact": false
+    },
+    "High|2A1C": {
+     "ours": 10617041.89080099,
+     "published": 10239641,
+     "gap": 377400.89080099016,
+     "exact": false
+    }
+   },
+   "columns": {
+    "1A0C": {
+     "ours": 36863379.80571195,
+     "published": 37032244,
+     "gap": -168864.19428805262,
+     "exact": false
+    },
+    "1A1C": {
+     "ours": 8525210.97844301,
+     "published": 8356347,
+     "gap": 168863.97844300978,
+     "exact": false
+    },
+    "2A0C": {
+     "ours": 24657026.629549995,
+     "published": 25363768,
+     "gap": -706741.3704500049,
+     "exact": false
+    },
+    "2A1C": {
+     "ours": 27151337.035981055,
+     "published": 26444596,
+     "gap": 706741.0359810553,
+     "exact": false
+    }
+   },
+   "struct_cells": [
+    {
+     "cid": "F3-1A0C",
+     "figure": 3,
+     "kind": "median",
+     "published": "242",
+     "underspecified": true,
+     "status": "computed",
+     "value": 243.68968482000164,
+     "gap": 1.689684820001645,
+     "exact": false,
+     "close": true,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-2A0C",
+     "figure": 3,
+     "kind": "median",
+     "published": "869",
+     "underspecified": true,
+     "status": "computed",
+     "value": 865.4637390731507,
+     "gap": -3.536260926849309,
+     "exact": false,
+     "close": true,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-1A1C",
+     "figure": 3,
+     "kind": "median",
+     "published": "116",
+     "underspecified": true,
+     "status": "computed",
+     "value": 109.97018294893293,
+     "gap": -6.02981705106707,
+     "exact": false,
+     "close": false,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-2A1C",
+     "figure": 3,
+     "kind": "median",
+     "published": "721",
+     "underspecified": true,
+     "status": "computed",
+     "value": 735.9181385126693,
+     "gap": 14.918138512669316,
+     "exact": false,
+     "close": false,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F4-1A0C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "33%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 32.81373274323772,
+     "gap": -0.18626725676227807,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A0C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "60%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 59.67504169912375,
+     "gap": -0.3249583008762471,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A0C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "8%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 7.511225557638529,
+     "gap": -0.4887744423614713,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "13%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 12.818840536725677,
+     "gap": -0.18115946327432297,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "66%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 65.94671415150174,
+     "gap": -0.05328584849826257,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "21%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 21.234445311772593,
+     "gap": 0.23444531177259265,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A1C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "48%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 47.97279920950339,
+     "gap": -0.027200790496607397,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A1C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "47%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 46.30121169961837,
+     "gap": -0.6987883003816293,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-1A1C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "6%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 5.725989090878237,
+     "gap": -0.2740109091217633,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A1C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "17%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 16.460824059140187,
+     "gap": -0.5391759408598134,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-2A1C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "65%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 64.34155777560885,
+     "gap": -0.6584422243911519,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-2A1C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "19%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 19.19761816525096,
+     "gap": 0.19761816525096165,
+     "exact": true,
+     "close": true
+    }
+   ]
+  },
+  {
+   "rule": "R2",
+   "description": "age at round 3/1, AGE31X (-1 = neither)",
+   "table1_exact": 0,
+   "table1_max_abs_gap": 1057630.4255799875,
+   "table1_sum_abs_gap": 4511801.657784938,
+   "columns_exact": 0,
+   "families_with_adult_weighted": 97027355.81789301,
+   "all_gap": -169598.18210698664,
+   "no_adult_families": 22,
+   "no_adult_weighted": 176204.255037,
+   "struct_cells_exact": 8,
+   "struct_cells_close": 9,
+   "struct_cells_n": 16,
+   "table1": {
+    "Poor|1A0C": {
+     "ours": 10019193.56946998,
+     "published": 9999307,
+     "gap": 19886.569469980896,
+     "exact": false
+    },
+    "Poor|1A1C": {
+     "ours": 4373184.418259005,
+     "published": 4125194,
+     "gap": 247990.41825900506,
+     "exact": false
+    },
+    "Poor|2A0C": {
+     "ours": 1488920.5889900005,
+     "published": 1643690,
+     "gap": -154769.41100999946,
+     "exact": false
+    },
+    "Poor|2A1C": {
+     "ours": 3427283.609146998,
+     "published": 3625857,
+     "gap": -198573.3908530022,
+     "exact": false
+    },
+    "Low|1A0C": {
+     "ours": 5154942.766280998,
+     "published": 4966606,
+     "gap": 188336.76628099754,
+     "exact": false
+    },
+    "Low|1A1C": {
+     "ours": 1648186.5725000012,
+     "published": 1542376,
+     "gap": 105810.57250000117,
+     "exact": false
+    },
+    "Low|2A0C": {
+     "ours": 1794948.2286179997,
+     "published": 2099368,
+     "gap": -304419.7713820003,
+     "exact": false
+    },
+    "Low|2A1C": {
+     "ours": 3520894.6720360015,
+     "published": 3550845,
+     "gap": -29950.32796399854,
+     "exact": false
+    },
+    "Middle|1A0C": {
+     "ours": 10773249.284634,
+     "published": 10376047,
+     "gap": 397202.2846339997,
+     "exact": false
+    },
+    "Middle|1A1C": {
+     "ours": 1910507.5930849994,
+     "published": 1756263,
+     "gap": 154244.59308499936,
+     "exact": false
+    },
+    "Middle|2A0C": {
+     "ours": 5653537.273099002,
+     "published": 6221641,
+     "gap": -568103.7269009976,
+     "exact": false
+    },
+    "Middle|2A1C": {
+     "ours": 9000999.633744003,
+     "published": 9028253,
+     "gap": -27253.36625599675,
+     "exact": false
+    },
+    "High|1A0C": {
+     "ours": 12184089.478435986,
+     "published": 11690284,
+     "gap": 493805.47843598574,
+     "exact": false
+    },
+    "High|1A1C": {
+     "ours": 967968.5402990003,
+     "published": 932514,
+     "gap": 35454.540299000335,
+     "exact": false
+    },
+    "High|2A0C": {
+     "ours": 14341438.574420013,
+     "published": 15399069,
+     "gap": -1057630.4255799875,
+     "exact": false
+    },
+    "High|2A1C": {
+     "ours": 10768011.014874985,
+     "published": 10239641,
+     "gap": 528370.0148749854,
+     "exact": false
+    }
+   },
+   "columns": {
+    "1A0C": {
+     "ours": 38131475.09882093,
+     "published": 37032244,
+     "gap": 1099231.0988209322,
+     "exact": false
+    },
+    "1A1C": {
+     "ours": 8899847.12414301,
+     "published": 8356347,
+     "gap": 543500.12414301,
+     "exact": false
+    },
+    "2A0C": {
+     "ours": 23278844.665127013,
+     "published": 25363768,
+     "gap": -2084923.3348729871,
+     "exact": false
+    },
+    "2A1C": {
+     "ours": 26717188.92980206,
+     "published": 26444596,
+     "gap": 272592.9298020601,
+     "exact": false
+    }
+   },
+   "struct_cells": [
+    {
+     "cid": "F3-1A0C",
+     "figure": 3,
+     "kind": "median",
+     "published": "242",
+     "underspecified": true,
+     "status": "computed",
+     "value": 244.97131738650026,
+     "gap": 2.9713173865002602,
+     "exact": false,
+     "close": false,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-2A0C",
+     "figure": 3,
+     "kind": "median",
+     "published": "869",
+     "underspecified": true,
+     "status": "computed",
+     "value": 901.6898747551126,
+     "gap": 32.689874755112555,
+     "exact": false,
+     "close": false,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-1A1C",
+     "figure": 3,
+     "kind": "median",
+     "published": "116",
+     "underspecified": true,
+     "status": "computed",
+     "value": 116.9267905234491,
+     "gap": 0.9267905234490996,
+     "exact": false,
+     "close": true,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-2A1C",
+     "figure": 3,
+     "kind": "median",
+     "published": "721",
+     "underspecified": true,
+     "status": "computed",
+     "value": 745.1166844459485,
+     "gap": 24.116684445948522,
+     "exact": false,
+     "close": false,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F4-1A0C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "33%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 32.74495503796302,
+     "gap": -0.25504496203698324,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A0C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "60%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 59.66442193435482,
+     "gap": -0.3355780656451799,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A0C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "8%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 7.590623027682171,
+     "gap": -0.4093769723178289,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "13%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 12.313148559103384,
+     "gap": -0.686851440896616,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-2A0C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "66%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 65.72333055697861,
+     "gap": -0.2766694430213903,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "21%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 21.963520883917997,
+     "gap": 0.9635208839179974,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-1A1C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "48%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 46.91807602897547,
+     "gap": -1.0819239710245299,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-1A1C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "47%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 46.88443914639488,
+     "gap": -0.11556085360511759,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A1C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "6%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 6.197484824629641,
+     "gap": 0.19748482462964123,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A1C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "17%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 15.699546250822898,
+     "gap": -1.3004537491771018,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-2A1C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "65%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 65.03794824589646,
+     "gap": 0.03794824589645884,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A1C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "19%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 19.262505503280654,
+     "gap": 0.2625055032806536,
+     "exact": true,
+     "close": true
+    }
+   ]
+  },
+  {
+   "rule": "R3",
+   "description": "age at round 4/2, AGE42X (-1 = neither)",
+   "table1_exact": 0,
+   "table1_max_abs_gap": 559062.9135609828,
+   "table1_sum_abs_gap": 2710478.5357389753,
+   "columns_exact": 0,
+   "families_with_adult_weighted": 97151907.16924104,
+   "all_gap": -45046.830758959055,
+   "no_adult_families": 7,
+   "no_adult_weighted": 51652.903689,
+   "struct_cells_exact": 10,
+   "struct_cells_close": 12,
+   "struct_cells_n": 16,
+   "table1": {
+    "Poor|1A0C": {
+     "ours": 9934631.233797984,
+     "published": 9999307,
+     "gap": -64675.7662020158,
+     "exact": false
+    },
+    "Poor|1A1C": {
+     "ours": 4322907.070311002,
+     "published": 4125194,
+     "gap": 197713.07031100243,
+     "exact": false
+    },
+    "Poor|2A0C": {
+     "ours": 1573652.575454,
+     "published": 1643690,
+     "gap": -70037.42454600008,
+     "exact": false
+    },
+    "Poor|2A1C": {
+     "ours": 3551960.313104,
+     "published": 3625857,
+     "gap": -73896.68689600006,
+     "exact": false
+    },
+    "Low|1A0C": {
+     "ours": 4997930.920798999,
+     "published": 4966606,
+     "gap": 31324.920798999257,
+     "exact": false
+    },
+    "Low|1A1C": {
+     "ours": 1640594.6461570011,
+     "published": 1542376,
+     "gap": 98218.64615700115,
+     "exact": false
+    },
+    "Low|2A0C": {
+     "ours": 1941769.096228,
+     "published": 2099368,
+     "gap": -157598.903772,
+     "exact": false
+    },
+    "Low|2A1C": {
+     "ours": 3578900.700834003,
+     "published": 3550845,
+     "gap": 28055.70083400281,
+     "exact": false
+    },
+    "Middle|1A0C": {
+     "ours": 10583839.183000999,
+     "published": 10376047,
+     "gap": 207792.18300099857,
+     "exact": false
+    },
+    "Middle|1A1C": {
+     "ours": 1862621.7815529995,
+     "published": 1756263,
+     "gap": 106358.78155299951,
+     "exact": false
+    },
+    "Middle|2A0C": {
+     "ours": 5769149.511728005,
+     "published": 6221641,
+     "gap": -452491.48827199545,
+     "exact": false
+    },
+    "Middle|2A1C": {
+     "ours": 9132442.528244004,
+     "published": 9028253,
+     "gap": 104189.52824400365,
+     "exact": false
+    },
+    "High|1A0C": {
+     "ours": 11836010.560538985,
+     "published": 11690284,
+     "gap": 145726.56053898484,
+     "exact": false
+    },
+    "High|1A1C": {
+     "ours": 960038.1596380002,
+     "published": 932514,
+     "gap": 27524.159638000187,
+     "exact": false
+    },
+    "High|2A0C": {
+     "ours": 14840006.086439017,
+     "published": 15399069,
+     "gap": -559062.9135609828,
+     "exact": false
+    },
+    "High|2A1C": {
+     "ours": 10625452.801413989,
+     "published": 10239641,
+     "gap": 385811.8014139887,
+     "exact": false
+    }
+   },
+   "columns": {
+    "1A0C": {
+     "ours": 37352411.89813695,
+     "published": 37032244,
+     "gap": 320167.89813695103,
+     "exact": false
+    },
+    "1A1C": {
+     "ours": 8786161.65765901,
+     "published": 8356347,
+     "gap": 429814.6576590091,
+     "exact": false
+    },
+    "2A0C": {
+     "ours": 24124577.269849006,
+     "published": 25363768,
+     "gap": -1239190.730150994,
+     "exact": false
+    },
+    "2A1C": {
+     "ours": 26888756.343596067,
+     "published": 26444596,
+     "gap": 444160.3435960673,
+     "exact": false
+    }
+   },
+   "struct_cells": [
+    {
+     "cid": "F3-1A0C",
+     "figure": 3,
+     "kind": "median",
+     "published": "242",
+     "underspecified": true,
+     "status": "computed",
+     "value": 243.44092200169396,
+     "gap": 1.4409220016939628,
+     "exact": false,
+     "close": true,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-2A0C",
+     "figure": 3,
+     "kind": "median",
+     "published": "869",
+     "underspecified": true,
+     "status": "computed",
+     "value": 868.0044104848558,
+     "gap": -0.9955895151441609,
+     "exact": false,
+     "close": true,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-1A1C",
+     "figure": 3,
+     "kind": "median",
+     "published": "116",
+     "underspecified": true,
+     "status": "computed",
+     "value": 109.89295982699488,
+     "gap": -6.107040173005117,
+     "exact": false,
+     "close": false,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-2A1C",
+     "figure": 3,
+     "kind": "median",
+     "published": "721",
+     "underspecified": true,
+     "status": "computed",
+     "value": 754.0092461315763,
+     "gap": 33.00924613157633,
+     "exact": false,
+     "close": false,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F4-1A0C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "33%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 32.73216764443209,
+     "gap": -0.2678323555679114,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A0C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "60%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 59.659324925168896,
+     "gap": -0.34067507483110404,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A0C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "8%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 7.608507430399016,
+     "gap": -0.39149256960098366,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "13%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 12.822241537102638,
+     "gap": -0.17775846289736208,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "66%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 65.77658396481957,
+     "gap": -0.22341603518043485,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "21%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 21.40117449807781,
+     "gap": 0.40117449807781114,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A1C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "48%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 47.89912668468154,
+     "gap": -0.10087331531845933,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A1C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "47%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 46.26760625222919,
+     "gap": -0.7323937477708071,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-1A1C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "6%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 5.833267063089263,
+     "gap": -0.1667329369107371,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A1C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "17%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 15.906853054602783,
+     "gap": -1.0931469453972174,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-2A1C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "65%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 64.79953273527937,
+     "gap": -0.20046726472062915,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A1C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "19%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 19.293614210117838,
+     "gap": 0.2936142101178376,
+     "exact": true,
+     "close": true
+    }
+   ]
+  },
+  {
+   "rule": "R4",
+   "description": "age at round 5/3, AGE53X (-1 = neither)",
+   "table1_exact": 0,
+   "table1_max_abs_gap": 346221.5542049892,
+   "table1_sum_abs_gap": 1556237.3812620135,
+   "columns_exact": 0,
+   "families_with_adult_weighted": 97203560.07293002,
+   "all_gap": 6606.072930023074,
+   "no_adult_families": 0,
+   "no_adult_weighted": 0,
+   "struct_cells_exact": 10,
+   "struct_cells_close": 12,
+   "struct_cells_n": 16,
+   "table1": {
+    "Poor|1A0C": {
+     "ours": 9895514.950540984,
+     "published": 9999307,
+     "gap": -103792.04945901595,
+     "exact": false
+    },
+    "Poor|1A1C": {
+     "ours": 4209513.313249002,
+     "published": 4125194,
+     "gap": 84319.31324900221,
+     "exact": false
+    },
+    "Poor|2A0C": {
+     "ours": 1641974.102086,
+     "published": 1643690,
+     "gap": -1715.8979140000883,
+     "exact": false
+    },
+    "Poor|2A1C": {
+     "ours": 3653651.1564270006,
+     "published": 3625857,
+     "gap": 27794.15642700065,
+     "exact": false
+    },
+    "Low|1A0C": {
+     "ours": 4939862.807017,
+     "published": 4966606,
+     "gap": -26743.192982999608,
+     "exact": false
+    },
+    "Low|1A1C": {
+     "ours": 1562635.9846430006,
+     "published": 1542376,
+     "gap": 20259.984643000644,
+     "exact": false
+    },
+    "Low|2A0C": {
+     "ours": 2023141.0967029997,
+     "published": 2099368,
+     "gap": -76226.90329700033,
+     "exact": false
+    },
+    "Low|2A1C": {
+     "ours": 3633555.475655002,
+     "published": 3550845,
+     "gap": 82710.47565500205,
+     "exact": false
+    },
+    "Middle|1A0C": {
+     "ours": 10352118.272758994,
+     "published": 10376047,
+     "gap": -23928.72724100575,
+     "exact": false
+    },
+    "Middle|1A1C": {
+     "ours": 1760628.4558569996,
+     "published": 1756263,
+     "gap": 4365.455856999615,
+     "exact": false
+    },
+    "Middle|2A0C": {
+     "ours": 6025453.562903002,
+     "published": 6221641,
+     "gap": -196187.4370969981,
+     "exact": false
+    },
+    "Middle|2A1C": {
+     "ours": 9244003.287060007,
+     "published": 9028253,
+     "gap": 215750.28706000745,
+     "exact": false
+    },
+    "High|1A0C": {
+     "ours": 11682489.398638988,
+     "published": 11690284,
+     "gap": -7794.601361012086,
+     "exact": false
+    },
+    "High|1A1C": {
+     "ours": 927902.4744350002,
+     "published": 932514,
+     "gap": -4611.525564999785,
+     "exact": false
+    },
+    "High|2A0C": {
+     "ours": 15065253.18075102,
+     "published": 15399069,
+     "gap": -333815.8192489799,
+     "exact": false
+    },
+    "High|2A1C": {
+     "ours": 10585862.55420499,
+     "published": 10239641,
+     "gap": 346221.5542049892,
+     "exact": false
+    }
+   },
+   "columns": {
+    "1A0C": {
+     "ours": 36869985.42895595,
+     "published": 37032244,
+     "gap": -162258.57104405016,
+     "exact": false
+    },
+    "1A1C": {
+     "ours": 8460680.22818401,
+     "published": 8356347,
+     "gap": 104333.22818401083,
+     "exact": false
+    },
+    "2A0C": {
+     "ours": 24755821.942443002,
+     "published": 25363768,
+     "gap": -607946.057556998,
+     "exact": false
+    },
+    "2A1C": {
+     "ours": 27117072.473347057,
+     "published": 26444596,
+     "gap": 672476.4733470567,
+     "exact": false
+    }
+   },
+   "struct_cells": [
+    {
+     "cid": "F3-1A0C",
+     "figure": 3,
+     "kind": "median",
+     "published": "242",
+     "underspecified": true,
+     "status": "computed",
+     "value": 243.9020930015152,
+     "gap": 1.9020930015151976,
+     "exact": false,
+     "close": true,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-2A0C",
+     "figure": 3,
+     "kind": "median",
+     "published": "869",
+     "underspecified": true,
+     "status": "computed",
+     "value": 868.0123094604639,
+     "gap": -0.9876905395360609,
+     "exact": false,
+     "close": true,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-1A1C",
+     "figure": 3,
+     "kind": "median",
+     "published": "116",
+     "underspecified": true,
+     "status": "computed",
+     "value": 109.72034383731692,
+     "gap": -6.279656162683082,
+     "exact": false,
+     "close": false,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-2A1C",
+     "figure": 3,
+     "kind": "median",
+     "published": "721",
+     "underspecified": true,
+     "status": "computed",
+     "value": 731.0888469124094,
+     "gap": 10.088846912409394,
+     "exact": false,
+     "close": false,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F4-1A0C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "33%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 32.80785383785685,
+     "gap": -0.19214616214315328,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A0C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "60%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 59.664350324067634,
+     "gap": -0.33564967593236616,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A0C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "8%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 7.5277958380755186,
+     "gap": -0.47220416192448145,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "13%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 12.793044774947457,
+     "gap": -0.2069552250525426,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "66%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 65.8950502752533,
+     "gap": -0.10494972474670305,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "21%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 21.311904949799256,
+     "gap": 0.3119049497992563,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A1C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "48%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 48.107740257081396,
+     "gap": 0.1077402570813959,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A1C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "47%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 46.122597760258174,
+     "gap": -0.8774022397418264,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-1A1C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "6%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 5.7696619826604305,
+     "gap": -0.2303380173395695,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A1C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "17%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 16.530529390876843,
+     "gap": -0.46947060912315663,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A1C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "65%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 64.39567269359323,
+     "gap": -0.6043273064067733,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-2A1C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "19%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 19.073797915529926,
+     "gap": 0.07379791552992643,
+     "exact": true,
+     "close": true
+    }
+   ]
+  },
+  {
+   "rule": "R5",
+   "description": "AGELAST; a child also needs PERWT15F > 0",
+   "table1_exact": 0,
+   "table1_max_abs_gap": 216428.42199400067,
+   "table1_sum_abs_gap": 1591103.9057739703,
+   "columns_exact": 0,
+   "families_with_adult_weighted": 97196954.44968602,
+   "all_gap": 0.4496860206127167,
+   "no_adult_families": 1,
+   "no_adult_weighted": 6605.623244,
+   "struct_cells_exact": 10,
+   "struct_cells_close": 10,
+   "struct_cells_n": 16,
+   "table1": {
+    "Poor|1A0C": {
+     "ours": 9960690.168786984,
+     "published": 9999307,
+     "gap": -38616.83121301606,
+     "exact": false
+    },
+    "Poor|1A1C": {
+     "ours": 4163810.794010001,
+     "published": 4125194,
+     "gap": 38616.79401000077,
+     "exact": false
+    },
+    "Poor|2A0C": {
+     "ours": 1731365.9459819999,
+     "published": 1643690,
+     "gap": 87675.94598199986,
+     "exact": false
+    },
+    "Poor|2A1C": {
+     "ours": 3538180.9902800005,
+     "published": 3625857,
+     "gap": -87676.0097199995,
+     "exact": false
+    },
+    "Low|1A0C": {
+     "ours": 5014774.418585999,
+     "published": 4966606,
+     "gap": 48168.41858599894,
+     "exact": false
+    },
+    "Low|1A1C": {
+     "ours": 1494206.9706060006,
+     "published": 1542376,
+     "gap": -48169.02939399937,
+     "exact": false
+    },
+    "Low|2A0C": {
+     "ours": 2228505.9019930004,
+     "published": 2099368,
+     "gap": 129137.90199300041,
+     "exact": false
+    },
+    "Low|2A1C": {
+     "ours": 3421708.072833002,
+     "published": 3550845,
+     "gap": -129136.92716699792,
+     "exact": false
+    },
+    "Middle|1A0C": {
+     "ours": 10430891.271105994,
+     "published": 10376047,
+     "gap": 54844.27110599354,
+     "exact": false
+    },
+    "Middle|1A1C": {
+     "ours": 1701419.0858119996,
+     "published": 1756263,
+     "gap": -54843.91418800037,
+     "exact": false
+    },
+    "Middle|2A0C": {
+     "ours": 6438068.643655006,
+     "published": 6221641,
+     "gap": 216427.64365500584,
+     "exact": false
+    },
+    "Middle|2A1C": {
+     "ours": 8811824.578006,
+     "published": 9028253,
+     "gap": -216428.42199400067,
+     "exact": false
+    },
+    "High|1A0C": {
+     "ours": 11737855.652062986,
+     "published": 11690284,
+     "gap": 47571.652062986046,
+     "exact": false
+    },
+    "High|1A1C": {
+     "ours": 884942.4231850003,
+     "published": 932514,
+     "gap": -47571.57681499969,
+     "exact": false
+    },
+    "High|2A0C": {
+     "ours": 15225959.482447015,
+     "published": 15399069,
+     "gap": -173109.51755298488,
+     "exact": false
+    },
+    "High|2A1C": {
+     "ours": 10412750.050334986,
+     "published": 10239641,
+     "gap": 173109.0503349863,
+     "exact": false
+    }
+   },
+   "columns": {
+    "1A0C": {
+     "ours": 37144211.510541946,
+     "published": 37032244,
+     "gap": 111967.5105419457,
+     "exact": false
+    },
+    "1A1C": {
+     "ours": 8244379.27361301,
+     "published": 8356347,
+     "gap": -111967.7263869904,
+     "exact": false
+    },
+    "2A0C": {
+     "ours": 25623899.974076994,
+     "published": 25363768,
+     "gap": 260131.97407699376,
+     "exact": false
+    },
+    "2A1C": {
+     "ours": 26184463.69145407,
+     "published": 26444596,
+     "gap": -260132.30854592845,
+     "exact": false
+    }
+   },
+   "struct_cells": [
+    {
+     "cid": "F3-1A0C",
+     "figure": 3,
+     "kind": "median",
+     "published": "242",
+     "underspecified": true,
+     "status": "computed",
+     "value": 241.8465337511776,
+     "gap": -0.15346624882241144,
+     "exact": true,
+     "close": true,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-2A0C",
+     "figure": 3,
+     "kind": "median",
+     "published": "869",
+     "underspecified": true,
+     "status": "computed",
+     "value": 851.170118042482,
+     "gap": -17.829881957517955,
+     "exact": false,
+     "close": false,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-1A1C",
+     "figure": 3,
+     "kind": "median",
+     "published": "116",
+     "underspecified": true,
+     "status": "computed",
+     "value": 109.83520748532247,
+     "gap": -6.164792514677529,
+     "exact": false,
+     "close": false,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-2A1C",
+     "figure": 3,
+     "kind": "median",
+     "published": "721",
+     "underspecified": true,
+     "status": "computed",
+     "value": 749.5819876791181,
+     "gap": 28.58198767911813,
+     "exact": false,
+     "close": false,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F4-1A0C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "33%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 32.923584814498476,
+     "gap": -0.07641518550152426,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A0C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "60%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 59.561593112259274,
+     "gap": -0.4384068877407259,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A0C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "8%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 7.514822073242255,
+     "gap": -0.4851779267577454,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "13%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 13.175628050010022,
+     "gap": 0.17562805001002246,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "66%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 65.75646644958046,
+     "gap": -0.24353355041954217,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "21%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 21.06790550040951,
+     "gap": 0.06790550040950905,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A1C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "48%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 47.994241443503704,
+     "gap": -0.005758556496296308,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A1C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "47%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 46.35678444948748,
+     "gap": -0.6432155505125223,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-1A1C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "6%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 5.648974107008817,
+     "gap": -0.35102589299118314,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A1C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "17%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 16.246156658287397,
+     "gap": -0.7538433417126029,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-2A1C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "65%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 64.46846146971677,
+     "gap": -0.5315385302832283,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-2A1C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "19%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 19.28538187199583,
+     "gap": 0.2853818719958312,
+     "exact": true,
+     "close": true
+    }
+   ]
+  },
+  {
+   "rule": "R6",
+   "description": "AGELAST; a child also needs INSC1231 = 1",
+   "table1_exact": 0,
+   "table1_max_abs_gap": 377401.3580189813,
+   "table1_sum_abs_gap": 1751210.579162018,
+   "columns_exact": 0,
+   "families_with_adult_weighted": 97196954.449686,
+   "all_gap": 0.4496860057115555,
+   "no_adult_families": 1,
+   "no_adult_weighted": 6605.623244,
+   "struct_cells_exact": 9,
+   "struct_cells_close": 11,
+   "struct_cells_n": 16,
+   "table1": {
+    "Poor|1A0C": {
+     "ours": 9888909.327296983,
+     "published": 9999307,
+     "gap": -110397.67270301655,
+     "exact": false
+    },
+    "Poor|1A1C": {
+     "ours": 4235591.635500002,
+     "published": 4125194,
+     "gap": 110397.63550000172,
+     "exact": false
+    },
+    "Poor|2A0C": {
+     "ours": 1623315.968615,
+     "published": 1643690,
+     "gap": -20374.031385000097,
+     "exact": false
+    },
+    "Poor|2A1C": {
+     "ours": 3646230.967647,
+     "published": 3625857,
+     "gap": 20373.967647000216,
+     "exact": false
+    },
+    "Low|1A0C": {
+     "ours": 4939862.807017,
+     "published": 4966606,
+     "gap": -26743.192982999608,
+     "exact": false
+    },
+    "Low|1A1C": {
+     "ours": 1569118.5821750008,
+     "published": 1542376,
+     "gap": 26742.582175000804,
+     "exact": false
+    },
+    "Low|2A0C": {
+     "ours": 2014541.36255,
+     "published": 2099368,
+     "gap": -84826.63745000004,
+     "exact": false
+    },
+    "Low|2A1C": {
+     "ours": 3635672.6122760023,
+     "published": 3550845,
+     "gap": 84827.6122760023,
+     "exact": false
+    },
+    "Middle|1A0C": {
+     "ours": 10352118.272758994,
+     "published": 10376047,
+     "gap": -23928.72724100575,
+     "exact": false
+    },
+    "Middle|1A1C": {
+     "ours": 1780192.0841589996,
+     "published": 1756263,
+     "gap": 23929.084158999613,
+     "exact": false
+    },
+    "Middle|2A0C": {
+     "ours": 5997501.656404002,
+     "published": 6221641,
+     "gap": -224139.34359599836,
+     "exact": false
+    },
+    "Middle|2A1C": {
+     "ours": 9252391.56525701,
+     "published": 9028253,
+     "gap": 224138.56525700912,
+     "exact": false
+    },
+    "High|1A0C": {
+     "ours": 11682489.398638988,
+     "published": 11690284,
+     "gap": -7794.601361012086,
+     "exact": false
+    },
+    "High|1A1C": {
+     "ours": 940308.6766090002,
+     "published": 932514,
+     "gap": 7794.676609000191,
+     "exact": false
+    },
+    "High|2A0C": {
+     "ours": 15021667.641981019,
+     "published": 15399069,
+     "gap": -377401.3580189813,
+     "exact": false
+    },
+    "High|2A1C": {
+     "ours": 10617041.89080099,
+     "published": 10239641,
+     "gap": 377400.89080099016,
+     "exact": false
+    }
+   },
+   "columns": {
+    "1A0C": {
+     "ours": 36863379.80571195,
+     "published": 37032244,
+     "gap": -168864.19428805262,
+     "exact": false
+    },
+    "1A1C": {
+     "ours": 8525210.97844301,
+     "published": 8356347,
+     "gap": 168863.97844300978,
+     "exact": false
+    },
+    "2A0C": {
+     "ours": 24657026.629549995,
+     "published": 25363768,
+     "gap": -706741.3704500049,
+     "exact": false
+    },
+    "2A1C": {
+     "ours": 27151337.035981055,
+     "published": 26444596,
+     "gap": 706741.0359810553,
+     "exact": false
+    }
+   },
+   "struct_cells": [
+    {
+     "cid": "F3-1A0C",
+     "figure": 3,
+     "kind": "median",
+     "published": "242",
+     "underspecified": true,
+     "status": "computed",
+     "value": 243.68968482000164,
+     "gap": 1.689684820001645,
+     "exact": false,
+     "close": true,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-2A0C",
+     "figure": 3,
+     "kind": "median",
+     "published": "869",
+     "underspecified": true,
+     "status": "computed",
+     "value": 865.4637390731507,
+     "gap": -3.536260926849309,
+     "exact": false,
+     "close": true,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-1A1C",
+     "figure": 3,
+     "kind": "median",
+     "published": "116",
+     "underspecified": true,
+     "status": "computed",
+     "value": 109.97018294893293,
+     "gap": -6.02981705106707,
+     "exact": false,
+     "close": false,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-2A1C",
+     "figure": 3,
+     "kind": "median",
+     "published": "721",
+     "underspecified": true,
+     "status": "computed",
+     "value": 735.9181385126693,
+     "gap": 14.918138512669316,
+     "exact": false,
+     "close": false,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F4-1A0C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "33%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 32.81373274323772,
+     "gap": -0.18626725676227807,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A0C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "60%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 59.67504169912375,
+     "gap": -0.3249583008762471,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A0C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "8%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 7.511225557638529,
+     "gap": -0.4887744423614713,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "13%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 12.818840536725677,
+     "gap": -0.18115946327432297,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "66%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 65.94671415150174,
+     "gap": -0.05328584849826257,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "21%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 21.234445311772593,
+     "gap": 0.23444531177259265,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A1C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "48%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 47.97279920950339,
+     "gap": -0.027200790496607397,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A1C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "47%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 46.30121169961837,
+     "gap": -0.6987883003816293,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-1A1C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "6%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 5.725989090878237,
+     "gap": -0.2740109091217633,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A1C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "17%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 16.460824059140187,
+     "gap": -0.5391759408598134,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-2A1C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "65%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 64.34155777560885,
+     "gap": -0.6584422243911519,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-2A1C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "19%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 19.19761816525096,
+     "gap": 0.19761816525096165,
+     "exact": true,
+     "close": true
+    }
+   ]
+  },
+  {
+   "rule": "R7",
+   "description": "AGELAST; a child also needs REFRL15X = 4",
+   "table1_exact": 0,
+   "table1_max_abs_gap": 619582.5820499994,
+   "table1_sum_abs_gap": 3290523.5786259864,
+   "columns_exact": 0,
+   "families_with_adult_weighted": 97196954.44968602,
+   "all_gap": 0.4496860206127167,
+   "no_adult_families": 1,
+   "no_adult_weighted": 6605.623244,
+   "struct_cells_exact": 6,
+   "struct_cells_close": 6,
+   "struct_cells_n": 16,
+   "table1": {
+    "Poor|1A0C": {
+     "ours": 10131928.118838979,
+     "published": 9999307,
+     "gap": 132621.11883897893,
+     "exact": false
+    },
+    "Poor|1A1C": {
+     "ours": 3992572.843958001,
+     "published": 4125194,
+     "gap": -132621.15604199888,
+     "exact": false
+    },
+    "Poor|2A0C": {
+     "ours": 1971702.0364419997,
+     "published": 1643690,
+     "gap": 328012.0364419997,
+     "exact": false
+    },
+    "Poor|2A1C": {
+     "ours": 3297844.8998200004,
+     "published": 3625857,
+     "gap": -328012.1001799996,
+     "exact": false
+    },
+    "Low|1A0C": {
+     "ours": 5028215.559815999,
+     "published": 4966606,
+     "gap": 61609.55981599912,
+     "exact": false
+    },
+    "Low|1A1C": {
+     "ours": 1480765.8293760004,
+     "published": 1542376,
+     "gap": -61610.170623999555,
+     "exact": false
+    },
+    "Low|2A0C": {
+     "ours": 2424729.413132,
+     "published": 2099368,
+     "gap": 325361.4131319998,
+     "exact": false
+    },
+    "Low|2A1C": {
+     "ours": 3225484.5616940022,
+     "published": 3550845,
+     "gap": -325360.43830599776,
+     "exact": false
+    },
+    "Middle|1A0C": {
+     "ours": 10484161.943219995,
+     "published": 10376047,
+     "gap": 108114.94321999513,
+     "exact": false
+    },
+    "Middle|1A1C": {
+     "ours": 1648148.4136980001,
+     "published": 1756263,
+     "gap": -108114.58630199987,
+     "exact": false
+    },
+    "Middle|2A0C": {
+     "ours": 6841222.803711006,
+     "published": 6221641,
+     "gap": 619581.8037110064,
+     "exact": false
+    },
+    "Middle|2A1C": {
+     "ours": 8408670.41795,
+     "published": 9028253,
+     "gap": -619582.5820499994,
+     "exact": false
+    },
+    "High|1A0C": {
+     "ours": 11711847.023540987,
+     "published": 11690284,
+     "gap": 21563.023540986702,
+     "exact": false
+    },
+    "High|1A1C": {
+     "ours": 910951.0517070002,
+     "published": 932514,
+     "gap": -21562.94829299976,
+     "exact": false
+    },
+    "High|2A0C": {
+     "ours": 15447466.615455015,
+     "published": 15399069,
+     "gap": 48397.61545501463,
+     "exact": false
+    },
+    "High|2A1C": {
+     "ours": 10191242.917326989,
+     "published": 10239641,
+     "gap": -48398.08267301135,
+     "exact": false
+    }
+   },
+   "columns": {
+    "1A0C": {
+     "ours": 37356152.64541595,
+     "published": 37032244,
+     "gap": 323908.64541594684,
+     "exact": false
+    },
+    "1A1C": {
+     "ours": 8032438.138739006,
+     "published": 8356347,
+     "gap": -323908.86126099434,
+     "exact": false
+    },
+    "2A0C": {
+     "ours": 26685120.86874,
+     "published": 25363768,
+     "gap": 1321352.8687399998,
+     "exact": false
+    },
+    "2A1C": {
+     "ours": 25123242.79679106,
+     "published": 26444596,
+     "gap": -1321353.2032089382,
+     "exact": false
+    }
+   },
+   "struct_cells": [
+    {
+     "cid": "F3-1A0C",
+     "figure": 3,
+     "kind": "median",
+     "published": "242",
+     "underspecified": true,
+     "status": "computed",
+     "value": 244.7061337195984,
+     "gap": 2.706133719598398,
+     "exact": false,
+     "close": false,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-2A0C",
+     "figure": 3,
+     "kind": "median",
+     "published": "869",
+     "underspecified": true,
+     "status": "computed",
+     "value": 826.0027286182091,
+     "gap": -42.99727138179094,
+     "exact": false,
+     "close": false,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-1A1C",
+     "figure": 3,
+     "kind": "median",
+     "published": "116",
+     "underspecified": true,
+     "status": "computed",
+     "value": 105.19030402550533,
+     "gap": -10.809695974494673,
+     "exact": false,
+     "close": false,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-2A1C",
+     "figure": 3,
+     "kind": "median",
+     "published": "721",
+     "underspecified": true,
+     "status": "computed",
+     "value": 759.4219861265108,
+     "gap": 38.421986126510774,
+     "exact": false,
+     "close": false,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F4-1A0C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "33%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 32.837081230556684,
+     "gap": -0.16291876944331563,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A0C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "60%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 59.62946458603364,
+     "gap": -0.37053541396635836,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A0C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "8%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 7.533454183409686,
+     "gap": -0.4665458165903136,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "13%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 13.63521675469107,
+     "gap": 0.6352167546910703,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-2A0C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "66%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 65.73404717151371,
+     "gap": -0.26595282848629154,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "21%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 20.63073607379522,
+     "gap": -0.36926392620478055,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A1C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "48%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 48.79418948472966,
+     "gap": 0.7941894847296567,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-1A1C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "47%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 45.692719669126326,
+     "gap": -1.3072803308736738,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-1A1C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "6%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 5.513090846144008,
+     "gap": -0.48690915385599176,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A1C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "17%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 15.887696920808473,
+     "gap": -1.112303079191527,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-2A1C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "65%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 64.43786841856185,
+     "gap": -0.5621315814381518,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-2A1C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "19%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 19.67443466062969,
+     "gap": 0.6744346606296894,
+     "exact": false,
+     "close": false
+    }
+   ]
+  },
+  {
+   "rule": "R8",
+   "description": "AGELAST; a child also needs a parent (MOPID53X/DAPID53X) in the family",
+   "table1_exact": 0,
+   "table1_max_abs_gap": 218040.79493798502,
+   "table1_sum_abs_gap": 857896.1351039289,
+   "columns_exact": 0,
+   "families_with_adult_weighted": 97196954.44968602,
+   "all_gap": 0.4496860206127167,
+   "no_adult_families": 1,
+   "no_adult_weighted": 6605.623244,
+   "struct_cells_exact": 8,
+   "struct_cells_close": 9,
+   "struct_cells_n": 16,
+   "table1": {
+    "Poor|1A0C": {
+     "ours": 10011522.654689979,
+     "published": 9999307,
+     "gap": 12215.654689978808,
+     "exact": false
+    },
+    "Poor|1A1C": {
+     "ours": 4112978.308107001,
+     "published": 4125194,
+     "gap": -12215.691892999224,
+     "exact": false
+    },
+    "Poor|2A0C": {
+     "ours": 1672304.2518520001,
+     "published": 1643690,
+     "gap": 28614.251852000132,
+     "exact": false
+    },
+    "Poor|2A1C": {
+     "ours": 3597242.6844100016,
+     "published": 3625857,
+     "gap": -28614.315589998383,
+     "exact": false
+    },
+    "Low|1A0C": {
+     "ours": 4991211.795787999,
+     "published": 4966606,
+     "gap": 24605.795787999406,
+     "exact": false
+    },
+    "Low|1A1C": {
+     "ours": 1517769.5934040009,
+     "published": 1542376,
+     "gap": -24606.406595999142,
+     "exact": false
+    },
+    "Low|2A0C": {
+     "ours": 2060648.8914249998,
+     "published": 2099368,
+     "gap": -38719.108575000195,
+     "exact": false
+    },
+    "Low|2A1C": {
+     "ours": 3589565.0834010015,
+     "published": 3550845,
+     "gap": 38720.083401001524,
+     "exact": false
+    },
+    "Middle|1A0C": {
+     "ours": 10409221.016078992,
+     "published": 10376047,
+     "gap": 33174.016078991815,
+     "exact": false
+    },
+    "Middle|1A1C": {
+     "ours": 1723089.3408389995,
+     "published": 1756263,
+     "gap": -33173.65916100051,
+     "exact": false
+    },
+    "Middle|2A0C": {
+     "ours": 6148309.639092004,
+     "published": 6221641,
+     "gap": -73331.36090799607,
+     "exact": false
+    },
+    "Middle|2A1C": {
+     "ours": 9101583.582569005,
+     "published": 9028253,
+     "gap": 73330.58256900497,
+     "exact": false
+    },
+    "High|1A0C": {
+     "ours": 11690531.080295987,
+     "published": 11690284,
+     "gap": 247.08029598742723,
+     "exact": false
+    },
+    "High|1A1C": {
+     "ours": 932266.9949520002,
+     "published": 932514,
+     "gap": -247.00504799978808,
+     "exact": false
+    },
+    "High|2A0C": {
+     "ours": 15181028.205062015,
+     "published": 15399069,
+     "gap": -218040.79493798502,
+     "exact": false
+    },
+    "High|2A1C": {
+     "ours": 10457681.327719986,
+     "published": 10239641,
+     "gap": 218040.32771998644,
+     "exact": false
+    }
+   },
+   "columns": {
+    "1A0C": {
+     "ours": 37102486.54685295,
+     "published": 37032244,
+     "gap": 70242.54685294628,
+     "exact": false
+    },
+    "1A1C": {
+     "ours": 8286104.237302009,
+     "published": 8356347,
+     "gap": -70242.76269799098,
+     "exact": false
+    },
+    "2A0C": {
+     "ours": 25062290.987431005,
+     "published": 25363768,
+     "gap": -301477.01256899536,
+     "exact": false
+    },
+    "2A1C": {
+     "ours": 26746072.678100057,
+     "published": 26444596,
+     "gap": 301476.67810005695,
+     "exact": false
+    }
+   },
+   "struct_cells": [
+    {
+     "cid": "F3-1A0C",
+     "figure": 3,
+     "kind": "median",
+     "published": "242",
+     "underspecified": true,
+     "status": "computed",
+     "value": 245.43335480465814,
+     "gap": 3.433354804658137,
+     "exact": false,
+     "close": false,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-2A0C",
+     "figure": 3,
+     "kind": "median",
+     "published": "869",
+     "underspecified": true,
+     "status": "computed",
+     "value": 865.5717309928016,
+     "gap": -3.4282690071984234,
+     "exact": false,
+     "close": true,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-1A1C",
+     "figure": 3,
+     "kind": "median",
+     "published": "116",
+     "underspecified": true,
+     "status": "computed",
+     "value": 105.5182252584464,
+     "gap": -10.481774741553593,
+     "exact": false,
+     "close": false,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F3-2A1C",
+     "figure": 3,
+     "kind": "median",
+     "published": "721",
+     "underspecified": true,
+     "status": "computed",
+     "value": 734.0688144062244,
+     "gap": 13.06881440622442,
+     "exact": false,
+     "close": false,
+     "alt_lower_median": null
+    },
+    {
+     "cid": "F4-1A0C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "33%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 32.72829849026914,
+     "gap": -0.2717015097308604,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A0C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "60%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 59.72229729236155,
+     "gap": -0.27770270763844707,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A0C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "8%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 7.5494042173693074,
+     "gap": -0.45059578263069255,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "13%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 12.946087446746962,
+     "gap": -0.05391255325303845,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "66%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 65.7643405031564,
+     "gap": -0.23565949684359566,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A0C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "21%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 21.28957205009664,
+     "gap": 0.2895720500966412,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-1A1C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "48%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 48.79278143617017,
+     "gap": 0.7927814361701735,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-1A1C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "47%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 45.703696537084426,
+     "gap": -1.2963034629155743,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-1A1C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "6%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 5.503522026745406,
+     "gap": -0.49647797325459386,
+     "exact": true,
+     "close": true
+    },
+    {
+     "cid": "F4-2A1C-lt100",
+     "figure": 4,
+     "kind": "dist",
+     "published": "17%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 16.396772301216743,
+     "gap": -0.6032276987832574,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-2A1C-100-2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "65%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 64.48812840758448,
+     "gap": -0.5118715924155168,
+     "exact": false,
+     "close": false
+    },
+    {
+     "cid": "F4-2A1C-gt2500",
+     "figure": 4,
+     "kind": "dist",
+     "published": "19%",
+     "underspecified": false,
+     "status": "computed",
+     "value": 19.115099291198767,
+     "gap": 0.11509929119876716,
+     "exact": true,
+     "close": true
+    }
+   ]
+  }
+ ]
+}
