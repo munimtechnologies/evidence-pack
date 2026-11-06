@@ -4,4 +4,5 @@
 MSA census M2, brief reproduction R1 (+ exploratory addendum), the R2 random-brief draw, the R2
 recompute of the concentration briefs (#506, #521, #540) and of #507 and #491, the R2b recompute of
 the other six single-file briefs (#493, #496, #497, #533, #554, #558), the FYC variable inventory,
-census M3 (the numbers in every brief's accessible data tables) and census M4 (repeated titles)."""
+census M3 (the numbers in every brief's accessible data tables), census M4 (repeated titles) and
+census M5 (age bands that overlap or leave a one-year gap inside one figure)."""
