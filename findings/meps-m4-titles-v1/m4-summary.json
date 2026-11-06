@@ -1,0 +1,14 @@
+{
+ "version": "0.1.0",
+ "tables": 2999,
+ "briefs": 540,
+ "short_keys": 10,
+ "pairs": 109,
+ "briefs_with_pairs": 34,
+ "by_class": {
+  "different_labels": 89,
+  "same_labels_different_values": 15,
+  "identical_data": 5
+ },
+ "positive_control_533_f5_f6": "different_labels"
+}

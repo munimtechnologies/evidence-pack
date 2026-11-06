@@ -1,0 +1,38 @@
+number,year,figures,pairs,machine_class,verdict,reads,note
+24,2003,Figure 3 + Figure 4,1,different_labels,legitimate repeat (identical titles on two figures),2 agree,"Same title on both; Figure 3 is percent of children, Figure 4 is millions of children; only the row labels give the unit"
+91,2005,Figure 1 (3 panels),3,different_labels,legitimate repeat (panels),2 agree,"Title names the elderly and near elderly; first panel is 'the 18 and older adult population', which the title and the text never mention (observation, not counted)"
+100,2005,Figure 1 + Figure 2,1,different_labels,legitimate repeat (identical titles on two figures),2 agree,"Same title; Figure 1 is percent of families, Figure 2 is millions of families"
+103,2005,Figure 6 (2 panels),1,different_labels,legitimate repeat (panels),2 agree,Panels split by age (under 65 / 65 and older); title names insurance status only
+111,2006,Figure 3 (2 panels),1,different_labels,legitimate repeat (panels),2 agree,Age panel and sex panel
+111,2006,Figure 4 (2 panels),1,different_labels,legitimate repeat (panels),2 agree,Region panel and metropolitan-status panel
+114,2006,Figure 6 (2 panels),1,different_labels,legitimate repeat (panels),2 agree,Panels split by age; title names insurance status only
+119,2006,Figure 5 (2 panels),1,different_labels,legitimate repeat (panels),2 agree,Under 65 / 65 and older
+120,2006,Figure 5 (2 panels),1,different_labels,legitimate repeat (panels),2 agree,Under 65 / 65 and older
+125,2006,Figure 3 (2 panels),1,different_labels,legitimate repeat (panels),2 agree,Medicare / non-Medicare panels with headings
+164,2007,Figure 1 (2 panels),1,different_labels,legitimate repeat (panels),2 agree,Headings 'All expenses ($963.9 billion)' and 'Inpatient sources of payment'
+166,2007,Figure 1 (2 panels),1,different_labels,legitimate repeat (panels),2 agree,Headings 'All Expenses ($963.9 billion)' and 'Office physician visits sources of payment'
+167,2007,Figure 5 (2 panels),1,different_labels,legitimate repeat (panels),2 agree,Year headings 2000 and 2004
+170,2007,Figure 5 (2 panels),1,different_labels,legitimate repeat (panels),2 agree,"Observation, not counted: the first panel is labelled 'Age 40-65' next to 'Age 65+'; the text says women 40 to 64 / under 65"
+179,2007,Figure 5 (2 panels),1,different_labels,legitimate repeat (panels),2 agree,Age groups are not labelled on the panels; the text gives 18 to 64 and 65 and over
+187,2007,Figure 6 (2 panels),1,different_labels,legitimate repeat (panels),2 agree,Age 20-64 / Age 65+
+188,2007,Figure 5 (2 panels),1,different_labels,legitimate repeat (panels),2 agree,Age 50-64 / Age 65+
+193,2007,Figure 7 (2 panels),1,different_labels,legitimate repeat (panels),2 agree,Under 65 / 65 and older headings
+194,2007,Figure 4 (2 panels),1,different_labels,legitimate repeat (panels),2 agree,Age 0-64 / Age 65+
+201,2008,Figure 3 + Figure 4,1,different_labels,not a repeat (key cut too early),2 agree,Titles differ on the page and in M3 (by race/ethnicity vs by insurance status); the key rule cut both at 'with'
+217,2008,Figures 3 4 5 6 (2 panels each),4,different_labels (3) / same_labels_different_values (1),legitimate repeat (panels),2 agree,Age 18-64 / Age 65 & over panels
+221,2008,Figures 3 and 4 (4 panels each),12,same_labels_different_values,legitimate repeat (panels),2 agree,Income-group and race/ethnicity panel headings
+226,2008,Figure 4 (3 panels) + Figure 5 (2 panels),4,different_labels,legitimate repeat (panels),2 agree,Age panels
+242,2009,Figure 4 (5 panels),10,different_labels,legitimate repeat (panels),2 agree,One panel per condition
+246,2009,Figure 3 (4 panels),6,different_labels,legitimate repeat (panels),2 agree,"Race/ethnicity, sex, poverty status, education panels"
+247,2009,Figure 3 (2 panels),1,same_labels_different_values,legitimate repeat (panels),2 agree,Percentage of population / percentage of total expenditures panels
+248,2009,Figure 4 (2 panels),1,same_labels_different_values,legitimate repeat (panels),2 agree,Year headings 1996 and 2006
+257,2009,Figure 1 (2 panels),1,different_labels,legitimate repeat (panels),2 agree,Age and health-status panels
+257,2009,Figure 2 (3 panels),3,different_labels,title error,1 no / 2 yes / 3 yes,"Title 'Percentage of full year uninsured working adults ages 19-64, by race/ethnicity, sex, and education' reads as the make-up of the uninsured; the values are uninsured rates within each group (they do not sum to 100). Borderline wording case; counted by the 2-of-3 rule"
+260,2009,Figures 3 and 4 (6 panels each),30,different_labels,legitimate repeat (panels),2 agree,Six characteristic panels each
+272,2009,Figure 7 (2 panels),1,different_labels,legitimate repeat (panels),2 agree,<65 years / 65+ years headings
+345,2011,Figure 2 + Figure 3,1,different_labels,not a repeat (key cut too early),2 agree,Titles differ on the page and in M3; key cut at 'average annual'
+401,2013,Figure 1a + Figure 1b,1,different_labels,legitimate repeat (panels),1 no-answer / 2 yes / 3 no,"Identical titles 'Payments for hospital inpatient stays, 2010'; 1a heading 'All expenses' (all spending by type of service), 1b 'Inpatient sources of payment'; the text cites both as figure 1. Disagreement logged; not counted"
+533,2021,Figure 5 + Figure 6,1,different_labels,title error,2 agree (plus R2b reads),Figure 6 carries Figure 5's race/ethnicity title over a type-of-service table; the text heading is 'Type of service (figure 6)'. Positive control (D1); not counted in D2
+549,2023,Table Na + Figure Na (N = 2 4 5 6 7),5,different_labels,legitimate repeat (figure shows a subset of the table),2 agree,Same titles; each figure's text table repeats one column of its table
+549,2023,Table Nb + Figure Nb (N = 2 4 5 6 7),5,identical_data,repeated figure,2 agree each,"Each Figure Nb text table repeats Table Nb cell for cell (with the same RSE flags); the page does not say why"
+570,2025,Figure 1 + Figure 2,1,different_labels,legitimate repeat (identical titles on two figures),2 agree,"Same title 'Percent of Medical Visits Via Telehealth, 2021-2023'; Figure 1 is by provider type and metropolitan status, Figure 2 by rurality; the section headings tell them apart"
