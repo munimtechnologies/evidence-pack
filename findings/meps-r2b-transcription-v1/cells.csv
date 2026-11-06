@@ -1,0 +1,234 @@
+brief,named_file,seq,source,group,row,column,published,value,unit,graded,expected,reads
+554,HC-233,1,Figure 1,Age,18-24,Ever used an electronic nicotine product (adults 18+),30.6%,30.6,pct,1,computable,M3+R2 agree
+554,HC-233,2,Figure 1,Age,25-34,Ever used an electronic nicotine product (adults 18+),25.2%,25.2,pct,1,computable,M3+R2 agree
+554,HC-233,3,Figure 1,Age,35-44,Ever used an electronic nicotine product (adults 18+),17.9%,17.9,pct,1,computable,M3+R2 agree
+554,HC-233,4,Figure 1,Age,45-64,Ever used an electronic nicotine product (adults 18+),11.2%,11.2,pct,1,computable,M3+R2 agree
+554,HC-233,5,Figure 1,Age,65+,Ever used an electronic nicotine product (adults 18+),4.1%,4.1,pct,1,computable,M3+R2 agree
+554,HC-233,6,Figure 2,Race/ethnicity,Non-Hispanic White,Ever used (ages 18-24),38.3%,38.3,pct,1,computable,M3+R2 agree
+554,HC-233,7,Figure 2,Race/ethnicity,Non-Hispanic Black,Ever used (ages 18-24),26.2%,26.2,pct,1,computable,M3+R2 agree
+554,HC-233,8,Figure 2,Race/ethnicity,Hispanic,Ever used (ages 18-24),19.7%,19.7,pct,1,computable,M3+R2 agree
+554,HC-233,9,Figure 2,Race/ethnicity,Non-Hispanic other,Ever used (ages 18-24),24.5%,24.5,pct,1,computable,M3+R2 agree
+554,HC-233,10,Figure 2,Sex,Male,Ever used (ages 18-24),30.6%,30.6,pct,1,computable,M3+R2 agree
+554,HC-233,11,Figure 2,Sex,Female,Ever used (ages 18-24),30.6%,30.6,pct,1,computable,M3+R2 agree
+554,HC-233,12,Figure 3,Region,Northeast,Ever used (ages 18-24),26.6%,26.6,pct,1,computable,M3+R2 agree
+554,HC-233,13,Figure 3,Region,Midwest,Ever used (ages 18-24),36.4%,36.4,pct,1,computable,M3+R2 agree
+554,HC-233,14,Figure 3,Region,South,Ever used (ages 18-24),32.0%,32.0,pct,1,computable,M3+R2 agree
+554,HC-233,15,Figure 3,Region,West,Ever used (ages 18-24),26.3%,26.3,pct,1,computable,M3+R2 agree
+554,HC-233,16,Figure 3,MSA Status,Yes,Ever used (ages 18-24),29.6%,29.6,pct,1,not computable (no MSA variable on HC-233),M3+R2 agree
+554,HC-233,17,Figure 3,MSA Status,No,Ever used (ages 18-24),39.3%,39.3,pct,1,not computable (no MSA variable on HC-233),M3+R2 agree
+554,HC-233,18,Figure 4,General Health,Excellent,Ever used (ages 18-24),27.0%,27.0,pct,1,computable,M3+R2 agree
+554,HC-233,19,Figure 4,General Health,Very good,Ever used (ages 18-24),30.4%,30.4,pct,1,computable,M3+R2 agree
+554,HC-233,20,Figure 4,General Health,Good,Ever used (ages 18-24),34.4%,34.4,pct,1,computable,M3+R2 agree
+554,HC-233,21,Figure 4,General Health,Fair/poor,Ever used (ages 18-24),46.6%,46.6,pct,1,computable,M3+R2 agree
+554,HC-233,22,Figure 4,Mental Health,Excellent,Ever used (ages 18-24),25.1%,25.1,pct,1,computable,M3+R2 agree
+554,HC-233,23,Figure 4,Mental Health,Very good,Ever used (ages 18-24),31.4%,31.4,pct,1,computable,M3+R2 agree
+554,HC-233,24,Figure 4,Mental Health,Good,Ever used (ages 18-24),31.1%,31.1,pct,1,computable,M3+R2 agree
+554,HC-233,25,Figure 4,Mental Health,Fair/poor,Ever used (ages 18-24),44.1%,44.1,pct,1,computable,M3+R2 agree
+554,HC-233,26,Figure 5,Currently Smoke,Yes,Ever used (ages 18-24),68.3%,68.3,pct,1,computable,M3+R2 agree
+554,HC-233,27,Figure 5,Currently Smoke,No,Ever used (ages 18-24),28.1%,28.1,pct,1,computable,M3+R2 agree
+554,HC-233,28,Figure 5,Asthma Diagnosis,Yes,Ever used (ages 18-24),39.3%,39.3,pct,1,computable,M3+R2 agree
+554,HC-233,29,Figure 5,Asthma Diagnosis,No,Ever used (ages 18-24),29.0%,29.0,pct,1,computable,M3+R2 agree
+554,HC-233,30,Text (Findings),All adults,18+,Ever used an electronic nicotine product (not shown),15.5 percent,15.5,pct,1,computable,R2+R3 agree
+558,HC-233,1,Figure 1,,Total,Lacked reliable transportation (adults 18+),6.2,6.2,pct,1,computable,M3+R2 agree
+558,HC-233,2,Figure 1,Age,18-34,Lacked reliable transportation (adults 18+),11.1,11.1,pct,1,computable,M3+R2 agree
+558,HC-233,3,Figure 1,Age,35-49,Lacked reliable transportation (adults 18+),9.2,9.2,pct,1,computable,M3+R2 agree
+558,HC-233,4,Figure 1,Age,50-64,Lacked reliable transportation (adults 18+),6.1,6.1,pct,1,computable,M3+R2 agree
+558,HC-233,5,Figure 1,Age,65+,Lacked reliable transportation (adults 18+),4.3,4.3,pct,1,computable,M3+R2 agree
+558,HC-233,6,Figure 1,Race/ethnicity,Non-Hispanic White,Lacked reliable transportation (adults 18+),4.6,4.6,pct,1,computable,M3+R2 agree
+558,HC-233,7,Figure 1,Race/ethnicity,Non-Hispanic Black,Lacked reliable transportation (adults 18+),8.8,8.8,pct,1,computable,M3+R2 agree
+558,HC-233,8,Figure 1,Race/ethnicity,Hispanic,Lacked reliable transportation (adults 18+),9.3,9.3,pct,1,computable,M3+R2 agree
+558,HC-233,9,Figure 1,Race/ethnicity,Non-Hispanic other,Lacked reliable transportation (adults 18+),10.0,10.0,pct,1,computable,M3+R2 agree
+558,HC-233,10,Figure 2,Insurance,Any private health insurance,Lacked reliable transportation (adults 18+),3.4,3.4,pct,1,computable,M3+R2 agree
+558,HC-233,11,Figure 2,Insurance,Medicare,Lacked reliable transportation (adults 18+),7.9,7.9,pct,1,computable,M3+R2 agree
+558,HC-233,12,Figure 2,Insurance,Medicaid,Lacked reliable transportation (adults 18+),20.4,20.4,pct,1,computable,M3+R2 agree
+558,HC-233,13,Figure 2,Insurance,Uninsured,Lacked reliable transportation (adults 18+),11.4,11.4,pct,1,computable,M3+R2 agree
+558,HC-233,14,Figure 3,General Health,Excellent,Lacked reliable transportation (adults 18+),3.7,3.7,pct,1,computable,M3+R2 agree
+558,HC-233,15,Figure 3,General Health,Very good,Lacked reliable transportation (adults 18+),2.9,2.9,pct,1,computable,M3+R2 agree
+558,HC-233,16,Figure 3,General Health,Good,Lacked reliable transportation (adults 18+),4.8,4.8,pct,1,computable,M3+R2 agree
+558,HC-233,17,Figure 3,General Health,Fair/poor,Lacked reliable transportation (adults 18+),15.1,15.1,pct,1,computable,M3+R2 agree
+558,HC-233,18,Figure 3,Mental health,Excellent,Lacked reliable transportation (adults 18+),3.5,3.5,pct,1,computable,M3+R2 agree
+558,HC-233,19,Figure 3,Mental health,Very good,Lacked reliable transportation (adults 18+),3.9,3.9,pct,1,computable,M3+R2 agree
+558,HC-233,20,Figure 3,Mental health,Good,Lacked reliable transportation (adults 18+),6.2,6.2,pct,1,computable,M3+R2 agree
+558,HC-233,21,Figure 3,Mental health,Fair/poor,Lacked reliable transportation (adults 18+),17.8,17.8,pct,1,computable,M3+R2 agree
+558,HC-233,22,Figure 4,Private and general health,Any private health insurance and good or better health,Lacked reliable transportation (adults 18+),2.4,2.4,pct,1,computable,M3+R2 agree
+558,HC-233,23,Figure 4,Private and general health,Any private health insurance and fair or poor health,Lacked reliable transportation (adults 18+),9.0,9.0,pct,1,computable,M3+R2 agree
+558,HC-233,24,Figure 4,Medicare and general health status,Medicare and good or better health,Lacked reliable transportation (adults 18+),5.4,5.4,pct,1,computable,M3+R2 agree
+558,HC-233,25,Figure 4,Medicare and general health status,Medicare and fair or poor health,Lacked reliable transportation (adults 18+),14.5,14.5,pct,1,computable,M3+R2 agree
+558,HC-233,26,Figure 4,Medicaid and general health status,Medicaid and good or better health,Lacked reliable transportation (adults 18+),11.5,11.5,pct,1,computable,M3+R2 agree
+558,HC-233,27,Figure 4,Medicaid and general health status,Medicaid and fair or poor health,Lacked reliable transportation (adults 18+),33.0,33.0,pct,1,computable,M3+R2 agree
+558,HC-233,,Figure 4,Uninsured and general health status,Uninsured and good or better health,Lacked reliable transportation (adults 18+),-,,pct,0,suppressed (no estimate printed),R2 only
+558,HC-233,,Figure 4,Uninsured and general health status,Uninsured and fair or poor health,Lacked reliable transportation (adults 18+),-,,pct,0,suppressed (no estimate printed),R2 only
+558,HC-233,28,Figure 5,Health condition,None,Lacked reliable transportation (adults 18+),3.0,3.0,pct,1,computable,M3+R2 agree
+558,HC-233,29,Figure 5,Health condition,Diabetes,Lacked reliable transportation (adults 18+),8.1,8.1,pct,1,computable,M3+R2 agree
+558,HC-233,30,Figure 5,Health condition,Emphysema,Lacked reliable transportation (adults 18+),12.1,12.1,pct,1,computable,M3+R2 agree
+558,HC-233,31,Figure 5,Health condition,Cancer,Lacked reliable transportation (adults 18+),3.9,3.9,pct,1,computable,M3+R2 agree
+558,HC-233,32,Figure 5,Health condition,Heart Disease,Lacked reliable transportation (adults 18+),7.5,7.5,pct,1,computable,M3+R2 agree
+558,HC-233,33,Figure 5,Health condition,Current Smoker,Lacked reliable transportation (adults 18+),15.5,15.5,pct,1,computable,M3+R2 agree
+558,HC-233,34,Figure 5,Health condition,Asthma,Lacked reliable transportation (adults 18+),10.2,10.2,pct,1,computable,M3+R2 agree
+558,HC-233,35,Figure 5,Health condition,Hypertension,Lacked reliable transportation (adults 18+),6.5,6.5,pct,1,computable,M3+R2 agree
+558,HC-233,36,Figure 5,Health condition,Stroke,Lacked reliable transportation (adults 18+),11.3,11.3,pct,1,computable,M3+R2 agree
+558,HC-233,37,Figure 5,Health condition,High Cholesterol,Lacked reliable transportation (adults 18+),5.8,5.8,pct,1,computable,M3+R2 agree
+558,HC-233,38,Figure 6,Number of conditions,None,Lacked reliable transportation (adults 18+),3.0,3.0,pct,1,computable,M3+R2 agree
+558,HC-233,39,Figure 6,Number of conditions,At least two conditions,Lacked reliable transportation (adults 18+),6.6,6.6,pct,1,computable (label contradicted by text),M3+R2 agree
+558,HC-233,40,Figure 6,Number of conditions,At least three conditions,Lacked reliable transportation (adults 18+),7.7,7.7,pct,1,computable (label contradicted by text),M3+R2 agree
+558,HC-233,41,Figure 6,Number of conditions,At least four conditions,Lacked reliable transportation (adults 18+),9.1,9.1,pct,0,beyond the 40-cell cap,M3+R2 agree
+493,HC-171,1,Figure 1,Any services,Total,Percentage with expense,85.1%,85.1,pct,1,computable,M3+R2 agree
+493,HC-171,2,Figure 1,Any services,< 65 years,Percentage with expense,83.1%,83.1,pct,1,computable,M3+R2 agree
+493,HC-171,3,Figure 1,Any services,65+ years,Percentage with expense,96.4%,96.4,pct,1,computable,M3+R2 agree
+493,HC-171,4,Figure 1,Hospital inpatient services,Total,Percentage with expense,6.6%,6.6,pct,1,computable,M3+R2 agree
+493,HC-171,5,Figure 1,Hospital inpatient services,< 65 years,Percentage with expense,4.9%,4.9,pct,1,computable,M3+R2 agree
+493,HC-171,6,Figure 1,Hospital inpatient services,65+ years,Percentage with expense,16.3%,16.3,pct,1,computable,M3+R2 agree
+493,HC-171,7,Figure 1,Ambulatory services,Total,Percentage with expense,75.9%,75.9,pct,1,computable,M3+R2 agree
+493,HC-171,8,Figure 1,Ambulatory services,< 65 years,Percentage with expense,72.9%,72.9,pct,1,computable,M3+R2 agree
+493,HC-171,9,Figure 1,Ambulatory services,65+ years,Percentage with expense,93.0%,93.0,pct,1,computable,M3+R2 agree
+493,HC-171,10,Figure 1,Prescribed medicines,Total,Percentage with expense,61.4%,61.4,pct,1,computable,M3+R2 agree
+493,HC-171,11,Figure 1,Prescribed medicines,< 65 years,Percentage with expense,56.2%,56.2,pct,1,computable,M3+R2 agree
+493,HC-171,12,Figure 1,Prescribed medicines,65+ years,Percentage with expense,90.5%,90.5,pct,1,computable,M3+R2 agree
+493,HC-171,13,Figure 1,Dental services,Total,Percentage with expense,41.4%,41.4,pct,1,computable,M3+R2 agree
+493,HC-171,14,Figure 1,Dental services,< 65 years,Percentage with expense,40.6%,40.6,pct,1,computable,M3+R2 agree
+493,HC-171,15,Figure 1,Dental services,65+ years,Percentage with expense,45.9%,45.9,pct,1,computable,M3+R2 agree
+493,HC-171,16,Figure 1,Home health care and other medical services and equipment,Total,Percentage with expense,20.4%,20.4,pct,1,computable,M3+R2 agree
+493,HC-171,17,Figure 1,Home health care and other medical services and equipment,< 65 years,Percentage with expense,17.9%,17.9,pct,1,computable,M3+R2 agree
+493,HC-171,18,Figure 1,Home health care and other medical services and equipment,65+ years,Percentage with expense,34.5%,34.5,pct,1,computable,M3+R2 agree
+493,HC-171,19,Figure 2,All services (total),All ages,Mean expense per person with expense,"$5,531",5531,usd,1,computable,M3+R2 agree
+493,HC-171,20,Figure 2,All services (total),<65 years,Mean expense per person with expense,"$4,430",4430,usd,1,computable,M3+R2 agree
+493,HC-171,21,Figure 2,All services (total),65+ years,Mean expense per person with expense,"$10,890",10890,usd,1,computable,M3+R2 agree
+493,HC-171,22,Figure 2,Hospital inpatient services,All ages,Mean expense per person with expense,"$18,234",18234,usd,1,computable,M3+R2 agree
+493,HC-171,23,Figure 2,Hospital inpatient services,<65 years,Mean expense per person with expense,"$17,663",17663,usd,1,computable,M3+R2 agree
+493,HC-171,24,Figure 2,Hospital inpatient services,65+ years,Mean expense per person with expense,"$19,191",19191,usd,1,computable,M3+R2 agree
+493,HC-171,25,Figure 2,Ambulatory services,All ages,Mean expense per person with expense,"$2,389",2389,usd,1,computable,M3+R2 agree
+493,HC-171,26,Figure 2,Ambulatory services,<65 years,Mean expense per person with expense,"$2,056",2056,usd,1,computable,M3+R2 agree
+493,HC-171,27,Figure 2,Ambulatory services,65+ years,Mean expense per person with expense,"$3,859",3859,usd,1,computable,M3+R2 agree
+493,HC-171,28,Figure 2,Prescribed medicines,All ages,Mean expense per person with expense,"$1,792",1792,usd,1,computable,M3+R2 agree
+493,HC-171,29,Figure 2,Prescribed medicines,<65 years,Mean expense per person with expense,"$1,561",1561,usd,1,computable,M3+R2 agree
+493,HC-171,30,Figure 2,Prescribed medicines,65+ years,Mean expense per person with expense,"$2,602",2602,usd,1,computable,M3+R2 agree
+493,HC-171,31,Figure 2,Dental services,All ages,Mean expense per person with expense,$696,696,usd,1,computable,M3+R2 agree
+493,HC-171,32,Figure 2,Dental services,<65 years,Mean expense per person with expense,$657,657,usd,1,computable,M3+R2 agree
+493,HC-171,33,Figure 2,Dental services,65+ years,Mean expense per person with expense,$893,893,usd,1,computable,M3+R2 agree
+493,HC-171,34,Figure 2,Home health care and other medical services and supplies,All ages,Mean expense per person with expense,"$1,508",1508,usd,1,computable,M3+R2 agree
+493,HC-171,35,Figure 2,Home health care and other medical services and supplies,<65 years,Mean expense per person with expense,"$1,025",1025,usd,1,computable,M3+R2 agree
+493,HC-171,36,Figure 2,Home health care and other medical services and supplies,65+ years,Mean expense per person with expense,"$2,924",2924,usd,1,computable,M3+R2 agree
+493,HC-171,37,Figure 3,All services (total),All ages,Median expense per person with expense,"$1,372",1372,usd,1,computable,M3+R2 agree
+493,HC-171,38,Figure 3,All services (total),<65 years,Median expense per person with expense,"$1,040",1040,usd,1,computable,M3+R2 agree
+493,HC-171,39,Figure 3,All services (total),65+ years,Median expense per person with expense,"$4,875",4875,usd,1,computable,M3+R2 agree
+493,HC-171,40,Figure 3,Hospital inpatient services,All ages,Median expense per person with expense,"$9,823",9823,usd,1,computable,M3+R2 agree
+496,HC-171,1,Figure 1,Ages,0-17,No Expenditures,19.7,19.7,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,2,Figure 1,Ages,0-17,Low,35.3,35.3,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,3,Figure 1,Ages,0-17,Middle,18.3,18.3,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,4,Figure 1,Ages,0-17,High,5.0,5.0,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,5,Figure 1,Ages,18-44,No Expenditures,56.3,56.3,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,6,Figure 1,Ages,18-44,Low,39.0,39.0,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,7,Figure 1,Ages,18-44,Middle,28.5,28.5,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,8,Figure 1,Ages,18-44,High,20.1,20.1,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,9,Figure 1,Ages,45-64,No Expenditures,20.3,20.3,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,10,Figure 1,Ages,45-64,Low,20.1,20.1,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,11,Figure 1,Ages,45-64,Middle,31.8,31.8,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,12,Figure 1,Ages,45-64,High,35.1,35.1,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,13,Figure 1,Ages,65+,No Expenditures,3.7,3.7,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,14,Figure 1,Ages,65+,Low,5.6,5.6,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,15,Figure 1,Ages,65+,Middle,21.4,21.4,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,16,Figure 1,Ages,65+,High,39.8,39.8,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,17,Figure 2a,Aged 0-17 years,Any private,No Expenditures,42.6,42.6,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,18,Figure 2a,Aged 0-17 years,Any private,Low,53.0,53.0,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,19,Figure 2a,Aged 0-17 years,Any private,Middle,68.1,68.1,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,20,Figure 2a,Aged 0-17 years,Any private,High,65.8,65.8,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,21,Figure 2a,Aged 0-17 years,Public only,No Expenditures,44.8,44.8,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,22,Figure 2a,Aged 0-17 years,Public only,Low,44.1,44.1,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,23,Figure 2a,Aged 0-17 years,Public only,Middle,30.2,30.2,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,24,Figure 2a,Aged 0-17 years,Public only,High,32.5,32.5,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,25,Figure 2a,Aged 0-17 years,Uninsured (all year),No Expenditures,12.6,12.6,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,26,Figure 2a,Aged 0-17 years,Uninsured (all year),Low,2.9,2.9,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,27,Figure 2a,Aged 0-17 years,Uninsured (all year),Middle,1.7,1.7,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,28,Figure 2a,Aged 0-17 years,Uninsured (all year),High,1.7,1.7,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,29,Figure 2b,Aged 18-64 years,Any private,No Expenditures,50.8,50.8,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,30,Figure 2b,Aged 18-64 years,Any private,Low,73.6,73.6,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,31,Figure 2b,Aged 18-64 years,Any private,Middle,79.5,79.5,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,32,Figure 2b,Aged 18-64 years,Any private,High,69.4,69.4,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,33,Figure 2b,Aged 18-64 years,Public only,No Expenditures,11.2,11.2,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,34,Figure 2b,Aged 18-64 years,Public only,Low,12.5,12.5,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,35,Figure 2b,Aged 18-64 years,Public only,Middle,14.3,14.3,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,36,Figure 2b,Aged 18-64 years,Public only,High,27.1,27.1,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,37,Figure 2b,Aged 18-64 years,Uninsured (all year),No Expenditures,38.0,38.0,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,38,Figure 2b,Aged 18-64 years,Uninsured (all year),Low,13.9,13.9,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,39,Figure 2b,Aged 18-64 years,Uninsured (all year),Middle,6.2,6.2,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+496,HC-171,40,Figure 2b,Aged 18-64 years,Uninsured (all year),High,3.5,3.5,pct,1,computable,M3+R2 agree (M3 column labels shifted by one)
+497,HC-171,1,Figure 1,Cumulative percentage of population,10,Cumulative percentage of expenditures,0.0,0.0,pct,1,computable (curve reading underspecified),M3+R2 agree
+497,HC-171,2,Figure 1,Cumulative percentage of population,10,Total expenditures (in billions),$0,0,usd_bn,1,computable (curve reading underspecified),M3+R2 agree
+497,HC-171,3,Figure 1,Cumulative percentage of population,20,Cumulative percentage of expenditures,0.1,0.1,pct,1,computable (curve reading underspecified),M3+R2 agree
+497,HC-171,4,Figure 1,Cumulative percentage of population,20,Total expenditures (in billions),$1,1,usd_bn,1,computable (curve reading underspecified),M3+R2 agree
+497,HC-171,5,Figure 1,Cumulative percentage of population,30,Cumulative percentage of expenditures,0.5,0.5,pct,1,computable (curve reading underspecified),M3+R2 agree
+497,HC-171,6,Figure 1,Cumulative percentage of population,30,Total expenditures (in billions),$7,7,usd_bn,1,computable (curve reading underspecified),M3+R2 agree
+497,HC-171,7,Figure 1,Cumulative percentage of population,40,Cumulative percentage of expenditures,1.3,1.3,pct,1,computable (curve reading underspecified),M3+R2 agree
+497,HC-171,8,Figure 1,Cumulative percentage of population,40,Total expenditures (in billions),$20,20,usd_bn,1,computable (curve reading underspecified),M3+R2 agree
+497,HC-171,9,Figure 1,Cumulative percentage of population,50,Cumulative percentage of expenditures,2.8,2.8,pct,1,computable (curve reading underspecified),M3+R2 agree
+497,HC-171,10,Figure 1,Cumulative percentage of population,50,Total expenditures (in billions),$42,42,usd_bn,1,computable (curve reading underspecified),M3+R2 agree
+497,HC-171,11,Figure 1,Cumulative percentage of population,60,Cumulative percentage of expenditures,5.4,5.4,pct,1,computable (curve reading underspecified),M3+R2 agree
+497,HC-171,12,Figure 1,Cumulative percentage of population,60,Total expenditures (in billions),$81,81,usd_bn,1,computable (curve reading underspecified),M3+R2 agree
+497,HC-171,13,Figure 1,Cumulative percentage of population,70,Cumulative percentage of expenditures,9.9,9.9,pct,1,computable (curve reading underspecified),M3+R2 agree
+497,HC-171,14,Figure 1,Cumulative percentage of population,70,Total expenditures (in billions),$149,149,usd_bn,1,computable (curve reading underspecified),M3+R2 agree
+497,HC-171,15,Figure 1,Cumulative percentage of population,80,Cumulative percentage of expenditures,17.9,17.9,pct,1,computable (curve reading underspecified),M3+R2 agree
+497,HC-171,16,Figure 1,Cumulative percentage of population,80,Total expenditures (in billions),$269,269,usd_bn,1,computable (curve reading underspecified),M3+R2 agree
+497,HC-171,17,Figure 1,Cumulative percentage of population,90,Cumulative percentage of expenditures,33.8,33.8,pct,1,computable (curve reading underspecified),M3+R2 agree
+497,HC-171,18,Figure 1,Cumulative percentage of population,90,Total expenditures (in billions),$506,506,usd_bn,1,computable (curve reading underspecified),M3+R2 agree
+497,HC-171,19,Figure 1,Cumulative percentage of population,95,Cumulative percentage of expenditures,49.6,49.6,pct,1,computable (curve reading underspecified),M3+R2 agree
+497,HC-171,20,Figure 1,Cumulative percentage of population,95,Total expenditures (in billions),$743,743,usd_bn,1,computable (curve reading underspecified),M3+R2 agree
+497,HC-171,21,Figure 1,Cumulative percentage of population,99,Cumulative percentage of expenditures,77.2,77.2,pct,1,computable (curve reading underspecified),M3+R2 agree
+497,HC-171,22,Figure 1,Cumulative percentage of population,99,Total expenditures (in billions),$1158,1158,usd_bn,1,computable (curve reading underspecified),M3+R2 agree
+497,HC-171,23,Figure 2,Percentile of spending distribution,Bottom 50%,Average annual expenditure per person,$264,264,usd,1,computable,M3+R2 agree (M3 took $264 as a row label)
+497,HC-171,24,Figure 2,Percentile of spending distribution,Top 50%,Average annual expenditure per person,"$9,153",9153,usd,1,computable,M3+R2 agree
+497,HC-171,25,Figure 2,Percentile of spending distribution,Top 30%,Average annual expenditure per person,"$14,138",14138,usd,1,computable,M3+R2 agree
+497,HC-171,26,Figure 2,Percentile of spending distribution,Top 10%,Average annual expenditure per person,"$31,203",31203,usd,1,computable,M3+R2 agree
+497,HC-171,27,Figure 2,Percentile of spending distribution,Top 5%,Average annual expenditure per person,"$47,498",47498,usd,1,computable,M3+R2 agree
+497,HC-171,28,Figure 2,Percentile of spending distribution,Top 1%,Average annual expenditure per person,"$107,208",107208,usd,1,computable,M3+R2 agree
+497,HC-171,29,Figure 3,Age group,Age 65 and older,Percentage of population,15.1,15.1,pct,1,computable,M3+R2 agree
+497,HC-171,30,Figure 3,Age group,Age 65 and older,Percentage of expenditures,33.6,33.6,pct,1,computable,M3+R2 agree
+497,HC-171,31,Figure 3,Age group,Ages 45-64,Percentage of population,26.3,26.3,pct,1,computable,M3+R2 agree
+497,HC-171,32,Figure 3,Age group,Ages 45-64,Percentage of expenditures,35.5,35.5,pct,1,computable (text says 35.9),M3+R2 agree
+497,HC-171,33,Figure 3,Age group,Ages 18-44,Percentage of population,35.9,35.9,pct,1,computable (text says 35.5),M3+R2 agree
+497,HC-171,34,Figure 3,Age group,Ages 18-44,Percentage of expenditures,20.3,20.3,pct,1,computable,M3+R2 agree
+497,HC-171,35,Figure 3,Age group,Ages 0-17,Percentage of population,23.2,23.2,pct,1,computable,M3+R2 agree
+497,HC-171,36,Figure 3,Age group,Ages 0-17,Percentage of expenditures,10.2,10.2,pct,1,computable,M3+R2 agree
+497,HC-171,37,Figure 4,Age group,0-17,Bottom 50% (average expenditures),172,172,usd,1,computable,M3+R2 agree
+497,HC-171,38,Figure 4,Age group,0-17,Top 50% (average expenditures),"3,979",3979,usd,1,computable,M3+R2 agree
+497,HC-171,39,Figure 4,Age group,0-17,Top 10% (average expenditures),"14,442",14442,usd,1,computable,M3+R2 agree
+497,HC-171,40,Figure 4,Age group,0-17,Top 5% (average expenditures),"23,855",23855,usd,1,computable,M3+R2 agree
+533,HC-209,1,Figure 1,Cumulative percentage of population,10,Cumulative percentage of expenditures,0.0,0.0,pct,1,computable (curve reading underspecified),M3+R2 agree
+533,HC-209,2,Figure 1,Cumulative percentage of population,10,Cumulative expenditures in billions,0.0,0.0,usd_bn,1,computable (curve reading underspecified),M3+R2 agree
+533,HC-209,3,Figure 1,Cumulative percentage of population,20,Cumulative percentage of expenditures,0.1,0.1,pct,1,computable (curve reading underspecified),M3+R2 agree
+533,HC-209,4,Figure 1,Cumulative percentage of population,20,Cumulative expenditures in billions,2.1,2.1,usd_bn,1,computable (curve reading underspecified),M3+R2 agree
+533,HC-209,5,Figure 1,Cumulative percentage of population,30,Cumulative percentage of expenditures,0.6,0.6,pct,1,computable (curve reading underspecified),M3+R2 agree
+533,HC-209,6,Figure 1,Cumulative percentage of population,30,Cumulative expenditures in billions,11.1,11.1,usd_bn,1,computable (curve reading underspecified),M3+R2 agree
+533,HC-209,7,Figure 1,Cumulative percentage of population,40,Cumulative percentage of expenditures,1.5,1.5,pct,1,computable (curve reading underspecified),M3+R2 agree
+533,HC-209,8,Figure 1,Cumulative percentage of population,40,Cumulative expenditures in billions,29.8,29.8,usd_bn,1,computable (curve reading underspecified),M3+R2 agree
+533,HC-209,9,Figure 1,Cumulative percentage of population,50,Cumulative percentage of expenditures,3.2,3.2,pct,1,computable (curve reading underspecified),M3+R2 agree
+533,HC-209,10,Figure 1,Cumulative percentage of population,50,Cumulative expenditures in billions,62.6,62.6,usd_bn,1,computable (curve reading underspecified),M3+R2 agree
+533,HC-209,11,Figure 1,Cumulative percentage of population,60,Cumulative percentage of expenditures,6.0,6.0,pct,1,computable (curve reading underspecified),M3+R2 agree
+533,HC-209,12,Figure 1,Cumulative percentage of population,60,Cumulative expenditures in billions,118.8,118.8,usd_bn,1,computable (curve reading underspecified),M3+R2 agree
+533,HC-209,13,Figure 1,Cumulative percentage of population,70,Cumulative percentage of expenditures,10.8,10.8,pct,1,computable (curve reading underspecified),M3+R2 agree
+533,HC-209,14,Figure 1,Cumulative percentage of population,70,Cumulative expenditures in billions,214.0,214.0,usd_bn,1,computable (curve reading underspecified),M3+R2 agree
+533,HC-209,15,Figure 1,Cumulative percentage of population,80,Cumulative percentage of expenditures,19.3,19.3,pct,1,computable (curve reading underspecified),M3+R2 agree
+533,HC-209,16,Figure 1,Cumulative percentage of population,80,Cumulative expenditures in billions,381.0,381.0,usd_bn,1,computable (curve reading underspecified),M3+R2 agree
+533,HC-209,17,Figure 1,Cumulative percentage of population,90,Cumulative percentage of expenditures,35.7,35.7,pct,1,computable (curve reading underspecified),M3+R2 agree
+533,HC-209,18,Figure 1,Cumulative percentage of population,90,Cumulative expenditures in billions,707.1,707.1,usd_bn,1,computable (curve reading underspecified),M3+R2 agree
+533,HC-209,19,Figure 1,Cumulative percentage of population,95,Cumulative percentage of expenditures,51.7,51.7,pct,1,computable (curve reading underspecified),M3+R2 agree
+533,HC-209,20,Figure 1,Cumulative percentage of population,95,Cumulative expenditures in billions,1022.8,1022.8,usd_bn,1,computable (curve reading underspecified),M3+R2 agree
+533,HC-209,21,Figure 1,Cumulative percentage of population,99,Cumulative percentage of expenditures,79.0,79.0,pct,1,computable (curve reading underspecified),M3+R2 agree
+533,HC-209,22,Figure 1,Cumulative percentage of population,99,Cumulative expenditures in billions,1564.0,1564.0,usd_bn,1,computable (curve reading underspecified),M3+R2 agree
+533,HC-209,23,Figure 1,Cumulative percentage of population,100,Cumulative expenditures in billions,1978.6,1978.6,usd_bn,1,computable,M3+R2 agree
+533,HC-209,24,Figure 2,Percentile of spending distribution,Overall,Average annual expenditure per person ($),"6,063",6063,usd,1,computable,M3+R2 agree
+533,HC-209,25,Figure 2,Percentile of spending distribution,Bottom 50%,Average annual expenditure per person ($),384,384,usd,1,computable,M3+R2 agree
+533,HC-209,26,Figure 2,Percentile of spending distribution,Top 50%,Average annual expenditure per person ($),"11,743",11743,usd,1,computable,M3+R2 agree
+533,HC-209,27,Figure 2,Percentile of spending distribution,Top 30%,Average annual expenditure per person ($),"18,027",18027,usd,1,computable,M3+R2 agree
+533,HC-209,28,Figure 2,Percentile of spending distribution,Top 10%,Average annual expenditure per person ($),"38,980",38980,usd,1,computable,M3+R2 agree
+533,HC-209,29,Figure 2,Percentile of spending distribution,Top 5%,Average annual expenditure per person ($),"58,609",58609,usd,1,computable,M3+R2 agree
+533,HC-209,30,Figure 2,Percentile of spending distribution,Top 1%,Average annual expenditure per person ($),"127,284",127284,usd,1,computable,M3+R2 agree
+533,HC-209,31,Figure 3,Condition,Hypertension,Overall percentage (treated),18.9,18.9,pct,1,not computable (treated conditions; no condition codes on HC-209),M3+R2 agree
+533,HC-209,32,Figure 3,Condition,Hypertension,Top 5% (treated),48.8,48.8,pct,1,not computable (treated conditions; no condition codes on HC-209),M3+R2 agree
+533,HC-209,33,Figure 3,Condition,Osteoarthritis and other non-traumatic joint disorders,Overall percentage (treated),16.7,16.7,pct,1,not computable (treated conditions; no condition codes on HC-209),M3+R2 agree
+533,HC-209,34,Figure 3,Condition,Osteoarthritis and other non-traumatic joint disorders,Top 5% (treated),44.0,44.0,pct,1,not computable (treated conditions; no condition codes on HC-209),M3+R2 agree
+533,HC-209,35,Figure 3,Condition,Nervous system disorders,Overall percentage (treated),12.1,12.1,pct,1,not computable (treated conditions; no condition codes on HC-209),M3+R2 agree
+533,HC-209,36,Figure 3,Condition,Nervous system disorders,Top 5% (treated),40.0,40.0,pct,1,not computable (treated conditions; no condition codes on HC-209),M3+R2 agree
+533,HC-209,37,Figure 3,Condition,Hyperlipidemia,Overall percentage (treated),14.0,14.0,pct,1,not computable (treated conditions; no condition codes on HC-209),M3+R2 agree
+533,HC-209,38,Figure 3,Condition,Hyperlipidemia,Top 5% (treated),37.9,37.9,pct,1,not computable (treated conditions; no condition codes on HC-209),M3+R2 agree
+533,HC-209,39,Figure 3,Condition,Mental disorders,Overall percentage (treated),15.6,15.6,pct,1,not computable (treated conditions; no condition codes on HC-209),M3+R2 agree
+533,HC-209,40,Figure 3,Condition,Mental disorders,Top 5% (treated),36.5,36.5,pct,1,not computable (treated conditions; no condition codes on HC-209),M3+R2 agree
