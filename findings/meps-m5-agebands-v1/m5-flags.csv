@@ -1,0 +1,6 @@
+number,year,label,kind,band_a,band_b,label_a,label_b,title
+165,2007,Figure 3,overlap,0-24,18-44,BMI <25,18-44,"Figure 3. Heart disease prevention measures among the U.S. adult population, by age, 2004 18-44 45-64 65+"
+170,2007,Figure 5,overlap,40-65,65+,Age 40-65,Age 65+,"Figure 5. Percentage of women age 40 and over with breast cancer screening in the past two years, by age and insurance status, 2005"
+227,2008,Figure 4,gap1,0-17,19-25,< 18,19-25,"Figure 4. Age Distribution of Individuals with Full Year and Part Year Individual Market Health Insurance Coverage, in 2006 Coverage < 18 19-25 26-35 36-45 46-55 56-60 61-64"
+509,2018,Figure 2,overlap,0-17,11-50,Children (0-17),Large (11-50),"Figure 2. Distribution of the number of doctors in the practice visited among persons who saw their usual source of care, by age, 2015"
+509,2018,Figure 2,overlap,11-50,18-64,Large (11-50),Adults (18-64),"Figure 2. Distribution of the number of doctors in the practice visited among persons who saw their usual source of care, by age, 2015"

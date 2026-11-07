@@ -1,0 +1,13 @@
+{
+ "version": "0.1.0",
+ "tables": 2999,
+ "figures": 2873,
+ "figures_with_age_bands": 393,
+ "flags": 5,
+ "figures_flagged": 4,
+ "by_kind": {
+  "overlap": 4,
+  "gap1": 1
+ },
+ "positive_control_170_f5": true
+}
