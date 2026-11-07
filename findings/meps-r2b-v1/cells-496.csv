@@ -1,0 +1,41 @@
+seq,source,row,column,published,value,gap,exact,close,status,underspecified
+1,Figure 1,0-17,No Expenditures,19.7,19.7383,0.0383,True,True,computed,False
+2,Figure 1,0-17,Low,35.3,35.3224,0.0224,True,True,computed,False
+3,Figure 1,0-17,Middle,18.3,18.3316,0.0316,True,True,computed,False
+4,Figure 1,0-17,High,5.0,4.9923,-0.0077,True,True,computed,False
+5,Figure 1,18-44,No Expenditures,56.3,56.2894,-0.0106,True,True,computed,False
+6,Figure 1,18-44,Low,39.0,39.0073,0.0073,True,True,computed,False
+7,Figure 1,18-44,Middle,28.5,28.4778,-0.0222,True,True,computed,False
+8,Figure 1,18-44,High,20.1,20.0789,-0.0211,True,True,computed,False
+9,Figure 1,45-64,No Expenditures,20.3,20.2911,-0.0089,True,True,computed,False
+10,Figure 1,45-64,Low,20.1,20.0811,-0.0189,True,True,computed,False
+11,Figure 1,45-64,Middle,31.8,31.7683,-0.0317,True,True,computed,False
+12,Figure 1,45-64,High,35.1,35.0989,-0.0011,True,True,computed,False
+13,Figure 1,65+,No Expenditures,3.7,3.6811,-0.0189,True,True,computed,False
+14,Figure 1,65+,Low,5.6,5.5892,-0.0108,True,True,computed,False
+15,Figure 1,65+,Middle,21.4,21.4223,0.0223,True,True,computed,False
+16,Figure 1,65+,High,39.8,39.83,0.03,True,True,computed,False
+17,Figure 2a,Any private,No Expenditures,42.6,42.588,-0.012,True,True,computed,False
+18,Figure 2a,Any private,Low,53.0,52.9524,-0.0476,True,True,computed,False
+19,Figure 2a,Any private,Middle,68.1,68.1359,0.0359,True,True,computed,False
+20,Figure 2a,Any private,High,65.8,65.8047,0.0047,True,True,computed,False
+21,Figure 2a,Public only,No Expenditures,44.8,44.7628,-0.0372,True,True,computed,False
+22,Figure 2a,Public only,Low,44.1,44.1213,0.0213,True,True,computed,False
+23,Figure 2a,Public only,Middle,30.2,30.1565,-0.0435,True,True,computed,False
+24,Figure 2a,Public only,High,32.5,32.5227,0.0227,True,True,computed,False
+25,Figure 2a,Uninsured (all year),No Expenditures,12.6,12.6492,0.0492,True,True,computed,False
+26,Figure 2a,Uninsured (all year),Low,2.9,2.9263,0.0263,True,True,computed,False
+27,Figure 2a,Uninsured (all year),Middle,1.7,1.7076,0.0076,True,True,computed,False
+28,Figure 2a,Uninsured (all year),High,1.7,1.6726,-0.0274,True,True,computed,False
+29,Figure 2b,Any private,No Expenditures,50.8,50.8133,0.0133,True,True,computed,False
+30,Figure 2b,Any private,Low,73.6,73.6467,0.0467,True,True,computed,False
+31,Figure 2b,Any private,Middle,79.5,79.5165,0.0165,True,True,computed,False
+32,Figure 2b,Any private,High,69.4,69.405,0.005,True,True,computed,False
+33,Figure 2b,Public only,No Expenditures,11.2,11.1909,-0.0091,True,True,computed,False
+34,Figure 2b,Public only,Low,12.5,12.4912,-0.0088,True,True,computed,False
+35,Figure 2b,Public only,Middle,14.3,14.3036,0.0036,True,True,computed,False
+36,Figure 2b,Public only,High,27.1,27.1262,0.0262,True,True,computed,False
+37,Figure 2b,Uninsured (all year),No Expenditures,38.0,37.9957,-0.0043,True,True,computed,False
+38,Figure 2b,Uninsured (all year),Low,13.9,13.8621,-0.0379,True,True,computed,False
+39,Figure 2b,Uninsured (all year),Middle,6.2,6.18,-0.02,True,True,computed,False
+40,Figure 2b,Uninsured (all year),High,3.5,3.4688,-0.0312,True,True,computed,False

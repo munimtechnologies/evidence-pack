@@ -1,0 +1,781 @@
+{
+ "version": "0.1.0",
+ "brief": 554,
+ "file": "H233",
+ "error": null,
+ "data": {
+  "file": "h233dat.zip",
+  "bytes": 8354598,
+  "sha256": "07cb5aa2ae0caf06475901b7364ef6bd1dc23c6624bf2bcd6837096afaaa05ba"
+ },
+ "positions": {
+  "AGE31X": [
+   176,
+   177
+  ],
+  "ANGIDX": [
+   316,
+   318
+  ],
+  "ASTHDX": [
+   400,
+   402
+  ],
+  "BPMLDX": [
+   309,
+   310
+  ],
+  "CANCERDX": [
+   354,
+   356
+  ],
+  "CHDDX": [
+   311,
+   313
+  ],
+  "CHOLDX": [
+   349,
+   351
+  ],
+  "DIABDX_M18": [
+   381,
+   382
+  ],
+  "DUPERSID": [
+   11,
+   20
+  ],
+  "EMPHDX": [
+   339,
+   341
+  ],
+  "INSCOV21": [
+   2408,
+   2408
+  ],
+  "MCDEV21": [
+   2402,
+   2402
+  ],
+  "MCREV21": [
+   2401,
+   2401
+  ],
+  "MIDX": [
+   321,
+   323
+  ],
+  "MNHLTH31": [
+   298,
+   299
+  ],
+  "OFTSMK53": [
+   633,
+   634
+  ],
+  "OHRTDX": [
+   326,
+   328
+  ],
+  "RACETHX": [
+   199,
+   199
+  ],
+  "REGION31": [
+   78,
+   79
+  ],
+  "RTHLTH31": [
+   292,
+   293
+  ],
+  "SDENICPROD": [
+   1006,
+   1008
+  ],
+  "SDNOTRANS": [
+   913,
+   915
+  ],
+  "SDOHWT21F": [
+   4270,
+   4282
+  ],
+  "SEX": [
+   192,
+   192
+  ],
+  "STRKDX": [
+   334,
+   336
+  ]
+ },
+ "gate": {
+  "checks": [
+   [
+    "rows",
+    "count",
+    28336,
+    28336
+   ],
+   [
+    "SDOHWT21F",
+    ">0",
+    18400,
+    18400
+   ],
+   [
+    "SDENICPROD",
+    "==-15",
+    216,
+    216
+   ],
+   [
+    "SDENICPROD",
+    "==-1",
+    9936,
+    9936
+   ],
+   [
+    "SDENICPROD",
+    "==1",
+    2419,
+    2419
+   ],
+   [
+    "SDENICPROD",
+    "==2",
+    15765,
+    15765
+   ],
+   [
+    "SDNOTRANS",
+    "==-15",
+    204,
+    204
+   ],
+   [
+    "SDNOTRANS",
+    "==-1",
+    9936,
+    9936
+   ],
+   [
+    "SDNOTRANS",
+    "==1",
+    1187,
+    1187
+   ],
+   [
+    "SDNOTRANS",
+    "==2",
+    17009,
+    17009
+   ],
+   [
+    "RACETHX",
+    "==1",
+    6798,
+    6798
+   ],
+   [
+    "RACETHX",
+    "==2",
+    15023,
+    15023
+   ],
+   [
+    "RACETHX",
+    "==3",
+    4071,
+    4071
+   ],
+   [
+    "RACETHX",
+    "==4",
+    1385,
+    1385
+   ],
+   [
+    "RACETHX",
+    "==5",
+    1059,
+    1059
+   ],
+   [
+    "AGE31X",
+    "==-1",
+    511,
+    511
+   ],
+   [
+    "INSCOV21",
+    "==1",
+    16128,
+    16128
+   ],
+   [
+    "INSCOV21",
+    "==2",
+    10136,
+    10136
+   ],
+   [
+    "INSCOV21",
+    "==3",
+    2072,
+    2072
+   ],
+   [
+    "OFTSMK53",
+    "==1",
+    1913,
+    1913
+   ],
+   [
+    "OFTSMK53",
+    "==2",
+    939,
+    939
+   ],
+   [
+    "OFTSMK53",
+    "==3",
+    19379,
+    19379
+   ]
+  ],
+  "passed": true
+ },
+ "msa_check": {
+  "msa_variables": [],
+  "positive_control": "REGION31",
+  "positive_found": true,
+  "not_computable": true
+ },
+ "cells": [
+  {
+   "seq": 1,
+   "source": "Figure 1",
+   "group": "Age",
+   "row": "18-24",
+   "column": "Ever used an electronic nicotine product (adults 18+)",
+   "published": "30.6",
+   "unit": "pct",
+   "key": "age|18-24",
+   "underspecified": true,
+   "status": "computed",
+   "value": 30.602787313766456,
+   "gap": 0.002787313766454247,
+   "exact": true,
+   "close": true
+  },
+  {
+   "seq": 2,
+   "source": "Figure 1",
+   "group": "Age",
+   "row": "25-34",
+   "column": "Ever used an electronic nicotine product (adults 18+)",
+   "published": "25.2",
+   "unit": "pct",
+   "key": "age|25-34",
+   "underspecified": true,
+   "status": "computed",
+   "value": 25.18811014102697,
+   "gap": -0.011889858973027856,
+   "exact": true,
+   "close": true
+  },
+  {
+   "seq": 3,
+   "source": "Figure 1",
+   "group": "Age",
+   "row": "35-44",
+   "column": "Ever used an electronic nicotine product (adults 18+)",
+   "published": "17.9",
+   "unit": "pct",
+   "key": "age|35-44",
+   "underspecified": true,
+   "status": "computed",
+   "value": 17.87968482015312,
+   "gap": -0.020315179846878806,
+   "exact": true,
+   "close": true
+  },
+  {
+   "seq": 4,
+   "source": "Figure 1",
+   "group": "Age",
+   "row": "45-64",
+   "column": "Ever used an electronic nicotine product (adults 18+)",
+   "published": "11.2",
+   "unit": "pct",
+   "key": "age|45-64",
+   "underspecified": true,
+   "status": "computed",
+   "value": 11.149398230584355,
+   "gap": -0.050601769415644426,
+   "exact": false,
+   "close": true
+  },
+  {
+   "seq": 5,
+   "source": "Figure 1",
+   "group": "Age",
+   "row": "65+",
+   "column": "Ever used an electronic nicotine product (adults 18+)",
+   "published": "4.1",
+   "unit": "pct",
+   "key": "age|65+",
+   "underspecified": true,
+   "status": "computed",
+   "value": 4.265882735910241,
+   "gap": 0.16588273591024105,
+   "exact": false,
+   "close": true
+  },
+  {
+   "seq": 6,
+   "source": "Figure 2",
+   "group": "Race/ethnicity",
+   "row": "Non-Hispanic White",
+   "column": "Ever used (ages 18-24)",
+   "published": "38.3",
+   "unit": "pct",
+   "key": "race|2",
+   "underspecified": true,
+   "status": "computed",
+   "value": 38.30221086925985,
+   "gap": 0.0022108692598550306,
+   "exact": true,
+   "close": true
+  },
+  {
+   "seq": 7,
+   "source": "Figure 2",
+   "group": "Race/ethnicity",
+   "row": "Non-Hispanic Black",
+   "column": "Ever used (ages 18-24)",
+   "published": "26.2",
+   "unit": "pct",
+   "key": "race|3",
+   "underspecified": true,
+   "status": "computed",
+   "value": 26.170438023848927,
+   "gap": -0.029561976151072145,
+   "exact": true,
+   "close": true
+  },
+  {
+   "seq": 8,
+   "source": "Figure 2",
+   "group": "Race/ethnicity",
+   "row": "Hispanic",
+   "column": "Ever used (ages 18-24)",
+   "published": "19.7",
+   "unit": "pct",
+   "key": "race|1",
+   "underspecified": true,
+   "status": "computed",
+   "value": 19.67093060903845,
+   "gap": -0.029069390961549146,
+   "exact": true,
+   "close": true
+  },
+  {
+   "seq": 9,
+   "source": "Figure 2",
+   "group": "Race/ethnicity",
+   "row": "Non-Hispanic other",
+   "column": "Ever used (ages 18-24)",
+   "published": "24.5",
+   "unit": "pct",
+   "key": "race|other",
+   "underspecified": true,
+   "status": "computed",
+   "value": 24.49950162715962,
+   "gap": -0.0004983728403793464,
+   "exact": true,
+   "close": true
+  },
+  {
+   "seq": 10,
+   "source": "Figure 2",
+   "group": "Sex",
+   "row": "Male",
+   "column": "Ever used (ages 18-24)",
+   "published": "30.6",
+   "unit": "pct",
+   "key": "sex|1",
+   "underspecified": true,
+   "status": "computed",
+   "value": 30.638524100723117,
+   "gap": 0.03852410072311585,
+   "exact": true,
+   "close": true
+  },
+  {
+   "seq": 11,
+   "source": "Figure 2",
+   "group": "Sex",
+   "row": "Female",
+   "column": "Ever used (ages 18-24)",
+   "published": "30.6",
+   "unit": "pct",
+   "key": "sex|2",
+   "underspecified": true,
+   "status": "computed",
+   "value": 30.565047905672536,
+   "gap": -0.03495209432746549,
+   "exact": true,
+   "close": true
+  },
+  {
+   "seq": 12,
+   "source": "Figure 3",
+   "group": "Region",
+   "row": "Northeast",
+   "column": "Ever used (ages 18-24)",
+   "published": "26.6",
+   "unit": "pct",
+   "key": "region|1",
+   "underspecified": true,
+   "status": "computed",
+   "value": 26.54353456011558,
+   "gap": -0.056465439884419766,
+   "exact": false,
+   "close": true
+  },
+  {
+   "seq": 13,
+   "source": "Figure 3",
+   "group": "Region",
+   "row": "Midwest",
+   "column": "Ever used (ages 18-24)",
+   "published": "36.4",
+   "unit": "pct",
+   "key": "region|2",
+   "underspecified": true,
+   "status": "computed",
+   "value": 36.443496035405055,
+   "gap": 0.04349603540505598,
+   "exact": true,
+   "close": true
+  },
+  {
+   "seq": 14,
+   "source": "Figure 3",
+   "group": "Region",
+   "row": "South",
+   "column": "Ever used (ages 18-24)",
+   "published": "32.0",
+   "unit": "pct",
+   "key": "region|3",
+   "underspecified": true,
+   "status": "computed",
+   "value": 31.8969878168764,
+   "gap": -0.1030121831235995,
+   "exact": false,
+   "close": true
+  },
+  {
+   "seq": 15,
+   "source": "Figure 3",
+   "group": "Region",
+   "row": "West",
+   "column": "Ever used (ages 18-24)",
+   "published": "26.3",
+   "unit": "pct",
+   "key": "region|4",
+   "underspecified": true,
+   "status": "computed",
+   "value": 26.257748586271358,
+   "gap": -0.04225141372864272,
+   "exact": true,
+   "close": true
+  },
+  {
+   "seq": 16,
+   "source": "Figure 3",
+   "group": "MSA Status",
+   "row": "Yes",
+   "column": "Ever used (ages 18-24)",
+   "published": "29.6",
+   "unit": "pct",
+   "key": "msa|Yes",
+   "underspecified": true,
+   "status": "not computable",
+   "value": null,
+   "gap": null,
+   "exact": null,
+   "close": null
+  },
+  {
+   "seq": 17,
+   "source": "Figure 3",
+   "group": "MSA Status",
+   "row": "No",
+   "column": "Ever used (ages 18-24)",
+   "published": "39.3",
+   "unit": "pct",
+   "key": "msa|No",
+   "underspecified": true,
+   "status": "not computable",
+   "value": null,
+   "gap": null,
+   "exact": null,
+   "close": null
+  },
+  {
+   "seq": 18,
+   "source": "Figure 4",
+   "group": "General Health",
+   "row": "Excellent",
+   "column": "Ever used (ages 18-24)",
+   "published": "27.0",
+   "unit": "pct",
+   "key": "gh|1",
+   "underspecified": true,
+   "status": "computed",
+   "value": 27.09113755535704,
+   "gap": 0.09113755535704016,
+   "exact": false,
+   "close": true
+  },
+  {
+   "seq": 19,
+   "source": "Figure 4",
+   "group": "General Health",
+   "row": "Very good",
+   "column": "Ever used (ages 18-24)",
+   "published": "30.4",
+   "unit": "pct",
+   "key": "gh|2",
+   "underspecified": true,
+   "status": "computed",
+   "value": 30.76690440454655,
+   "gap": 0.3669044045465526,
+   "exact": false,
+   "close": true
+  },
+  {
+   "seq": 20,
+   "source": "Figure 4",
+   "group": "General Health",
+   "row": "Good",
+   "column": "Ever used (ages 18-24)",
+   "published": "34.4",
+   "unit": "pct",
+   "key": "gh|3",
+   "underspecified": true,
+   "status": "computed",
+   "value": 36.116022863637866,
+   "gap": 1.7160228636378676,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 21,
+   "source": "Figure 4",
+   "group": "General Health",
+   "row": "Fair/poor",
+   "column": "Ever used (ages 18-24)",
+   "published": "46.6",
+   "unit": "pct",
+   "key": "gh|fp",
+   "underspecified": true,
+   "status": "computed",
+   "value": 36.04541254475166,
+   "gap": -10.554587455248338,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 22,
+   "source": "Figure 4",
+   "group": "Mental Health",
+   "row": "Excellent",
+   "column": "Ever used (ages 18-24)",
+   "published": "25.1",
+   "unit": "pct",
+   "key": "mh|1",
+   "underspecified": true,
+   "status": "computed",
+   "value": 25.111057675715784,
+   "gap": 0.011057675715782977,
+   "exact": true,
+   "close": true
+  },
+  {
+   "seq": 23,
+   "source": "Figure 4",
+   "group": "Mental Health",
+   "row": "Very good",
+   "column": "Ever used (ages 18-24)",
+   "published": "31.4",
+   "unit": "pct",
+   "key": "mh|2",
+   "underspecified": true,
+   "status": "computed",
+   "value": 31.40098040374604,
+   "gap": 0.0009804037460412474,
+   "exact": true,
+   "close": true
+  },
+  {
+   "seq": 24,
+   "source": "Figure 4",
+   "group": "Mental Health",
+   "row": "Good",
+   "column": "Ever used (ages 18-24)",
+   "published": "31.1",
+   "unit": "pct",
+   "key": "mh|3",
+   "underspecified": true,
+   "status": "computed",
+   "value": 31.138990558908574,
+   "gap": 0.03899055890857284,
+   "exact": true,
+   "close": true
+  },
+  {
+   "seq": 25,
+   "source": "Figure 4",
+   "group": "Mental Health",
+   "row": "Fair/poor",
+   "column": "Ever used (ages 18-24)",
+   "published": "44.1",
+   "unit": "pct",
+   "key": "mh|fp",
+   "underspecified": true,
+   "status": "computed",
+   "value": 44.150353311611006,
+   "gap": 0.05035331161100487,
+   "exact": false,
+   "close": true
+  },
+  {
+   "seq": 26,
+   "source": "Figure 5",
+   "group": "Currently Smoke",
+   "row": "Yes",
+   "column": "Ever used (ages 18-24)",
+   "published": "68.3",
+   "unit": "pct",
+   "key": "smoke|yes",
+   "underspecified": true,
+   "status": "computed",
+   "value": 68.31267849105606,
+   "gap": 0.012678491056064445,
+   "exact": true,
+   "close": true
+  },
+  {
+   "seq": 27,
+   "source": "Figure 5",
+   "group": "Currently Smoke",
+   "row": "No",
+   "column": "Ever used (ages 18-24)",
+   "published": "28.1",
+   "unit": "pct",
+   "key": "smoke|no",
+   "underspecified": true,
+   "status": "computed",
+   "value": 28.102615160391537,
+   "gap": 0.0026151603915351984,
+   "exact": true,
+   "close": true
+  },
+  {
+   "seq": 28,
+   "source": "Figure 5",
+   "group": "Asthma Diagnosis",
+   "row": "Yes",
+   "column": "Ever used (ages 18-24)",
+   "published": "39.3",
+   "unit": "pct",
+   "key": "asthma|1",
+   "underspecified": true,
+   "status": "computed",
+   "value": 39.30346963538459,
+   "gap": 0.0034696353845902195,
+   "exact": true,
+   "close": true
+  },
+  {
+   "seq": 29,
+   "source": "Figure 5",
+   "group": "Asthma Diagnosis",
+   "row": "No",
+   "column": "Ever used (ages 18-24)",
+   "published": "29.0",
+   "unit": "pct",
+   "key": "asthma|2",
+   "underspecified": true,
+   "status": "computed",
+   "value": 28.884288479042056,
+   "gap": -0.11571152095794446,
+   "exact": false,
+   "close": true
+  },
+  {
+   "seq": 30,
+   "source": "Text (Findings)",
+   "group": "All adults",
+   "row": "18+",
+   "column": "Ever used an electronic nicotine product (not shown)",
+   "published": "15.5",
+   "unit": "pct",
+   "key": "all_adults",
+   "underspecified": true,
+   "status": "computed",
+   "value": 15.473981618666203,
+   "gap": -0.02601838133379708,
+   "exact": true,
+   "close": true
+  }
+ ],
+ "tally": {
+  "cells": 30,
+  "computable": 28,
+  "close": 26,
+  "exact": 18,
+  "not_computable": 2,
+  "unresolved": 0,
+  "share_close": 0.9286
+ },
+ "estimates": {
+  "all_adults": 15.473981618666203,
+  "n|base": 18184,
+  "n|young": 1424,
+  "n|wpos_item_inapplicable": 0,
+  "n|wzero_item_present": 0,
+  "age|18-24": 30.602787313766456,
+  "age|25-34": 25.18811014102697,
+  "age|35-44": 17.87968482015312,
+  "age|45-64": 11.149398230584355,
+  "age|65+": 4.265882735910241,
+  "race|1": 19.67093060903845,
+  "race|2": 38.30221086925985,
+  "race|3": 26.170438023848927,
+  "race|other": 24.49950162715962,
+  "sex|1": 30.638524100723117,
+  "sex|2": 30.565047905672536,
+  "region|1": 26.54353456011558,
+  "region|2": 36.443496035405055,
+  "region|3": 31.8969878168764,
+  "region|4": 26.257748586271358,
+  "gh|1": 27.09113755535704,
+  "gh|2": 30.76690440454655,
+  "gh|3": 36.116022863637866,
+  "gh|fp": 36.04541254475166,
+  "mh|1": 25.111057675715784,
+  "mh|2": 31.40098040374604,
+  "mh|3": 31.138990558908574,
+  "mh|fp": 44.150353311611006,
+  "smoke|yes": 68.31267849105606,
+  "smoke|no": 28.102615160391537,
+  "asthma|1": 39.30346963538459,
+  "asthma|2": 28.884288479042056
+ }
+}

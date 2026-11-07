@@ -1,0 +1,956 @@
+{
+ "version": "0.1.0",
+ "brief": 558,
+ "file": "H233",
+ "error": null,
+ "data": {
+  "file": "h233dat.zip",
+  "bytes": 8354598,
+  "sha256": "07cb5aa2ae0caf06475901b7364ef6bd1dc23c6624bf2bcd6837096afaaa05ba"
+ },
+ "positions": {
+  "AGE31X": [
+   176,
+   177
+  ],
+  "ANGIDX": [
+   316,
+   318
+  ],
+  "ASTHDX": [
+   400,
+   402
+  ],
+  "BPMLDX": [
+   309,
+   310
+  ],
+  "CANCERDX": [
+   354,
+   356
+  ],
+  "CHDDX": [
+   311,
+   313
+  ],
+  "CHOLDX": [
+   349,
+   351
+  ],
+  "DIABDX_M18": [
+   381,
+   382
+  ],
+  "DUPERSID": [
+   11,
+   20
+  ],
+  "EMPHDX": [
+   339,
+   341
+  ],
+  "INSCOV21": [
+   2408,
+   2408
+  ],
+  "MCDEV21": [
+   2402,
+   2402
+  ],
+  "MCREV21": [
+   2401,
+   2401
+  ],
+  "MIDX": [
+   321,
+   323
+  ],
+  "MNHLTH31": [
+   298,
+   299
+  ],
+  "OFTSMK53": [
+   633,
+   634
+  ],
+  "OHRTDX": [
+   326,
+   328
+  ],
+  "RACETHX": [
+   199,
+   199
+  ],
+  "REGION31": [
+   78,
+   79
+  ],
+  "RTHLTH31": [
+   292,
+   293
+  ],
+  "SDENICPROD": [
+   1006,
+   1008
+  ],
+  "SDNOTRANS": [
+   913,
+   915
+  ],
+  "SDOHWT21F": [
+   4270,
+   4282
+  ],
+  "SEX": [
+   192,
+   192
+  ],
+  "STRKDX": [
+   334,
+   336
+  ]
+ },
+ "gate": {
+  "checks": [
+   [
+    "rows",
+    "count",
+    28336,
+    28336
+   ],
+   [
+    "SDOHWT21F",
+    ">0",
+    18400,
+    18400
+   ],
+   [
+    "SDENICPROD",
+    "==-15",
+    216,
+    216
+   ],
+   [
+    "SDENICPROD",
+    "==-1",
+    9936,
+    9936
+   ],
+   [
+    "SDENICPROD",
+    "==1",
+    2419,
+    2419
+   ],
+   [
+    "SDENICPROD",
+    "==2",
+    15765,
+    15765
+   ],
+   [
+    "SDNOTRANS",
+    "==-15",
+    204,
+    204
+   ],
+   [
+    "SDNOTRANS",
+    "==-1",
+    9936,
+    9936
+   ],
+   [
+    "SDNOTRANS",
+    "==1",
+    1187,
+    1187
+   ],
+   [
+    "SDNOTRANS",
+    "==2",
+    17009,
+    17009
+   ],
+   [
+    "RACETHX",
+    "==1",
+    6798,
+    6798
+   ],
+   [
+    "RACETHX",
+    "==2",
+    15023,
+    15023
+   ],
+   [
+    "RACETHX",
+    "==3",
+    4071,
+    4071
+   ],
+   [
+    "RACETHX",
+    "==4",
+    1385,
+    1385
+   ],
+   [
+    "RACETHX",
+    "==5",
+    1059,
+    1059
+   ],
+   [
+    "AGE31X",
+    "==-1",
+    511,
+    511
+   ],
+   [
+    "INSCOV21",
+    "==1",
+    16128,
+    16128
+   ],
+   [
+    "INSCOV21",
+    "==2",
+    10136,
+    10136
+   ],
+   [
+    "INSCOV21",
+    "==3",
+    2072,
+    2072
+   ],
+   [
+    "OFTSMK53",
+    "==1",
+    1913,
+    1913
+   ],
+   [
+    "OFTSMK53",
+    "==2",
+    939,
+    939
+   ],
+   [
+    "OFTSMK53",
+    "==3",
+    19379,
+    19379
+   ]
+  ],
+  "passed": true
+ },
+ "cells": [
+  {
+   "seq": 1,
+   "source": "Figure 1",
+   "group": "",
+   "row": "Total",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "6.2",
+   "unit": "pct",
+   "key": "total",
+   "underspecified": true,
+   "status": "computed",
+   "value": 5.595543681157027,
+   "gap": -0.6044563188429732,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 2,
+   "source": "Figure 1",
+   "group": "Age",
+   "row": "18-34",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "11.1",
+   "unit": "pct",
+   "key": "age|18-34",
+   "underspecified": true,
+   "status": "computed",
+   "value": 6.462955972121193,
+   "gap": -4.637044027878806,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 3,
+   "source": "Figure 1",
+   "group": "Age",
+   "row": "35-49",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "9.2",
+   "unit": "pct",
+   "key": "age|35-49",
+   "underspecified": true,
+   "status": "computed",
+   "value": 5.888357287091466,
+   "gap": -3.311642712908533,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 4,
+   "source": "Figure 1",
+   "group": "Age",
+   "row": "50-64",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "6.1",
+   "unit": "pct",
+   "key": "age|50-64",
+   "underspecified": true,
+   "status": "computed",
+   "value": 4.957070166023205,
+   "gap": -1.1429298339767948,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 5,
+   "source": "Figure 1",
+   "group": "Age",
+   "row": "65+",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "4.3",
+   "unit": "pct",
+   "key": "age|65+",
+   "underspecified": true,
+   "status": "computed",
+   "value": 4.828654620293365,
+   "gap": 0.5286546202933655,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 6,
+   "source": "Figure 1",
+   "group": "Race/ethnicity",
+   "row": "Non-Hispanic White",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "4.6",
+   "unit": "pct",
+   "key": "race|2",
+   "underspecified": true,
+   "status": "computed",
+   "value": 4.193987304943669,
+   "gap": -0.4060126950563303,
+   "exact": false,
+   "close": true
+  },
+  {
+   "seq": 7,
+   "source": "Figure 1",
+   "group": "Race/ethnicity",
+   "row": "Non-Hispanic Black",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "8.8",
+   "unit": "pct",
+   "key": "race|3",
+   "underspecified": true,
+   "status": "computed",
+   "value": 8.572181042661624,
+   "gap": -0.22781895733837665,
+   "exact": false,
+   "close": true
+  },
+  {
+   "seq": 8,
+   "source": "Figure 1",
+   "group": "Race/ethnicity",
+   "row": "Hispanic",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "9.3",
+   "unit": "pct",
+   "key": "race|1",
+   "underspecified": true,
+   "status": "computed",
+   "value": 6.737616193632013,
+   "gap": -2.562383806367988,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 9,
+   "source": "Figure 1",
+   "group": "Race/ethnicity",
+   "row": "Non-Hispanic other",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "10.0",
+   "unit": "pct",
+   "key": "race|other",
+   "underspecified": true,
+   "status": "computed",
+   "value": 14.39053920787708,
+   "gap": 4.3905392078770795,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 10,
+   "source": "Figure 2",
+   "group": "Insurance",
+   "row": "Any private health insurance",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "3.4",
+   "unit": "pct",
+   "key": "ins|private",
+   "underspecified": true,
+   "status": "computed",
+   "value": 3.4221045403840447,
+   "gap": 0.022104540384044746,
+   "exact": true,
+   "close": true
+  },
+  {
+   "seq": 11,
+   "source": "Figure 2",
+   "group": "Insurance",
+   "row": "Medicare",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "7.9",
+   "unit": "pct",
+   "key": "ins|medicare",
+   "underspecified": true,
+   "status": "computed",
+   "value": 7.743518532529464,
+   "gap": -0.15648146747053637,
+   "exact": false,
+   "close": true
+  },
+  {
+   "seq": 12,
+   "source": "Figure 2",
+   "group": "Insurance",
+   "row": "Medicaid",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "20.4",
+   "unit": "pct",
+   "key": "ins|medicaid",
+   "underspecified": true,
+   "status": "computed",
+   "value": 14.122973933479726,
+   "gap": -6.277026066520273,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 13,
+   "source": "Figure 2",
+   "group": "Insurance",
+   "row": "Uninsured",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "11.4",
+   "unit": "pct",
+   "key": "ins|uninsured",
+   "underspecified": true,
+   "status": "computed",
+   "value": 9.462052658482586,
+   "gap": -1.9379473415174147,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 14,
+   "source": "Figure 3",
+   "group": "General Health",
+   "row": "Excellent",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "3.7",
+   "unit": "pct",
+   "key": "gh|1",
+   "underspecified": true,
+   "status": "computed",
+   "value": 3.831930075992982,
+   "gap": 0.1319300759929818,
+   "exact": false,
+   "close": true
+  },
+  {
+   "seq": 15,
+   "source": "Figure 3",
+   "group": "General Health",
+   "row": "Very good",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "2.9",
+   "unit": "pct",
+   "key": "gh|2",
+   "underspecified": true,
+   "status": "computed",
+   "value": 3.5804842931547505,
+   "gap": 0.6804842931547506,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 16,
+   "source": "Figure 3",
+   "group": "General Health",
+   "row": "Good",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "4.8",
+   "unit": "pct",
+   "key": "gh|3",
+   "underspecified": true,
+   "status": "computed",
+   "value": 5.683040129336619,
+   "gap": 0.883040129336619,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 17,
+   "source": "Figure 3",
+   "group": "General Health",
+   "row": "Fair/poor",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "15.1",
+   "unit": "pct",
+   "key": "gh|fp",
+   "underspecified": true,
+   "status": "computed",
+   "value": 14.813486246643143,
+   "gap": -0.28651375335685714,
+   "exact": false,
+   "close": true
+  },
+  {
+   "seq": 18,
+   "source": "Figure 3",
+   "group": "Mental health",
+   "row": "Excellent",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "3.5",
+   "unit": "pct",
+   "key": "mh|1",
+   "underspecified": true,
+   "status": "computed",
+   "value": 3.794692102155727,
+   "gap": 0.29469210215572694,
+   "exact": false,
+   "close": true
+  },
+  {
+   "seq": 19,
+   "source": "Figure 3",
+   "group": "Mental health",
+   "row": "Very good",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "3.9",
+   "unit": "pct",
+   "key": "mh|2",
+   "underspecified": true,
+   "status": "computed",
+   "value": 3.9697528375964923,
+   "gap": 0.06975283759649242,
+   "exact": false,
+   "close": true
+  },
+  {
+   "seq": 20,
+   "source": "Figure 3",
+   "group": "Mental health",
+   "row": "Good",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "6.2",
+   "unit": "pct",
+   "key": "mh|3",
+   "underspecified": true,
+   "status": "computed",
+   "value": 6.351597176688201,
+   "gap": 0.15159717668820072,
+   "exact": false,
+   "close": true
+  },
+  {
+   "seq": 21,
+   "source": "Figure 3",
+   "group": "Mental health",
+   "row": "Fair/poor",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "17.8",
+   "unit": "pct",
+   "key": "mh|fp",
+   "underspecified": true,
+   "status": "computed",
+   "value": 14.490342324154621,
+   "gap": -3.3096576758453793,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 22,
+   "source": "Figure 4",
+   "group": "Private and general health",
+   "row": "Any private health insurance and good or better health",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "2.4",
+   "unit": "pct",
+   "key": "insgh|private|good",
+   "underspecified": true,
+   "status": "computed",
+   "value": 2.9285103212925154,
+   "gap": 0.5285103212925155,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 23,
+   "source": "Figure 4",
+   "group": "Private and general health",
+   "row": "Any private health insurance and fair or poor health",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "9.0",
+   "unit": "pct",
+   "key": "insgh|private|fp",
+   "underspecified": true,
+   "status": "computed",
+   "value": 8.8925862904685,
+   "gap": -0.10741370953149953,
+   "exact": false,
+   "close": true
+  },
+  {
+   "seq": 24,
+   "source": "Figure 4",
+   "group": "Medicare and general health status",
+   "row": "Medicare and good or better health",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "5.4",
+   "unit": "pct",
+   "key": "insgh|medicare|good",
+   "underspecified": true,
+   "status": "computed",
+   "value": 5.1840218274091105,
+   "gap": -0.2159781725908898,
+   "exact": false,
+   "close": true
+  },
+  {
+   "seq": 25,
+   "source": "Figure 4",
+   "group": "Medicare and general health status",
+   "row": "Medicare and fair or poor health",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "14.5",
+   "unit": "pct",
+   "key": "insgh|medicare|fp",
+   "underspecified": true,
+   "status": "computed",
+   "value": 15.26766513161939,
+   "gap": 0.7676651316193901,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 26,
+   "source": "Figure 4",
+   "group": "Medicaid and general health status",
+   "row": "Medicaid and good or better health",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "11.5",
+   "unit": "pct",
+   "key": "insgh|medicaid|good",
+   "underspecified": true,
+   "status": "computed",
+   "value": 10.54469862176044,
+   "gap": -0.9553013782395592,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 27,
+   "source": "Figure 4",
+   "group": "Medicaid and general health status",
+   "row": "Medicaid and fair or poor health",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "33.0",
+   "unit": "pct",
+   "key": "insgh|medicaid|fp",
+   "underspecified": true,
+   "status": "computed",
+   "value": 27.74858015933209,
+   "gap": -5.251419840667911,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 28,
+   "source": "Figure 5",
+   "group": "Health condition",
+   "row": "None",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "3.0",
+   "unit": "pct",
+   "key": "cond|none",
+   "underspecified": true,
+   "status": "computed",
+   "value": 4.613018700084023,
+   "gap": 1.613018700084023,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 29,
+   "source": "Figure 5",
+   "group": "Health condition",
+   "row": "Diabetes",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "8.1",
+   "unit": "pct",
+   "key": "cond|diab",
+   "underspecified": true,
+   "status": "computed",
+   "value": 8.031339009332012,
+   "gap": -0.06866099066798803,
+   "exact": false,
+   "close": true
+  },
+  {
+   "seq": 30,
+   "source": "Figure 5",
+   "group": "Health condition",
+   "row": "Emphysema",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "12.1",
+   "unit": "pct",
+   "key": "cond|emph",
+   "underspecified": true,
+   "status": "computed",
+   "value": 12.654641135388099,
+   "gap": 0.5546411353880991,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 31,
+   "source": "Figure 5",
+   "group": "Health condition",
+   "row": "Cancer",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "3.9",
+   "unit": "pct",
+   "key": "cond|cancer",
+   "underspecified": true,
+   "status": "computed",
+   "value": 4.2743897541848455,
+   "gap": 0.37438975418484555,
+   "exact": false,
+   "close": true
+  },
+  {
+   "seq": 32,
+   "source": "Figure 5",
+   "group": "Health condition",
+   "row": "Heart Disease",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "7.5",
+   "unit": "pct",
+   "key": "cond|heart",
+   "underspecified": true,
+   "status": "computed",
+   "value": 6.713695786916257,
+   "gap": -0.786304213083743,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 33,
+   "source": "Figure 5",
+   "group": "Health condition",
+   "row": "Current Smoker",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "15.5",
+   "unit": "pct",
+   "key": "cond|smoker",
+   "underspecified": true,
+   "status": "computed",
+   "value": 12.433100318488977,
+   "gap": -3.066899681511023,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 34,
+   "source": "Figure 5",
+   "group": "Health condition",
+   "row": "Asthma",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "10.2",
+   "unit": "pct",
+   "key": "cond|asthma",
+   "underspecified": true,
+   "status": "computed",
+   "value": 8.32540092074018,
+   "gap": -1.87459907925982,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 35,
+   "source": "Figure 5",
+   "group": "Health condition",
+   "row": "Hypertension",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "6.5",
+   "unit": "pct",
+   "key": "cond|hyper",
+   "underspecified": true,
+   "status": "computed",
+   "value": 6.454638165670428,
+   "gap": -0.045361834329572304,
+   "exact": true,
+   "close": true
+  },
+  {
+   "seq": 36,
+   "source": "Figure 5",
+   "group": "Health condition",
+   "row": "Stroke",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "11.3",
+   "unit": "pct",
+   "key": "cond|stroke",
+   "underspecified": true,
+   "status": "computed",
+   "value": 11.514074725149227,
+   "gap": 0.2140747251492261,
+   "exact": false,
+   "close": true
+  },
+  {
+   "seq": 37,
+   "source": "Figure 5",
+   "group": "Health condition",
+   "row": "High Cholesterol",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "5.8",
+   "unit": "pct",
+   "key": "cond|chol",
+   "underspecified": true,
+   "status": "computed",
+   "value": 5.627713986994341,
+   "gap": -0.1722860130056585,
+   "exact": false,
+   "close": true
+  },
+  {
+   "seq": 38,
+   "source": "Figure 6",
+   "group": "Number of conditions",
+   "row": "None",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "3.0",
+   "unit": "pct",
+   "key": "ncond|none",
+   "underspecified": true,
+   "status": "computed",
+   "value": 4.613018700084023,
+   "gap": 1.613018700084023,
+   "exact": false,
+   "close": false
+  },
+  {
+   "seq": 39,
+   "source": "Figure 6",
+   "group": "Number of conditions",
+   "row": "At least two conditions",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "6.6",
+   "unit": "pct",
+   "key": "ncond_ge|2",
+   "underspecified": true,
+   "status": "computed",
+   "value": 7.061441355092673,
+   "gap": 0.46144135509267326,
+   "exact": false,
+   "close": true
+  },
+  {
+   "seq": 40,
+   "source": "Figure 6",
+   "group": "Number of conditions",
+   "row": "At least three conditions",
+   "column": "Lacked reliable transportation (adults 18+)",
+   "published": "7.7",
+   "unit": "pct",
+   "key": "ncond_ge|3",
+   "underspecified": true,
+   "status": "computed",
+   "value": 8.115640618283345,
+   "gap": 0.4156406182833452,
+   "exact": false,
+   "close": true
+  }
+ ],
+ "tally": {
+  "cells": 40,
+  "computable": 40,
+  "close": 18,
+  "exact": 2,
+  "not_computable": 0,
+  "unresolved": 0,
+  "share_close": 0.45
+ },
+ "estimates": {
+  "total": 5.595543681157027,
+  "n|base": 18196,
+  "age|18-34": 6.462955972121193,
+  "age|35-49": 5.888357287091466,
+  "age|50-64": 4.957070166023205,
+  "age|65+": 4.828654620293365,
+  "race|1": 6.737616193632013,
+  "race|2": 4.193987304943669,
+  "race|3": 8.572181042661624,
+  "race|other": 14.39053920787708,
+  "race|asian": 6.3337796594514115,
+  "race|other_incl_asian": 9.051313466287011,
+  "ins|private": 3.4221045403840447,
+  "ins|medicare": 7.743518532529464,
+  "ins|medicaid": 14.122973933479726,
+  "ins|uninsured": 9.462052658482586,
+  "ins|other_public": 13.46726720025812,
+  "gh|1": 3.831930075992982,
+  "gh|2": 3.5804842931547505,
+  "gh|3": 5.683040129336619,
+  "gh|fp": 14.813486246643143,
+  "mh|1": 3.794692102155727,
+  "mh|2": 3.9697528375964923,
+  "mh|3": 6.351597176688201,
+  "mh|fp": 14.490342324154621,
+  "insgh|private|good": 2.9285103212925154,
+  "insgh|private|fp": 8.8925862904685,
+  "insgh|medicare|good": 5.1840218274091105,
+  "insgh|medicare|fp": 15.26766513161939,
+  "insgh|medicaid|good": 10.54469862176044,
+  "insgh|medicaid|fp": 27.74858015933209,
+  "insgh|uninsured|good": 8.138146923622422,
+  "insgh|uninsured|fp": 22.187434703000637,
+  "cond|diab": 8.031339009332012,
+  "cond|emph": 12.654641135388099,
+  "cond|cancer": 4.2743897541848455,
+  "cond|heart": 6.713695786916257,
+  "cond|smoker": 12.433100318488977,
+  "cond|asthma": 8.32540092074018,
+  "cond|hyper": 6.454638165670428,
+  "cond|stroke": 11.514074725149227,
+  "cond|chol": 5.627713986994341,
+  "cond|none": 4.613018700084023,
+  "ncond|none": 4.613018700084023,
+  "ncond8|none": 5.136401328023885,
+  "ncond_ge|1": 6.239782028975011,
+  "ncond8_ge|1": 5.959061470945917,
+  "ncond_ge|2": 7.061441355092673,
+  "ncond8_ge|2": 6.6256189447441844,
+  "ncond_ge|3": 8.115640618283345,
+  "ncond8_ge|3": 7.4581011469417895,
+  "ncond_ge|4": 9.110094122301163,
+  "ncond8_ge|4": 8.105718376204727
+ }
+}

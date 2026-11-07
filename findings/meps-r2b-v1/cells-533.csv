@@ -1,0 +1,41 @@
+seq,source,row,column,published,value,gap,exact,close,status,underspecified
+1,Figure 1,10,Cumulative percentage of expenditures,0.0,0.0,0.0,True,True,computed,True
+2,Figure 1,10,Cumulative expenditures in billions,0.0,0.0,0.0,True,True,computed,True
+3,Figure 1,20,Cumulative percentage of expenditures,0.1,0.1058,0.0058,True,True,computed,True
+4,Figure 1,20,Cumulative expenditures in billions,2.1,2.0926,-0.0074,True,True,computed,True
+5,Figure 1,30,Cumulative percentage of expenditures,0.6,0.5621,-0.0379,True,True,computed,True
+6,Figure 1,30,Cumulative expenditures in billions,11.1,11.1222,0.0222,True,True,computed,True
+7,Figure 1,40,Cumulative percentage of expenditures,1.5,1.5037,0.0037,True,True,computed,True
+8,Figure 1,40,Cumulative expenditures in billions,29.8,29.7518,-0.0482,True,True,computed,True
+9,Figure 1,50,Cumulative percentage of expenditures,3.2,3.165,-0.035,True,True,computed,True
+10,Figure 1,50,Cumulative expenditures in billions,62.6,62.621,0.021,True,True,computed,True
+11,Figure 1,60,Cumulative percentage of expenditures,6.0,6.0043,0.0043,True,True,computed,True
+12,Figure 1,60,Cumulative expenditures in billions,118.8,118.7995,-0.0005,True,True,computed,True
+13,Figure 1,70,Cumulative percentage of expenditures,10.8,10.8173,0.0173,True,True,computed,True
+14,Figure 1,70,Cumulative expenditures in billions,214.0,214.0284,0.0284,True,True,computed,True
+15,Figure 1,80,Cumulative percentage of expenditures,19.3,19.254,-0.046,True,True,computed,True
+16,Figure 1,80,Cumulative expenditures in billions,381.0,380.9537,-0.0463,True,True,computed,True
+17,Figure 1,90,Cumulative percentage of expenditures,35.7,35.7392,0.0392,True,True,computed,True
+18,Figure 1,90,Cumulative expenditures in billions,707.1,707.1247,0.0247,True,True,computed,True
+19,Figure 1,95,Cumulative percentage of expenditures,51.7,51.6962,-0.0038,True,True,computed,True
+20,Figure 1,95,Cumulative expenditures in billions,1022.8,1022.8463,0.0463,True,True,computed,True
+21,Figure 1,99,Cumulative percentage of expenditures,79.0,79.0495,0.0495,True,True,computed,True
+22,Figure 1,99,Cumulative expenditures in billions,1564.0,1564.049,0.049,True,True,computed,True
+23,Figure 1,100,Cumulative expenditures in billions,1978.6,1978.5699,-0.0301,True,True,computed,True
+24,Figure 2,Overall,Average annual expenditure per person ($),6063,6063.1345,0.1345,True,True,computed,False
+25,Figure 2,Bottom 50%,Average annual expenditure per person ($),384,383.7807,-0.2193,True,True,computed,False
+26,Figure 2,Top 50%,Average annual expenditure per person ($),11743,11742.8135,-0.1865,True,True,computed,False
+27,Figure 2,Top 30%,Average annual expenditure per person ($),18027,18026.9034,-0.0966,True,True,computed,False
+28,Figure 2,Top 10%,Average annual expenditure per person ($),38980,38979.5301,-0.4699,True,True,computed,False
+29,Figure 2,Top 5%,Average annual expenditure per person ($),58609,58608.8098,-0.1902,True,True,computed,False
+30,Figure 2,Top 1%,Average annual expenditure per person ($),127284,127283.5538,-0.4462,True,True,computed,False
+31,Figure 3,Hypertension,Overall percentage (treated),18.9,,,,,not computable,False
+32,Figure 3,Hypertension,Top 5% (treated),48.8,,,,,not computable,False
+33,Figure 3,Osteoarthritis and other non-traumatic joint disorders,Overall percentage (treated),16.7,,,,,not computable,False
+34,Figure 3,Osteoarthritis and other non-traumatic joint disorders,Top 5% (treated),44.0,,,,,not computable,False
+35,Figure 3,Nervous system disorders,Overall percentage (treated),12.1,,,,,not computable,False
+36,Figure 3,Nervous system disorders,Top 5% (treated),40.0,,,,,not computable,False
+37,Figure 3,Hyperlipidemia,Overall percentage (treated),14.0,,,,,not computable,False
+38,Figure 3,Hyperlipidemia,Top 5% (treated),37.9,,,,,not computable,False
+39,Figure 3,Mental disorders,Overall percentage (treated),15.6,,,,,not computable,False
+40,Figure 3,Mental disorders,Top 5% (treated),36.5,,,,,not computable,False

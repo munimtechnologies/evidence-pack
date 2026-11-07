@@ -1,0 +1,31 @@
+seq,source,row,column,published,value,gap,exact,close,status,underspecified
+1,Figure 1,18-24,Ever used an electronic nicotine product (adults 18+),30.6,30.6028,0.0028,True,True,computed,True
+2,Figure 1,25-34,Ever used an electronic nicotine product (adults 18+),25.2,25.1881,-0.0119,True,True,computed,True
+3,Figure 1,35-44,Ever used an electronic nicotine product (adults 18+),17.9,17.8797,-0.0203,True,True,computed,True
+4,Figure 1,45-64,Ever used an electronic nicotine product (adults 18+),11.2,11.1494,-0.0506,False,True,computed,True
+5,Figure 1,65+,Ever used an electronic nicotine product (adults 18+),4.1,4.2659,0.1659,False,True,computed,True
+6,Figure 2,Non-Hispanic White,Ever used (ages 18-24),38.3,38.3022,0.0022,True,True,computed,True
+7,Figure 2,Non-Hispanic Black,Ever used (ages 18-24),26.2,26.1704,-0.0296,True,True,computed,True
+8,Figure 2,Hispanic,Ever used (ages 18-24),19.7,19.6709,-0.0291,True,True,computed,True
+9,Figure 2,Non-Hispanic other,Ever used (ages 18-24),24.5,24.4995,-0.0005,True,True,computed,True
+10,Figure 2,Male,Ever used (ages 18-24),30.6,30.6385,0.0385,True,True,computed,True
+11,Figure 2,Female,Ever used (ages 18-24),30.6,30.565,-0.035,True,True,computed,True
+12,Figure 3,Northeast,Ever used (ages 18-24),26.6,26.5435,-0.0565,False,True,computed,True
+13,Figure 3,Midwest,Ever used (ages 18-24),36.4,36.4435,0.0435,True,True,computed,True
+14,Figure 3,South,Ever used (ages 18-24),32.0,31.897,-0.103,False,True,computed,True
+15,Figure 3,West,Ever used (ages 18-24),26.3,26.2577,-0.0423,True,True,computed,True
+16,Figure 3,Yes,Ever used (ages 18-24),29.6,,,,,not computable,True
+17,Figure 3,No,Ever used (ages 18-24),39.3,,,,,not computable,True
+18,Figure 4,Excellent,Ever used (ages 18-24),27.0,27.0911,0.0911,False,True,computed,True
+19,Figure 4,Very good,Ever used (ages 18-24),30.4,30.7669,0.3669,False,True,computed,True
+20,Figure 4,Good,Ever used (ages 18-24),34.4,36.116,1.716,False,False,computed,True
+21,Figure 4,Fair/poor,Ever used (ages 18-24),46.6,36.0454,-10.5546,False,False,computed,True
+22,Figure 4,Excellent,Ever used (ages 18-24),25.1,25.1111,0.0111,True,True,computed,True
+23,Figure 4,Very good,Ever used (ages 18-24),31.4,31.401,0.001,True,True,computed,True
+24,Figure 4,Good,Ever used (ages 18-24),31.1,31.139,0.039,True,True,computed,True
+25,Figure 4,Fair/poor,Ever used (ages 18-24),44.1,44.1504,0.0504,False,True,computed,True
+26,Figure 5,Yes,Ever used (ages 18-24),68.3,68.3127,0.0127,True,True,computed,True
+27,Figure 5,No,Ever used (ages 18-24),28.1,28.1026,0.0026,True,True,computed,True
+28,Figure 5,Yes,Ever used (ages 18-24),39.3,39.3035,0.0035,True,True,computed,True
+29,Figure 5,No,Ever used (ages 18-24),29.0,28.8843,-0.1157,False,True,computed,True
+30,Text (Findings),18+,Ever used an electronic nicotine product (not shown),15.5,15.474,-0.026,True,True,computed,True

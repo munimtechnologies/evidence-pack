@@ -1,0 +1,41 @@
+seq,source,row,column,published,value,gap,exact,close,status,underspecified
+1,Figure 1,Total,Percentage with expense,85.1,85.1228,0.0228,True,True,computed,False
+2,Figure 1,< 65 years,Percentage with expense,83.1,83.1295,0.0295,True,True,computed,True
+3,Figure 1,65+ years,Percentage with expense,96.4,96.3639,-0.0361,True,True,computed,True
+4,Figure 1,Total,Percentage with expense,6.6,6.5778,-0.0222,True,True,computed,True
+5,Figure 1,< 65 years,Percentage with expense,4.9,4.8517,-0.0483,True,True,computed,True
+6,Figure 1,65+ years,Percentage with expense,16.3,16.312,0.012,True,True,computed,True
+7,Figure 1,Total,Percentage with expense,75.9,75.9086,0.0086,True,True,computed,True
+8,Figure 1,< 65 years,Percentage with expense,72.9,72.8716,-0.0284,True,True,computed,True
+9,Figure 1,65+ years,Percentage with expense,93.0,93.0358,0.0358,True,True,computed,True
+10,Figure 1,Total,Percentage with expense,61.4,61.3518,-0.0482,True,True,computed,True
+11,Figure 1,< 65 years,Percentage with expense,56.2,56.1756,-0.0244,True,True,computed,True
+12,Figure 1,65+ years,Percentage with expense,90.5,90.5435,0.0435,True,True,computed,True
+13,Figure 1,Total,Percentage with expense,41.4,41.4358,0.0358,True,True,computed,True
+14,Figure 1,< 65 years,Percentage with expense,40.6,40.6489,0.0489,True,True,computed,True
+15,Figure 1,65+ years,Percentage with expense,45.9,45.8739,-0.0261,True,True,computed,True
+16,Figure 1,Total,Percentage with expense,20.4,20.4091,0.0091,True,True,computed,True
+17,Figure 1,< 65 years,Percentage with expense,17.9,17.9187,0.0187,True,True,computed,True
+18,Figure 1,65+ years,Percentage with expense,34.5,34.4536,-0.0464,True,True,computed,True
+19,Figure 2,All ages,Mean expense per person with expense,5531,5531.3788,0.3788,True,True,computed,False
+20,Figure 2,<65 years,Mean expense per person with expense,4430,4429.9215,-0.0785,True,True,computed,True
+21,Figure 2,65+ years,Mean expense per person with expense,10890,10889.997,-0.003,True,True,computed,True
+22,Figure 2,All ages,Mean expense per person with expense,18234,18233.7898,-0.2102,True,True,computed,True
+23,Figure 2,<65 years,Mean expense per person with expense,17663,17663.0725,0.0725,True,True,computed,True
+24,Figure 2,65+ years,Mean expense per person with expense,19191,19191.1042,0.1042,True,True,computed,True
+25,Figure 2,All ages,Mean expense per person with expense,2389,2388.582,-0.418,True,True,computed,True
+26,Figure 2,<65 years,Mean expense per person with expense,2056,2055.6078,-0.3922,True,True,computed,True
+27,Figure 2,65+ years,Mean expense per person with expense,3859,3859.4136,0.4136,True,True,computed,True
+28,Figure 2,All ages,Mean expense per person with expense,1792,1792.3437,0.3437,True,True,computed,True
+29,Figure 2,<65 years,Mean expense per person with expense,1561,1560.9062,-0.0938,True,True,computed,True
+30,Figure 2,65+ years,Mean expense per person with expense,2602,2602.1257,0.1257,True,True,computed,True
+31,Figure 2,All ages,Mean expense per person with expense,696,696.3259,0.3259,True,True,computed,True
+32,Figure 2,<65 years,Mean expense per person with expense,657,657.05,0.05,True,True,computed,True
+33,Figure 2,65+ years,Mean expense per person with expense,893,892.5962,-0.4038,True,True,computed,True
+34,Figure 2,All ages,Mean expense per person with expense,1508,1508.0551,0.0551,True,True,computed,True
+35,Figure 2,<65 years,Mean expense per person with expense,1025,1025.308,0.308,True,True,computed,True
+36,Figure 2,65+ years,Mean expense per person with expense,2924,2923.9657,-0.0343,True,True,computed,True
+37,Figure 3,All ages,Median expense per person with expense,1372,1373.0,1.0,False,True,computed,True
+38,Figure 3,<65 years,Median expense per person with expense,1040,1040.0,0.0,True,True,computed,True
+39,Figure 3,65+ years,Median expense per person with expense,4875,4875.0,0.0,True,True,computed,True
+40,Figure 3,All ages,Median expense per person with expense,9823,9845.0,22.0,False,True,computed,True

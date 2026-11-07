@@ -1,0 +1,41 @@
+seq,source,row,column,published,value,gap,exact,close,status,underspecified
+1,Figure 1,Total,Lacked reliable transportation (adults 18+),6.2,5.5955,-0.6045,False,False,computed,True
+2,Figure 1,18-34,Lacked reliable transportation (adults 18+),11.1,6.463,-4.637,False,False,computed,True
+3,Figure 1,35-49,Lacked reliable transportation (adults 18+),9.2,5.8884,-3.3116,False,False,computed,True
+4,Figure 1,50-64,Lacked reliable transportation (adults 18+),6.1,4.9571,-1.1429,False,False,computed,True
+5,Figure 1,65+,Lacked reliable transportation (adults 18+),4.3,4.8287,0.5287,False,False,computed,True
+6,Figure 1,Non-Hispanic White,Lacked reliable transportation (adults 18+),4.6,4.194,-0.406,False,True,computed,True
+7,Figure 1,Non-Hispanic Black,Lacked reliable transportation (adults 18+),8.8,8.5722,-0.2278,False,True,computed,True
+8,Figure 1,Hispanic,Lacked reliable transportation (adults 18+),9.3,6.7376,-2.5624,False,False,computed,True
+9,Figure 1,Non-Hispanic other,Lacked reliable transportation (adults 18+),10.0,14.3905,4.3905,False,False,computed,True
+10,Figure 2,Any private health insurance,Lacked reliable transportation (adults 18+),3.4,3.4221,0.0221,True,True,computed,True
+11,Figure 2,Medicare,Lacked reliable transportation (adults 18+),7.9,7.7435,-0.1565,False,True,computed,True
+12,Figure 2,Medicaid,Lacked reliable transportation (adults 18+),20.4,14.123,-6.277,False,False,computed,True
+13,Figure 2,Uninsured,Lacked reliable transportation (adults 18+),11.4,9.4621,-1.9379,False,False,computed,True
+14,Figure 3,Excellent,Lacked reliable transportation (adults 18+),3.7,3.8319,0.1319,False,True,computed,True
+15,Figure 3,Very good,Lacked reliable transportation (adults 18+),2.9,3.5805,0.6805,False,False,computed,True
+16,Figure 3,Good,Lacked reliable transportation (adults 18+),4.8,5.683,0.883,False,False,computed,True
+17,Figure 3,Fair/poor,Lacked reliable transportation (adults 18+),15.1,14.8135,-0.2865,False,True,computed,True
+18,Figure 3,Excellent,Lacked reliable transportation (adults 18+),3.5,3.7947,0.2947,False,True,computed,True
+19,Figure 3,Very good,Lacked reliable transportation (adults 18+),3.9,3.9698,0.0698,False,True,computed,True
+20,Figure 3,Good,Lacked reliable transportation (adults 18+),6.2,6.3516,0.1516,False,True,computed,True
+21,Figure 3,Fair/poor,Lacked reliable transportation (adults 18+),17.8,14.4903,-3.3097,False,False,computed,True
+22,Figure 4,Any private health insurance and good or better health,Lacked reliable transportation (adults 18+),2.4,2.9285,0.5285,False,False,computed,True
+23,Figure 4,Any private health insurance and fair or poor health,Lacked reliable transportation (adults 18+),9.0,8.8926,-0.1074,False,True,computed,True
+24,Figure 4,Medicare and good or better health,Lacked reliable transportation (adults 18+),5.4,5.184,-0.216,False,True,computed,True
+25,Figure 4,Medicare and fair or poor health,Lacked reliable transportation (adults 18+),14.5,15.2677,0.7677,False,False,computed,True
+26,Figure 4,Medicaid and good or better health,Lacked reliable transportation (adults 18+),11.5,10.5447,-0.9553,False,False,computed,True
+27,Figure 4,Medicaid and fair or poor health,Lacked reliable transportation (adults 18+),33.0,27.7486,-5.2514,False,False,computed,True
+28,Figure 5,None,Lacked reliable transportation (adults 18+),3.0,4.613,1.613,False,False,computed,True
+29,Figure 5,Diabetes,Lacked reliable transportation (adults 18+),8.1,8.0313,-0.0687,False,True,computed,True
+30,Figure 5,Emphysema,Lacked reliable transportation (adults 18+),12.1,12.6546,0.5546,False,False,computed,True
+31,Figure 5,Cancer,Lacked reliable transportation (adults 18+),3.9,4.2744,0.3744,False,True,computed,True
+32,Figure 5,Heart Disease,Lacked reliable transportation (adults 18+),7.5,6.7137,-0.7863,False,False,computed,True
+33,Figure 5,Current Smoker,Lacked reliable transportation (adults 18+),15.5,12.4331,-3.0669,False,False,computed,True
+34,Figure 5,Asthma,Lacked reliable transportation (adults 18+),10.2,8.3254,-1.8746,False,False,computed,True
+35,Figure 5,Hypertension,Lacked reliable transportation (adults 18+),6.5,6.4546,-0.0454,True,True,computed,True
+36,Figure 5,Stroke,Lacked reliable transportation (adults 18+),11.3,11.5141,0.2141,False,True,computed,True
+37,Figure 5,High Cholesterol,Lacked reliable transportation (adults 18+),5.8,5.6277,-0.1723,False,True,computed,True
+38,Figure 6,None,Lacked reliable transportation (adults 18+),3.0,4.613,1.613,False,False,computed,True
+39,Figure 6,At least two conditions,Lacked reliable transportation (adults 18+),6.6,7.0614,0.4614,False,True,computed,True
+40,Figure 6,At least three conditions,Lacked reliable transportation (adults 18+),7.7,8.1156,0.4156,False,True,computed,True

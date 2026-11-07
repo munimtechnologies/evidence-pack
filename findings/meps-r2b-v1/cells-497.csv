@@ -1,0 +1,41 @@
+seq,source,row,column,published,value,gap,exact,close,status,underspecified
+1,Figure 1,10,Cumulative percentage of expenditures,0.0,0.0,0.0,True,True,computed,True
+2,Figure 1,10,Total expenditures (in billions),0,0.0,0.0,True,True,computed,True
+3,Figure 1,20,Cumulative percentage of expenditures,0.1,0.065,-0.035,True,True,computed,True
+4,Figure 1,20,Total expenditures (in billions),1,0.9743,-0.0257,True,False,computed,True
+5,Figure 1,30,Cumulative percentage of expenditures,0.5,0.4579,-0.0421,True,True,computed,True
+6,Figure 1,30,Total expenditures (in billions),7,6.865,-0.135,True,False,computed,True
+7,Figure 1,40,Cumulative percentage of expenditures,1.3,1.2947,-0.0053,True,True,computed,True
+8,Figure 1,40,Total expenditures (in billions),20,19.4118,-0.5882,False,False,computed,True
+9,Figure 1,50,Cumulative percentage of expenditures,2.8,2.8007,0.0007,True,True,computed,True
+10,Figure 1,50,Total expenditures (in billions),42,41.9927,-0.0073,True,True,computed,True
+11,Figure 1,60,Cumulative percentage of expenditures,5.4,5.398,-0.002,True,True,computed,True
+12,Figure 1,60,Total expenditures (in billions),81,80.9355,-0.0645,True,True,computed,True
+13,Figure 1,70,Cumulative percentage of expenditures,9.9,9.9351,0.0351,True,True,computed,True
+14,Figure 1,70,Total expenditures (in billions),149,148.964,-0.036,True,True,computed,True
+15,Figure 1,80,Cumulative percentage of expenditures,17.9,17.92,0.02,True,True,computed,True
+16,Figure 1,80,Total expenditures (in billions),269,268.6856,-0.3144,True,True,computed,True
+17,Figure 1,90,Cumulative percentage of expenditures,33.8,33.7778,-0.0222,True,True,computed,True
+18,Figure 1,90,Total expenditures (in billions),506,506.4527,0.4527,True,True,computed,True
+19,Figure 1,95,Cumulative percentage of expenditures,49.6,49.5641,-0.0359,True,True,computed,True
+20,Figure 1,95,Total expenditures (in billions),743,743.147,0.147,True,True,computed,True
+21,Figure 1,99,Cumulative percentage of expenditures,77.2,77.2387,0.0387,True,True,computed,True
+22,Figure 1,99,Total expenditures (in billions),1158,1158.0895,0.0895,True,True,computed,True
+23,Figure 2,Bottom 50%,Average annual expenditure per person,264,263.7376,-0.2624,True,True,computed,False
+24,Figure 2,Top 50%,Average annual expenditure per person,9153,9153.2671,0.2671,True,True,computed,False
+25,Figure 2,Top 30%,Average annual expenditure per person,14138,14138.3629,0.3629,True,True,computed,False
+26,Figure 2,Top 10%,Average annual expenditure per person,31203,31202.6058,-0.3942,True,True,computed,False
+27,Figure 2,Top 5%,Average annual expenditure per person,47498,47498.497,0.497,True,True,computed,False
+28,Figure 2,Top 1%,Average annual expenditure per person,107208,107207.9838,-0.0162,True,True,computed,False
+29,Figure 3,Age 65 and older,Percentage of population,15.1,15.0613,-0.0387,True,True,computed,False
+30,Figure 3,Age 65 and older,Percentage of expenditures,33.6,33.5679,-0.0321,True,True,computed,False
+31,Figure 3,Ages 45-64,Percentage of population,26.3,26.2887,-0.0113,True,True,computed,False
+32,Figure 3,Ages 45-64,Percentage of expenditures,35.5,35.948,0.448,False,True,computed,False
+33,Figure 3,Ages 18-44,Percentage of population,35.9,35.4744,-0.4256,False,True,computed,False
+34,Figure 3,Ages 18-44,Percentage of expenditures,20.3,20.2706,-0.0294,True,True,computed,False
+35,Figure 3,Ages 0-17,Percentage of population,23.2,23.1756,-0.0244,True,True,computed,False
+36,Figure 3,Ages 0-17,Percentage of expenditures,10.2,10.2135,0.0135,True,True,computed,False
+37,Figure 4,0-17,Bottom 50% (average expenditures),172,171.5808,-0.4192,True,True,computed,True
+38,Figure 4,0-17,Top 50% (average expenditures),3979,3978.9662,-0.0338,True,True,computed,True
+39,Figure 4,0-17,Top 10% (average expenditures),14442,14441.9296,-0.0704,True,True,computed,True
+40,Figure 4,0-17,Top 5% (average expenditures),23855,23855.2774,0.2774,True,True,computed,True
