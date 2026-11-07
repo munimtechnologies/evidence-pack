@@ -1,0 +1,34 @@
+{
+ "version": "0.1.0",
+ "tables": 2999,
+ "tables_with_total_pairs": 332,
+ "pairs": 1907,
+ "by_verdict": {
+  "ok": 1586,
+  "sum_like": 89,
+  "excluded_label": 183,
+  "above": 42,
+  "below": 7
+ },
+ "pairs_bound_applied": 1635,
+ "flags": 49,
+ "figures_flagged": 11,
+ "figures_flagged_by_kind": {
+  "below": 5,
+  "above": 6
+ },
+ "sample_size": 11,
+ "control_558_f1": {
+  "pairs": [
+   [
+    "Age",
+    "ok"
+   ],
+   [
+    "Race/ethnicity",
+    "ok"
+   ]
+  ],
+  "all_ok": true
+ }
+}

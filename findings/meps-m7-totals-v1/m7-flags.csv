@@ -1,0 +1,50 @@
+check_rank,in_sample,number,year,table,label,col,col_label,total_label,total_row,total,section,n_parts,lo,lo_label,hi,hi_label,sum,verdict
+1,True,567,2025,1,Figure 1,2,Combined use of benzodiazepines and opioids (%),Overall,0,1.5,,2,1.9,Men,2,Women,3.9,below
+2,True,460,2014,1,Figure 1,1,2013,U.S.,0,10,Northeast Region,4,13.5,CT,17.4,MA,64.5,below
+2,True,460,2014,1,Figure 1,1,2013,U.S.,0,10,South Region,2,14,DE,14.4,DC,28.4,below
+2,True,460,2014,1,Figure 1,1,2013,U.S.,0,10,West Region,2,22.3,WY,38.8,AK,61.1,below
+3,True,460,2014,4,Figure 4,1,2013,U.S.,0,10,Midwest Region,5,3.4,ND,5.6,SD,21.8,above
+3,True,460,2014,4,Figure 4,1,2013,U.S.,0,10,South Region,6,1.7,AL,6.4,NC,22,above
+3,True,460,2014,4,Figure 4,1,2013,U.S.,0,10,West Region,2,5,HI,6,AZ,11,above
+4,True,337,2011,5,Figure 5,2,Private insurance,Total (in percentages),0,27.6,,2,32.2,Ambulatory (in percentages),33.9,Prescription medications (in percentages),66.1,below
+5,True,423,2013,3,Figure 3,1,Ambulatory,Total expenditures (in billions of dollars),0,485.3,,4,12.1,"Out-of-pocket payments, percentages",426.5,"Other sources of payment, dollars",585.2,above
+5,True,423,2013,3,Figure 3,2,Hospital inpatient,Total expenditures (in billions of dollars),0,386.5,,4,3.1,"Out-of-pocket payments, percentages",374.6,"Other sources of payment, dollars",486.5,above
+5,True,423,2013,3,Figure 3,3,RX,Total expenditures (in billions of dollars),0,296.8,,4,19.7,"Out-of-pocket payments, percentages",238.2,"Other sources of payment, dollars",396.7,above
+5,True,423,2013,3,Figure 3,4,Dental,Total expenditures (in billions of dollars),0,85.2,,4,39.2,"Out-of-pocket payments, dollars",54,"Other sources of payment, percentages",185.2,above
+6,True,460,2014,3,Figure 3,1,2013,U.S.,0,10,,3,16.6,CA (West Region),43.4,AK (West Region),79.3,below
+7,True,297,2010,1,Figure 1,1,US,Overall expenses,0,84.9,,4,7.4,Inpatient stays,73.6,Ambulatory care,185.1,above
+7,True,297,2010,1,Figure 1,2,CA,Overall expenses,0,78.4,,4,5.4,Inpatient stays,66.6,Ambulatory care,161.7,above
+7,True,297,2010,1,Figure 1,3,TX,Overall expenses,0,78.6,,4,7.9,Inpatient stays,67.6,Ambulatory care,165.7,above
+7,True,297,2010,1,Figure 1,4,NY,Overall expenses,0,86.7,,4,5.7,Inpatient stays,76.5,Ambulatory care,182.2,above
+7,True,297,2010,1,Figure 1,5,FL,Overall expenses,0,80.8,,4,10,Inpatient stays,71.2,Ambulatory care,177.8,above
+7,True,297,2010,1,Figure 1,6,IL,Overall expenses,0,86,,4,6.7,Inpatient stays,75.8,Ambulatory care,183.3,above
+7,True,297,2010,1,Figure 1,7,PA,Overall expenses,0,87,,4,9.5,Inpatient stays,74.7,Ambulatory care,190.6,above
+7,True,297,2010,1,Figure 1,8,OH,Overall expenses,0,89.1,,4,9,Inpatient stays,77.4,Ambulatory care,195,above
+7,True,297,2010,1,Figure 1,9,MI,Overall expenses,0,87.9,,4,9.4,Inpatient stays,77.2,Ambulatory care,204.3,above
+7,True,297,2010,1,Figure 1,10,GA,Overall expenses,0,80.2,,4,5.7,Inpatient stays,69.9,Ambulatory care,169.4,above
+7,True,297,2010,1,Figure 1,11,NJ,Overall expenses,0,85.2,,4,7.1,Inpatient stays,78.7,Ambulatory care,190,above
+8,True,352,2011,1,Figure 1,1,US,Overall expenses,0,84.4,,4,7.2,Inpatient stays,74.3,Ambulatory care,185,above
+8,True,352,2011,1,Figure 1,2,CA,Overall expenses,0,78.7,,4,4.8,Inpatient stays,67.6,Ambulatory care,162.7,above
+8,True,352,2011,1,Figure 1,3,TX,Overall expenses,0,78.2,,4,6.1,Inpatient stays,67.8,Ambulatory care,161.5,above
+8,True,352,2011,1,Figure 1,4,NY,Overall expenses,0,84.1,,4,6.9,Inpatient stays,75.7,Ambulatory care,180.4,above
+8,True,352,2011,1,Figure 1,5,FL,Overall expenses,0,80.7,,4,7.8,Inpatient stays,71.6,Ambulatory care,173.5,above
+8,True,352,2011,1,Figure 1,6,IL,Overall expenses,0,82.4,,4,7,Inpatient stays,69.8,Ambulatory care,175.3,above
+8,True,352,2011,1,Figure 1,7,PA,Overall expenses,0,86.5,,4,6.6,Inpatient stays,75.5,Ambulatory care,190.5,above
+8,True,352,2011,1,Figure 1,8,OH,Overall expenses,0,86.8,,4,7,Inpatient stays,76,Ambulatory care,187.3,above
+8,True,352,2011,1,Figure 1,9,MI,Overall expenses,0,87.3,,4,8.3,Inpatient stays,78.9,Ambulatory care,203,above
+8,True,352,2011,1,Figure 1,10,GA,Overall expenses,0,79.7,,4,6.7,Inpatient stays,68.8,Ambulatory care,165.1,above
+8,True,352,2011,1,Figure 1,11,NC,Overall expenses,0,84.5,,4,6.6,Inpatient stays,74,Ambulatory care,188.1,above
+9,True,414,2013,1,Figure 1,1,US,Overall,0,84.6,,4,7.1,Inpatient care,74.4,Ambulatory care,183.2,above
+9,True,414,2013,1,Figure 1,2,CA,Overall,0,75.8,,4,4.5,Inpatient care,63.5,Ambulatory care,151.2,above
+9,True,414,2013,1,Figure 1,3,TX,Overall,0,74.7,,4,6,Inpatient care,63,Ambulatory care,151.2,above
+9,True,414,2013,1,Figure 1,4,NY,Overall,0,79.2,,4,6.7,Inpatient care,69.1,Ambulatory care,165,above
+9,True,414,2013,1,Figure 1,5,FL,Overall,0,81.6,,4,8,Inpatient care,71.4,Ambulatory care,172.6,above
+9,True,414,2013,1,Figure 1,6,IL,Overall,0,88.9,,4,8.2,Inpatient care,77,Ambulatory care,192.6,above
+9,True,414,2013,1,Figure 1,7,PA,Overall,0,87.2,,4,7,Inpatient care,77.2,Ambulatory care,188.4,above
+9,True,414,2013,1,Figure 1,8,OH,Overall,0,84.6,,4,7.9,Inpatient care,72.4,Ambulatory care,177.8,above
+9,True,414,2013,1,Figure 1,9,MI,Overall,0,85.3,,4,8.8,Inpatient care,74.9,Ambulatory care,190.4,above
+9,True,414,2013,1,Figure 1,10,GA,Overall,0,82.1,,4,5.4,Inpatient care,69.9,Ambulatory care,173,above
+9,True,414,2013,1,Figure 1,11,NC,Overall,0,86.7,,4,6.3,Inpatient care,71.1,Ambulatory care,183.4,above
+10,True,460,2014,2,Figure 2,1,2013,U.S.,0,10,Midwest Region,5,4.8,MI,6.3,KS,27.6,above
+10,True,460,2014,2,Figure 2,1,2013,U.S.,0,10,South Region,7,2.6,AR,7.1,FL,37,above
+11,True,536,2021,13,Figure 13,13,2020,United States,0,86.2,,3,86.5,Small (< 50 employees),89.7,Large (100+ employees),265.2,below

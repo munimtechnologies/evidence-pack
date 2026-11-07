@@ -1,0 +1,1879 @@
+{
+ "version": "0.1.0",
+ "brief": 558,
+ "file": "H233",
+ "error": null,
+ "data": {
+  "file": "h233dat.zip",
+  "bytes": 8354598,
+  "sha256": "07cb5aa2ae0caf06475901b7364ef6bd1dc23c6624bf2bcd6837096afaaa05ba"
+ },
+ "positions": {
+  "AGE31X": [
+   176,
+   177
+  ],
+  "AGELAST": [
+   184,
+   185
+  ],
+  "ANGIDX": [
+   316,
+   318
+  ],
+  "ASTHDX": [
+   400,
+   402
+  ],
+  "BPMLDX": [
+   309,
+   310
+  ],
+  "CANCERDX": [
+   354,
+   356
+  ],
+  "CHDDX": [
+   311,
+   313
+  ],
+  "CHOLDX": [
+   349,
+   351
+  ],
+  "DIABDX_M18": [
+   381,
+   382
+  ],
+  "DUPERSID": [
+   11,
+   20
+  ],
+  "EMPHDX": [
+   339,
+   341
+  ],
+  "INSCOV21": [
+   2408,
+   2408
+  ],
+  "MCDEV21": [
+   2402,
+   2402
+  ],
+  "MCREV21": [
+   2401,
+   2401
+  ],
+  "MIDX": [
+   321,
+   323
+  ],
+  "MNHLTH31": [
+   298,
+   299
+  ],
+  "OFTSMK53": [
+   633,
+   634
+  ],
+  "OHRTDX": [
+   326,
+   328
+  ],
+  "PERWT21F": [
+   4206,
+   4218
+  ],
+  "RACETHX": [
+   199,
+   199
+  ],
+  "REGION31": [
+   78,
+   79
+  ],
+  "RTHLTH31": [
+   292,
+   293
+  ],
+  "SDENICPROD": [
+   1006,
+   1008
+  ],
+  "SDNOTRANS": [
+   913,
+   915
+  ],
+  "SDOHWT21F": [
+   4270,
+   4282
+  ],
+  "SEX": [
+   192,
+   192
+  ],
+  "STRKDX": [
+   334,
+   336
+  ]
+ },
+ "gate": {
+  "checks": [
+   [
+    "rows",
+    "count",
+    28336,
+    28336
+   ],
+   [
+    "SDOHWT21F",
+    ">0",
+    18400,
+    18400
+   ],
+   [
+    "SDENICPROD",
+    "==-15",
+    216,
+    216
+   ],
+   [
+    "SDENICPROD",
+    "==-1",
+    9936,
+    9936
+   ],
+   [
+    "SDENICPROD",
+    "==1",
+    2419,
+    2419
+   ],
+   [
+    "SDENICPROD",
+    "==2",
+    15765,
+    15765
+   ],
+   [
+    "SDNOTRANS",
+    "==-15",
+    204,
+    204
+   ],
+   [
+    "SDNOTRANS",
+    "==-1",
+    9936,
+    9936
+   ],
+   [
+    "SDNOTRANS",
+    "==1",
+    1187,
+    1187
+   ],
+   [
+    "SDNOTRANS",
+    "==2",
+    17009,
+    17009
+   ],
+   [
+    "RACETHX",
+    "==1",
+    6798,
+    6798
+   ],
+   [
+    "RACETHX",
+    "==2",
+    15023,
+    15023
+   ],
+   [
+    "RACETHX",
+    "==3",
+    4071,
+    4071
+   ],
+   [
+    "RACETHX",
+    "==4",
+    1385,
+    1385
+   ],
+   [
+    "RACETHX",
+    "==5",
+    1059,
+    1059
+   ],
+   [
+    "AGE31X",
+    "==-1",
+    511,
+    511
+   ],
+   [
+    "INSCOV21",
+    "==1",
+    16128,
+    16128
+   ],
+   [
+    "INSCOV21",
+    "==2",
+    10136,
+    10136
+   ],
+   [
+    "INSCOV21",
+    "==3",
+    2072,
+    2072
+   ],
+   [
+    "OFTSMK53",
+    "==1",
+    1913,
+    1913
+   ],
+   [
+    "OFTSMK53",
+    "==2",
+    939,
+    939
+   ],
+   [
+    "OFTSMK53",
+    "==3",
+    19379,
+    19379
+   ]
+  ],
+  "passed": true
+ },
+ "diagnostics": {
+  "n_base": 18196,
+  "n_perwt_positive": 27332,
+  "n_sdoh_positive_perwt_zero": 0,
+  "n_item_m15_with_sdoh_weight": 204,
+  "n_age31x_ne_agelast_in_base": 14530
+ },
+ "consistency": {
+  "SDOHWT21F": {
+   "age_shares": {
+    "18-34": 29.392192878801293,
+    "35-49": 24.046935483367193,
+    "50-64": 24.690187261137048,
+    "65+": 21.870684376694467
+   },
+   "implied_total": 7.921392325143947
+  },
+  "PERWT21F": {
+   "age_shares": {
+    "18-34": 27.559702028537366,
+    "35-49": 24.177849698816733,
+    "50-64": 25.567218781596125,
+    "65+": 22.695229491049766
+   },
+   "implied_total": 7.81898431125129
+  },
+  "printed_total": 6.2,
+  "printed_age_rates": {
+   "18-34": 11.1,
+   "35-49": 9.2,
+   "50-64": 6.1,
+   "65+": 4.3
+  }
+ },
+ "variants": {
+  "spec": {
+   "tally": {
+    "cells": 40,
+    "computable": 40,
+    "close": 18,
+    "exact": 2,
+    "not_computable": 0,
+    "unresolved": 0,
+    "share_close": 0.45
+   },
+   "fig1": {
+    "total": 5.595543681157027,
+    "age|18-34": 6.462955972121193,
+    "age|35-49": 5.888357287091466,
+    "age|50-64": 4.957070166023205,
+    "age|65+": 4.828654620293365,
+    "race|2": 4.193987304943669,
+    "race|3": 8.572181042661624,
+    "race|1": 6.737616193632013,
+    "race|other": 14.39053920787708
+   },
+   "cells": [
+    [
+     1,
+     5.5955,
+     false,
+     false
+    ],
+    [
+     2,
+     6.463,
+     false,
+     false
+    ],
+    [
+     3,
+     5.8884,
+     false,
+     false
+    ],
+    [
+     4,
+     4.9571,
+     false,
+     false
+    ],
+    [
+     5,
+     4.8287,
+     false,
+     false
+    ],
+    [
+     6,
+     4.194,
+     false,
+     true
+    ],
+    [
+     7,
+     8.5722,
+     false,
+     true
+    ],
+    [
+     8,
+     6.7376,
+     false,
+     false
+    ],
+    [
+     9,
+     14.3905,
+     false,
+     false
+    ],
+    [
+     10,
+     3.4221,
+     true,
+     true
+    ],
+    [
+     11,
+     7.7435,
+     false,
+     true
+    ],
+    [
+     12,
+     14.123,
+     false,
+     false
+    ],
+    [
+     13,
+     9.4621,
+     false,
+     false
+    ],
+    [
+     14,
+     3.8319,
+     false,
+     true
+    ],
+    [
+     15,
+     3.5805,
+     false,
+     false
+    ],
+    [
+     16,
+     5.683,
+     false,
+     false
+    ],
+    [
+     17,
+     14.8135,
+     false,
+     true
+    ],
+    [
+     18,
+     3.7947,
+     false,
+     true
+    ],
+    [
+     19,
+     3.9698,
+     false,
+     true
+    ],
+    [
+     20,
+     6.3516,
+     false,
+     true
+    ],
+    [
+     21,
+     14.4903,
+     false,
+     false
+    ],
+    [
+     22,
+     2.9285,
+     false,
+     false
+    ],
+    [
+     23,
+     8.8926,
+     false,
+     true
+    ],
+    [
+     24,
+     5.184,
+     false,
+     true
+    ],
+    [
+     25,
+     15.2677,
+     false,
+     false
+    ],
+    [
+     26,
+     10.5447,
+     false,
+     false
+    ],
+    [
+     27,
+     27.7486,
+     false,
+     false
+    ],
+    [
+     28,
+     4.613,
+     false,
+     false
+    ],
+    [
+     29,
+     8.0313,
+     false,
+     true
+    ],
+    [
+     30,
+     12.6546,
+     false,
+     false
+    ],
+    [
+     31,
+     4.2744,
+     false,
+     true
+    ],
+    [
+     32,
+     6.7137,
+     false,
+     false
+    ],
+    [
+     33,
+     12.4331,
+     false,
+     false
+    ],
+    [
+     34,
+     8.3254,
+     false,
+     false
+    ],
+    [
+     35,
+     6.4546,
+     true,
+     true
+    ],
+    [
+     36,
+     11.5141,
+     false,
+     true
+    ],
+    [
+     37,
+     5.6277,
+     false,
+     true
+    ],
+    [
+     38,
+     4.613,
+     false,
+     false
+    ],
+    [
+     39,
+     7.0614,
+     false,
+     true
+    ],
+    [
+     40,
+     8.1156,
+     false,
+     true
+    ]
+   ]
+  },
+  "perwt": {
+   "tally": {
+    "cells": 40,
+    "computable": 40,
+    "close": 18,
+    "exact": 3,
+    "not_computable": 0,
+    "unresolved": 0,
+    "share_close": 0.45
+   },
+   "fig1": {
+    "total": 5.595872205938861,
+    "age|18-34": 6.585643489454264,
+    "age|35-49": 5.860298315120408,
+    "age|50-64": 5.119128288164915,
+    "age|65+": 4.64932789651595,
+    "race|2": 4.196485638722326,
+    "race|3": 8.55393897564974,
+    "race|1": 6.8349340370787965,
+    "race|other": 15.44668922498481
+   },
+   "cells": [
+    [
+     1,
+     5.5959,
+     false,
+     false
+    ],
+    [
+     2,
+     6.5856,
+     false,
+     false
+    ],
+    [
+     3,
+     5.8603,
+     false,
+     false
+    ],
+    [
+     4,
+     5.1191,
+     false,
+     false
+    ],
+    [
+     5,
+     4.6493,
+     false,
+     true
+    ],
+    [
+     6,
+     4.1965,
+     false,
+     true
+    ],
+    [
+     7,
+     8.5539,
+     false,
+     true
+    ],
+    [
+     8,
+     6.8349,
+     false,
+     false
+    ],
+    [
+     9,
+     15.4467,
+     false,
+     false
+    ],
+    [
+     10,
+     3.2791,
+     false,
+     true
+    ],
+    [
+     11,
+     7.8534,
+     true,
+     true
+    ],
+    [
+     12,
+     14.7107,
+     false,
+     false
+    ],
+    [
+     13,
+     9.864,
+     false,
+     false
+    ],
+    [
+     14,
+     3.7436,
+     true,
+     true
+    ],
+    [
+     15,
+     3.5536,
+     false,
+     false
+    ],
+    [
+     16,
+     5.5428,
+     false,
+     false
+    ],
+    [
+     17,
+     14.9869,
+     false,
+     true
+    ],
+    [
+     18,
+     3.8248,
+     false,
+     true
+    ],
+    [
+     19,
+     3.9172,
+     true,
+     true
+    ],
+    [
+     20,
+     6.3187,
+     false,
+     true
+    ],
+    [
+     21,
+     14.4131,
+     false,
+     false
+    ],
+    [
+     22,
+     2.7887,
+     false,
+     true
+    ],
+    [
+     23,
+     8.5115,
+     false,
+     true
+    ],
+    [
+     24,
+     5.2707,
+     false,
+     true
+    ],
+    [
+     25,
+     15.4228,
+     false,
+     false
+    ],
+    [
+     26,
+     10.6891,
+     false,
+     false
+    ],
+    [
+     27,
+     29.013,
+     false,
+     false
+    ],
+    [
+     28,
+     4.5484,
+     false,
+     false
+    ],
+    [
+     29,
+     8.0182,
+     false,
+     true
+    ],
+    [
+     30,
+     13.732,
+     false,
+     false
+    ],
+    [
+     31,
+     4.2402,
+     false,
+     true
+    ],
+    [
+     32,
+     6.8255,
+     false,
+     false
+    ],
+    [
+     33,
+     12.6149,
+     false,
+     false
+    ],
+    [
+     34,
+     8.5687,
+     false,
+     false
+    ],
+    [
+     35,
+     6.594,
+     false,
+     true
+    ],
+    [
+     36,
+     11.7423,
+     false,
+     true
+    ],
+    [
+     37,
+     5.6965,
+     false,
+     true
+    ],
+    [
+     38,
+     4.5484,
+     false,
+     false
+    ],
+    [
+     39,
+     7.1508,
+     false,
+     false
+    ],
+    [
+     40,
+     8.2759,
+     false,
+     false
+    ]
+   ]
+  },
+  "m15_yes": {
+   "tally": {
+    "cells": 40,
+    "computable": 40,
+    "close": 6,
+    "exact": 1,
+    "not_computable": 0,
+    "unresolved": 0,
+    "share_close": 0.15
+   },
+   "fig1": {
+    "total": 6.491857446299734,
+    "age|18-34": 6.820005289892195,
+    "age|35-49": 6.600062481575982,
+    "age|50-64": 6.105546523113882,
+    "age|65+": 6.372700808225194,
+    "race|2": 4.983859980446653,
+    "race|3": 9.659779507957373,
+    "race|1": 7.9772717101707595,
+    "race|other": 15.181728297032539
+   },
+   "cells": [
+    [
+     1,
+     6.4919,
+     false,
+     true
+    ],
+    [
+     2,
+     6.82,
+     false,
+     false
+    ],
+    [
+     3,
+     6.6001,
+     false,
+     false
+    ],
+    [
+     4,
+     6.1055,
+     true,
+     true
+    ],
+    [
+     5,
+     6.3727,
+     false,
+     false
+    ],
+    [
+     6,
+     4.9839,
+     false,
+     true
+    ],
+    [
+     7,
+     9.6598,
+     false,
+     false
+    ],
+    [
+     8,
+     7.9773,
+     false,
+     false
+    ],
+    [
+     9,
+     15.1817,
+     false,
+     false
+    ],
+    [
+     10,
+     4.078,
+     false,
+     false
+    ],
+    [
+     11,
+     9.4038,
+     false,
+     false
+    ],
+    [
+     12,
+     15.4007,
+     false,
+     false
+    ],
+    [
+     13,
+     10.4025,
+     false,
+     false
+    ],
+    [
+     14,
+     4.4926,
+     false,
+     false
+    ],
+    [
+     15,
+     4.2873,
+     false,
+     false
+    ],
+    [
+     16,
+     6.8554,
+     false,
+     false
+    ],
+    [
+     17,
+     15.9918,
+     false,
+     false
+    ],
+    [
+     18,
+     4.7949,
+     false,
+     false
+    ],
+    [
+     19,
+     4.537,
+     false,
+     false
+    ],
+    [
+     20,
+     7.444,
+     false,
+     false
+    ],
+    [
+     21,
+     15.6233,
+     false,
+     false
+    ],
+    [
+     22,
+     3.5902,
+     false,
+     false
+    ],
+    [
+     23,
+     9.4246,
+     false,
+     true
+    ],
+    [
+     24,
+     6.7604,
+     false,
+     false
+    ],
+    [
+     25,
+     17.1321,
+     false,
+     false
+    ],
+    [
+     26,
+     11.6727,
+     false,
+     true
+    ],
+    [
+     27,
+     29.4633,
+     false,
+     false
+    ],
+    [
+     28,
+     5.2092,
+     false,
+     false
+    ],
+    [
+     29,
+     9.9552,
+     false,
+     false
+    ],
+    [
+     30,
+     14.8422,
+     false,
+     false
+    ],
+    [
+     31,
+     5.8178,
+     false,
+     false
+    ],
+    [
+     32,
+     7.7907,
+     false,
+     true
+    ],
+    [
+     33,
+     13.8436,
+     false,
+     false
+    ],
+    [
+     34,
+     9.1834,
+     false,
+     false
+    ],
+    [
+     35,
+     7.6653,
+     false,
+     false
+    ],
+    [
+     36,
+     12.8313,
+     false,
+     false
+    ],
+    [
+     37,
+     6.802,
+     false,
+     false
+    ],
+    [
+     38,
+     5.2092,
+     false,
+     false
+    ],
+    [
+     39,
+     8.2823,
+     false,
+     false
+    ],
+    [
+     40,
+     9.5333,
+     false,
+     false
+    ]
+   ]
+  },
+  "m15_no": {
+   "tally": {
+    "cells": 40,
+    "computable": 40,
+    "close": 21,
+    "exact": 3,
+    "not_computable": 0,
+    "unresolved": 0,
+    "share_close": 0.525
+   },
+   "fig1": {
+    "total": 5.5424173455957115,
+    "age|18-34": 6.438285596393452,
+    "age|35-49": 5.843827467534625,
+    "age|50-64": 4.897170098800299,
+    "age|65+": 4.750315223812656,
+    "race|2": 4.159409976440023,
+    "race|3": 8.470208896190687,
+    "race|1": 6.64805893869311,
+    "race|other": 14.2575441217851
+   },
+   "cells": [
+    [
+     1,
+     5.5424,
+     false,
+     false
+    ],
+    [
+     2,
+     6.4383,
+     false,
+     false
+    ],
+    [
+     3,
+     5.8438,
+     false,
+     false
+    ],
+    [
+     4,
+     4.8972,
+     false,
+     false
+    ],
+    [
+     5,
+     4.7503,
+     false,
+     true
+    ],
+    [
+     6,
+     4.1594,
+     false,
+     true
+    ],
+    [
+     7,
+     8.4702,
+     false,
+     true
+    ],
+    [
+     8,
+     6.6481,
+     false,
+     false
+    ],
+    [
+     9,
+     14.2575,
+     false,
+     false
+    ],
+    [
+     10,
+     3.3989,
+     true,
+     true
+    ],
+    [
+     11,
+     7.6042,
+     false,
+     true
+    ],
+    [
+     12,
+     13.9128,
+     false,
+     false
+    ],
+    [
+     13,
+     9.3638,
+     false,
+     false
+    ],
+    [
+     14,
+     3.8056,
+     false,
+     true
+    ],
+    [
+     15,
+     3.5542,
+     false,
+     false
+    ],
+    [
+     16,
+     5.6124,
+     false,
+     false
+    ],
+    [
+     17,
+     14.6086,
+     false,
+     true
+    ],
+    [
+     18,
+     3.7552,
+     false,
+     true
+    ],
+    [
+     19,
+     3.9463,
+     true,
+     true
+    ],
+    [
+     20,
+     6.2775,
+     false,
+     true
+    ],
+    [
+     21,
+     14.2983,
+     false,
+     false
+    ],
+    [
+     22,
+     2.9085,
+     false,
+     false
+    ],
+    [
+     23,
+     8.8407,
+     false,
+     true
+    ],
+    [
+     24,
+     5.0978,
+     false,
+     true
+    ],
+    [
+     25,
+     14.9317,
+     false,
+     true
+    ],
+    [
+     26,
+     10.4117,
+     false,
+     false
+    ],
+    [
+     27,
+     27.09,
+     false,
+     false
+    ],
+    [
+     28,
+     4.5842,
+     false,
+     false
+    ],
+    [
+     29,
+     7.8633,
+     false,
+     true
+    ],
+    [
+     30,
+     12.3377,
+     false,
+     true
+    ],
+    [
+     31,
+     4.2055,
+     false,
+     true
+    ],
+    [
+     32,
+     6.6362,
+     false,
+     false
+    ],
+    [
+     33,
+     12.2328,
+     false,
+     false
+    ],
+    [
+     34,
+     8.2475,
+     false,
+     false
+    ],
+    [
+     35,
+     6.3711,
+     false,
+     true
+    ],
+    [
+     36,
+     11.3427,
+     true,
+     true
+    ],
+    [
+     37,
+     5.5577,
+     false,
+     true
+    ],
+    [
+     38,
+     4.5842,
+     false,
+     false
+    ],
+    [
+     39,
+     6.9687,
+     false,
+     true
+    ],
+    [
+     40,
+     7.9904,
+     false,
+     true
+    ]
+   ]
+  },
+  "unweighted": {
+   "tally": {
+    "cells": 40,
+    "computable": 40,
+    "close": 9,
+    "exact": 1,
+    "not_computable": 0,
+    "unresolved": 0,
+    "share_close": 0.225
+   },
+   "fig1": {
+    "total": 6.523411738843702,
+    "age|18-34": 7.289293849658314,
+    "age|35-49": 7.007481296758105,
+    "age|50-64": 7.148829431438127,
+    "age|65+": 5.063291139240507,
+    "race|2": 4.730431498442074,
+    "race|3": 9.899396378269618,
+    "race|1": 8.474114441416894,
+    "race|other": 14.971209213051823
+   },
+   "cells": [
+    [
+     1,
+     6.5234,
+     false,
+     true
+    ],
+    [
+     2,
+     7.2893,
+     false,
+     false
+    ],
+    [
+     3,
+     7.0075,
+     false,
+     false
+    ],
+    [
+     4,
+     7.1488,
+     false,
+     false
+    ],
+    [
+     5,
+     5.0633,
+     false,
+     false
+    ],
+    [
+     6,
+     4.7304,
+     false,
+     true
+    ],
+    [
+     7,
+     9.8994,
+     false,
+     false
+    ],
+    [
+     8,
+     8.4741,
+     false,
+     false
+    ],
+    [
+     9,
+     14.9712,
+     false,
+     false
+    ],
+    [
+     10,
+     3.389,
+     true,
+     true
+    ],
+    [
+     11,
+     8.7941,
+     false,
+     false
+    ],
+    [
+     12,
+     15.3371,
+     false,
+     false
+    ],
+    [
+     13,
+     10.7903,
+     false,
+     false
+    ],
+    [
+     14,
+     4.1908,
+     false,
+     true
+    ],
+    [
+     15,
+     3.8705,
+     false,
+     false
+    ],
+    [
+     16,
+     6.1544,
+     false,
+     false
+    ],
+    [
+     17,
+     16.3517,
+     false,
+     false
+    ],
+    [
+     18,
+     4.0977,
+     false,
+     false
+    ],
+    [
+     19,
+     4.3941,
+     false,
+     true
+    ],
+    [
+     20,
+     7.5585,
+     false,
+     false
+    ],
+    [
+     21,
+     16.1668,
+     false,
+     false
+    ],
+    [
+     22,
+     2.8536,
+     false,
+     true
+    ],
+    [
+     23,
+     8.5968,
+     false,
+     true
+    ],
+    [
+     24,
+     6.021,
+     false,
+     false
+    ],
+    [
+     25,
+     16.1383,
+     false,
+     false
+    ],
+    [
+     26,
+     10.9424,
+     false,
+     false
+    ],
+    [
+     27,
+     28.4895,
+     false,
+     false
+    ],
+    [
+     28,
+     4.8926,
+     false,
+     false
+    ],
+    [
+     29,
+     9.2503,
+     false,
+     false
+    ],
+    [
+     30,
+     16.0584,
+     false,
+     false
+    ],
+    [
+     31,
+     5.1323,
+     false,
+     false
+    ],
+    [
+     32,
+     7.8666,
+     false,
+     true
+    ],
+    [
+     33,
+     14.3312,
+     false,
+     false
+    ],
+    [
+     34,
+     10.4731,
+     false,
+     true
+    ],
+    [
+     35,
+     7.64,
+     false,
+     false
+    ],
+    [
+     36,
+     13.0526,
+     false,
+     false
+    ],
+    [
+     37,
+     7.0113,
+     false,
+     false
+    ],
+    [
+     38,
+     4.8926,
+     false,
+     false
+    ],
+    [
+     39,
+     8.2959,
+     false,
+     false
+    ],
+    [
+     40,
+     9.4229,
+     false,
+     false
+    ]
+   ]
+  },
+  "agelast": {
+   "tally": {
+    "cells": 40,
+    "computable": 40,
+    "close": 18,
+    "exact": 2,
+    "not_computable": 0,
+    "unresolved": 0,
+    "share_close": 0.45
+   },
+   "fig1": {
+    "total": 5.595543681157027,
+    "age|18-34": 6.584883498626514,
+    "age|35-49": 5.702655590948304,
+    "age|50-64": 4.991423609594184,
+    "age|65+": 4.940905865776723,
+    "race|2": 4.193987304943669,
+    "race|3": 8.572181042661624,
+    "race|1": 6.737616193632013,
+    "race|other": 14.39053920787708
+   },
+   "cells": [
+    [
+     1,
+     5.5955,
+     false,
+     false
+    ],
+    [
+     2,
+     6.5849,
+     false,
+     false
+    ],
+    [
+     3,
+     5.7027,
+     false,
+     false
+    ],
+    [
+     4,
+     4.9914,
+     false,
+     false
+    ],
+    [
+     5,
+     4.9409,
+     false,
+     false
+    ],
+    [
+     6,
+     4.194,
+     false,
+     true
+    ],
+    [
+     7,
+     8.5722,
+     false,
+     true
+    ],
+    [
+     8,
+     6.7376,
+     false,
+     false
+    ],
+    [
+     9,
+     14.3905,
+     false,
+     false
+    ],
+    [
+     10,
+     3.4221,
+     true,
+     true
+    ],
+    [
+     11,
+     7.7435,
+     false,
+     true
+    ],
+    [
+     12,
+     14.123,
+     false,
+     false
+    ],
+    [
+     13,
+     9.4621,
+     false,
+     false
+    ],
+    [
+     14,
+     3.8319,
+     false,
+     true
+    ],
+    [
+     15,
+     3.5805,
+     false,
+     false
+    ],
+    [
+     16,
+     5.683,
+     false,
+     false
+    ],
+    [
+     17,
+     14.8135,
+     false,
+     true
+    ],
+    [
+     18,
+     3.7947,
+     false,
+     true
+    ],
+    [
+     19,
+     3.9698,
+     false,
+     true
+    ],
+    [
+     20,
+     6.3516,
+     false,
+     true
+    ],
+    [
+     21,
+     14.4903,
+     false,
+     false
+    ],
+    [
+     22,
+     2.9285,
+     false,
+     false
+    ],
+    [
+     23,
+     8.8926,
+     false,
+     true
+    ],
+    [
+     24,
+     5.184,
+     false,
+     true
+    ],
+    [
+     25,
+     15.2677,
+     false,
+     false
+    ],
+    [
+     26,
+     10.5447,
+     false,
+     false
+    ],
+    [
+     27,
+     27.7486,
+     false,
+     false
+    ],
+    [
+     28,
+     4.613,
+     false,
+     false
+    ],
+    [
+     29,
+     8.0313,
+     false,
+     true
+    ],
+    [
+     30,
+     12.6546,
+     false,
+     false
+    ],
+    [
+     31,
+     4.2744,
+     false,
+     true
+    ],
+    [
+     32,
+     6.7137,
+     false,
+     false
+    ],
+    [
+     33,
+     12.4331,
+     false,
+     false
+    ],
+    [
+     34,
+     8.3254,
+     false,
+     false
+    ],
+    [
+     35,
+     6.4546,
+     true,
+     true
+    ],
+    [
+     36,
+     11.5141,
+     false,
+     true
+    ],
+    [
+     37,
+     5.6277,
+     false,
+     true
+    ],
+    [
+     38,
+     4.613,
+     false,
+     false
+    ],
+    [
+     39,
+     7.0614,
+     false,
+     true
+    ],
+    [
+     40,
+     8.1156,
+     false,
+     true
+    ]
+   ]
+  }
+ },
+ "spec_matches_r2b": true
+}
