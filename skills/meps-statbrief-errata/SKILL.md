@@ -1,6 +1,6 @@
 ---
 name: meps-statbrief-errata
-description: Use when quoting, checking or reproducing a number from an AHRQ Medical Expenditure Panel Survey (MEPS) Statistical Brief (meps.ahrq.gov stat<N>.shtml pages, health care spending, insurance, access and use estimates). Before you quote a brief's figure, look it up among 12 known slips (figure-vs-text conflicts, swapped cells, wrong labels and titles, a total its own subgroups cannot produce), 11 reproduction results from the public files and 2 documentation gaps, and avoid the traps met when recomputing briefs from MEPS public-use files. Works offline from a bundled table.
+description: Use when quoting, checking or reproducing a number from an AHRQ Medical Expenditure Panel Survey (MEPS) Statistical Brief (meps.ahrq.gov stat<N>.shtml pages, health care spending, insurance, access and use estimates). Before you quote a brief's figure, look it up among 17 known slips (figure-vs-text conflicts, swapped cells, wrong labels, years and titles, a total its own subgroups cannot produce), 11 reproduction results from the public files and 2 documentation gaps, and avoid the traps met when recomputing briefs from MEPS public-use files. Works offline from a bundled table.
 license: Apache-2.0
 ---
 
@@ -26,7 +26,7 @@ medical advice.
 ## Step 1: look up known items
 
 `scripts/meps_errata.py` needs Python 3.8+ and the standard library only. It is read-only, offline and uses the
-bundled table (table 0.1.0: 25 rows).
+bundled table (table 0.2.0: 30 rows).
 
 ```
 python scripts/meps_errata.py --brief 558               # everything known about Brief #558
@@ -52,15 +52,18 @@ note that found it.
 - For a slip, give both values, say which one you use and why, and link the note. Call it "a discrepancy listed
   in MV2's open MEPS errata table, not confirmed by AHRQ". Never silently pick one value.
 - Where the evidence is the public file (for example `MEPS-E012`, Brief #491), the file supports the value shown
-  as "other" or names the side it supports in the row text. Where the evidence is the brief's own text, say that
-  the figure and the text disagree and that the text fits the brief's other numbers.
+  as "other" or names the side it supports in the row text. Where the evidence is the brief's own numbers (for
+  example `MEPS-E013`, Brief #481, where a distribution sums to 102.0 with the printed cell and 100.0 with the
+  text's value), say so. Where the evidence is only the brief's text, say that the figure and the text disagree.
+- Some rows do not decide which value is right (`MEPS-E015`, `MEPS-E016`). Quote neither as settled.
 - `MEPS-E009` (Brief #558, Figure 1) is different: the printed total and the printed age rates cannot both be
   right, and the table does not say which is wrong. Quote neither as settled.
 - For a reproduction row, "reproduces" means at least 80% of computable cells were close (the pre-registered
   threshold). Brief #558 does not reproduce from HC-233; say so if you rely on it.
 - No match does not mean the number is right. The table covers only what these checks looked at: eleven
-  single-file briefs recomputed in full (first 30-40 cells each) and series-wide scans for titles, age bands and
-  totals. Briefs can also be revised later; the table does not track changes to AHRQ's pages.
+  single-file briefs recomputed in full (first 30-40 cells each), series-wide scans for titles, age bands and
+  totals, and a scan of 540 briefs' text against the figures they cite in which only some of the flagged numbers
+  were checked by hand. Briefs can also be revised later; the table does not track changes to AHRQ's pages.
 
 ## Step 3: traps when you recompute a brief yourself
 
@@ -83,12 +86,15 @@ note that found it.
 7. **Round like the brief.** Round half-up to the printed precision before you call a value "exact", and report
    the raw gap as well.
 8. **Read the labels against the text.** Age bands can overlap or leave a gap (#170 prints "Age 40-65" next to
-   "Age 65+"; #227 leaves age 18 out of every labelled group), and a figure can repeat another figure's title
-   (#533).
+   "Age 65+"; #227 leaves age 18 out of every labelled group), a figure can repeat another figure's title
+   (#533), and a sentence can name the wrong year (#304, #481).
 9. **When figure and text disagree, test both.** The public file sided with the table in #491 and with the text in
-   #497; in #567 and #536 the brief's own subtotals sided with the text.
+   #497; in #567 and #536 the brief's own subtotals sided with the text, and in #481 a distribution that must sum
+   to about 100 did.
 10. **Scraping brief pages:** pages before about #554 put the body text and figure citations inside HTML layout
-    tables, so a parser that skips tables loses most of the text.
+    tables, so a parser that skips tables loses most of the text. Figure data is often a flat list of labels and
+    values; asterisks can sit before or after the % sign ("21.2*%", "88.3%*"), and an overall value can be glued
+    to its label ("All 5.0%").
 
 ## Report a new item
 
