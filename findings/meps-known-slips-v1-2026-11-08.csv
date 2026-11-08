@@ -1,0 +1,12 @@
+brief,place,kind,what,first_logged_in
+497,Figure 3,swapped cells,"Table prints 35.9 (population share, ages 18-44) and 35.5 (expenditure share, ages 45-64); the Findings text and HC-171 give them the other way round (35.5 and 35.9)",findings/meps-r2b-results-v1-2026-11-07.md
+533,Figure 6,title,"Repeats Figure 5's title (by race/ethnicity) although the figure shows type of service",findings/meps-m4-titles-results-v1-2026-11-06.md
+257,Figure 2,title,"Title reads as a distribution while the figure shows rates within each group (2 of 3 reads)",findings/meps-m4-titles-results-v1-2026-11-06.md
+549,five tables,duplicate,"Five tables printed twice on the page",findings/meps-m4-titles-results-v1-2026-11-06.md
+217,Definitions,text,"Low-income range printed as 100-99 percent",findings/meps-m4-titles-results-v1-2026-11-06.md
+170,Figure 5,label,"Age 40-65 band next to Age 65+ (the text says 40 to 64)",findings/meps-m5-agebands-results-v1-2026-11-07.md
+227,Figure 4,label,"Age groups labelled < 18 and 19-25, so age 18 is in no group",findings/meps-m5-agebands-results-v1-2026-11-07.md
+558,Figure 6,label,"Table labels 6.6 / 7.7 / 9.1 as at least two / three / four conditions; the text gives them as at least one / two / three",findings/meps-r2b-results-v1-2026-11-07.md
+558,Figure 1,inconsistent total,"Printed age rates (11.1 / 9.2 / 6.1 / 4.3) average to about 7.9 with the file's own age shares against a printed total of 6.2",findings/meps-r558x-results-v1-2026-11-07.md
+567,Figure 1,figure vs text,"Men's combined benzodiazepine-opioid use printed as 1.9; the text says 0.9 percent",findings/meps-m7-totals-results-v1-2026-11-07.md
+536,Figure 13,figure vs text,"2020 United States deductible share printed as 86.2%; the Highlights and Deductibles text say 89.2 percent",findings/meps-m7-totals-results-v1-2026-11-07.md

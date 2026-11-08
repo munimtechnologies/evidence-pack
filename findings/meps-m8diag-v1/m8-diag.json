@@ -1,0 +1,705 @@
+{
+ "version": "0.1.0",
+ "briefs": {
+  "536": {
+   "tables": 23,
+   "layout_tables": 2,
+   "zones": {
+    "outside": {
+     "chars": 82,
+     "cites": 0
+    },
+    "layout": {
+     "chars": 16309,
+     "cites": 20
+    },
+    "leaf": {
+     "chars": 8987,
+     "cites": 0
+    }
+   },
+   "top_leaves": [
+    {
+     "chars": 708,
+     "cells": 70,
+     "numeric": 65,
+     "cites": 0
+    },
+    {
+     "chars": 689,
+     "cells": 70,
+     "numeric": 65,
+     "cites": 0
+    },
+    {
+     "chars": 683,
+     "cells": 70,
+     "numeric": 65,
+     "cites": 0
+    },
+    {
+     "chars": 681,
+     "cells": 70,
+     "numeric": 65,
+     "cites": 0
+    },
+    {
+     "chars": 652,
+     "cells": 70,
+     "numeric": 65,
+     "cites": 0
+    }
+   ]
+  },
+  "533": {
+   "tables": 16,
+   "layout_tables": 2,
+   "zones": {
+    "outside": {
+     "chars": 176,
+     "cites": 0
+    },
+    "layout": {
+     "chars": 16517,
+     "cites": 8
+    },
+    "leaf": {
+     "chars": 2955,
+     "cites": 0
+    }
+   },
+   "top_leaves": [
+    {
+     "chars": 530,
+     "cells": 0,
+     "numeric": 0,
+     "cites": 0
+    },
+    {
+     "chars": 429,
+     "cells": 27,
+     "numeric": 16,
+     "cites": 0
+    },
+    {
+     "chars": 389,
+     "cells": 42,
+     "numeric": 39,
+     "cites": 0
+    },
+    {
+     "chars": 352,
+     "cells": 36,
+     "numeric": 25,
+     "cites": 0
+    },
+    {
+     "chars": 333,
+     "cells": 36,
+     "numeric": 25,
+     "cites": 0
+    }
+   ]
+  },
+  "497": {
+   "tables": 15,
+   "layout_tables": 3,
+   "zones": {
+    "outside": {
+     "chars": 119,
+     "cites": 0
+    },
+    "layout": {
+     "chars": 12619,
+     "cites": 6
+    },
+    "leaf": {
+     "chars": 3133,
+     "cites": 0
+    }
+   },
+   "top_leaves": [
+    {
+     "chars": 586,
+     "cells": 34,
+     "numeric": 20,
+     "cites": 0
+    },
+    {
+     "chars": 530,
+     "cells": 0,
+     "numeric": 0,
+     "cites": 0
+    },
+    {
+     "chars": 518,
+     "cells": 24,
+     "numeric": 12,
+     "cites": 0
+    },
+    {
+     "chars": 457,
+     "cells": 37,
+     "numeric": 33,
+     "cites": 0
+    },
+    {
+     "chars": 383,
+     "cells": 16,
+     "numeric": 8,
+     "cites": 0
+    }
+   ]
+  },
+  "460": {
+   "tables": 13,
+   "layout_tables": 3,
+   "zones": {
+    "outside": {
+     "chars": 119,
+     "cites": 0
+    },
+    "layout": {
+     "chars": 11509,
+     "cites": 0
+    },
+    "leaf": {
+     "chars": 2823,
+     "cites": 0
+    }
+   },
+   "top_leaves": [
+    {
+     "chars": 614,
+     "cells": 43,
+     "numeric": 17,
+     "cites": 0
+    },
+    {
+     "chars": 606,
+     "cells": 41,
+     "numeric": 16,
+     "cites": 0
+    },
+    {
+     "chars": 576,
+     "cells": 31,
+     "numeric": 11,
+     "cites": 0
+    },
+    {
+     "chars": 530,
+     "cells": 0,
+     "numeric": 0,
+     "cites": 0
+    },
+    {
+     "chars": 512,
+     "cells": 11,
+     "numeric": 5,
+     "cites": 0
+    }
+   ]
+  },
+  "423": {
+   "tables": 18,
+   "layout_tables": 3,
+   "zones": {
+    "outside": {
+     "chars": 154,
+     "cites": 0
+    },
+    "layout": {
+     "chars": 20140,
+     "cites": 7
+    },
+    "leaf": {
+     "chars": 5761,
+     "cites": 0
+    }
+   },
+   "top_leaves": [
+    {
+     "chars": 807,
+     "cells": 51,
+     "numeric": 32,
+     "cites": 0
+    },
+    {
+     "chars": 786,
+     "cells": 39,
+     "numeric": 24,
+     "cites": 0
+    },
+    {
+     "chars": 771,
+     "cells": 59,
+     "numeric": 40,
+     "cites": 0
+    },
+    {
+     "chars": 678,
+     "cells": 51,
+     "numeric": 32,
+     "cites": 0
+    },
+    {
+     "chars": 595,
+     "cells": 43,
+     "numeric": 30,
+     "cites": 0
+    }
+   ]
+  },
+  "352": {
+   "tables": 12,
+   "layout_tables": 3,
+   "zones": {
+    "outside": {
+     "chars": 93,
+     "cites": 0
+    },
+    "layout": {
+     "chars": 11490,
+     "cites": 0
+    },
+    "leaf": {
+     "chars": 2432,
+     "cites": 0
+    }
+   },
+   "top_leaves": [
+    {
+     "chars": 768,
+     "cells": 74,
+     "numeric": 55,
+     "cites": 0
+    },
+    {
+     "chars": 678,
+     "cells": 62,
+     "numeric": 44,
+     "cites": 0
+    },
+    {
+     "chars": 530,
+     "cells": 0,
+     "numeric": 0,
+     "cites": 0
+    },
+    {
+     "chars": 526,
+     "cells": 38,
+     "numeric": 22,
+     "cites": 0
+    },
+    {
+     "chars": 121,
+     "cells": 3,
+     "numeric": 0,
+     "cites": 0
+    }
+   ]
+  },
+  "297": {
+   "tables": 12,
+   "layout_tables": 3,
+   "zones": {
+    "outside": {
+     "chars": 93,
+     "cites": 0
+    },
+    "layout": {
+     "chars": 9708,
+     "cites": 3
+    },
+    "leaf": {
+     "chars": 2091,
+     "cites": 0
+    }
+   },
+   "top_leaves": [
+    {
+     "chars": 650,
+     "cells": 74,
+     "numeric": 55,
+     "cites": 0
+    },
+    {
+     "chars": 568,
+     "cells": 62,
+     "numeric": 44,
+     "cites": 0
+    },
+    {
+     "chars": 530,
+     "cells": 0,
+     "numeric": 0,
+     "cites": 0
+    },
+    {
+     "chars": 404,
+     "cells": 38,
+     "numeric": 22,
+     "cites": 0
+    },
+    {
+     "chars": 121,
+     "cells": 3,
+     "numeric": 0,
+     "cites": 0
+    }
+   ]
+  },
+  "257": {
+   "tables": 17,
+   "layout_tables": 3,
+   "zones": {
+    "outside": {
+     "chars": 150,
+     "cites": 0
+    },
+    "layout": {
+     "chars": 15749,
+     "cites": 5
+    },
+    "leaf": {
+     "chars": 2432,
+     "cites": 0
+    }
+   },
+   "top_leaves": [
+    {
+     "chars": 530,
+     "cells": 0,
+     "numeric": 0,
+     "cites": 0
+    },
+    {
+     "chars": 364,
+     "cells": 21,
+     "numeric": 12,
+     "cites": 0
+    },
+    {
+     "chars": 306,
+     "cells": 14,
+     "numeric": 6,
+     "cites": 0
+    },
+    {
+     "chars": 270,
+     "cells": 12,
+     "numeric": 6,
+     "cites": 0
+    },
+    {
+     "chars": 217,
+     "cells": 8,
+     "numeric": 3,
+     "cites": 0
+    }
+   ]
+  },
+  "217": {
+   "tables": 19,
+   "layout_tables": 3,
+   "zones": {
+    "outside": {
+     "chars": 115,
+     "cites": 0
+    },
+    "layout": {
+     "chars": 14264,
+     "cites": 8
+    },
+    "leaf": {
+     "chars": 2425,
+     "cites": 0
+    }
+   },
+   "top_leaves": [
+    {
+     "chars": 530,
+     "cells": 0,
+     "numeric": 0,
+     "cites": 0
+    },
+    {
+     "chars": 227,
+     "cells": 18,
+     "numeric": 10,
+     "cites": 0
+    },
+    {
+     "chars": 224,
+     "cells": 18,
+     "numeric": 10,
+     "cites": 0
+    },
+    {
+     "chars": 209,
+     "cells": 8,
+     "numeric": 3,
+     "cites": 0
+    },
+    {
+     "chars": 209,
+     "cells": 10,
+     "numeric": 4,
+     "cites": 0
+    }
+   ]
+  },
+  "170": {
+   "tables": 16,
+   "layout_tables": 4,
+   "zones": {
+    "outside": {
+     "chars": 132,
+     "cites": 0
+    },
+    "layout": {
+     "chars": 13074,
+     "cites": 6
+    },
+    "leaf": {
+     "chars": 2117,
+     "cites": 0
+    }
+   },
+   "top_leaves": [
+    {
+     "chars": 530,
+     "cells": 0,
+     "numeric": 0,
+     "cites": 0
+    },
+    {
+     "chars": 290,
+     "cells": 18,
+     "numeric": 10,
+     "cites": 0
+    },
+    {
+     "chars": 271,
+     "cells": 14,
+     "numeric": 6,
+     "cites": 0
+    },
+    {
+     "chars": 267,
+     "cells": 14,
+     "numeric": 6,
+     "cites": 0
+    },
+    {
+     "chars": 250,
+     "cells": 12,
+     "numeric": 6,
+     "cites": 0
+    }
+   ]
+  },
+  "100": {
+   "tables": 14,
+   "layout_tables": 3,
+   "zones": {
+    "outside": {
+     "chars": 128,
+     "cites": 0
+    },
+    "layout": {
+     "chars": 14326,
+     "cites": 7
+    },
+    "leaf": {
+     "chars": 2743,
+     "cites": 0
+    }
+   },
+   "top_leaves": [
+    {
+     "chars": 530,
+     "cells": 0,
+     "numeric": 0,
+     "cites": 0
+    },
+    {
+     "chars": 507,
+     "cells": 28,
+     "numeric": 21,
+     "cites": 0
+    },
+    {
+     "chars": 467,
+     "cells": 19,
+     "numeric": 10,
+     "cites": 0
+    },
+    {
+     "chars": 417,
+     "cells": 20,
+     "numeric": 14,
+     "cites": 0
+    },
+    {
+     "chars": 410,
+     "cells": 20,
+     "numeric": 14,
+     "cites": 0
+    }
+   ]
+  },
+  "10": {
+   "tables": 12,
+   "layout_tables": 3,
+   "zones": {
+    "outside": {
+     "chars": 91,
+     "cites": 0
+    },
+    "layout": {
+     "chars": 6453,
+     "cites": 5
+    },
+    "leaf": {
+     "chars": 1905,
+     "cites": 0
+    }
+   },
+   "top_leaves": [
+    {
+     "chars": 530,
+     "cells": 0,
+     "numeric": 0,
+     "cites": 0
+    },
+    {
+     "chars": 451,
+     "cells": 20,
+     "numeric": 8,
+     "cites": 0
+    },
+    {
+     "chars": 442,
+     "cells": 18,
+     "numeric": 7,
+     "cites": 0
+    },
+    {
+     "chars": 433,
+     "cells": 26,
+     "numeric": 11,
+     "cites": 0
+    },
+    {
+     "chars": 121,
+     "cells": 3,
+     "numeric": 0,
+     "cites": 0
+    }
+   ]
+  },
+  "554": {
+   "tables": 12,
+   "layout_tables": 1,
+   "zones": {
+    "outside": {
+     "chars": 13026,
+     "cites": 5
+    },
+    "layout": {
+     "chars": 0,
+     "cites": 0
+    },
+    "leaf": {
+     "chars": 1564,
+     "cites": 0
+    }
+   },
+   "top_leaves": [
+    {
+     "chars": 530,
+     "cells": 0,
+     "numeric": 0,
+     "cites": 0
+    },
+    {
+     "chars": 249,
+     "cells": 20,
+     "numeric": 8,
+     "cites": 0
+    },
+    {
+     "chars": 244,
+     "cells": 16,
+     "numeric": 6,
+     "cites": 0
+    },
+    {
+     "chars": 188,
+     "cells": 16,
+     "numeric": 6,
+     "cites": 0
+    },
+    {
+     "chars": 167,
+     "cells": 12,
+     "numeric": 4,
+     "cites": 0
+    }
+   ]
+  },
+  "567": {
+   "tables": 15,
+   "layout_tables": 1,
+   "zones": {
+    "outside": {
+     "chars": 17970,
+     "cites": 8
+    },
+    "layout": {
+     "chars": 0,
+     "cites": 0
+    },
+    "leaf": {
+     "chars": 1841,
+     "cites": 0
+    }
+   },
+   "top_leaves": [
+    {
+     "chars": 530,
+     "cells": 0,
+     "numeric": 0,
+     "cites": 0
+    },
+    {
+     "chars": 198,
+     "cells": 9,
+     "numeric": 4,
+     "cites": 0
+    },
+    {
+     "chars": 171,
+     "cells": 12,
+     "numeric": 6,
+     "cites": 0
+    },
+    {
+     "chars": 168,
+     "cells": 15,
+     "numeric": 8,
+     "cites": 0
+    },
+    {
+     "chars": 166,
+     "cells": 9,
+     "numeric": 4,
+     "cites": 0
+    }
+   ]
+  }
+ }
+}
