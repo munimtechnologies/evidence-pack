@@ -1,0 +1,9 @@
+check_rank,in_sample,control,number,year,block,refs,text,value,decimals,verdict,near,context
+,False,True,567,2025,25,f1,0.9,0.9,1,unmatched,1.9,of benzodiazepines and opioids was higher among older women (2.0%) compared to older men (0.9%).
+1,True,False,558,2024,38,f5;f7,7.7,7.7,1,unmatched,7.5,"lly, 6.6 percent of adults with at least one of the health conditions listed in figure 5, 7.7 percent of adults with at least two of the listed health co"
+2,True,False,558,2024,38,f5;f7,6.6,6.6,1,unmatched,6.5,"th more health conditions were more likely to lack reliable transportation. Specifically, 6.6 percent of adults with at least one of the health condition"
+3,True,False,555,2024,28,f2,16.1,16.1,1,unmatched,-16.9,"In 2020, total annual dental expenditures declined by 16.1% compared to 2019 ($108 billion versus $129 billion, in inf"
+4,True,False,564,2025,29,f1,17.7,17.7,1,unmatched,19.7, access. Only 23.3 percent rated access as excellent and 33.1 percent as very good. About 17.7 percent rated it as fair or poor.
+5,True,False,566,2025,67,f4;f5,43.2,43.2,1,unmatched,23.2,"ent had check-ups but not visits linked to high cholesterol. When check-ups are excluded, 43.2 percent had medications and no visits, and 39.0 percent wer"
+6,True,False,559,2025,28,f1,0.1,0.1,1,unmatched,0.0,"0.2 billion. Codeine, as well as all other opioids combined, incurred expenses less than $0.1 billion and $0.4 billion respectively."
+7,True,False,555,2024,34,f5,19.0,19.0,1,unmatched,-14.0,"Overall, the number of monthly dental visits decreased by 19.0% in 2020 and returned to pre-pandemic levels in 2021. Follo"

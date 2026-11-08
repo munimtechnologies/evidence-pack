@@ -1,0 +1,8 @@
+check_rank,brief,text_number,near_cell,near_location,read1_class,read2_class,final_class,note
+1,558,7.7,7.5,Figure 5 Heart Disease,Parser or association artefact,Parser or association artefact,Parser or association artefact,value printed in Figure 6 (heading cites figure 6); parser read 'figure 5 7.7' as figures 5 and 7; page has no Figure 7
+2,558,6.6,6.5,Figure 5 Hypertension,Parser or association artefact,Parser or association artefact,Parser or association artefact,value printed in Figure 6 (heading cites figure 6)
+3,555,16.1,-16.9,Figure 2 18-64 percentage change,Parser or association artefact,Parser or association artefact,Parser or association artefact,text 'declined by 16.1%' = Figure 2 All ages cell printed -16.1 (sign not compared)
+4,564,17.7,19.7,Figure 1 Metropolitan Good,Different quantity,Different quantity,Different quantity,nonmetropolitan fair or poor = 13.0 + 4.7; printed 17.7 in Figure 2
+5,566,43.2,23.2,Figure 4 Public coverage 2018-19,Different quantity,Different quantity,Different quantity,Definitions-section sensitivity result (check-ups excluded); other measure and population
+6,559,0.1,0.0,Figure 1 Codeine,Different quantity,Different quantity,Different quantity,'less than $0.1 billion' is an upper bound consistent with 0.0
+7,555,19.0,-14.0,Figure 5 November percentage change,Parser or association artefact,Parser or association artefact,Parser or association artefact,text 'decreased by 19.0%' = Figure 5 Full year cell printed -19.0 (sign not compared)

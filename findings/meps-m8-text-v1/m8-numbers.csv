@@ -1,0 +1,473 @@
+number,year,block,refs,text,value,decimals,verdict,near,context
+554,2024,27,f1,30.6,30.6,1,match,,mong young adults (aged 18-24) than among older adults. Nearly one-third of young adults (30.6 percent) had used an electronic nicotine product compared t
+554,2024,27,f1,25.2,25.2,1,match,,ults (30.6 percent) had used an electronic nicotine product compared to about one-fourth (25.2 percent) of adults ages 25-34; 17.9 percent of adults ages 
+554,2024,27,f1,17.9,17.9,1,match,,tronic nicotine product compared to about one-fourth (25.2 percent) of adults ages 25-34; 17.9 percent of adults ages 35-44; 11.2 percent of those ages 45
+554,2024,27,f1,11.2,11.2,1,match,," about one-fourth (25.2 percent) of adults ages 25-34; 17.9 percent of adults ages 35-44; 11.2 percent of those ages 45-64, and 4.1 percent of adults ages"
+554,2024,27,f1,4.1,4.1,1,match,,"ults ages 25-34; 17.9 percent of adults ages 35-44; 11.2 percent of those ages 45-64, and 4.1 percent of adults ages 65 and older."
+554,2024,29,f2,38.3,38.3,1,match,,"g used an electronic nicotine product at nearly double the rate of Hispanic young adults (38.3 percent and 19.7 percent, respectively). A little over one-"
+554,2024,29,f2,19.7,19.7,1,match,,"nic nicotine product at nearly double the rate of Hispanic young adults (38.3 percent and 19.7 percent, respectively). A little over one-fourth (26.2 perc"
+554,2024,29,f2,26.2,26.2,1,match,,"nic young adults (38.3 percent and 19.7 percent, respectively). A little over one-fourth (26.2 percent) of non-Hispanic Black young adults reported ever h"
+554,2024,31,f3,39.3,39.3,1,match,,"re likely to have used an electronic nicotine product than those who lived within an MSA (39.3 percent and 29.6 percent, respectively). Young adults livin"
+554,2024,31,f3,29.6,29.6,1,match,," used an electronic nicotine product than those who lived within an MSA (39.3 percent and 29.6 percent, respectively). Young adults living in the Midwest "
+554,2024,31,f3,36.4,36.4,1,match,,dults living in the Midwest were most likely to have used an electronic nicotine product (36.4 percent). Young adults in the West and Northeast were least
+554,2024,31,f3,26.3,26.3,1,match,,"he West and Northeast were least likely to have ever used an electronic nicotine product (26.3 percent and 26.6 percent, respectively)."
+554,2024,31,f3,26.6,26.6,1,match,,"east were least likely to have ever used an electronic nicotine product (26.3 percent and 26.6 percent, respectively)."
+554,2024,33,f4,46.6,46.6,1,match,,Young adults in fair or poor general health were more likely (46.6 percent) to have used an electronic nicotine product compar
+554,2024,33,f4,44.1,44.1,1,match,,ental health were more likely to report having used an electronic nicotine product. About 44.1 percent of those in fair or poor mental health reported eve
+554,2024,33,f4,25.1,25.1,1,match,,r poor mental health reported ever having used an electronic nicotine product compared to 25.1 percent of those reporting excellent mental health.
+554,2024,35,f5,68.3,68.3,1,match,, who did not smoke to report also having tried an electronic nicotine product. Nearly 70 (68.3) percent of young adults who smoked cigarettes reported hav
+554,2024,35,f5,39.3,39.3,1,match,, asthma were more likely than those without to have tried an electronic nicotine product (39.3 percent compared to 29 percent).
+555,2024,26,f1,12.5,12.5,1,unmatched,,The number of people using dental services declined by 12.5% in the first year of the COVID-19 pandemic. Between 2019 a
+555,2024,26,f1,46.7,46.7,1,unmatched,,ople aged 2 and older who used dental services decreased from 149 million people in 2019 (46.7% of the population aged 2 and above) to 131 million in 2020
+555,2024,26,f1,40.8,40.8,1,unmatched,,million people in 2019 (46.7% of the population aged 2 and above) to 131 million in 2020 (40.8%; 2021: 143 million; 44.2%). The decline in visits between 
+555,2024,26,f1,44.2,44.2,1,unmatched,,.7% of the population aged 2 and above) to 131 million in 2020 (40.8%; 2021: 143 million; 44.2%). The decline in visits between 2019 and 2020 was greatest
+555,2024,28,f2,16.1,16.1,1,unmatched,-16.9,"In 2020, total annual dental expenditures declined by 16.1% compared to 2019 ($108 billion versus $129 billion, in inf"
+555,2024,32,f4,2.3,2.3,1,match,,"Among those with any dental visits, the average number of visits declined from 2.3 in 2020 to 2.1 in 2019; the number of visits returned to th"
+555,2024,32,f4,2.1,2.1,1,match,,"g those with any dental visits, the average number of visits declined from 2.3 in 2020 to 2.1 in 2019; the number of visits returned to the pre-pandemic "
+555,2024,34,f5,19.0,19.0,1,unmatched,-14.0,"Overall, the number of monthly dental visits decreased by 19.0% in 2020 and returned to pre-pandemic levels in 2021. Follo"
+555,2024,34,f5,81.9,81.9,1,unmatched,,"rned to pre-pandemic levels in 2021. Following the first substantial dip in spring 2020 (-81.9% in April 2020 compared to April 2019), a second, smaller d"
+555,2024,34,f5,18.3,18.3,1,unmatched,,"1.9% in April 2020 compared to April 2019), a second, smaller dip occurred in late 2020 (-18.3% in October 2020 compared to October 2019)."
+556,2024,27,f1,24.0,24.0,1,match,,the top 1 percent of the population ranked by their healthcare expenditures accounted for 24.0 percent of total healthcare expenditures among the U.S. civ
+556,2024,27,f1,51.2,51.2,1,match,,"n (figure 1). Persons in the top 5 percent expenditure tier accounted for more than half (51.2%) of healthcare expenses in 2021. On the other hand, person"
+556,2024,27,f1,2.8,2.8,1,match,,"the other hand, persons with expenses in the bottom 50 percent in 2021 accounted for only 2.8 percent (100 minus 97.2) of total healthcare expenses."
+556,2024,27,f1,97.2,97.2,1,match,, with expenses in the bottom 50 percent in 2021 accounted for only 2.8 percent (100 minus 97.2) of total healthcare expenses.
+556,2024,32,f3,17.7,17.7,1,match,,"presented in the higher expenditure tiers. In 2021, persons aged 65 and older constituted 17.7 percent of the U.S. civilian noninstitutionalized populatio"
+556,2024,32,f3,22.1,22.1,1,match,,"the U.S. civilian noninstitutionalized population, while persons under age 18 represented 22.1 percent of the population. Among persons in the top 5 perce"
+556,2024,32,f3,40.2,40.2,1,match,," percent of the population. Among persons in the top 5 percent expenditure tier, however, 40.2 percent were aged 65 and older, while only 4.4 percent were"
+556,2024,32,f3,4.4,4.4,1,match,," top 5 percent expenditure tier, however, 40.2 percent were aged 65 and older, while only 4.4 percent were under age 18. In contrast, among persons in th"
+556,2024,32,f3,30.7,30.7,1,match,," were under age 18. In contrast, among persons in the bottom 50 percent expenditure tier, 30.7 percent were under age 18 while only 6.7 percent were aged "
+556,2024,32,f3,6.7,6.7,1,match,,"sons in the bottom 50 percent expenditure tier, 30.7 percent were under age 18 while only 6.7 percent were aged 65 and older."
+556,2024,34,f4,58.6,58.6,1,match,,s were underrepresented in this higher expenditure group. Non-Hispanic Whites represented 58.6 percent of the U.S. civilian noninstitutionalized populatio
+556,2024,34,f4,69.6,69.6,1,match,,.6 percent of the U.S. civilian noninstitutionalized population in 2021 but accounted for 69.6 percent of persons in the top half expenditure tier. Hispan
+556,2024,34,f4,19.0,19.0,1,match,,"cent of persons in the top half expenditure tier. Hispanics, on the other hand, comprised 19.0 percent of the total population but only 11.9 percent of pe"
+556,2024,34,f4,11.9,11.9,1,match,,"er. Hispanics, on the other hand, comprised 19.0 percent of the total population but only 11.9 percent of persons in the top half expenditure tier."
+556,2024,36,f5,59.9,59.9,1,match,,"nt expenditure tier, more than half of their medical expenses were for ambulatory events (59.9%). The proportion of expenses for inpatient stays and home "
+556,2024,36,f5,0.1,0.1,1,match,,"portion of expenses for inpatient stays and home healthcare in this group was negligible (0.1 and 0.3 percent of expenditures, respectively)."
+556,2024,36,f5,0.3,0.3,1,match,,"of expenses for inpatient stays and home healthcare in this group was negligible (0.1 and 0.3 percent of expenditures, respectively)."
+556,2024,37,f5,26.1,26.1,1,match,,"Among persons in the top 5 percent expenditure tier, more than one-quarter (26.1%) of their healthcare expenses were for inpatient stays; a "
+556,2024,37,f5,38.5,38.5,1,match,,r (26.1%) of their healthcare expenses were for inpatient stays; a little over one-third (38.5%) of their expenses were for ambulatory events.
+556,2024,39,f6,32.3,32.3,1,match,,y three-quarters of expenses for persons in the top 5 percent expenditure tier (Medicare: 32.3%; private insurance: 43.3%). Out-of-pocket payments compris
+556,2024,39,f6,43.3,43.3,1,match,,es for persons in the top 5 percent expenditure tier (Medicare: 32.3%; private insurance: 43.3%). Out-of-pocket payments comprised only 7.7 percent of exp
+556,2024,39,f6,7.7,7.7,1,match,,e tier (Medicare: 32.3%; private insurance: 43.3%). Out-of-pocket payments comprised only 7.7 percent of expenses in this group.
+556,2024,40,f6,24.4,24.4,1,match,,"ture tier, out-of-pocket payments accounted for nearly one quarter of their expenditures (24.4%), while Medicare payments comprised only 5.7 percent of ex"
+556,2024,40,f6,5.7,5.7,1,match,," nearly one quarter of their expenditures (24.4%), while Medicare payments comprised only 5.7 percent of expenditures."
+556,2024,42,f7;f8,45.9,45.9,1,match,,"d condition among persons in the top 5 percent expenditure tier in 2021 was hypertension (45.9%), followed by hyperlipidemia (33.7%), and musculoskeletal "
+556,2024,42,f7;f8,33.7,33.7,1,match,," 5 percent expenditure tier in 2021 was hypertension (45.9%), followed by hyperlipidemia (33.7%), and musculoskeletal pain and back problems (30.4%). In t"
+556,2024,42,f7;f8,30.4,30.4,1,match,," (45.9%), followed by hyperlipidemia (33.7%), and musculoskeletal pain and back problems (30.4%). In the overall population, the percentage of persons who"
+556,2024,42,f7;f8,18.6,18.6,1,match,,"lation, the percentage of persons who received treatment for each of these conditions was 18.6 percent, 14.4 percent, and 11.7 percent, respectively. Othe"
+556,2024,42,f7;f8,14.4,14.4,1,match,,"rcentage of persons who received treatment for each of these conditions was 18.6 percent, 14.4 percent, and 11.7 percent, respectively. Other commonly tre"
+556,2024,42,f7;f8,11.7,11.7,1,match,,"s who received treatment for each of these conditions was 18.6 percent, 14.4 percent, and 11.7 percent, respectively. Other commonly treated conditions fo"
+556,2024,43,f7;f8,78.1,78.1,1,match,,"nic bronchitis in the last 12 months. Among adults in the top 5 percent expenditure tier, 78.1 percent had two or more priority conditions. In contrast, a"
+556,2024,43,f7;f8,24.2,24.2,1,match,,"priority conditions. In contrast, among adults in the bottom 50 percent expenditure tier, 24.2 percent had two or more priority conditions while 48.0 perc"
+556,2024,43,f7;f8,48.0,48.0,1,match,,"ottom 50 percent expenditure tier, 24.2 percent had two or more priority conditions while 48.0 percent had no priority conditions."
+557,2024,27,f1,50.4,50.4,1,unmatched,,Approximately half (50.4%) of all adults reported ever having had COVID-19 as of ear
+557,2024,27,f1,13.7,13.7,1,match,,"4%) of all adults reported ever having had COVID-19 as of early 2023. Among these adults, 13.7 percent reported ever having long COVID."
+557,2024,28,f1,16.5,16.5,1,match,,"d COVID-19, adult women were more likely to report ever having long COVID than adult men (16.5% vs. 10.5%)."
+557,2024,28,f1,10.5,10.5,1,match,,", adult women were more likely to report ever having long COVID than adult men (16.5% vs. 10.5%)."
+557,2024,30,f2,9.8,9.8,1,match,,"Among adults who had ever had COVID-19, those aged 18-34 were less likely (9.8%) than all other age groups to report ever having long COVI"
+557,2024,30,f2,13.5,13.5,1,match,,"18-34 were less likely (9.8%) than all other age groups to report ever having long COVID (13.5% for adults aged 35-49, 17.9% for adults aged 50-64, and 14"
+557,2024,30,f2,17.9,17.9,1,match,," than all other age groups to report ever having long COVID (13.5% for adults aged 35-49, 17.9% for adults aged 50-64, and 14.7% for adults aged 65 or old"
+557,2024,30,f2,14.7,14.7,1,match,,"ort ever having long COVID (13.5% for adults aged 35-49, 17.9% for adults aged 50-64, and 14.7% for adults aged 65 or older)."
+557,2024,32,f3,14.6,14.6,1,match,,ng COVID among adults who had ever had COVID-19 was higher for non-Hispanic White adults (14.6%) than for non-Hispanic Asian adults (7.3%) and non-Hispani
+557,2024,32,f3,7.3,7.3,1,match,,D-19 was higher for non-Hispanic White adults (14.6%) than for non-Hispanic Asian adults (7.3%) and non-Hispanic Black adults (11.5%).
+557,2024,32,f3,11.5,11.5,1,match,,e adults (14.6%) than for non-Hispanic Asian adults (7.3%) and non-Hispanic Black adults (11.5%).
+557,2024,34,f4,12.4,12.4,1,match,,"COVID-19, those under age 65 who had any private insurance had lower rates of long COVID (12.4%) compared to adults under age 65 who had only public insur"
+557,2024,34,f4,17.2,17.2,1,match,,ates of long COVID (12.4%) compared to adults under age 65 who had only public insurance (17.2%) and uninsured adults under age 65 (17.7%).
+557,2024,34,f4,17.7,17.7,1,match,,lts under age 65 who had only public insurance (17.2%) and uninsured adults under age 65 (17.7%).
+557,2024,36,f5,11.0,11.0,1,match,,D-19 who were living in high-income households had lower rates of ever having long COVID (11.0%) than those who were living in middle-income households (1
+557,2024,36,f5,15.6,15.6,1,match,,"of ever having long COVID (11.0%) than those who were living in middle-income households (15.6%), low-income or near-poor households (17.4%), and poor hou"
+557,2024,36,f5,17.4,17.4,1,match,," who were living in middle-income households (15.6%), low-income or near-poor households (17.4%), and poor households (17.2%)."
+557,2024,36,f5,17.2,17.2,1,match,,"come households (15.6%), low-income or near-poor households (17.4%), and poor households (17.2%)."
+557,2024,38,f6,11.9,11.9,1,match,,d COVID-19 were less likely to have ever had long COVID than those living in the Midwest (11.9% vs. 15.5%).
+557,2024,38,f6,15.5,15.5,1,match,, were less likely to have ever had long COVID than those living in the Midwest (11.9% vs. 15.5%).
+557,2024,40,f7,12.7,12.7,1,match,,ng in a metropolitan statistical area (MSA) were less likely to have ever had long COVID (12.7%) than adults not living in an MSA (19.7%).
+557,2024,40,f7,19.7,19.7,1,match,,A) were less likely to have ever had long COVID (12.7%) than adults not living in an MSA (19.7%).
+558,2024,26,f1,6.2,6.2,1,match,,"Overall, 6.2 percent of U.S. civilian noninstitutionalized adults report"
+558,2024,28,f1,11.1,11.1,1,match,,"A higher percentage of adults aged 18-34 reported lacking reliable transportation (11.1%), compared with adults aged 50-64 (6.1%) and adults aged 6"
+558,2024,28,f1,6.1,6.1,1,match,," 18-34 reported lacking reliable transportation (11.1%), compared with adults aged 50-64 (6.1%) and adults aged 65 years and older (4.3%). Higher percent"
+558,2024,28,f1,4.3,4.3,1,match,,"ation (11.1%), compared with adults aged 50-64 (6.1%) and adults aged 65 years and older (4.3%). Higher percentages of adults lacking reliable transporta"
+558,2024,28,f1,8.8,8.8,1,match,,"ges of adults lacking reliable transportation were found among non-Hispanic Black adults (8.8%), Hispanic adults (9.3%), and non-Hispanic other adults (1"
+558,2024,28,f1,9.3,9.3,1,match,,"liable transportation were found among non-Hispanic Black adults (8.8%), Hispanic adults (9.3%), and non-Hispanic other adults (10.0%), compared with non"
+558,2024,28,f1,10.0,10.0,1,match,," non-Hispanic Black adults (8.8%), Hispanic adults (9.3%), and non-Hispanic other adults (10.0%), compared with non-Hispanic White adults (4.6%)."
+558,2024,28,f1,4.6,4.6,1,match,,"s (9.3%), and non-Hispanic other adults (10.0%), compared with non-Hispanic White adults (4.6%)."
+558,2024,30,f2,3.4,3.4,1,match,,he percentage of adults with private health insurance who lacked reliable transportation (3.4%) was lower than the percentage among uninsured adults (11.
+558,2024,30,f2,11.4,11.4,1,match,,cked reliable transportation (3.4%) was lower than the percentage among uninsured adults (11.4%) and adults with public insurance. Adults with Medicare we
+558,2024,30,f2,7.9,7.9,1,match,,d adults (11.4%) and adults with public insurance. Adults with Medicare were more likely (7.9%) and those with Medicaid were much more likely (20.4%) to 
+558,2024,30,f2,20.4,20.4,1,match,,ults with Medicare were more likely (7.9%) and those with Medicaid were much more likely (20.4%) to lack reliable transportation than adults with private 
+558,2024,32,f3,15.1,15.1,1,match,,Adults in fair or poor health were much more likely (15.1%) to lack reliable transportation than adults in excellent 
+558,2024,32,f3,3.7,3.7,1,match,,much more likely (15.1%) to lack reliable transportation than adults in excellent health (3.7%). Adults with fair or poor mental health were much more li
+558,2024,32,f3,17.8,17.8,1,match,,in excellent health (3.7%). Adults with fair or poor mental health were much more likely (17.8%) and those with good mental health were more likely (6.2%)
+558,2024,32,f3,6.2,6.2,1,match,, health were much more likely (17.8%) and those with good mental health were more likely (6.2%) than those with excellent mental health (3.5%) to lack re
+558,2024,32,f3,3.5,3.5,1,match,, with good mental health were more likely (6.2%) than those with excellent mental health (3.5%) to lack reliable transportation.
+558,2024,36,f5,15.5,15.5,1,match,,A higher percentage of adults who smoked (15.5%) lacked reliable transportation compared with adults witho
+558,2024,36,f5,3.0,3.0,1,match,,"nsportation compared with adults without any of the health conditions listed in figure 5 (3.0%). With the exception of adults with cancer, higher percent"
+558,2024,36,f5,12.1,12.1,1,match,,"ealth conditions, compared with adults with none of these health conditions. For example, 12.1 percent of adults with emphysema lacked reliable transporta"
+558,2024,36,f5,3.0,3.0,1,match,,"nsportation compared with adults without any of the health conditions listed in figure 5 (3.0%). With the exception of adults with cancer, higher percent"
+558,2024,38,f5;f7,6.6,6.6,1,unmatched,6.5,"th more health conditions were more likely to lack reliable transportation. Specifically, 6.6 percent of adults with at least one of the health condition"
+558,2024,38,f5;f7,7.7,7.7,1,unmatched,7.5,"lly, 6.6 percent of adults with at least one of the health conditions listed in figure 5, 7.7 percent of adults with at least two of the listed health co"
+558,2024,38,f5;f7,9.1,9.1,1,derived,,"in figure 5, 7.7 percent of adults with at least two of the listed health conditions, and 9.1 percent of adults with at least three of the listed health "
+558,2024,38,f5;f7,3.0,3.0,1,match,, least three of the listed health conditions lacked reliable transportation compared with 3.0 percent of adults with no health conditions.
+559,2025,28,f1,3.5,3.5,1,match,,"In 2021-2022, average annual spending on all outpatient prescription opioids totaled $3.5 billion. Oxycodone accounted for the highest total expendit"
+559,2025,28,f1,1.9,1.9,1,match,," opioids totaled $3.5 billion. Oxycodone accounted for the highest total expenditures at $1.9 billion, followed by hydrocodone at $0.7 billion. Both morp"
+559,2025,28,f1,0.7,0.7,1,match,,"accounted for the highest total expenditures at $1.9 billion, followed by hydrocodone at $0.7 billion. Both morphine and tramadol had expenditures of $0."
+559,2025,28,f1,0.2,0.2,1,match,," followed by hydrocodone at $0.7 billion. Both morphine and tramadol had expenditures of $0.2 billion. Codeine, as well as all other opioids combined, in"
+559,2025,28,f1,0.1,0.1,1,unmatched,0.0,"0.2 billion. Codeine, as well as all other opioids combined, incurred expenses less than $0.1 billion and $0.4 billion respectively."
+559,2025,28,f1,0.4,0.4,1,match,,"ine, as well as all other opioids combined, incurred expenses less than $0.1 billion and $0.4 billion respectively."
+559,2025,30,f2,68.6,68.6,1,match,,The average annual total number of purchases for all outpatient prescription opioids was 68.6 million. Hydrocodone was the most frequently purchased opio
+559,2025,30,f2,25.2,25.2,1,match,,"tion opioids was 68.6 million. Hydrocodone was the most frequently purchased opioid, with 25.2 million fills, followed by oxycodone at 19.2 million fills."
+559,2025,30,f2,19.2,19.2,1,match,,"s the most frequently purchased opioid, with 25.2 million fills, followed by oxycodone at 19.2 million fills. Tramadol had 14.1 million fills, while morph"
+559,2025,30,f2,14.1,14.1,1,match,,"pioid, with 25.2 million fills, followed by oxycodone at 19.2 million fills. Tramadol had 14.1 million fills, while morphine and codeine had 3.9 million a"
+559,2025,30,f2,3.9,3.9,1,match,,"ne at 19.2 million fills. Tramadol had 14.1 million fills, while morphine and codeine had 3.9 million and 3.1 million fills, respectively. Other opioids "
+559,2025,30,f2,3.1,3.1,1,match,,"on fills. Tramadol had 14.1 million fills, while morphine and codeine had 3.9 million and 3.1 million fills, respectively. Other opioids combined account"
+559,2025,30,f2,3.0,3.0,1,match,,"had 3.9 million and 3.1 million fills, respectively. Other opioids combined accounted for 3.0 million fills."
+559,2025,32,f3;f4,40.1,40.1,1,match,,f spending financed by private insurance / TRICARE was larger for all prescription drugs (40.1 percent) than for opioids (27.4 percent) but there was not 
+559,2025,32,f3;f4,27.4,27.4,1,match,,nsurance / TRICARE was larger for all prescription drugs (40.1 percent) than for opioids (27.4 percent) but there was not a statistically significant diff
+559,2025,32,f3;f4,38.6,38.6,1,match,,ere was not a statistically significant difference in the Medicare share between opioids (38.6 percent) and all drugs (34.5 percent). Results also show th
+559,2025,32,f3;f4,34.5,34.5,1,match,,ignificant difference in the Medicare share between opioids (38.6 percent) and all drugs (34.5 percent). Results also show that the share of payments fina
+559,2025,32,f3;f4,7.7,7.7,1,match,,"ow that the share of payments financed by out-of-pocket spending was lower for all drugs (7.7 percent) than for opioids (18.0 percent), but there were no"
+559,2025,32,f3;f4,18.0,18.0,1,match,,"inanced by out-of-pocket spending was lower for all drugs (7.7 percent) than for opioids (18.0 percent), but there were no statistically significant diffe"
+559,2025,33,f3;f4,43.9,43.9,1,match,,"For hydrocodone, Medicare accounts for the largest share of spending at 43.9 percent, followed by out-of-pocket at 28.6 percent. Spendin"
+559,2025,33,f3;f4,28.6,28.6,1,match,," accounts for the largest share of spending at 43.9 percent, followed by out-of-pocket at 28.6 percent. Spending on oxycodone is dominated by Medicare (39"
+559,2025,33,f3;f4,39.0,39.0,1,match,,ollowed by out-of-pocket at 28.6 percent. Spending on oxycodone is dominated by Medicare (39.0 percent) and private insurance / TRICARE (28.9 percent). Tr
+559,2025,33,f3;f4,28.9,28.9,1,match,,ing on oxycodone is dominated by Medicare (39.0 percent) and private insurance / TRICARE (28.9 percent). Tramadol has the highest spending through Medicar
+559,2025,33,f3;f4,49.5,49.5,1,match,,"e insurance / TRICARE (28.9 percent). Tramadol has the highest spending through Medicare (49.5 percent), with significant portions also coming from out-of"
+559,2025,33,f3;f4,23.9,23.9,1,match,,"hrough Medicare (49.5 percent), with significant portions also coming from out-of-pocket (23.9 percent) and private insurance / TRICARE (13.1 percent). Ea"
+559,2025,33,f3;f4,13.1,13.1,1,match,,t portions also coming from out-of-pocket (23.9 percent) and private insurance / TRICARE (13.1 percent). Each payer type's contribution varies across the 
+559,2025,77,f3,100.0,100.0,1,unmatched,," * Relative standard error is greater than 30 percent. Percentages may not add to exactly 100.0 due to rounding. Source: Center for Financing, Access, and "
+559,2025,79,f4,100.0,100.0,1,unmatched,,: *Relative standard error is greater than 30 percent. Percentages may not add to exactly 100.0 due to rounding. The results for morphine and codeine are n
+560,2025,27,f1,21.7,21.7,1,match,,"n 2022, the top 1 percent of people ranked by their healthcare expenditures accounted for 21.7 percent of total healthcare expenditures among the U.S. civ"
+560,2025,27,f1,49.7,49.7,1,match,,"1). People in the top 5 percent of the expenditure distribution accounted for about half (49.7 percent) of healthcare expenses in 2022. On the other hand,"
+560,2025,27,f1,2.8,2.8,1,match,," the other hand, people with the bottom 50 percent of expenses in 2022 accounted for only 2.8 percent (100 minus 97.2) of total healthcare expenses."
+560,2025,27,f1,97.2,97.2,1,match,, with the bottom 50 percent of expenses in 2022 accounted for only 2.8 percent (100 minus 97.2) of total healthcare expenses.
+560,2025,32,f3,18.1,18.1,1,match,,"ly represented in the higher expenditure tiers. In 2022, persons 65 and older constituted 18.1 percent of the U.S. civilian noninstitutionalized populatio"
+560,2025,32,f3,21.6,21.6,1,match,," older constituted 18.1 percent of the U.S. civilian noninstitutionalized population, and 21.6 percent were under age 18. Among people with the top 5 perc"
+560,2025,32,f3,40.5,40.5,1,match,,"21.6 percent were under age 18. Among people with the top 5 percent of expenses, however, 40.5 percent were 65 and older, while only 4.9 percent were unde"
+560,2025,32,f3,4.9,4.9,1,match,,"e with the top 5 percent of expenses, however, 40.5 percent were 65 and older, while only 4.9 percent were under age 18. In contrast, among people in the"
+560,2025,32,f3,29.5,29.5,1,match,,"t were under age 18. In contrast, among people in the bottom 50 percent expenditure tier, 29.5 percent were under the age of 18 while only 7.4 percent wer"
+560,2025,32,f3,7.4,7.4,1,match,," the bottom 50 percent expenditure tier, 29.5 percent were under the age of 18 while only 7.4 percent were 65 years and older."
+560,2025,34,f4,57.9,57.9,1,match,,onately less likely to be in this higher expenditure group. Non-Hispanic Whites comprised 57.9 percent of the U.S. civilian noninstitutionalized populatio
+560,2025,34,f4,68.2,68.2,1,match,,".9 percent of the U.S. civilian noninstitutionalized population in 2022 but accounted for 68.2 percent of people with the top half of expenses. Hispanics,"
+560,2025,34,f4,19.3,19.3,1,match,," percent of people with the top half of expenses. Hispanics, on the other hand, comprised 19.3 percent of the total population but only 12.7 percent of pe"
+560,2025,34,f4,12.7,12.7,1,match,,"es. Hispanics, on the other hand, comprised 19.3 percent of the total population but only 12.7 percent of people with above median expenses."
+560,2025,36,f5,32.5,32.5,1,match,,"of expenditures, the majority of medical expenses were associated with ambulatory events (32.5 percent), inpatient stays (27.9 percent) and prescribed med"
+560,2025,36,f5,27.9,27.9,1,match,," medical expenses were associated with ambulatory events (32.5 percent), inpatient stays (27.9 percent) and prescribed medicines (27.8 percent)."
+560,2025,36,f5,27.8,27.8,1,match,,"mbulatory events (32.5 percent), inpatient stays (27.9 percent) and prescribed medicines (27.8 percent)."
+560,2025,37,f5,56.3,56.3,1,match,,"m 50 percent of expenses, over half of their medical expenses were for ambulatory events (56.3 percent), and 11.2 percent were for prescribed medicines. T"
+560,2025,37,f5,11.2,11.2,1,match,,"enses, over half of their medical expenses were for ambulatory events (56.3 percent), and 11.2 percent were for prescribed medicines. The proportion of ex"
+560,2025,37,f5,0.1,0.1,1,match,,.2 percent were for prescribed medicines. The proportion of expenses for inpatient stays (0.1 percent) and home healthcare (0.1 percent) in this group wa
+560,2025,37,f5,0.1,0.1,1,match,,.2 percent were for prescribed medicines. The proportion of expenses for inpatient stays (0.1 percent) and home healthcare (0.1 percent) in this group wa
+560,2025,39,f6,30.8,30.8,1,match,,proximately three-quarters of expenses for people with the top 5 percent of expenditures (30.8 percent for Medicare and 44.4 percent for private insurance
+560,2025,39,f6,44.4,44.4,1,match,,"expenses for people with the top 5 percent of expenditures (30.8 percent for Medicare and 44.4 percent for private insurance), while out-of-pocket payment"
+560,2025,39,f6,8.0,8.0,1,match,,"care and 44.4 percent for private insurance), while out-of-pocket payments comprised only 8.0 percent of expenses for this group."
+560,2025,40,f6,26.2,26.2,1,match,,"of expenses, out-of-pocket payments accounted for over one-quarter of their expenditures (26.2 percent), while Medicare payments accounted for only 6.1 pe"
+560,2025,40,f6,6.1,6.1,1,match,,"-quarter of their expenditures (26.2 percent), while Medicare payments accounted for only 6.1 percent."
+560,2025,42,f7;f8,42.9,42.9,1,match,,"eated condition among people with the top 5 percent of expenses in 2022 was hypertension (42.9 percent), followed by hyperlipidemia (35.6 percent), and mu"
+560,2025,42,f7;f8,35.6,35.6,1,match,," percent of expenses in 2022 was hypertension (42.9 percent), followed by hyperlipidemia (35.6 percent), and musculoskeletal pain and back problems (30.6 "
+560,2025,42,f7;f8,30.6,30.6,1,match,,"), followed by hyperlipidemia (35.6 percent), and musculoskeletal pain and back problems (30.6 percent). In the overall population, the percentages of peo"
+560,2025,42,f7;f8,18.7,18.7,1,match,,"ll population, the percentages of people who received treatment for these conditions were 18.7, 14.6, and 12.2 percent, respectively. Other commonly treat"
+560,2025,42,f7;f8,14.6,14.6,1,match,,"ulation, the percentages of people who received treatment for these conditions were 18.7, 14.6, and 12.2 percent, respectively. Other commonly treated con"
+560,2025,42,f7;f8,12.2,12.2,1,match,,"he percentages of people who received treatment for these conditions were 18.7, 14.6, and 12.2 percent, respectively. Other commonly treated conditions fo"
+560,2025,43,f7;f8,75.1,75.1,1,match,,"nic bronchitis in the last 12 months. Among adults in the top 5 percent expenditure tier, 75.1 percent had two or more of these conditions. In contrast, a"
+560,2025,43,f7;f8,22.9,22.9,1,match,,"of these conditions. In contrast, among adults in the bottom 50 percent expenditure tier, 22.9 percent had two or more priority conditions while 49.9 perc"
+560,2025,43,f7;f8,49.9,49.9,1,match,,"ottom 50 percent expenditure tier, 22.9 percent had two or more priority conditions while 49.9 percent had no priority conditions."
+561,2025,26,f1,84.1,84.1,1,match,,"In 2021-22, on average, 84.1 million adults per year were treated for key diet-related c"
+561,2025,26,f1,76.4,76.4,1,match,,"84.1 million adults per year were treated for key diet-related conditions. Most of those, 76.4 million, were treated for cardiovascular diseases, such as "
+561,2025,26,f1,25.4,25.4,1,match,,", high cholesterol, coronary heart disease, cardiac dysrhythmias, or stroke. In addition, 25.4 million were treated for diabetes, and 2.6 million were tre"
+561,2025,26,f1,2.6,2.6,1,match,,"cardiac dysrhythmias, or stroke. In addition, 25.4 million were treated for diabetes, and 2.6 million were treated for breast or colorectal cancer."
+562,2025,25,f1,7.8,7.8,1,match,,"In 2022, an estimated 7.8 percent of adults aged 18 years and older in the U.S. civil"
+562,2025,25,f1,20.4,20.4,1,unmatched,,dults aged 18 years and older in the U.S. civilian noninstitutionalized population (about 20.4 million adults) received any heart disease treatment (Figur
+562,2025,25,f1,22.8,22.8,1,match,,"rt disease treatment (Figure 1). This percentage was highest for those aged 65 and older (22.8%), followed by adults aged 45-64 (6.0%) and those aged 18-4"
+562,2025,25,f1,6.0,6.0,1,match,,"ercentage was highest for those aged 65 and older (22.8%), followed by adults aged 45-64 (6.0%) and those aged 18-44 (1.4%). About one out of every ten n"
+562,2025,25,f1,1.4,1.4,1,match,,"ose aged 65 and older (22.8%), followed by adults aged 45-64 (6.0%) and those aged 18-44 (1.4%). About one out of every ten non-Hispanic white adults (9."
+562,2025,25,f1,9.7,9.7,1,match,,(6.0%) and those aged 18-44 (1.4%). About one out of every ten non-Hispanic white adults (9.7%) received any heart disease treatment. This percentage was
+562,2025,25,f1,6.3,6.3,1,match,,"ved any heart disease treatment. This percentage was lower for non-Hispanic black adults (6.3%), followed by non-Hispanic Asian (3.9%) and Hispanic (3.9%"
+562,2025,25,f1,3.9,3.9,1,match,,"ercentage was lower for non-Hispanic black adults (6.3%), followed by non-Hispanic Asian (3.9%) and Hispanic (3.9%) adults. Men were more likely than wom"
+562,2025,25,f1,3.9,3.9,1,match,,"ercentage was lower for non-Hispanic black adults (6.3%), followed by non-Hispanic Asian (3.9%) and Hispanic (3.9%) adults. Men were more likely than wom"
+562,2025,25,f1,8.4,8.4,1,match,,ic (3.9%) adults. Men were more likely than women to receive any heart disease treatment (8.4% vs. 7.2%).
+562,2025,25,f1,7.2,7.2,1,match,, adults. Men were more likely than women to receive any heart disease treatment (8.4% vs. 7.2%).
+562,2025,26,f1;f2,9.5,9.5,1,match,,"er percentage of adults in poor- and low-income families had any heart disease treatment (9.5% and 11.0%, respectively) compared with those in families w"
+562,2025,26,f1;f2,11.0,11.0,1,match,,"tage of adults in poor- and low-income families had any heart disease treatment (9.5% and 11.0%, respectively) compared with those in families with middle"
+562,2025,26,f1;f2,7.5,7.5,1,match,,".5% and 11.0%, respectively) compared with those in families with middle or high incomes (7.5% and 6.6%, respectively). About 8-9 percent of adults recei"
+562,2025,26,f1;f2,6.6,6.6,1,match,,"1.0%, respectively) compared with those in families with middle or high incomes (7.5% and 6.6%, respectively). About 8-9 percent of adults received any h"
+562,2025,26,f1;f2,6.3,6.3,1,match,,"ceived any heart disease treatment in each geographic region, except the West, where only 6.3 percent received medical care for this condition."
+562,2025,28,f3,68.8,68.8,1,match,,"Among adults treated for heart disease in 2022, 68.8 percent had prescribed drug expenses, and 58.3 percent had "
+562,2025,28,f3,58.3,58.3,1,match,," adults treated for heart disease in 2022, 68.8 percent had prescribed drug expenses, and 58.3 percent had one or more visits to an office-based medical p"
+562,2025,28,f3,20.2,20.2,1,match,,"cal provider. Relatively, smaller proportions had one or more hospital outpatient visits (20.2%), emergency room visits (13.1%), inpatient hospital stays "
+562,2025,28,f3,13.1,13.1,1,match,,"er proportions had one or more hospital outpatient visits (20.2%), emergency room visits (13.1%), inpatient hospital stays (10.5%), and home health servic"
+562,2025,28,f3,10.5,10.5,1,match,,"pital outpatient visits (20.2%), emergency room visits (13.1%), inpatient hospital stays (10.5%), and home health services (5.1%)."
+562,2025,28,f3,5.1,5.1,1,match,,"mergency room visits (13.1%), inpatient hospital stays (10.5%), and home health services (5.1%)."
+562,2025,30,f4,100.0,100.0,1,unmatched,,"In 2022, an estimated $100.0 billion was spent on treatment related to heart disease amo"
+562,2025,32,f5,46.1,46.1,1,match,,The largest portion (46.1%) of annual expenses on heart disease treatment was for hos
+562,2025,32,f5,20.5,20.5,1,match,,"on heart disease treatment was for hospital inpatient care. Among all other expenditures, 20.5 percent were for prescription medications followed by 11.3 "
+562,2025,32,f5,11.3,11.3,1,match,," Among all other expenditures, 20.5 percent were for prescription medications followed by 11.3 percent for hospital outpatient visits, 9.9 percent for off"
+562,2025,32,f5,9.9,9.9,1,match,,"ere for prescription medications followed by 11.3 percent for hospital outpatient visits, 9.9 percent for office-based visits, 9.1 percent for home healt"
+562,2025,32,f5,9.1,9.1,1,match,,"owed by 11.3 percent for hospital outpatient visits, 9.9 percent for office-based visits, 9.1 percent for home health services, and 3.1 percent for emerg"
+562,2025,32,f5,3.1,3.1,1,match,,"nt visits, 9.9 percent for office-based visits, 9.1 percent for home health services, and 3.1 percent for emergency department visits."
+562,2025,34,f6,57.6,57.6,1,match,,"Medicare paid the highest share of expenditures for heart disease in 2022 (57.6%), followed by private health insurance (24.2%). Among the "
+562,2025,34,f6,24.2,24.2,1,match,," of expenditures for heart disease in 2022 (57.6%), followed by private health insurance (24.2%). Among the remaining sources of payment, Medicaid paid 8."
+562,2025,34,f6,8.0,8.0,1,match,,"y private health insurance (24.2%). Among the remaining sources of payment, Medicaid paid 8.0 percent, followed by out-of-pocket payments (5.6%) and paym"
+562,2025,34,f6,5.6,5.6,1,match,,"aining sources of payment, Medicaid paid 8.0 percent, followed by out-of-pocket payments (5.6%) and payments by other sources (4.5%)."
+562,2025,34,f6,4.5,4.5,1,match,,"aid 8.0 percent, followed by out-of-pocket payments (5.6%) and payments by other sources (4.5%)."
+563,2025,27,f1,90.5,90.5,1,unmatched,,"In 2021-22, on average, 90.5 million adults per year were diagnosed with or treated for "
+563,2025,27,f1,49.6,49.6,1,match,,", 90.5 million adults per year were diagnosed with or treated for hypertension, including 49.6 million ages 18 to 64 and 40.9 million ages 65 and older. T"
+563,2025,27,f1,40.9,40.9,1,match,,"were diagnosed with or treated for hypertension, including 49.6 million ages 18 to 64 and 40.9 million ages 65 and older. These estimates are not statisti"
+563,2025,29,f2,56.5,56.5,1,match,,"s. Among all adults ever diagnosed with or currently treated for hypertension in 2021-22, 56.5 percent both had ambulatory visits for hypertension and obt"
+563,2025,29,f2,18.0,18.0,1,match,,"nt both had ambulatory visits for hypertension and obtained antihypertensive medications, 18.0 percent obtained medications but did not have visits, 10.3 "
+563,2025,29,f2,10.3,10.3,1,match,," antihypertensive medications, 18.0 percent obtained medications but did not have visits, 10.3 percent had visits but did not obtain medications, and 15.1"
+563,2025,29,f2,15.1,15.1,1,match,,"ions but did not have visits, 10.3 percent had visits but did not obtain medications, and 15.1 percent had no medical treatment. Nearly three-quarters (74"
+563,2025,29,f2,74.5,74.5,1,unmatched,,"not obtain medications, and 15.1 percent had no medical treatment. Nearly three-quarters (74.5%) of adults, therefore, with diagnosed or treated hypertens"
+563,2025,29,f2,76.2,76.2,1,unmatched,,"medications in 2021-22, which was not statistically significantly different from 2018-19 (76.2%). However, the percentage of adults who both had visits an"
+563,2025,29,f2,60.2,60.2,1,match,,"ge of adults who both had visits and obtained antihypertensive medications decreased from 60.2 percent in 2018-19 to 56.5 percent in 2021-22, and the perc"
+563,2025,29,f2,56.5,56.5,1,match,,"s. Among all adults ever diagnosed with or currently treated for hypertension in 2021-22, 56.5 percent both had ambulatory visits for hypertension and obt"
+563,2025,29,f2,15.9,15.9,1,match,,"percent in 2021-22, and the percentage who had medications, but no visits, increased from 15.9 percent in 2018-19 to 18.0 percent in 2021-22. Not shown in"
+563,2025,29,f2,18.0,18.0,1,match,,"nt both had ambulatory visits for hypertension and obtained antihypertensive medications, 18.0 percent obtained medications but did not have visits, 10.3 "
+563,2025,29,f2,0.1,0.1,1,unmatched,, percent in 2018-19 to 18.0 percent in 2021-22. Not shown in the figure are the less than 0.1% of the adults who had hospital stays or home health for hy
+563,2025,31,f3,21.7,21.7,1,match,,"In 2021-22, among adults with diagnosed or treated hypertension, 21.7 percent of nonelderly adults (ages 18-64) did not receive m"
+563,2025,31,f3,6.9,6.9,1,match,,"dical treatment, which was three times the rate among elderly adults (ages 65 and older), 6.9 percent. Elderly adults were more likely than nonelderly ad"
+563,2025,31,f3,68.8,68.8,1,match,,dults were more likely than nonelderly adults to both have visits and obtain medications (68.8% versus 46.4%) and less likely to obtain medications withou
+563,2025,31,f3,46.4,46.4,1,match,,re likely than nonelderly adults to both have visits and obtain medications (68.8% versus 46.4%) and less likely to obtain medications without visits (16.
+563,2025,31,f3,16.1,16.1,1,match,,in medications (68.8% versus 46.4%) and less likely to obtain medications without visits (16.1% versus 19.7%) or have visits but no medications (8.1% vers
+563,2025,31,f3,19.7,19.7,1,match,,s (68.8% versus 46.4%) and less likely to obtain medications without visits (16.1% versus 19.7%) or have visits but no medications (8.1% versus 12.2%).
+563,2025,31,f3,8.1,8.1,1,match,,obtain medications without visits (16.1% versus 19.7%) or have visits but no medications (8.1% versus 12.2%).
+563,2025,31,f3,12.2,12.2,1,match,,ations without visits (16.1% versus 19.7%) or have visits but no medications (8.1% versus 12.2%).
+563,2025,32,f3,4.9,4.9,1,match,,"ulation as a whole. However, among elderly adults with diagnosed or treated hypertension, 4.9 percent were not medically treated in 2018-19, rising to 6."
+563,2025,32,f3,6.9,6.9,1,match,,"sed or treated hypertension, 4.9 percent were not medically treated in 2018-19, rising to 6.9 percent in 2021-2022."
+563,2025,34,f4,60.3,60.3,1,match,,"ad high blood pressure. In 2021-22, among adults with diagnosed hypertension, on average, 60.3 percent of nonelderly adults and 74.9 percent of elderly wh"
+563,2025,34,f4,74.9,74.9,1,match,,"ong adults with diagnosed hypertension, on average, 60.3 percent of nonelderly adults and 74.9 percent of elderly who did not report medical treatment had"
+563,2025,36,f5,24.6,24.6,1,match,,"021-22, men were more likely than women to lack medical treatment for their hypertension (24.6% versus 18.3%). Nonelderly adults with family incomes below"
+563,2025,36,f5,18.3,18.3,1,match,,ere more likely than women to lack medical treatment for their hypertension (24.6% versus 18.3%). Nonelderly adults with family incomes below 200 percent 
+563,2025,36,f5,24.9,24.9,1,match,,ely to lack medical treatment than those with incomes at or above 200 percent of the FPL (24.9% versus 20.6%). Nearly half (47.0%) of nonelderly adults wi
+563,2025,36,f5,20.6,20.6,1,match,,edical treatment than those with incomes at or above 200 percent of the FPL (24.9% versus 20.6%). Nearly half (47.0%) of nonelderly adults with diagnosed 
+563,2025,36,f5,47.0,47.0,1,match,, those with incomes at or above 200 percent of the FPL (24.9% versus 20.6%). Nearly half (47.0%) of nonelderly adults with diagnosed or treated hypertensi
+563,2025,36,f5,48.7,48.7,1,match,,"lacked a usual source of care had no medical treatment for their hypertension. Similarly, 48.7 percent of nonelderly adults who were uninsured the entire "
+563,2025,37,f5,51.7,51.7,1,match,,"sion who lacked a usual source of care, the share that lacked medical treatment fell from 51.7 percent in 2018-19 to 47.0 percent in 2021-22. None of the "
+563,2025,37,f5,47.0,47.0,1,match,,"rce of care, the share that lacked medical treatment fell from 51.7 percent in 2018-19 to 47.0 percent in 2021-22. None of the differences between the two"
+563,2025,40,f6,16.3,16.3,1,match,,"In 2021-22, 16.3 percent of elderly adults with diagnosed or treated hyperte"
+563,2025,40,f6,14.9,14.9,1,match,,prescription medicines were about twice as likely to lack medical hypertension treatment (14.9%) than those with Medicare Part D (6.2%) and those with pri
+563,2025,40,f6,6.2,6.2,1,match,,as likely to lack medical hypertension treatment (14.9%) than those with Medicare Part D (6.2%) and those with private drug coverage or through the Veter
+563,2025,40,f6,6.7,6.7,1,match,,art D (6.2%) and those with private drug coverage or through the Veterans Administration (6.7%).
+563,2025,41,f6,4.6,4.6,1,match,,"lacked medical treatment was statistically significant for many elderly subgroups: women (4.6% to 6.4%), men (5.3% to 7.6%), with family incomes below 20"
+563,2025,41,f6,6.4,6.4,1,match,,"edical treatment was statistically significant for many elderly subgroups: women (4.6% to 6.4%), men (5.3% to 7.6%), with family incomes below 200 percen"
+563,2025,41,f6,5.3,5.3,1,match,,"ment was statistically significant for many elderly subgroups: women (4.6% to 6.4%), men (5.3% to 7.6%), with family incomes below 200 percent of the Fed"
+563,2025,41,f6,7.6,7.6,1,match,," statistically significant for many elderly subgroups: women (4.6% to 6.4%), men (5.3% to 7.6%), with family incomes below 200 percent of the Federal Pov"
+563,2025,41,f6,5.4,5.4,1,match,,"), men (5.3% to 7.6%), with family incomes below 200 percent of the Federal Poverty Line (5.4% to 8.8%), with family incomes at or above 200 percent of t"
+563,2025,41,f6,8.8,8.8,1,match,,"5.3% to 7.6%), with family incomes below 200 percent of the Federal Poverty Line (5.4% to 8.8%), with family incomes at or above 200 percent of the Feder"
+563,2025,41,f6,4.7,4.7,1,match,," (5.4% to 8.8%), with family incomes at or above 200 percent of the Federal Poverty Line (4.7% to 6.1%), had a usual source of care (2.9% to 4.0%), and h"
+563,2025,41,f6,6.1,6.1,1,match,,"o 8.8%), with family incomes at or above 200 percent of the Federal Poverty Line (4.7% to 6.1%), had a usual source of care (2.9% to 4.0%), and had Medic"
+563,2025,41,f6,2.9,2.9,1,match,,"above 200 percent of the Federal Poverty Line (4.7% to 6.1%), had a usual source of care (2.9% to 4.0%), and had Medicare Part D drug coverage (4.0% to 6"
+563,2025,41,f6,4.0,4.0,1,match,,"0 percent of the Federal Poverty Line (4.7% to 6.1%), had a usual source of care (2.9% to 4.0%), and had Medicare Part D drug coverage (4.0% to 6.2%)."
+563,2025,41,f6,4.0,4.0,1,match,,"0 percent of the Federal Poverty Line (4.7% to 6.1%), had a usual source of care (2.9% to 4.0%), and had Medicare Part D drug coverage (4.0% to 6.2%)."
+563,2025,41,f6,6.2,6.2,1,match,,"had a usual source of care (2.9% to 4.0%), and had Medicare Part D drug coverage (4.0% to 6.2%)."
+563,2025,72,f5;f6,52.3,52.3,1,unmatched,,"percent had check-ups but not visits linked to hypertension. When check-ups are excluded, 52.3 percent had medications and no visits, and 23.0 percent wer"
+563,2025,72,f5;f6,23.0,23.0,1,unmatched,,"ypertension. When check-ups are excluded, 52.3 percent had medications and no visits, and 23.0 percent were medically untreated. When the medically untrea"
+564,2025,29,f1,37.2,37.2,1,match,," their neighborhoods positively compared to those in nonmetropolitan areas. Specifically, 37.2 percent of adults living in metropolitan areas rated health"
+564,2025,29,f1,34.9,34.9,1,match,," percent of adults living in metropolitan areas rated health care access as excellent and 34.9 percent as very good, while only 8.2 percent rated it fair "
+564,2025,29,f1,8.2,8.2,1,unmatched,,"tan areas rated health care access as excellent and 34.9 percent as very good, while only 8.2 percent rated it fair or poor. In contrast, residents of no"
+564,2025,29,f1,23.3,23.3,1,match,,sidents of nonmetropolitan areas reported lower satisfaction with healthcare access. Only 23.3 percent rated access as excellent and 33.1 percent as very 
+564,2025,29,f1,33.1,33.1,1,match,,ower satisfaction with healthcare access. Only 23.3 percent rated access as excellent and 33.1 percent as very good. About 17.7 percent rated it as fair o
+564,2025,29,f1,17.7,17.7,1,unmatched,19.7, access. Only 23.3 percent rated access as excellent and 33.1 percent as very good. About 17.7 percent rated it as fair or poor.
+564,2025,31,f2,25.4,25.4,1,match,,small rural areas. A closer look at rural subcategories reveals even greater differences: 25.4 percent of adults in small rural areas rated access as fair
+564,2025,31,f2,14.0,14.0,1,match,,"n small rural areas rated access as fair or poor—the highest among all groups—followed by 14.0 percent in large rural areas. In contrast, only 8.6 percent"
+564,2025,31,f2,8.6,8.6,1,match,,"highest among all groups—followed by 14.0 percent in large rural areas. In contrast, only 8.6 percent of suburban and 8.1 percent of urban residents shar"
+564,2025,31,f2,8.1,8.1,1,match,,"lowed by 14.0 percent in large rural areas. In contrast, only 8.6 percent of suburban and 8.1 percent of urban residents shared this view."
+564,2025,33,f3,16.9,16.9,1,match,,"dissatisfaction compared to those in older age groups. For example, in large rural areas, 16.9 percent of adults aged 18-44 reported availability of medic"
+564,2025,33,f3,14.6,14.6,1,match,,ults aged 18-44 reported availability of medical care to be only fair or poor compared to 14.6 percent of adults aged 45-64 and 9.1 percent of adults aged
+564,2025,33,f3,9.1,9.1,1,match,,"of medical care to be only fair or poor compared to 14.6 percent of adults aged 45-64 and 9.1 percent of adults aged 65+. In small rural areas, the patte"
+564,2025,35,f4,14.4,14.4,1,match,,lthcare availability to be only fair or poor compared to non-Hispanic white adults. About 14.4 percent of non-Hispanic black adults and 10.7 percent of Hi
+564,2025,35,f4,10.7,10.7,1,match,,ompared to non-Hispanic white adults. About 14.4 percent of non-Hispanic black adults and 10.7 percent of Hispanic adults in the United States rated avail
+564,2025,35,f4,8.2,8.2,1,match,,"anic adults in the United States rated availability as only fair or poor compared to only 8.2 percent among non-Hispanic white adults. However, nearly on"
+564,2025,35,f4,24.1,24.1,1,match,,"ompared to only 8.2 percent among non-Hispanic white adults. However, nearly one-quarter (24.1%) of non-Hispanic white adults in small rural areas reporte"
+564,2025,37,f5,16.5,16.5,1,match,,ith medical care availability compared to those with private insurance or Medicare. About 16.5 percent of adults with Medicaid and 18.4 percent of adults 
+564,2025,37,f5,18.4,18.4,1,match,, those with private insurance or Medicare. About 16.5 percent of adults with Medicaid and 18.4 percent of adults who were uninsured reported problems with
+564,2025,37,f5,7.6,7.6,1,match,,of adults who were uninsured reported problems with medical care availability compared to 7.6 percent of privately insured adults and 8.4 percent of thos
+564,2025,37,f5,8.4,8.4,1,match,,those with private insurance or Medicare. About 16.5 percent of adults with Medicaid and 18.4 percent of adults who were uninsured reported problems with
+564,2025,37,f5,16.9,16.9,1,match,,all rural areas reported availability of medical care to be fair or poor compared to only 16.9 percent of uninsured adults in urban areas. Nearly one-thir
+564,2025,37,f5,31.5,31.5,1,match,, poor compared to only 16.9 percent of uninsured adults in urban areas. Nearly one-third (31.5%) of adults on Medicaid and living in small rural areas rep
+564,2025,39,f6,20.6,20.6,1,match,,"ll rural areas with only fair or poor health reported limited access to care, compared to 20.6 percent of those in good or better health living in small r"
+564,2025,39,f6,15.9,15.9,1,match,,ompared to 20.6 percent of those in good or better health living in small rural areas and 15.9 percent of those in only fair or poor health living in urba
+565,2025,25,t1,1.2,1.2,1,unmatched,," ASD between 2018 and 2022. During that time, the percent of children treated for ASD was 1.2 percent and was three times more common among male children"
+565,2025,25,t1,1.9,1.9,1,unmatched,,dren treated for ASD was 1.2 percent and was three times more common among male children (1.9%) than female children (0.6%). The annual percent of childr
+565,2025,25,t1,0.6,0.6,1,unmatched,, percent and was three times more common among male children (1.9%) than female children (0.6%). The annual percent of children treated for ASD was compa
+566,2025,28,f1,84.2,84.2,1,unmatched,,"In 2021-22, on average, 84.2 million adults per year were diagnosed with or treated for "
+566,2025,28,f1,45.2,45.2,1,match,,".2 million adults per year were diagnosed with or treated for high cholesterol, including 45.2 million ages 20 to 64 (""nonelderly"") and 39.0 million ages "
+566,2025,28,f1,39.0,39.0,1,match,," or treated for high cholesterol, including 45.2 million ages 20 to 64 (""nonelderly"") and 39.0 million ages 65 and older (""elderly""). This number increase"
+566,2025,28,f1,76.4,76.4,1,unmatched,,"(""nonelderly"") and 39.0 million ages 65 and older (""elderly""). This number increased from 76.4 in 2018-19, with the largest increase among elderly adults,"
+566,2025,28,f1,5.3,5.3,1,derived,,"n 2018-19, with the largest increase among elderly adults, where there was an increase of 5.3 million (from 33.7 million)."
+566,2025,28,f1,33.7,33.7,1,match,,"e largest increase among elderly adults, where there was an increase of 5.3 million (from 33.7 million)."
+566,2025,30,f2,44.3,44.3,1,match,,"ogists. Among adults ever diagnosed or currently treated for high cholesterol in 2021-22, 44.3 percent both had ambulatory visits for high cholesterol and"
+566,2025,30,f2,12.3,12.3,1,match,,"h had ambulatory visits for high cholesterol and obtained antihyperlipidemic medications, 12.3 percent obtained medications but did not have visits, 21.8 "
+566,2025,30,f2,21.8,21.8,1,match,,"ntihyperlipidemic medications, 12.3 percent obtained medications but did not have visits, 21.8 percent had visits but did not obtain medications, and 21.6"
+566,2025,30,f2,21.6,21.6,1,match,,"ions but did not have visits, 21.8 percent had visits but did not obtain medications, and 21.6 percent had no medical treatment. More than half (56.6%) of"
+566,2025,30,f2,56.6,56.6,1,unmatched,,"ut did not obtain medications, and 21.6 percent had no medical treatment. More than half (56.6%) of adults, therefore, with diagnosed or treated high chol"
+566,2025,30,f2,56.7,56.7,1,unmatched,,"medications in 2021-22, which was not statistically significantly different from 2018-19 (56.7%). However, the percentage who had medications, but no visi"
+566,2025,30,f2,10.7,10.7,1,match,,"018-19 (56.7%). However, the percentage who had medications, but no visits increased from 10.7 percent in 2018-19 to 12.3 percent in 2021-22, the percenta"
+566,2025,30,f2,12.3,12.3,1,match,,"h had ambulatory visits for high cholesterol and obtained antihyperlipidemic medications, 12.3 percent obtained medications but did not have visits, 21.8 "
+566,2025,30,f2,24.0,24.0,1,match,,"12.3 percent in 2021-22, the percentage who had visits, but no medications decreased from 24.0 percent in 2018-19 to 21.8 percent in 2021-22, and the perc"
+566,2025,30,f2,21.8,21.8,1,match,,"ntihyperlipidemic medications, 12.3 percent obtained medications but did not have visits, 21.8 percent had visits but did not obtain medications, and 21.6"
+566,2025,30,f2,19.3,19.3,1,match,,"o 21.8 percent in 2021-22, and the percentage who had no medical treatment increased from 19.3 percent in 2018-19 to 21.6 percent in 2021-22. Not shown in"
+566,2025,30,f2,21.6,21.6,1,match,,"ions but did not have visits, 21.8 percent had visits but did not obtain medications, and 21.6 percent had no medical treatment. More than half (56.6%) of"
+566,2025,30,f2,0.1,0.1,1,unmatched,, from 19.3 percent in 2018-19 to 21.6 percent in 2021-22. Not shown in the figure are the 0.1 percent of the adults who had hospital stays or home health
+566,2025,32,f3,31.1,31.1,1,match,,"In 2021-22, among adults with diagnosed or treated high cholesterol, 31.1 percent of nonelderly adults (ages 20-64) did not receive m"
+566,2025,32,f3,10.6,10.6,1,match,,"reatment, which was almost three times the rate among elderly adults (ages 65 and older), 10.6 percent. Elderly adults were less likely to have visits but"
+566,2025,32,f3,16.9,16.9,1,match,," older), 10.6 percent. Elderly adults were less likely to have visits but no medications (16.9% versus 26.0%) and more likely than nonelderly adults to bo"
+566,2025,32,f3,26.0,26.0,1,match,, percent. Elderly adults were less likely to have visits but no medications (16.9% versus 26.0%) and more likely than nonelderly adults to both have visit
+566,2025,32,f3,58.8,58.8,1,match,,26.0%) and more likely than nonelderly adults to both have visits and obtain medications (58.8% versus 31.7%) and obtain medications without visits (13.5%
+566,2025,32,f3,31.7,31.7,1,match,,re likely than nonelderly adults to both have visits and obtain medications (58.8% versus 31.7%) and obtain medications without visits (13.5% versus 11.2%
+566,2025,32,f3,13.5,13.5,1,match,,visits and obtain medications (58.8% versus 31.7%) and obtain medications without visits (13.5% versus 11.2%).
+566,2025,32,f3,11.2,11.2,1,match,,tain medications (58.8% versus 31.7%) and obtain medications without visits (13.5% versus 11.2%).
+566,2025,33,f3,28.5,28.5,1,match,," treatment increased. Among nonelderly adults with diagnosed or treated high cholesterol, 28.5 percent were not medically treated in 2018-19, rising to 31"
+566,2025,33,f3,31.1,31.1,1,match,,"r treated high cholesterol, 28.5 percent were not medically treated in 2018-19, rising to 31.1 percent in 2021-22."
+566,2025,35,f4,57.1,57.1,1,match,,"age not medically treated by demographic and other subgroups. In 2021-22, more than half (57.1%) of nonelderly adults with diagnosed or treated high chole"
+566,2025,35,f4,64.6,64.6,1,match,,"f care had no medical treatment for their high cholesterol. Similarly, nearly two-thirds (64.6%) of nonelderly adults who were uninsured the entire calend"
+566,2025,36,f4,27.8,27.8,1,match,,"00 percent of the Federal Poverty Line, the share that lacked medical treatment rose from 27.8 percent in 2018-19 to 30.6 percent in 2021-22. For those wh"
+566,2025,36,f4,30.6,30.6,1,match,,"overty Line, the share that lacked medical treatment rose from 27.8 percent in 2018-19 to 30.6 percent in 2021-22. For those who had public insurance cove"
+566,2025,36,f4,23.2,23.2,1,match,,"hose who had public insurance coverage, the share that lacked medical treatment rose from 23.2 percent in 2018-19 to 28.6 percent in 2021-22. None of the "
+566,2025,36,f4,28.6,28.6,1,match,,"ce coverage, the share that lacked medical treatment rose from 23.2 percent in 2018-19 to 28.6 percent in 2021-22. None of the differences between the two"
+566,2025,39,f5,20.7,20.7,1,match,,"In 2021-22, one in five (20.7%) elderly adults with diagnosed or treated high cholesterol"
+566,2025,39,f5,7.9,7.9,1,match,," cholesterol, which is more than twice the rate for those who had a usual source of care (7.9%). In 2021-22, elderly adults without insurance coverage fo"
+566,2025,39,f5,15.6,15.6,1,match,,r prescription medicines were more likely to lack medical treatment for high cholesterol (15.6%) than those with Medicare Part D (10.0%) and those with pr
+566,2025,39,f5,10.0,10.0,1,match,,y to lack medical treatment for high cholesterol (15.6%) than those with Medicare Part D (10.0%) and those with private drug coverage or through the Veter
+566,2025,39,f5,11.4,11.4,1,match,,rt D (10.0%) and those with private drug coverage or through the Veterans Administration (11.4%).
+566,2025,40,f5,8.0,8.0,1,match,,"lacked medical treatment was statistically significant for many elderly subgroups: women (8.0% to 11.0%), men (7.0% to 10.1%), with family incomes below "
+566,2025,40,f5,11.0,11.0,1,match,,"edical treatment was statistically significant for many elderly subgroups: women (8.0% to 11.0%), men (7.0% to 10.1%), with family incomes below 200 perce"
+566,2025,40,f5,7.0,7.0,1,match,,"ent was statistically significant for many elderly subgroups: women (8.0% to 11.0%), men (7.0% to 10.1%), with family incomes below 200 percent of the Fe"
+566,2025,40,f5,10.1,10.1,1,match,,"statistically significant for many elderly subgroups: women (8.0% to 11.0%), men (7.0% to 10.1%), with family incomes below 200 percent of the Federal Pov"
+566,2025,40,f5,7.9,7.9,1,match,,", men (7.0% to 10.1%), with family incomes below 200 percent of the Federal Poverty Line (7.9% to 12.4%), with family incomes at or above 200 percent of "
+566,2025,40,f5,12.4,12.4,1,match,,".0% to 10.1%), with family incomes below 200 percent of the Federal Poverty Line (7.9% to 12.4%), with family incomes at or above 200 percent of the Feder"
+566,2025,40,f5,7.4,7.4,1,match,,"(7.9% to 12.4%), with family incomes at or above 200 percent of the Federal Poverty Line (7.4% to 9.8%), had a usual source of care (5.8% to 7.9%), and h"
+566,2025,40,f5,9.8,9.8,1,match,," 12.4%), with family incomes at or above 200 percent of the Federal Poverty Line (7.4% to 9.8%), had a usual source of care (5.8% to 7.9%), and had Medic"
+566,2025,40,f5,5.8,5.8,1,match,,"above 200 percent of the Federal Poverty Line (7.4% to 9.8%), had a usual source of care (5.8% to 7.9%), and had Medicare Part D drug coverage (6.7% to 1"
+566,2025,40,f5,7.9,7.9,1,match,,", men (7.0% to 10.1%), with family incomes below 200 percent of the Federal Poverty Line (7.9% to 12.4%), with family incomes at or above 200 percent of "
+566,2025,40,f5,6.7,6.7,1,match,," 9.8%), had a usual source of care (5.8% to 7.9%), and had Medicare Part D drug coverage (6.7% to 10.0%)."
+566,2025,40,f5,10.0,10.0,1,match,,"had a usual source of care (5.8% to 7.9%), and had Medicare Part D drug coverage (6.7% to 10.0%)."
+566,2025,67,f4;f5,43.2,43.2,1,unmatched,23.2,"ent had check-ups but not visits linked to high cholesterol. When check-ups are excluded, 43.2 percent had medications and no visits, and 39.0 percent wer"
+566,2025,67,f4;f5,39.0,39.0,1,unmatched,,"cholesterol. When check-ups are excluded, 43.2 percent had medications and no visits, and 39.0 percent were medically untreated. When the medically untrea"
+567,2025,25,f1,4.0,4.0,1,match,,"In 2021-2022, 4.0 percent of older adults used benzodiazepines only, and 1.5 "
+567,2025,25,f1,1.5,1.5,1,match,,"In 2021-2022, 4.0 percent of older adults used benzodiazepines only, and 1.5 percent of older adults used both benzodiazepines and opioi"
+567,2025,25,f1,5.1,5.1,1,match,,"diazepines and opioids. Utilization of benzodiazepines only was higher among older women (5.1%) compared to older men (2.7%). Similarly, concurrent utili"
+567,2025,25,f1,2.7,2.7,1,match,,"zation of benzodiazepines only was higher among older women (5.1%) compared to older men (2.7%). Similarly, concurrent utilization of benzodiazepines and"
+567,2025,25,f1,2.0,2.0,1,match,,"arly, concurrent utilization of benzodiazepines and opioids was higher among older women (2.0%) compared to older men (0.9%)."
+567,2025,25,f1,0.9,0.9,1,unmatched,1.9,of benzodiazepines and opioids was higher among older women (2.0%) compared to older men (0.9%).
+567,2025,27,f2,3.7,3.7,1,match,," and 84, and 85 or over, the average annual percentages with benzodiazepine use only were 3.7 percent, 4.7 percent, and 3.7 percent, respectively. The av"
+567,2025,27,f2,4.7,4.7,1,match,,"85 or over, the average annual percentages with benzodiazepine use only were 3.7 percent, 4.7 percent, and 3.7 percent, respectively. The average annual "
+567,2025,27,f2,3.7,3.7,1,match,," and 84, and 85 or over, the average annual percentages with benzodiazepine use only were 3.7 percent, 4.7 percent, and 3.7 percent, respectively. The av"
+567,2025,27,f2,1.5,1.5,1,match,,"s and opioids among adults aged between 65 and 74, between 75 and 84, and 85 or over were 1.5 percent, 1.1 percent, and 2.3 percent, respectively."
+567,2025,27,f2,1.1,1.1,1,match,," among adults aged between 65 and 74, between 75 and 84, and 85 or over were 1.5 percent, 1.1 percent, and 2.3 percent, respectively."
+567,2025,27,f2,2.3,2.3,1,match,,"d between 65 and 74, between 75 and 84, and 85 or over were 1.5 percent, 1.1 percent, and 2.3 percent, respectively."
+567,2025,29,f3,4.3,4.3,1,match,,"me older adults, the average annual percentages with benzodiazepine utilization only were 4.3 percent, 4.7 percent, 4.0 percent, and 3.7 percent, respect"
+567,2025,29,f3,4.7,4.7,1,match,,"ts, the average annual percentages with benzodiazepine utilization only were 4.3 percent, 4.7 percent, 4.0 percent, and 3.7 percent, respectively. The pr"
+567,2025,29,f3,4.0,4.0,1,match,,"ge annual percentages with benzodiazepine utilization only were 4.3 percent, 4.7 percent, 4.0 percent, and 3.7 percent, respectively. The proportion of l"
+567,2025,29,f3,3.7,3.7,1,match,,"ages with benzodiazepine utilization only were 4.3 percent, 4.7 percent, 4.0 percent, and 3.7 percent, respectively. The proportion of low-income older a"
+567,2025,29,f3,2.2,2.2,1,match,,"ely. The proportion of low-income older adults who used both benzodiazepines and opioids (2.2%) was higher than that among poor older adults (1.1%), or t"
+567,2025,29,f3,1.1,1.1,1,match,,"sed both benzodiazepines and opioids (2.2%) was higher than that among poor older adults (1.1%), or that among high income older adults (1.1%), but was n"
+567,2025,29,f3,1.1,1.1,1,match,,"sed both benzodiazepines and opioids (2.2%) was higher than that among poor older adults (1.1%), or that among high income older adults (1.1%), but was n"
+567,2025,29,f3,1.8,1.8,1,match,,was not statistically significantly different from that among middle income older adults (1.8%).
+567,2025,31,f4,4.2,4.2,1,match,,"e, and no drug coverage, the average annual percentages with benzodiazepine use only were 4.2 percent, 3.2 percent, and 4.3 percent, respectively. The av"
+567,2025,31,f4,3.2,3.2,1,match,,"g coverage, the average annual percentages with benzodiazepine use only were 4.2 percent, 3.2 percent, and 4.3 percent, respectively. The average annual "
+567,2025,31,f4,4.3,4.3,1,match,,"verage annual percentages with benzodiazepine use only were 4.2 percent, 3.2 percent, and 4.3 percent, respectively. The average annual percentage of old"
+567,2025,31,f4,1.6,1.6,1,match,, of older adults with Medicare Part D coverage who used both benzodiazepines and opioids (1.6%) was higher than that among older adults with other drug c
+567,2025,31,f4,1.0,1.0,1,match,,"ines and opioids (1.6%) was higher than that among older adults with other drug coverage (1.0%), but was not statistically significantly different from t"
+567,2025,31,f4,1.5,1.5,1,match,,statistically significantly different from that among older adults with no drug coverage (1.5%).
+567,2025,33,f5,5.8,5.8,1,match,,"ts who lived in the Northeast Census region were more likely to use benzodiazepines only (5.8%) than older adults who lived in the Midwest (3.6%), South "
+567,2025,33,f5,3.6,3.6,1,match,,"ore likely to use benzodiazepines only (5.8%) than older adults who lived in the Midwest (3.6%), South (4.1%), or West (2.9%) Census regions. However, ut"
+567,2025,33,f5,4.1,4.1,1,match,,"use benzodiazepines only (5.8%) than older adults who lived in the Midwest (3.6%), South (4.1%), or West (2.9%) Census regions. However, utilization of b"
+567,2025,33,f5,2.9,2.9,1,match,,"nes only (5.8%) than older adults who lived in the Midwest (3.6%), South (4.1%), or West (2.9%) Census regions. However, utilization of both benzodiazepi"
+567,2025,33,f5,1.7,1.7,1,match,, benzodiazepines and opioids among older adults who lived in the Northeast Census region (1.7%) was not statistically significantly different from that a
+567,2025,33,f5,1.9,1.9,1,match,,"tistically significantly different from that among older adults who lived in the Midwest (1.9%), South (1.4%), or West (1.0%) Census regions."
+567,2025,33,f5,1.4,1.4,1,match,,"nificantly different from that among older adults who lived in the Midwest (1.9%), South (1.4%), or West (1.0%) Census regions."
+567,2025,33,f5,1.0,1.0,1,match,,"rent from that among older adults who lived in the Midwest (1.9%), South (1.4%), or West (1.0%) Census regions."
+567,2025,35,f6,3.9,3.9,1,match,,"n-MSAs, the average annual percentages of older adults who used benzodiazepines only were 3.9 percent and 4.8 percent, respectively, and the average annu"
+567,2025,35,f6,4.8,4.8,1,match,,"age annual percentages of older adults who used benzodiazepines only were 3.9 percent and 4.8 percent, respectively, and the average annual percentages o"
+567,2025,35,f6,1.4,1.4,1,match,,"average annual percentages of older adults who used both benzodiazepines and opioids were 1.4 percent and 1.7 percent, respectively."
+567,2025,35,f6,1.7,1.7,1,match,,"ercentages of older adults who used both benzodiazepines and opioids were 1.4 percent and 1.7 percent, respectively."
+567,2025,37,f7,5.1,5.1,1,match,,"lth. In 2021-2022, older adults whose perceived health was fair or poor were more likely (5.1%) to use benzodiazepines only than those who reported bette"
+567,2025,37,f7,3.8,3.8,1,match,,ikely (5.1%) to use benzodiazepines only than those who reported better perceived health (3.8%). Those whose perceived health was fair or poor were also 
+567,2025,37,f7,3.7,3.7,1,match,,eived health (3.8%). Those whose perceived health was fair or poor were also more likely (3.7%) to use both benzodiazepines and opioids than those report
+567,2025,37,f7,0.9,0.9,1,match,,7%) to use both benzodiazepines and opioids than those reporting better perceived health (0.9%).
+567,2025,39,f8,4.3,4.3,1,match,,"In 2021-2022, older adults who had two or more chronic conditions were more likely (4.3%) to use benzodiazepines only than those who had no or only"
+567,2025,39,f8,3.4,3.4,1,match,,y (4.3%) to use benzodiazepines only than those who had no or only one chronic condition (3.4%). Those with multiple chronic conditions were also more li
+567,2025,39,f8,1.9,1.9,1,match,,e chronic condition (3.4%). Those with multiple chronic conditions were also more likely (1.9%) to use both benzodiazepines and opioids than those who ha
+567,2025,39,f8,0.9,0.9,1,derived,,use both benzodiazepines and opioids than those who had no or only one chronic condition (0.9%).
+568,2025,28,f1,10.2,10.2,1,match,,"In 2021-2022, an estimated 10.2 percent of adults aged 18 years and older in the U.S. civil"
+568,2025,28,f1,21.6,21.6,1,match,,"s treatment per year (figure 1). This percentage was highest for those aged 65 and older (21.6%, or an estimated 12.9 million individuals), followed by ad"
+568,2025,28,f1,12.9,12.9,1,match,,"igure 1). This percentage was highest for those aged 65 and older (21.6%, or an estimated 12.9 million individuals), followed by adults aged 45-64 (12.7%,"
+568,2025,28,f1,12.7,12.7,1,match,,"d older (21.6%, or an estimated 12.9 million individuals), followed by adults aged 45-64 (12.7%, or an estimated 10.5 million individuals) and those aged "
+568,2025,28,f1,10.5,10.5,1,unmatched,,"stimated 12.9 million individuals), followed by adults aged 45-64 (12.7%, or an estimated 10.5 million individuals) and those aged 18-44 (2.5%, or an esti"
+568,2025,28,f1,2.5,2.5,1,match,,"adults aged 45-64 (12.7%, or an estimated 10.5 million individuals) and those aged 18-44 (2.5%, or an estimated 3.0 million individuals). Average annual "
+568,2025,28,f1,3.0,3.0,1,unmatched,,"7%, or an estimated 10.5 million individuals) and those aged 18-44 (2.5%, or an estimated 3.0 million individuals). Average annual diabetes treatment rat"
+568,2025,28,f1,12.9,12.9,1,match,,"igure 1). This percentage was highest for those aged 65 and older (21.6%, or an estimated 12.9 million individuals), followed by adults aged 45-64 (12.7%,"
+568,2025,28,f1,9.5,9.5,1,match,,"lts (12.9%) than for any other racial-ethnic group, including: White non-Hispanic adults (9.5%), Asian non-Hispanic adults (10.2%), and Hispanic adults ("
+568,2025,28,f1,10.2,10.2,1,match,,"In 2021-2022, an estimated 10.2 percent of adults aged 18 years and older in the U.S. civil"
+568,2025,28,f1,9.8,9.8,1,match,,"White non-Hispanic adults (9.5%), Asian non-Hispanic adults (10.2%), and Hispanic adults (9.8%). Men were more likely than women to receive any diabetes "
+568,2025,28,f1,10.7,10.7,1,match,,ispanic adults (9.8%). Men were more likely than women to receive any diabetes treatment (10.7% vs. 9.6%).
+568,2025,28,f1,9.6,9.6,1,match,,ults (9.8%). Men were more likely than women to receive any diabetes treatment (10.7% vs. 9.6%).
+568,2025,29,f1;f2,14.9,14.9,1,match,,"es treatment occurred among adults in families with incomes less than 125 percent of FPL (14.9%), followed by 12.4 percent, 10.4 percent, and 7.9 percent,"
+568,2025,29,f1;f2,12.4,12.4,1,match,,"d among adults in families with incomes less than 125 percent of FPL (14.9%), followed by 12.4 percent, 10.4 percent, and 7.9 percent, respectively, for t"
+568,2025,29,f1;f2,10.4,10.4,1,match,," in families with incomes less than 125 percent of FPL (14.9%), followed by 12.4 percent, 10.4 percent, and 7.9 percent, respectively, for those in low-, "
+568,2025,29,f1;f2,7.9,7.9,1,match,,"incomes less than 125 percent of FPL (14.9%), followed by 12.4 percent, 10.4 percent, and 7.9 percent, respectively, for those in low-, middle-, and high"
+568,2025,29,f1;f2,11.2,11.2,1,match,,"higher percentage of adults residing in the South and Midwest had any diabetes treatment (11.2% and 10.8%, respectively) compared with those residing in t"
+568,2025,29,f1;f2,10.8,10.8,1,match,,"centage of adults residing in the South and Midwest had any diabetes treatment (11.2% and 10.8%, respectively) compared with those residing in the Northea"
+568,2025,29,f1;f2,9.0,9.0,1,match,,"t (11.2% and 10.8%, respectively) compared with those residing in the Northeast and West (9.0% and 8.6%, respectively)."
+568,2025,29,f1;f2,8.6,8.6,1,match,,"and 10.8%, respectively) compared with those residing in the Northeast and West (9.0% and 8.6%, respectively)."
+568,2025,31,f3,95.9,95.9,1,match,,"Among adults treated for diabetes in 2021-2022, an annual average of 95.9 percent used outpatient prescribed medicines for diabetes, "
+568,2025,31,f3,59.5,59.5,1,match,," an annual average of 95.9 percent used outpatient prescribed medicines for diabetes, and 59.5 percent had one or more visits to an office-based medical p"
+568,2025,31,f3,10.8,10.8,1,match,,"maller proportions received diabetes treatment in the form of hospital outpatient visits (10.8%), emergency room visits (1.9%), inpatient hospital stays ("
+568,2025,31,f3,1.9,1.9,1,match,,"betes treatment in the form of hospital outpatient visits (10.8%), emergency room visits (1.9%), inpatient hospital stays (0.9%), and home health service"
+568,2025,31,f3,0.9,0.9,1,match,,"spital outpatient visits (10.8%), emergency room visits (1.9%), inpatient hospital stays (0.9%), and home health services (3.1%)."
+568,2025,31,f3,3.1,3.1,1,match,," emergency room visits (1.9%), inpatient hospital stays (0.9%), and home health services (3.1%)."
+568,2025,35,f5,153.2,153.2,1,unmatched,,"In 2021-2022, an estimated $153.2 billion was spent annually on diabetes treatment among adul"
+568,2025,35,f5,80.3,80.3,1,match,,t among adults in the U.S. civilian noninstitutionalized population. The largest portion (80.3%) of these expenses were for prescription medications. Of a
+568,2025,35,f5,10.3,10.3,1,match,,"portion (80.3%) of these expenses were for prescription medications. Of all expenditures, 10.3 percent were for office-based visits, followed by 5.0 perce"
+568,2025,35,f5,5.0,5.0,1,match,," medications. Of all expenditures, 10.3 percent were for office-based visits, followed by 5.0 percent for home health services, 2.4 percent for inpatient"
+568,2025,35,f5,2.4,2.4,1,match,,"3 percent were for office-based visits, followed by 5.0 percent for home health services, 2.4 percent for inpatient hospital stays, 1.7 percent for outpa"
+568,2025,35,f5,1.7,1.7,1,match,,"llowed by 5.0 percent for home health services, 2.4 percent for inpatient hospital stays, 1.7 percent for outpatient hospital visits, and 0.3 percent for"
+568,2025,35,f5,0.3,0.3,1,match,, among adults in the U.S. civilian noninstitutionalized population. The largest portion (80.3%) of these expenses were for prescription medications. Of a
+568,2025,37,f6,41.0,41.0,1,match,,"Medicare paid the highest share of expenditures for diabetes in 2021-2022 (41.0%), followed by private health insurance (32.0%). Medicaid p"
+568,2025,37,f6,32.0,32.0,1,match,," of expenditures for diabetes in 2021-2022 (41.0%), followed by private health insurance (32.0%). Medicaid paid 17.2%, followed by out-of-pocket payments "
+568,2025,37,f6,17.2,17.2,1,match,,"iabetes in 2021-2022 (41.0%), followed by private health insurance (32.0%). Medicaid paid 17.2%, followed by out-of-pocket payments (6.2%), and payments b"
+568,2025,37,f6,6.2,6.2,1,match,,"rivate health insurance (32.0%). Medicaid paid 17.2%, followed by out-of-pocket payments (6.2%), and payments by other sources (3.5%)."
+568,2025,37,f6,3.5,3.5,1,match,,"aid paid 17.2%, followed by out-of-pocket payments (6.2%), and payments by other sources (3.5%)."
+569,2025,27,f1,21.5,21.5,1,match,,"In 2022 (Figure 1), 21.5 percent of women reported having diagnosed osteoporosis. Wo"
+569,2025,27,f1,33.8,33.8,1,match,,agnosed osteoporosis. Women aged 65 and older had higher rates of diagnosed osteoporosis (33.8%) relative to younger women aged 50-64 (9.2%).
+569,2025,27,f1,9.2,9.2,1,match,, had higher rates of diagnosed osteoporosis (33.8%) relative to younger women aged 50-64 (9.2%).
+569,2025,29,f2,42.8,42.8,1,match,,"In 2022, 42.8 percent of women aged 50 and older who had never been diagn"
+569,2025,29,f2,67.6,67.6,1,match,,"oup showed that screening was more common for older women. Among women aged 65 and older, 67.6 percent reported ever having a DEXA scan while only 24.8 pe"
+569,2025,29,f2,24.8,24.8,1,match,,". Among women aged 65 and older, 67.6 percent reported ever having a DEXA scan while only 24.8 percent of women aged 50-64 reported ever having had a DEXA"
+569,2025,31,f3;f4,27.9,27.9,1,match,,ore likely to ever have a DEXA scan compared to women who only had public only insurance (27.9% vs. 17.4%). Estimates for uninsured women did not meet sta
+569,2025,31,f3;f4,17.4,17.4,1,match,, to ever have a DEXA scan compared to women who only had public only insurance (27.9% vs. 17.4%). Estimates for uninsured women did not meet standards for
+569,2025,31,f3;f4,72.4,72.4,1,match,,"ng women aged 65 and older (Figure 4), those who had both Medicare and Private insurance (72.4%) and those with Medicare only (69.4%) had higher rates of "
+569,2025,31,f3;f4,69.4,69.4,1,match,,", those who had both Medicare and Private insurance (72.4%) and those with Medicare only (69.4%) had higher rates of DEXA scan utilization than those with"
+569,2025,31,f3;f4,45.8,45.8,1,match,,igher rates of DEXA scan utilization than those with Medicare and other public insurance (45.8%).
+569,2025,33,f5,45.3,45.3,1,match,,"eport having ever had a DEXA scan (Figure 5). Among women who had a usual source of care, 45.3 percent reported ever having a DEXA scan, compared to only "
+569,2025,33,f5,30.7,30.7,1,match,,"d a usual source of care, 45.3 percent reported ever having a DEXA scan, compared to only 30.7 percent of women who did not have a usual source of care."
+569,2025,35,f6,25.4,25.4,1,match,,"gories of race-ethnicity. Hispanic women had the lowest rates of ever having a DEXA scan (25.4%), while non-Hispanic white women had the highest rate (47."
+569,2025,35,f6,47.7,47.7,1,match,," of ever having a DEXA scan (25.4%), while non-Hispanic white women had the highest rate (47.7%). Non-Hispanic black women (37.1%) and non-Hispanic Asian "
+569,2025,35,f6,37.1,37.1,1,match,,"), while non-Hispanic white women had the highest rate (47.7%). Non-Hispanic black women (37.1%) and non-Hispanic Asian women (30.4%) had intermediate rat"
+569,2025,35,f6,30.4,30.4,1,match,, the highest rate (47.7%). Non-Hispanic black women (37.1%) and non-Hispanic Asian women (30.4%) had intermediate rates.
+569,2025,36,f7,41.7,41.7,1,match,,ss the four Census regions were not statistically significantly different and ranged from 41.7 percent (West) to 44.1 percent (Northeast). For residence i
+569,2025,36,f7,44.1,44.1,1,match,,"ons were not statistically significantly different and ranged from 41.7 percent (West) to 44.1 percent (Northeast). For residence in an MSA, there was no "
+569,2025,37,f8,37.5,37.5,1,match,,"As shown in Figure 8, women living in low-income (37.5%) and middle-income (38.9%) families were less likely than "
+569,2025,37,f8,38.9,38.9,1,match,,"As shown in Figure 8, women living in low-income (37.5%) and middle-income (38.9%) families were less likely than women living in high-incom"
+569,2025,37,f8,47.6,47.6,1,match,, were less likely than women living in high-income families to ever have had a DEXA scan (47.6%) in 2022.
+570,2025,27,f1,26.3,26.3,1,match,,onmetropolitan compared to metropolitan areas for both visits to mental health providers (26.3 compared to 48.9 percent) and other providers (2.6 compared
+570,2025,27,f1,48.9,48.9,1,match,,mpared to metropolitan areas for both visits to mental health providers (26.3 compared to 48.9 percent) and other providers (2.6 compared to 3.8 percent).
+570,2025,27,f1,2.6,2.6,1,match,,th visits to mental health providers (26.3 compared to 48.9 percent) and other providers (2.6 compared to 3.8 percent). Visits were less likely to take p
+570,2025,27,f1,3.8,3.8,1,match,,tal health providers (26.3 compared to 48.9 percent) and other providers (2.6 compared to 3.8 percent). Visits were less likely to take place via telehea
+570,2025,27,f1,25.3,25.3,1,match,,"or example, among visits to nonphysician mental health providers, only about one-quarter (25.3%) took place via telehealth among patients living in nonmet"
+570,2025,27,f1,49.8,49.8,1,match,,ce via telehealth among patients living in nonmetropolitan areas compared to nearly half (49.8%) among patients living in metropolitan areas.
+570,2025,29,f2,54.3,54.3,1,match,," to mental health providers were more likely to take place via telehealth in urban areas (54.3%) compared to all other area types, including 36.6 percent "
+570,2025,29,f2,36.6,36.6,1,match,,"e place via telehealth in urban areas (54.3%) compared to all other area types, including 36.6 percent for patients living in suburban areas, 24.7 percent"
+570,2025,29,f2,24.7,24.7,1,match,,"ed to all other area types, including 36.6 percent for patients living in suburban areas, 24.7 percent in large rural areas, and 30.9 percent in small rur"
+570,2025,29,f2,30.9,30.9,1,match,,"6.6 percent for patients living in suburban areas, 24.7 percent in large rural areas, and 30.9 percent in small rural areas. The percentage of visits to n"
+570,2025,29,f2,1.9,1.9,1,match,,"rs taking place via telehealth was less than half in small rural compared to urban areas (1.9 and 4.4 percent, respectively)."
+570,2025,29,f2,4.4,4.4,1,match,,"g place via telehealth was less than half in small rural compared to urban areas (1.9 and 4.4 percent, respectively)."
+570,2025,31,f3,27.2,27.2,1,match,," among visits by adults experiencing serious psychological distress, less than one-third (27.2%) took place via telehealth for patients living in a nonmet"
+570,2025,31,f3,51.5,51.5,1,match,,took place via telehealth for patients living in a nonmetropolitan compared to over half (51.5%) for patients in metropolitan areas.
+570,2025,33,f4,3.1,3.1,1,match,,"eas for all physician specialty groups. For example, among primary care physician visits, 3.1 percent took place via telehealth for patients living outsi"
+570,2025,33,f4,5.5,5.5,1,match,,t took place via telehealth for patients living outside of metropolitan areas compared to 5.5 percent for those living inside metropolitan areas.
+570,2025,35,f5,21.7,21.7,1,match,,"nonmetropolitan compared to metropolitan areas. For visits paid for by private insurance, 21.7 percent took place via telehealth for patients living outsi"
+570,2025,35,f5,53.4,53.4,1,match,,t took place via telehealth for patients living outside of metropolitan areas compared to 53.4 percent for patients living in metropolitan areas. For visi
+570,2025,35,f5,14.8,14.8,1,match,,"53.4 percent for patients living in metropolitan areas. For visits with Medicaid payment, 14.8 percent took place via telehealth for patients in nonmetrop"
+570,2025,35,f5,32.7,32.7,1,match,, 14.8 percent took place via telehealth for patients in nonmetropolitan areas compared to 32.7 percent for patients outside of those areas.
+570,2025,37,f6,2.5,2.5,1,match,,ge that took place via telehealth was lower for patients living in nonmetropolitan areas (2.5%) than for those living in metropolitan areas (3.7%).
+570,2025,37,f6,3.7,3.7,1,match,,ients living in nonmetropolitan areas (2.5%) than for those living in metropolitan areas (3.7%).

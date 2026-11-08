@@ -6,5 +6,6 @@ recompute of the concentration briefs (#506, #521, #540) and of #507 and #491, t
 the other six single-file briefs (#493, #496, #497, #533, #554, #558) and its #558 addendum (r558x),
 the FYC variable inventory, census M3 (the numbers in every brief's accessible data tables), census M4
 (repeated titles), census M5 (age bands that overlap or leave a one-year gap inside one figure),
-census M7 (a printed Total outside the range of its own subgroup values) and census M8 (numbers in a
-brief's text that its cited figure does not hold, where the figure holds a number one digit away)."""
+census M7 (a printed Total outside the range of its own subgroup values), census M8 (numbers in a
+brief's text that its cited figure does not hold, where the figure holds a number one digit away) and
+the M8 page-layout diagnosis (m8diag: where on a brief page the body text sits)."""
