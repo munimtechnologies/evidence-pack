@@ -15,6 +15,10 @@ pyramid level read. The OME-XML gives no pixel size, so the mask's pixel size is
 and only when the mask's level-0 width and height equal the slide's; otherwise the area floor is not applied and
 the areas are not converted.
 
+0.2.0 (stage 3b, findings/kidney-glom-stage3b-prereg-v1-2026-11-09.md): each slide's record also holds
+`k_areas_by_kind`, the kept areas of each glomerulus class separately (same floor and rounding as count_k). Counting
+is unchanged.
+
 Outputs stay local: k.json maps each slide to count_k()'s result and kmask-diag.json holds per-slide checks. The
 command line prints aggregates only. Standard-library parts and their tests run without numpy or tifffile. Usage:
   python -m kidney.kmask --masks /masks --wsi /wsi --out k.json [--diag kmask-diag.json]
@@ -25,7 +29,7 @@ import json
 import os
 import xml.etree.ElementTree as ET
 
-CODE_VERSION = "0.1.0"
+CODE_VERSION = "0.2.0"
 GLOM_CHANNELS = {"non-globally-sclerotic glomeruli": "glom", "globally-sclerotic glomeruli": "gs"}
 SHEETS = {"glom": "gloms", "gs": "s_gloms"}
 MAX_LEVEL_PIXELS = 100_000_000
@@ -103,9 +107,14 @@ def objects(label_pixels):
 
 
 def slide_k(label_pixels, mpp):
-    """count_k() of one slide (kidney/compare.py) from its label pixel counts and the mask pixel size (or None)."""
+    """count_k() of one slide (kidney/compare.py) from its label pixel counts and the mask pixel size (or None),
+    plus `k_areas_by_kind`: {kind: kept areas in um^2, sorted, or None without a pixel size}."""
     from kidney.compare import count_k
-    return count_k(objects(label_pixels), mask_mpp=mpp)
+    obs = objects(label_pixels)
+    out = count_k(obs, mask_mpp=mpp)
+    out["k_areas_by_kind"] = {kind: count_k([o for o in obs if o[0] == kind], mask_mpp=mpp)["k_areas_um2"]
+                              for kind in ("glom", "gs")}
+    return out
 
 
 def sheet_check(label_pixels, sheet_rows):

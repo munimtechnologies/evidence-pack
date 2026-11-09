@@ -1,6 +1,6 @@
 # Copyright 2026 Munim, Inc. (MV2). Licensed under the Apache License, Version 2.0 (Apache-2.0).
-"""Offline tests for kidney/kmask.py (KPMP mask reader for stage 3). Invented sizes and counts only: no KPMP value
-appears here. The numpy test is skipped when numpy is not installed."""
+"""Offline tests for kidney/kmask.py (KPMP mask reader for stages 3 and 3b). Invented sizes and counts only: no KPMP
+value appears here. The numpy test is skipped when numpy is not installed."""
 import contextlib
 import io
 import json
@@ -74,13 +74,16 @@ class TestObjects(unittest.TestCase):
         px = {"glom": {1: 2500, 2: 1999, 3: 2000}, "gs": {9: 3000}}
         k = kmask.slide_k(px, 1.0)
         self.assertEqual(k, {"k": 3, "k_gs": 1, "floor_applied": True,
-                             "k_areas_um2": [2000.0, 2500.0, 3000.0]})
+                             "k_areas_um2": [2000.0, 2500.0, 3000.0],
+                             "k_areas_by_kind": {"glom": [2000.0, 2500.0], "gs": [3000.0]}})
         k = kmask.slide_k({"glom": {1: 8000}, "gs": {}}, 0.5)
         self.assertEqual((k["k"], k["k_areas_um2"]), (1, [2000.0]))
+        self.assertEqual(k["k_areas_by_kind"], {"glom": [2000.0], "gs": []})
 
     def test_slide_k_without_mpp(self):
         px = {"glom": {1: 2500, 2: 1999}, "gs": {9: 3000}}
-        self.assertEqual(kmask.slide_k(px, None), {"k": 3, "k_gs": 1, "floor_applied": False, "k_areas_um2": None})
+        self.assertEqual(kmask.slide_k(px, None), {"k": 3, "k_gs": 1, "floor_applied": False, "k_areas_um2": None,
+                                                   "k_areas_by_kind": {"glom": None, "gs": None}})
 
     def test_sheet_check(self):
         px = {"glom": {1: 5, 2: 6}, "gs": {}}

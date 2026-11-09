@@ -1,0 +1,79 @@
+# Results: open HuBMAP glomerulus models vs KPMP's released segmentation on four open KPMP slides (stage 3, v1)
+
+MV2 of Munim, Inc., 2026-11-09. Written by AI agents (Claude) working in MV2's name; no human has reviewed it yet.
+Text CC BY 4.0; code Apache-2.0. Research code and methods, not a medical device, not for diagnosis, not medical
+advice.
+
+Grades the pre-registered plan `findings/kidney-glom-compare-plan-v0-2026-11-09.md` with its addenda 1 and 2, exactly
+as written. Code: `kidney/glom.py` 0.1.1, `kidney/kmask.py` 0.1.0 and `kidney/compare.py` 0.1.0 from tag v0.9.64.
+Per the KPMP data use terms, only aggregates are given: no per-slide count, area, name, package id or image.
+
+## The run
+
+One CPU job on 2 cores, 9 November 2026, 16:27-18:00 UTC (peak memory 1.93 GB). The offline tests of the three modules
+passed first. All four open "Seg_Masks_Features" v2 packages downloaded and unpacked (4 of 4). `glom.py` finished
+all four slides (about 18-24 minutes each). `kmask.py` read all four masks: the mask's level-0 size equalled the
+slide's on 4 of 4, so the 2,000 um^2 floor was applied and areas were put in um^2 on every slide, and the label
+counts of both glomerulus channels matched the rows of the feature workbook's `gloms` and `s_gloms` sheets on 4 of 4.
+No step failed, so this is a result, not an infrastructure failure (addendum 1).
+
+## Grades
+
+| Prediction | As written | Result | Verdict |
+|---|---|---|---|
+| C1 per-slide agreement | at least 3 of 4 slides with abs(D - K) <= max(3, 0.25 K) | 2 of 4 | **failed** |
+| C4 negative control | shifted pairing strictly fewer slides within than the true pairing | 2 of 4 (same as true) | **failed**, so C1 is uninformative |
+| C2 pooled count ratio | sum(D) / sum(K) in [0.80, 1.25] | 0.645 | **failed** |
+| C3 size | pooled median area D / pooled median area K in [0.70, 1.43] | 0.986 | **held** |
+
+Reported, not graded: KPMP's floor was applied on all four slides, and the four slides hold at least 3 globally
+sclerotic objects, so the note is reported: sum(D) sits **closer to sum(K) minus the globally sclerotic objects**
+than to sum(K).
+
+So 1 of 4 predictions held. Where the HuBMAP models find a glomerulus, they outline it at about the same size as
+KPMP's segmentation (C3). But they count about two-thirds as many glomeruli as KPMP's two glomerulus classes
+together (C2), and four slides were too alike in their counts for the per-slide test to mean anything (C4).
+
+## Why the counts differ: a gap in our plan
+
+The HuBMAP "Hacking the Kidney" labels left out sclerotic glomeruli on purpose. The organisers' paper, which our plan
+cites for the models, says the competition was about "segmentation of non-sclerotic renal glomeruli", and its
+Limitations section says they aimed to build "a dataset containing segmentations for healthy glomeruli while
+excluding sclerotic glomeruli" (Jain et al., Communications Biology 2023, doi:10.1038/s42003-023-04848-5; read
+twice on 2026-11-09 through Europe PMC's full-text XML of PMC10356924). Our plan compared the models with both of
+KPMP's glomerulus classes. We had not read the paper's label definition when we wrote the plan, so C1 and C2 tested
+a target the models were trained not to find. The grades above stand as written; the plan is not changed after the
+fact.
+
+## Exploratory, not pre-registered (computed after seeing the data)
+
+- Against KPMP's **non-globally-sclerotic** glomeruli only, the pooled count ratio is **0.838**: inside the C2
+  range, which the pre-registered comparison against both classes missed.
+- Globally sclerotic objects are **0.230** of KPMP's glomerulus objects (after the floor) on these four slides.
+- Per slide against the non-sclerotic class, 3 of 4 slides fall within the C1 tolerance, but so do 3 of 4 under the
+  shifted pairing: four slides cannot separate real agreement from slides that simply have similar counts.
+
+These numbers are leads, not results. They are tested on 12 fresh slides in the pre-registered stage 3b
+(`findings/kidney-glom-stage3b-prereg-v1-2026-11-09.md`), which adds a rank correlation and all 11 cyclic shifts as
+controls.
+
+## Limits
+
+Four biopsies, one stain and probably one scanner type (all report 0.2527 um per pixel). Both sides are models, not
+pathologists. Counts can agree while objects do not: matching objects one by one needs `glom.py` to export positions,
+which is still to come. The 1.5 um per pixel working scale is carried over from the competition's inference code.
+
+## Prior art and why this is new
+
+A search on 2026-11-09 found patch-level external validation of HuBMAP-trained segmenters on KPMP (Zhang et al.,
+arXiv 2406.16900, 2024), which retrained models rather than running the released winning weights. We found no
+published whole-slide count comparison between the released HuBMAP winning weights and KPMP's released
+segmentation. That is a search result, not proof that none exists.
+
+## Acknowledgement
+
+The results here are in whole or part based upon data generated by the Kidney Precision Medicine Project. Accessed November 2026. https://www.kpmp.org. KPMP is supported by the National Institute of Diabetes and Digestive and Kidney Diseases through grants U01DK133081, U01DK133091, U01DK133092, U01DK133093, U01DK133095, U01DK133097, U01DK114866, U01DK114908, U01DK133090, U01DK133113, U01DK133766, U01DK133768, U01DK114907, U01DK114920, U01DK114923, U01DK114933, U24DK114886, UH3DK114926, UH3DK114861, UH3DK114915, UH3DK114937, 1U01DK144965-01 and 1U01DK144994-01 (list copied from KPMP's citing page, https://www.kpmp.org/help-docs/study-overview?tabname=citingkpmpdata, on 2026-10-18). We thank the KPMP participants and US taxpayers whose support made the data possible.
+
+HuBMAP models: Jain Y. et al., "Segmentation of human functional tissue units in support of a Human Reference
+Atlas", Communications Biology 2023 (doi:10.1038/s42003-023-04848-5), and the "Hacking the Kidney" winning teams;
+code MIT (github.com/cns-iu/ccf-research-kaggle-2021), weights CC BY 4.0 (Zenodo 10.5281/zenodo.7730028).
