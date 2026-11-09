@@ -17,6 +17,9 @@ pixels). Unlike that code, it counts glomeruli: connected regions (8-connectivit
 area of at least MIN_AREA_UM2 square micrometres.
 
 Outputs: glom.json (settings, per-slide counts and areas, timings). No pixels are written.
+0.1.1 (2026-11-09) also writes `areas_um2`, the sorted area of every counted glomerulus, so that the stage-3 plan's
+pooled median-area check (C3, findings/kidney-glom-compare-plan-v0-2026-11-09.md) can be computed. Counting is
+unchanged. glom.json stays local: per-slide values from KPMP slides are never published.
 Standard-library parts and their tests run without numpy, torch or OpenCV. Usage:
   python -m kidney.glom --in-dir /input --out-dir /output --models /models/kidney
 """
@@ -28,7 +31,7 @@ import os
 import statistics
 import time
 
-CODE_VERSION = "0.1.0"
+CODE_VERSION = "0.1.1"
 TRAIN_MPP = 0.5
 ZOOM = 3
 TARGET_MPP = TRAIN_MPP * ZOOM
@@ -81,6 +84,12 @@ def summarize_regions(areas_px, mpp, min_area_um2=MIN_AREA_UM2):
             "median_area_um2": round(statistics.median(kept), 1) if kept else None,
             "total_area_um2": round(sum(kept), 1),
             "small_regions": len(um2) - len(kept)}
+
+
+def kept_areas(areas_px, mpp, min_area_um2=MIN_AREA_UM2):
+    """Sorted areas (um^2, rounded to 0.1) of the regions that count as glomeruli, the same regions that
+    summarize_regions counts. For the local glom.json only."""
+    return [round(a, 1) for a in sorted(p * mpp * mpp for p in areas_px) if a >= min_area_um2]
 
 
 def model_paths(models_dir):
@@ -204,7 +213,9 @@ def run_slide(path, models, mean, std, tta=True):
         rec.update(tiles_used=used, tiles_skipped=skipped,
                    positive_fraction=round(float((prob > THRESHOLD).mean()), 6),
                    prob_p99=round(float(np.percentile(prob, 99)), 4))
-        rec.update(summarize_regions(regions(prob > THRESHOLD), mpp))
+        areas_px = regions(prob > THRESHOLD)
+        rec.update(summarize_regions(areas_px, mpp))
+        rec["areas_um2"] = kept_areas(areas_px, mpp)
         rec["ok"] = True
     except Exception as e:  # one bad slide must not stop the folder
         rec["errors"].append(repr(e)[:300])
@@ -240,7 +251,8 @@ def main(argv=None):
     for fn in files:
         rec = run_slide(os.path.join(a.in_dir, fn), models, mean, std, tta=not a.no_tta)
         rows.append(rec)
-        print(json.dumps(rec), flush=True)
+        short = {k: v for k, v in rec.items() if k != "areas_um2"}
+        print(json.dumps(short), flush=True)
     doc = {"code_version": CODE_VERSION,
            "settings": {"train_mpp": TRAIN_MPP, "zoom": ZOOM, "target_mpp": TARGET_MPP, "tile": TILE, "shift": SHIFT,
                         "s_th": S_TH, "p_th": P_TH, "threshold": THRESHOLD, "min_area_um2": MIN_AREA_UM2,
