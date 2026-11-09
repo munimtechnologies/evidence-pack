@@ -1,6 +1,6 @@
 ---
 name: meps-statbrief-errata
-description: Use when quoting, checking or reproducing a number from an AHRQ Medical Expenditure Panel Survey (MEPS) Statistical Brief (meps.ahrq.gov stat<N>.shtml pages, health care spending, insurance, access and use estimates). Before you quote a brief's figure, look it up among 28 known slips (figure-vs-text conflicts, swapped cells, wrong labels, years and titles, a mistyped percentage, a truncated cell, a total its own subgroups cannot produce), 11 reproduction results from the public files and 2 documentation gaps, and avoid the traps met when recomputing briefs from MEPS public-use files. Works offline from a bundled table.
+description: Use when quoting, checking or reproducing a number from an AHRQ Medical Expenditure Panel Survey (MEPS) Statistical Brief (meps.ahrq.gov stat<N>.shtml pages, health care spending, insurance, access and use estimates). Before you quote a brief's figure, look it up among 29 known slips (figure-vs-text conflicts, swapped cells, wrong labels, years, titles and figure references, a mistyped percentage, a truncated cell, a total its own subgroups cannot produce), 11 reproduction results from the public files and 2 documentation gaps, and avoid the traps met when recomputing briefs from MEPS public-use files. Works offline from a bundled table.
 license: Apache-2.0
 ---
 
@@ -26,7 +26,7 @@ medical advice.
 ## Step 1: look up known items
 
 `scripts/meps_errata.py` needs Python 3.8+ and the standard library only. It is read-only, offline and uses the
-bundled table (table 0.3.0: 41 rows).
+bundled table (table 0.4.0: 42 rows).
 
 ```
 python scripts/meps_errata.py --brief 558               # everything known about Brief #558
@@ -65,10 +65,14 @@ and a link to the note that found it.
   threshold). Brief #558 does not reproduce from HC-233; say so if you rely on it.
 - No match does not mean the number is right. The table covers only what these checks looked at: eleven
   single-file briefs recomputed in full (first 30-40 cells each), series-wide scans for titles, age bands and
-  totals, and a scan of 540 briefs' text against the figures they cite (census M8), all 134 of whose flags were
-  read by hand. That scan sees only one-digit differences between decimal numbers, so it misses many slips (the
-  #450 "67.2" was found by eye). Briefs can also be revised later; the table does not track changes to AHRQ's
-  pages.
+  totals, a scan of 540 briefs' text against the figures they cite (census M8), all 134 of whose flags were
+  read by hand, and a scan of the same 540 briefs for repeated sentences with one number changed and for
+  impossible percent-and-head-count pairs (census M9, all 10 flags read; it found no new conflict). The M8 scan
+  sees only one-digit differences between decimal numbers, so it misses many slips (the #450 "67.2" was found by
+  eye). Briefs can also be revised later; the table does not track changes to AHRQ's pages.
+- Two near-identical sentences with different numbers are usually not a slip in these briefs: AHRQ reports
+  paired measures (single vs family coverage, two survey statements, two figures) in the same sentence form.
+  Read the sentence before each one before calling it a conflict.
 
 ## Step 3: traps when you recompute a brief yourself
 
@@ -93,7 +97,8 @@ and a link to the note that found it.
 8. **Read the labels against the text.** Age bands can overlap or leave a gap (#170 prints "Age 40-65" next to
    "Age 65+"; #227 leaves age 18 out of every labelled group), a figure can repeat another figure's title
    (#533) or row labels (#430 labels percentages "persons in millions"; #481 Figure 7 labels poverty rows
-   "Health status"), and a sentence can name the wrong year (#304, #481).
+   "Health status"), a sentence can name the wrong year (#304, #481), and the text can cite a figure the page
+   does not have (#433 cites "figure 1a"; the value is in Figure 2).
 9. **When figure and text disagree, test both.** The public file sided with the table in #491 and with the text in
    #497; in #567 and #536 the brief's own subtotals sided with the text, and in #481 a distribution that must sum
    to about 100 did.

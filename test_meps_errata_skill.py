@@ -34,10 +34,10 @@ class TestTable(unittest.TestCase):
         self.assertEqual(os.path.normcase(me.default_csv()), os.path.normcase(os.path.normpath(TABLE)))
 
     def test_shape(self):
-        self.assertEqual(len(self.rows), 41)
+        self.assertEqual(len(self.rows), 42)
         ids = [r["id"] for r in self.rows]
-        self.assertEqual(len(set(ids)), 41)
-        self.assertEqual(len([i for i in ids if i.startswith("MEPS-E")]), 28)
+        self.assertEqual(len(set(ids)), 42)
+        self.assertEqual(len([i for i in ids if i.startswith("MEPS-E")]), 29)
         for r in self.rows:
             self.assertRegex(r["id"], r"^MEPS-[EDR]\d{3}$")
             self.assertTrue(r["brief"].isdigit(), r["id"])
@@ -46,7 +46,7 @@ class TestTable(unittest.TestCase):
 
     def test_e_ids_are_consecutive(self):
         e = [r["id"] for r in self.rows if r["id"].startswith("MEPS-E")]
-        self.assertEqual(e, ["MEPS-E%03d" % i for i in range(1, 29)])
+        self.assertEqual(e, ["MEPS-E%03d" % i for i in range(1, 30)])
 
     def test_id_prefix_matches_kind(self):
         for r in self.rows:
@@ -96,6 +96,7 @@ class TestSelect(unittest.TestCase):
         self.assertEqual(self.ids(brief="481"), ["MEPS-E013", "MEPS-E014", "MEPS-E019", "MEPS-E022", "MEPS-E023"])
         self.assertEqual(self.ids(brief="192"), ["MEPS-E018", "MEPS-E024"])
         self.assertEqual(self.ids(brief="99"), ["MEPS-E026", "MEPS-E027"])
+        self.assertEqual(self.ids(brief="433"), ["MEPS-E029"])
         self.assertEqual(self.ids(brief="9999"), [])
 
     def test_value(self):
@@ -116,12 +117,14 @@ class TestSelect(unittest.TestCase):
                          ["MEPS-E010", "MEPS-E011", "MEPS-E012", "MEPS-E013", "MEPS-E015", "MEPS-E016",
                           "MEPS-E018", "MEPS-E019", "MEPS-E020", "MEPS-E026"])
         self.assertEqual(self.ids(kind="text"),
-                         ["MEPS-E005", "MEPS-E014", "MEPS-E017", "MEPS-E021", "MEPS-E023", "MEPS-E025"])
+                         ["MEPS-E005", "MEPS-E014", "MEPS-E017", "MEPS-E021", "MEPS-E023", "MEPS-E025",
+                          "MEPS-E029"])
         self.assertEqual(self.ids(kind="label"),
                          ["MEPS-E006", "MEPS-E007", "MEPS-E008", "MEPS-E022", "MEPS-E027", "MEPS-E028"])
         self.assertEqual(self.ids(kind="truncated cell"), ["MEPS-E024"])
         self.assertEqual(self.ids(grep="DEDUCTIBLE"), ["MEPS-E011"])
         self.assertEqual(self.ids(grep="policy level"), ["MEPS-E027"])
+        self.assertEqual(self.ids(grep="figure 1a"), ["MEPS-E029"])
         self.assertEqual(self.ids(ids=["MEPS-D001"]), ["MEPS-D001"])
 
     def test_numbers(self):
@@ -133,10 +136,10 @@ class TestSelect(unittest.TestCase):
 class TestSummaryAndMain(unittest.TestCase):
     def test_summary(self):
         lines = me.summary(me.load(TABLE))
-        self.assertEqual(lines[0], "41 items")
+        self.assertEqual(lines[0], "42 items")
         self.assertIn("  reproduction: 11", lines)
         self.assertIn("  figure vs text: 10", lines)
-        self.assertIn("  text: 6", lines)
+        self.assertIn("  text: 7", lines)
         self.assertIn("  label: 6", lines)
         self.assertIn("  truncated cell: 1", lines)
         self.assertEqual(lines[-1], "reproduction: 11 briefs, 347 of 408 computable cells exact, 374 close; "
@@ -151,14 +154,17 @@ class TestSummaryAndMain(unittest.TestCase):
         self.assertEqual(code, 0)
         self.assertIn("MEPS-E021", out)
         self.assertIn("meps-m8-flag-audit-results-v1-2026-11-09.md", out)
+        code, out = run(["--brief", "433"])
+        self.assertEqual(code, 0)
+        self.assertIn("meps-m9-results-v1-2026-11-09.md", out)
         code, out = run(["--brief", "9999"])
         self.assertEqual(code, 1)
         self.assertIn("not proof", out)
         code, out = run(["--summary"])
-        self.assertEqual((code, out.splitlines()[0]), (0, "41 items"))
+        self.assertEqual((code, out.splitlines()[0]), (0, "42 items"))
         code, out = run(["--version"])
         self.assertEqual(code, 0)
-        self.assertTrue(out.startswith("meps_errata 0.1.0, table 0.3.0"))
+        self.assertTrue(out.startswith("meps_errata 0.1.0, table 0.4.0"))
         code, _ = run(["--csv", os.path.join(HERE, "no-such-table.csv")])
         self.assertEqual(code, 2)
 
@@ -187,9 +193,9 @@ class TestSkillFile(unittest.TestCase):
         self.assertIn("license: Apache-2.0", front)
         desc = re.search(r"^description: (.+)$", front, re.M).group(1)
         self.assertLess(len(desc), 1024)
-        self.assertIn("28 known slips", desc)
+        self.assertIn("29 known slips", desc)
         self.assertIn("scripts/meps_errata.py", text)
-        self.assertIn("table 0.3.0: 41 rows", text)
+        self.assertIn("table 0.4.0: 42 rows", text)
         self.assertNotIn("MIT", text)
 
 
