@@ -8,5 +8,7 @@ the FYC variable inventory, census M3 (the numbers in every brief's accessible d
 (repeated titles), census M5 (age bands that overlap or leave a one-year gap inside one figure),
 census M7 (a printed Total outside the range of its own subgroup values), census M8 (numbers in a
 brief's text that its cited figure does not hold, where the figure holds a number one digit away),
-the M8 page-layout diagnosis (m8diag: where on a brief page the body text sits) and census M8 v0.2
-(m8text2: M8 with text read inside layout tables, five fixes and a coverage gate)."""
+the M8 page-layout diagnosis (m8diag: where on a brief page the body text sits), census M8 v0.2
+(m8text2: M8 with text read inside layout tables, five fixes and a coverage gate) and census M9
+(m9echo: the same sentence printed twice with one number changed, and count-percent pairs whose
+implied population is impossible)."""
