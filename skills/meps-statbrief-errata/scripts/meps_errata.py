@@ -24,7 +24,7 @@ import re
 import sys
 
 VERSION = "0.1.0"
-TABLE_VERSION = "0.2.0"
+TABLE_VERSION = "0.3.0"
 REPO = "https://github.com/munimtechnologies/evidence-pack/blob/main/"
 COLUMNS = ("id", "brief", "data_year", "file", "place", "kind", "evidence", "printed", "alternative", "cells",
            "computable", "exact", "close", "what", "note")
