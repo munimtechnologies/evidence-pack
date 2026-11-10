@@ -18,6 +18,11 @@ the areas are not converted.
 0.2.0 (stage 3b, findings/kidney-glom-stage3b-prereg-v1-2026-11-09.md): each slide's record also holds
 `k_areas_by_kind`, the kept areas of each glomerulus class separately (same floor and rounding as count_k). Counting
 is unchanged.
+0.3.0 (stage 4, findings/kidney-glom-stage4-prereg-v1-2026-11-10.md): each slide's record also holds `k_objects`,
+{kind: [[cx, cy, x0, y0, x1, y1, area], ...]} for the objects count_k keeps, in micrometres of the slide's level-0
+frame (centroid and bounding box of each label at the level read; box edges are pixel edges), or None when the
+pixel size cannot be linked. Pixels are now grouped per label instead of counted with bincount; the counts are the
+same.
 
 Outputs stay local: k.json maps each slide to count_k()'s result and kmask-diag.json holds per-slide checks. The
 command line prints aggregates only. Standard-library parts and their tests run without numpy or tifffile. Usage:
@@ -29,13 +34,14 @@ import json
 import os
 import xml.etree.ElementTree as ET
 
-CODE_VERSION = "0.2.0"
+CODE_VERSION = "0.3.0"
 GLOM_CHANNELS = {"non-globally-sclerotic glomeruli": "glom", "globally-sclerotic glomeruli": "gs"}
 SHEETS = {"glom": "gloms", "gs": "s_gloms"}
 MAX_LEVEL_PIXELS = 100_000_000
 STRIP_ROWS = 1024
 MASK_SUFFIX = ".ome.tif"
 SHEET_SUFFIX = "_features.xlsx"
+MIN_AREA_UM2 = 2000.0
 
 
 # ---- standard-library parts ----
@@ -88,6 +94,16 @@ def mask_mpp(slide_mpp0, slide_size0, mask_size0, level_width):
     return float(slide_mpp0) * (int(mask_size0[0]) / float(level_width))
 
 
+def y_scale(sx, size0, level_size):
+    """Micrometres per pixel along y of a level of (width, height) `level_size`, given sx along x and the level-0
+    (width, height): sx x (w / w0) x (h0 / h), integers multiplied first. None when sx is None."""
+    if not sx:
+        return None
+    w0, h0 = int(size0[0]), int(size0[1])
+    w, h = int(level_size[0]), int(level_size[1])
+    return sx * (w * h0) / float(w0 * h)
+
+
 def add_counts(acc, pairs):
     """Add (label, pixels) pairs into dict `acc`; label 0 is background and is skipped."""
     for lab, n in pairs:
@@ -95,6 +111,54 @@ def add_counts(acc, pairs):
         if lab != 0 and n > 0:
             acc[lab] = acc.get(lab, 0) + n
     return acc
+
+
+def add_stats(acc, rows):
+    """Merge (label, pixels, sum_x, sum_y, xmin, ymin, xmax, ymax) rows into `acc` {label: [pixels, sum_x, sum_y,
+    xmin, ymin, xmax, ymax]} (pixel indices); label 0 is background and is skipped."""
+    for lab, n, sx, sy, x0, y0, x1, y1 in rows:
+        lab, n = int(lab), int(n)
+        if lab == 0 or n <= 0:
+            continue
+        cur = acc.get(lab)
+        if cur is None:
+            acc[lab] = [n, int(sx), int(sy), int(x0), int(y0), int(x1), int(y1)]
+        else:
+            cur[0] += n
+            cur[1] += int(sx)
+            cur[2] += int(sy)
+            cur[3] = min(cur[3], int(x0))
+            cur[4] = min(cur[4], int(y0))
+            cur[5] = max(cur[5], int(x1))
+            cur[6] = max(cur[6], int(y1))
+    return acc
+
+
+def counts_from_stats(stats):
+    """{kind: {label: pixels}} from {kind: {label: stats row}}."""
+    return {kind: {lab: st[0] for lab, st in labs.items()} for kind, labs in stats.items()}
+
+
+def object_record(st, sx, sy):
+    """[cx, cy, x0, y0, x1, y1, area] (um, rounded to 0.1) of one label's stats row; pixel i covers [i, i + 1), so
+    the centroid is (mean index + 0.5) x scale and the box is [min, max + 1) x scale. Area = pixels x sx x sx, as in
+    count_k."""
+    n, sum_x, sum_y, x0, y0, x1, y1 = st
+    return [round((sum_x / float(n) + 0.5) * sx, 1), round((sum_y / float(n) + 0.5) * sy, 1), round(x0 * sx, 1),
+            round(y0 * sy, 1), round((x1 + 1) * sx, 1), round((y1 + 1) * sy, 1), round(n * sx * sx, 1)]
+
+
+def k_objects(stats, sx, sy, min_area_um2=MIN_AREA_UM2):
+    """{kind: [object_record]} of the objects count_k keeps (pixels x sx x sx >= floor), in label order; None when
+    the pixel size is unknown."""
+    if not sx or not sy:
+        return None
+    out = {}
+    for kind in ("glom", "gs"):
+        labs = stats.get(kind, {})
+        out[kind] = [object_record(labs[lab], sx, sy) for lab in sorted(labs)
+                     if labs[lab][0] * sx * sx >= min_area_um2]
+    return out
 
 
 def objects(label_pixels):
@@ -142,12 +206,18 @@ def aggregate(diag):
 
 # ---- numpy / tifffile / openpyxl parts ----
 
-def plane_counts(plane, strip_rows=STRIP_ROWS):
-    """{label: pixels} of a 2-D unsigned-integer label plane, counted in row strips to bound memory."""
+def _plane(plane):
     import numpy as np
     a = np.asarray(plane)
     if a.ndim != 2 or a.dtype.kind != "u":
         raise ValueError("expected a 2-D unsigned integer plane, got %s %s" % (a.shape, a.dtype))
+    return a
+
+
+def plane_counts(plane, strip_rows=STRIP_ROWS):
+    """{label: pixels} of a 2-D unsigned-integer label plane, counted in row strips to bound memory."""
+    import numpy as np
+    a = _plane(plane)
     acc = {}
     for r in range(0, a.shape[0], strip_rows):
         bc = np.bincount(a[r:r + strip_rows].ravel())
@@ -156,8 +226,32 @@ def plane_counts(plane, strip_rows=STRIP_ROWS):
     return acc
 
 
+def plane_stats(plane, strip_rows=STRIP_ROWS):
+    """{label: [pixels, sum_x, sum_y, xmin, ymin, xmax, ymax]} of a 2-D unsigned-integer label plane, in row strips."""
+    import numpy as np
+    a = _plane(plane)
+    acc = {}
+    for r in range(0, a.shape[0], strip_rows):
+        sub = a[r:r + strip_rows]
+        ys, xs = np.nonzero(sub)
+        if ys.size == 0:
+            continue
+        labs = sub[ys, xs]
+        order = np.argsort(labs, kind="stable")
+        labs = labs[order]
+        xs = xs[order].astype(np.int64)
+        ys = ys[order].astype(np.int64) + r
+        uniq, starts = np.unique(labs, return_index=True)
+        counts = np.diff(np.append(starts, labs.size))
+        add_stats(acc, zip(uniq.tolist(), counts.tolist(), np.add.reduceat(xs, starts).tolist(),
+                           np.add.reduceat(ys, starts).tolist(), np.minimum.reduceat(xs, starts).tolist(),
+                           np.minimum.reduceat(ys, starts).tolist(), np.maximum.reduceat(xs, starts).tolist(),
+                           np.maximum.reduceat(ys, starts).tolist()))
+    return acc
+
+
 def read_mask(path, max_pixels=MAX_LEVEL_PIXELS):
-    """({kind: {label: pixels}}, info) for one OME-TIFF mask; info has the level read and the sizes."""
+    """({kind: {label: stats row}}, info) for one OME-TIFF mask; info has the level read and the sizes."""
     import tifffile
     with tifffile.TiffFile(path) as tif:
         s = tif.series[0]
@@ -176,9 +270,9 @@ def read_mask(path, max_pixels=MAX_LEVEL_PIXELS):
                 plane = levels[li].asarray(key=c)
             if tuple(plane.shape[-2:]) != tuple(shapes[li]):
                 raise ValueError("plane shape %r differs from level shape %r" % (plane.shape, shapes[li]))
-            out[kind] = plane_counts(plane.reshape(shapes[li]))
+            out[kind] = plane_stats(plane.reshape(shapes[li]))
     h0, w0 = shapes[0]
-    return out, {"level": li, "mask_size0": [w0, h0], "level_width": shapes[li][1]}
+    return out, {"level": li, "mask_size0": [w0, h0], "level_width": shapes[li][1], "level_height": shapes[li][0]}
 
 
 def read_sheet_rows(path):
@@ -206,18 +300,21 @@ def slide_info(svs_path):
 
 
 def run_slide(name, mask_dir, wsi_dir):
-    """(count_k result or None, local diagnostic record) for one slide."""
+    """(count_k result with k_objects, or None; local diagnostic record) for one slide."""
     diag = {"ok": False, "errors": []}
     try:
-        px, info = read_mask(os.path.join(mask_dir, name + MASK_SUFFIX))
+        stats, info = read_mask(os.path.join(mask_dir, name + MASK_SUFFIX))
+        px = counts_from_stats(stats)
         mpp0, size0 = slide_info(os.path.join(wsi_dir, name + ".svs"))
         mpp = mask_mpp(mpp0, size0, info["mask_size0"], info["level_width"])
+        sy = y_scale(mpp, info["mask_size0"], (info["level_width"], info["level_height"]))
         sheet = os.path.join(mask_dir, name + SHEET_SUFFIX)
         rows = read_sheet_rows(sheet) if os.path.exists(sheet) else None
         k = slide_k(px, mpp)
-        diag.update(info, ok=True, mask_mpp=round(mpp, 4) if mpp else None, slide_size0=list(size0),
-                    labels={kind: len(px.get(kind, {})) for kind in ("glom", "gs")}, sheet_rows=rows,
-                    sheet_match=sheet_check(px, rows))
+        k["k_objects"] = k_objects(stats, mpp, sy)
+        diag.update(info, ok=True, mask_mpp=round(mpp, 4) if mpp else None, mask_mpp_y=round(sy, 4) if sy else None,
+                    slide_size0=list(size0), labels={kind: len(px.get(kind, {})) for kind in ("glom", "gs")},
+                    sheet_rows=rows, sheet_match=sheet_check(px, rows))
         return k, diag
     except Exception as e:  # one bad slide must not stop the folder
         diag["errors"].append(repr(e)[:300])

@@ -20,6 +20,10 @@ Outputs: glom.json (settings, per-slide counts and areas, timings). No pixels ar
 0.1.1 (2026-11-09) also writes `areas_um2`, the sorted area of every counted glomerulus, so that the stage-3 plan's
 pooled median-area check (C3, findings/kidney-glom-compare-plan-v0-2026-11-09.md) can be computed. Counting is
 unchanged. glom.json stays local: per-slide values from KPMP slides are never published.
+0.2.0 (2026-11-10, stage 4: findings/kidney-glom-stage4-prereg-v1-2026-11-10.md) also writes `objects`: one
+[cx, cy, x0, y0, x1, y1, area] per counted glomerulus, in micrometres of the slide's level-0 frame (origin at the
+top-left corner; centroid and bounding box of the region; box edges are pixel edges), so that each object can be
+matched with another segmentation of the same slide. Counting and areas are unchanged.
 Standard-library parts and their tests run without numpy, torch or OpenCV. Usage:
   python -m kidney.glom --in-dir /input --out-dir /output --models /models/kidney
 """
@@ -31,7 +35,7 @@ import os
 import statistics
 import time
 
-CODE_VERSION = "0.1.1"
+CODE_VERSION = "0.2.0"
 TRAIN_MPP = 0.5
 ZOOM = 3
 TARGET_MPP = TRAIN_MPP * ZOOM
@@ -90,6 +94,29 @@ def kept_areas(areas_px, mpp, min_area_um2=MIN_AREA_UM2):
     """Sorted areas (um^2, rounded to 0.1) of the regions that count as glomeruli, the same regions that
     summarize_regions counts. For the local glom.json only."""
     return [round(a, 1) for a in sorted(p * mpp * mpp for p in areas_px) if a >= min_area_um2]
+
+
+def y_scale(sx, size0, image_size):
+    """Micrometres per working-image pixel along y, given sx along x, the slide's level-0 (width, height) and the
+    working image's (width, height): sx x (w / w0) x (h0 / h), integers multiplied first."""
+    w0, h0 = int(size0[0]), int(size0[1])
+    w, h = int(image_size[0]), int(image_size[1])
+    return sx * (w * h0) / float(w0 * h)
+
+
+def region_records(rows, sx, sy, min_area_um2=MIN_AREA_UM2):
+    """[[cx, cy, x0, y0, x1, y1, area]] (um, rounded to 0.1) of the regions that count as glomeruli, in input order.
+    `rows` are (left, top, width, height, area_px, cx_px, cy_px) in working-image pixels (centroid in pixel-index
+    coordinates, as OpenCV gives it). A region counts exactly as in summarize_regions: area_px x sx x sx >= floor.
+    Pixel i covers [i, i + 1), so a centroid maps to (c + 0.5) x scale and a box to [left, left + width) x scale."""
+    out = []
+    for left, top, width, height, area_px, cx, cy in rows:
+        area = area_px * sx * sx
+        if area < min_area_um2:
+            continue
+        out.append([round((cx + 0.5) * sx, 1), round((cy + 0.5) * sy, 1), round(left * sx, 1), round(top * sy, 1),
+                    round((left + width) * sx, 1), round((top + height) * sy, 1), round(area, 1)])
+    return out
 
 
 def model_paths(models_dir):
@@ -172,12 +199,19 @@ def predict(img, models, mean, std, tta=True):
     return out[:h, :w], used, skipped
 
 
-def regions(mask):
-    """Pixel areas of the 8-connected regions of a binary mask."""
+def components(mask):
+    """(left, top, width, height, area_px, cx, cy) of each 8-connected region of a binary mask, in label order."""
     import cv2
     import numpy as np
-    n, _, stats, _ = cv2.connectedComponentsWithStats(mask.astype(np.uint8), connectivity=8)
-    return [int(a) for a in stats[1:n, cv2.CC_STAT_AREA]]
+    n, _, stats, cents = cv2.connectedComponentsWithStats(mask.astype(np.uint8), connectivity=8)
+    return [(int(stats[i, cv2.CC_STAT_LEFT]), int(stats[i, cv2.CC_STAT_TOP]), int(stats[i, cv2.CC_STAT_WIDTH]),
+             int(stats[i, cv2.CC_STAT_HEIGHT]), int(stats[i, cv2.CC_STAT_AREA]), float(cents[i, 0]),
+             float(cents[i, 1])) for i in range(1, n)]
+
+
+def regions(mask):
+    """Pixel areas of the 8-connected regions of a binary mask."""
+    return [r[4] for r in components(mask)]
 
 
 def slide_image(path):
@@ -207,15 +241,18 @@ def run_slide(path, models, mean, std, tta=True):
     rec = {"slide": os.path.splitext(os.path.basename(path))[0], "ok": False, "errors": []}
     try:
         img, mpp, li, zoom, size0 = slide_image(path)
-        rec.update(level=li, residual_zoom=round(zoom, 4), mpp=round(mpp, 4), width=img.shape[1],
-                   height=img.shape[0], level0=list(size0))
+        sy = y_scale(mpp, size0, (img.shape[1], img.shape[0]))
+        rec.update(level=li, residual_zoom=round(zoom, 4), mpp=round(mpp, 4), mpp_y=round(sy, 4),
+                   width=img.shape[1], height=img.shape[0], level0=list(size0))
         prob, used, skipped = predict(img, models, mean, std, tta=tta)
         rec.update(tiles_used=used, tiles_skipped=skipped,
                    positive_fraction=round(float((prob > THRESHOLD).mean()), 6),
                    prob_p99=round(float(np.percentile(prob, 99)), 4))
-        areas_px = regions(prob > THRESHOLD)
+        comps = components(prob > THRESHOLD)
+        areas_px = [c[4] for c in comps]
         rec.update(summarize_regions(areas_px, mpp))
         rec["areas_um2"] = kept_areas(areas_px, mpp)
+        rec["objects"] = region_records(comps, mpp, sy)
         rec["ok"] = True
     except Exception as e:  # one bad slide must not stop the folder
         rec["errors"].append(repr(e)[:300])
@@ -251,7 +288,7 @@ def main(argv=None):
     for fn in files:
         rec = run_slide(os.path.join(a.in_dir, fn), models, mean, std, tta=not a.no_tta)
         rows.append(rec)
-        short = {k: v for k, v in rec.items() if k != "areas_um2"}
+        short = {k: v for k, v in rec.items() if k not in ("areas_um2", "objects")}
         print(json.dumps(short), flush=True)
     doc = {"code_version": CODE_VERSION,
            "settings": {"train_mpp": TRAIN_MPP, "zoom": ZOOM, "target_mpp": TARGET_MPP, "tile": TILE, "shift": SHIFT,

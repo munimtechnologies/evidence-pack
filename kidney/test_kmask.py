@@ -1,6 +1,6 @@
 # Copyright 2026 Munim, Inc. (MV2). Licensed under the Apache License, Version 2.0 (Apache-2.0).
-"""Offline tests for kidney/kmask.py (KPMP mask reader for stages 3 and 3b). Invented sizes and counts only: no KPMP
-value appears here. The numpy test is skipped when numpy is not installed."""
+"""Offline tests for kidney/kmask.py (KPMP mask reader for stages 3, 3b and 4). Invented sizes and counts only: no
+KPMP value appears here. The numpy tests are skipped when numpy is not installed."""
 import contextlib
 import io
 import json
@@ -59,6 +59,11 @@ class TestGeometry(unittest.TestCase):
         self.assertIsNone(kmask.mask_mpp(None, (50000, 20000), (50000, 20000), 12500))
         self.assertIsNone(kmask.mask_mpp(0.25, (50000, 20000), (50000, 20000), 0))
 
+    def test_y_scale(self):
+        self.assertAlmostEqual(kmask.y_scale(2.0, (50000, 20000), (12500, 5000)), 2.0)
+        self.assertAlmostEqual(kmask.y_scale(2.0, (50000, 20000), (12500, 4000)), 2.5)
+        self.assertIsNone(kmask.y_scale(None, (50000, 20000), (12500, 5000)))
+
 
 class TestObjects(unittest.TestCase):
     def test_add_counts(self):
@@ -91,6 +96,36 @@ class TestObjects(unittest.TestCase):
         self.assertFalse(kmask.sheet_check(px, {"gloms": 3, "s_gloms": 0}))
         self.assertFalse(kmask.sheet_check(px, {"gloms": 2}))
         self.assertIsNone(kmask.sheet_check(px, None))
+
+
+class TestObjectStats(unittest.TestCase):
+    STATS = {"glom": {5: [2, 1, 0, 0, 0, 1, 0], 3: [3, 3, 2, 0, 0, 2, 1]}, "gs": {7: [4, 6, 16, 0, 4, 3, 4]}}
+
+    def test_add_stats(self):
+        rows = [(0, 5, 0, 0, 0, 0, 0, 0), (3, 2, 1, 4, 0, 2, 1, 2), (3, 1, 5, 3, 5, 3, 5, 3), (4, 0, 0, 0, 0, 0, 0, 0)]
+        self.assertEqual(kmask.add_stats({}, rows), {3: [3, 6, 7, 0, 2, 5, 3]})
+
+    def test_counts_from_stats(self):
+        self.assertEqual(kmask.counts_from_stats(self.STATS), {"glom": {5: 2, 3: 3}, "gs": {7: 4}})
+
+    def test_object_record(self):
+        self.assertEqual(kmask.object_record([3, 3, 2, 0, 0, 2, 1], 2.0, 2.0), [3.0, 2.3, 0.0, 0.0, 6.0, 4.0, 12.0])
+        self.assertEqual(kmask.object_record([3, 3, 2, 0, 0, 2, 1], 2.0, 4.0), [3.0, 4.7, 0.0, 0.0, 6.0, 8.0, 12.0])
+
+    def test_k_objects(self):
+        got = kmask.k_objects(self.STATS, 2.0, 2.0, min_area_um2=10)
+        self.assertEqual(got, {"glom": [[3.0, 2.3, 0.0, 0.0, 6.0, 4.0, 12.0]],
+                               "gs": [[4.0, 9.0, 0.0, 8.0, 8.0, 10.0, 16.0]]})
+        self.assertIsNone(kmask.k_objects(self.STATS, None, None))
+
+    def test_k_objects_keep_what_count_k_keeps(self):
+        stats = {"glom": {1: [2500, 0, 0, 0, 0, 0, 0], 2: [1999, 0, 0, 0, 0, 0, 0], 4: [2000, 0, 0, 0, 0, 0, 0]},
+                 "gs": {9: [3000, 0, 0, 0, 0, 0, 0]}}
+        objs = kmask.k_objects(stats, 1.0, 1.0)
+        k = kmask.slide_k(kmask.counts_from_stats(stats), 1.0)
+        self.assertEqual(len(objs["glom"]) + len(objs["gs"]), k["k"])
+        self.assertEqual(len(objs["gs"]), k["k_gs"])
+        self.assertEqual(sorted(o[6] for o in objs["glom"]), k["k_areas_by_kind"]["glom"])
 
 
 class TestFolderAndOutput(unittest.TestCase):
@@ -140,20 +175,36 @@ class TestFolderAndOutput(unittest.TestCase):
 
 
 @unittest.skipUnless(HAVE_NUMPY, "numpy not installed")
-class TestPlaneCounts(unittest.TestCase):
-    def test_counts_in_strips(self):
+class TestPlanes(unittest.TestCase):
+    def plane(self):
         import numpy as np
         a = np.zeros((5, 4), dtype=np.uint16)
         a[0, 0] = 3
         a[1, 1:3] = 3
         a[4, :] = 7
+        return a
+
+    def test_counts_in_strips(self):
+        a = self.plane()
         self.assertEqual(kmask.plane_counts(a, strip_rows=2), {3: 3, 7: 4})
         self.assertEqual(kmask.plane_counts(a, strip_rows=100), {3: 3, 7: 4})
+
+    def test_stats_in_strips(self):
+        import numpy as np
+        a = self.plane()
+        want = {3: [3, 3, 2, 0, 0, 2, 1], 7: [4, 6, 16, 0, 4, 3, 4]}
+        self.assertEqual(kmask.plane_stats(a, strip_rows=2), want)
+        self.assertEqual(kmask.plane_stats(a, strip_rows=1), want)
+        self.assertEqual(kmask.plane_stats(a, strip_rows=100), want)
+        self.assertEqual({lab: st[0] for lab, st in kmask.plane_stats(a).items()}, kmask.plane_counts(a))
+        self.assertEqual(kmask.plane_stats(np.zeros((3, 3), dtype=np.uint8)), {})
 
     def test_refuses_float(self):
         import numpy as np
         with self.assertRaises(ValueError):
             kmask.plane_counts(np.zeros((2, 2), dtype=np.float32))
+        with self.assertRaises(ValueError):
+            kmask.plane_stats(np.zeros((2, 2), dtype=np.float32))
 
 
 if __name__ == "__main__":
