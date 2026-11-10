@@ -174,7 +174,9 @@ class TestIO(unittest.TestCase):
 
 class TestGlomAreas(unittest.TestCase):
     def test_kept_areas(self):
-        self.assertEqual(glom.CODE_VERSION, "0.1.1")
+        # glom 0.1.1 added kept_areas; later versions keep it unchanged, so the version is not pinned here
+        # (a pin to "0.1.1" broke this test when glom 0.2.0 added object positions).
+        self.assertGreaterEqual(tuple(int(p) for p in glom.CODE_VERSION.split(".")), (0, 1, 1))
         self.assertEqual(glom.kept_areas([1000, 2000, 10], 1.5), [2250.0, 4500.0])
         self.assertEqual(glom.kept_areas([], 1.5), [])
         s = glom.summarize_regions([1000, 2000, 10], 1.5)
