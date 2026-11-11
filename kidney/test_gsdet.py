@@ -1,8 +1,12 @@
 # Copyright 2026 Munim, Inc. (MV2). Licensed under the Apache License, Version 2.0 (Apache-2.0).
-"""Offline tests for kidney/gsdet.py (stage 5). Invented rows, arrays and random weights only: no KPMP value, id or
-image appears here. The standard-library tests always run; the numpy/OpenCV and torch smoke tests run only where
-those packages are installed (the compute job runs them before any slide is read)."""
+"""Offline tests for kidney/gsdet.py (stages 5 and 6). Invented rows, arrays and random weights only: no KPMP value,
+id or image appears here. The standard-library tests always run; the numpy/OpenCV and torch smoke tests run only
+where those packages are installed (the compute job runs them before any slide is read)."""
+import contextlib
+import csv
 import importlib.util
+import io
+import json
 import math
 import os
 import tempfile
@@ -82,6 +86,60 @@ class TestSelect(unittest.TestCase):
                                     "a training package comes from a test participant"])
 
 
+class TestFreshSplit(unittest.TestCase):
+    def setUp(self):
+        self.sel = gsdet.select_packages(ROWS, ["0005"])
+
+    def test_ok(self):
+        test, problems = gsdet.fresh_split(ROWS, self.sel, ["0000"], ["0001"], n_test=2, min_test=1)
+        self.assertEqual([r["Internal Package ID"] for r in test], ["0008", "0009"])
+        self.assertEqual(problems, [])
+        fl = gsdet.fetch_list(test, gsdet.TEST_PREFIX)
+        self.assertEqual([s["slide"] for s in fl], ["test601", "test602"])
+        self.assertEqual(fl[1]["package"], "0009")
+
+    def test_wrong_training_list_and_leak(self):
+        test, problems = gsdet.fresh_split(ROWS, self.sel, ["0000"], ["0008"], n_test=2, min_test=1)
+        self.assertEqual([r["Internal Package ID"] for r in test], ["0008", "0009"])
+        self.assertEqual(problems, ["the rule does not reproduce the stage 5 training list",
+                                    "a test package comes from a frozen or training participant"])
+
+    def test_wrong_frozen_list(self):
+        _, problems = gsdet.fresh_split(ROWS, self.sel, ["0001"], ["0000"], n_test=2, min_test=1)
+        self.assertEqual(problems, ["the rule does not reproduce the frozen test list",
+                                    "the rule does not reproduce the stage 5 training list"])
+
+    def test_short(self):
+        test, problems = gsdet.fresh_split(ROWS, self.sel, ["0000"], ["0001"], n_test=3, min_test=3)
+        self.assertEqual(len(test), 2)
+        self.assertEqual(problems, ["only 2 test packages"])
+
+    def test_cli_select_test(self):
+        with tempfile.TemporaryDirectory() as d:
+            paths = {k: os.path.join(d, k) for k in ("files.csv", "excl.json", "frozen.json", "train.json",
+                                                      "test.json")}
+            with open(paths["files.csv"], "w", encoding="utf-8", newline="") as f:
+                w = csv.DictWriter(f, fieldnames=list(ROWS[0]))
+                w.writeheader()
+                w.writerows(ROWS)
+            for key, doc in (("excl.json", ["0005"]), ("frozen.json", [{"package": "0000"}]),
+                             ("train.json", [{"package": "0001"}])):
+                with open(paths[key], "w", encoding="utf-8") as f:
+                    json.dump(doc, f)
+            buf = io.StringIO()
+            with contextlib.redirect_stdout(buf):
+                code = gsdet.main(["select-test", "--csv", paths["files.csv"], "--exclude", paths["excl.json"],
+                                   "--frozen", paths["frozen.json"], "--train", paths["train.json"],
+                                   "--out", paths["test.json"], "--n-test", "2"])
+            with open(paths["test.json"], encoding="utf-8") as f:
+                fl = json.load(f)
+        self.assertEqual(code, 3)   # 2 test packages is below MIN_TEST
+        self.assertEqual([s["slide"] for s in fl], ["test601", "test602"])
+        out = json.loads(buf.getvalue())
+        self.assertEqual((out["selected"], out["test"], out["problems"]), (4, 2, ["only 2 test packages"]))
+        self.assertNotIn("0008", buf.getvalue())
+
+
 class TestHelpers(unittest.TestCase):
     def test_pick_kind(self):
         allk = {"gs", "ns", "rand"}
@@ -92,6 +150,21 @@ class TestHelpers(unittest.TestCase):
         self.assertEqual(gsdet.pick_kind(0.7, {"ns", "rand"}), "rand")
         self.assertEqual(gsdet.pick_kind(0.99, {"gs"}), "gs")
         self.assertIsNone(gsdet.pick_kind(0.5, set()))
+
+    def test_pick_kind_arm_b(self):
+        b = gsdet.KIND_PROBS_B
+        allk = {"gs", "ns", "rand", "hard"}
+        self.assertEqual([gsdet.pick_kind(u, allk, b) for u in (0.1, 0.5, 0.7, 0.95)], ["gs", "ns", "rand", "hard"])
+        # without hard crops the other three are renormalised: 0.4375 / 0.3125 / 0.25
+        self.assertEqual([gsdet.pick_kind(u, {"gs", "ns", "rand"}, b) for u in (0.43, 0.5, 0.8)],
+                         ["gs", "ns", "rand"])
+
+    def test_parse_probs(self):
+        self.assertEqual(gsdet.parse_probs("gs=0.35,ns=0.25,rand=0.2,hard=0.2"), gsdet.KIND_PROBS_B)
+        self.assertEqual(gsdet.parse_probs(" gs = 1 , "), (("gs", 1.0),))
+        for bad in ("xx=1", "gs=1,gs=2", "gs=-1", "gs=0", "", "gs", "gs=abc"):
+            with self.assertRaises(ValueError, msg=bad):
+                gsdet.parse_probs(bad)
 
     def test_crop_origin(self):
         self.assertEqual(gsdet.crop_origin(100.4, 50.6), (-44, -93))
@@ -107,8 +180,12 @@ class TestHelpers(unittest.TestCase):
         self.assertEqual((gsdet.CROP, gsdet.PATCH, gsdet.BATCH, gsdet.STEPS, gsdet.SEED), (288, 256, 8, 1500, 5))
         self.assertEqual(gsdet.MINUTES, 240.0)
         self.assertEqual(gsdet.CLASS_WEIGHTS, (1.0, 1.0, 2.0))
-        self.assertEqual(gsdet.N_TRAIN, 24)
-        self.assertEqual(gsdet.KIND_CODE, {"rand": 0, "ns": 1, "gs": 2})
+        self.assertEqual((gsdet.N_TRAIN, gsdet.N_TEST, gsdet.MIN_TEST), (24, 12, 10))
+        self.assertEqual(gsdet.KIND_CODE, {"rand": 0, "ns": 1, "gs": 2, "hard": 3})
+        self.assertEqual(gsdet.CAPS, (("gs", 50), ("ns", 25), ("rand", 25)))
+        self.assertEqual(gsdet.KIND_PROBS, (("gs", 0.4), ("ns", 0.3), ("rand", 0.3)))
+        self.assertEqual(gsdet.KIND_PROBS_B, (("gs", 0.35), ("ns", 0.25), ("rand", 0.2), ("hard", 0.2)))
+        self.assertEqual((gsdet.HARD_CAP, gsdet.HARD_MAX_OVERLAP), (25, 0.10))
 
     def test_slide_pairs(self):
         with tempfile.TemporaryDirectory() as w, tempfile.TemporaryDirectory() as m:
@@ -122,8 +199,16 @@ class TestHelpers(unittest.TestCase):
         diag = {"x": {"ok": True, "crops": {"rand": 2, "ns": 3, "gs": 1}},
                 "y": {"ok": True, "crops": {"rand": 1, "ns": 0, "gs": 4}}, "z": {"ok": False}}
         agg = gsdet.crops_aggregate(diag)
-        self.assertEqual((agg["slides"], agg["ok"], agg["crops"]), (3, 2, {"rand": 3, "ns": 3, "gs": 5}))
+        self.assertEqual((agg["slides"], agg["ok"], agg["crops"]),
+                         (3, 2, {"rand": 3, "ns": 3, "gs": 5, "hard": 0}))
         self.assertNotIn("x", [k for k in agg])
+        self.assertNotIn("hard_found", agg)
+
+    def test_crops_aggregate_hard(self):
+        diag = {"a": {"ok": True, "hard_found": 7, "crops": {"hard": 5}},
+                "b": {"ok": True, "hard_found": 2, "crops": {"hard": 2}}, "c": {"ok": False, "hard_found": 50}}
+        agg = gsdet.crops_aggregate(diag)
+        self.assertEqual((agg["crops"]["hard"], agg["hard_found"], agg["crops"]["gs"]), (7, 9, 0))
 
 
 @unittest.skipUnless(HAVE_CV, "numpy and OpenCV not installed")
@@ -153,6 +238,16 @@ class TestArrays(unittest.TestCase):
         for k, x, y in got[2:]:
             self.assertTrue(0 <= x < 160 and 0 <= y < 160 and x % 16 == 0 and y % 16 == 0)
 
+    def test_centers_rand_cap(self):
+        import numpy as np
+        cmap = np.zeros((400, 400), np.uint8)
+        img = np.full((400, 400, 3), 255, np.uint8)
+        img[0:160, 0:160] = (200, 50, 50)
+        caps = (("gs", 50), ("ns", 25), ("rand", 75))
+        got = gsdet.centers(cmap, img, 1.5, np.random.RandomState(0), caps)
+        self.assertEqual(len(got), 75)   # 10 x 10 tissue grid points, 75 drawn without replacement
+        self.assertEqual(len(set((x, y) for _, x, y in got)), 75)
+
     def test_slide_crops(self):
         import numpy as np
         cmap = np.zeros((400, 400), np.uint8)
@@ -166,6 +261,33 @@ class TestArrays(unittest.TestCase):
         self.assertEqual(ys[0].shape, (288, 288))
         self.assertEqual(int((ys[0] == 2).sum()), 2500)
 
+    def test_crops_at_hard(self):
+        import numpy as np
+        cmap = np.zeros((400, 400), np.uint8)
+        cmap[50:100, 50:100] = 2
+        img = np.full((400, 400, 3), 255, np.uint8)
+        xs, ys, kinds = gsdet.crops_at(img, cmap, [("hard", 74.5, 74.5)], np.random.RandomState(1))
+        self.assertEqual(kinds, [3])
+        self.assertEqual((xs[0].shape, ys[0].shape), ((288, 288, 3), (288, 288)))
+        self.assertEqual(int((ys[0] == 2).sum()), 2500)
+
+    def test_hard_centers(self):
+        import numpy as np
+        pbg = np.ones((300, 300), np.float32)
+        for y0, x0, n in ((10, 10, 50), (100, 100, 50), (200, 200, 50), (270, 10, 10)):
+            pbg[y0:y0 + n, x0:x0 + n] = 0.1
+        cmap = np.zeros((300, 300), np.uint8)
+        cmap[100:150, 100:150] = 1      # fully on a KPMP glomerulus: not a hard negative
+        cmap[200:202, 200:250] = 2      # 100 of 2,500 pixels (4%) on a KPMP glomerulus: a hard negative
+        got, found = gsdet.hard_centers(pbg, cmap, 1.5, np.random.RandomState(0), strip_rows=37)
+        self.assertEqual(found, 2)      # the 100-pixel region is below 2,000 um^2 at 1.5 um
+        self.assertEqual(sorted((x, y) for _, x, y in got), [(34.5, 34.5), (224.5, 224.5)])
+        self.assertEqual(set(k for k, _, _ in got), {"hard"})
+        got, found = gsdet.hard_centers(pbg, cmap, 1.5, np.random.RandomState(0), cap=1)
+        self.assertEqual((len(got), found), (1, 2))
+        self.assertEqual(gsdet.hard_centers(pbg, cmap, 1.5, np.random.RandomState(0), max_overlap=0.0), ([], 0))
+        self.assertEqual(gsdet.hard_centers(pbg, cmap, 1.5, np.random.RandomState(0), max_overlap=1.01)[1], 3)
+
     def test_draw_and_batch(self):
         import numpy as np
         rng = np.random.RandomState(0)
@@ -177,6 +299,8 @@ class TestArrays(unittest.TestCase):
         self.assertTrue(all(0 <= i < 6 for i in idx))
         only_ns = gsdet.draw_indices(np.array([1, 1, 0], np.uint8), 20, rng, probs=(("ns", 1.0),))
         self.assertTrue(all(i in (0, 1) for i in only_ns))
+        only_hard = gsdet.draw_indices(np.array([0, 3, 1, 3], np.uint8), 20, rng, probs=(("hard", 1.0),))
+        self.assertTrue(all(i in (1, 3) for i in only_hard))
         mean = np.array([0.5, 0.5, 0.5], np.float32)
         std = np.array([0.25, 0.25, 0.25], np.float32)
         xb, yb = gsdet.make_batch(xs, ys, idx[:2], rng, mean, std, patch=64)
@@ -261,6 +385,19 @@ class TestTorch(unittest.TestCase):
             objs, classes = gsdet.decode(pbg, pgs, 1.5, 1.5)
             self.assertEqual(len(objs), len(classes))
             self.assertTrue(set(classes) <= {"gs", "ns"})
+            # stage 6 arm B: a second crop folder with one hard crop and the arm B kind mix
+            hard = os.path.join(d, "hard")
+            os.makedirs(hard)
+            np.savez(os.path.join(hard, "a.npz"),
+                     x=rng.randint(0, 256, size=(1, gsdet.CROP, gsdet.CROP, 3)).astype(np.uint8),
+                     y=np.zeros((1, gsdet.CROP, gsdet.CROP), np.uint8), k=np.array([3], np.uint8))
+            out_b = os.path.join(d, "gsB.pth")
+            s2 = gsdet.train([crops, hard], init, out_b, steps=2, minutes=30.0, batch=2, probs=gsdet.KIND_PROBS_B)
+            self.assertEqual((s2["steps"], s2["crops"], s2["crops_by_kind"]["hard"]), (2, 4, 1))
+            self.assertEqual(s2["kind_probs"][3], ["hard", 0.2])
+            cmap = np.zeros((300, 520), np.uint8)
+            got, found = gsdet.hard_centers(pbg, cmap, 1.5, np.random.RandomState(0))
+            self.assertEqual(len(got), min(found, gsdet.HARD_CAP))
 
 
 if __name__ == "__main__":
