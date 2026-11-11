@@ -4,6 +4,7 @@ scripts/zip_range.py on local zip files (no network). Made with AI agents (Claud
 import importlib.util
 import json
 import os
+import re
 import tempfile
 import unittest
 import zipfile
@@ -11,6 +12,7 @@ import zipfile
 HERE = os.path.dirname(os.path.abspath(__file__))
 SKILL_DIR = os.path.join(HERE, "skills", "kidney-glom-check")
 RESULTS = os.path.join(HERE, "findings", "kidney-glom-stage4-results-v1-2026-11-10.md")
+RESULTS5 = os.path.join(HERE, "findings", "kidney-glom-stage5-results-v1-2026-11-11.md")
 
 
 def load_zip_range():
@@ -59,8 +61,31 @@ class TestSkillFile(unittest.TestCase):
         self.assertIn("0.805", skill)
         self.assertIn("0.912 x 0.805 = 0.734", note)
 
+    def test_stage5_numbers_match_results_note(self):
+        skill = read(os.path.join(SKILL_DIR, "SKILL.md"))
+        note = read(RESULTS5)
+        for value in ("0.950", "0.932", "0.723", "0.743", "0.965", "0.990", "0.255", "0.157", "0.938", "0.935",
+                      "0.460", "0.813"):
+            self.assertIn(value, skill, value)
+            self.assertIn(value, note, value)
+        self.assertIn("4 of 6 predictions held", note)
+
+    def test_stage5_internal_consistency(self):
+        # precision x (D / K) = recall over all K when every match is one-to-one; D / K is quoted as 1.29
+        self.assertAlmostEqual(0.723 * 1.29, 0.935, delta=0.005)
+        # GS share of matched detections (quoted 0.162) lies within P5's 0.05 of KPMP's 0.157
+        self.assertLessEqual(abs(0.162 - 0.157), 0.05)
+
+    def test_clone_tag_and_no_weights_link(self):
+        skill = read(os.path.join(SKILL_DIR, "SKILL.md"))
+        tags = re.findall(r"--branch (v[0-9.]+)", skill)
+        self.assertEqual(tags, ["v0.9.71"])
+        self.assertNotIn("gs5.pth http", skill)
+        self.assertIn("No fine-tuned weights are published", skill)
+
     def test_ascii_only(self):
-        for path in (os.path.join(SKILL_DIR, "SKILL.md"), os.path.join(SKILL_DIR, "scripts", "zip_range.py")):
+        for path in (os.path.join(SKILL_DIR, "SKILL.md"), os.path.join(SKILL_DIR, "scripts", "zip_range.py"),
+                     RESULTS5):
             self.assertTrue(all(ord(c) < 128 for c in read(path)), path)
 
 
