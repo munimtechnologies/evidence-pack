@@ -1,6 +1,6 @@
 # Copyright 2026 Munim, Inc. (MV2). Licensed under the Apache License, Version 2.0 (Apache-2.0).
 # One-command container for MV2's open kidney pipeline (kidney/pipeline.py): a folder of .svs whole-slide images in,
-# slide QC + glomerulus tables (non-globally-sclerotic / globally sclerotic) out. CPU only.
+# slide QC + glomerulus tables (non-globally-sclerotic / globally sclerotic) + QuPath GeoJSON annotations out. CPU only.
 # Made with AI agents (Claude) working in MV2's name. Research code, not a medical device, not for diagnosis.
 #
 # Build from the repository root:
@@ -27,7 +27,7 @@ RUN pip install "typing_extensions==4.16.0" "filelock==4.1.0" "sympy==1.14.0" "m
         "imagecodecs==2025.3.30"
 
 WORKDIR /app
-COPY kidney/__init__.py kidney/wsi_qc.py kidney/glom.py kidney/gsdet.py kidney/pipeline.py kidney/test_pipeline.py /app/kidney/
+COPY kidney/__init__.py kidney/wsi_qc.py kidney/glom.py kidney/gsdet.py kidney/annot.py kidney/pipeline.py kidney/test_pipeline.py /app/kidney/
 COPY LICENSE /app/LICENSE
 
 # The offline tests (including an end-to-end run on a synthetic slide with random weights) can be run with:

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # Copyright 2026 Munim, Inc. (MV2). Licensed under the Apache License, Version 2.0 (Apache-2.0).
-"""pipeline: one command from a folder of .svs whole-slide images to glomerulus tables, for MV2's open kidney work
-on KPMP data (NIDDK Kidney AI Discovery Challenge, which asks for code that runs end to end on a directory of SVS
-images and writes to an output directory).
+"""pipeline: one command from a folder of .svs whole-slide images to glomerulus tables and QuPath annotations, for
+MV2's open kidney work on KPMP data (NIDDK Kidney AI Discovery Challenge, which asks for code that runs end to end on
+a directory of SVS images, writes to an output directory, and marks the regions it flags for expert review).
 
 Made with AI agents (Claude) working in MV2's name; no human has reviewed it yet. Research code, not a medical
 device, not for diagnosis or patient care.
@@ -13,6 +13,8 @@ What it does, per slide, in file-name order:
      `gsdet train` (background / non-globally-sclerotic / globally sclerotic glomerulus). A glomerulus is an
      8-connected region where P(background) < 0.5 of at least 2,000 um^2; it is globally sclerotic when its summed
      P(GS) exceeds its summed P(NS). Positions and areas are in micrometres of the slide.
+  3. (0.2.0) one QuPath-importable GeoJSON file per slide with kidney/annot.py: every glomerulus as a box in
+     full-resolution pixels, coloured by class. It needs the scanner MPP from step 1, so --no-qc gives no files.
 Measured limits of the recipe (pre-registered, graded on open KPMP biopsies): findings/kidney-glom-stage5-*.md and,
 once graded, findings/kidney-glom-stage6-*.md in this repository. The fine-tuned weights are not published here
 (KPMP data terms are being checked), so the checkpoint is passed in with --model.
@@ -22,9 +24,11 @@ Outputs in --out-dir:
   slides.csv      one row per slide: QC fields, counts by class, sclerotic share, median area, errors
   inputs.csv      every input file with its size in bytes and SHA-256 (the list of images used)
   qc.json         wsi_qc's full records;  detections.json  gsdet's detection document
-  manifest.json   code versions, model file name, SHA-256 and training steps, settings, totals, timings
+  annotations/    <slide>.geojson per slide and annot-report.json (skipped slides with the reason)
+  manifest.json   code versions, model file name, SHA-256 and training steps, settings, totals, annotation
+                  summary, timings
 Exit code: 0 when every slide was detected, 1 when at least one failed (its row says why), 2 when the folder holds
-no .svs file. Usage:
+no .svs file. A slide without an annotation file does not change the exit code; annot-report.json says why. Usage:
   python -m kidney.pipeline --in-dir /input --out-dir /output --model /models/gs.pth [--threads 4] [--no-qc]
 """
 import argparse
@@ -34,8 +38,9 @@ import json
 import os
 import time
 
-CODE_VERSION = "0.1.0"
+CODE_VERSION = "0.2.0"
 SUFFIX = ".svs"
+ANNOT_DIR = "annotations"
 CLASS_NAMES = {"gs": "globally_sclerotic", "ns": "non_globally_sclerotic"}
 OBJECT_FIELDS = ["slide", "glomerulus", "class", "cx_um", "cy_um", "x0_um", "y0_um", "x1_um", "y1_um", "area_um2"]
 SLIDE_FIELDS = ["slide", "qc_ok", "detect_ok", "scan_mpp", "tissue_fraction", "pieces", "green_ink_fraction",
@@ -131,6 +136,17 @@ def totals(rows):
             "gs_share": round(g / float(n), 4) if n else None}
 
 
+def annotations(objs, rows, out_dir, object_type="annotation"):
+    """Write QuPath GeoJSON for the glomerulus rows `objs` and slide rows `rows` (as written to glomeruli.csv and
+    slides.csv) into out_dir/annotations with kidney/annot.py, and return the summary kept in manifest.json."""
+    from kidney import annot
+    docs, report = annot.build(objs, rows, object_type)
+    annot.write(os.path.join(out_dir, ANNOT_DIR), docs, report)
+    return {"dir": ANNOT_DIR, "annot": annot.CODE_VERSION, "object_type": object_type, "files": report["files"],
+            "features": report["features"], "dropped_rows": report["dropped_rows"],
+            "skipped_slides": len(report["skipped"])}
+
+
 def write_csv(path, fields, rows):
     with open(path, "w", encoding="utf-8", newline="") as f:
         wr = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
@@ -150,8 +166,9 @@ def utc_now():
 
 # ---- the run (numpy, OpenCV, tifffile and torch are imported by the stages) ----
 
-def run(in_dir, out_dir, model_path, qc=True, tta=True, hash_inputs=True, threads=0):
-    """Run every stage over in_dir, write every output, and return (exit code, manifest)."""
+def run(in_dir, out_dir, model_path, qc=True, tta=True, hash_inputs=True, threads=0, annot="annotation"):
+    """Run every stage over in_dir, write every output, and return (exit code, manifest). annot is the QuPath
+    object type ("annotation" or "detection"), or None for no annotation files."""
     t0, started = time.time(), utc_now()
     os.makedirs(out_dir, exist_ok=True)
     files = list_slides(in_dir)
@@ -185,27 +202,33 @@ def run(in_dir, out_dir, model_path, qc=True, tta=True, hash_inputs=True, thread
     write_csv(os.path.join(out_dir, "glomeruli.csv"), OBJECT_FIELDS, objs)
     write_csv(os.path.join(out_dir, "slides.csv"), SLIDE_FIELDS, rows)
     tot = totals(rows)
+    ann = annotations(objs, rows, out_dir, annot) if annot else None
     manifest.update({
         "code_versions": {"pipeline": CODE_VERSION, "wsi_qc": qc_version, "gsdet": gsdet.CODE_VERSION,
-                          "glom": glom.CODE_VERSION},
+                          "glom": glom.CODE_VERSION, "annot": ann["annot"] if ann else None},
         "model": {"file": os.path.basename(model_path), "sha256": sha256_file(model_path),
                   "train_steps": det.get("train_steps")},
         "settings": {"qc": qc, "tta": tta, "target_mpp": glom.TARGET_MPP, "tile": glom.TILE,
-                     "fg_max_bg": gsdet.FG_MAX_BG, "min_area_um2": glom.MIN_AREA_UM2, "threads": threads},
-        "totals": tot, "finished_at": utc_now(), "minutes": round((time.time() - t0) / 60.0, 2)})
+                     "fg_max_bg": gsdet.FG_MAX_BG, "min_area_um2": glom.MIN_AREA_UM2, "threads": threads,
+                     "annotations": annot},
+        "totals": tot, "annotations": ann, "finished_at": utc_now(), "minutes": round((time.time() - t0) / 60.0, 2)})
     write_json(os.path.join(out_dir, "manifest.json"), manifest)
     return (0 if tot["detect_ok"] == len(files) else 1), manifest
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(description="Folder of .svs slides -> slide QC + glomerulus tables (research only).")
+    ap = argparse.ArgumentParser(description="Folder of .svs slides -> slide QC, glomerulus tables and QuPath "
+                                             "annotations (research only).")
     ap.add_argument("--in-dir", required=True, help="folder of .svs whole-slide images")
     ap.add_argument("--out-dir", required=True)
     ap.add_argument("--model", required=True, help="3-class checkpoint written by `python -m kidney.gsdet train`")
     ap.add_argument("--threads", type=int, default=0, help="torch CPU threads (0 = torch's default)")
-    ap.add_argument("--no-qc", action="store_true", help="skip the slide quality checks")
+    ap.add_argument("--no-qc", action="store_true", help="skip the slide quality checks (then no annotation files)")
     ap.add_argument("--no-tta", action="store_true", help="no flip test-time augmentation (faster, not as graded)")
     ap.add_argument("--no-hash", action="store_true", help="do not compute SHA-256 of the input slides")
+    ap.add_argument("--no-annot", action="store_true", help="do not write QuPath GeoJSON annotation files")
+    ap.add_argument("--annot-detections", action="store_true",
+                    help="write QuPath detection objects instead of annotations (lighter for big slides)")
     a = ap.parse_args(argv)
     if not os.path.isdir(a.in_dir):
         print(json.dumps({"error": "input folder not found"}))
@@ -213,9 +236,11 @@ def main(argv=None):
     if not os.path.isfile(a.model):
         print(json.dumps({"error": "model file not found"}))
         return 2
+    annot = None if a.no_annot else ("detection" if a.annot_detections else "annotation")
     code, manifest = run(a.in_dir, a.out_dir, a.model, qc=not a.no_qc, tta=not a.no_tta, hash_inputs=not a.no_hash,
-                         threads=a.threads)
+                         threads=a.threads, annot=annot)
     print(json.dumps({"pipeline": CODE_VERSION, "slides": manifest["slides"], "totals": manifest.get("totals"),
+                      "annotations": (manifest.get("annotations") or {}).get("files"),
                       "minutes": manifest.get("minutes"), "exit": code}))
     return code
 

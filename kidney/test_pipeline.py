@@ -106,6 +106,41 @@ class TestStdlib(unittest.TestCase):
         self.assertEqual((rows[0]["qc_ok"], rows[0]["gs_share"], rows[0]["median_area_um2"]), ("True", "0.5", "2750.0"))
         self.assertEqual((rows[1]["glomeruli"], rows[1]["scan_mpp"]), ("", ""))
 
+    def test_annotations(self):
+        objs, rows = pl.object_rows(DET), pl.slide_rows(NAMES, QC, DET)
+        with tempfile.TemporaryDirectory() as d:
+            summary = pl.annotations(objs, rows, d)
+            adir = os.path.join(d, pl.ANNOT_DIR)
+            names = sorted(os.listdir(adir))
+            with open(os.path.join(adir, "s1.geojson"), encoding="utf-8") as f:
+                doc = json.load(f)
+            with open(os.path.join(adir, "annot-report.json"), encoding="utf-8") as f:
+                report = json.load(f)
+            det_summary = pl.annotations(objs, rows, os.path.join(d, "det"), "detection")
+            with open(os.path.join(d, "det", pl.ANNOT_DIR, "s1.geojson"), encoding="utf-8") as f:
+                det_doc = json.load(f)
+        self.assertEqual(names, ["annot-report.json", "s1.geojson"])
+        self.assertEqual((summary["dir"], summary["object_type"], summary["files"], summary["features"]),
+                         ("annotations", "annotation", 1, 2))
+        self.assertEqual((summary["dropped_rows"], summary["skipped_slides"]), (0, 3))
+        self.assertEqual(summary["annot"], report["annot"])
+        self.assertEqual([(s["slide"], s["reason"]) for s in report["skipped"]],
+                         [("s2", "detection failed"), ("s3", "no scan_mpp (QC skipped or no MPP in the header)"),
+                          ("s4", "detection failed")])
+        self.assertEqual(doc["type"], "FeatureCollection")
+        f1, f2 = doc["features"]
+        self.assertEqual(f1["geometry"]["coordinates"],
+                         [[[19.8, 59.5], [59.5, 59.5], [59.5, 99.2], [19.8, 99.2], [19.8, 59.5]]])
+        self.assertEqual(f1["properties"], {"objectType": "annotation", "name": "glomerulus 1",
+                                            "classification": {"name": "non_globally_sclerotic",
+                                                               "color": [44, 160, 44]}})
+        self.assertEqual(f2["geometry"]["coordinates"][0][0], [357.1, 754.0])
+        self.assertEqual(f2["geometry"]["coordinates"][0][2], [436.5, 833.3])
+        self.assertEqual((f2["properties"]["name"], f2["properties"]["classification"]["name"]),
+                         ("glomerulus 2", "globally_sclerotic"))
+        self.assertEqual((det_summary["object_type"], det_summary["files"]), ("detection", 1))
+        self.assertEqual(det_doc["features"][0]["properties"]["objectType"], "detection")
+
     def test_main_errors_and_empty_folder(self):
         with tempfile.TemporaryDirectory() as d:
             model = os.path.join(d, "m.pth")
@@ -125,9 +160,11 @@ class TestStdlib(unittest.TestCase):
                 man = json.load(f)
             with open(os.path.join(out, "inputs.csv"), encoding="utf-8", newline="") as f:
                 lines = f.read().splitlines()
+            annot_dir_made = os.path.exists(os.path.join(out, pl.ANNOT_DIR))
         self.assertEqual(man["slides"], 0)
         self.assertEqual(man["error"], "no .svs file in the input folder")
         self.assertEqual(lines, ["file,bytes,sha256"])
+        self.assertFalse(annot_dir_made)
 
 
 @unittest.skipUnless(HAVE_ALL, "numpy, cv2, tifffile, torch and segmentation_models_pytorch needed")
@@ -136,7 +173,7 @@ class TestEndToEnd(unittest.TestCase):
         import numpy as np
         import tifffile
         import torch
-        from kidney import gsdet
+        from kidney import annot, gsdet
         torch.manual_seed(0)
         img = np.full((1024, 1024, 3), 240, dtype=np.uint8)
         img[100:900, 100:900] = (200, 120, 180)
@@ -165,6 +202,9 @@ class TestEndToEnd(unittest.TestCase):
                 man = json.load(f)
             with open(os.path.join(out, "detections.json"), encoding="utf-8") as f:
                 det = json.load(f)
+            with open(os.path.join(out, pl.ANNOT_DIR, "a_slide.geojson"), encoding="utf-8") as f:
+                ann = json.load(f)
+            ann_files = sorted(os.listdir(os.path.join(out, pl.ANNOT_DIR)))
             want_sha = pl.sha256_file(ckpt)
             self.assertTrue(os.path.isfile(os.path.join(out, "qc.json")))
         self.assertEqual(code, 1)  # b_nompp has no MPP in its header, so its detection fails
@@ -183,8 +223,13 @@ class TestEndToEnd(unittest.TestCase):
         self.assertEqual(man["model"], {"file": "gs.pth", "sha256": want_sha, "train_steps": 0})
         self.assertEqual((man["totals"]["slides"], man["totals"]["detect_ok"]), (2, 1))
         self.assertEqual(man["code_versions"]["pipeline"], pl.CODE_VERSION)
+        self.assertEqual(man["code_versions"]["annot"], annot.CODE_VERSION)
         self.assertEqual(det["code_version"], gsdet.CODE_VERSION)
         self.assertEqual(det["rows"][0]["tiles_used"], 1)
+        self.assertEqual(ann_files, ["a_slide.geojson", "annot-report.json"])
+        self.assertEqual(len(ann["features"]) + man["annotations"]["dropped_rows"], len(gloms))
+        self.assertEqual((man["annotations"]["files"], man["annotations"]["skipped_slides"]), (1, 1))
+        self.assertEqual(man["settings"]["annotations"], "annotation")
 
 
 if __name__ == "__main__":
