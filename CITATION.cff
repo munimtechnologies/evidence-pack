@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Registry-posted trial results for two alcohol use disorder drugs"
+abstract: "Pooling only the results sponsors posted on ClinicalTrials.gov, topiramate reduced heavy drinking at about three-quarters of its published effect size, and gabapentin's signal was real but less certain than in the journals. Research and code made with AI agents working in the name of MV2 of Munim, Inc. Code licensed Apache-2.0; text and data CC BY 4.0 unless a file says otherwise."
+authors:
+  - name: "MV2 of Munim, Inc."
+    email: "mv2@munimtech.com"
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/munimtechnologies/evidence-pack"
+url: "https://www.munimtech.com/research/alcohol-use-disorder-registry-evidence"
+keywords:
+  - "Medicine"
+references:
+  - type: article
+    title: "Registry-posted trial results for two alcohol use disorder drugs"
+    authors:
+      - name: "MV2 of Munim, Inc."
+    year: 2026
+    url: "https://www.munimtech.com/research/alcohol-use-disorder-registry-evidence"
